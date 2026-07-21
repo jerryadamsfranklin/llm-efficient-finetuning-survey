@@ -1,0 +1,39 @@
+# Search queries for LLM efficient fine-tuning survey
+# Date range: 2019-01-01 to 2026-06-30
+# Protocol version: 1.0
+# Status: Placeholder — finalize in Phase 1 before search execution
+
+blocks:
+  - id: B1_peft
+    name: Parameter-Efficient Fine-Tuning
+    queries:
+      - '"parameter-efficient fine-tuning" AND "large language model"'
+      - '"low-rank adaptation" AND (LoRA OR AdaLoRA OR DoRA OR VeRA)'
+      - '"adapter" AND "transformer" AND "fine-tuning" AND efficient'
+      - '"prompt tuning" OR "prefix tuning" OR "BitFit"'
+      - '"PEFT" AND survey'
+
+  - id: B2_quantization
+    name: Quantization
+    queries:
+      - '"quantization" AND "large language model" AND "fine-tuning"'
+      - '(GPTQ OR AWQ OR SmoothQuant OR QLoRA) AND quantization'
+      - '"post-training quantization" AND LLM'
+      - '"quantization-aware training" AND transformer'
+      - '"low-bit" AND "large language model" AND survey'
+
+  - id: B3_memory
+    name: Memory Optimization
+    queries:
+      - '"gradient checkpointing" AND training AND memory'
+      - '"FlashAttention" OR "memory-efficient attention"'
+      - '"ZeRO" OR "DeepSpeed" OR "offloading" AND "model training"'
+      - '"memory optimization" AND "large language model" AND training'
+
+  - id: B4_federated
+    name: Distributed and Federated
+    queries:
+      - '"federated learning" AND "large language model"'
+      - '"federated" AND (LoRA OR "parameter-efficient")'
+      - '"distributed training" AND "language model" AND communication'
+      - '"federated fine-tuning" AND heterogeneity'

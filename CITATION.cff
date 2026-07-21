@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this companion repository, please cite the survey."
+title: "Fine-Tuning Large Language Models in Resource-Constrained Environments: Methods and Trade-offs — Companion Repository"
+authors:
+  - family-names: Franklin
+    given-names: Jerry Adams
+type: software
+license: CC-BY-4.0
+repository-code: "https://github.com/jerryadamsfranklin/llm-efficient-finetuning-survey"
+abstract: >-
+  Companion repository documenting the structured literature search,
+  screening decisions, extracted corpus, and table/figure artifacts for
+  the PeerJ Computer Science survey on efficient LLM fine-tuning in
+  resource-constrained environments.
+keywords:
+  - large language models
+  - parameter-efficient fine-tuning
+  - quantization
+  - federated learning
+  - survey
+# Preferred citation for the manuscript will be added after publication.
+# preferred-citation: ...
