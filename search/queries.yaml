@@ -1,7 +1,19 @@
 # Search queries for LLM efficient fine-tuning survey
 # Date range: 2019-01-01 to 2026-06-30
 # Protocol version: 1.0
-# Status: Placeholder — finalize in Phase 1 before search execution
+# Status: Locked — Phase 1; do not alter after Protocol v1.0 commit without a version bump
+
+meta:
+  protocol_version: "1.0"
+  date_start: "2019-01-01"
+  date_end: "2026-06-30"
+  arxiv_categories:
+    - cs.LG
+    - cs.CL
+    - cs.AI
+    - cs.DC
+  max_results_per_query: 200
+  manual_relevance_cap: 50
 
 blocks:
   - id: B1_peft

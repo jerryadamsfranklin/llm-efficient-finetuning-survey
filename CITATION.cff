@@ -4,6 +4,8 @@ title: "Fine-Tuning Large Language Models in Resource-Constrained Environments: 
 authors:
   - family-names: Franklin
     given-names: Jerry Adams
+    orcid: "https://orcid.org/0009-0006-8470-8349"
+    affiliation: "Independent Researcher"
 type: software
 license: CC-BY-4.0
 repository-code: "https://github.com/jerryadamsfranklin/llm-efficient-finetuning-survey"
