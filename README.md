@@ -15,8 +15,9 @@ PeerJ Computer Science).
 
 ## Status
 
-Repository skeleton created. Phase 1 (protocol design) is next and must be
-committed before any search execution.
+**Phase 1 (protocol design) is complete on branch `phase-1-protocol`.**
+Protocol v1.0 is locked in `protocol/` and `search/queries.yaml`.
+No search scripts may be executed until the owner confirms this protocol.
 
 ## Reproducing the search
 

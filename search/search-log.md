@@ -1,7 +1,10 @@
 # Search Log
 
 Human-readable record of every query run.
-**Status:** Empty — populate during Phase 2 (automated) and Phase 2b (manual).
+
+**Protocol version:** 1.0  
+**Coverage window:** 2019-01-01 to 2026-06-30  
+**Status:** No searches executed yet — awaiting owner confirmation after Protocol v1.0 commit.
 
 ## Template (manual sources)
 
@@ -18,4 +21,4 @@ Human-readable record of every query run.
 
 ## Automated runs
 
-_Entries appended by search scripts._
+_Entries appended by search scripts after Phase 2 begins._
