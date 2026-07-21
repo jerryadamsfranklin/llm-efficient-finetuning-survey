@@ -1,0 +1,11 @@
+# Existing manuscript corpus (~42 references) for OpenReview venue-upgrade checks.
+# Phase 2 (section 5.4): fill titles and optional arxiv_id / doi, then run:
+#   python search/scripts/search_openreview.py --check-existing
+#
+# Do not invent entries. Copy from the manuscript bibliography only.
+references: []
+# Example:
+# - key: hu2022lora
+#   title: "LoRA: Low-Rank Adaptation of Large Language Models"
+#   arxiv_id: "2106.09685"
+#   doi: null

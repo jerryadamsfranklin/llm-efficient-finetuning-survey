@@ -1,8 +1,6 @@
 # Search scripts — dependencies
 # Install: pip install -r search/scripts/requirements.txt
-# Status: Placeholder — finalize when Phase 2 scripts are implemented
 
 PyYAML>=6.0
-feedparser>=6.0
 requests>=2.31
 rapidfuzz>=3.0
