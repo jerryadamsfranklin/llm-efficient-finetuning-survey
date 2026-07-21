@@ -2,9 +2,9 @@
 
 Human-readable record of every query run.
 
-**Protocol version:** 1.0  
+**Protocol version:** 1.1 (amendment locked; v1.1 re-runs not yet executed)  
 **Coverage window:** 2019-01-01 to 2026-06-30  
-**Status:** Phase 2 started — automated entries appended by scripts; manual sources below await owner browser runs.
+**Status:** Protocol v1.1 committed. v1.0 automated results preserved under `search/raw_v1.0/`. Awaiting owner confirmation before date-sliced arXiv / S2 keyword re-runs and venue checks.
 
 ## Manual sources (owner-filled)
 

@@ -6,49 +6,54 @@ PeerJ Computer Science).
 
 ## Contents
 
-- `protocol/` — search protocol, inclusion criteria, extraction schema (written before searching)
+- `protocol/` — search protocol, inclusion criteria, extraction schema, changelog
 - `search/` — query definitions, search log, raw API responses, search scripts
 - `screening/` — screening decisions for every candidate, PRISMA-style counts
 - `data/` — final corpus, table data as CSV, BibTeX references
 - `figures/` — figure generation scripts and outputs
-- `docs/` — Table 4 per-column sourcing and provenance
+- `docs/` — Table 4 provenance and reference-correction notes
 
 ## Status
 
 | Phase | Status |
 |---|---|
-| **1 — Protocol design** | Complete. Protocol v1.0 locked in `protocol/` and `search/queries.yaml` (committed before any search). |
-| **2 — Execute searches** | Automated discovery complete on branch `phase-2-search`. Manual sources and existing-corpus venue check still open. |
+| **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
+| **2 — Execute searches** | In progress on `phase-2-search`. v1.0 automated discovery executed; **Protocol v1.1 amendment committed — awaiting owner confirmation before re-runs.** |
 | **3+** | Not started. |
+
+### Protocol versions
+
+- **v1.0** — initial queries; raw results preserved in `search/raw_v1.0/`
+- **v1.1** — corrections after v1.0 execution evidence (`protocol/CHANGELOG.md`): fixed `B3_memory_3` parentheses, added Semantic Scholar `s2_queries`, date-slicing / stopping-rule text
 
 ### Phase 2 checklist
 
-- [x] arXiv automated search — 18/18 queries → `search/raw/arxiv/`
-- [x] Semantic Scholar automated search — 18/18 queries → `search/raw/semanticscholar/`
-- [x] OpenReview automated search — 18/18 queries → `search/raw/openreview/`
-- [ ] Manual Google Scholar / IEEE Xplore / ACM DL logging (owner; no scraping)
-- [ ] Fill `search/existing-references.yaml` (~42 manuscript refs) and run OpenReview venue check
-
-Search dates and per-query counts are recorded in `search/search-log.md`. Several queries hit the protocol 200-result cap (noted in the log).
+- [x] v1.0 arXiv / Semantic Scholar / OpenReview discovery runs (evidence under `search/raw_v1.0/`)
+- [x] Protocol v1.1 amendment written and committed (before any v1.1 re-run)
+- [x] `search/existing-references.yaml` populated (42 manuscript references; 12 `priority: HIGH`)
+- [ ] arXiv: re-run capped queries with date-slicing; re-run corrected `B3_memory_3`
+- [ ] Semantic Scholar: re-run all blocks with `s2_queries`
+- [ ] OpenReview: venue check only (no discovery re-run)
+- [ ] `docs/reference-corrections.md` from venue check
+- [ ] Manual Google Scholar / IEEE Xplore / ACM DL logging
+- [ ] Deduplicated candidate pool counted
 
 ## Reproducing the search
 
 ```bash
 pip install -r search/scripts/requirements.txt
 
-# Automated discovery (re-runnable; skips existing raw files unless --force)
-python search/scripts/search_arxiv.py
-python search/scripts/search_semanticscholar.py
-python search/scripts/search_openreview.py
+# v1.1 re-runs (only after protocol amendment is confirmed)
+python search/scripts/search_arxiv.py            # add --slice-by-year once implemented
+python search/scripts/search_semanticscholar.py  # uses s2_queries under protocol 1.1
 
-# Optional: venue-upgrade check for the existing ~42 manuscript references
-# (fill search/existing-references.yaml first)
+# Venue-upgrade check for the existing ~42 manuscript references
 python search/scripts/search_openreview.py --check-existing
 ```
 
 Optional: set `SEMANTIC_SCHOLAR_API_KEY` to raise Semantic Scholar rate limits.
 
-Each run updates `search/search-log.md` and writes `search/raw/<source>/<block>_<n>.json`.
+Each run updates `search/search-log.md` and writes `search/raw/<source>/...`.
 
 ## Data provenance
 
