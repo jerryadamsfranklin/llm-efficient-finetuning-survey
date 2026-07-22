@@ -4,6 +4,8 @@
 # Status: Locked — Protocol v1.1 amendment (post v1.0 execution evidence)
 # See protocol/CHANGELOG.md. Do not alter without a further version bump.
 
+protocol_version: "1.1"
+
 meta:
   protocol_version: "1.1"
   supersedes: "1.0"

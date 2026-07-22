@@ -32,8 +32,9 @@ PeerJ Computer Science).
 - [x] Protocol v1.1 amendment written and committed (before any v1.1 re-run)
 - [x] `search/existing-references.yaml` populated (42 manuscript references; 12 `priority: HIGH`)
 - [x] arXiv: re-run capped queries with date-slicing; re-run corrected `B3_memory_3` (residual quarterly gaps recorded for B3_memory_3)
-- [ ] Semantic Scholar: re-run all blocks with `s2_queries` (in progress / rate-limited)
+- [x] Semantic Scholar: re-run all blocks with `s2_queries` (18/18)
 - [x] OpenReview: venue check only (no discovery re-run) → `docs/reference-corrections.md`
+- [x] Phase 2 closure corrections (reference-corrections review; B3_memory_3 residual-gap note; `protocol_version` field)
 - [ ] Manual Google Scholar / IEEE Xplore / ACM DL logging
 - [ ] Deduplicated candidate pool counted
 

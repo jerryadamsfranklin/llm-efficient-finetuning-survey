@@ -1175,3 +1175,21 @@ Fill these after running each query in the browser. Stopping rule: first 50 by r
 - **Results returned:** 200
 - **Slice:** 2025-Q4
 - **Notes:** protocol=1.1; slice=2025-Q4; API totalReported=450; HIT_CAP=200; RESIDUAL_GAP — quarterly slice still at cap; coverage incomplete for this slice (stated stopping rule)
+
+### Residual coverage gap — B3_memory_3
+
+Even after year-level and quarter-level date-slicing, `B3_memory_3`
+(`("ZeRO" OR "DeepSpeed" OR "offloading") AND ("model training" OR
+"large language model")`) reached the 200-result cap in most quarters
+from 2023 through 2026-Q2. This is the finest granularity specified in
+Protocol v1.1 section 4.2, and the stop condition has been reached.
+
+**Disposition:** this query is retained as-is rather than narrowed
+further. The terms "model training" and "large language model" are too
+common in this literature to bound the query without losing intended
+recall on ZeRO/DeepSpeed/offloading papers specifically. A residual
+coverage gap is acknowledged for this query: only the newest 200
+records per capped quarter were retrieved, not the full candidate set.
+This is consistent with the stated retrieval-cap stopping rule
+(amendment section 5.1) and is disclosed in the manuscript methodology
+and in Section 10.4 (Limitations).

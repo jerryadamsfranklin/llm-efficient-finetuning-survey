@@ -25,12 +25,13 @@ references:
   arxiv_id: '2310.08151'
   doi: null
   venue_current: arXiv preprint arXiv:2310.08151
-  verified_venue: ACL ARR 2024 December Submission
+  verified_venue: arXiv preprint arXiv:2310.08151
   verified_doi: null
-  status: UPGRADED
+  status: confirmed_preprint
   priority: HIGH
   citation_as_in_manuscript: 'Bayati, B., Lin, B., Zeng, H., & Yin, M. (2023). FlexLoRA: Flexible low
     rank adaptation for large language models. arXiv preprint arXiv:2310.08151.'
+  closure_note: REJECTED ARR upgrade; keep as preprint (Phase 2 closure corrections)
 - key: chen2016
   authors: Chen, T., Xu, B., Zhang, C., & Guestrin, C.
   year: 2016
@@ -299,13 +300,14 @@ references:
   arxiv_id: null
   doi: null
   venue_current: Proceedings of Machine Learning and Systems (MLSys)
-  verified_venue: 'GetMobile: Mobile Computing and Communications / 2025 / journal-article'
-  verified_doi: 10.1145/3714983.3714987
+  verified_venue: Proceedings of Machine Learning and Systems (MLSys)
+  verified_doi: null
   status: confirmed_published
   priority: normal
   citation_as_in_manuscript: 'Lin, J., Tang, J., Tang, H., Yang, S., Dang, X., & Han, S. (2024). AWQ:
     Activation-aware weight quantization for LLM compression and acceleration. Proceedings of Machine
     Learning and Systems (MLSys).'
+  closure_note: REJECTED GetMobile replacement; keep MLSys 2024 (Phase 2 closure corrections)
 - key: liu2022
   authors: Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., & Raffel, C.
   year: 2022
@@ -563,7 +565,7 @@ references:
   arxiv_id: '2505.13502'
   doi: null
   venue_current: arXiv preprint arXiv:2505.13502
-  verified_venue: Proceedings of the Thirty-ThirdInternational Joint Conference on Artificial Intelligence
+  verified_venue: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence
     / 2024 / proceedings-article
   verified_doi: 10.24963/ijcai.2024/1196
   status: UPGRADED
