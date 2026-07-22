@@ -15,6 +15,10 @@ IEEE Xplore and ACM Digital Library as manual-only, which was partly incorrect.
   ACM publisher-filtered OpenAlex run. Keyword `s2_queries` variants; cap 50.
 - **OpenAlex (general index):** same keyword queries and 50-cap, for broader
   coverage beyond ACM.
+- **ACM publisher ID:** amendment draft cited `P4310320503`; OpenAlex lookup
+  confirmed **Association for Computing Machinery** as `P4310319798` (recorded
+  in `search/queries.yaml`). Scripts verify the publisher display name before
+  the ACM-filtered run.
 - **DBLP (optional):** CS-venue completeness check; same 50-cap. Adopted for
   venue-string quality without expanding screening burden beyond the cap.
 - **Google Scholar:** unchanged — still manual; no scraping.

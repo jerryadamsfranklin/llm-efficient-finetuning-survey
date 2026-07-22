@@ -1,0 +1,114 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "communication efficient distributed language model training",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:57:53Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "returned_in_coverage_window": 1,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "6",
+      "@id": "514516",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "271/6800",
+              "text": "Fanxin Li"
+            },
+            {
+              "@pid": "141/1483",
+              "text": "Shixiong Zhao"
+            },
+            {
+              "@pid": "285/8994",
+              "text": "Yuhao Qing"
+            },
+            {
+              "@pid": "206/4542",
+              "text": "Jianyu Jiang"
+            },
+            {
+              "@pid": "38/7674",
+              "text": "Xusheng Chen"
+            },
+            {
+              "@pid": "59/5565",
+              "text": "Heming Cui"
+            }
+          ]
+        },
+        "title": "PipeMesh: Achieving Memory-Efficient Computation-Communication Overlap for Training Large Language Models.",
+        "venue": "IEEE Trans. Parallel Distributed Syst.",
+        "volume": "36",
+        "number": "9",
+        "pages": "1872-1889",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tpds/LiZQJCC25",
+        "doi": "10.1109/TPDS.2025.3583983",
+        "ee": "https://doi.org/10.1109/TPDS.2025.3583983",
+        "url": "https://dblp.org/rec/journals/tpds/LiZQJCC25"
+      },
+      "url": "URL#514516"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "6",
+      "@id": "514516",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "271/6800",
+              "text": "Fanxin Li"
+            },
+            {
+              "@pid": "141/1483",
+              "text": "Shixiong Zhao"
+            },
+            {
+              "@pid": "285/8994",
+              "text": "Yuhao Qing"
+            },
+            {
+              "@pid": "206/4542",
+              "text": "Jianyu Jiang"
+            },
+            {
+              "@pid": "38/7674",
+              "text": "Xusheng Chen"
+            },
+            {
+              "@pid": "59/5565",
+              "text": "Heming Cui"
+            }
+          ]
+        },
+        "title": "PipeMesh: Achieving Memory-Efficient Computation-Communication Overlap for Training Large Language Models.",
+        "venue": "IEEE Trans. Parallel Distributed Syst.",
+        "volume": "36",
+        "number": "9",
+        "pages": "1872-1889",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tpds/LiZQJCC25",
+        "doi": "10.1109/TPDS.2025.3583983",
+        "ee": "https://doi.org/10.1109/TPDS.2025.3583983",
+        "url": "https://dblp.org/rec/journals/tpds/LiZQJCC25"
+      },
+      "url": "URL#514516"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=communication%20efficient%20distributed%20language%20model%20training&h=50&format=json"
+}

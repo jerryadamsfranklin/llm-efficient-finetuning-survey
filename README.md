@@ -37,9 +37,9 @@ PeerJ Computer Science).
 - [x] OpenReview: venue check only (no discovery re-run) → `docs/reference-corrections.md`
 - [x] Phase 2 closure corrections (reference-corrections review; B3_memory_3 residual-gap note; `protocol_version` field)
 - [x] Protocol v1.2 amendment written and committed (before IEEE / OpenAlex / DBLP runs)
-- [ ] IEEE metadata API: 18 queries, 50-cap (`IEEE_API_KEY`)
-- [ ] OpenAlex general + ACM-filtered: 18 queries each, 50-cap
-- [ ] DBLP completeness run (adopted) or recorded as not adopted
+- [ ] IEEE metadata API: 18 queries, 50-cap (`IEEE_API_KEY` — key pending)
+- [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
+- [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
 - [ ] Manual Google Scholar: 18 queries logged (no `TBD` remaining)
 - [ ] Deduplicated candidate pool counted
 

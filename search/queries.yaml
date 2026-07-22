@@ -23,7 +23,7 @@ meta:
   substituted_source_cap: 50
   openalex_mailto: "jerry.adamsf@gmail.com"
   # Verified against OpenAlex API at v1.2 adoption; re-check if runs fail.
-  openalex_acm_publisher_id: "P4310320503"
+  openalex_acm_publisher_id: "P4310319798"
   date_slices:
     - "2019"
     - "2020"

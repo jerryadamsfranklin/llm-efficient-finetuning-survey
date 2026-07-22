@@ -1,0 +1,18 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "prompt tuning prefix tuning soft prompts",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T16:02:01Z",
+  "total_results_reported": 0,
+  "returned": 0,
+  "returned_in_coverage_window": 0,
+  "hit_result_cap": false,
+  "hits": [],
+  "hits_in_coverage_window": [],
+  "request_url_example": "https://dblp.org/search/publ/api?q=prompt%20tuning%20prefix%20tuning%20soft%20prompts&h=50&format=json"
+}

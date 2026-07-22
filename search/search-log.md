@@ -4,7 +4,7 @@ Human-readable record of every query run.
 
 **Protocol version:** 1.2 (source substitution; v1.1 automated discovery retained)  
 **Coverage window:** 2019-01-01 to 2026-06-30  
-**Status:** Protocol v1.2 — IEEE / OpenAlex / DBLP pending execution after amendment commit; Google Scholar still manual.
+**Status:** Protocol v1.2 search runs in progress / completed (see entries below).
 
 ## Manual sources (owner-filled)
 
@@ -1192,3 +1192,345 @@ records per capped quarter were retrieved, not the full candidate set.
 This is consistent with the stated retrieval-cap stopping rule
 (amendment section 5.1) and is disclosed in the manuscript methodology
 and in Section 10.4 (Limitations).
+
+### openalex — B1_peft — query 1
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-22T15:42:34Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=194944; HIT_CAP=50
+
+### openalex — B1_peft — query 2
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-22T15:42:34Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=27847; HIT_CAP=50
+
+### openalex — B1_peft — query 3
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-22T15:42:35Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=14774; HIT_CAP=50
+
+### openalex — B1_peft — query 4
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-22T15:42:36Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=5939; HIT_CAP=50
+
+### openalex — B1_peft — query 5
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-22T15:42:37Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=194307; HIT_CAP=50
+
+### openalex — B2_quantization — query 1
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-22T15:42:38Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=34564; HIT_CAP=50
+
+### openalex — B2_quantization — query 2
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-22T15:42:39Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=1117; HIT_CAP=50
+
+### openalex — B2_quantization — query 3
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-22T15:42:39Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=3809; HIT_CAP=50
+
+### openalex — B2_quantization — query 4
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-22T15:42:40Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=27811; HIT_CAP=50
+
+### openalex — B2_quantization — query 5
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-22T15:42:41Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=13411; HIT_CAP=50
+
+### openalex — B3_memory — query 1
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-22T15:42:42Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=11679; HIT_CAP=50
+
+### openalex — B3_memory — query 2
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-22T15:42:43Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=4640; HIT_CAP=50
+
+### openalex — B3_memory — query 3
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-22T15:42:44Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=440; HIT_CAP=50
+
+### openalex — B3_memory — query 4
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-22T15:42:45Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=263775; HIT_CAP=50
+
+### openalex — B4_federated — query 1
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-22T15:42:46Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=52467; HIT_CAP=50
+
+### openalex — B4_federated — query 2
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-22T15:42:47Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=3081; HIT_CAP=50
+
+### openalex — B4_federated — query 3
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-22T15:42:48Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=179749; HIT_CAP=50
+
+### openalex — B4_federated — query 4
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-22T15:42:49Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=3492; HIT_CAP=50
+
+### dblp — ADOPTION — query 0
+- **Query:** (meta)
+- **Date run:** 2026-07-22T16:01:47Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; DBLP ADOPTED as optional CS-venue completeness check; h=50 cap at request time; uses s2_queries keyword variants
+
+### dblp — B1_peft — query 1
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-22T15:42:57Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=80; in_coverage_window=50 (DBLP has no server-side year filter; window applied post-hoc for notes only); HIT_CAP=50
+
+### dblp — B1_peft — query 2
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-22T15:42:59Z
+- **Results returned:** 16
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=16; in_coverage_window=16 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B1_peft — query 3
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-22T16:01:49Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### openalex_acm — B1_peft — query 1
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-22T15:46:17Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=1014; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B1_peft — query 2
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-22T15:46:18Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=86; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B1_peft — query 3
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-22T15:46:19Z
+- **Results returned:** 33
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=33; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B1_peft — query 4
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-22T15:46:20Z
+- **Results returned:** 20
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=20; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B1_peft — query 5
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-22T15:46:20Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=994; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B2_quantization — query 1
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-22T15:46:21Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=227; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B2_quantization — query 2
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-22T15:46:22Z
+- **Results returned:** 3
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=3; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B2_quantization — query 3
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-22T15:46:22Z
+- **Results returned:** 14
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=14; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B2_quantization — query 4
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-22T15:46:23Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=187; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B2_quantization — query 5
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-22T15:46:24Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=206; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B3_memory — query 1
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-22T15:46:25Z
+- **Results returned:** 42
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=42; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B3_memory — query 2
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-22T15:46:25Z
+- **Results returned:** 15
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=15; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B3_memory — query 3
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-22T15:46:26Z
+- **Results returned:** 6
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=6; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B3_memory — query 4
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-22T15:46:27Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=1556; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B4_federated — query 1
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-22T15:46:28Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=349; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B4_federated — query 2
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-22T15:46:29Z
+- **Results returned:** 19
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=19; ACM publisher_lineage=P4310319798
+
+### openalex_acm — B4_federated — query 3
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-22T15:46:29Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=854; ACM publisher_lineage=P4310319798; HIT_CAP=50
+
+### openalex_acm — B4_federated — query 4
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-22T15:46:30Z
+- **Results returned:** 34
+- **Notes:** protocol=1.2; s2_keyword_variant (not boolean); per_page=50 requested (cap at request time); sort=relevance_score:desc; API totalReported=34; ACM publisher_lineage=P4310319798
+
+### dblp — B1_peft — query 4
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-22T16:02:01Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B1_peft — query 5
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-22T15:46:40Z
+- **Results returned:** 11
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=11; in_coverage_window=11 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B2_quantization — query 1
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-22T15:46:41Z
+- **Results returned:** 12
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=12; in_coverage_window=12 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B2_quantization — query 2
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-22T16:02:11Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B2_quantization — query 3
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-22T16:02:24Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B2_quantization — query 4
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-22T15:53:53Z
+- **Results returned:** 17
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=17; in_coverage_window=17 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B2_quantization — query 5
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-22T16:02:52Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B3_memory — query 1
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-22T16:03:26Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B3_memory — query 2
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-22T15:57:23Z
+- **Results returned:** 2
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=2; in_coverage_window=2 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B3_memory — query 3
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-22T16:03:32Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B3_memory — query 4
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-22T15:57:37Z
+- **Results returned:** 5
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=5; in_coverage_window=5 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B4_federated — query 1
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-22T15:57:43Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=73; in_coverage_window=50 (DBLP has no server-side year filter; window applied post-hoc for notes only); HIT_CAP=50
+
+### dblp — B4_federated — query 2
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-22T16:03:36Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B4_federated — query 3
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-22T15:57:53Z
+- **Results returned:** 1
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=1; in_coverage_window=1 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### dblp — B4_federated — query 4
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-22T16:03:43Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; s2_keyword_variant; h=50 requested (cap at request time); API totalReported=0; in_coverage_window=0 (DBLP has no server-side year filter; window applied post-hoc for notes only)
+
+### openalex_acm — PUBLISHER_VERIFY — query 0
+- **Query:** (meta)
+- **Date run:** 2026-07-22T16:04:01Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; verified OpenAlex publisher P4310319798 = Association for Computing Machinery (amendment draft ID P4310320503 returned 404 and was replaced)
+
+### dblp — ZERO_RESULTS — query 0
+- **Query:** (meta)
+- **Date run:** 2026-07-22T16:04:01Z
+- **Results returned:** 0
+- **Notes:** protocol=1.2; 9/18 s2_queries returned total=0 from DBLP after retry — treated as genuine DBLP keyword misses (strict matching), not silent skips; cap h=50 still applied on non-empty queries

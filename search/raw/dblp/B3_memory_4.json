@@ -1,0 +1,458 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "memory optimization large language model training",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:57:37Z",
+  "total_results_reported": 5,
+  "returned": 5,
+  "returned_in_coverage_window": 5,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "6",
+      "@id": "585094",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "286/8500",
+              "text": "Zhanda Zhu"
+            },
+            {
+              "@pid": "220/6773",
+              "text": "Christina Giannoula"
+            },
+            {
+              "@pid": "331/5445",
+              "text": "Muralidhar Andoorveedu"
+            },
+            {
+              "@pid": "276/5663",
+              "text": "Qidong Su"
+            },
+            {
+              "@pid": "200/8205",
+              "text": "Karttikeya Mangalam"
+            },
+            {
+              "@pid": "207/1838",
+              "text": "Bojian Zheng"
+            },
+            {
+              "@pid": "118/8979",
+              "text": "Gennady Pekhimenko"
+            }
+          ]
+        },
+        "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization.",
+        "venue": "EuroSys",
+        "pages": "1298-1316",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/eurosys/ZhuGASMZP25",
+        "doi": "10.1145/3689031.3717461",
+        "ee": "https://doi.org/10.1145/3689031.3717461",
+        "url": "https://dblp.org/rec/conf/eurosys/ZhuGASMZP25"
+      },
+      "url": "URL#585094"
+    },
+    {
+      "@score": "6",
+      "@id": "626186",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/5612",
+              "text": "Yiming Chen"
+            },
+            {
+              "@pid": "48/2168",
+              "text": "Yuan Zhang"
+            },
+            {
+              "@pid": "10/3416",
+              "text": "Yin Liu"
+            },
+            {
+              "@pid": "74/4607",
+              "text": "Kun Yuan"
+            },
+            {
+              "@pid": "26/8184",
+              "text": "Zaiwen Wen"
+            }
+          ]
+        },
+        "title": "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/ChenZLYW25",
+        "ee": "https://proceedings.mlr.press/v267/chen25cj.html",
+        "url": "https://dblp.org/rec/conf/icml/ChenZLYW25"
+      },
+      "url": "URL#626186"
+    },
+    {
+      "@score": "6",
+      "@id": "736969",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/5612-3",
+              "text": "Yiming Chen 0003"
+            },
+            {
+              "@pid": "48/2168",
+              "text": "Yuan Zhang"
+            },
+            {
+              "@pid": "10/3416",
+              "text": "Yin Liu"
+            },
+            {
+              "@pid": "74/4607-1",
+              "text": "Kun Yuan 0001"
+            },
+            {
+              "@pid": "26/8184",
+              "text": "Zaiwen Wen"
+            }
+          ]
+        },
+        "title": "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.07222",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-07222",
+        "doi": "10.48550/ARXIV.2502.07222",
+        "ee": "https://doi.org/10.48550/arXiv.2502.07222",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-07222"
+      },
+      "url": "URL#736969"
+    },
+    {
+      "@score": "6",
+      "@id": "755145",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "286/8500",
+              "text": "Zhanda Zhu"
+            },
+            {
+              "@pid": "220/6773",
+              "text": "Christina Giannoula"
+            },
+            {
+              "@pid": "331/5445",
+              "text": "Muralidhar Andoorveedu"
+            },
+            {
+              "@pid": "276/5663",
+              "text": "Qidong Su"
+            },
+            {
+              "@pid": "200/8205",
+              "text": "Karttikeya Mangalam"
+            },
+            {
+              "@pid": "207/1838",
+              "text": "Bojian Zheng"
+            },
+            {
+              "@pid": "118/8979",
+              "text": "Gennady Pekhimenko"
+            }
+          ]
+        },
+        "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization.",
+        "venue": "CoRR",
+        "volume": "abs/2503.19050",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-19050",
+        "doi": "10.48550/ARXIV.2503.19050",
+        "ee": "https://doi.org/10.48550/arXiv.2503.19050",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-19050"
+      },
+      "url": "URL#755145"
+    },
+    {
+      "@score": "6",
+      "@id": "847275",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "62/5839",
+              "text": "Jing Yang"
+            },
+            {
+              "@pid": "399/7561",
+              "text": "Kaitong Cai"
+            },
+            {
+              "@pid": "31/3097",
+              "text": "Yijia Fan"
+            },
+            {
+              "@pid": "96/10784",
+              "text": "Yufeng Yang"
+            },
+            {
+              "@pid": "135/4889",
+              "text": "Keze Wang"
+            }
+          ]
+        },
+        "title": "Backward-Friendly Optimization: Training Large Language Models with Approximate Gradients under Memory Constraints.",
+        "venue": "CoRR",
+        "volume": "abs/2510.22467",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-22467",
+        "doi": "10.48550/ARXIV.2510.22467",
+        "ee": "https://doi.org/10.48550/arXiv.2510.22467",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-22467"
+      },
+      "url": "URL#847275"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "6",
+      "@id": "585094",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "286/8500",
+              "text": "Zhanda Zhu"
+            },
+            {
+              "@pid": "220/6773",
+              "text": "Christina Giannoula"
+            },
+            {
+              "@pid": "331/5445",
+              "text": "Muralidhar Andoorveedu"
+            },
+            {
+              "@pid": "276/5663",
+              "text": "Qidong Su"
+            },
+            {
+              "@pid": "200/8205",
+              "text": "Karttikeya Mangalam"
+            },
+            {
+              "@pid": "207/1838",
+              "text": "Bojian Zheng"
+            },
+            {
+              "@pid": "118/8979",
+              "text": "Gennady Pekhimenko"
+            }
+          ]
+        },
+        "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization.",
+        "venue": "EuroSys",
+        "pages": "1298-1316",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/eurosys/ZhuGASMZP25",
+        "doi": "10.1145/3689031.3717461",
+        "ee": "https://doi.org/10.1145/3689031.3717461",
+        "url": "https://dblp.org/rec/conf/eurosys/ZhuGASMZP25"
+      },
+      "url": "URL#585094"
+    },
+    {
+      "@score": "6",
+      "@id": "626186",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/5612",
+              "text": "Yiming Chen"
+            },
+            {
+              "@pid": "48/2168",
+              "text": "Yuan Zhang"
+            },
+            {
+              "@pid": "10/3416",
+              "text": "Yin Liu"
+            },
+            {
+              "@pid": "74/4607",
+              "text": "Kun Yuan"
+            },
+            {
+              "@pid": "26/8184",
+              "text": "Zaiwen Wen"
+            }
+          ]
+        },
+        "title": "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/ChenZLYW25",
+        "ee": "https://proceedings.mlr.press/v267/chen25cj.html",
+        "url": "https://dblp.org/rec/conf/icml/ChenZLYW25"
+      },
+      "url": "URL#626186"
+    },
+    {
+      "@score": "6",
+      "@id": "736969",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/5612-3",
+              "text": "Yiming Chen 0003"
+            },
+            {
+              "@pid": "48/2168",
+              "text": "Yuan Zhang"
+            },
+            {
+              "@pid": "10/3416",
+              "text": "Yin Liu"
+            },
+            {
+              "@pid": "74/4607-1",
+              "text": "Kun Yuan 0001"
+            },
+            {
+              "@pid": "26/8184",
+              "text": "Zaiwen Wen"
+            }
+          ]
+        },
+        "title": "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.07222",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-07222",
+        "doi": "10.48550/ARXIV.2502.07222",
+        "ee": "https://doi.org/10.48550/arXiv.2502.07222",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-07222"
+      },
+      "url": "URL#736969"
+    },
+    {
+      "@score": "6",
+      "@id": "755145",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "286/8500",
+              "text": "Zhanda Zhu"
+            },
+            {
+              "@pid": "220/6773",
+              "text": "Christina Giannoula"
+            },
+            {
+              "@pid": "331/5445",
+              "text": "Muralidhar Andoorveedu"
+            },
+            {
+              "@pid": "276/5663",
+              "text": "Qidong Su"
+            },
+            {
+              "@pid": "200/8205",
+              "text": "Karttikeya Mangalam"
+            },
+            {
+              "@pid": "207/1838",
+              "text": "Bojian Zheng"
+            },
+            {
+              "@pid": "118/8979",
+              "text": "Gennady Pekhimenko"
+            }
+          ]
+        },
+        "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization.",
+        "venue": "CoRR",
+        "volume": "abs/2503.19050",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-19050",
+        "doi": "10.48550/ARXIV.2503.19050",
+        "ee": "https://doi.org/10.48550/arXiv.2503.19050",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-19050"
+      },
+      "url": "URL#755145"
+    },
+    {
+      "@score": "6",
+      "@id": "847275",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "62/5839",
+              "text": "Jing Yang"
+            },
+            {
+              "@pid": "399/7561",
+              "text": "Kaitong Cai"
+            },
+            {
+              "@pid": "31/3097",
+              "text": "Yijia Fan"
+            },
+            {
+              "@pid": "96/10784",
+              "text": "Yufeng Yang"
+            },
+            {
+              "@pid": "135/4889",
+              "text": "Keze Wang"
+            }
+          ]
+        },
+        "title": "Backward-Friendly Optimization: Training Large Language Models with Approximate Gradients under Memory Constraints.",
+        "venue": "CoRR",
+        "volume": "abs/2510.22467",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-22467",
+        "doi": "10.48550/ARXIV.2510.22467",
+        "ee": "https://doi.org/10.48550/arXiv.2510.22467",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-22467"
+      },
+      "url": "URL#847275"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=memory%20optimization%20large%20language%20model%20training&h=50&format=json"
+}
