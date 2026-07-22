@@ -1,0 +1,1157 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"quantization\" AND \"large language model\" AND \"fine-tuning\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202301010000 TO 202312312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22quantization%22+AND+%22large+language+model%22+AND+%22fine-tuning%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202301010000+TO+202312312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:36:20Z",
+  "total_results_reported": 29,
+  "returned": 29,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2401.00503v1",
+      "arxiv_id": "2401.00503v1",
+      "title": "Viz: A QLoRA-based Copyright Marketplace for Legally Compliant Generative AI",
+      "summary": "This paper aims to introduce and analyze the Viz system in a comprehensive way, a novel system architecture that integrates Quantized Low-Rank Adapters (QLoRA) to fine-tune large language models (LLM) within a legally compliant and resource efficient marketplace. Viz represents a significant contribution to the field of artificial intelligence, particularly in addressing the challenges of computational efficiency, legal compliance, and economic sustainability in the utilization and monetization of LLMs. The paper delineates the scholarly discourse and developments that have informed the creation of Viz, focusing primarily on the advancements in LLM models, copyright issues in AI training (NYT case, 2023), and the evolution of model fine-tuning techniques, particularly low-rank adapters and quantized low-rank adapters, to create a sustainable and economically compliant framework for LLM utilization. The economic model it proposes benefits content creators, AI developers, and end-users, delineating a harmonious integration of technology, economy, and law, offering a comprehensive solution to the complex challenges of today's AI landscape.",
+      "published": "2023-12-31T13:53:06Z",
+      "updated": "2023-12-31T13:53:06Z",
+      "authors": [
+        "Dipankar Sarkar"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.12682v1",
+      "arxiv_id": "2312.12682v1",
+      "title": "Mini-GPTs: Efficient Large Language Models through Contextual Pruning",
+      "summary": "In AI research, the optimization of Large Language Models (LLMs) remains a significant challenge, crucial for advancing the field's practical applications and sustainability. Building upon the foundational work of Professor Song Han's lab at MIT, this paper introduces a novel approach in developing Mini-GPTs via contextual pruning. Our methodology strategically prunes the computational architecture of traditional LLMs, like Phi-1.5, focusing on retaining core functionalities while drastically reducing model sizes. We employ the technique across diverse and complex datasets, including US law, Medical Q&A, Skyrim dialogue, English-Taiwanese translation, and Economics articles. The results underscore the efficiency and effectiveness of contextual pruning, not merely as a theoretical concept but as a practical tool in developing domain-specific, resource-efficient LLMs. Contextual pruning is a promising method for building domain-specific LLMs, and this research is a building block towards future development with more hardware compute, refined fine-tuning, and quantization.",
+      "published": "2023-12-20T00:48:13Z",
+      "updated": "2023-12-20T00:48:13Z",
+      "authors": [
+        "Tim Valicenti",
+        "Justice Vidal",
+        "Ritik Patnaik"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.10365v1",
+      "arxiv_id": "2312.10365v1",
+      "title": "SPT: Fine-Tuning Transformer-based Language Models Efficiently with Sparsification",
+      "summary": "Transformer-based large language models (e.g., BERT and GPT) achieve great success, and fine-tuning, which tunes a pre-trained model on a task-specific dataset, is the standard practice to utilize these models for downstream tasks. However, Transformer fine-tuning has long running time and high memory consumption due to the large size of the models. We propose the SPT system to fine-tune Transformer-based models efficiently by introducing sparsity. We observe that the memory consumption of Transformer mainly comes from storing attention weights for multi-head attention (MHA), and the majority of running time is spent on feed-forward network (FFN). Thus, we design the sparse MHA module, which computes and stores only large attention weights to reduce memory consumption, and the routed FFN module, which dynamically activates a subset of model parameters for each token to reduce computation cost. We implement SPT on PyTorch and customize CUDA kernels to run sparse MHA and routed FFN efficiently. Specifically, we use product quantization to identify the large attention weights and compute attention via sparse matrix multiplication for sparse MHA. For routed FFN, we batch the tokens according to their activated model parameters for efficient computation. We conduct extensive experiments to evaluate SPT on various model configurations. The results show that SPT consistently outperforms well-optimized baselines, reducing the peak memory consumption by up to 50% and accelerating fine-tuning by up to 2.2x.",
+      "published": "2023-12-16T07:44:52Z",
+      "updated": "2023-12-16T07:44:52Z",
+      "authors": [
+        "Yuntao Gui",
+        "Xiao Yan",
+        "Peiqi Yin",
+        "Han Yang",
+        "James Cheng"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.03687v2",
+      "arxiv_id": "2311.03687v2",
+      "title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models",
+      "summary": "Large Language Models (LLMs) have seen great advance in both academia and industry, and their popularity results in numerous open-source frameworks and techniques in accelerating LLM pre-training, fine-tuning, and inference. Training and deploying LLMs are expensive as it requires considerable computing resources and memory, hence many efficient approaches have been developed for improving system pipelines as well as operators. However, the runtime performance can vary significantly across hardware and software stacks, which makes it difficult to choose the best configuration. In this work, we aim to benchmark the performance from both macro and micro perspectives. First, we benchmark the end-to-end performance of pre-training, fine-tuning, and serving LLMs in different sizes , i.e., 7, 13, and 70 billion parameters (7B, 13B, and 70B) on three 8-GPU platforms with and without individual optimization techniques, including ZeRO, quantization, recomputation, FlashAttention. Then, we dive deeper to provide a detailed runtime analysis of the sub-modules, including computing and communication operators in LLMs. For end users, our benchmark and findings help better understand different optimization techniques, training and inference frameworks, together with hardware platforms in choosing configurations for deploying LLMs. For researchers, our in-depth module-wise analyses discover potential opportunities for future work to further optimize the runtime performance of LLMs.",
+      "published": "2023-11-07T03:25:56Z",
+      "updated": "2023-12-01T15:37:07Z",
+      "authors": [
+        "Longteng Zhang",
+        "Xiang Liu",
+        "Zeyu Li",
+        "Xinglin Pan",
+        "Peijie Dong",
+        "Ruibo Fan",
+        "Rui Guo",
+        "Xin Wang",
+        "Qiong Luo",
+        "Shaohuai Shi",
+        "Xiaowen Chu"
+      ],
+      "categories": [
+        "cs.PF",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.20624v2",
+      "arxiv_id": "2310.20624v2",
+      "title": "LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B",
+      "summary": "AI developers often apply safety alignment procedures to prevent the misuse of their AI systems. For example, before Meta released Llama 2-Chat - a collection of instruction fine-tuned large language models - they invested heavily in safety training, incorporating extensive red-teaming and reinforcement learning from human feedback. We explore the robustness of safety training in language models by subversively fine-tuning Llama 2-Chat. We employ quantized low-rank adaptation (LoRA) as an efficient fine-tuning method. With a budget of less than \\$200 and using only one GPU, we successfully undo the safety training of Llama 2-Chat models of sizes 7B, 13B, and 70B and on the Mixtral instruct model. Specifically, our fine-tuning technique significantly reduces the rate at which the model refuses to follow harmful instructions. We achieve refusal rates of about 1\\% for our 70B Llama 2-Chat model on two refusal benchmarks. Simultaneously, our method retains capabilities across two general performance benchmarks. We show that subversive fine-tuning is practical and effective, and hence argue that evaluating risks from fine-tuning should be a core part of risk assessments for releasing model weights. While there is considerable uncertainty about the scope of risks from current models, future models will have significantly more dangerous capabilities.",
+      "published": "2023-10-31T16:55:06Z",
+      "updated": "2024-05-22T08:39:46Z",
+      "authors": [
+        "Simon Lermen",
+        "Charlie Rogers-Smith",
+        "Jeffrey Ladish"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16861v1",
+      "arxiv_id": "2310.16861v1",
+      "title": "General Point Model with Autoencoding and Autoregressive",
+      "summary": "The pre-training architectures of large language models encompass various types, including autoencoding models, autoregressive models, and encoder-decoder models. We posit that any modality can potentially benefit from a large language model, as long as it undergoes vector quantization to become discrete tokens. Inspired by GLM, we propose a General Point Model (GPM) which seamlessly integrates autoencoding and autoregressive tasks in point cloud transformer. This model is versatile, allowing fine-tuning for downstream point cloud representation tasks, as well as unconditional and conditional generation tasks. GPM enhances masked prediction in autoencoding through various forms of mask padding tasks, leading to improved performance in point cloud understanding. Additionally, GPM demonstrates highly competitive results in unconditional point cloud generation tasks, even exhibiting the potential for conditional generation tasks by modifying the input's conditional information. Compared to models like Point-BERT, MaskPoint and PointMAE, our GPM achieves superior performance in point cloud understanding tasks. Furthermore, the integration of autoregressive and autoencoding within the same transformer underscores its versatility across different downstream tasks.",
+      "published": "2023-10-25T06:08:24Z",
+      "updated": "2023-10-25T06:08:24Z",
+      "authors": [
+        "Zhe Li",
+        "Zhangyang Gao",
+        "Cheng Tan",
+        "Stan Z. Li",
+        "Laurence T. Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.11237v1",
+      "arxiv_id": "2310.11237v1",
+      "title": "Watermarking LLMs with Weight Quantization",
+      "summary": "Abuse of large language models reveals high risks as large language models are being deployed at an astonishing speed. It is important to protect the model weights to avoid malicious usage that violates licenses of open-source large language models. This paper proposes a novel watermarking strategy that plants watermarks in the quantization process of large language models without pre-defined triggers during inference. The watermark works when the model is used in the fp32 mode and remains hidden when the model is quantized to int8, in this way, the users can only inference the model without further supervised fine-tuning of the model. We successfully plant the watermark into open-source large language model weights including GPT-Neo and LLaMA. We hope our proposed method can provide a potential direction for protecting model weights in the era of large language model applications.",
+      "published": "2023-10-17T13:06:59Z",
+      "updated": "2023-10-17T13:06:59Z",
+      "authors": [
+        "Linyang Li",
+        "Botian Jiang",
+        "Pengyu Wang",
+        "Ke Ren",
+        "Hang Yan",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.08659v4",
+      "arxiv_id": "2310.08659v4",
+      "title": "LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models",
+      "summary": "Quantization is an indispensable technique for serving Large Language Models (LLMs) and has recently found its way into LoRA fine-tuning. In this work we focus on the scenario where quantization and LoRA fine-tuning are applied together on a pre-trained model. In such cases it is common to observe a consistent gap in the performance on downstream tasks between full fine-tuning and quantization plus LoRA fine-tuning approach. In response, we propose LoftQ (LoRA-Fine-Tuning-aware Quantization), a novel quantization framework that simultaneously quantizes an LLM and finds a proper low-rank initialization for LoRA fine-tuning. Such an initialization alleviates the discrepancy between the quantized and full-precision model and significantly improves generalization in downstream tasks. We evaluate our method on natural language understanding, question answering, summarization, and natural language generation tasks. Experiments show that our method is highly effective and outperforms existing quantization methods, especially in the challenging 2-bit and 2/4-bit mixed precision regimes. The code is available on https://github.com/yxli2123/LoftQ.",
+      "published": "2023-10-12T18:34:08Z",
+      "updated": "2023-11-28T16:06:59Z",
+      "authors": [
+        "Yixiao Li",
+        "Yifan Yu",
+        "Chen Liang",
+        "Pengcheng He",
+        "Nikos Karampatziakis",
+        "Weizhu Chen",
+        "Tuo Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.07147v3",
+      "arxiv_id": "2310.07147v3",
+      "title": "QFT: Quantized Full-parameter Tuning of LLMs with Affordable Resources",
+      "summary": "Large Language Models (LLMs) have showcased remarkable impacts across a wide spectrum of natural language processing tasks. Fine-tuning these pretrained models on downstream datasets provides further significant performance gains; however, this process typically requires a large number of expensive, high-end GPUs. Although there have been efforts focused on parameter-efficient fine-tuning, they cannot fully unlock the powerful potential of full-parameter fine-tuning. In this paper, we propose QFT, a Quantized Full-parameter Tuning framework for LLMs that quantizes and stores all training states, including weights, gradients, and optimizer states, in INT8 format to reduce training memory, thereby enabling full-parameter fine-tuning on existing GPUs at an affordable cost. To ensure training performance, we make two key efforts: i) for quantized gradients and optimizer states, we theoretically prove that the Lion optimizer, with its property of consistent update magnitudes, is highly robust to quantization; ii) and for quantized weights, we employ the hybrid feature quantizer, which identifies and protects a small subset of sparse critical features while quantizing the remaining dense features, thus ensuring accurate weight updates without FP32 backups. Moreover, to support backpropagation in the integer context, we develop a stack-based gradient flow scheme with O(1) complexity, forming a unified integer training pipeline. As a result, QFT reduces the model state memory to 21% of the standard solution while achieving comparable performance, e.g., tuning a LLaMA-7B model requires only <30GB of memory, making it feasible on a single A6000 GPU.",
+      "published": "2023-10-11T02:47:40Z",
+      "updated": "2026-03-18T04:23:42Z",
+      "authors": [
+        "Zhikai Li",
+        "Xiaoxuan Liu",
+        "Banghua Zhu",
+        "Zhen Dong",
+        "Qingyi Gu",
+        "Kurt Keutzer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.06927v2",
+      "arxiv_id": "2310.06927v2",
+      "title": "Sparse Fine-tuning for Inference Acceleration of Large Language Models",
+      "summary": "We consider the problem of accurate sparse fine-tuning of large language models (LLMs), that is, fine-tuning pretrained LLMs on specialized tasks, while inducing sparsity in their weights. On the accuracy side, we observe that standard loss-based fine-tuning may fail to recover accuracy, especially at high sparsities. To address this, we perform a detailed study of distillation-type losses, determining an L2-based distillation approach we term SquareHead which enables accurate recovery even at higher sparsities, across all model types. On the practical efficiency side, we show that sparse LLMs can be executed with speedups by taking advantage of sparsity, for both CPU and GPU runtimes. While the standard approach is to leverage sparsity for computational reduction, we observe that in the case of memory-bound LLMs sparsity can also be leveraged for reducing memory bandwidth. We exhibit end-to-end results showing speedups due to sparsity, while recovering accuracy, on T5 (language translation), Whisper (speech translation), and open GPT-type (MPT for text generation). For MPT text generation, we show for the first time that sparse fine-tuning can reach 75% sparsity without accuracy drops, provide notable end-to-end speedups for both CPU and GPU inference, and highlight that sparsity is also compatible with quantization approaches. Models and software for reproducing our results are provided in Section 6.",
+      "published": "2023-10-10T18:28:38Z",
+      "updated": "2023-10-13T13:47:44Z",
+      "authors": [
+        "Eldar Kurtic",
+        "Denis Kuznedelev",
+        "Elias Frantar",
+        "Michael Goin",
+        "Dan Alistarh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.01434v1",
+      "arxiv_id": "2310.01434v1",
+      "title": "Revolutionizing Mobile Interaction: Enabling a 3 Billion Parameter GPT LLM on Mobile",
+      "summary": "The field of Artificial Intelligence has witnessed remarkable progress in recent years, especially with the emergence of powerful large language models (LLMs) based on the transformer architecture. Cloud-based LLMs, such as OpenAI's ChatGPT, offer impressive capabilities but come with concerns regarding latency and privacy due to network dependencies. This article presents an innovative approach to LLM inference, envisioning a future where LLMs with billions of parameters can be executed directly on mobile devices without network connectivity. The article showcases a fine-tuned GPT LLM with 3 billion parameters that can operate smoothly on devices with as low as 4GB of memory. Through the integration of native code and model quantization techniques, the application not only serves as a general-purpose assistant but also facilitates seamless mobile interactions with text-to-actions features. The article provides insights into the training pipeline, implementation details, test results, and future directions of on-device LLM inference. This breakthrough technology opens up possibilities for empowering users with sophisticated AI capabilities while preserving their privacy and eliminating latency concerns.",
+      "published": "2023-09-29T16:30:49Z",
+      "updated": "2023-09-29T16:30:49Z",
+      "authors": [
+        "Samuel Carreira",
+        "Tomás Marques",
+        "José Ribeiro",
+        "Carlos Grilo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.16739v4",
+      "arxiv_id": "2309.16739v4",
+      "title": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+      "summary": "Large language models (LLMs), which have shown remarkable capabilities, are revolutionizing AI development and potentially shaping our future. However, given their multimodality, the status quo cloud-based deployment faces some critical challenges: 1) long response time; 2) high bandwidth costs; and 3) the violation of data privacy. 6G mobile edge computing (MEC) systems may resolve these pressing issues. In this article, we explore the potential of deploying LLMs at the 6G edge. We start by introducing killer applications powered by multimodal LLMs, including robotics and healthcare, to highlight the need for deploying LLMs in the vicinity of end users. Then, we identify the critical challenges for LLM deployment at the edge and envision the 6G MEC architecture for LLMs. Furthermore, we delve into two design aspects, i.e., edge training and edge inference for LLMs. In both aspects, considering the inherent resource limitations at the edge, we discuss various cutting-edge techniques, including split learning/inference, parameter-efficient fine-tuning, quantization, and parameter-sharing inference, to facilitate the efficient deployment of LLMs. This article serves as a position paper for thoroughly identifying the motivation, challenges, and pathway for empowering LLMs at the 6G edge.",
+      "published": "2023-09-28T06:22:59Z",
+      "updated": "2025-06-04T07:22:47Z",
+      "authors": [
+        "Zheng Lin",
+        "Guanqiao Qu",
+        "Qiyuan Chen",
+        "Xianhao Chen",
+        "Zhe Chen",
+        "Kaibin Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14717v2",
+      "arxiv_id": "2309.14717v2",
+      "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "summary": "Recently years have witnessed a rapid development of large language models (LLMs). Despite the strong ability in many language-understanding tasks, the heavy computational burden largely restricts the application of LLMs especially when one needs to deploy them onto edge devices. In this paper, we propose a quantization-aware low-rank adaptation (QA-LoRA) algorithm. The motivation lies in the imbalanced degrees of freedom of quantization and adaptation, and the solution is to use group-wise operators which increase the degree of freedom of quantization meanwhile decreasing that of adaptation. QA-LoRA is easily implemented with a few lines of code, and it equips the original LoRA with two-fold abilities: (i) during fine-tuning, the LLM's weights are quantized (e.g., into INT4) to reduce time and memory usage; (ii) after fine-tuning, the LLM and auxiliary weights are naturally integrated into a quantized model without loss of accuracy. We apply QA-LoRA to the LLaMA and LLaMA2 model families and validate its effectiveness in different fine-tuning datasets and downstream scenarios. Code will be made available at https://github.com/yuhuixu1993/qa-lora.",
+      "published": "2023-09-26T07:22:23Z",
+      "updated": "2023-10-09T07:39:04Z",
+      "authors": [
+        "Yuhui Xu",
+        "Lingxi Xie",
+        "Xiaotao Gu",
+        "Xin Chen",
+        "Heng Chang",
+        "Hengheng Zhang",
+        "Zhengsu Chen",
+        "Xiaopeng Zhang",
+        "Qi Tian"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14021v1",
+      "arxiv_id": "2309.14021v1",
+      "title": "LORD: Low Rank Decomposition Of Monolingual Code LLMs For One-Shot Compression",
+      "summary": "Low Rank Decomposition of matrix - splitting a large matrix into a product of two smaller matrix offers a means for compression that reduces the parameters of a model without sparsification, and hence delivering more speedup on modern hardware. Moreover, unlike quantization, the compressed linear layers remain fully differentiable and all the parameters trainable, while being able to leverage the existing highly efficient kernels over floating point matrices. We study the potential to compress Large Language Models (LLMs) for monolingual Code generation via Low Rank Decomposition (LoRD) and observe that ranks for the linear layers in these models can be reduced by upto 39.58% with less than 1% increase in perplexity. We then use Low Rank Decomposition (LoRD) to compress StarCoder 16B to 13.2B parameter with no drop and to 12.3B with minimal drop in HumanEval Pass@1 score, in less than 10 minutes on a single A100. The compressed models speeds up inference by up to 22.35% with just a single line of change in code over huggingface's implementation with pytorch backend. Low Rank Decomposition (LoRD) models remain compatible with state of the art near-lossless quantization method such as SpQR, which allows leveraging further compression gains of quantization. Lastly, QLoRA over Low Rank Decomposition (LoRD) model further reduces memory requirements by as much as 21.2% over vanilla QLoRA while offering similar gains from parameter efficient fine tuning. Our work shows Low Rank Decomposition (LoRD) as a promising new paradigm for LLM compression.",
+      "published": "2023-09-25T10:35:17Z",
+      "updated": "2023-09-25T10:35:17Z",
+      "authors": [
+        "Ayush Kaushal",
+        "Tejas Vaidhya",
+        "Irina Rish"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.13322v2",
+      "arxiv_id": "2309.13322v2",
+      "title": "From Text to Source: Results in Detecting Large Language Model-Generated Content",
+      "summary": "The widespread use of Large Language Models (LLMs), celebrated for their ability to generate human-like text, has raised concerns about misinformation and ethical implications. Addressing these concerns necessitates the development of robust methods to detect and attribute text generated by LLMs. This paper investigates \"Cross-Model Detection,\" by evaluating whether a classifier trained to distinguish between source LLM-generated and human-written text can also detect text from a target LLM without further training. The study comprehensively explores various LLM sizes and families, and assesses the impact of conversational fine-tuning techniques, quantization, and watermarking on classifier generalization. The research also explores Model Attribution, encompassing source model identification, model family, and model size classification, in addition to quantization and watermarking detection. Our results reveal several key findings: a clear inverse relationship between classifier effectiveness and model size, with larger LLMs being more challenging to detect, especially when the classifier is trained on data from smaller models. Training on data from similarly sized LLMs can improve detection performance from larger models but may lead to decreased performance when dealing with smaller models. Additionally, model attribution experiments show promising results in identifying source models and model families, highlighting detectable signatures in LLM-generated text, with particularly remarkable outcomes in watermarking detection, while no detectable signatures of quantization were observed. Overall, our study contributes valuable insights into the interplay of model size, family, and training data in LLM detection and attribution.",
+      "published": "2023-09-23T09:51:37Z",
+      "updated": "2024-03-27T10:50:24Z",
+      "authors": [
+        "Wissam Antoun",
+        "Benoît Sagot",
+        "Djamé Seddah"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.11295v2",
+      "arxiv_id": "2309.11295v2",
+      "title": "CPLLM: Clinical Prediction with Large Language Models",
+      "summary": "We present Clinical Prediction with Large Language Models (CPLLM), a method that involves fine-tuning a pre-trained Large Language Model (LLM) for clinical disease and readmission prediction. We utilized quantization and fine-tuned the LLM using prompts. For diagnosis prediction, we predict whether patients will be diagnosed with a target disease during their next visit or in the subsequent diagnosis, leveraging their historical diagnosis records. We compared our results to various baselines, including RETAIN, and Med-BERT, the current state-of-the-art model for disease prediction using temporal structured EHR data. In addition, We also evaluated CPLLM for patient hospital readmission prediction and compared our method's performance with benchmark baselines. Our experiments have shown that our proposed method, CPLLM, surpasses all the tested models in terms of PR-AUC and ROC-AUC metrics, showing state-of-the-art results for diagnosis prediction and patient hospital readmission prediction. Such a method can be easily implemented and integrated into the clinical process to help care providers estimate the next steps of patients",
+      "published": "2023-09-20T13:24:12Z",
+      "updated": "2024-05-02T16:42:21Z",
+      "authors": [
+        "Ofir Ben Shoham",
+        "Nadav Rappoport"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00964v2",
+      "arxiv_id": "2309.00964v2",
+      "title": "eDKM: An Efficient and Accurate Train-time Weight Clustering for Large Language Models",
+      "summary": "Since Large Language Models or LLMs have demonstrated high-quality performance on many complex language tasks, there is a great interest in bringing these LLMs to mobile devices for faster responses and better privacy protection. However, the size of LLMs (i.e., billions of parameters) requires highly effective compression to fit into storage-limited devices. Among many compression techniques, weight-clustering, a form of non-linear quantization, is one of the leading candidates for LLM compression, and supported by modern smartphones. Yet, its training overhead is prohibitively significant for LLM fine-tuning. Especially, Differentiable KMeans Clustering, or DKM, has shown the state-of-the-art trade-off between compression ratio and accuracy regression, but its large memory complexity makes it nearly impossible to apply to train-time LLM compression. In this paper, we propose a memory-efficient DKM implementation, eDKM powered by novel techniques to reduce the memory footprint of DKM by orders of magnitudes. For a given tensor to be saved on CPU for the backward pass of DKM, we compressed the tensor by applying uniquification and sharding after checking if there is no duplicated tensor previously copied to CPU. Our experimental results demonstrate that \\prjname can fine-tune and compress a pretrained LLaMA 7B model from 12.6 GB to 2.5 GB (3bit/weight) with the Alpaca dataset by reducing the train-time memory footprint of a decoder layer by 130$\\times$, while delivering good accuracy on broader LLM benchmarks (i.e., 77.7% for PIQA, 66.1% for Winograde, and so on).",
+      "published": "2023-09-02T15:16:35Z",
+      "updated": "2023-09-13T19:17:37Z",
+      "authors": [
+        "Minsik Cho",
+        "Keivan A. Vahid",
+        "Qichen Fu",
+        "Saurabh Adya",
+        "Carlo C Del Mundo",
+        "Mohammad Rastegari",
+        "Devang Naik",
+        "Peter Zatloukal"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.15987v1",
+      "arxiv_id": "2308.15987v1",
+      "title": "FPTQ: Fine-grained Post-Training Quantization for Large Language Models",
+      "summary": "In the era of large-scale language models, the substantial parameter size poses significant challenges for deployment. Being a prevalent compression technique, quantization has emerged as the mainstream practice to tackle this issue, which is mainly centered on two recipes W8A8 and W4A16 (i.e. weights and activations in such bit widths). In this study, we propose a novel W4A8 post-training quantization method for the available open-sourced LLMs, which combines the advantages of both two recipes. Therefore, we can leverage the benefit in the I/O utilization of 4-bit weight quantization and the acceleration due to 8-bit matrix computation. Nevertheless, the W4A8 faces notorious performance degradation. As a remedy, we involve layerwise activation quantization strategies which feature a novel logarithmic equalization for most intractable layers, and we combine them with fine-grained weight quantization. Without whistles and bells, we eliminate the necessity for further fine-tuning and obtain the state-of-the-art W4A8 quantized performance on BLOOM, LLaMA, and LLaMA-2 on standard benchmarks. We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.",
+      "published": "2023-08-30T12:18:18Z",
+      "updated": "2023-08-30T12:18:18Z",
+      "authors": [
+        "Qingyuan Li",
+        "Yifan Zhang",
+        "Liang Li",
+        "Peng Yao",
+        "Bo Zhang",
+        "Xiangxiang Chu",
+        "Yerui Sun",
+        "Li Du",
+        "Yuchen Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.10462v3",
+      "arxiv_id": "2308.10462v3",
+      "title": "Exploring Parameter-Efficient Fine-Tuning Techniques for Code Generation with Large Language Models",
+      "summary": "Large language models (LLMs) demonstrate impressive capabilities to generate accurate code snippets given natural language intents in a zero-shot manner, i.e., without the need for specific fine-tuning. While prior studies have highlighted the advantages of fine-tuning LLMs, this process incurs high computational costs, making it impractical in resource-scarce environments, particularly for models with billions of parameters. To address these challenges, previous research explored in-context learning (ICL) and retrieval-augmented generation (RAG) as strategies to guide the LLM generative process with task-specific prompt examples. However, ICL and RAG introduce inconveniences, such as the need for designing contextually relevant prompts and the absence of learning task-specific parameters, thereby limiting downstream task performance. In this context, we foresee parameter-efficient fine-tuning (PEFT) as a promising approach to efficiently specialize LLMs to task-specific data while maintaining reasonable resource consumption. In this paper, we deliver a comprehensive study of PEFT techniques for LLMs in the context of automated code generation. Our comprehensive investigation of PEFT techniques for LLMs reveals their superiority and potential over ICL and RAG across a diverse set of LLMs and three representative Python code generation datasets: Conala, CodeAlpacaPy, and APPS. Furthermore, our study highlights the potential for tuning larger LLMs and significant reductions in memory usage by combining PEFT with quantization. Therefore, this study opens opportunities for broader applications of PEFT in software engineering scenarios. Our code is available at https://github.com/martin-wey/peft-llm-code/.",
+      "published": "2023-08-21T04:31:06Z",
+      "updated": "2024-12-27T05:30:00Z",
+      "authors": [
+        "Martin Weyssow",
+        "Xin Zhou",
+        "Kisub Kim",
+        "David Lo",
+        "Houari Sahraoui"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.10252v1",
+      "arxiv_id": "2308.10252v1",
+      "title": "LMTuner: An user-friendly and highly-integrable Training Framework for fine-tuning Large Language Models",
+      "summary": "With the burgeoning development in the realm of large language models (LLMs), the demand for efficient incremental training tailored to specific industries and domains continues to increase. Currently, the predominantly employed frameworks lack modular design, it often takes a lot of coding work to kickstart the training of LLM. To address this, we present \"LMTuner\", a highly usable, integrable, and scalable system for training LLMs expeditiously and with minimal user-input. LMTuner comprises three main modules - the Interaction, Training, and Inference Modules. We advocate that LMTuner's usability and integrality alleviate the complexities in training large language models. Remarkably, even a novice user could commence training large language models within five minutes. Furthermore, it integrates DeepSpeed frameworks and supports Efficient Fine-Tuning methodologies like Low Rank Adaptation (LoRA), Quantized LoRA (QLoRA), etc., enabling the training of language models scaling from 300M to a whopping 130B parameters using a single server. The LMTuner's homepage (https://wengsyx.github.io/LMTuner/)and screencast video (https://youtu.be/nsXmWOmN3rE) are now publicly available.",
+      "published": "2023-08-20T12:42:19Z",
+      "updated": "2023-08-20T12:42:19Z",
+      "authors": [
+        "Yixuan Weng",
+        "Zhiqi Wang",
+        "Huanxuan Liao",
+        "Shizhu He",
+        "Shengping Liu",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.09723v1",
+      "arxiv_id": "2308.09723v1",
+      "title": "FineQuant: Unlocking Efficiency with Fine-Grained Weight-Only Quantization for LLMs",
+      "summary": "Large Language Models (LLMs) have achieved state-of-the-art performance across various language tasks but pose challenges for practical deployment due to their substantial memory requirements. Furthermore, the latest generative models suffer from high inference costs caused by the memory bandwidth bottleneck in the auto-regressive decoding process. To address these issues, we propose an efficient weight-only quantization method that reduces memory consumption and accelerates inference for LLMs. To ensure minimal quality degradation, we introduce a simple and effective heuristic approach that utilizes only the model weights of a pre-trained model. This approach is applicable to both Mixture-of-Experts (MoE) and dense models without requiring additional fine-tuning. To demonstrate the effectiveness of our proposed method, we first analyze the challenges and issues associated with LLM quantization. Subsequently, we present our heuristic approach, which adaptively finds the granularity of quantization, effectively addressing these problems. Furthermore, we implement highly efficient GPU GEMMs that perform on-the-fly matrix multiplication and dequantization, supporting the multiplication of fp16 or bf16 activations with int8 or int4 weights. We evaluate our approach on large-scale open source models such as OPT-175B and internal MoE models, showcasing minimal accuracy loss while achieving up to 3.65 times higher throughput on the same number of GPUs.",
+      "published": "2023-08-16T23:57:41Z",
+      "updated": "2023-08-16T23:57:41Z",
+      "authors": [
+        "Young Jin Kim",
+        "Rawn Henry",
+        "Raffy Fahim",
+        "Hany Hassan Awadalla"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.08072v2",
+      "arxiv_id": "2307.08072v2",
+      "title": "Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study",
+      "summary": "Despite the superior performance, Large Language Models~(LLMs) require significant computational resources for deployment and use. To overcome this issue, quantization methods have been widely applied to reduce the memory footprint of LLMs as well as increasing the inference rate. However, a major challenge is that low-bit quantization methods often lead to performance degradation. It is important to understand how quantization impacts the capacity of LLMs. Different from previous studies focused on overall performance, this work aims to investigate the impact of quantization on \\emph{emergent abilities}, which are important characteristics that distinguish LLMs from small language models. Specially, we examine the abilities of in-context learning, chain-of-thought reasoning, and instruction-following in quantized LLMs. Our empirical experiments show that these emergent abilities still exist in 4-bit quantization models, while 2-bit models encounter severe performance degradation on the test of these abilities. To improve the performance of low-bit models, we conduct two special experiments: (1) fine-gained impact analysis that studies which components (or substructures) are more sensitive to quantization, and (2) performance compensation through model fine-tuning. Our work derives a series of important findings to understand the impact of quantization on emergent abilities, and sheds lights on the possibilities of extremely low-bit quantization for LLMs.",
+      "published": "2023-07-16T15:11:01Z",
+      "updated": "2023-07-26T04:15:48Z",
+      "authors": [
+        "Peiyu Liu",
+        "Zikang Liu",
+        "Ze-Feng Gao",
+        "Dawei Gao",
+        "Wayne Xin Zhao",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Ji-Rong Wen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.14795v2",
+      "arxiv_id": "2306.14795v2",
+      "title": "MotionGPT: Human Motion as a Foreign Language",
+      "summary": "Though the advancement of pre-trained large language models unfolds, the exploration of building a unified model for language and other multi-modal data, such as motion, remains challenging and untouched so far. Fortunately, human motion displays a semantic coupling akin to human language, often perceived as a form of body language. By fusing language data with large-scale motion models, motion-language pre-training that can enhance the performance of motion-related tasks becomes feasible. Driven by this insight, we propose MotionGPT, a unified, versatile, and user-friendly motion-language model to handle multiple motion-relevant tasks. Specifically, we employ the discrete vector quantization for human motion and transfer 3D motion into motion tokens, similar to the generation process of word tokens. Building upon this \"motion vocabulary\", we perform language modeling on both motion and text in a unified manner, treating human motion as a specific language. Moreover, inspired by prompt learning, we pre-train MotionGPT with a mixture of motion-language data and fine-tune it on prompt-based question-and-answer tasks. Extensive experiments demonstrate that MotionGPT achieves state-of-the-art performances on multiple motion tasks including text-driven motion generation, motion captioning, motion prediction, and motion in-between.",
+      "published": "2023-06-26T15:53:02Z",
+      "updated": "2023-07-20T03:39:19Z",
+      "authors": [
+        "Biao Jiang",
+        "Xin Chen",
+        "Wen Liu",
+        "Jingyi Yu",
+        "Gang Yu",
+        "Tao Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.GR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.12929v2",
+      "arxiv_id": "2306.12929v2",
+      "title": "Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing",
+      "summary": "Transformer models have been widely adopted in various domains over the last years, and especially large language models have advanced the field of AI significantly. Due to their size, the capability of these networks has increased tremendously, but this has come at the cost of a significant increase in necessary compute. Quantization is one of the most effective ways to reduce the computational time and memory consumption of neural networks. Many studies have shown, however, that modern transformer models tend to learn strong outliers in their activations, making them difficult to quantize. To retain acceptable performance, the existence of these outliers requires activations to be in higher bitwidth or the use of different numeric formats, extra fine-tuning, or other workarounds. We show that strong outliers are related to very specific behavior of attention heads that try to learn a \"no-op\" or just a partial update of the residual. To achieve the exact zeros needed in the attention matrix for a no-update, the input to the softmax is pushed to be larger and larger during training, causing outliers in other parts of the network. Based on these observations, we propose two simple (independent) modifications to the attention mechanism - clipped softmax and gated attention. We empirically show that models pre-trained using our methods learn significantly smaller outliers while maintaining and sometimes even improving the floating-point task performance. This enables us to quantize transformers to full INT8 quantization of the activations without any additional effort. We demonstrate the effectiveness of our methods on both language models (BERT, OPT) and vision transformers.",
+      "published": "2023-06-22T14:39:04Z",
+      "updated": "2023-11-09T14:05:51Z",
+      "authors": [
+        "Yelysei Bondarenko",
+        "Markus Nagel",
+        "Tijmen Blankevoort"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.08162v1",
+      "arxiv_id": "2306.08162v1",
+      "title": "INT2.1: Towards Fine-Tunable Quantized Large Language Models with Error Correction through Low-Rank Adaptation",
+      "summary": "We introduce a method that dramatically reduces fine-tuning VRAM requirements and rectifies quantization errors in quantized Large Language Models. First, we develop an extremely memory-efficient fine-tuning (EMEF) method for quantized models using Low-Rank Adaptation (LoRA), and drawing upon it, we construct an error-correcting algorithm designed to minimize errors induced by the quantization process. Our method reduces the memory requirements by up to 5.6 times, which enables fine-tuning a 7 billion parameter Large Language Model (LLM) on consumer laptops. At the same time, we propose a Low-Rank Error Correction (LREC) method that exploits the added LoRA layers to ameliorate the gap between the quantized model and its float point counterpart. Our error correction framework leads to a fully functional INT2 quantized LLM with the capacity to generate coherent English text. To the best of our knowledge, this is the first INT2 Large Language Model that has been able to reach such a performance. The overhead of our method is merely a 1.05 times increase in model size, which translates to an effective precision of INT2.1. Also, our method readily generalizes to other quantization standards, such as INT3, INT4, and INT8, restoring their lost performance, which marks a significant milestone in the field of model quantization. The strategies delineated in this paper hold promising implications for the future development and optimization of quantized models, marking a pivotal shift in the landscape of low-resource machine learning computations.",
+      "published": "2023-06-13T22:25:35Z",
+      "updated": "2023-06-13T22:25:35Z",
+      "authors": [
+        "Yuji Chai",
+        "John Gkountouras",
+        "Glenn G. Ko",
+        "David Brooks",
+        "Gu-Yeon Wei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.02272v4",
+      "arxiv_id": "2306.02272v4",
+      "title": "OWQ: Outlier-Aware Weight Quantization for Efficient Fine-Tuning and Inference of Large Language Models",
+      "summary": "Large language models (LLMs) with hundreds of billions of parameters require powerful server-grade GPUs for inference, limiting their practical deployment. To address this challenge, we introduce the outlier-aware weight quantization (OWQ) method, which aims to minimize LLM's footprint through low-precision representation. OWQ prioritizes a small subset of structured weights sensitive to quantization, storing them in high-precision, while applying highly tuned quantization to the remaining dense weights. This sensitivity-aware mixed-precision scheme reduces the quantization error notably, and extensive experiments demonstrate that 3.1-bit models using OWQ perform comparably to 4-bit models optimized by OPTQ. Furthermore, OWQ incorporates a parameter-efficient fine-tuning for task-specific adaptation, called weak column tuning (WCT), enabling accurate task-specific LLM adaptation with minimal memory overhead in the optimized format. OWQ represents a notable advancement in the flexibility, efficiency, and practicality of LLM optimization literature. The source code is available at https://github.com/xvyaward/owq",
+      "published": "2023-06-04T06:33:13Z",
+      "updated": "2024-01-24T02:53:27Z",
+      "authors": [
+        "Changhun Lee",
+        "Jungyu Jin",
+        "Taesu Kim",
+        "Hyungjun Kim",
+        "Eunhyeok Park"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.14152v2",
+      "arxiv_id": "2305.14152v2",
+      "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization",
+      "summary": "Large language models (LLMs) face the challenges in fine-tuning and deployment due to their high memory demands and computational costs. While parameter-efficient fine-tuning (PEFT) methods aim to reduce the memory usage of the optimizer state during fine-tuning, the inherent size of pre-trained LLM weights continues to be a pressing concern. Even though quantization techniques are widely proposed to ease memory demands and accelerate LLM inference, most of these techniques are geared towards the deployment phase. To bridge this gap, this paper presents Parameter-Efficient and Quantization-aware Adaptation (PEQA) - a simple yet effective method that combines the advantages of PEFT with quantized LLMs. By updating solely the quantization scales, PEQA can be directly applied to quantized LLMs, ensuring seamless task transitions. Parallel to existing PEFT methods, PEQA significantly reduces the memory overhead associated with the optimizer state. Furthermore, it leverages the advantages of quantization to substantially reduce model sizes. Even after fine-tuning, the quantization structure of a PEQA-tuned LLM remains intact, allowing for accelerated inference on the deployment stage. We employ PEQA-tuning for task-specific adaptation on LLMs with up to 65 billion parameters. To assess the logical reasoning and language comprehension of PEQA-tuned LLMs, we fine-tune low-bit quantized LLMs using a instruction dataset. Our results show that even when LLMs are quantized to below 4-bit precision, their capabilities in language modeling, few-shot in-context learning, and comprehension can be resiliently restored to (or even improved over) their full-precision original performances with PEQA.",
+      "published": "2023-05-23T15:20:01Z",
+      "updated": "2023-10-28T11:53:52Z",
+      "authors": [
+        "Jeonghoon Kim",
+        "Jung Hyun Lee",
+        "Sungdong Kim",
+        "Joonsuk Park",
+        "Kang Min Yoo",
+        "Se Jung Kwon",
+        "Dongsoo Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2303.05295v1",
+      "arxiv_id": "2303.05295v1",
+      "title": "Dynamic Stashing Quantization for Efficient Transformer Training",
+      "summary": "Large Language Models (LLMs) have demonstrated impressive performance on a range of Natural Language Processing (NLP) tasks. Unfortunately, the immense amount of computations and memory accesses required for LLM training makes them prohibitively expensive in terms of hardware cost, and thus challenging to deploy in use cases such as on-device learning. In this paper, motivated by the observation that LLM training is memory-bound, we propose a novel dynamic quantization strategy, termed Dynamic Stashing Quantization (DSQ), that puts a special focus on reducing the memory operations, but also enjoys the other benefits of low precision training, such as the reduced arithmetic cost. We conduct a thorough study on two translation tasks (trained-from-scratch) and three classification tasks (fine-tuning). DSQ reduces the amount of arithmetic operations by $20.95\\times$ and the number of DRAM operations by $2.55\\times$ on IWSLT17 compared to the standard 16-bit fixed-point, which is widely used in on-device learning.",
+      "published": "2023-03-09T14:44:31Z",
+      "updated": "2023-03-09T14:44:31Z",
+      "authors": [
+        "Guo Yang",
+        "Daniel Lo",
+        "Robert Mullins",
+        "Yiren Zhao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.00902v2",
+      "arxiv_id": "2302.00902v2",
+      "title": "Language Quantized AutoEncoders: Towards Unsupervised Text-Image Alignment",
+      "summary": "Recent progress in scaling up large language models has shown impressive capabilities in performing few-shot learning across a wide range of text-based tasks. However, a key limitation is that these language models fundamentally lack visual perception - a crucial attribute needed to extend these models to be able to interact with the real world and solve vision tasks, such as in visual-question answering and robotics. Prior works have largely connected image to text through pretraining and/or fine-tuning on curated image-text datasets, which can be a costly and expensive process. In order to resolve this limitation, we propose a simple yet effective approach called Language-Quantized AutoEncoder (LQAE), a modification of VQ-VAE that learns to align text-image data in an unsupervised manner by leveraging pretrained language models (e.g., BERT, RoBERTa). Our main idea is to encode image as sequences of text tokens by directly quantizing image embeddings using a pretrained language codebook. We then apply random masking followed by a BERT model, and have the decoder reconstruct the original image from BERT predicted text token embeddings. By doing so, LQAE learns to represent similar images with similar clusters of text tokens, thereby aligning these two modalities without the use of aligned text-image pairs. This enables few-shot image classification with large language models (e.g., GPT-3) as well as linear classification of images based on BERT text features. To the best of our knowledge, our work is the first work that uses unaligned images for multimodal tasks by leveraging the power of pretrained language models.",
+      "published": "2023-02-02T06:38:44Z",
+      "updated": "2023-02-03T05:06:46Z",
+      "authors": [
+        "Hao Liu",
+        "Wilson Yan",
+        "Pieter Abbeel"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"quantization\" AND \"large language model\" AND \"fine-tuning\"",
+  "slice_id": "2023",
+  "date_window": {
+    "start": "2023-01-01",
+    "end": "2023-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2401.00503v1",
+      "arxiv_id": "2401.00503v1",
+      "title": "Viz: A QLoRA-based Copyright Marketplace for Legally Compliant Generative AI",
+      "summary": "This paper aims to introduce and analyze the Viz system in a comprehensive way, a novel system architecture that integrates Quantized Low-Rank Adapters (QLoRA) to fine-tune large language models (LLM) within a legally compliant and resource efficient marketplace. Viz represents a significant contribution to the field of artificial intelligence, particularly in addressing the challenges of computational efficiency, legal compliance, and economic sustainability in the utilization and monetization of LLMs. The paper delineates the scholarly discourse and developments that have informed the creation of Viz, focusing primarily on the advancements in LLM models, copyright issues in AI training (NYT case, 2023), and the evolution of model fine-tuning techniques, particularly low-rank adapters and quantized low-rank adapters, to create a sustainable and economically compliant framework for LLM utilization. The economic model it proposes benefits content creators, AI developers, and end-users, delineating a harmonious integration of technology, economy, and law, offering a comprehensive solution to the complex challenges of today's AI landscape.",
+      "published": "2023-12-31T13:53:06Z",
+      "updated": "2023-12-31T13:53:06Z",
+      "authors": [
+        "Dipankar Sarkar"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.12682v1",
+      "arxiv_id": "2312.12682v1",
+      "title": "Mini-GPTs: Efficient Large Language Models through Contextual Pruning",
+      "summary": "In AI research, the optimization of Large Language Models (LLMs) remains a significant challenge, crucial for advancing the field's practical applications and sustainability. Building upon the foundational work of Professor Song Han's lab at MIT, this paper introduces a novel approach in developing Mini-GPTs via contextual pruning. Our methodology strategically prunes the computational architecture of traditional LLMs, like Phi-1.5, focusing on retaining core functionalities while drastically reducing model sizes. We employ the technique across diverse and complex datasets, including US law, Medical Q&A, Skyrim dialogue, English-Taiwanese translation, and Economics articles. The results underscore the efficiency and effectiveness of contextual pruning, not merely as a theoretical concept but as a practical tool in developing domain-specific, resource-efficient LLMs. Contextual pruning is a promising method for building domain-specific LLMs, and this research is a building block towards future development with more hardware compute, refined fine-tuning, and quantization.",
+      "published": "2023-12-20T00:48:13Z",
+      "updated": "2023-12-20T00:48:13Z",
+      "authors": [
+        "Tim Valicenti",
+        "Justice Vidal",
+        "Ritik Patnaik"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.10365v1",
+      "arxiv_id": "2312.10365v1",
+      "title": "SPT: Fine-Tuning Transformer-based Language Models Efficiently with Sparsification",
+      "summary": "Transformer-based large language models (e.g., BERT and GPT) achieve great success, and fine-tuning, which tunes a pre-trained model on a task-specific dataset, is the standard practice to utilize these models for downstream tasks. However, Transformer fine-tuning has long running time and high memory consumption due to the large size of the models. We propose the SPT system to fine-tune Transformer-based models efficiently by introducing sparsity. We observe that the memory consumption of Transformer mainly comes from storing attention weights for multi-head attention (MHA), and the majority of running time is spent on feed-forward network (FFN). Thus, we design the sparse MHA module, which computes and stores only large attention weights to reduce memory consumption, and the routed FFN module, which dynamically activates a subset of model parameters for each token to reduce computation cost. We implement SPT on PyTorch and customize CUDA kernels to run sparse MHA and routed FFN efficiently. Specifically, we use product quantization to identify the large attention weights and compute attention via sparse matrix multiplication for sparse MHA. For routed FFN, we batch the tokens according to their activated model parameters for efficient computation. We conduct extensive experiments to evaluate SPT on various model configurations. The results show that SPT consistently outperforms well-optimized baselines, reducing the peak memory consumption by up to 50% and accelerating fine-tuning by up to 2.2x.",
+      "published": "2023-12-16T07:44:52Z",
+      "updated": "2023-12-16T07:44:52Z",
+      "authors": [
+        "Yuntao Gui",
+        "Xiao Yan",
+        "Peiqi Yin",
+        "Han Yang",
+        "James Cheng"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.03687v2",
+      "arxiv_id": "2311.03687v2",
+      "title": "Dissecting the Runtime Performance of the Training, Fine-tuning, and Inference of Large Language Models",
+      "summary": "Large Language Models (LLMs) have seen great advance in both academia and industry, and their popularity results in numerous open-source frameworks and techniques in accelerating LLM pre-training, fine-tuning, and inference. Training and deploying LLMs are expensive as it requires considerable computing resources and memory, hence many efficient approaches have been developed for improving system pipelines as well as operators. However, the runtime performance can vary significantly across hardware and software stacks, which makes it difficult to choose the best configuration. In this work, we aim to benchmark the performance from both macro and micro perspectives. First, we benchmark the end-to-end performance of pre-training, fine-tuning, and serving LLMs in different sizes , i.e., 7, 13, and 70 billion parameters (7B, 13B, and 70B) on three 8-GPU platforms with and without individual optimization techniques, including ZeRO, quantization, recomputation, FlashAttention. Then, we dive deeper to provide a detailed runtime analysis of the sub-modules, including computing and communication operators in LLMs. For end users, our benchmark and findings help better understand different optimization techniques, training and inference frameworks, together with hardware platforms in choosing configurations for deploying LLMs. For researchers, our in-depth module-wise analyses discover potential opportunities for future work to further optimize the runtime performance of LLMs.",
+      "published": "2023-11-07T03:25:56Z",
+      "updated": "2023-12-01T15:37:07Z",
+      "authors": [
+        "Longteng Zhang",
+        "Xiang Liu",
+        "Zeyu Li",
+        "Xinglin Pan",
+        "Peijie Dong",
+        "Ruibo Fan",
+        "Rui Guo",
+        "Xin Wang",
+        "Qiong Luo",
+        "Shaohuai Shi",
+        "Xiaowen Chu"
+      ],
+      "categories": [
+        "cs.PF",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.20624v2",
+      "arxiv_id": "2310.20624v2",
+      "title": "LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B",
+      "summary": "AI developers often apply safety alignment procedures to prevent the misuse of their AI systems. For example, before Meta released Llama 2-Chat - a collection of instruction fine-tuned large language models - they invested heavily in safety training, incorporating extensive red-teaming and reinforcement learning from human feedback. We explore the robustness of safety training in language models by subversively fine-tuning Llama 2-Chat. We employ quantized low-rank adaptation (LoRA) as an efficient fine-tuning method. With a budget of less than \\$200 and using only one GPU, we successfully undo the safety training of Llama 2-Chat models of sizes 7B, 13B, and 70B and on the Mixtral instruct model. Specifically, our fine-tuning technique significantly reduces the rate at which the model refuses to follow harmful instructions. We achieve refusal rates of about 1\\% for our 70B Llama 2-Chat model on two refusal benchmarks. Simultaneously, our method retains capabilities across two general performance benchmarks. We show that subversive fine-tuning is practical and effective, and hence argue that evaluating risks from fine-tuning should be a core part of risk assessments for releasing model weights. While there is considerable uncertainty about the scope of risks from current models, future models will have significantly more dangerous capabilities.",
+      "published": "2023-10-31T16:55:06Z",
+      "updated": "2024-05-22T08:39:46Z",
+      "authors": [
+        "Simon Lermen",
+        "Charlie Rogers-Smith",
+        "Jeffrey Ladish"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16861v1",
+      "arxiv_id": "2310.16861v1",
+      "title": "General Point Model with Autoencoding and Autoregressive",
+      "summary": "The pre-training architectures of large language models encompass various types, including autoencoding models, autoregressive models, and encoder-decoder models. We posit that any modality can potentially benefit from a large language model, as long as it undergoes vector quantization to become discrete tokens. Inspired by GLM, we propose a General Point Model (GPM) which seamlessly integrates autoencoding and autoregressive tasks in point cloud transformer. This model is versatile, allowing fine-tuning for downstream point cloud representation tasks, as well as unconditional and conditional generation tasks. GPM enhances masked prediction in autoencoding through various forms of mask padding tasks, leading to improved performance in point cloud understanding. Additionally, GPM demonstrates highly competitive results in unconditional point cloud generation tasks, even exhibiting the potential for conditional generation tasks by modifying the input's conditional information. Compared to models like Point-BERT, MaskPoint and PointMAE, our GPM achieves superior performance in point cloud understanding tasks. Furthermore, the integration of autoregressive and autoencoding within the same transformer underscores its versatility across different downstream tasks.",
+      "published": "2023-10-25T06:08:24Z",
+      "updated": "2023-10-25T06:08:24Z",
+      "authors": [
+        "Zhe Li",
+        "Zhangyang Gao",
+        "Cheng Tan",
+        "Stan Z. Li",
+        "Laurence T. Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.11237v1",
+      "arxiv_id": "2310.11237v1",
+      "title": "Watermarking LLMs with Weight Quantization",
+      "summary": "Abuse of large language models reveals high risks as large language models are being deployed at an astonishing speed. It is important to protect the model weights to avoid malicious usage that violates licenses of open-source large language models. This paper proposes a novel watermarking strategy that plants watermarks in the quantization process of large language models without pre-defined triggers during inference. The watermark works when the model is used in the fp32 mode and remains hidden when the model is quantized to int8, in this way, the users can only inference the model without further supervised fine-tuning of the model. We successfully plant the watermark into open-source large language model weights including GPT-Neo and LLaMA. We hope our proposed method can provide a potential direction for protecting model weights in the era of large language model applications.",
+      "published": "2023-10-17T13:06:59Z",
+      "updated": "2023-10-17T13:06:59Z",
+      "authors": [
+        "Linyang Li",
+        "Botian Jiang",
+        "Pengyu Wang",
+        "Ke Ren",
+        "Hang Yan",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.08659v4",
+      "arxiv_id": "2310.08659v4",
+      "title": "LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models",
+      "summary": "Quantization is an indispensable technique for serving Large Language Models (LLMs) and has recently found its way into LoRA fine-tuning. In this work we focus on the scenario where quantization and LoRA fine-tuning are applied together on a pre-trained model. In such cases it is common to observe a consistent gap in the performance on downstream tasks between full fine-tuning and quantization plus LoRA fine-tuning approach. In response, we propose LoftQ (LoRA-Fine-Tuning-aware Quantization), a novel quantization framework that simultaneously quantizes an LLM and finds a proper low-rank initialization for LoRA fine-tuning. Such an initialization alleviates the discrepancy between the quantized and full-precision model and significantly improves generalization in downstream tasks. We evaluate our method on natural language understanding, question answering, summarization, and natural language generation tasks. Experiments show that our method is highly effective and outperforms existing quantization methods, especially in the challenging 2-bit and 2/4-bit mixed precision regimes. The code is available on https://github.com/yxli2123/LoftQ.",
+      "published": "2023-10-12T18:34:08Z",
+      "updated": "2023-11-28T16:06:59Z",
+      "authors": [
+        "Yixiao Li",
+        "Yifan Yu",
+        "Chen Liang",
+        "Pengcheng He",
+        "Nikos Karampatziakis",
+        "Weizhu Chen",
+        "Tuo Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.07147v3",
+      "arxiv_id": "2310.07147v3",
+      "title": "QFT: Quantized Full-parameter Tuning of LLMs with Affordable Resources",
+      "summary": "Large Language Models (LLMs) have showcased remarkable impacts across a wide spectrum of natural language processing tasks. Fine-tuning these pretrained models on downstream datasets provides further significant performance gains; however, this process typically requires a large number of expensive, high-end GPUs. Although there have been efforts focused on parameter-efficient fine-tuning, they cannot fully unlock the powerful potential of full-parameter fine-tuning. In this paper, we propose QFT, a Quantized Full-parameter Tuning framework for LLMs that quantizes and stores all training states, including weights, gradients, and optimizer states, in INT8 format to reduce training memory, thereby enabling full-parameter fine-tuning on existing GPUs at an affordable cost. To ensure training performance, we make two key efforts: i) for quantized gradients and optimizer states, we theoretically prove that the Lion optimizer, with its property of consistent update magnitudes, is highly robust to quantization; ii) and for quantized weights, we employ the hybrid feature quantizer, which identifies and protects a small subset of sparse critical features while quantizing the remaining dense features, thus ensuring accurate weight updates without FP32 backups. Moreover, to support backpropagation in the integer context, we develop a stack-based gradient flow scheme with O(1) complexity, forming a unified integer training pipeline. As a result, QFT reduces the model state memory to 21% of the standard solution while achieving comparable performance, e.g., tuning a LLaMA-7B model requires only <30GB of memory, making it feasible on a single A6000 GPU.",
+      "published": "2023-10-11T02:47:40Z",
+      "updated": "2026-03-18T04:23:42Z",
+      "authors": [
+        "Zhikai Li",
+        "Xiaoxuan Liu",
+        "Banghua Zhu",
+        "Zhen Dong",
+        "Qingyi Gu",
+        "Kurt Keutzer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.06927v2",
+      "arxiv_id": "2310.06927v2",
+      "title": "Sparse Fine-tuning for Inference Acceleration of Large Language Models",
+      "summary": "We consider the problem of accurate sparse fine-tuning of large language models (LLMs), that is, fine-tuning pretrained LLMs on specialized tasks, while inducing sparsity in their weights. On the accuracy side, we observe that standard loss-based fine-tuning may fail to recover accuracy, especially at high sparsities. To address this, we perform a detailed study of distillation-type losses, determining an L2-based distillation approach we term SquareHead which enables accurate recovery even at higher sparsities, across all model types. On the practical efficiency side, we show that sparse LLMs can be executed with speedups by taking advantage of sparsity, for both CPU and GPU runtimes. While the standard approach is to leverage sparsity for computational reduction, we observe that in the case of memory-bound LLMs sparsity can also be leveraged for reducing memory bandwidth. We exhibit end-to-end results showing speedups due to sparsity, while recovering accuracy, on T5 (language translation), Whisper (speech translation), and open GPT-type (MPT for text generation). For MPT text generation, we show for the first time that sparse fine-tuning can reach 75% sparsity without accuracy drops, provide notable end-to-end speedups for both CPU and GPU inference, and highlight that sparsity is also compatible with quantization approaches. Models and software for reproducing our results are provided in Section 6.",
+      "published": "2023-10-10T18:28:38Z",
+      "updated": "2023-10-13T13:47:44Z",
+      "authors": [
+        "Eldar Kurtic",
+        "Denis Kuznedelev",
+        "Elias Frantar",
+        "Michael Goin",
+        "Dan Alistarh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.01434v1",
+      "arxiv_id": "2310.01434v1",
+      "title": "Revolutionizing Mobile Interaction: Enabling a 3 Billion Parameter GPT LLM on Mobile",
+      "summary": "The field of Artificial Intelligence has witnessed remarkable progress in recent years, especially with the emergence of powerful large language models (LLMs) based on the transformer architecture. Cloud-based LLMs, such as OpenAI's ChatGPT, offer impressive capabilities but come with concerns regarding latency and privacy due to network dependencies. This article presents an innovative approach to LLM inference, envisioning a future where LLMs with billions of parameters can be executed directly on mobile devices without network connectivity. The article showcases a fine-tuned GPT LLM with 3 billion parameters that can operate smoothly on devices with as low as 4GB of memory. Through the integration of native code and model quantization techniques, the application not only serves as a general-purpose assistant but also facilitates seamless mobile interactions with text-to-actions features. The article provides insights into the training pipeline, implementation details, test results, and future directions of on-device LLM inference. This breakthrough technology opens up possibilities for empowering users with sophisticated AI capabilities while preserving their privacy and eliminating latency concerns.",
+      "published": "2023-09-29T16:30:49Z",
+      "updated": "2023-09-29T16:30:49Z",
+      "authors": [
+        "Samuel Carreira",
+        "Tomás Marques",
+        "José Ribeiro",
+        "Carlos Grilo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.16739v4",
+      "arxiv_id": "2309.16739v4",
+      "title": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+      "summary": "Large language models (LLMs), which have shown remarkable capabilities, are revolutionizing AI development and potentially shaping our future. However, given their multimodality, the status quo cloud-based deployment faces some critical challenges: 1) long response time; 2) high bandwidth costs; and 3) the violation of data privacy. 6G mobile edge computing (MEC) systems may resolve these pressing issues. In this article, we explore the potential of deploying LLMs at the 6G edge. We start by introducing killer applications powered by multimodal LLMs, including robotics and healthcare, to highlight the need for deploying LLMs in the vicinity of end users. Then, we identify the critical challenges for LLM deployment at the edge and envision the 6G MEC architecture for LLMs. Furthermore, we delve into two design aspects, i.e., edge training and edge inference for LLMs. In both aspects, considering the inherent resource limitations at the edge, we discuss various cutting-edge techniques, including split learning/inference, parameter-efficient fine-tuning, quantization, and parameter-sharing inference, to facilitate the efficient deployment of LLMs. This article serves as a position paper for thoroughly identifying the motivation, challenges, and pathway for empowering LLMs at the 6G edge.",
+      "published": "2023-09-28T06:22:59Z",
+      "updated": "2025-06-04T07:22:47Z",
+      "authors": [
+        "Zheng Lin",
+        "Guanqiao Qu",
+        "Qiyuan Chen",
+        "Xianhao Chen",
+        "Zhe Chen",
+        "Kaibin Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14717v2",
+      "arxiv_id": "2309.14717v2",
+      "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "summary": "Recently years have witnessed a rapid development of large language models (LLMs). Despite the strong ability in many language-understanding tasks, the heavy computational burden largely restricts the application of LLMs especially when one needs to deploy them onto edge devices. In this paper, we propose a quantization-aware low-rank adaptation (QA-LoRA) algorithm. The motivation lies in the imbalanced degrees of freedom of quantization and adaptation, and the solution is to use group-wise operators which increase the degree of freedom of quantization meanwhile decreasing that of adaptation. QA-LoRA is easily implemented with a few lines of code, and it equips the original LoRA with two-fold abilities: (i) during fine-tuning, the LLM's weights are quantized (e.g., into INT4) to reduce time and memory usage; (ii) after fine-tuning, the LLM and auxiliary weights are naturally integrated into a quantized model without loss of accuracy. We apply QA-LoRA to the LLaMA and LLaMA2 model families and validate its effectiveness in different fine-tuning datasets and downstream scenarios. Code will be made available at https://github.com/yuhuixu1993/qa-lora.",
+      "published": "2023-09-26T07:22:23Z",
+      "updated": "2023-10-09T07:39:04Z",
+      "authors": [
+        "Yuhui Xu",
+        "Lingxi Xie",
+        "Xiaotao Gu",
+        "Xin Chen",
+        "Heng Chang",
+        "Hengheng Zhang",
+        "Zhengsu Chen",
+        "Xiaopeng Zhang",
+        "Qi Tian"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14021v1",
+      "arxiv_id": "2309.14021v1",
+      "title": "LORD: Low Rank Decomposition Of Monolingual Code LLMs For One-Shot Compression",
+      "summary": "Low Rank Decomposition of matrix - splitting a large matrix into a product of two smaller matrix offers a means for compression that reduces the parameters of a model without sparsification, and hence delivering more speedup on modern hardware. Moreover, unlike quantization, the compressed linear layers remain fully differentiable and all the parameters trainable, while being able to leverage the existing highly efficient kernels over floating point matrices. We study the potential to compress Large Language Models (LLMs) for monolingual Code generation via Low Rank Decomposition (LoRD) and observe that ranks for the linear layers in these models can be reduced by upto 39.58% with less than 1% increase in perplexity. We then use Low Rank Decomposition (LoRD) to compress StarCoder 16B to 13.2B parameter with no drop and to 12.3B with minimal drop in HumanEval Pass@1 score, in less than 10 minutes on a single A100. The compressed models speeds up inference by up to 22.35% with just a single line of change in code over huggingface's implementation with pytorch backend. Low Rank Decomposition (LoRD) models remain compatible with state of the art near-lossless quantization method such as SpQR, which allows leveraging further compression gains of quantization. Lastly, QLoRA over Low Rank Decomposition (LoRD) model further reduces memory requirements by as much as 21.2% over vanilla QLoRA while offering similar gains from parameter efficient fine tuning. Our work shows Low Rank Decomposition (LoRD) as a promising new paradigm for LLM compression.",
+      "published": "2023-09-25T10:35:17Z",
+      "updated": "2023-09-25T10:35:17Z",
+      "authors": [
+        "Ayush Kaushal",
+        "Tejas Vaidhya",
+        "Irina Rish"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.13322v2",
+      "arxiv_id": "2309.13322v2",
+      "title": "From Text to Source: Results in Detecting Large Language Model-Generated Content",
+      "summary": "The widespread use of Large Language Models (LLMs), celebrated for their ability to generate human-like text, has raised concerns about misinformation and ethical implications. Addressing these concerns necessitates the development of robust methods to detect and attribute text generated by LLMs. This paper investigates \"Cross-Model Detection,\" by evaluating whether a classifier trained to distinguish between source LLM-generated and human-written text can also detect text from a target LLM without further training. The study comprehensively explores various LLM sizes and families, and assesses the impact of conversational fine-tuning techniques, quantization, and watermarking on classifier generalization. The research also explores Model Attribution, encompassing source model identification, model family, and model size classification, in addition to quantization and watermarking detection. Our results reveal several key findings: a clear inverse relationship between classifier effectiveness and model size, with larger LLMs being more challenging to detect, especially when the classifier is trained on data from smaller models. Training on data from similarly sized LLMs can improve detection performance from larger models but may lead to decreased performance when dealing with smaller models. Additionally, model attribution experiments show promising results in identifying source models and model families, highlighting detectable signatures in LLM-generated text, with particularly remarkable outcomes in watermarking detection, while no detectable signatures of quantization were observed. Overall, our study contributes valuable insights into the interplay of model size, family, and training data in LLM detection and attribution.",
+      "published": "2023-09-23T09:51:37Z",
+      "updated": "2024-03-27T10:50:24Z",
+      "authors": [
+        "Wissam Antoun",
+        "Benoît Sagot",
+        "Djamé Seddah"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.11295v2",
+      "arxiv_id": "2309.11295v2",
+      "title": "CPLLM: Clinical Prediction with Large Language Models",
+      "summary": "We present Clinical Prediction with Large Language Models (CPLLM), a method that involves fine-tuning a pre-trained Large Language Model (LLM) for clinical disease and readmission prediction. We utilized quantization and fine-tuned the LLM using prompts. For diagnosis prediction, we predict whether patients will be diagnosed with a target disease during their next visit or in the subsequent diagnosis, leveraging their historical diagnosis records. We compared our results to various baselines, including RETAIN, and Med-BERT, the current state-of-the-art model for disease prediction using temporal structured EHR data. In addition, We also evaluated CPLLM for patient hospital readmission prediction and compared our method's performance with benchmark baselines. Our experiments have shown that our proposed method, CPLLM, surpasses all the tested models in terms of PR-AUC and ROC-AUC metrics, showing state-of-the-art results for diagnosis prediction and patient hospital readmission prediction. Such a method can be easily implemented and integrated into the clinical process to help care providers estimate the next steps of patients",
+      "published": "2023-09-20T13:24:12Z",
+      "updated": "2024-05-02T16:42:21Z",
+      "authors": [
+        "Ofir Ben Shoham",
+        "Nadav Rappoport"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00964v2",
+      "arxiv_id": "2309.00964v2",
+      "title": "eDKM: An Efficient and Accurate Train-time Weight Clustering for Large Language Models",
+      "summary": "Since Large Language Models or LLMs have demonstrated high-quality performance on many complex language tasks, there is a great interest in bringing these LLMs to mobile devices for faster responses and better privacy protection. However, the size of LLMs (i.e., billions of parameters) requires highly effective compression to fit into storage-limited devices. Among many compression techniques, weight-clustering, a form of non-linear quantization, is one of the leading candidates for LLM compression, and supported by modern smartphones. Yet, its training overhead is prohibitively significant for LLM fine-tuning. Especially, Differentiable KMeans Clustering, or DKM, has shown the state-of-the-art trade-off between compression ratio and accuracy regression, but its large memory complexity makes it nearly impossible to apply to train-time LLM compression. In this paper, we propose a memory-efficient DKM implementation, eDKM powered by novel techniques to reduce the memory footprint of DKM by orders of magnitudes. For a given tensor to be saved on CPU for the backward pass of DKM, we compressed the tensor by applying uniquification and sharding after checking if there is no duplicated tensor previously copied to CPU. Our experimental results demonstrate that \\prjname can fine-tune and compress a pretrained LLaMA 7B model from 12.6 GB to 2.5 GB (3bit/weight) with the Alpaca dataset by reducing the train-time memory footprint of a decoder layer by 130$\\times$, while delivering good accuracy on broader LLM benchmarks (i.e., 77.7% for PIQA, 66.1% for Winograde, and so on).",
+      "published": "2023-09-02T15:16:35Z",
+      "updated": "2023-09-13T19:17:37Z",
+      "authors": [
+        "Minsik Cho",
+        "Keivan A. Vahid",
+        "Qichen Fu",
+        "Saurabh Adya",
+        "Carlo C Del Mundo",
+        "Mohammad Rastegari",
+        "Devang Naik",
+        "Peter Zatloukal"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.15987v1",
+      "arxiv_id": "2308.15987v1",
+      "title": "FPTQ: Fine-grained Post-Training Quantization for Large Language Models",
+      "summary": "In the era of large-scale language models, the substantial parameter size poses significant challenges for deployment. Being a prevalent compression technique, quantization has emerged as the mainstream practice to tackle this issue, which is mainly centered on two recipes W8A8 and W4A16 (i.e. weights and activations in such bit widths). In this study, we propose a novel W4A8 post-training quantization method for the available open-sourced LLMs, which combines the advantages of both two recipes. Therefore, we can leverage the benefit in the I/O utilization of 4-bit weight quantization and the acceleration due to 8-bit matrix computation. Nevertheless, the W4A8 faces notorious performance degradation. As a remedy, we involve layerwise activation quantization strategies which feature a novel logarithmic equalization for most intractable layers, and we combine them with fine-grained weight quantization. Without whistles and bells, we eliminate the necessity for further fine-tuning and obtain the state-of-the-art W4A8 quantized performance on BLOOM, LLaMA, and LLaMA-2 on standard benchmarks. We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.",
+      "published": "2023-08-30T12:18:18Z",
+      "updated": "2023-08-30T12:18:18Z",
+      "authors": [
+        "Qingyuan Li",
+        "Yifan Zhang",
+        "Liang Li",
+        "Peng Yao",
+        "Bo Zhang",
+        "Xiangxiang Chu",
+        "Yerui Sun",
+        "Li Du",
+        "Yuchen Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.10462v3",
+      "arxiv_id": "2308.10462v3",
+      "title": "Exploring Parameter-Efficient Fine-Tuning Techniques for Code Generation with Large Language Models",
+      "summary": "Large language models (LLMs) demonstrate impressive capabilities to generate accurate code snippets given natural language intents in a zero-shot manner, i.e., without the need for specific fine-tuning. While prior studies have highlighted the advantages of fine-tuning LLMs, this process incurs high computational costs, making it impractical in resource-scarce environments, particularly for models with billions of parameters. To address these challenges, previous research explored in-context learning (ICL) and retrieval-augmented generation (RAG) as strategies to guide the LLM generative process with task-specific prompt examples. However, ICL and RAG introduce inconveniences, such as the need for designing contextually relevant prompts and the absence of learning task-specific parameters, thereby limiting downstream task performance. In this context, we foresee parameter-efficient fine-tuning (PEFT) as a promising approach to efficiently specialize LLMs to task-specific data while maintaining reasonable resource consumption. In this paper, we deliver a comprehensive study of PEFT techniques for LLMs in the context of automated code generation. Our comprehensive investigation of PEFT techniques for LLMs reveals their superiority and potential over ICL and RAG across a diverse set of LLMs and three representative Python code generation datasets: Conala, CodeAlpacaPy, and APPS. Furthermore, our study highlights the potential for tuning larger LLMs and significant reductions in memory usage by combining PEFT with quantization. Therefore, this study opens opportunities for broader applications of PEFT in software engineering scenarios. Our code is available at https://github.com/martin-wey/peft-llm-code/.",
+      "published": "2023-08-21T04:31:06Z",
+      "updated": "2024-12-27T05:30:00Z",
+      "authors": [
+        "Martin Weyssow",
+        "Xin Zhou",
+        "Kisub Kim",
+        "David Lo",
+        "Houari Sahraoui"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.10252v1",
+      "arxiv_id": "2308.10252v1",
+      "title": "LMTuner: An user-friendly and highly-integrable Training Framework for fine-tuning Large Language Models",
+      "summary": "With the burgeoning development in the realm of large language models (LLMs), the demand for efficient incremental training tailored to specific industries and domains continues to increase. Currently, the predominantly employed frameworks lack modular design, it often takes a lot of coding work to kickstart the training of LLM. To address this, we present \"LMTuner\", a highly usable, integrable, and scalable system for training LLMs expeditiously and with minimal user-input. LMTuner comprises three main modules - the Interaction, Training, and Inference Modules. We advocate that LMTuner's usability and integrality alleviate the complexities in training large language models. Remarkably, even a novice user could commence training large language models within five minutes. Furthermore, it integrates DeepSpeed frameworks and supports Efficient Fine-Tuning methodologies like Low Rank Adaptation (LoRA), Quantized LoRA (QLoRA), etc., enabling the training of language models scaling from 300M to a whopping 130B parameters using a single server. The LMTuner's homepage (https://wengsyx.github.io/LMTuner/)and screencast video (https://youtu.be/nsXmWOmN3rE) are now publicly available.",
+      "published": "2023-08-20T12:42:19Z",
+      "updated": "2023-08-20T12:42:19Z",
+      "authors": [
+        "Yixuan Weng",
+        "Zhiqi Wang",
+        "Huanxuan Liao",
+        "Shizhu He",
+        "Shengping Liu",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.09723v1",
+      "arxiv_id": "2308.09723v1",
+      "title": "FineQuant: Unlocking Efficiency with Fine-Grained Weight-Only Quantization for LLMs",
+      "summary": "Large Language Models (LLMs) have achieved state-of-the-art performance across various language tasks but pose challenges for practical deployment due to their substantial memory requirements. Furthermore, the latest generative models suffer from high inference costs caused by the memory bandwidth bottleneck in the auto-regressive decoding process. To address these issues, we propose an efficient weight-only quantization method that reduces memory consumption and accelerates inference for LLMs. To ensure minimal quality degradation, we introduce a simple and effective heuristic approach that utilizes only the model weights of a pre-trained model. This approach is applicable to both Mixture-of-Experts (MoE) and dense models without requiring additional fine-tuning. To demonstrate the effectiveness of our proposed method, we first analyze the challenges and issues associated with LLM quantization. Subsequently, we present our heuristic approach, which adaptively finds the granularity of quantization, effectively addressing these problems. Furthermore, we implement highly efficient GPU GEMMs that perform on-the-fly matrix multiplication and dequantization, supporting the multiplication of fp16 or bf16 activations with int8 or int4 weights. We evaluate our approach on large-scale open source models such as OPT-175B and internal MoE models, showcasing minimal accuracy loss while achieving up to 3.65 times higher throughput on the same number of GPUs.",
+      "published": "2023-08-16T23:57:41Z",
+      "updated": "2023-08-16T23:57:41Z",
+      "authors": [
+        "Young Jin Kim",
+        "Rawn Henry",
+        "Raffy Fahim",
+        "Hany Hassan Awadalla"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.08072v2",
+      "arxiv_id": "2307.08072v2",
+      "title": "Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study",
+      "summary": "Despite the superior performance, Large Language Models~(LLMs) require significant computational resources for deployment and use. To overcome this issue, quantization methods have been widely applied to reduce the memory footprint of LLMs as well as increasing the inference rate. However, a major challenge is that low-bit quantization methods often lead to performance degradation. It is important to understand how quantization impacts the capacity of LLMs. Different from previous studies focused on overall performance, this work aims to investigate the impact of quantization on \\emph{emergent abilities}, which are important characteristics that distinguish LLMs from small language models. Specially, we examine the abilities of in-context learning, chain-of-thought reasoning, and instruction-following in quantized LLMs. Our empirical experiments show that these emergent abilities still exist in 4-bit quantization models, while 2-bit models encounter severe performance degradation on the test of these abilities. To improve the performance of low-bit models, we conduct two special experiments: (1) fine-gained impact analysis that studies which components (or substructures) are more sensitive to quantization, and (2) performance compensation through model fine-tuning. Our work derives a series of important findings to understand the impact of quantization on emergent abilities, and sheds lights on the possibilities of extremely low-bit quantization for LLMs.",
+      "published": "2023-07-16T15:11:01Z",
+      "updated": "2023-07-26T04:15:48Z",
+      "authors": [
+        "Peiyu Liu",
+        "Zikang Liu",
+        "Ze-Feng Gao",
+        "Dawei Gao",
+        "Wayne Xin Zhao",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Ji-Rong Wen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.14795v2",
+      "arxiv_id": "2306.14795v2",
+      "title": "MotionGPT: Human Motion as a Foreign Language",
+      "summary": "Though the advancement of pre-trained large language models unfolds, the exploration of building a unified model for language and other multi-modal data, such as motion, remains challenging and untouched so far. Fortunately, human motion displays a semantic coupling akin to human language, often perceived as a form of body language. By fusing language data with large-scale motion models, motion-language pre-training that can enhance the performance of motion-related tasks becomes feasible. Driven by this insight, we propose MotionGPT, a unified, versatile, and user-friendly motion-language model to handle multiple motion-relevant tasks. Specifically, we employ the discrete vector quantization for human motion and transfer 3D motion into motion tokens, similar to the generation process of word tokens. Building upon this \"motion vocabulary\", we perform language modeling on both motion and text in a unified manner, treating human motion as a specific language. Moreover, inspired by prompt learning, we pre-train MotionGPT with a mixture of motion-language data and fine-tune it on prompt-based question-and-answer tasks. Extensive experiments demonstrate that MotionGPT achieves state-of-the-art performances on multiple motion tasks including text-driven motion generation, motion captioning, motion prediction, and motion in-between.",
+      "published": "2023-06-26T15:53:02Z",
+      "updated": "2023-07-20T03:39:19Z",
+      "authors": [
+        "Biao Jiang",
+        "Xin Chen",
+        "Wen Liu",
+        "Jingyi Yu",
+        "Gang Yu",
+        "Tao Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.GR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.12929v2",
+      "arxiv_id": "2306.12929v2",
+      "title": "Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing",
+      "summary": "Transformer models have been widely adopted in various domains over the last years, and especially large language models have advanced the field of AI significantly. Due to their size, the capability of these networks has increased tremendously, but this has come at the cost of a significant increase in necessary compute. Quantization is one of the most effective ways to reduce the computational time and memory consumption of neural networks. Many studies have shown, however, that modern transformer models tend to learn strong outliers in their activations, making them difficult to quantize. To retain acceptable performance, the existence of these outliers requires activations to be in higher bitwidth or the use of different numeric formats, extra fine-tuning, or other workarounds. We show that strong outliers are related to very specific behavior of attention heads that try to learn a \"no-op\" or just a partial update of the residual. To achieve the exact zeros needed in the attention matrix for a no-update, the input to the softmax is pushed to be larger and larger during training, causing outliers in other parts of the network. Based on these observations, we propose two simple (independent) modifications to the attention mechanism - clipped softmax and gated attention. We empirically show that models pre-trained using our methods learn significantly smaller outliers while maintaining and sometimes even improving the floating-point task performance. This enables us to quantize transformers to full INT8 quantization of the activations without any additional effort. We demonstrate the effectiveness of our methods on both language models (BERT, OPT) and vision transformers.",
+      "published": "2023-06-22T14:39:04Z",
+      "updated": "2023-11-09T14:05:51Z",
+      "authors": [
+        "Yelysei Bondarenko",
+        "Markus Nagel",
+        "Tijmen Blankevoort"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.08162v1",
+      "arxiv_id": "2306.08162v1",
+      "title": "INT2.1: Towards Fine-Tunable Quantized Large Language Models with Error Correction through Low-Rank Adaptation",
+      "summary": "We introduce a method that dramatically reduces fine-tuning VRAM requirements and rectifies quantization errors in quantized Large Language Models. First, we develop an extremely memory-efficient fine-tuning (EMEF) method for quantized models using Low-Rank Adaptation (LoRA), and drawing upon it, we construct an error-correcting algorithm designed to minimize errors induced by the quantization process. Our method reduces the memory requirements by up to 5.6 times, which enables fine-tuning a 7 billion parameter Large Language Model (LLM) on consumer laptops. At the same time, we propose a Low-Rank Error Correction (LREC) method that exploits the added LoRA layers to ameliorate the gap between the quantized model and its float point counterpart. Our error correction framework leads to a fully functional INT2 quantized LLM with the capacity to generate coherent English text. To the best of our knowledge, this is the first INT2 Large Language Model that has been able to reach such a performance. The overhead of our method is merely a 1.05 times increase in model size, which translates to an effective precision of INT2.1. Also, our method readily generalizes to other quantization standards, such as INT3, INT4, and INT8, restoring their lost performance, which marks a significant milestone in the field of model quantization. The strategies delineated in this paper hold promising implications for the future development and optimization of quantized models, marking a pivotal shift in the landscape of low-resource machine learning computations.",
+      "published": "2023-06-13T22:25:35Z",
+      "updated": "2023-06-13T22:25:35Z",
+      "authors": [
+        "Yuji Chai",
+        "John Gkountouras",
+        "Glenn G. Ko",
+        "David Brooks",
+        "Gu-Yeon Wei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.02272v4",
+      "arxiv_id": "2306.02272v4",
+      "title": "OWQ: Outlier-Aware Weight Quantization for Efficient Fine-Tuning and Inference of Large Language Models",
+      "summary": "Large language models (LLMs) with hundreds of billions of parameters require powerful server-grade GPUs for inference, limiting their practical deployment. To address this challenge, we introduce the outlier-aware weight quantization (OWQ) method, which aims to minimize LLM's footprint through low-precision representation. OWQ prioritizes a small subset of structured weights sensitive to quantization, storing them in high-precision, while applying highly tuned quantization to the remaining dense weights. This sensitivity-aware mixed-precision scheme reduces the quantization error notably, and extensive experiments demonstrate that 3.1-bit models using OWQ perform comparably to 4-bit models optimized by OPTQ. Furthermore, OWQ incorporates a parameter-efficient fine-tuning for task-specific adaptation, called weak column tuning (WCT), enabling accurate task-specific LLM adaptation with minimal memory overhead in the optimized format. OWQ represents a notable advancement in the flexibility, efficiency, and practicality of LLM optimization literature. The source code is available at https://github.com/xvyaward/owq",
+      "published": "2023-06-04T06:33:13Z",
+      "updated": "2024-01-24T02:53:27Z",
+      "authors": [
+        "Changhun Lee",
+        "Jungyu Jin",
+        "Taesu Kim",
+        "Hyungjun Kim",
+        "Eunhyeok Park"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.14152v2",
+      "arxiv_id": "2305.14152v2",
+      "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization",
+      "summary": "Large language models (LLMs) face the challenges in fine-tuning and deployment due to their high memory demands and computational costs. While parameter-efficient fine-tuning (PEFT) methods aim to reduce the memory usage of the optimizer state during fine-tuning, the inherent size of pre-trained LLM weights continues to be a pressing concern. Even though quantization techniques are widely proposed to ease memory demands and accelerate LLM inference, most of these techniques are geared towards the deployment phase. To bridge this gap, this paper presents Parameter-Efficient and Quantization-aware Adaptation (PEQA) - a simple yet effective method that combines the advantages of PEFT with quantized LLMs. By updating solely the quantization scales, PEQA can be directly applied to quantized LLMs, ensuring seamless task transitions. Parallel to existing PEFT methods, PEQA significantly reduces the memory overhead associated with the optimizer state. Furthermore, it leverages the advantages of quantization to substantially reduce model sizes. Even after fine-tuning, the quantization structure of a PEQA-tuned LLM remains intact, allowing for accelerated inference on the deployment stage. We employ PEQA-tuning for task-specific adaptation on LLMs with up to 65 billion parameters. To assess the logical reasoning and language comprehension of PEQA-tuned LLMs, we fine-tune low-bit quantized LLMs using a instruction dataset. Our results show that even when LLMs are quantized to below 4-bit precision, their capabilities in language modeling, few-shot in-context learning, and comprehension can be resiliently restored to (or even improved over) their full-precision original performances with PEQA.",
+      "published": "2023-05-23T15:20:01Z",
+      "updated": "2023-10-28T11:53:52Z",
+      "authors": [
+        "Jeonghoon Kim",
+        "Jung Hyun Lee",
+        "Sungdong Kim",
+        "Joonsuk Park",
+        "Kang Min Yoo",
+        "Se Jung Kwon",
+        "Dongsoo Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2303.05295v1",
+      "arxiv_id": "2303.05295v1",
+      "title": "Dynamic Stashing Quantization for Efficient Transformer Training",
+      "summary": "Large Language Models (LLMs) have demonstrated impressive performance on a range of Natural Language Processing (NLP) tasks. Unfortunately, the immense amount of computations and memory accesses required for LLM training makes them prohibitively expensive in terms of hardware cost, and thus challenging to deploy in use cases such as on-device learning. In this paper, motivated by the observation that LLM training is memory-bound, we propose a novel dynamic quantization strategy, termed Dynamic Stashing Quantization (DSQ), that puts a special focus on reducing the memory operations, but also enjoys the other benefits of low precision training, such as the reduced arithmetic cost. We conduct a thorough study on two translation tasks (trained-from-scratch) and three classification tasks (fine-tuning). DSQ reduces the amount of arithmetic operations by $20.95\\times$ and the number of DRAM operations by $2.55\\times$ on IWSLT17 compared to the standard 16-bit fixed-point, which is widely used in on-device learning.",
+      "published": "2023-03-09T14:44:31Z",
+      "updated": "2023-03-09T14:44:31Z",
+      "authors": [
+        "Guo Yang",
+        "Daniel Lo",
+        "Robert Mullins",
+        "Yiren Zhao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.00902v2",
+      "arxiv_id": "2302.00902v2",
+      "title": "Language Quantized AutoEncoders: Towards Unsupervised Text-Image Alignment",
+      "summary": "Recent progress in scaling up large language models has shown impressive capabilities in performing few-shot learning across a wide range of text-based tasks. However, a key limitation is that these language models fundamentally lack visual perception - a crucial attribute needed to extend these models to be able to interact with the real world and solve vision tasks, such as in visual-question answering and robotics. Prior works have largely connected image to text through pretraining and/or fine-tuning on curated image-text datasets, which can be a costly and expensive process. In order to resolve this limitation, we propose a simple yet effective approach called Language-Quantized AutoEncoder (LQAE), a modification of VQ-VAE that learns to align text-image data in an unsupervised manner by leveraging pretrained language models (e.g., BERT, RoBERTa). Our main idea is to encode image as sequences of text tokens by directly quantizing image embeddings using a pretrained language codebook. We then apply random masking followed by a BERT model, and have the decoder reconstruct the original image from BERT predicted text token embeddings. By doing so, LQAE learns to represent similar images with similar clusters of text tokens, thereby aligning these two modalities without the use of aligned text-image pairs. This enables few-shot image classification with large language models (e.g., GPT-3) as well as linear classification of images based on BERT text features. To the best of our knowledge, our work is the first work that uses unaligned images for multimodal tasks by leveraging the power of pretrained language models.",
+      "published": "2023-02-02T06:38:44Z",
+      "updated": "2023-02-03T05:06:46Z",
+      "authors": [
+        "Hao Liu",
+        "Wilson Yan",
+        "Pieter Abbeel"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ]
+    }
+  ]
+}

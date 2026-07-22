@@ -1,0 +1,2654 @@
+{
+  "mode": "existing_references_venue_check",
+  "protocol_version": "1.1",
+  "fetched_at": "2026-07-21T21:48:22Z",
+  "n_references": 42,
+  "results": [
+    {
+      "key": "abadi2016",
+      "title": "Deep learning with differential privacy",
+      "year": 2016,
+      "venue_current": "Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security (CCS), 308-318. https://doi.org/10.1145/2976749.2978318",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security / 2016 / proceedings-article",
+      "verified_doi": "10.1145/2976749.2978318",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1145/2976749.2978318",
+        "title": "Deep Learning with Differential Privacy",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security",
+        "author": [
+          "Abadi, Martin",
+          "Chu, Andy",
+          "Goodfellow, Ian",
+          "McMahan, H. Brendan",
+          "Mironov, Ilya",
+          "Talwar, Kunal",
+          "Zhang, Li"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "PyujpA637V",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "omdkpNUfCT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "RGNHgNNFY6",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "6sRuZEGytV",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Bnm5c0oCUZ",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "bayati2023",
+      "title": "FlexLoRA: Flexible low rank adaptation for large language models",
+      "year": 2023,
+      "venue_current": "arXiv preprint arXiv:2310.08151",
+      "priority": "HIGH",
+      "arxiv_id": "2310.08151",
+      "verified_venue": "ACL ARR 2024 December Submission",
+      "verified_doi": null,
+      "status": "UPGRADED",
+      "check_notes": [
+        "Crossref candidate rejected (author mismatch): Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) / 2025 / proceedings-article / ['Wei, Chenxing', 'Shu, Yao', 'He, Ying Tiffany']",
+        "OpenReview venue: ACL ARR 2024 December Submission"
+      ],
+      "crossref": {
+        "DOI": "10.18653/v1/2025.acl-long.713",
+        "title": "Flexora: Flexible Low-Rank Adaptation for Large Language Models",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "author": [
+          "Wei, Chenxing",
+          "Shu, Yao",
+          "He, Ying Tiffany",
+          "Yu, Fei"
+        ]
+      },
+      "arxiv": {
+        "title": "Morphisms from $\\mathbb{P}^m$ to flag varieties",
+        "published": "2023-10-12T09:18:02Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "tqnkbdYWWm",
+          "invitation": null,
+          "title": "FlexLoRA: Entropy-Guided Flexible Low-Rank Adaptation",
+          "venue": "ICLR 2026 Poster",
+          "venueid": "ICLR.cc/2026/Conference"
+        },
+        {
+          "id": "5n7L8SzAl4",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "qavu4v7fcs",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "QQVVTBAt9B",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "g14X5k9Dun",
+          "invitation": null,
+          "title": "Flexora: Flexible Low-Rank Adaptation for Large Language Models",
+          "venue": "ACL ARR 2024 December Submission",
+          "venueid": "aclweb.org/ACL/ARR/2024/December/Submission"
+        }
+      ]
+    },
+    {
+      "key": "chen2016",
+      "title": "Training deep nets with sublinear memory cost",
+      "year": 2016,
+      "venue_current": "arXiv preprint arXiv:1604.06174",
+      "priority": "HIGH",
+      "arxiv_id": "1604.06174",
+      "verified_venue": "arXiv preprint arXiv:1604.06174",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": {
+        "title": "Training Deep Nets with Sublinear Memory Cost",
+        "published": "2016-04-21T04:15:27Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "rdJOswgGgT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Qd5B2EP4fp",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "UFi8ftpHRl",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "JPNLmwyI8B",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "CnhrhOoA6R",
+          "invitation": null,
+          "title": "Emotional Vocal Expressions Recognition Using the COST 2102 Italian Database of Emotional Speech",
+          "venue": "COST 2102 Training School 2009",
+          "venueid": "dblp.org/conf/COST/2009"
+        }
+      ]
+    },
+    {
+      "key": "dao2023",
+      "title": "FlashAttention-2: Faster attention with better parallelism and work partitioning",
+      "year": 2023,
+      "venue_current": "arXiv preprint arXiv:2307.08691",
+      "priority": "HIGH",
+      "arxiv_id": "2307.08691",
+      "verified_venue": "ICLR 2024 poster",
+      "verified_doi": null,
+      "status": "UPGRADED",
+      "check_notes": [
+        "OpenReview venue: ICLR 2024 poster"
+      ],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": {
+        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+        "published": "2023-07-17T17:50:36Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "mZn2Xyh9Ec",
+          "invitation": null,
+          "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+          "venue": "ICLR 2024 poster",
+          "venueid": "ICLR.cc/2024/Conference"
+        },
+        {
+          "id": "B6cdb7CXQj",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "UmS7FpjK6j",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "RchnThk41v",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Gb54upzESk",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "dao2022",
+      "title": "FlashAttention: Fast and memory-efficient exact attention with IO-awareness",
+      "year": 2022,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 35, 16344-16359",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems 35 / 2022 / proceedings-article",
+      "verified_doi": "10.52202/068431-1189",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.52202/068431-1189",
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "type": "proceedings-article",
+        "container-title": "Advances in Neural Information Processing Systems 35",
+        "author": [
+          "Dao, Tri",
+          "Fu, Dan",
+          "Ermon, Stefano",
+          "Rudra, Atri",
+          "Ré, Christopher"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "Z0NRiw2SvF",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "GPI1IwnTGM",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Et2EUgF9RE",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "vqNXxuRXh5",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "P6CRozIXcx",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "dettmers2023",
+      "title": "QLoRA: Efficient finetuning of quantized LLMs",
+      "year": 2023,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 36",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems 36 / 2023 / proceedings-article",
+      "verified_doi": "10.52202/075280-0441",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.52202/075280-0441",
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "type": "proceedings-article",
+        "container-title": "Advances in Neural Information Processing Systems 36",
+        "author": [
+          "Dettmers, Tim",
+          "Pagnoni, Artidoro",
+          "Holtzman, Ari",
+          "Zettlemoyer, Luke"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "OUIFPHEgJU",
+          "invitation": null,
+          "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+          "venue": "NeurIPS 2023 oral",
+          "venueid": "NeurIPS.cc/2023/Conference"
+        },
+        {
+          "id": "kuirYTiFHh",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "6fMfTThibD",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "Di1iNmdCfI",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "frantar2023",
+      "title": "GPTQ: Accurate post-training quantization for generative pre-trained transformers",
+      "year": 2023,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "aMKW2oc9Py",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "MiCuVaukfO",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "b6mAvPCIAU",
+          "invitation": null,
+          "title": "Author Response to Reviewer 2VPm (Continued)",
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "fdjvg3fblV",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "jAHVvbcNeU",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "gong2024",
+      "title": "A survey of low-bit large language models: Basics, systems, and algorithms",
+      "year": 2024,
+      "venue_current": "arXiv preprint arXiv:2409.16694",
+      "priority": "HIGH",
+      "arxiv_id": "2409.16694",
+      "verified_venue": "arXiv preprint arXiv:2409.16694",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": "10.2139/ssrn.4996660",
+        "title": "A Survey of Low-Bit Large Language Models: Basics, Systems, and Algorithms",
+        "type": "posted-content",
+        "container-title": null,
+        "author": [
+          "Gong, Ruihao",
+          "Ding, Yifu",
+          "Wang, Zining",
+          "Lv, Chengtao",
+          "Zheng, Xingyu",
+          "Du, Jinyang",
+          "Yong, Yang",
+          "Gu, Shiqiao",
+          "Qin, Haotong",
+          "Guo, Jinyang",
+          "Lin, Dahua",
+          "Magno, Michele"
+        ]
+      },
+      "arxiv": {
+        "title": "A Survey of Low-bit Large Language Models: Basics, Systems, and Algorithms",
+        "published": "2024-09-25T07:38:02Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "QSMTsWhMDV",
+          "invitation": null,
+          "title": "A Survey of Low-bit Large Language Models: Basics, Systems, and Algorithms",
+          "venue": "CoRR 2024",
+          "venueid": "dblp.org/journals/CORR/2024"
+        },
+        {
+          "id": "q5xzEsKPA7",
+          "invitation": null,
+          "title": "DIAGNOSIS AND MANAGEMENT OF KATIGATAVATA (LOW BACK PAIN) IN AYURVEDA: A CRITICAL REVIEW",
+          "venue": "International Journal of Advanced Research",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "H0a9wWCHgH",
+          "invitation": null,
+          "title": "The Brain Imaging Data Structure (BIDS) Specification",
+          "venue": "Zenodo",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "TFUAPnBZSo",
+          "invitation": null,
+          "title": "The Brain Imaging Data Structure (BIDS) Specification",
+          "venue": "Zenodo",
+          "venueid": "OpenReview.net/Public_Article"
+        }
+      ]
+    },
+    {
+      "key": "hayou2024",
+      "title": "LoRA+: Efficient low rank adaptation of large models",
+      "year": 2024,
+      "venue_current": "arXiv preprint arXiv:2402.12354",
+      "priority": "HIGH",
+      "arxiv_id": "2402.12354",
+      "verified_venue": "arXiv preprint arXiv:2402.12354",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": "10.36227/techrxiv.173933020.03770078/v1",
+        "title": "LoRA-CLIP: Efficient Low-Rank Adaptation of Large CLIP Foundation Model for Scene Classification",
+        "type": "posted-content",
+        "container-title": null,
+        "author": [
+          "Rahhal, Mohamad Mahmoud Al",
+          "Bazi, Yakoub",
+          "Zuair, Mansour"
+        ]
+      },
+      "arxiv": {
+        "title": "LoRA+: Efficient Low Rank Adaptation of Large Models",
+        "published": "2024-02-19T18:33:49Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "YpQuXLMwXo",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "1XITjv3PWR",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "kuirYTiFHh",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "qvsOLgMVV6",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "rAFV19YAEw",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "he2022",
+      "title": "Towards a unified view of parameter-efficient transfer learning",
+      "year": 2022,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "Qqp2EFRZ8Q",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "eH4vioPVNi",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "txEA2lTqVR",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "zEjURayKzc",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "houlsby2019",
+      "title": "Parameter-efficient transfer learning for NLP",
+      "year": 2019,
+      "venue_current": "Proceedings of the 36th International Conference on Machine Learning (ICML), 2790-2799",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 36th International Conference on Machine Learning (ICML), 2790-2799",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.24818/ida-cl/2025.105",
+        "title": "NLP Transfer Learning",
+        "type": "posted-content",
+        "container-title": null,
+        "author": [
+          "Lessmann, Stefan"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "uo7PtnbmaW",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "zEjURayKzc",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "h0LGKMxq6f",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "nUkTTiAbfm",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "MpE4oDveDc",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "hu2021",
+      "title": "LoRA: Low-rank adaptation of large language models",
+      "year": 2021,
+      "venue_current": "arXiv preprint arXiv:2106.09685",
+      "priority": "HIGH",
+      "arxiv_id": "2106.09685",
+      "verified_venue": "arXiv preprint arXiv:2106.09685",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "Crossref candidate rejected (author mismatch): International Research Journal of Scientific Reports and Reviews / 2026 / journal-article / ['Tiwari, Anjani Kumar', 'Harish, Pawar']",
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": "10.66542/irjsrr.v2.i1.000022",
+        "title": "Energy-Efficient Training of Large Language Models Through Sparse Attention and Low-Rank Adaptation (LoRA-S)",
+        "type": "journal-article",
+        "container-title": "International Research Journal of Scientific Reports and Reviews",
+        "author": [
+          "Tiwari, Anjani Kumar",
+          "Harish, Pawar"
+        ]
+      },
+      "arxiv": {
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "published": "2021-06-17T17:37:18Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "1XITjv3PWR",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "YpQuXLMwXo",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "GMmMDQnVWy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "kuirYTiFHh",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "qvsOLgMVV6",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "huang2019",
+      "title": "GPipe: Efficient training of giant neural networks using pipeline parallelism",
+      "year": 2019,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "6yLsCQmPW0",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "5eokcnSAlz",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "hh2zGkYIfR",
+          "invitation": null,
+          "title": "References",
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "jXhCwOXQmO",
+          "invitation": null,
+          "title": "UMPIPE: Unequal Microbatches-Based Pipeline Parallelism for Deep Neural Network Training",
+          "venue": "IEEE Transactions on Parallel and Distributed Systems",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "YFX7sRfuTm",
+          "invitation": null,
+          "title": "UMPIPE: Unequal Microbatches-Based Pipeline Parallelism for Deep Neural Network Training",
+          "venue": "IEEE Trans. Parallel Distributed Syst. 2025",
+          "venueid": "dblp.org/journals/TPDS/2025"
+        }
+      ]
+    },
+    {
+      "key": "jacob2018",
+      "title": "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+      "year": 2018,
+      "venue_current": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2704-2713",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition / 2018 / proceedings-article",
+      "verified_doi": "10.1109/cvpr.2018.00286",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1109/cvpr.2018.00286",
+        "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+        "type": "proceedings-article",
+        "container-title": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "author": [
+          "Jacob, Benoit",
+          "Kligys, Skirmantas",
+          "Chen, Bo",
+          "Zhu, Menglong",
+          "Tang, Matthew",
+          "Howard, Andrew",
+          "Adam, Hartwig",
+          "Kalenichenko, Dmitry"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "KLestrYrQy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "7i1zfkH8ns",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "dxQYmXrbYj",
+          "invitation": null,
+          "title": "HardF-SNN: Hardware-Friendly Quantization for Spiking Neural Networks with Efficient Integer-Arithmetic-Only Inference",
+          "venue": null,
+          "venueid": "OpenReview.net/Archive"
+        },
+        {
+          "id": "a3Yne6rrWt",
+          "invitation": null,
+          "title": "Efficient integer-arithmetic-only convolutional networks with bounded relu",
+          "venue": null,
+          "venueid": "OpenReview.net/Archive"
+        },
+        {
+          "id": "V6jySCAHw5",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "jin2024",
+      "title": "A comprehensive evaluation of quantization strategies for large language models",
+      "year": 2024,
+      "venue_current": "Findings of the Association for Computational Linguistics: ACL 2024, 12186-12215",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Findings of the Association for Computational Linguistics ACL 2024 / 2024 / proceedings-article",
+      "verified_doi": "10.18653/v1/2024.findings-acl.726",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2024.findings-acl.726",
+        "title": "A Comprehensive Evaluation of Quantization Strategies for Large Language Models",
+        "type": "proceedings-article",
+        "container-title": "Findings of the Association for Computational Linguistics ACL 2024",
+        "author": [
+          "Jin, Renren",
+          "Du, Jiangcun",
+          "Huang, Wuwei",
+          "Liu, Wei",
+          "Luan, Jian",
+          "Wang, Bin",
+          "Xiong, Deyi"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "PrdUjNUag3",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "2qyQwxsWCD",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "mP5jDsDoHX",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "vfqjBN8p3J",
+          "invitation": null,
+          "title": "A Comprehensive Evaluation of Quantization Strategies for Large Language Models",
+          "venue": "CoRR 2024",
+          "venueid": "dblp.org/journals/CORR/2024"
+        }
+      ]
+    },
+    {
+      "key": "kirkpatrick2017",
+      "title": "Overcoming catastrophic forgetting in neural networks",
+      "year": 2017,
+      "venue_current": "Proceedings of the National Academy of Sciences, 114(13), 3521-3526. https://doi.org/10.1073/pnas.1611835114",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the National Academy of Sciences / 2017 / journal-article",
+      "verified_doi": "10.1073/pnas.1611835114",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1073/pnas.1611835114",
+        "title": "Overcoming catastrophic forgetting in neural networks",
+        "type": "journal-article",
+        "container-title": "Proceedings of the National Academy of Sciences",
+        "author": [
+          "Kirkpatrick, James",
+          "Pascanu, Razvan",
+          "Rabinowitz, Neil",
+          "Veness, Joel",
+          "Desjardins, Guillaume",
+          "Rusu, Andrei A.",
+          "Milan, Kieran",
+          "Quan, John",
+          "Ramalho, Tiago",
+          "Grabska-Barwinska, Agnieszka",
+          "Hassabis, Demis",
+          "Clopath, Claudia"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "yxapt0r4IG",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "MThiyWMvnQ",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "0CZyN9zs8j",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "kgAFD16MGA",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "xHSKCcJ5Or",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "kopiczko2024",
+      "title": "VeRA: Vector-based random matrix adaptation",
+      "year": 2024,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "NjNfLdxr3A",
+          "invitation": null,
+          "title": "VeRA: Vector-based Random Matrix Adaptation",
+          "venue": "ICLR 2024 poster",
+          "venueid": "ICLR.cc/2024/Conference"
+        },
+        {
+          "id": "XX9wTL7vlu",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "dVf40KqQaL",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "bT2iAIYFAg",
+          "invitation": null,
+          "title": "Vector Segmented and Recombined Adaptation for Scalable and Efficient Model Tuning",
+          "venue": "Submitted to ICLR 2025",
+          "venueid": "ICLR.cc/2025/Conference/Rejected_Submission"
+        },
+        {
+          "id": "5VoYQ1IlSH",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "lester2021",
+      "title": "The power of scale for parameter-efficient prompt tuning",
+      "year": 2021,
+      "venue_current": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP), 3045-3059",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing / 2021 / proceedings-article",
+      "verified_doi": "10.18653/v1/2021.emnlp-main.243",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2021.emnlp-main.243",
+        "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+        "author": [
+          "Lester, Brian",
+          "Al-Rfou, Rami",
+          "Constant, Noah"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "GYN1afYjg9",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "SMu0EsIJND",
+          "invitation": null,
+          "title": "Effect of Genetic Variation in CYP450 on Gonadal Impairment in a European Cohort of Female Childhood Cancer Survivors, Based on a Candidate Gene Approach: Results from the PanCareLIFE Study",
+          "venue": "Cancers",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "0Bu5uq6rWE",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "RCJ3b8YYKb",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "li2021",
+      "title": "Prefix-tuning: Optimizing continuous prompts for generation",
+      "year": 2021,
+      "venue_current": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL), 4582-4597",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) / 2021 / proceedings-article",
+      "verified_doi": "10.18653/v1/2021.acl-long.353",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2021.acl-long.353",
+        "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+        "author": [
+          "Li, Xiang Lisa",
+          "Liang, Percy"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "IpbsxnSEzy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "QEkI0fhKJw",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "eQYf9V3TQ4",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "n7BEg1ml4b",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "3c98MmqTKK",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "li2025",
+      "title": "Quantization meets reasoning: Exploring LLM low-bit quantization degradation for mathematical reasoning",
+      "year": 2025,
+      "venue_current": "arXiv preprint arXiv:2501.03035",
+      "priority": "HIGH",
+      "arxiv_id": "2501.03035",
+      "verified_venue": "arXiv preprint arXiv:2501.03035",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": {
+        "title": "Quantization Meets Reasoning: Exploring LLM Low-Bit Quantization Degradation for Mathematical Reasoning",
+        "published": "2025-01-06T14:23:02Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "EgxcnYTzy2",
+          "invitation": null,
+          "title": "Quantization Meets Reasoning: Exploring LLM Low-Bit Quantization Degradation for Mathematical Reasoning",
+          "venue": "CoRR 2025",
+          "venueid": "dblp.org/journals/CORR/2025"
+        },
+        {
+          "id": "MBgkPo2I47",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "CER0B0i1wy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "So3hbnEGYV",
+          "invitation": null,
+          "title": "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning",
+          "venue": "Submitted to ICLR 2026",
+          "venueid": "ICLR.cc/2026/Conference/Rejected_Submission"
+        },
+        {
+          "id": "yHLFpX69qS",
+          "invitation": null,
+          "title": "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning",
+          "venue": "ACL ARR 2026 May Submission",
+          "venueid": "aclweb.org/ACL/ARR/2026/May/Submission"
+        }
+      ]
+    },
+    {
+      "key": "lin2024",
+      "title": "AWQ: Activation-aware weight quantization for LLM compression and acceleration",
+      "year": 2024,
+      "venue_current": "Proceedings of Machine Learning and Systems (MLSys)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "GetMobile: Mobile Computing and Communications / 2025 / journal-article",
+      "verified_doi": "10.1145/3714983.3714987",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1145/3714983.3714987",
+        "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+        "type": "journal-article",
+        "container-title": "GetMobile: Mobile Computing and Communications",
+        "author": [
+          "Lin, Ji",
+          "Tang, Jiaming",
+          "Tang, Haotian",
+          "Yang, Shang",
+          "Xiao, Guangxuan",
+          "Han, Song"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "8jOxMnriUk",
+          "invitation": null,
+          "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+          "venue": "CoRR 2023",
+          "venueid": "dblp.org/journals/CORR/2023"
+        },
+        {
+          "id": "mP5jDsDoHX",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "aMKW2oc9Py",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "CNUxdOX1PU",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "1Ks5KC0Opq",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "liu2022",
+      "title": "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning",
+      "year": 2022,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 35, 1950-1965",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems 35 / 2022 / proceedings-article",
+      "verified_doi": "10.52202/068431-0142",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.52202/068431-0142",
+        "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+        "type": "proceedings-article",
+        "container-title": "Advances in Neural Information Processing Systems 35",
+        "author": [
+          "Liu, Haokun",
+          "Tam, Derek",
+          "Muqeeth, Mohammed",
+          "Mohta, Jay",
+          "Huang, Tenghao",
+          "Bansal, Mohit",
+          "Raffel, Colin"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "xF4q66momN",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Kobk5kllqA",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "J2grUGAC1e",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "GYN1afYjg9",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "OCBu4WOBCd",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "liu2024",
+      "title": "DoRA: Weight-decomposed low-rank adaptation",
+      "year": 2024,
+      "venue_current": "Proceedings of the 41st International Conference on Machine Learning (ICML), PMLR 235, 32100-32121",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 41st International Conference on Machine Learning (ICML), PMLR 235, 32100-32121",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1016/j.asoc.2026.115861",
+        "title": "DoRA+: Enhancing weight-decomposed low-rank adaptation for hospital discharge paper summarization",
+        "type": "journal-article",
+        "container-title": "Applied Soft Computing",
+        "author": [
+          "Goswami, Joyeeta",
+          "Prajapati, Kaushal Kumar",
+          "Saha, Ashim",
+          "Saha, Apu Kumar"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "3d5CIRG1n2",
+          "invitation": null,
+          "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+          "venue": "ICML 2024 Oral",
+          "venueid": "ICML.cc/2024/Conference"
+        },
+        {
+          "id": "EBFgWCeylF",
+          "invitation": null,
+          "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+          "venue": "CoRR 2024",
+          "venueid": "dblp.org/journals/CORR/2024"
+        },
+        {
+          "id": "v2xCm3VYl4",
+          "invitation": null,
+          "title": "BiDoRA: Bi-level Optimization-Based Weight-Decomposed Low-Rank Adaptation",
+          "venue": "Accepted by TMLR",
+          "venueid": "TMLR"
+        },
+        {
+          "id": "YpQuXLMwXo",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "1uR6BFTY6b",
+          "invitation": null,
+          "title": "DoRAN: Stabilizing Weight-Decomposed Low-Rank Adaptation via  Noise Injection and Auxiliary Networks",
+          "venue": "Submitted to ICLR 2026",
+          "venueid": "ICLR.cc/2026/Conference/Rejected_Submission"
+        }
+      ]
+    },
+    {
+      "key": "loshchilov2019",
+      "title": "Decoupled weight decay regularization",
+      "year": 2019,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "da5VP4S6Lq",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "8o5FsU9dVb",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "wStVA6s2Tk",
+          "invitation": null,
+          "title": "Fixing Weight Decay Regularization in Adam",
+          "venue": "CoRR 2017",
+          "venueid": "dblp.org/journals/CORR/2017"
+        },
+        {
+          "id": "ThmgT2Fgps",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "ynwZw2lgVv",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "mahabadi2021",
+      "title": "Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks",
+      "year": 2021,
+      "venue_current": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL), 565-576",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) / 2021 / proceedings-article",
+      "verified_doi": "10.18653/v1/2021.acl-long.47",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2021.acl-long.47",
+        "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+        "author": [
+          "Karimi Mahabadi, Rabeeh",
+          "Ruder, Sebastian",
+          "Dehghani, Mostafa",
+          "Henderson, James"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "fCWVGU0F1b",
+          "invitation": null,
+          "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+          "venue": "CoRR 2021",
+          "venueid": "dblp.org/journals/CORR/2021"
+        },
+        {
+          "id": "RGmlY9fuP4",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "koRIm3y3lA",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "NA0t0ShJSp",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "60LQG3ngK0",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "mcmahan2017",
+      "title": "Communication-efficient learning of deep networks from decentralized data",
+      "year": 2017,
+      "venue_current": "Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS), 1273-1282",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS), 1273-1282",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "Y50wCXALKN",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "vfmyxt05zD",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "64E9R7uvCM",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "4luhGXUFwX",
+          "invitation": null,
+          "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+          "venue": "AISTATS 2017",
+          "venueid": "dblp.org/conf/AISTATS/2017"
+        },
+        {
+          "id": "VjFAWSmdTO",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "micikevicius2018",
+      "title": "Mixed precision training",
+      "year": 2018,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1109/iscas45731.2020.9181020/video",
+        "title": "Video for MINT: Mixed-Precision RRAM-Based IN-Memory Training Architecture",
+        "type": "component",
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "XPXJGHz94b",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "zOiYgAhNN6",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "XtybWbeO5T",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "MnytU0GO6J",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "sErVtOC0ov",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "pfeiffer2020",
+      "title": "AdapterFusion: Non-destructive task composition for transfer learning",
+      "year": 2020,
+      "venue_current": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics (EACL), 487-503",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume / 2021 / proceedings-article",
+      "verified_doi": "10.18653/v1/2021.eacl-main.39",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2021.eacl-main.39",
+        "title": "AdapterFusion: Non-Destructive Task Composition for Transfer Learning",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+        "author": [
+          "Pfeiffer, Jonas",
+          "Kamath, Aishwarya",
+          "Rücklé, Andreas",
+          "Cho, Kyunghyun",
+          "Gurevych, Iryna"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "0vrLs36ZYt",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "td7hNTFTjU",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "J6M5QNhSoz",
+          "invitation": null,
+          "title": "Emerging Applications of Computer Vision for Non-Destructive Evaluation (Nde): An Overview",
+          "venue": "Journal of Non-Destructive Testing & Evaluation",
+          "venueid": "OpenReview.net/Archive"
+        },
+        {
+          "id": "bafls7Qq0R",
+          "invitation": null,
+          "title": "Audio-AdapterFusion: A Task-ID-free Approach for Efficient and Non-Destructive Multi-task Speech Recognition",
+          "venue": "CoRR 2023",
+          "venueid": "dblp.org/journals/CORR/2023"
+        },
+        {
+          "id": "xJvBKrfGZQ",
+          "invitation": null,
+          "title": "Audio-Adapterfusion: A Task-Id-Free Approach for Efficient and Non-Destructive Multi-Task Speech Recognition",
+          "venue": "ASRU 2023",
+          "venueid": "dblp.org/conf/ASRU/2023"
+        }
+      ]
+    },
+    {
+      "key": "rafailov2023",
+      "title": "Direct preference optimization: Your language model is secretly a reward model",
+      "year": 2023,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 36",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems 36 / 2023 / proceedings-article",
+      "verified_doi": "10.52202/075280-2338",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.52202/075280-2338",
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "type": "proceedings-article",
+        "container-title": "Advances in Neural Information Processing Systems 36",
+        "author": [
+          "Rafailov, Rafael",
+          "Sharma, Archit",
+          "Mitchell, Eric",
+          "Manning, Christopher D",
+          "Ermon, Stefano",
+          "Finn, Chelsea"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "Ab6jGoSLOG",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "HPuSIXJaa9",
+          "invitation": null,
+          "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+          "venue": "NeurIPS 2023 oral",
+          "venueid": "NeurIPS.cc/2023/Conference"
+        },
+        {
+          "id": "53HUHMvQLQ",
+          "invitation": null,
+          "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+          "venue": "MFPL Poster",
+          "venueid": "ICML.cc/2023/Workshop/MFPL"
+        },
+        {
+          "id": "HFcb1nBGPn",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Jq628u7vby",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "rajbhandari2020",
+      "title": "ZeRO: Memory optimizations toward training trillion parameter models",
+      "year": 2020,
+      "venue_current": "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '20). https://doi.org/10.5555/3433701.3433727",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "SC20: International Conference for High Performance Computing, Networking, Storage and Analysis / 2020 / proceedings-article",
+      "verified_doi": "10.1109/sc41405.2020.00024",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1109/sc41405.2020.00024",
+        "title": "ZeRO: Memory optimizations Toward Training Trillion Parameter Models",
+        "type": "proceedings-article",
+        "container-title": "SC20: International Conference for High Performance Computing, Networking, Storage and Analysis",
+        "author": [
+          "Rajbhandari, Samyam",
+          "Rasley, Jeff",
+          "Ruwase, Olatunji",
+          "He, Yuxiong"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "jAuPlUOdB9",
+          "invitation": null,
+          "title": "ZeRO: memory optimizations toward training trillion parameter models",
+          "venue": "SC 2020",
+          "venueid": "dblp.org/conf/SC/2020"
+        },
+        {
+          "id": "3S0A2fXzXC",
+          "invitation": null,
+          "title": "ZeRO: Memory Optimization Towards Training A Trillion Parameter Models",
+          "venue": "CoRR 2019",
+          "venueid": "dblp.org/journals/CORR/2019"
+        },
+        {
+          "id": "iviS5BTOqs",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "gcpzIDtbfG",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "M2a2YOOC2l",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "ren2021",
+      "title": "ZeRO-Offload: Democratizing billion-scale model training",
+      "year": 2021,
+      "venue_current": "Proceedings of the 2021 USENIX Annual Technical Conference (USENIX ATC), 551-564",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 2021 USENIX Annual Technical Conference (USENIX ATC), 551-564",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "qXFQtGMHRa",
+          "invitation": null,
+          "title": "ZeRO-Offload: Democratizing Billion-Scale Model Training",
+          "venue": "USENIX ATC 2021",
+          "venueid": "dblp.org/conf/USENIX/2021"
+        },
+        {
+          "id": "T60AN9ifyE",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "La7Po5nQTT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "zD8jH86UWl",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "tIlPoJ4MH1",
+          "invitation": null,
+          "title": "Performance concerns and billion-scale models",
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "rolnick2019",
+      "title": "Experience replay for continual learning",
+      "year": 2019,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1109/lra.2024.3418310/mm1",
+        "title": "MCLER: Multi-Critic Continual Learning With Experience Replay for Quadruped Gait Generation_supp1-3418310.mp4",
+        "type": "component",
+        "container-title": null,
+        "author": [
+          "Song, Ran"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "0rlSq3ONBa",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Do3Fl3PBgC",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "WvpQy9Ii26",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "EOttYudsCY",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "mWSExZrekk",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "shoeybi2019",
+      "title": "Megatron-LM: Training multi-billion parameter language models using model parallelism",
+      "year": 2019,
+      "venue_current": "arXiv preprint arXiv:1909.08053",
+      "priority": "HIGH",
+      "arxiv_id": "1909.08053",
+      "verified_venue": "arXiv preprint arXiv:1909.08053",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": {
+        "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+        "published": "2019-09-17T19:42:54Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "0rD5pOYqHD",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "6apFXzjPWQ",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "M2a2YOOC2l",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "1GqVHv9i19",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "FWVer9FJ3r",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "sun2022",
+      "title": "Unfreeze with care: Space-efficient fine-tuning of semantic parsing models",
+      "year": 2022,
+      "venue_current": "Proceedings of the ACM Web Conference (WWW 2022), 1-9",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the ACM Web Conference 2022 / 2022 / proceedings-article",
+      "verified_doi": "10.1145/3485447.3511942",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1145/3485447.3511942",
+        "title": "Unfreeze with Care: Space-Efficient Fine-Tuning of Semantic Parsing Models",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the ACM Web Conference 2022",
+        "author": [
+          "Sun, Weiqi",
+          "Khan, Haidar",
+          "Guenon des Mesnards, Nicolas",
+          "Rubino, Melanie",
+          "Arkoudas, Konstantine"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "844qKD16ds",
+          "invitation": null,
+          "title": "Performance of a Five-Layer ANN Model for Earthquake Magnitude Prediction and Spatial Risk Mapping in Turkey",
+          "venue": "Decision Making Advances",
+          "venueid": "OpenReview.net/Public_Article"
+        },
+        {
+          "id": "0j73V2V5BT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "GYN1afYjg9",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "J2grUGAC1e",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "BLbo76E3yy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "vaswani2017",
+      "title": "Attention is all you need",
+      "year": 2017,
+      "venue_current": "Advances in Neural Information Processing Systems (NeurIPS), 30, 5998-6008",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Advances in Neural Information Processing Systems (NeurIPS), 30, 5998-6008",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.1007/978-3-031-84300-6_13",
+        "title": "Is Attention All You Need?",
+        "type": "book-chapter",
+        "container-title": "From Human Attention to Computational Attention",
+        "author": [
+          "Mineault, Patrick"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "k7l7p1yVZj",
+          "invitation": null,
+          "title": "GAN Vocoder: Multi-Resolution Discriminator Is All You Need",
+          "venue": "CoRR 2021",
+          "venueid": "dblp.org/journals/CORR/2021"
+        },
+        {
+          "id": "s7kNuWIB09",
+          "invitation": null,
+          "title": "GAN Vocoder: Multi-Resolution Discriminator Is All You Need",
+          "venue": "Interspeech 2021",
+          "venueid": "dblp.org/conf/INTERSPEECH/2021"
+        },
+        {
+          "id": "7wOOhxkuN8",
+          "invitation": null,
+          "title": "Dataflow Is All You Need",
+          "venue": "MLSys 2026",
+          "venueid": "MLSys.org/2026/Conference"
+        },
+        {
+          "id": "NrHkvRSkZ0",
+          "invitation": null,
+          "title": "SpikeZIP-TF: Conversion is All You Need for Transformer-based SNN",
+          "venue": "CoRR 2024",
+          "venueid": "dblp.org/journals/CORR/2024"
+        },
+        {
+          "id": "NeotatlYOL",
+          "invitation": null,
+          "title": "SpikeZIP-TF: Conversion is All You Need for Transformer-based SNN",
+          "venue": "ICML 2024 Poster",
+          "venueid": "ICML.cc/2024/Conference"
+        }
+      ]
+    },
+    {
+      "key": "wang2024",
+      "title": "Parameter-efficient fine-tuning in large models: A survey of methodologies",
+      "year": 2024,
+      "venue_current": "arXiv preprint arXiv:2410.19878",
+      "priority": "HIGH",
+      "arxiv_id": "2410.19878",
+      "verified_venue": "Artificial Intelligence Review / 2025 / journal-article",
+      "verified_doi": "10.1007/s10462-025-11236-4",
+      "status": "UPGRADED",
+      "check_notes": [
+        "Crossref published match: Artificial Intelligence Review / 2025 / journal-article"
+      ],
+      "crossref": {
+        "DOI": "10.1007/s10462-025-11236-4",
+        "title": "Parameter-efficient fine-tuning in large language models: a survey of methodologies",
+        "type": "journal-article",
+        "container-title": "Artificial Intelligence Review",
+        "author": [
+          "Wang, Luping",
+          "Chen, Sheng",
+          "Jiang, Linnan",
+          "Pan, Shu",
+          "Cai, Runze",
+          "Yang, Sen",
+          "Yang, Fei"
+        ]
+      },
+      "arxiv": {
+        "title": "Parameter-Efficient Fine-Tuning in Large Models: A Survey of Methodologies",
+        "published": "2024-10-24T13:58:59Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "GYN1afYjg9",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "J2grUGAC1e",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "0j73V2V5BT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "YxAw1G4Nsd",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "tSk33zUQa1",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "xiao2023",
+      "title": "SmoothQuant: Accurate and efficient post-training quantization for large language models",
+      "year": 2023,
+      "venue_current": "Proceedings of the 40th International Conference on Machine Learning (ICML), 38416-38438",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 40th International Conference on Machine Learning (ICML), 38416-38438",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "dO0zUZ0moD",
+          "invitation": null,
+          "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+          "venue": "ICML 2023",
+          "venueid": "dblp.org/conf/ICML/2023"
+        },
+        {
+          "id": "sHfSV8eYEp",
+          "invitation": null,
+          "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+          "venue": "ICML 2023 Poster",
+          "venueid": "ICML.cc/2023/Conference"
+        },
+        {
+          "id": "OWFhFlKie6",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "1EIB0qowI9",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "kp4dq7YC3O",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "xu2023",
+      "title": "Parameter-efficient fine-tuning methods for pretrained language models: A critical review and assessment",
+      "year": 2023,
+      "venue_current": "arXiv preprint arXiv:2312.12148",
+      "priority": "HIGH",
+      "arxiv_id": "2312.12148",
+      "verified_venue": "arXiv preprint arXiv:2312.12148",
+      "verified_doi": null,
+      "status": "confirmed_preprint",
+      "check_notes": [
+        "No published venue found via Crossref/arXiv journal_ref/OpenReview"
+      ],
+      "crossref": {
+        "DOI": "10.1109/tpami.2026.3657354/mm1",
+        "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment_supp1-3657354.pdf",
+        "type": "component",
+        "container-title": null,
+        "author": [
+          "Xie, Haoran"
+        ]
+      },
+      "arxiv": {
+        "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+        "published": "2023-12-19T13:31:24Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "i26HwvvxGN",
+          "invitation": null,
+          "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+          "venue": "CoRR 2023",
+          "venueid": "dblp.org/journals/CORR/2023"
+        },
+        {
+          "id": "0j73V2V5BT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "YxAw1G4Nsd",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "fA0ka8MGu0",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "kPsyXraofe",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "yang2025",
+      "title": "Federated low-rank adaptation for foundation models: A survey",
+      "year": 2025,
+      "venue_current": "arXiv preprint arXiv:2505.13502",
+      "priority": "HIGH",
+      "arxiv_id": "2505.13502",
+      "verified_venue": "Proceedings of the Thirty-ThirdInternational Joint Conference on Artificial Intelligence / 2024 / proceedings-article",
+      "verified_doi": "10.24963/ijcai.2024/1196",
+      "status": "UPGRADED",
+      "check_notes": [
+        "Crossref published match: Proceedings of the Thirty-ThirdInternational Joint Conference on Artificial Intelligence / 2024 / proceedings-article"
+      ],
+      "crossref": {
+        "DOI": "10.24963/ijcai.2024/1196",
+        "title": "Federated Low-Rank Adaptation for Foundation Models: A Survey",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the Thirty-ThirdInternational Joint Conference on Artificial Intelligence",
+        "author": [
+          "Yang, Yiyuan",
+          "Long, Guodong",
+          "Lu, Qinghua",
+          "Zhu, Liming",
+          "Jiang, Jing",
+          "Zhang, Chengqi"
+        ]
+      },
+      "arxiv": {
+        "title": "Federated Low-Rank Adaptation for Foundation Models: A Survey",
+        "published": "2025-05-16T07:19:51Z",
+        "doi": "10.24963/ijcai.2025/1196",
+        "journal_ref": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence (IJCAI-25), Survey Track, pp. 10779-10787, 2025"
+      },
+      "openreview": [
+        {
+          "id": "fCPjXYLpu6",
+          "invitation": null,
+          "title": "Federated Low-Rank Adaptation for Foundation Models: A Survey",
+          "venue": "IJCAI 2025",
+          "venueid": "dblp.org/conf/IJCAI/2025"
+        },
+        {
+          "id": "iLQFbPCRND",
+          "invitation": null,
+          "title": "Federated Low-Rank Adaptation for Foundation Models: A Survey",
+          "venue": "CoRR 2025",
+          "venueid": "dblp.org/journals/CORR/2025"
+        },
+        {
+          "id": "dzoT7UyZqF",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "TkEcvjZVes",
+          "invitation": null,
+          "title": "Low-Rank Adaptation for Foundation Models: A Comprehensive Review",
+          "venue": "CoRR 2025",
+          "venueid": "dblp.org/journals/CORR/2025"
+        },
+        {
+          "id": "Vj6t6lPaxA",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "zaken2022",
+      "title": "BitFit: Simple parameter-efficient fine-tuning for transformer-based masked language-models",
+      "year": 2022,
+      "venue_current": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL), 1-9",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) / 2022 / proceedings-article",
+      "verified_doi": "10.18653/v1/2022.acl-short.1",
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": "10.18653/v1/2022.acl-short.1",
+        "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+        "type": "proceedings-article",
+        "container-title": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+        "author": [
+          "Ben Zaken, Elad",
+          "Goldberg, Yoav",
+          "Ravfogel, Shauli"
+        ]
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "BLbo76E3yy",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "Jhs8ad0Isi",
+          "invitation": null,
+          "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+          "venue": "ACL (2) 2022",
+          "venueid": "dblp.org/conf/ACL/2022"
+        },
+        {
+          "id": "0j73V2V5BT",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "V4x4mXxWuu",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "crZSBERcPo",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "zhang2024",
+      "title": "FLoRA: Federated fine-tuning large language models with heterogeneous low-rank adaptations",
+      "year": 2024,
+      "venue_current": "arXiv preprint arXiv:2409.05976",
+      "priority": "HIGH",
+      "arxiv_id": "2409.05976",
+      "verified_venue": "NeurIPS 2024",
+      "verified_doi": null,
+      "status": "UPGRADED",
+      "check_notes": [
+        "Crossref candidate rejected (author mismatch): Advances in Neural Information Processing Systems 37 / 2024 / proceedings-article / ['Wang, Ziyao', 'Shen, Zheyu', 'He, Yexiao']",
+        "OpenReview venue: NeurIPS 2024"
+      ],
+      "crossref": {
+        "DOI": "10.52202/079017-0708",
+        "title": "FLoRA: Federated Fine-Tuning Large Language Models with Heterogeneous Low-Rank Adaptations",
+        "type": "proceedings-article",
+        "container-title": "Advances in Neural Information Processing Systems 37",
+        "author": [
+          "Wang, Ziyao",
+          "Shen, Zheyu",
+          "He, Yexiao",
+          "Sun, Guoheng",
+          "Wang, Hongyi",
+          "Lyu, Lingjuan",
+          "Li, Ang"
+        ]
+      },
+      "arxiv": {
+        "title": "FLoRA: Federated Fine-Tuning Large Language Models with Heterogeneous Low-Rank Adaptations",
+        "published": "2024-09-09T18:21:23Z",
+        "doi": null,
+        "journal_ref": null
+      },
+      "openreview": [
+        {
+          "id": "c4k7APCgjG",
+          "invitation": null,
+          "title": "FLoRA: Federated Fine-Tuning Large Language Models with Heterogeneous Low-Rank Adaptations",
+          "venue": "CoRR 2024",
+          "venueid": "dblp.org/journals/CORR/2024"
+        },
+        {
+          "id": "itnD0OlOid",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "wDtI4l609e",
+          "invitation": null,
+          "title": "FLoRA: Federated Fine-Tuning Large Language Models with Heterogeneous Low-Rank Adaptations",
+          "venue": "NeurIPS 2024",
+          "venueid": "dblp.org/conf/NIPS/2024"
+        },
+        {
+          "id": "TcCorXxNJQ",
+          "invitation": null,
+          "title": "FLoRA: Federated Fine-Tuning Large Language Models with Heterogeneous Low-Rank Adaptations",
+          "venue": "NeurIPS 2024 poster",
+          "venueid": "NeurIPS.cc/2024/Conference"
+        },
+        {
+          "id": "r6e6ciMUo5",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    },
+    {
+      "key": "zhang2023",
+      "title": "AdaLoRA: Adaptive budget allocation for parameter-efficient fine-tuning",
+      "year": 2023,
+      "venue_current": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "priority": "normal",
+      "arxiv_id": null,
+      "verified_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "verified_doi": null,
+      "status": "confirmed_published",
+      "check_notes": [],
+      "crossref": {
+        "DOI": null,
+        "title": null,
+        "type": null,
+        "container-title": null,
+        "author": []
+      },
+      "arxiv": null,
+      "openreview": [
+        {
+          "id": "AOvd3zzLBq",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "PrM3MP25ZB",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "P3GRpBxkWW",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "I4hZtnkVLu",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        },
+        {
+          "id": "KLTIk4QXDV",
+          "invitation": null,
+          "title": null,
+          "venue": null,
+          "venueid": null
+        }
+      ]
+    }
+  ]
+}

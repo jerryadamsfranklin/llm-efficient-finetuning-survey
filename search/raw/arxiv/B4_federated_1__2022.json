@@ -1,0 +1,61 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"federated learning\" AND \"large language model\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202201010000 TO 202212312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22federated+learning%22+AND+%22large+language+model%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202201010000+TO+202212312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:41:16Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2212.08354v1",
+      "arxiv_id": "2212.08354v1",
+      "title": "FewFedWeight: Few-shot Federated Learning Framework across Multiple NLP Tasks",
+      "summary": "Massively multi-task learning with large language models has recently made substantial progress on few-shot generalization. However, this is usually performed in a centralized learning fashion, ignoring the privacy sensitivity issue of (annotated) data used in multiple tasks. To mitigate this issue, we propose FewFedWeight, a few-shot federated learning framework across multiple tasks, to achieve the best of both worlds: privacy preservation and cross-task generalization. FewFedWeight trains client models in isolated devices without sharing data. It broadcasts the global model in the server to each client and produces pseudo data for clients so that knowledge from the global model can be explored to enhance few-shot learning of each client model. An energy-based algorithm is further proposed to weight pseudo samples in order to reduce the negative impact of noise from the generated pseudo data. Adaptive model weights of client models are also tuned according to their performance. We use these model weights to dynamically aggregate client models to update the global model. Experiments on 118 NLP tasks show that FewFedWeight can significantly improve the performance of client models on 61% tasks with an average performance improvement rate of 30.5% over the baseline and substantially outperform FedAvg and other decentralized learning methods.",
+      "published": "2022-12-16T09:01:56Z",
+      "updated": "2022-12-16T09:01:56Z",
+      "authors": [
+        "Weilong Dong",
+        "Xinwei Wu",
+        "Junzhuo Li",
+        "Shuangzhi Wu",
+        "Chao Bian",
+        "Deyi Xiong"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"federated learning\" AND \"large language model\"",
+  "slice_id": "2022",
+  "date_window": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2212.08354v1",
+      "arxiv_id": "2212.08354v1",
+      "title": "FewFedWeight: Few-shot Federated Learning Framework across Multiple NLP Tasks",
+      "summary": "Massively multi-task learning with large language models has recently made substantial progress on few-shot generalization. However, this is usually performed in a centralized learning fashion, ignoring the privacy sensitivity issue of (annotated) data used in multiple tasks. To mitigate this issue, we propose FewFedWeight, a few-shot federated learning framework across multiple tasks, to achieve the best of both worlds: privacy preservation and cross-task generalization. FewFedWeight trains client models in isolated devices without sharing data. It broadcasts the global model in the server to each client and produces pseudo data for clients so that knowledge from the global model can be explored to enhance few-shot learning of each client model. An energy-based algorithm is further proposed to weight pseudo samples in order to reduce the negative impact of noise from the generated pseudo data. Adaptive model weights of client models are also tuned according to their performance. We use these model weights to dynamically aggregate client models to update the global model. Experiments on 118 NLP tasks show that FewFedWeight can significantly improve the performance of client models on 61% tasks with an average performance improvement rate of 30.5% over the baseline and substantially outperform FedAvg and other decentralized learning methods.",
+      "published": "2022-12-16T09:01:56Z",
+      "updated": "2022-12-16T09:01:56Z",
+      "authors": [
+        "Weilong Dong",
+        "Xinwei Wu",
+        "Junzhuo Li",
+        "Shuangzhi Wu",
+        "Chao Bian",
+        "Deyi Xiong"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ]
+}

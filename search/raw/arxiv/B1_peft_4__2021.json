@@ -1,0 +1,1177 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"prompt tuning\" OR \"prefix tuning\" OR \"BitFit\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202101010000 TO 202112312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22prompt+tuning%22+OR+%22prefix+tuning%22+OR+%22BitFit%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202101010000+TO+202112312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:34:53Z",
+  "total_results_reported": 29,
+  "returned": 29,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2112.08718v3",
+      "arxiv_id": "2112.08718v3",
+      "title": "Prompt Tuning GPT-2 language model for parameter-efficient domain adaptation of ASR systems",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains creating a need to adapt to new domains with small memory and deployment overhead. In this work, we introduce domain-prompts, a methodology that involves training a small number of domain embedding parameters to prime a Transformer-based Language Model (LM) to a particular domain. Using this domain-adapted LM for rescoring ASR hypotheses can achieve 7-13% WER reduction for a new domain with just 1000 unlabeled textual domain-specific sentences. This improvement is comparable or even better than fully fine-tuned models even though just 0.02% of the parameters of the base LM are updated. Additionally, our method is deployment-friendly as the learnt domain embeddings are prefixed to the input to the model rather than changing the base model architecture. Therefore, our method is an ideal choice for on-the-fly adaptation of LMs used in ASR systems to progressively scale it to new domains.",
+      "published": "2021-12-16T09:13:04Z",
+      "updated": "2022-07-21T21:24:34Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.06825v2",
+      "arxiv_id": "2112.06825v2",
+      "title": "VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks",
+      "summary": "Recently, fine-tuning language models pre-trained on large text corpora have provided huge improvements on vision-and-language (V&L) tasks as well as on pure language tasks. However, fine-tuning the entire parameter set of pre-trained models becomes impractical since the model size is growing rapidly. Hence, in this paper, we introduce adapter-based parameter-efficient transfer learning techniques to V&L models such as VL-BART and VLT5. We evaluate our methods in a unified multi-task setup on both image-text and video-text benchmarks. For the image-text tasks, we use four diverse V&L datasets: VQAv2, GQA, NLVR2 , and MSCOCO image captioning. For video-text tasks, we use TVQA, How2QA, TVC, and YC2C. With careful training and thorough experiments, we benchmark three popular adapter-based methods (Adapter, Hyperformer, Compacter) against the standard full fine-tuning and the recently proposed prompt-tuning approach. We also enhance the efficiency and performance of adapters by sharing their weights to attain knowledge across tasks. Our results demonstrate that training the adapter with the weight-sharing technique (4.18% of total parameters for image-text tasks and 3.39% for video-text tasks) can match the performance of fine-tuning the entire model. Lastly, we present a comprehensive analysis including the combination of adapter and task-specific prompts and the impact of V&L pre-training on adapters. Our code is available at: https://github.com/ylsung/VL_adapter.",
+      "published": "2021-12-13T17:35:26Z",
+      "updated": "2022-03-24T17:33:07Z",
+      "authors": [
+        "Yi-Lin Sung",
+        "Jaemin Cho",
+        "Mohit Bansal"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.05717v2",
+      "arxiv_id": "2112.05717v2",
+      "title": "Discourse-Aware Soft Prompting for Text Generation",
+      "summary": "Current efficient fine-tuning methods (e.g., adapters, prefix-tuning, etc.) have optimized conditional text generation via training a small set of extra parameters of the neural language model, while freezing the rest for efficiency. While showing strong performance on some generation tasks, they don't generalize across all generation tasks. We show that soft-prompt based conditional text generation can be improved with simple and efficient methods that simulate modeling the discourse structure of human written text. We investigate two design choices: First, we apply \\textit{hierarchical blocking} on the prefix parameters to simulate a higher-level discourse structure of human written text. Second, we apply \\textit{attention sparsity} on the prefix parameters at different layers of the network and learn sparse transformations on the softmax-function. We show that structured design of prefix parameters yields more coherent, faithful and relevant generations than the baseline prefix-tuning on all generation tasks.",
+      "published": "2021-12-10T18:15:44Z",
+      "updated": "2022-05-23T17:27:22Z",
+      "authors": [
+        "Marjan Ghazvininejad",
+        "Vladimir Karpukhin",
+        "Vera Gor",
+        "Asli Celikyilmaz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2111.06719v2",
+      "arxiv_id": "2111.06719v2",
+      "title": "On Transferability of Prompt Tuning for Natural Language Processing",
+      "summary": "Prompt tuning (PT) is a promising parameter-efficient method to utilize extremely large pre-trained language models (PLMs), which can achieve comparable performance to full-parameter fine-tuning by only tuning a few soft prompts. However, PT requires much more training time than fine-tuning. Intuitively, knowledge transfer can help to improve the efficiency. To explore whether we can improve PT via prompt transfer, we empirically investigate the transferability of soft prompts across different downstream tasks and PLMs in this work. We find that (1) in zero-shot setting, trained soft prompts can effectively transfer to similar tasks on the same PLM and also to other PLMs with a cross-model projector trained on similar tasks; (2) when used as initialization, trained soft prompts of similar tasks and projected prompts of other PLMs can significantly accelerate training and also improve the performance of PT. Moreover, to explore what decides prompt transferability, we investigate various transferability indicators and find that the overlapping rate of activated neurons strongly reflects the transferability, which suggests how the prompts stimulate PLMs is essential. Our findings show that prompt transfer is promising for improving PT, and further research shall focus more on prompts' stimulation to PLMs. The source code can be obtained from https://github.com/thunlp/Prompt-Transferability.",
+      "published": "2021-11-12T13:39:28Z",
+      "updated": "2022-04-27T16:49:40Z",
+      "authors": [
+        "Yusheng Su",
+        "Xiaozhi Wang",
+        "Yujia Qin",
+        "Chi-Min Chan",
+        "Yankai Lin",
+        "Huadong Wang",
+        "Kaiyue Wen",
+        "Zhiyuan Liu",
+        "Peng Li",
+        "Juanzi Li",
+        "Lei Hou",
+        "Maosong Sun",
+        "Jie Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08525v2",
+      "arxiv_id": "2110.08525v2",
+      "title": "The Power of Prompt Tuning for Low-Resource Semantic Parsing",
+      "summary": "Prompt tuning has recently emerged as an effective method for adapting pre-trained language models to a number of language understanding and generation tasks. In this paper, we investigate prompt tuning for semantic parsing -- the task of mapping natural language utterances onto formal meaning representations. On the low-resource splits of Overnight and TOPv2, we find that a prompt tuned T5-xl significantly outperforms its fine-tuned counterpart, as well as strong GPT-3 and BART baselines. We also conduct ablation studies across different model scales and target representations, finding that, with increasing model scale, prompt tuned T5 models improve at generating target representations that are far from the pre-training distribution.",
+      "published": "2021-10-16T09:33:09Z",
+      "updated": "2022-04-01T13:59:36Z",
+      "authors": [
+        "Nathan Schucher",
+        "Siva Reddy",
+        "Harm de Vries"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08329v2",
+      "arxiv_id": "2110.08329v2",
+      "title": "Control Prefixes for Parameter-Efficient Text Generation",
+      "summary": "Prefix-tuning is a powerful lightweight technique for adapting a large pre-trained language model to a downstream application. However, it uses the same dataset-level tuned prompt for all examples in the dataset. We extend this idea and propose a dynamic method, Control Prefixes, which allows for the inclusion of conditional input-dependent information, combining the benefits of prompt tuning and controlled generation. The method incorporates attribute-level learnable representations into different layers of a pre-trained transformer, allowing for the generated text to be guided in a particular direction. We provide a systematic evaluation of the technique and apply it to five datasets from the GEM benchmark for natural language generation (NLG). Although the aim is to develop a parameter-efficient model, we show Control Prefixes can even outperform full fine-tuning methods. We present state-of-the-art results on several data-to-text datasets, including WebNLG.",
+      "published": "2021-10-15T19:32:17Z",
+      "updated": "2022-05-10T16:54:15Z",
+      "authors": [
+        "Jordan Clive",
+        "Kris Cao",
+        "Marek Rei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07904v2",
+      "arxiv_id": "2110.07904v2",
+      "title": "SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer",
+      "summary": "There has been growing interest in parameter-efficient methods to apply pre-trained language models to downstream tasks. Building on the Prompt Tuning approach of Lester et al. (2021), which learns task-specific soft prompts to condition a frozen pre-trained model to perform different tasks, we propose a novel prompt-based transfer learning approach called SPoT: Soft Prompt Transfer. SPoT first learns a prompt on one or more source tasks and then uses it to initialize the prompt for a target task. We show that SPoT significantly boosts the performance of Prompt Tuning across many tasks. More remarkably, across all model sizes, SPoT matches or outperforms standard Model Tuning (which fine-tunes all model parameters) on the SuperGLUE benchmark, while using up to 27,000x fewer task-specific parameters. To understand where SPoT is most effective, we conduct a large-scale study on task transferability with 26 NLP tasks in 160 combinations, and demonstrate that many tasks can benefit each other via prompt transfer. Finally, we propose an efficient retrieval approach that interprets task prompts as task embeddings to identify similar tasks and predict the most transferable source tasks for a novel target task.",
+      "published": "2021-10-15T07:35:58Z",
+      "updated": "2022-03-16T18:52:36Z",
+      "authors": [
+        "Tu Vu",
+        "Brian Lester",
+        "Noah Constant",
+        "Rami Al-Rfou",
+        "Daniel Cer"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07867v3",
+      "arxiv_id": "2110.07867v3",
+      "title": "Exploring Universal Intrinsic Task Subspace via Prompt Tuning",
+      "summary": "Why can pre-trained language models (PLMs) learn universal representations and effectively adapt to broad NLP tasks differing a lot superficially? In this work, we empirically find evidence indicating that the adaptations of PLMs to various few-shot tasks can be reparameterized as optimizing only a few free parameters in a unified low-dimensional intrinsic task subspace, which may help us understand why PLMs could easily adapt to various NLP tasks with small-scale data. To find such a subspace and examine its universality, we propose an analysis pipeline called intrinsic prompt tuning (IPT). Specifically, we resort to the recent success of prompt tuning and decompose the soft prompts of multiple NLP tasks into the same low-dimensional nonlinear subspace, then we learn to adapt the PLM to unseen data or tasks by only tuning parameters in this subspace. In the experiments, we study diverse few-shot NLP tasks and surprisingly find that in a 250-dimensional subspace found with 100 tasks, by only tuning 250 free parameters, we can recover 97% and 83% of the full prompt tuning performance for 100 seen tasks (using different training data) and 20 unseen tasks, respectively, showing great generalization ability of the found intrinsic task subspace. Besides being an analysis tool, IPT could further help us improve the prompt tuning stability.",
+      "published": "2021-10-15T05:43:59Z",
+      "updated": "2022-11-25T15:21:47Z",
+      "authors": [
+        "Yujia Qin",
+        "Xiaozhi Wang",
+        "Yusheng Su",
+        "Yankai Lin",
+        "Ning Ding",
+        "Jing Yi",
+        "Weize Chen",
+        "Zhiyuan Liu",
+        "Juanzi Li",
+        "Lei Hou",
+        "Peng Li",
+        "Maosong Sun",
+        "Jie Zhou"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07602v3",
+      "arxiv_id": "2110.07602v3",
+      "title": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+      "summary": "Prompt tuning, which only tunes continuous prompts with a frozen language model, substantially reduces per-task storage and memory usage at training. However, in the context of NLU, prior work reveals that prompt tuning does not perform well for normal-sized pretrained models. We also find that existing methods of prompt tuning cannot handle hard sequence labeling tasks, indicating a lack of universality. We present a novel empirical finding that properly optimized prompt tuning can be universally effective across a wide range of model scales and NLU tasks. It matches the performance of finetuning while having only 0.1%-3% tuned parameters. Our method P-Tuning v2 is an implementation of Deep Prompt Tuning \\cite{li2021prefix,qin2021learning} optimized and adapted for NLU. Given the universality and simplicity of P-Tuning v2, we believe it can serve as an alternative to finetuning and a strong baseline for future research.Our code and data are released at https://github.com/THUDM/P-tuning-v2.",
+      "published": "2021-10-14T17:58:47Z",
+      "updated": "2022-03-20T15:13:08Z",
+      "authors": [
+        "Xiao Liu",
+        "Kaixuan Ji",
+        "Yicheng Fu",
+        "Weng Lam Tam",
+        "Zhengxiao Du",
+        "Zhilin Yang",
+        "Jie Tang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07331v1",
+      "arxiv_id": "2110.07331v1",
+      "title": "Plug-Tagger: A Pluggable Sequence Labeling Framework Using Language Models",
+      "summary": "Plug-and-play functionality allows deep learning models to adapt well to different tasks without requiring any parameters modified. Recently, prefix-tuning was shown to be a plug-and-play method on various text generation tasks by simply inserting corresponding continuous vectors into the inputs. However, sequence labeling tasks invalidate existing plug-and-play methods since different label sets demand changes to the architecture of the model classifier. In this work, we propose the use of label word prediction instead of classification to totally reuse the architecture of pre-trained models for sequence labeling tasks. Specifically, for each task, a label word set is first constructed by selecting a high-frequency word for each class respectively, and then, task-specific vectors are inserted into the inputs and optimized to manipulate the model predictions towards the corresponding label words. As a result, by simply switching the plugin vectors on the input, a frozen pre-trained language model is allowed to perform different tasks. Experimental results on three sequence labeling tasks show that the performance of the proposed method can achieve comparable performance with standard fine-tuning with only 0.1\\% task-specific parameters. In addition, our method is up to 70 times faster than non-plug-and-play methods while switching different tasks under the resource-constrained scenario.",
+      "published": "2021-10-14T13:05:06Z",
+      "updated": "2021-10-14T13:05:06Z",
+      "authors": [
+        "Xin Zhou",
+        "Ruotian Ma",
+        "Tao Gui",
+        "Yiding Tan",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07298v3",
+      "arxiv_id": "2110.07298v3",
+      "title": "LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5",
+      "summary": "Existing approaches to lifelong language learning rely on plenty of labeled data for learning a new task, which is hard to obtain in most real scenarios. Considering that humans can continually learn new tasks from a handful of examples, we expect the models also to be able to generalize well on new few-shot tasks without forgetting the previous ones. In this work, we define this more challenging yet practical problem as Lifelong Few-shot Language Learning (LFLL) and propose a unified framework for it based on prompt tuning of T5. Our framework called LFPT5 takes full advantage of PT's strong few-shot learning ability, and simultaneously trains the model as a task solver and a data generator. Before learning a new domain of the same task type, LFPT5 generates pseudo (labeled) samples of previously learned domains, and later gets trained on those samples to alleviate forgetting of previous knowledge as it learns the new domain. In addition, a KL divergence loss is minimized to achieve label consistency between the previous and the current model. While adapting to a new task type, LFPT5 includes and tunes additional prompt embeddings for the new task. With extensive experiments, we demonstrate that LFPT5 can be applied to various different types of tasks and significantly outperform previous methods in different LFLL settings.",
+      "published": "2021-10-14T12:06:29Z",
+      "updated": "2022-03-31T02:40:57Z",
+      "authors": [
+        "Chengwei Qin",
+        "Shafiq Joty"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.06502v2",
+      "arxiv_id": "2110.06502v2",
+      "title": "Prompt-tuning in ASR systems for efficient domain-adaptation",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains. Since domain-specific systems perform better than their generic counterparts on in-domain evaluation, the need for memory and compute-efficient domain adaptation is obvious. Particularly, adapting parameter-heavy transformer-based language models used for rescoring ASR hypothesis is challenging. In this work, we overcome the problem using prompt-tuning, a methodology that trains a small number of domain token embedding parameters to prime a transformer-based LM to a particular domain. With just a handful of extra parameters per domain, we achieve much better perplexity scores over the baseline of using an unadapted LM. Despite being parameter-efficient, these improvements are comparable to those of fully-fine-tuned models with hundreds of millions of parameters. We replicate our findings in perplexity numbers to Word Error Rate in a domain-specific ASR system for one such domain.",
+      "published": "2021-10-13T05:20:57Z",
+      "updated": "2021-10-22T22:31:42Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.04544v2",
+      "arxiv_id": "2110.04544v2",
+      "title": "CLIP-Adapter: Better Vision-Language Models with Feature Adapters",
+      "summary": "Large-scale contrastive vision-language pre-training has shown significant progress in visual representation learning. Unlike traditional visual systems trained by a fixed set of discrete labels, a new paradigm was introduced in \\cite{radford2021learning} to directly learn to align images with raw texts in an open-vocabulary setting. On downstream tasks, a carefully chosen text prompt is employed to make zero-shot predictions.~To avoid non-trivial prompt engineering, context optimization \\cite{zhou2021coop} has been proposed to learn continuous vectors as task-specific prompts with few-shot training examples.~In this paper, we show that there is an alternative path to achieve better vision-language models other than prompt tuning.~While prompt tuning is for the textual inputs, we propose CLIP-Adapter to conduct fine-tuning with feature adapters on either visual or language branch. Specifically, CLIP-Adapter adopts an additional bottleneck layer to learn new features and performs residual-style feature blending with the original pre-trained features.~As a consequence, CLIP-Adapter is able to outperform context optimization while maintains a simple design. Experiments and extensive ablation studies on various visual classification tasks demonstrate the effectiveness of our approach. Code is released at t https://github.com/gaopengcuhk/CLIP-Adapter.",
+      "published": "2021-10-09T11:39:30Z",
+      "updated": "2025-03-25T14:34:04Z",
+      "authors": [
+        "Peng Gao",
+        "Shijie Geng",
+        "Renrui Zhang",
+        "Teli Ma",
+        "Rongyao Fang",
+        "Yongfeng Zhang",
+        "Hongsheng Li",
+        "Yu Qiao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.00135v2",
+      "arxiv_id": "2110.00135v2",
+      "title": "UserIdentifier: Implicit User Representations for Simple and Effective Personalized Sentiment Analysis",
+      "summary": "Global models are trained to be as generalizable as possible, with user invariance considered desirable since the models are shared across multitudes of users. As such, these models are often unable to produce personalized responses for individual users, based on their data. Contrary to widely-used personalization techniques based on few-shot learning, we propose UserIdentifier, a novel scheme for training a single shared model for all users. Our approach produces personalized responses by adding fixed, non-trainable user identifiers to the input data. We empirically demonstrate that this proposed method outperforms the prefix-tuning based state-of-the-art approach by up to 13%, on a suite of sentiment analysis datasets. We also show that, unlike prior work, this method needs neither any additional model parameters nor any extra rounds of few-shot fine-tuning.",
+      "published": "2021-10-01T00:21:33Z",
+      "updated": "2022-05-03T19:17:03Z",
+      "authors": [
+        "Fatemehsadat Mireshghallah",
+        "Vaishnavi Shrivastava",
+        "Milad Shokouhi",
+        "Taylor Berg-Kirkpatrick",
+        "Robert Sim",
+        "Dimitrios Dimitriadis"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.13532v3",
+      "arxiv_id": "2109.13532v3",
+      "title": "Template-free Prompt Tuning for Few-shot NER",
+      "summary": "Prompt-based methods have been successfully applied in sentence-level few-shot learning tasks, mostly owing to the sophisticated design of templates and label words. However, when applied to token-level labeling tasks such as NER, it would be time-consuming to enumerate the template queries over all potential entity spans. In this work, we propose a more elegant method to reformulate NER tasks as LM problems without any templates. Specifically, we discard the template construction process while maintaining the word prediction paradigm of pre-training models to predict a class-related pivot word (or label word) at the entity position. Meanwhile, we also explore principled ways to automatically search for appropriate label words that the pre-trained models can easily adapt to. While avoiding complicated template-based process, the proposed LM objective also reduces the gap between different objectives used in pre-training and fine-tuning, thus it can better benefit the few-shot performance. Experimental results demonstrate the effectiveness of the proposed method over bert-tagger and template-based method under few-shot setting. Moreover, the decoding speed of the proposed method is up to 1930.12 times faster than the template-based method.",
+      "published": "2021-09-28T07:19:24Z",
+      "updated": "2022-11-23T15:58:56Z",
+      "authors": [
+        "Ruotian Ma",
+        "Xin Zhou",
+        "Tao Gui",
+        "Yiding Tan",
+        "Linyang Li",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.11797v3",
+      "arxiv_id": "2109.11797v3",
+      "title": "CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models",
+      "summary": "Pre-Trained Vision-Language Models (VL-PTMs) have shown promising capabilities in grounding natural language in image data, facilitating a broad variety of cross-modal tasks. However, we note that there exists a significant gap between the objective forms of model pre-training and fine-tuning, resulting in a need for large amounts of labeled data to stimulate the visual grounding capability of VL-PTMs for downstream tasks. To address the challenge, we present Cross-modal Prompt Tuning (CPT, alternatively, Colorful Prompt Tuning), a novel paradigm for tuning VL-PTMs, which reformulates visual grounding into a fill-in-the-blank problem with color-based co-referential markers in image and text, maximally mitigating the gap. In this way, CPT enables strong few-shot and even zero-shot visual grounding capabilities of VL-PTMs. Comprehensive experimental results show that the prompt-tuned VL-PTMs outperform their fine-tuned counterparts by a large margin (e.g., 17.3% absolute accuracy improvement, and 73.8% relative standard deviation reduction on average with one shot in RefCOCO evaluation). We make the data and code for this paper publicly available at https://github.com/thunlp/CPT.",
+      "published": "2021-09-24T08:07:29Z",
+      "updated": "2022-05-20T07:05:41Z",
+      "authors": [
+        "Yuan Yao",
+        "Ao Zhang",
+        "Zhengyan Zhang",
+        "Zhiyuan Liu",
+        "Tat-Seng Chua",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.08306v1",
+      "arxiv_id": "2109.08306v1",
+      "title": "SentiPrompt: Sentiment Knowledge Enhanced Prompt-Tuning for Aspect-Based Sentiment Analysis",
+      "summary": "Aspect-based sentiment analysis (ABSA) is an emerging fine-grained sentiment analysis task that aims to extract aspects, classify corresponding sentiment polarities and find opinions as the causes of sentiment. The latest research tends to solve the ABSA task in a unified way with end-to-end frameworks. Yet, these frameworks get fine-tuned from downstream tasks without any task-adaptive modification. Specifically, they do not use task-related knowledge well or explicitly model relations between aspect and opinion terms, hindering them from better performance. In this paper, we propose SentiPrompt to use sentiment knowledge enhanced prompts to tune the language model in the unified framework. We inject sentiment knowledge regarding aspects, opinions, and polarities into prompt and explicitly model term relations via constructing consistency and polarity judgment templates from the ground truth triplets. Experimental results demonstrate that our approach can outperform strong baselines on Triplet Extraction, Pair Extraction, and Aspect Term Extraction with Sentiment Classification by a notable margin.",
+      "published": "2021-09-17T01:56:06Z",
+      "updated": "2021-09-17T01:56:06Z",
+      "authors": [
+        "Chengxi Li",
+        "Feiyu Gao",
+        "Jiajun Bu",
+        "Lu Xu",
+        "Xiang Chen",
+        "Yu Gu",
+        "Zirui Shao",
+        "Qi Zheng",
+        "Ningyu Zhang",
+        "Yongpan Wang",
+        "Zhi Yu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.04332v3",
+      "arxiv_id": "2109.04332v3",
+      "title": "PPT: Pre-trained Prompt Tuning for Few-shot Learning",
+      "summary": "Prompts for pre-trained language models (PLMs) have shown remarkable performance by bridging the gap between pre-training tasks and various downstream tasks. Among these methods, prompt tuning, which freezes PLMs and only tunes soft prompts, provides an efficient and effective solution for adapting large-scale PLMs to downstream tasks. However, prompt tuning is yet to be fully explored. In our pilot experiments, we find that prompt tuning performs comparably with conventional full-model fine-tuning when downstream data are sufficient, whereas it performs much worse under few-shot learning settings, which may hinder the application of prompt tuning in practice. We attribute this low performance to the manner of initializing soft prompts. Therefore, in this work, we propose to pre-train prompts by adding soft prompts into the pre-training stage to obtain a better initialization. We name this Pre-trained Prompt Tuning framework \"PPT\". To ensure the generalization of PPT, we formulate similar classification tasks into a unified task form and pre-train soft prompts for this unified task. Extensive experiments show that tuning pre-trained prompts for downstream tasks can reach or even outperform full-model fine-tuning under both full-data and few-shot settings. Our approach is effective and efficient for using large-scale PLMs in practice.",
+      "published": "2021-09-09T15:11:04Z",
+      "updated": "2022-03-14T02:05:06Z",
+      "authors": [
+        "Yuxian Gu",
+        "Xu Han",
+        "Zhiyuan Liu",
+        "Minlie Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.02837v1",
+      "arxiv_id": "2109.02837v1",
+      "title": "Exploring Strategies for Generalizable Commonsense Reasoning with Pre-trained Models",
+      "summary": "Commonsense reasoning benchmarks have been largely solved by fine-tuning language models. The downside is that fine-tuning may cause models to overfit to task-specific data and thereby forget their knowledge gained during pre-training. Recent works only propose lightweight model updates as models may already possess useful knowledge from past experience, but a challenge remains in understanding what parts and to what extent models should be refined for a given task. In this paper, we investigate what models learn from commonsense reasoning datasets. We measure the impact of three different adaptation methods on the generalization and accuracy of models. Our experiments with two models show that fine-tuning performs best, by learning both the content and the structure of the task, but suffers from overfitting and limited generalization to novel answers. We observe that alternative adaptation methods like prefix-tuning have comparable accuracy, but generalize better to unseen answers and are more robust to adversarial splits.",
+      "published": "2021-09-07T03:13:06Z",
+      "updated": "2021-09-07T03:13:06Z",
+      "authors": [
+        "Kaixin Ma",
+        "Filip Ilievski",
+        "Jonathan Francis",
+        "Satoru Ozaki",
+        "Eric Nyberg",
+        "Alessandro Oltramari"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.00904v2",
+      "arxiv_id": "2109.00904v2",
+      "title": "MultiEURLEX -- A multi-lingual and multi-label legal document classification dataset for zero-shot cross-lingual transfer",
+      "summary": "We introduce MULTI-EURLEX, a new multilingual dataset for topic classification of legal documents. The dataset comprises 65k European Union (EU) laws, officially translated in 23 languages, annotated with multiple labels from the EUROVOC taxonomy. We highlight the effect of temporal concept drift and the importance of chronological, instead of random splits. We use the dataset as a testbed for zero-shot cross-lingual transfer, where we exploit annotated training documents in one language (source) to classify documents in another language (target). We find that fine-tuning a multilingually pretrained model (XLM-ROBERTA, MT5) in a single source language leads to catastrophic forgetting of multilingual knowledge and, consequently, poor zero-shot transfer to other languages. Adaptation strategies, namely partial fine-tuning, adapters, BITFIT, LNFIT, originally proposed to accelerate fine-tuning for new end-tasks, help retain multilingual knowledge from pretraining, substantially improving zero-shot cross-lingual transfer, but their impact also depends on the pretrained model used and the size of the label set.",
+      "published": "2021-09-02T12:52:55Z",
+      "updated": "2021-09-06T21:00:59Z",
+      "authors": [
+        "Ilias Chalkidis",
+        "Manos Fergadiotis",
+        "Ion Androutsopoulos"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.04106v3",
+      "arxiv_id": "2108.04106v3",
+      "title": "Noisy Channel Language Model Prompting for Few-Shot Text Classification",
+      "summary": "We introduce a noisy channel approach for language model prompting in few-shot text classification. Instead of computing the likelihood of the label given the input (referred as direct models), channel models compute the conditional probability of the input given the label, and are thereby required to explain every word in the input. We use channel models for recently proposed few-shot learning methods with no or very limited updates to the language model parameters, via either in-context demonstration or prompt tuning. Our experiments show that, for both methods, channel models significantly outperform their direct counterparts, which we attribute to their stability, i.e., lower variance and higher worst-case accuracy. We also present extensive ablations that provide recommendations for when to use channel prompt tuning instead of other competitive methods (e.g., direct head tuning): channel prompt tuning is preferred when the number of training examples is small, labels in the training data are imbalanced, or generalization to unseen labels is required.",
+      "published": "2021-08-09T15:06:26Z",
+      "updated": "2022-03-15T06:53:43Z",
+      "authors": [
+        "Sewon Min",
+        "Mike Lewis",
+        "Hannaneh Hajishirzi",
+        "Luke Zettlemoyer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.02035v2",
+      "arxiv_id": "2108.02035v2",
+      "title": "Knowledgeable Prompt-tuning: Incorporating Knowledge into Prompt Verbalizer for Text Classification",
+      "summary": "Tuning pre-trained language models (PLMs) with task-specific prompts has been a promising approach for text classification. Particularly, previous studies suggest that prompt-tuning has remarkable superiority in the low-data scenario over the generic fine-tuning methods with extra classifiers. The core idea of prompt-tuning is to insert text pieces, i.e., template, to the input and transform a classification problem into a masked language modeling problem, where a crucial step is to construct a projection, i.e., verbalizer, between a label space and a label word space. A verbalizer is usually handcrafted or searched by gradient descent, which may lack coverage and bring considerable bias and high variances to the results. In this work, we focus on incorporating external knowledge into the verbalizer, forming a knowledgeable prompt-tuning (KPT), to improve and stabilize prompt-tuning. Specifically, we expand the label word space of the verbalizer using external knowledge bases (KBs) and refine the expanded label word space with the PLM itself before predicting with the expanded label word space. Extensive experiments on zero and few-shot text classification tasks demonstrate the effectiveness of knowledgeable prompt-tuning.",
+      "published": "2021-08-04T13:00:16Z",
+      "updated": "2022-03-18T16:18:46Z",
+      "authors": [
+        "Shengding Hu",
+        "Ning Ding",
+        "Huadong Wang",
+        "Zhiyuan Liu",
+        "Jingang Wang",
+        "Juanzi Li",
+        "Wei Wu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.10715v3",
+      "arxiv_id": "2106.10715v3",
+      "title": "CPM-2: Large-scale Cost-effective Pre-trained Language Models",
+      "summary": "In recent years, the size of pre-trained language models (PLMs) has grown by leaps and bounds. However, efficiency issues of these large-scale PLMs limit their utilization in real-world scenarios. We present a suite of cost-effective techniques for the use of PLMs to deal with the efficiency issues of pre-training, fine-tuning, and inference. (1) We introduce knowledge inheritance to accelerate the pre-training process by exploiting existing PLMs instead of training models from scratch. (2) We explore the best practice of prompt tuning with large-scale PLMs. Compared with conventional fine-tuning, prompt tuning significantly reduces the number of task-specific parameters. (3) We implement a new inference toolkit, namely InfMoE, for using large-scale PLMs with limited computational resources. Based on our cost-effective pipeline, we pre-train two models: an encoder-decoder bilingual model with 11 billion parameters (CPM-2) and its corresponding MoE version with 198 billion parameters. In our experiments, we compare CPM-2 with mT5 on downstream tasks. Experimental results show that CPM-2 has excellent general language intelligence. Moreover, we validate the efficiency of InfMoE when conducting inference of large-scale models having tens of billions of parameters on a single GPU. All source code and model parameters are available at https://github.com/TsinghuaAI/CPM.",
+      "published": "2021-06-20T15:43:54Z",
+      "updated": "2021-06-24T13:23:42Z",
+      "authors": [
+        "Zhengyan Zhang",
+        "Yuxian Gu",
+        "Xu Han",
+        "Shengqi Chen",
+        "Chaojun Xiao",
+        "Zhenbo Sun",
+        "Yuan Yao",
+        "Fanchao Qi",
+        "Jian Guan",
+        "Pei Ke",
+        "Yanzheng Cai",
+        "Guoyang Zeng",
+        "Zhixing Tan",
+        "Zhiyuan Liu",
+        "Minlie Huang",
+        "Wentao Han",
+        "Yang Liu",
+        "Xiaoyan Zhu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.10199v5",
+      "arxiv_id": "2106.10199v5",
+      "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+      "summary": "We introduce BitFit, a sparse-finetuning method where only the bias-terms of the model (or a subset of them) are being modified. We show that with small-to-medium training data, applying BitFit on pre-trained BERT models is competitive with (and sometimes better than) fine-tuning the entire model. For larger data, the method is competitive with other sparse fine-tuning methods. Besides their practical utility, these findings are relevant for the question of understanding the commonly-used process of finetuning: they support the hypothesis that finetuning is mainly about exposing knowledge induced by language-modeling training, rather than learning new task-specific linguistic knowledge.",
+      "published": "2021-06-18T16:09:21Z",
+      "updated": "2022-09-05T11:56:28Z",
+      "authors": [
+        "Elad Ben-Zaken",
+        "Shauli Ravfogel",
+        "Yoav Goldberg"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.09226v2",
+      "arxiv_id": "2106.09226v2",
+      "title": "Why Do Pretrained Language Models Help in Downstream Tasks? An Analysis of Head and Prompt Tuning",
+      "summary": "Pretrained language models have achieved state-of-the-art performance when adapted to a downstream NLP task. However, theoretical analysis of these models is scarce and challenging since the pretraining and downstream tasks can be very different. We propose an analysis framework that links the pretraining and downstream tasks with an underlying latent variable generative model of text -- the downstream classifier must recover a function of the posterior distribution over the latent variables. We analyze head tuning (learning a classifier on top of the frozen pretrained model) and prompt tuning in this setting. The generative model in our analysis is either a Hidden Markov Model (HMM) or an HMM augmented with a latent memory component, motivated by long-term dependencies in natural language. We show that 1) under certain non-degeneracy conditions on the HMM, simple classification heads can solve the downstream task, 2) prompt tuning obtains downstream guarantees with weaker non-degeneracy conditions, and 3) our recovery guarantees for the memory-augmented HMM are stronger than for the vanilla HMM because task-relevant information is easier to recover from the long-term memory. Experiments on synthetically generated data from HMMs back our theoretical findings.",
+      "published": "2021-06-17T03:31:47Z",
+      "updated": "2022-04-20T22:17:18Z",
+      "authors": [
+        "Colin Wei",
+        "Sang Michael Xie",
+        "Tengyu Ma"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2105.11259v3",
+      "arxiv_id": "2105.11259v3",
+      "title": "PTR: Prompt Tuning with Rules for Text Classification",
+      "summary": "Fine-tuned pre-trained language models (PLMs) have achieved awesome performance on almost all NLP tasks. By using additional prompts to fine-tune PLMs, we can further stimulate the rich knowledge distributed in PLMs to better serve downstream tasks. Prompt tuning has achieved promising results on some few-class classification tasks such as sentiment classification and natural language inference. However, manually designing lots of language prompts is cumbersome and fallible. For those auto-generated prompts, it is also expensive and time-consuming to verify their effectiveness in non-few-shot scenarios. Hence, it is still challenging for prompt tuning to address many-class classification tasks. To this end, we propose prompt tuning with rules (PTR) for many-class text classification and apply logic rules to construct prompts with several sub-prompts. In this way, PTR is able to encode prior knowledge of each class into prompt tuning. We conduct experiments on relation classification, a typical and complicated many-class classification task, and the results show that PTR can significantly and consistently outperform existing state-of-the-art baselines. This indicates that PTR is a promising approach to take advantage of both human prior knowledge and PLMs for those complicated classification tasks.",
+      "published": "2021-05-24T13:24:02Z",
+      "updated": "2021-09-15T09:12:35Z",
+      "authors": [
+        "Xu Han",
+        "Weilin Zhao",
+        "Ning Ding",
+        "Zhiyuan Liu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2104.08691v2",
+      "arxiv_id": "2104.08691v2",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "summary": "In this work, we explore \"prompt tuning\", a simple yet effective mechanism for learning \"soft prompts\" to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signal from any number of labeled examples. Our end-to-end learned approach outperforms GPT-3's \"few-shot\" learning by a large margin. More remarkably, through ablations on model size using T5, we show that prompt tuning becomes more competitive with scale: as models exceed billions of parameters, our method \"closes the gap\" and matches the strong performance of model tuning (where all model weights are tuned). This finding is especially relevant in that large models are costly to share and serve, and the ability to reuse one frozen model for multiple downstream tasks can ease this burden. Our method can be seen as a simplification of the recently proposed \"prefix tuning\" of Li and Liang (2021), and we provide a comparison to this and other similar approaches. Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer, as compared to full model tuning.",
+      "published": "2021-04-18T03:19:26Z",
+      "updated": "2021-09-02T17:34:41Z",
+      "authors": [
+        "Brian Lester",
+        "Rami Al-Rfou",
+        "Noah Constant"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2104.07650v7",
+      "arxiv_id": "2104.07650v7",
+      "title": "KnowPrompt: Knowledge-aware Prompt-tuning with Synergistic Optimization for Relation Extraction",
+      "summary": "Recently, prompt-tuning has achieved promising results for specific few-shot classification tasks. The core idea of prompt-tuning is to insert text pieces (i.e., templates) into the input and transform a classification task into a masked language modeling problem. However, for relation extraction, determining an appropriate prompt template requires domain expertise, and it is cumbersome and time-consuming to obtain a suitable label word. Furthermore, there exists abundant semantic and prior knowledge among the relation labels that cannot be ignored. To this end, we focus on incorporating knowledge among relation labels into prompt-tuning for relation extraction and propose a Knowledge-aware Prompt-tuning approach with synergistic optimization (KnowPrompt). Specifically, we inject latent knowledge contained in relation labels into prompt construction with learnable virtual type words and answer words. Then, we synergistically optimize their representation with structured constraints. Extensive experimental results on five datasets with standard and low-resource settings demonstrate the effectiveness of our approach. Our code and datasets are available in https://github.com/zjunlp/KnowPrompt for reproducibility.",
+      "published": "2021-04-15T17:57:43Z",
+      "updated": "2023-09-18T16:46:56Z",
+      "authors": [
+        "Xiang Chen",
+        "Ningyu Zhang",
+        "Xin Xie",
+        "Shumin Deng",
+        "Yunzhi Yao",
+        "Chuanqi Tan",
+        "Fei Huang",
+        "Luo Si",
+        "Huajun Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2101.00190v1",
+      "arxiv_id": "2101.00190v1",
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "summary": "Fine-tuning is the de facto way to leverage large pretrained language models to perform downstream tasks. However, it modifies all the language model parameters and therefore necessitates storing a full copy for each task. In this paper, we propose prefix-tuning, a lightweight alternative to fine-tuning for natural language generation tasks, which keeps language model parameters frozen, but optimizes a small continuous task-specific vector (called the prefix). Prefix-tuning draws inspiration from prompting, allowing subsequent tokens to attend to this prefix as if it were \"virtual tokens\". We apply prefix-tuning to GPT-2 for table-to-text generation and to BART for summarization. We find that by learning only 0.1\\% of the parameters, prefix-tuning obtains comparable performance in the full data setting, outperforms fine-tuning in low-data settings, and extrapolates better to examples with topics unseen during training.",
+      "published": "2021-01-01T08:00:36Z",
+      "updated": "2021-01-01T08:00:36Z",
+      "authors": [
+        "Xiang Lisa Li",
+        "Percy Liang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"prompt tuning\" OR \"prefix tuning\" OR \"BitFit\"",
+  "slice_id": "2021",
+  "date_window": {
+    "start": "2021-01-01",
+    "end": "2021-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2112.08718v3",
+      "arxiv_id": "2112.08718v3",
+      "title": "Prompt Tuning GPT-2 language model for parameter-efficient domain adaptation of ASR systems",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains creating a need to adapt to new domains with small memory and deployment overhead. In this work, we introduce domain-prompts, a methodology that involves training a small number of domain embedding parameters to prime a Transformer-based Language Model (LM) to a particular domain. Using this domain-adapted LM for rescoring ASR hypotheses can achieve 7-13% WER reduction for a new domain with just 1000 unlabeled textual domain-specific sentences. This improvement is comparable or even better than fully fine-tuned models even though just 0.02% of the parameters of the base LM are updated. Additionally, our method is deployment-friendly as the learnt domain embeddings are prefixed to the input to the model rather than changing the base model architecture. Therefore, our method is an ideal choice for on-the-fly adaptation of LMs used in ASR systems to progressively scale it to new domains.",
+      "published": "2021-12-16T09:13:04Z",
+      "updated": "2022-07-21T21:24:34Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.06825v2",
+      "arxiv_id": "2112.06825v2",
+      "title": "VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks",
+      "summary": "Recently, fine-tuning language models pre-trained on large text corpora have provided huge improvements on vision-and-language (V&L) tasks as well as on pure language tasks. However, fine-tuning the entire parameter set of pre-trained models becomes impractical since the model size is growing rapidly. Hence, in this paper, we introduce adapter-based parameter-efficient transfer learning techniques to V&L models such as VL-BART and VLT5. We evaluate our methods in a unified multi-task setup on both image-text and video-text benchmarks. For the image-text tasks, we use four diverse V&L datasets: VQAv2, GQA, NLVR2 , and MSCOCO image captioning. For video-text tasks, we use TVQA, How2QA, TVC, and YC2C. With careful training and thorough experiments, we benchmark three popular adapter-based methods (Adapter, Hyperformer, Compacter) against the standard full fine-tuning and the recently proposed prompt-tuning approach. We also enhance the efficiency and performance of adapters by sharing their weights to attain knowledge across tasks. Our results demonstrate that training the adapter with the weight-sharing technique (4.18% of total parameters for image-text tasks and 3.39% for video-text tasks) can match the performance of fine-tuning the entire model. Lastly, we present a comprehensive analysis including the combination of adapter and task-specific prompts and the impact of V&L pre-training on adapters. Our code is available at: https://github.com/ylsung/VL_adapter.",
+      "published": "2021-12-13T17:35:26Z",
+      "updated": "2022-03-24T17:33:07Z",
+      "authors": [
+        "Yi-Lin Sung",
+        "Jaemin Cho",
+        "Mohit Bansal"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.05717v2",
+      "arxiv_id": "2112.05717v2",
+      "title": "Discourse-Aware Soft Prompting for Text Generation",
+      "summary": "Current efficient fine-tuning methods (e.g., adapters, prefix-tuning, etc.) have optimized conditional text generation via training a small set of extra parameters of the neural language model, while freezing the rest for efficiency. While showing strong performance on some generation tasks, they don't generalize across all generation tasks. We show that soft-prompt based conditional text generation can be improved with simple and efficient methods that simulate modeling the discourse structure of human written text. We investigate two design choices: First, we apply \\textit{hierarchical blocking} on the prefix parameters to simulate a higher-level discourse structure of human written text. Second, we apply \\textit{attention sparsity} on the prefix parameters at different layers of the network and learn sparse transformations on the softmax-function. We show that structured design of prefix parameters yields more coherent, faithful and relevant generations than the baseline prefix-tuning on all generation tasks.",
+      "published": "2021-12-10T18:15:44Z",
+      "updated": "2022-05-23T17:27:22Z",
+      "authors": [
+        "Marjan Ghazvininejad",
+        "Vladimir Karpukhin",
+        "Vera Gor",
+        "Asli Celikyilmaz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2111.06719v2",
+      "arxiv_id": "2111.06719v2",
+      "title": "On Transferability of Prompt Tuning for Natural Language Processing",
+      "summary": "Prompt tuning (PT) is a promising parameter-efficient method to utilize extremely large pre-trained language models (PLMs), which can achieve comparable performance to full-parameter fine-tuning by only tuning a few soft prompts. However, PT requires much more training time than fine-tuning. Intuitively, knowledge transfer can help to improve the efficiency. To explore whether we can improve PT via prompt transfer, we empirically investigate the transferability of soft prompts across different downstream tasks and PLMs in this work. We find that (1) in zero-shot setting, trained soft prompts can effectively transfer to similar tasks on the same PLM and also to other PLMs with a cross-model projector trained on similar tasks; (2) when used as initialization, trained soft prompts of similar tasks and projected prompts of other PLMs can significantly accelerate training and also improve the performance of PT. Moreover, to explore what decides prompt transferability, we investigate various transferability indicators and find that the overlapping rate of activated neurons strongly reflects the transferability, which suggests how the prompts stimulate PLMs is essential. Our findings show that prompt transfer is promising for improving PT, and further research shall focus more on prompts' stimulation to PLMs. The source code can be obtained from https://github.com/thunlp/Prompt-Transferability.",
+      "published": "2021-11-12T13:39:28Z",
+      "updated": "2022-04-27T16:49:40Z",
+      "authors": [
+        "Yusheng Su",
+        "Xiaozhi Wang",
+        "Yujia Qin",
+        "Chi-Min Chan",
+        "Yankai Lin",
+        "Huadong Wang",
+        "Kaiyue Wen",
+        "Zhiyuan Liu",
+        "Peng Li",
+        "Juanzi Li",
+        "Lei Hou",
+        "Maosong Sun",
+        "Jie Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08525v2",
+      "arxiv_id": "2110.08525v2",
+      "title": "The Power of Prompt Tuning for Low-Resource Semantic Parsing",
+      "summary": "Prompt tuning has recently emerged as an effective method for adapting pre-trained language models to a number of language understanding and generation tasks. In this paper, we investigate prompt tuning for semantic parsing -- the task of mapping natural language utterances onto formal meaning representations. On the low-resource splits of Overnight and TOPv2, we find that a prompt tuned T5-xl significantly outperforms its fine-tuned counterpart, as well as strong GPT-3 and BART baselines. We also conduct ablation studies across different model scales and target representations, finding that, with increasing model scale, prompt tuned T5 models improve at generating target representations that are far from the pre-training distribution.",
+      "published": "2021-10-16T09:33:09Z",
+      "updated": "2022-04-01T13:59:36Z",
+      "authors": [
+        "Nathan Schucher",
+        "Siva Reddy",
+        "Harm de Vries"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08329v2",
+      "arxiv_id": "2110.08329v2",
+      "title": "Control Prefixes for Parameter-Efficient Text Generation",
+      "summary": "Prefix-tuning is a powerful lightweight technique for adapting a large pre-trained language model to a downstream application. However, it uses the same dataset-level tuned prompt for all examples in the dataset. We extend this idea and propose a dynamic method, Control Prefixes, which allows for the inclusion of conditional input-dependent information, combining the benefits of prompt tuning and controlled generation. The method incorporates attribute-level learnable representations into different layers of a pre-trained transformer, allowing for the generated text to be guided in a particular direction. We provide a systematic evaluation of the technique and apply it to five datasets from the GEM benchmark for natural language generation (NLG). Although the aim is to develop a parameter-efficient model, we show Control Prefixes can even outperform full fine-tuning methods. We present state-of-the-art results on several data-to-text datasets, including WebNLG.",
+      "published": "2021-10-15T19:32:17Z",
+      "updated": "2022-05-10T16:54:15Z",
+      "authors": [
+        "Jordan Clive",
+        "Kris Cao",
+        "Marek Rei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07904v2",
+      "arxiv_id": "2110.07904v2",
+      "title": "SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer",
+      "summary": "There has been growing interest in parameter-efficient methods to apply pre-trained language models to downstream tasks. Building on the Prompt Tuning approach of Lester et al. (2021), which learns task-specific soft prompts to condition a frozen pre-trained model to perform different tasks, we propose a novel prompt-based transfer learning approach called SPoT: Soft Prompt Transfer. SPoT first learns a prompt on one or more source tasks and then uses it to initialize the prompt for a target task. We show that SPoT significantly boosts the performance of Prompt Tuning across many tasks. More remarkably, across all model sizes, SPoT matches or outperforms standard Model Tuning (which fine-tunes all model parameters) on the SuperGLUE benchmark, while using up to 27,000x fewer task-specific parameters. To understand where SPoT is most effective, we conduct a large-scale study on task transferability with 26 NLP tasks in 160 combinations, and demonstrate that many tasks can benefit each other via prompt transfer. Finally, we propose an efficient retrieval approach that interprets task prompts as task embeddings to identify similar tasks and predict the most transferable source tasks for a novel target task.",
+      "published": "2021-10-15T07:35:58Z",
+      "updated": "2022-03-16T18:52:36Z",
+      "authors": [
+        "Tu Vu",
+        "Brian Lester",
+        "Noah Constant",
+        "Rami Al-Rfou",
+        "Daniel Cer"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07867v3",
+      "arxiv_id": "2110.07867v3",
+      "title": "Exploring Universal Intrinsic Task Subspace via Prompt Tuning",
+      "summary": "Why can pre-trained language models (PLMs) learn universal representations and effectively adapt to broad NLP tasks differing a lot superficially? In this work, we empirically find evidence indicating that the adaptations of PLMs to various few-shot tasks can be reparameterized as optimizing only a few free parameters in a unified low-dimensional intrinsic task subspace, which may help us understand why PLMs could easily adapt to various NLP tasks with small-scale data. To find such a subspace and examine its universality, we propose an analysis pipeline called intrinsic prompt tuning (IPT). Specifically, we resort to the recent success of prompt tuning and decompose the soft prompts of multiple NLP tasks into the same low-dimensional nonlinear subspace, then we learn to adapt the PLM to unseen data or tasks by only tuning parameters in this subspace. In the experiments, we study diverse few-shot NLP tasks and surprisingly find that in a 250-dimensional subspace found with 100 tasks, by only tuning 250 free parameters, we can recover 97% and 83% of the full prompt tuning performance for 100 seen tasks (using different training data) and 20 unseen tasks, respectively, showing great generalization ability of the found intrinsic task subspace. Besides being an analysis tool, IPT could further help us improve the prompt tuning stability.",
+      "published": "2021-10-15T05:43:59Z",
+      "updated": "2022-11-25T15:21:47Z",
+      "authors": [
+        "Yujia Qin",
+        "Xiaozhi Wang",
+        "Yusheng Su",
+        "Yankai Lin",
+        "Ning Ding",
+        "Jing Yi",
+        "Weize Chen",
+        "Zhiyuan Liu",
+        "Juanzi Li",
+        "Lei Hou",
+        "Peng Li",
+        "Maosong Sun",
+        "Jie Zhou"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07602v3",
+      "arxiv_id": "2110.07602v3",
+      "title": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+      "summary": "Prompt tuning, which only tunes continuous prompts with a frozen language model, substantially reduces per-task storage and memory usage at training. However, in the context of NLU, prior work reveals that prompt tuning does not perform well for normal-sized pretrained models. We also find that existing methods of prompt tuning cannot handle hard sequence labeling tasks, indicating a lack of universality. We present a novel empirical finding that properly optimized prompt tuning can be universally effective across a wide range of model scales and NLU tasks. It matches the performance of finetuning while having only 0.1%-3% tuned parameters. Our method P-Tuning v2 is an implementation of Deep Prompt Tuning \\cite{li2021prefix,qin2021learning} optimized and adapted for NLU. Given the universality and simplicity of P-Tuning v2, we believe it can serve as an alternative to finetuning and a strong baseline for future research.Our code and data are released at https://github.com/THUDM/P-tuning-v2.",
+      "published": "2021-10-14T17:58:47Z",
+      "updated": "2022-03-20T15:13:08Z",
+      "authors": [
+        "Xiao Liu",
+        "Kaixuan Ji",
+        "Yicheng Fu",
+        "Weng Lam Tam",
+        "Zhengxiao Du",
+        "Zhilin Yang",
+        "Jie Tang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07331v1",
+      "arxiv_id": "2110.07331v1",
+      "title": "Plug-Tagger: A Pluggable Sequence Labeling Framework Using Language Models",
+      "summary": "Plug-and-play functionality allows deep learning models to adapt well to different tasks without requiring any parameters modified. Recently, prefix-tuning was shown to be a plug-and-play method on various text generation tasks by simply inserting corresponding continuous vectors into the inputs. However, sequence labeling tasks invalidate existing plug-and-play methods since different label sets demand changes to the architecture of the model classifier. In this work, we propose the use of label word prediction instead of classification to totally reuse the architecture of pre-trained models for sequence labeling tasks. Specifically, for each task, a label word set is first constructed by selecting a high-frequency word for each class respectively, and then, task-specific vectors are inserted into the inputs and optimized to manipulate the model predictions towards the corresponding label words. As a result, by simply switching the plugin vectors on the input, a frozen pre-trained language model is allowed to perform different tasks. Experimental results on three sequence labeling tasks show that the performance of the proposed method can achieve comparable performance with standard fine-tuning with only 0.1\\% task-specific parameters. In addition, our method is up to 70 times faster than non-plug-and-play methods while switching different tasks under the resource-constrained scenario.",
+      "published": "2021-10-14T13:05:06Z",
+      "updated": "2021-10-14T13:05:06Z",
+      "authors": [
+        "Xin Zhou",
+        "Ruotian Ma",
+        "Tao Gui",
+        "Yiding Tan",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.07298v3",
+      "arxiv_id": "2110.07298v3",
+      "title": "LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5",
+      "summary": "Existing approaches to lifelong language learning rely on plenty of labeled data for learning a new task, which is hard to obtain in most real scenarios. Considering that humans can continually learn new tasks from a handful of examples, we expect the models also to be able to generalize well on new few-shot tasks without forgetting the previous ones. In this work, we define this more challenging yet practical problem as Lifelong Few-shot Language Learning (LFLL) and propose a unified framework for it based on prompt tuning of T5. Our framework called LFPT5 takes full advantage of PT's strong few-shot learning ability, and simultaneously trains the model as a task solver and a data generator. Before learning a new domain of the same task type, LFPT5 generates pseudo (labeled) samples of previously learned domains, and later gets trained on those samples to alleviate forgetting of previous knowledge as it learns the new domain. In addition, a KL divergence loss is minimized to achieve label consistency between the previous and the current model. While adapting to a new task type, LFPT5 includes and tunes additional prompt embeddings for the new task. With extensive experiments, we demonstrate that LFPT5 can be applied to various different types of tasks and significantly outperform previous methods in different LFLL settings.",
+      "published": "2021-10-14T12:06:29Z",
+      "updated": "2022-03-31T02:40:57Z",
+      "authors": [
+        "Chengwei Qin",
+        "Shafiq Joty"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.06502v2",
+      "arxiv_id": "2110.06502v2",
+      "title": "Prompt-tuning in ASR systems for efficient domain-adaptation",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains. Since domain-specific systems perform better than their generic counterparts on in-domain evaluation, the need for memory and compute-efficient domain adaptation is obvious. Particularly, adapting parameter-heavy transformer-based language models used for rescoring ASR hypothesis is challenging. In this work, we overcome the problem using prompt-tuning, a methodology that trains a small number of domain token embedding parameters to prime a transformer-based LM to a particular domain. With just a handful of extra parameters per domain, we achieve much better perplexity scores over the baseline of using an unadapted LM. Despite being parameter-efficient, these improvements are comparable to those of fully-fine-tuned models with hundreds of millions of parameters. We replicate our findings in perplexity numbers to Word Error Rate in a domain-specific ASR system for one such domain.",
+      "published": "2021-10-13T05:20:57Z",
+      "updated": "2021-10-22T22:31:42Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.04544v2",
+      "arxiv_id": "2110.04544v2",
+      "title": "CLIP-Adapter: Better Vision-Language Models with Feature Adapters",
+      "summary": "Large-scale contrastive vision-language pre-training has shown significant progress in visual representation learning. Unlike traditional visual systems trained by a fixed set of discrete labels, a new paradigm was introduced in \\cite{radford2021learning} to directly learn to align images with raw texts in an open-vocabulary setting. On downstream tasks, a carefully chosen text prompt is employed to make zero-shot predictions.~To avoid non-trivial prompt engineering, context optimization \\cite{zhou2021coop} has been proposed to learn continuous vectors as task-specific prompts with few-shot training examples.~In this paper, we show that there is an alternative path to achieve better vision-language models other than prompt tuning.~While prompt tuning is for the textual inputs, we propose CLIP-Adapter to conduct fine-tuning with feature adapters on either visual or language branch. Specifically, CLIP-Adapter adopts an additional bottleneck layer to learn new features and performs residual-style feature blending with the original pre-trained features.~As a consequence, CLIP-Adapter is able to outperform context optimization while maintains a simple design. Experiments and extensive ablation studies on various visual classification tasks demonstrate the effectiveness of our approach. Code is released at t https://github.com/gaopengcuhk/CLIP-Adapter.",
+      "published": "2021-10-09T11:39:30Z",
+      "updated": "2025-03-25T14:34:04Z",
+      "authors": [
+        "Peng Gao",
+        "Shijie Geng",
+        "Renrui Zhang",
+        "Teli Ma",
+        "Rongyao Fang",
+        "Yongfeng Zhang",
+        "Hongsheng Li",
+        "Yu Qiao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.00135v2",
+      "arxiv_id": "2110.00135v2",
+      "title": "UserIdentifier: Implicit User Representations for Simple and Effective Personalized Sentiment Analysis",
+      "summary": "Global models are trained to be as generalizable as possible, with user invariance considered desirable since the models are shared across multitudes of users. As such, these models are often unable to produce personalized responses for individual users, based on their data. Contrary to widely-used personalization techniques based on few-shot learning, we propose UserIdentifier, a novel scheme for training a single shared model for all users. Our approach produces personalized responses by adding fixed, non-trainable user identifiers to the input data. We empirically demonstrate that this proposed method outperforms the prefix-tuning based state-of-the-art approach by up to 13%, on a suite of sentiment analysis datasets. We also show that, unlike prior work, this method needs neither any additional model parameters nor any extra rounds of few-shot fine-tuning.",
+      "published": "2021-10-01T00:21:33Z",
+      "updated": "2022-05-03T19:17:03Z",
+      "authors": [
+        "Fatemehsadat Mireshghallah",
+        "Vaishnavi Shrivastava",
+        "Milad Shokouhi",
+        "Taylor Berg-Kirkpatrick",
+        "Robert Sim",
+        "Dimitrios Dimitriadis"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.13532v3",
+      "arxiv_id": "2109.13532v3",
+      "title": "Template-free Prompt Tuning for Few-shot NER",
+      "summary": "Prompt-based methods have been successfully applied in sentence-level few-shot learning tasks, mostly owing to the sophisticated design of templates and label words. However, when applied to token-level labeling tasks such as NER, it would be time-consuming to enumerate the template queries over all potential entity spans. In this work, we propose a more elegant method to reformulate NER tasks as LM problems without any templates. Specifically, we discard the template construction process while maintaining the word prediction paradigm of pre-training models to predict a class-related pivot word (or label word) at the entity position. Meanwhile, we also explore principled ways to automatically search for appropriate label words that the pre-trained models can easily adapt to. While avoiding complicated template-based process, the proposed LM objective also reduces the gap between different objectives used in pre-training and fine-tuning, thus it can better benefit the few-shot performance. Experimental results demonstrate the effectiveness of the proposed method over bert-tagger and template-based method under few-shot setting. Moreover, the decoding speed of the proposed method is up to 1930.12 times faster than the template-based method.",
+      "published": "2021-09-28T07:19:24Z",
+      "updated": "2022-11-23T15:58:56Z",
+      "authors": [
+        "Ruotian Ma",
+        "Xin Zhou",
+        "Tao Gui",
+        "Yiding Tan",
+        "Linyang Li",
+        "Qi Zhang",
+        "Xuanjing Huang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.11797v3",
+      "arxiv_id": "2109.11797v3",
+      "title": "CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models",
+      "summary": "Pre-Trained Vision-Language Models (VL-PTMs) have shown promising capabilities in grounding natural language in image data, facilitating a broad variety of cross-modal tasks. However, we note that there exists a significant gap between the objective forms of model pre-training and fine-tuning, resulting in a need for large amounts of labeled data to stimulate the visual grounding capability of VL-PTMs for downstream tasks. To address the challenge, we present Cross-modal Prompt Tuning (CPT, alternatively, Colorful Prompt Tuning), a novel paradigm for tuning VL-PTMs, which reformulates visual grounding into a fill-in-the-blank problem with color-based co-referential markers in image and text, maximally mitigating the gap. In this way, CPT enables strong few-shot and even zero-shot visual grounding capabilities of VL-PTMs. Comprehensive experimental results show that the prompt-tuned VL-PTMs outperform their fine-tuned counterparts by a large margin (e.g., 17.3% absolute accuracy improvement, and 73.8% relative standard deviation reduction on average with one shot in RefCOCO evaluation). We make the data and code for this paper publicly available at https://github.com/thunlp/CPT.",
+      "published": "2021-09-24T08:07:29Z",
+      "updated": "2022-05-20T07:05:41Z",
+      "authors": [
+        "Yuan Yao",
+        "Ao Zhang",
+        "Zhengyan Zhang",
+        "Zhiyuan Liu",
+        "Tat-Seng Chua",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.08306v1",
+      "arxiv_id": "2109.08306v1",
+      "title": "SentiPrompt: Sentiment Knowledge Enhanced Prompt-Tuning for Aspect-Based Sentiment Analysis",
+      "summary": "Aspect-based sentiment analysis (ABSA) is an emerging fine-grained sentiment analysis task that aims to extract aspects, classify corresponding sentiment polarities and find opinions as the causes of sentiment. The latest research tends to solve the ABSA task in a unified way with end-to-end frameworks. Yet, these frameworks get fine-tuned from downstream tasks without any task-adaptive modification. Specifically, they do not use task-related knowledge well or explicitly model relations between aspect and opinion terms, hindering them from better performance. In this paper, we propose SentiPrompt to use sentiment knowledge enhanced prompts to tune the language model in the unified framework. We inject sentiment knowledge regarding aspects, opinions, and polarities into prompt and explicitly model term relations via constructing consistency and polarity judgment templates from the ground truth triplets. Experimental results demonstrate that our approach can outperform strong baselines on Triplet Extraction, Pair Extraction, and Aspect Term Extraction with Sentiment Classification by a notable margin.",
+      "published": "2021-09-17T01:56:06Z",
+      "updated": "2021-09-17T01:56:06Z",
+      "authors": [
+        "Chengxi Li",
+        "Feiyu Gao",
+        "Jiajun Bu",
+        "Lu Xu",
+        "Xiang Chen",
+        "Yu Gu",
+        "Zirui Shao",
+        "Qi Zheng",
+        "Ningyu Zhang",
+        "Yongpan Wang",
+        "Zhi Yu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.04332v3",
+      "arxiv_id": "2109.04332v3",
+      "title": "PPT: Pre-trained Prompt Tuning for Few-shot Learning",
+      "summary": "Prompts for pre-trained language models (PLMs) have shown remarkable performance by bridging the gap between pre-training tasks and various downstream tasks. Among these methods, prompt tuning, which freezes PLMs and only tunes soft prompts, provides an efficient and effective solution for adapting large-scale PLMs to downstream tasks. However, prompt tuning is yet to be fully explored. In our pilot experiments, we find that prompt tuning performs comparably with conventional full-model fine-tuning when downstream data are sufficient, whereas it performs much worse under few-shot learning settings, which may hinder the application of prompt tuning in practice. We attribute this low performance to the manner of initializing soft prompts. Therefore, in this work, we propose to pre-train prompts by adding soft prompts into the pre-training stage to obtain a better initialization. We name this Pre-trained Prompt Tuning framework \"PPT\". To ensure the generalization of PPT, we formulate similar classification tasks into a unified task form and pre-train soft prompts for this unified task. Extensive experiments show that tuning pre-trained prompts for downstream tasks can reach or even outperform full-model fine-tuning under both full-data and few-shot settings. Our approach is effective and efficient for using large-scale PLMs in practice.",
+      "published": "2021-09-09T15:11:04Z",
+      "updated": "2022-03-14T02:05:06Z",
+      "authors": [
+        "Yuxian Gu",
+        "Xu Han",
+        "Zhiyuan Liu",
+        "Minlie Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.02837v1",
+      "arxiv_id": "2109.02837v1",
+      "title": "Exploring Strategies for Generalizable Commonsense Reasoning with Pre-trained Models",
+      "summary": "Commonsense reasoning benchmarks have been largely solved by fine-tuning language models. The downside is that fine-tuning may cause models to overfit to task-specific data and thereby forget their knowledge gained during pre-training. Recent works only propose lightweight model updates as models may already possess useful knowledge from past experience, but a challenge remains in understanding what parts and to what extent models should be refined for a given task. In this paper, we investigate what models learn from commonsense reasoning datasets. We measure the impact of three different adaptation methods on the generalization and accuracy of models. Our experiments with two models show that fine-tuning performs best, by learning both the content and the structure of the task, but suffers from overfitting and limited generalization to novel answers. We observe that alternative adaptation methods like prefix-tuning have comparable accuracy, but generalize better to unseen answers and are more robust to adversarial splits.",
+      "published": "2021-09-07T03:13:06Z",
+      "updated": "2021-09-07T03:13:06Z",
+      "authors": [
+        "Kaixin Ma",
+        "Filip Ilievski",
+        "Jonathan Francis",
+        "Satoru Ozaki",
+        "Eric Nyberg",
+        "Alessandro Oltramari"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2109.00904v2",
+      "arxiv_id": "2109.00904v2",
+      "title": "MultiEURLEX -- A multi-lingual and multi-label legal document classification dataset for zero-shot cross-lingual transfer",
+      "summary": "We introduce MULTI-EURLEX, a new multilingual dataset for topic classification of legal documents. The dataset comprises 65k European Union (EU) laws, officially translated in 23 languages, annotated with multiple labels from the EUROVOC taxonomy. We highlight the effect of temporal concept drift and the importance of chronological, instead of random splits. We use the dataset as a testbed for zero-shot cross-lingual transfer, where we exploit annotated training documents in one language (source) to classify documents in another language (target). We find that fine-tuning a multilingually pretrained model (XLM-ROBERTA, MT5) in a single source language leads to catastrophic forgetting of multilingual knowledge and, consequently, poor zero-shot transfer to other languages. Adaptation strategies, namely partial fine-tuning, adapters, BITFIT, LNFIT, originally proposed to accelerate fine-tuning for new end-tasks, help retain multilingual knowledge from pretraining, substantially improving zero-shot cross-lingual transfer, but their impact also depends on the pretrained model used and the size of the label set.",
+      "published": "2021-09-02T12:52:55Z",
+      "updated": "2021-09-06T21:00:59Z",
+      "authors": [
+        "Ilias Chalkidis",
+        "Manos Fergadiotis",
+        "Ion Androutsopoulos"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.04106v3",
+      "arxiv_id": "2108.04106v3",
+      "title": "Noisy Channel Language Model Prompting for Few-Shot Text Classification",
+      "summary": "We introduce a noisy channel approach for language model prompting in few-shot text classification. Instead of computing the likelihood of the label given the input (referred as direct models), channel models compute the conditional probability of the input given the label, and are thereby required to explain every word in the input. We use channel models for recently proposed few-shot learning methods with no or very limited updates to the language model parameters, via either in-context demonstration or prompt tuning. Our experiments show that, for both methods, channel models significantly outperform their direct counterparts, which we attribute to their stability, i.e., lower variance and higher worst-case accuracy. We also present extensive ablations that provide recommendations for when to use channel prompt tuning instead of other competitive methods (e.g., direct head tuning): channel prompt tuning is preferred when the number of training examples is small, labels in the training data are imbalanced, or generalization to unseen labels is required.",
+      "published": "2021-08-09T15:06:26Z",
+      "updated": "2022-03-15T06:53:43Z",
+      "authors": [
+        "Sewon Min",
+        "Mike Lewis",
+        "Hannaneh Hajishirzi",
+        "Luke Zettlemoyer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.02035v2",
+      "arxiv_id": "2108.02035v2",
+      "title": "Knowledgeable Prompt-tuning: Incorporating Knowledge into Prompt Verbalizer for Text Classification",
+      "summary": "Tuning pre-trained language models (PLMs) with task-specific prompts has been a promising approach for text classification. Particularly, previous studies suggest that prompt-tuning has remarkable superiority in the low-data scenario over the generic fine-tuning methods with extra classifiers. The core idea of prompt-tuning is to insert text pieces, i.e., template, to the input and transform a classification problem into a masked language modeling problem, where a crucial step is to construct a projection, i.e., verbalizer, between a label space and a label word space. A verbalizer is usually handcrafted or searched by gradient descent, which may lack coverage and bring considerable bias and high variances to the results. In this work, we focus on incorporating external knowledge into the verbalizer, forming a knowledgeable prompt-tuning (KPT), to improve and stabilize prompt-tuning. Specifically, we expand the label word space of the verbalizer using external knowledge bases (KBs) and refine the expanded label word space with the PLM itself before predicting with the expanded label word space. Extensive experiments on zero and few-shot text classification tasks demonstrate the effectiveness of knowledgeable prompt-tuning.",
+      "published": "2021-08-04T13:00:16Z",
+      "updated": "2022-03-18T16:18:46Z",
+      "authors": [
+        "Shengding Hu",
+        "Ning Ding",
+        "Huadong Wang",
+        "Zhiyuan Liu",
+        "Jingang Wang",
+        "Juanzi Li",
+        "Wei Wu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.10715v3",
+      "arxiv_id": "2106.10715v3",
+      "title": "CPM-2: Large-scale Cost-effective Pre-trained Language Models",
+      "summary": "In recent years, the size of pre-trained language models (PLMs) has grown by leaps and bounds. However, efficiency issues of these large-scale PLMs limit their utilization in real-world scenarios. We present a suite of cost-effective techniques for the use of PLMs to deal with the efficiency issues of pre-training, fine-tuning, and inference. (1) We introduce knowledge inheritance to accelerate the pre-training process by exploiting existing PLMs instead of training models from scratch. (2) We explore the best practice of prompt tuning with large-scale PLMs. Compared with conventional fine-tuning, prompt tuning significantly reduces the number of task-specific parameters. (3) We implement a new inference toolkit, namely InfMoE, for using large-scale PLMs with limited computational resources. Based on our cost-effective pipeline, we pre-train two models: an encoder-decoder bilingual model with 11 billion parameters (CPM-2) and its corresponding MoE version with 198 billion parameters. In our experiments, we compare CPM-2 with mT5 on downstream tasks. Experimental results show that CPM-2 has excellent general language intelligence. Moreover, we validate the efficiency of InfMoE when conducting inference of large-scale models having tens of billions of parameters on a single GPU. All source code and model parameters are available at https://github.com/TsinghuaAI/CPM.",
+      "published": "2021-06-20T15:43:54Z",
+      "updated": "2021-06-24T13:23:42Z",
+      "authors": [
+        "Zhengyan Zhang",
+        "Yuxian Gu",
+        "Xu Han",
+        "Shengqi Chen",
+        "Chaojun Xiao",
+        "Zhenbo Sun",
+        "Yuan Yao",
+        "Fanchao Qi",
+        "Jian Guan",
+        "Pei Ke",
+        "Yanzheng Cai",
+        "Guoyang Zeng",
+        "Zhixing Tan",
+        "Zhiyuan Liu",
+        "Minlie Huang",
+        "Wentao Han",
+        "Yang Liu",
+        "Xiaoyan Zhu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.10199v5",
+      "arxiv_id": "2106.10199v5",
+      "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+      "summary": "We introduce BitFit, a sparse-finetuning method where only the bias-terms of the model (or a subset of them) are being modified. We show that with small-to-medium training data, applying BitFit on pre-trained BERT models is competitive with (and sometimes better than) fine-tuning the entire model. For larger data, the method is competitive with other sparse fine-tuning methods. Besides their practical utility, these findings are relevant for the question of understanding the commonly-used process of finetuning: they support the hypothesis that finetuning is mainly about exposing knowledge induced by language-modeling training, rather than learning new task-specific linguistic knowledge.",
+      "published": "2021-06-18T16:09:21Z",
+      "updated": "2022-09-05T11:56:28Z",
+      "authors": [
+        "Elad Ben-Zaken",
+        "Shauli Ravfogel",
+        "Yoav Goldberg"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.09226v2",
+      "arxiv_id": "2106.09226v2",
+      "title": "Why Do Pretrained Language Models Help in Downstream Tasks? An Analysis of Head and Prompt Tuning",
+      "summary": "Pretrained language models have achieved state-of-the-art performance when adapted to a downstream NLP task. However, theoretical analysis of these models is scarce and challenging since the pretraining and downstream tasks can be very different. We propose an analysis framework that links the pretraining and downstream tasks with an underlying latent variable generative model of text -- the downstream classifier must recover a function of the posterior distribution over the latent variables. We analyze head tuning (learning a classifier on top of the frozen pretrained model) and prompt tuning in this setting. The generative model in our analysis is either a Hidden Markov Model (HMM) or an HMM augmented with a latent memory component, motivated by long-term dependencies in natural language. We show that 1) under certain non-degeneracy conditions on the HMM, simple classification heads can solve the downstream task, 2) prompt tuning obtains downstream guarantees with weaker non-degeneracy conditions, and 3) our recovery guarantees for the memory-augmented HMM are stronger than for the vanilla HMM because task-relevant information is easier to recover from the long-term memory. Experiments on synthetically generated data from HMMs back our theoretical findings.",
+      "published": "2021-06-17T03:31:47Z",
+      "updated": "2022-04-20T22:17:18Z",
+      "authors": [
+        "Colin Wei",
+        "Sang Michael Xie",
+        "Tengyu Ma"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2105.11259v3",
+      "arxiv_id": "2105.11259v3",
+      "title": "PTR: Prompt Tuning with Rules for Text Classification",
+      "summary": "Fine-tuned pre-trained language models (PLMs) have achieved awesome performance on almost all NLP tasks. By using additional prompts to fine-tune PLMs, we can further stimulate the rich knowledge distributed in PLMs to better serve downstream tasks. Prompt tuning has achieved promising results on some few-class classification tasks such as sentiment classification and natural language inference. However, manually designing lots of language prompts is cumbersome and fallible. For those auto-generated prompts, it is also expensive and time-consuming to verify their effectiveness in non-few-shot scenarios. Hence, it is still challenging for prompt tuning to address many-class classification tasks. To this end, we propose prompt tuning with rules (PTR) for many-class text classification and apply logic rules to construct prompts with several sub-prompts. In this way, PTR is able to encode prior knowledge of each class into prompt tuning. We conduct experiments on relation classification, a typical and complicated many-class classification task, and the results show that PTR can significantly and consistently outperform existing state-of-the-art baselines. This indicates that PTR is a promising approach to take advantage of both human prior knowledge and PLMs for those complicated classification tasks.",
+      "published": "2021-05-24T13:24:02Z",
+      "updated": "2021-09-15T09:12:35Z",
+      "authors": [
+        "Xu Han",
+        "Weilin Zhao",
+        "Ning Ding",
+        "Zhiyuan Liu",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2104.08691v2",
+      "arxiv_id": "2104.08691v2",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "summary": "In this work, we explore \"prompt tuning\", a simple yet effective mechanism for learning \"soft prompts\" to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signal from any number of labeled examples. Our end-to-end learned approach outperforms GPT-3's \"few-shot\" learning by a large margin. More remarkably, through ablations on model size using T5, we show that prompt tuning becomes more competitive with scale: as models exceed billions of parameters, our method \"closes the gap\" and matches the strong performance of model tuning (where all model weights are tuned). This finding is especially relevant in that large models are costly to share and serve, and the ability to reuse one frozen model for multiple downstream tasks can ease this burden. Our method can be seen as a simplification of the recently proposed \"prefix tuning\" of Li and Liang (2021), and we provide a comparison to this and other similar approaches. Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer, as compared to full model tuning.",
+      "published": "2021-04-18T03:19:26Z",
+      "updated": "2021-09-02T17:34:41Z",
+      "authors": [
+        "Brian Lester",
+        "Rami Al-Rfou",
+        "Noah Constant"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2104.07650v7",
+      "arxiv_id": "2104.07650v7",
+      "title": "KnowPrompt: Knowledge-aware Prompt-tuning with Synergistic Optimization for Relation Extraction",
+      "summary": "Recently, prompt-tuning has achieved promising results for specific few-shot classification tasks. The core idea of prompt-tuning is to insert text pieces (i.e., templates) into the input and transform a classification task into a masked language modeling problem. However, for relation extraction, determining an appropriate prompt template requires domain expertise, and it is cumbersome and time-consuming to obtain a suitable label word. Furthermore, there exists abundant semantic and prior knowledge among the relation labels that cannot be ignored. To this end, we focus on incorporating knowledge among relation labels into prompt-tuning for relation extraction and propose a Knowledge-aware Prompt-tuning approach with synergistic optimization (KnowPrompt). Specifically, we inject latent knowledge contained in relation labels into prompt construction with learnable virtual type words and answer words. Then, we synergistically optimize their representation with structured constraints. Extensive experimental results on five datasets with standard and low-resource settings demonstrate the effectiveness of our approach. Our code and datasets are available in https://github.com/zjunlp/KnowPrompt for reproducibility.",
+      "published": "2021-04-15T17:57:43Z",
+      "updated": "2023-09-18T16:46:56Z",
+      "authors": [
+        "Xiang Chen",
+        "Ningyu Zhang",
+        "Xin Xie",
+        "Shumin Deng",
+        "Yunzhi Yao",
+        "Chuanqi Tan",
+        "Fei Huang",
+        "Luo Si",
+        "Huajun Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2101.00190v1",
+      "arxiv_id": "2101.00190v1",
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "summary": "Fine-tuning is the de facto way to leverage large pretrained language models to perform downstream tasks. However, it modifies all the language model parameters and therefore necessitates storing a full copy for each task. In this paper, we propose prefix-tuning, a lightweight alternative to fine-tuning for natural language generation tasks, which keeps language model parameters frozen, but optimizes a small continuous task-specific vector (called the prefix). Prefix-tuning draws inspiration from prompting, allowing subsequent tokens to attend to this prefix as if it were \"virtual tokens\". We apply prefix-tuning to GPT-2 for table-to-text generation and to BART for summarization. We find that by learning only 0.1\\% of the parameters, prefix-tuning obtains comparable performance in the full data setting, outperforms fine-tuning in low-data settings, and extrapolates better to examples with topics unseen during training.",
+      "published": "2021-01-01T08:00:36Z",
+      "updated": "2021-01-01T08:00:36Z",
+      "authors": [
+        "Xiang Lisa Li",
+        "Percy Liang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "source": "arxiv",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"gradient checkpointing\" AND training AND memory) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[201901010000 TO 202606302359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22gradient+checkpointing%22+AND+training+AND+memory%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B201901010000+TO+202606302359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T20:14:29Z",
+  "total_results_reported": 15,
+  "returned": 15,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2603.02804v2",
+      "arxiv_id": "2603.02804v2",
+      "title": "Fast and memory-efficient classical simulation of quantum machine learning via forward and backward gate fusion",
+      "summary": "While real quantum devices have been increasingly used to conduct research focused on achieving quantum advantage or quantum utility in recent years, executing deep quantum circuits or performing quantum machine learning with large-scale data on current noisy intermediate-scale quantum devices remains challenging, making classical simulation essential for quantum machine learning research. However, such classical simulation often suffers from the cost of gradient calculations, requiring enormous memory or computational time. To address these problems, we propose a method to fuse multiple consecutive gates in each of the forward and backward paths to improve throughput by minimizing global memory accesses. As a result, we achieved approximately $20$ times throughput improvement for a Hardware-Efficient Ansatz with $12$ or more qubits, reaching over $30$ times improvement on a mid-range consumer GPU with limited memory bandwidth. By combining our proposed method with gradient checkpointing, we drastically reduced memory usage, making it possible to train a large-scale quantum machine learning model, a $20$-qubit, $1{,}000$-layer model with $60{,}000$ parameters, using $1{,}000$ samples in approximately $20$ minutes per epoch. This implies that we can train the model on large datasets, comprising tens of thousands of samples, like MNIST or CIFAR-10, within a realistic time frame (e.g., $20$ hours per epoch). Thus, our proposed method significantly accelerates such classical simulations, making a significant contribution to advancing research in quantum machine learning and variational quantum algorithms, such as verifying algorithms on large datasets or investigating learning theories of deep quantum circuits like barren plateaus.",
+      "published": "2026-03-03T09:43:49Z",
+      "updated": "2026-04-03T06:12:27Z",
+      "authors": [
+        "Yoshiaki Kawase"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.DC",
+        "cs.ET"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.21275v4",
+      "arxiv_id": "2509.21275v4",
+      "title": "InfiniPipe: Elastic Pipeline Parallelism for Efficient Variable-Length Long-Context LLM Training",
+      "summary": "Long context training is crucial for LLM's context extension. Existing schemes, such as sequence parallelism, incur substantial communication overhead. Pipeline parallelism (PP) reduces this cost, but its effectiveness hinges on partitioning granularity. Batch-level PP employing sequence packing exhibits high memory consumption in long-context scenarios, whereas token-level PP splitting sequences into slices alleviates memory overhead but may incur hardware under-utilization. Moreover, the skewed distribution of sequence length in real-world datasets renders monolithic and static granularity PP's sub-optimal performance. In this paper, we propose 1) \\textit{Elastic Pipeline Parallelism} (EPP) that orchestrates token-level PP and batch-level PP to adapt to resource and workload heterogeneity, and 2) \\textit{Stage-Aware Chunk-Level Adaptive Checkpointing} that efficiently integrates gradient checkpointing with EPP. Comprehensive experiments demonstrate that InfiniPipe achieves a 1.69x speedup over state-of-the-art systems. Our code is open-sourced at https://github.com/wsjdsg/InfiniPipe-code.git.",
+      "published": "2025-09-25T15:01:25Z",
+      "updated": "2026-04-25T07:48:56Z",
+      "authors": [
+        "Shiju Wang",
+        "Yujie Wang",
+        "Ao Sun",
+        "Fangcheng Fu",
+        "Zijian Zhu",
+        "Bin Cui",
+        "Xu Han",
+        "Kaisheng Ma"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.03077v1",
+      "arxiv_id": "2506.03077v1",
+      "title": "StreamBP: Memory-Efficient Exact Backpropagation for Long Sequence Training of LLMs",
+      "summary": "Training language models on long sequence data is a demanding requirement for enhancing the model's capability on complex tasks, e.g., long-chain reasoning. However, as the sequence length scales up, the memory cost for storing activation values becomes huge during the Backpropagation (BP) process, even with the application of gradient checkpointing technique. To tackle this challenge, we propose a memory-efficient and exact BP method called StreamBP, which performs a linear decomposition of the chain rule along the sequence dimension in a layer-wise manner, significantly reducing the memory cost of activation values and logits. The proposed method is applicable to common objectives such as SFT, GRPO, and DPO. From an implementation perspective, StreamBP achieves less computational FLOPs and faster BP speed by leveraging the causal structure of the language model. Compared to gradient checkpointing, StreamBP scales up the maximum sequence length of BP by 2.8-5.5 times larger, while using comparable or even less BP time. Note that StreamBP's sequence length scaling ability can be directly transferred to batch size scaling for accelerating training. We further develop a communication-efficient distributed StreamBP to effectively support multi-GPU training and broaden its applicability. Our code can be easily integrated into the training pipeline of any transformer models and is available at https://github.com/Ledzy/StreamBP.",
+      "published": "2025-06-03T16:54:15Z",
+      "updated": "2025-06-03T16:54:15Z",
+      "authors": [
+        "Qijun Luo",
+        "Mengqi Li",
+        "Lei Zhao",
+        "Xiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.01805v2",
+      "arxiv_id": "2501.01805v2",
+      "title": "End-to-End Long Document Summarization using Gradient Caching",
+      "summary": "Training transformer-based encoder-decoder models for long document summarization poses a significant challenge due to the quadratic memory consumption during training. Several approaches have been proposed to extend the input length at test time, but training with these approaches is still difficult, requiring truncation of input documents and causing a mismatch between training and test conditions. In this work, we propose CachED (Gradient $\\textbf{Cach}$ing for $\\textbf{E}$ncoder-$\\textbf{D}$ecoder models), an approach that enables end-to-end training of existing transformer-based encoder-decoder models, using the entire document without truncation. Specifically, we apply non-overlapping sliding windows to input documents, followed by fusion in decoder. During backpropagation, the gradients are cached at the decoder and are passed through the encoder in chunks by re-computing the hidden vectors, similar to gradient checkpointing. In the experiments on long document summarization, we extend BART to CachED BART, processing more than 500K tokens during training and achieving superior performance without using any additional parameters.",
+      "published": "2025-01-03T13:32:57Z",
+      "updated": "2025-06-26T18:40:55Z",
+      "authors": [
+        "Rohit Saxena",
+        "Hao Tang",
+        "Frank Keller"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2412.11810v1",
+      "arxiv_id": "2412.11810v1",
+      "title": "Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory",
+      "summary": "Recurrent neural networks (RNNs) are valued for their computational efficiency and reduced memory requirements on tasks involving long sequence lengths but require high memory-processor bandwidth to train. Checkpointing techniques can reduce the memory requirements by only storing a subset of intermediate states, the checkpoints, but are still rarely used due to the computational overhead of the additional recomputation phase. This work addresses these challenges by introducing memory-efficient gradient checkpointing strategies tailored for the general class of sparse RNNs and Spiking Neural Networks (SNNs). SNNs are energy efficient alternatives to RNNs thanks to their local, event-driven operation and potential neuromorphic implementation. We use the Intelligence Processing Unit (IPU) as an exemplary platform for architectures with distributed local memory. We exploit its suitability for sparse and irregular workloads to scale SNN training on long sequence lengths. We find that Double Checkpointing emerges as the most effective method, optimizing the use of local memory resources while minimizing recomputation overhead. This approach reduces dependency on slower large-scale memory access, enabling training on sequences over 10 times longer or 4 times larger networks than previously feasible, with only marginal time overhead. The presented techniques demonstrate significant potential to enhance scalability and efficiency in training sparse and recurrent networks across diverse hardware platforms, and highlights the benefits of sparse activations for scalable recurrent neural network training.",
+      "published": "2024-12-16T14:23:31Z",
+      "updated": "2024-12-16T14:23:31Z",
+      "authors": [
+        "Wadjih Bencheikh",
+        "Jan Finkbeiner",
+        "Emre Neftci"
+      ],
+      "categories": [
+        "cs.NE",
+        "cs.AR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.16029v1",
+      "arxiv_id": "2410.16029v1",
+      "title": "Natural GaLore: Accelerating GaLore for memory-efficient LLM Training and Fine-tuning",
+      "summary": "Training LLMs presents significant memory challenges due to growing size of data, weights, and optimizer states. Techniques such as data and model parallelism, gradient checkpointing, and offloading strategies address this issue but are often infeasible due to hardware constraints. To mitigate memory usage, alternative methods like Parameter-Efficient-Fine-Tuning (PEFT) and GaLore approximate weights or optimizer states. PEFT methods, such as LoRA, have gained popularity for fine-tuning LLMs, though they require a full-rank warm start. In contrast, GaLore allows full-parameter learning while being more memory-efficient. This work introduces Natural GaLore, a simple drop in replacement for AdamW, which efficiently applies the inverse Empirical Fisher Information Matrix to low-rank gradients using Woodbury's Identity. We demonstrate that incorporating second-order information speeds up optimization significantly, especially when the iteration budget is limited. Empirical pretraining on 60M, 130M, 350M, and 1.1B parameter Llama models on C4 data demonstrate significantly lower perplexity over GaLore without additional memory overhead. By fine-tuning RoBERTa on the GLUE benchmark using Natural GaLore, we demonstrate significant reduction in gap 86.05% vs 86.28% for full-finetuning. Furthermore, fine-tuning the TinyLlama 1.1B model for function calling using the TinyAgent framework shows that Natural GaLore achieving 83.09% accuracy on the TinyAgent dataset, significantly outperforms 16-bit LoRA at 80.06% and even surpasses GPT4-Turbo by 4%, all while using 30% less memory. All code to reproduce the results are available at: https://github.com/selfsupervised-ai/Natural-GaLore.git",
+      "published": "2024-10-21T14:05:06Z",
+      "updated": "2024-10-21T14:05:06Z",
+      "authors": [
+        "Arijit Das"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2408.10188v6",
+      "arxiv_id": "2408.10188v6",
+      "title": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "summary": "Long-context capability is critical for multi-modal foundation models, especially for long video understanding. We introduce LongVILA, a full-stack solution for long-context visual-language models by co-designing the algorithm and system. For model training, we upgrade existing VLMs to support long video understanding by incorporating two additional stages, i.e., long context extension and long video supervised fine-tuning. However, training on long video is computationally and memory intensive. We introduce the long-context Multi-Modal Sequence Parallelism (MM-SP) system that efficiently parallelizes long video training and inference, enabling 2M context length training on 256 GPUs without any gradient checkpointing. LongVILA efficiently extends the number of video frames of VILA from 8 to 2048, achieving 99.8% accuracy in 6,000-frame (more than 1 million tokens) video needle-in-a-haystack. LongVILA-7B demonstrates strong accuracy on 9 popular video benchmarks, e.g. 65.1% VideoMME with subtitle. Besides, MM-SP is 2.1x - 5.7x faster than ring style sequence parallelism and 1.1x - 1.4x faster than Megatron with a hybrid context and tensor parallelism. Moreover, it seamlessly integrates with Hugging Face Transformers.",
+      "published": "2024-08-19T17:48:08Z",
+      "updated": "2024-12-13T02:32:06Z",
+      "authors": [
+        "Yukang Chen",
+        "Fuzhao Xue",
+        "Dacheng Li",
+        "Qinghao Hu",
+        "Ligeng Zhu",
+        "Xiuyu Li",
+        "Yunhao Fang",
+        "Haotian Tang",
+        "Shang Yang",
+        "Zhijian Liu",
+        "Ethan He",
+        "Hongxu Yin",
+        "Pavlo Molchanov",
+        "Jan Kautz",
+        "Linxi Fan",
+        "Yuke Zhu",
+        "Yao Lu",
+        "Song Han"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2406.02290v2",
+      "arxiv_id": "2406.02290v2",
+      "title": "A Study of Optimizations for Fine-tuning Large Language Models",
+      "summary": "Fine-tuning large language models is a popular choice among users trying to adapt them for specific applications. However, fine-tuning these models is a demanding task because the user has to examine several factors, such as resource budget, runtime, model size and context length among others. A specific challenge is that fine-tuning is memory intensive, imposing constraints on the required hardware memory and context length of training data that can be handled. In this work, we share a detailed study on a variety of fine-tuning optimizations across different fine-tuning scenarios. In particular, we assess Gradient Checkpointing, Low-Rank Adaptation, DeepSpeed's Zero Redundancy Optimizer and FlashAttention. With a focus on memory and runtime, we examine the impact of different optimization combinations on GPU memory usage and execution runtime during fine-tuning phase. We provide our recommendation on the best default optimization for balancing memory and runtime across diverse model sizes. We share effective strategies for fine-tuning very large models with tens or hundreds of billions of parameters and enabling large context lengths during fine-tuning. Furthermore, we propose the appropriate optimization mixtures for fine-tuning under GPU resource limitations.",
+      "published": "2024-06-04T13:05:47Z",
+      "updated": "2024-06-06T16:09:31Z",
+      "authors": [
+        "Arjun Singh",
+        "Nikhil Pandey",
+        "Anup Shirgaonkar",
+        "Pavan Manoj",
+        "Vijay Aski"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.14212v4",
+      "arxiv_id": "2402.14212v4",
+      "title": "Moonwalk: Inverse-Forward Differentiation",
+      "summary": "Backpropagation's main limitation is its need to store intermediate activations (residuals) during the forward pass, which restricts the depth of trainable networks. This raises a fundamental question: can we avoid storing these activations? We address this by revisiting the structure of gradient computation. Backpropagation computes gradients through a sequence of vector-Jacobian products, an operation that is generally irreversible. The lost information lies in the cokernel of each layer's Jacobian. We define submersive networks -- networks whose layer Jacobians have trivial cokernels -- in which gradients can be reconstructed exactly in a forward sweep without storing activations. For non-submersive layers, we introduce fragmental gradient checkpointing, which records only the minimal subset of residuals necessary to restore the cotangents erased by the Jacobian. Central to our approach is a novel operator, the vector-inverse-Jacobian product (vijp), which inverts gradient flow outside the cokernel. Our mixed-mode algorithm first computes input gradients with a memory-efficient reverse pass, then reconstructs parameter gradients in a forward sweep using the vijp, eliminating the need to store activations. We implement this method in Moonwalk and show that it matches backpropagation's runtime while training networks more than twice as deep under the same memory budget.",
+      "published": "2024-02-22T01:33:31Z",
+      "updated": "2026-05-21T23:53:40Z",
+      "authors": [
+        "Dmitrii Krylov",
+        "Armin Karamzade",
+        "Roy Fox"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2401.12179v2",
+      "arxiv_id": "2401.12179v2",
+      "title": "DITTO: Diffusion Inference-Time T-Optimization for Music Generation",
+      "summary": "We propose Diffusion Inference-Time T-Optimization (DITTO), a general-purpose frame-work for controlling pre-trained text-to-music diffusion models at inference-time via optimizing initial noise latents. Our method can be used to optimize through any differentiable feature matching loss to achieve a target (stylized) output and leverages gradient checkpointing for memory efficiency. We demonstrate a surprisingly wide-range of applications for music generation including inpainting, outpainting, and looping as well as intensity, melody, and musical structure control - all without ever fine-tuning the underlying model. When we compare our approach against related training, guidance, and optimization-based methods, we find DITTO achieves state-of-the-art performance on nearly all tasks, including outperforming comparable approaches on controllability, audio quality, and computational efficiency, thus opening the door for high-quality, flexible, training-free control of diffusion models. Sound examples can be found at https://DITTO-Music.github.io/web/.",
+      "published": "2024-01-22T18:10:10Z",
+      "updated": "2024-06-03T17:37:53Z",
+      "authors": [
+        "Zachary Novack",
+        "Julian McAuley",
+        "Taylor Berg-Kirkpatrick",
+        "Nicholas J. Bryan"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.LG",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03739v5",
+      "arxiv_id": "2310.03739v5",
+      "title": "Aligning Text-to-Image Diffusion Models with Reward Backpropagation",
+      "summary": "Text-to-image diffusion models have recently emerged at the forefront of image generation, powered by very large-scale unsupervised or weakly supervised text-to-image training datasets. Due to their unsupervised training, controlling their behavior in downstream tasks, such as maximizing human-perceived image quality, image-text alignment, or ethical image generation, is difficult. Recent works finetune diffusion models to downstream reward functions using vanilla reinforcement learning, notorious for the high variance of the gradient estimators. In this paper, we propose AlignProp, a method that aligns diffusion models to downstream reward functions using end-to-end backpropagation of the reward gradient through the denoising process. While naive implementation of such backpropagation would require prohibitive memory resources for storing the partial derivatives of modern text-to-image models, AlignProp finetunes low-rank adapter weight modules and uses gradient checkpointing, to render its memory usage viable. We test AlignProp in finetuning diffusion models to various objectives, such as image-text semantic alignment, aesthetics, compressibility and controllability of the number of objects present, as well as their combinations. We show AlignProp achieves higher rewards in fewer training steps than alternatives, while being conceptually simpler, making it a straightforward choice for optimizing diffusion models for differentiable reward functions of interest. Code and Visualization results are available at https://align-prop.github.io/.",
+      "published": "2023-10-05T17:59:18Z",
+      "updated": "2024-11-07T03:54:22Z",
+      "authors": [
+        "Mihir Prabhudesai",
+        "Anirudh Goyal",
+        "Deepak Pathak",
+        "Katerina Fragkiadaki"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03294v2",
+      "arxiv_id": "2310.03294v2",
+      "title": "DISTFLASHATTN: Distributed Memory-efficient Attention for Long-context LLMs Training",
+      "summary": "FlashAttention (Dao, 2023) effectively reduces the quadratic peak memory usage to linear in training transformer-based large language models (LLMs) on a single GPU. In this paper, we introduce DISTFLASHATTN, a distributed memory-efficient attention mechanism optimized for long-context LLMs training. We propose three key techniques: token-level workload balancing, overlapping key-value communication, and a rematerialization-aware gradient checkpointing algorithm. We evaluate DISTFLASHATTN on Llama-7B and variants with sequence lengths from 32K to 512K. DISTFLASHATTN achieves 8x longer sequences, 4.45 - 5.64x speedup compared to Ring Self-Attention, 2 - 8x longer sequences, 1.24 - 2.01x speedup compared to Megatron-LM with FlashAttention. It achieves 1.67x and 1.26 - 1.88x speedup compared to recent Ring Attention and DeepSpeed-Ulysses. Code is available at https://github.com/RulinShao/LightSeq.",
+      "published": "2023-10-05T03:47:57Z",
+      "updated": "2024-03-31T21:11:08Z",
+      "authors": [
+        "Dacheng Li",
+        "Rulin Shao",
+        "Anze Xie",
+        "Eric P. Xing",
+        "Xuezhe Ma",
+        "Ion Stoica",
+        "Joseph E. Gonzalez",
+        "Hao Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.02599v2",
+      "arxiv_id": "2302.02599v2",
+      "title": "Colossal-Auto: Unified Automation of Parallelization and Activation Checkpoint for Large-scale Models",
+      "summary": "In recent years, large-scale models have demonstrated state-of-the-art performance across various domains. However, training such models requires various techniques to address the problem of limited computing power and memory on devices such as GPUs. Some commonly used techniques include pipeline parallelism, tensor parallelism, and activation checkpointing. While existing works have focused on finding efficient distributed execution plans (Zheng et al. 2022) and activation checkpoint scheduling (Herrmann et al. 2019, Beaumont et al. 2021}, there has been no method proposed to optimize these two plans jointly. Moreover, ahead-of-time compilation relies heavily on accurate memory and computing overhead estimation, which is often time-consuming and misleading. Existing training systems and machine learning pipelines either physically execute each operand or estimate memory usage with a scaled input tensor. To address these challenges, we introduce a system that can jointly optimize distributed execution and gradient checkpointing plans. Additionally, we provide an easy-to-use symbolic profiler that generates memory and computing statistics for any PyTorch model with a minimal time cost. Our approach allows users to parallelize their model training on the given hardware with minimum code change based. The source code is publicly available at Colossal-AI GitHub or https://github.com/hpcaitech/ColossalAI",
+      "published": "2023-02-06T07:22:49Z",
+      "updated": "2023-02-22T04:25:38Z",
+      "authors": [
+        "Yuliang Liu",
+        "Shenggui Li",
+        "Jiarui Fang",
+        "Yanjun Shao",
+        "Boyuan Yao",
+        "Yang You"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2111.10050v3",
+      "arxiv_id": "2111.10050v3",
+      "title": "Combined Scaling for Zero-shot Transfer Learning",
+      "summary": "We present a combined scaling method - named BASIC - that achieves 85.7% top-1 accuracy on the ImageNet ILSVRC-2012 validation set without learning from any labeled ImageNet example. This accuracy surpasses best published similar models - CLIP and ALIGN - by 9.3%. Our BASIC model also shows significant improvements in robustness benchmarks. For instance, on 5 test sets with natural distribution shifts such as ImageNet-{A,R,V2,Sketch} and ObjectNet, our model achieves 84.3% top-1 average accuracy, only a small drop from its original ImageNet accuracy. To achieve these results, we scale up the contrastive learning framework of CLIP and ALIGN in three dimensions: data size, model size, and batch size. Our dataset has 6.6B noisy image-text pairs, which is 4x larger than ALIGN, and 16x larger than CLIP. Our largest model has 3B weights, which is 3.75x larger in parameters and 8x larger in FLOPs than ALIGN and CLIP. Finally, our batch size is 65536 which is 2x more than CLIP and 4x more than ALIGN. We encountered two main challenges with the scaling rules of BASIC. First, the main challenge with implementing the combined scaling rules of BASIC is the limited memory of accelerators, such as GPUs and TPUs. To overcome the memory limit, we propose two simple methods which make use of gradient checkpointing and model parallelism. Second, while increasing the dataset size and the model size has been the defacto method to improve the performance of deep learning models like BASIC, the effect of a large contrastive batch size on such contrastive-trained image-text models is not well-understood. To shed light on the benefits of large contrastive batch sizes, we develop a theoretical framework which shows that larger contrastive batch sizes lead to smaller generalization gaps for image-text models such as BASIC.",
+      "published": "2021-11-19T05:25:46Z",
+      "updated": "2023-04-12T08:26:28Z",
+      "authors": [
+        "Hieu Pham",
+        "Zihang Dai",
+        "Golnaz Ghiasi",
+        "Kenji Kawaguchi",
+        "Hanxiao Liu",
+        "Adams Wei Yu",
+        "Jiahui Yu",
+        "Yi-Ting Chen",
+        "Minh-Thang Luong",
+        "Yonghui Wu",
+        "Mingxing Tan",
+        "Quoc V. Le"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1904.10631v2",
+      "arxiv_id": "1904.10631v2",
+      "title": "Low-Memory Neural Network Training: A Technical Report",
+      "summary": "Memory is increasingly often the bottleneck when training neural network models. Despite this, techniques to lower the overall memory requirements of training have been less widely studied compared to the extensive literature on reducing the memory requirements of inference. In this paper we study a fundamental question: How much memory is actually needed to train a neural network? To answer this question, we profile the overall memory usage of training on two representative deep learning benchmarks -- the WideResNet model for image classification and the DynamicConv Transformer model for machine translation -- and comprehensively evaluate four standard techniques for reducing the training memory requirements: (1) imposing sparsity on the model, (2) using low precision, (3) microbatching, and (4) gradient checkpointing. We explore how each of these techniques in isolation affects both the peak memory usage of training and the quality of the end model, and explore the memory, accuracy, and computation tradeoffs incurred when combining these techniques. Using appropriate combinations of these techniques, we show that it is possible to the reduce the memory required to train a WideResNet-28-2 on CIFAR-10 by up to 60.7x with a 0.4% loss in accuracy, and reduce the memory required to train a DynamicConv model on IWSLT'14 German to English translation by up to 8.7x with a BLEU score drop of 0.15.",
+      "published": "2019-04-24T03:44:58Z",
+      "updated": "2022-04-08T23:46:51Z",
+      "authors": [
+        "Nimit S. Sohoni",
+        "Christopher R. Aberger",
+        "Megan Leszczynski",
+        "Jian Zhang",
+        "Christopher Ré"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    }
+  ],
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2603.02804v2",
+      "arxiv_id": "2603.02804v2",
+      "title": "Fast and memory-efficient classical simulation of quantum machine learning via forward and backward gate fusion",
+      "summary": "While real quantum devices have been increasingly used to conduct research focused on achieving quantum advantage or quantum utility in recent years, executing deep quantum circuits or performing quantum machine learning with large-scale data on current noisy intermediate-scale quantum devices remains challenging, making classical simulation essential for quantum machine learning research. However, such classical simulation often suffers from the cost of gradient calculations, requiring enormous memory or computational time. To address these problems, we propose a method to fuse multiple consecutive gates in each of the forward and backward paths to improve throughput by minimizing global memory accesses. As a result, we achieved approximately $20$ times throughput improvement for a Hardware-Efficient Ansatz with $12$ or more qubits, reaching over $30$ times improvement on a mid-range consumer GPU with limited memory bandwidth. By combining our proposed method with gradient checkpointing, we drastically reduced memory usage, making it possible to train a large-scale quantum machine learning model, a $20$-qubit, $1{,}000$-layer model with $60{,}000$ parameters, using $1{,}000$ samples in approximately $20$ minutes per epoch. This implies that we can train the model on large datasets, comprising tens of thousands of samples, like MNIST or CIFAR-10, within a realistic time frame (e.g., $20$ hours per epoch). Thus, our proposed method significantly accelerates such classical simulations, making a significant contribution to advancing research in quantum machine learning and variational quantum algorithms, such as verifying algorithms on large datasets or investigating learning theories of deep quantum circuits like barren plateaus.",
+      "published": "2026-03-03T09:43:49Z",
+      "updated": "2026-04-03T06:12:27Z",
+      "authors": [
+        "Yoshiaki Kawase"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.DC",
+        "cs.ET"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.21275v4",
+      "arxiv_id": "2509.21275v4",
+      "title": "InfiniPipe: Elastic Pipeline Parallelism for Efficient Variable-Length Long-Context LLM Training",
+      "summary": "Long context training is crucial for LLM's context extension. Existing schemes, such as sequence parallelism, incur substantial communication overhead. Pipeline parallelism (PP) reduces this cost, but its effectiveness hinges on partitioning granularity. Batch-level PP employing sequence packing exhibits high memory consumption in long-context scenarios, whereas token-level PP splitting sequences into slices alleviates memory overhead but may incur hardware under-utilization. Moreover, the skewed distribution of sequence length in real-world datasets renders monolithic and static granularity PP's sub-optimal performance. In this paper, we propose 1) \\textit{Elastic Pipeline Parallelism} (EPP) that orchestrates token-level PP and batch-level PP to adapt to resource and workload heterogeneity, and 2) \\textit{Stage-Aware Chunk-Level Adaptive Checkpointing} that efficiently integrates gradient checkpointing with EPP. Comprehensive experiments demonstrate that InfiniPipe achieves a 1.69x speedup over state-of-the-art systems. Our code is open-sourced at https://github.com/wsjdsg/InfiniPipe-code.git.",
+      "published": "2025-09-25T15:01:25Z",
+      "updated": "2026-04-25T07:48:56Z",
+      "authors": [
+        "Shiju Wang",
+        "Yujie Wang",
+        "Ao Sun",
+        "Fangcheng Fu",
+        "Zijian Zhu",
+        "Bin Cui",
+        "Xu Han",
+        "Kaisheng Ma"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.03077v1",
+      "arxiv_id": "2506.03077v1",
+      "title": "StreamBP: Memory-Efficient Exact Backpropagation for Long Sequence Training of LLMs",
+      "summary": "Training language models on long sequence data is a demanding requirement for enhancing the model's capability on complex tasks, e.g., long-chain reasoning. However, as the sequence length scales up, the memory cost for storing activation values becomes huge during the Backpropagation (BP) process, even with the application of gradient checkpointing technique. To tackle this challenge, we propose a memory-efficient and exact BP method called StreamBP, which performs a linear decomposition of the chain rule along the sequence dimension in a layer-wise manner, significantly reducing the memory cost of activation values and logits. The proposed method is applicable to common objectives such as SFT, GRPO, and DPO. From an implementation perspective, StreamBP achieves less computational FLOPs and faster BP speed by leveraging the causal structure of the language model. Compared to gradient checkpointing, StreamBP scales up the maximum sequence length of BP by 2.8-5.5 times larger, while using comparable or even less BP time. Note that StreamBP's sequence length scaling ability can be directly transferred to batch size scaling for accelerating training. We further develop a communication-efficient distributed StreamBP to effectively support multi-GPU training and broaden its applicability. Our code can be easily integrated into the training pipeline of any transformer models and is available at https://github.com/Ledzy/StreamBP.",
+      "published": "2025-06-03T16:54:15Z",
+      "updated": "2025-06-03T16:54:15Z",
+      "authors": [
+        "Qijun Luo",
+        "Mengqi Li",
+        "Lei Zhao",
+        "Xiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.01805v2",
+      "arxiv_id": "2501.01805v2",
+      "title": "End-to-End Long Document Summarization using Gradient Caching",
+      "summary": "Training transformer-based encoder-decoder models for long document summarization poses a significant challenge due to the quadratic memory consumption during training. Several approaches have been proposed to extend the input length at test time, but training with these approaches is still difficult, requiring truncation of input documents and causing a mismatch between training and test conditions. In this work, we propose CachED (Gradient $\\textbf{Cach}$ing for $\\textbf{E}$ncoder-$\\textbf{D}$ecoder models), an approach that enables end-to-end training of existing transformer-based encoder-decoder models, using the entire document without truncation. Specifically, we apply non-overlapping sliding windows to input documents, followed by fusion in decoder. During backpropagation, the gradients are cached at the decoder and are passed through the encoder in chunks by re-computing the hidden vectors, similar to gradient checkpointing. In the experiments on long document summarization, we extend BART to CachED BART, processing more than 500K tokens during training and achieving superior performance without using any additional parameters.",
+      "published": "2025-01-03T13:32:57Z",
+      "updated": "2025-06-26T18:40:55Z",
+      "authors": [
+        "Rohit Saxena",
+        "Hao Tang",
+        "Frank Keller"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2412.11810v1",
+      "arxiv_id": "2412.11810v1",
+      "title": "Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory",
+      "summary": "Recurrent neural networks (RNNs) are valued for their computational efficiency and reduced memory requirements on tasks involving long sequence lengths but require high memory-processor bandwidth to train. Checkpointing techniques can reduce the memory requirements by only storing a subset of intermediate states, the checkpoints, but are still rarely used due to the computational overhead of the additional recomputation phase. This work addresses these challenges by introducing memory-efficient gradient checkpointing strategies tailored for the general class of sparse RNNs and Spiking Neural Networks (SNNs). SNNs are energy efficient alternatives to RNNs thanks to their local, event-driven operation and potential neuromorphic implementation. We use the Intelligence Processing Unit (IPU) as an exemplary platform for architectures with distributed local memory. We exploit its suitability for sparse and irregular workloads to scale SNN training on long sequence lengths. We find that Double Checkpointing emerges as the most effective method, optimizing the use of local memory resources while minimizing recomputation overhead. This approach reduces dependency on slower large-scale memory access, enabling training on sequences over 10 times longer or 4 times larger networks than previously feasible, with only marginal time overhead. The presented techniques demonstrate significant potential to enhance scalability and efficiency in training sparse and recurrent networks across diverse hardware platforms, and highlights the benefits of sparse activations for scalable recurrent neural network training.",
+      "published": "2024-12-16T14:23:31Z",
+      "updated": "2024-12-16T14:23:31Z",
+      "authors": [
+        "Wadjih Bencheikh",
+        "Jan Finkbeiner",
+        "Emre Neftci"
+      ],
+      "categories": [
+        "cs.NE",
+        "cs.AR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.16029v1",
+      "arxiv_id": "2410.16029v1",
+      "title": "Natural GaLore: Accelerating GaLore for memory-efficient LLM Training and Fine-tuning",
+      "summary": "Training LLMs presents significant memory challenges due to growing size of data, weights, and optimizer states. Techniques such as data and model parallelism, gradient checkpointing, and offloading strategies address this issue but are often infeasible due to hardware constraints. To mitigate memory usage, alternative methods like Parameter-Efficient-Fine-Tuning (PEFT) and GaLore approximate weights or optimizer states. PEFT methods, such as LoRA, have gained popularity for fine-tuning LLMs, though they require a full-rank warm start. In contrast, GaLore allows full-parameter learning while being more memory-efficient. This work introduces Natural GaLore, a simple drop in replacement for AdamW, which efficiently applies the inverse Empirical Fisher Information Matrix to low-rank gradients using Woodbury's Identity. We demonstrate that incorporating second-order information speeds up optimization significantly, especially when the iteration budget is limited. Empirical pretraining on 60M, 130M, 350M, and 1.1B parameter Llama models on C4 data demonstrate significantly lower perplexity over GaLore without additional memory overhead. By fine-tuning RoBERTa on the GLUE benchmark using Natural GaLore, we demonstrate significant reduction in gap 86.05% vs 86.28% for full-finetuning. Furthermore, fine-tuning the TinyLlama 1.1B model for function calling using the TinyAgent framework shows that Natural GaLore achieving 83.09% accuracy on the TinyAgent dataset, significantly outperforms 16-bit LoRA at 80.06% and even surpasses GPT4-Turbo by 4%, all while using 30% less memory. All code to reproduce the results are available at: https://github.com/selfsupervised-ai/Natural-GaLore.git",
+      "published": "2024-10-21T14:05:06Z",
+      "updated": "2024-10-21T14:05:06Z",
+      "authors": [
+        "Arijit Das"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2408.10188v6",
+      "arxiv_id": "2408.10188v6",
+      "title": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "summary": "Long-context capability is critical for multi-modal foundation models, especially for long video understanding. We introduce LongVILA, a full-stack solution for long-context visual-language models by co-designing the algorithm and system. For model training, we upgrade existing VLMs to support long video understanding by incorporating two additional stages, i.e., long context extension and long video supervised fine-tuning. However, training on long video is computationally and memory intensive. We introduce the long-context Multi-Modal Sequence Parallelism (MM-SP) system that efficiently parallelizes long video training and inference, enabling 2M context length training on 256 GPUs without any gradient checkpointing. LongVILA efficiently extends the number of video frames of VILA from 8 to 2048, achieving 99.8% accuracy in 6,000-frame (more than 1 million tokens) video needle-in-a-haystack. LongVILA-7B demonstrates strong accuracy on 9 popular video benchmarks, e.g. 65.1% VideoMME with subtitle. Besides, MM-SP is 2.1x - 5.7x faster than ring style sequence parallelism and 1.1x - 1.4x faster than Megatron with a hybrid context and tensor parallelism. Moreover, it seamlessly integrates with Hugging Face Transformers.",
+      "published": "2024-08-19T17:48:08Z",
+      "updated": "2024-12-13T02:32:06Z",
+      "authors": [
+        "Yukang Chen",
+        "Fuzhao Xue",
+        "Dacheng Li",
+        "Qinghao Hu",
+        "Ligeng Zhu",
+        "Xiuyu Li",
+        "Yunhao Fang",
+        "Haotian Tang",
+        "Shang Yang",
+        "Zhijian Liu",
+        "Ethan He",
+        "Hongxu Yin",
+        "Pavlo Molchanov",
+        "Jan Kautz",
+        "Linxi Fan",
+        "Yuke Zhu",
+        "Yao Lu",
+        "Song Han"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2406.02290v2",
+      "arxiv_id": "2406.02290v2",
+      "title": "A Study of Optimizations for Fine-tuning Large Language Models",
+      "summary": "Fine-tuning large language models is a popular choice among users trying to adapt them for specific applications. However, fine-tuning these models is a demanding task because the user has to examine several factors, such as resource budget, runtime, model size and context length among others. A specific challenge is that fine-tuning is memory intensive, imposing constraints on the required hardware memory and context length of training data that can be handled. In this work, we share a detailed study on a variety of fine-tuning optimizations across different fine-tuning scenarios. In particular, we assess Gradient Checkpointing, Low-Rank Adaptation, DeepSpeed's Zero Redundancy Optimizer and FlashAttention. With a focus on memory and runtime, we examine the impact of different optimization combinations on GPU memory usage and execution runtime during fine-tuning phase. We provide our recommendation on the best default optimization for balancing memory and runtime across diverse model sizes. We share effective strategies for fine-tuning very large models with tens or hundreds of billions of parameters and enabling large context lengths during fine-tuning. Furthermore, we propose the appropriate optimization mixtures for fine-tuning under GPU resource limitations.",
+      "published": "2024-06-04T13:05:47Z",
+      "updated": "2024-06-06T16:09:31Z",
+      "authors": [
+        "Arjun Singh",
+        "Nikhil Pandey",
+        "Anup Shirgaonkar",
+        "Pavan Manoj",
+        "Vijay Aski"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.14212v4",
+      "arxiv_id": "2402.14212v4",
+      "title": "Moonwalk: Inverse-Forward Differentiation",
+      "summary": "Backpropagation's main limitation is its need to store intermediate activations (residuals) during the forward pass, which restricts the depth of trainable networks. This raises a fundamental question: can we avoid storing these activations? We address this by revisiting the structure of gradient computation. Backpropagation computes gradients through a sequence of vector-Jacobian products, an operation that is generally irreversible. The lost information lies in the cokernel of each layer's Jacobian. We define submersive networks -- networks whose layer Jacobians have trivial cokernels -- in which gradients can be reconstructed exactly in a forward sweep without storing activations. For non-submersive layers, we introduce fragmental gradient checkpointing, which records only the minimal subset of residuals necessary to restore the cotangents erased by the Jacobian. Central to our approach is a novel operator, the vector-inverse-Jacobian product (vijp), which inverts gradient flow outside the cokernel. Our mixed-mode algorithm first computes input gradients with a memory-efficient reverse pass, then reconstructs parameter gradients in a forward sweep using the vijp, eliminating the need to store activations. We implement this method in Moonwalk and show that it matches backpropagation's runtime while training networks more than twice as deep under the same memory budget.",
+      "published": "2024-02-22T01:33:31Z",
+      "updated": "2026-05-21T23:53:40Z",
+      "authors": [
+        "Dmitrii Krylov",
+        "Armin Karamzade",
+        "Roy Fox"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2401.12179v2",
+      "arxiv_id": "2401.12179v2",
+      "title": "DITTO: Diffusion Inference-Time T-Optimization for Music Generation",
+      "summary": "We propose Diffusion Inference-Time T-Optimization (DITTO), a general-purpose frame-work for controlling pre-trained text-to-music diffusion models at inference-time via optimizing initial noise latents. Our method can be used to optimize through any differentiable feature matching loss to achieve a target (stylized) output and leverages gradient checkpointing for memory efficiency. We demonstrate a surprisingly wide-range of applications for music generation including inpainting, outpainting, and looping as well as intensity, melody, and musical structure control - all without ever fine-tuning the underlying model. When we compare our approach against related training, guidance, and optimization-based methods, we find DITTO achieves state-of-the-art performance on nearly all tasks, including outperforming comparable approaches on controllability, audio quality, and computational efficiency, thus opening the door for high-quality, flexible, training-free control of diffusion models. Sound examples can be found at https://DITTO-Music.github.io/web/.",
+      "published": "2024-01-22T18:10:10Z",
+      "updated": "2024-06-03T17:37:53Z",
+      "authors": [
+        "Zachary Novack",
+        "Julian McAuley",
+        "Taylor Berg-Kirkpatrick",
+        "Nicholas J. Bryan"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.LG",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03739v5",
+      "arxiv_id": "2310.03739v5",
+      "title": "Aligning Text-to-Image Diffusion Models with Reward Backpropagation",
+      "summary": "Text-to-image diffusion models have recently emerged at the forefront of image generation, powered by very large-scale unsupervised or weakly supervised text-to-image training datasets. Due to their unsupervised training, controlling their behavior in downstream tasks, such as maximizing human-perceived image quality, image-text alignment, or ethical image generation, is difficult. Recent works finetune diffusion models to downstream reward functions using vanilla reinforcement learning, notorious for the high variance of the gradient estimators. In this paper, we propose AlignProp, a method that aligns diffusion models to downstream reward functions using end-to-end backpropagation of the reward gradient through the denoising process. While naive implementation of such backpropagation would require prohibitive memory resources for storing the partial derivatives of modern text-to-image models, AlignProp finetunes low-rank adapter weight modules and uses gradient checkpointing, to render its memory usage viable. We test AlignProp in finetuning diffusion models to various objectives, such as image-text semantic alignment, aesthetics, compressibility and controllability of the number of objects present, as well as their combinations. We show AlignProp achieves higher rewards in fewer training steps than alternatives, while being conceptually simpler, making it a straightforward choice for optimizing diffusion models for differentiable reward functions of interest. Code and Visualization results are available at https://align-prop.github.io/.",
+      "published": "2023-10-05T17:59:18Z",
+      "updated": "2024-11-07T03:54:22Z",
+      "authors": [
+        "Mihir Prabhudesai",
+        "Anirudh Goyal",
+        "Deepak Pathak",
+        "Katerina Fragkiadaki"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03294v2",
+      "arxiv_id": "2310.03294v2",
+      "title": "DISTFLASHATTN: Distributed Memory-efficient Attention for Long-context LLMs Training",
+      "summary": "FlashAttention (Dao, 2023) effectively reduces the quadratic peak memory usage to linear in training transformer-based large language models (LLMs) on a single GPU. In this paper, we introduce DISTFLASHATTN, a distributed memory-efficient attention mechanism optimized for long-context LLMs training. We propose three key techniques: token-level workload balancing, overlapping key-value communication, and a rematerialization-aware gradient checkpointing algorithm. We evaluate DISTFLASHATTN on Llama-7B and variants with sequence lengths from 32K to 512K. DISTFLASHATTN achieves 8x longer sequences, 4.45 - 5.64x speedup compared to Ring Self-Attention, 2 - 8x longer sequences, 1.24 - 2.01x speedup compared to Megatron-LM with FlashAttention. It achieves 1.67x and 1.26 - 1.88x speedup compared to recent Ring Attention and DeepSpeed-Ulysses. Code is available at https://github.com/RulinShao/LightSeq.",
+      "published": "2023-10-05T03:47:57Z",
+      "updated": "2024-03-31T21:11:08Z",
+      "authors": [
+        "Dacheng Li",
+        "Rulin Shao",
+        "Anze Xie",
+        "Eric P. Xing",
+        "Xuezhe Ma",
+        "Ion Stoica",
+        "Joseph E. Gonzalez",
+        "Hao Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.02599v2",
+      "arxiv_id": "2302.02599v2",
+      "title": "Colossal-Auto: Unified Automation of Parallelization and Activation Checkpoint for Large-scale Models",
+      "summary": "In recent years, large-scale models have demonstrated state-of-the-art performance across various domains. However, training such models requires various techniques to address the problem of limited computing power and memory on devices such as GPUs. Some commonly used techniques include pipeline parallelism, tensor parallelism, and activation checkpointing. While existing works have focused on finding efficient distributed execution plans (Zheng et al. 2022) and activation checkpoint scheduling (Herrmann et al. 2019, Beaumont et al. 2021}, there has been no method proposed to optimize these two plans jointly. Moreover, ahead-of-time compilation relies heavily on accurate memory and computing overhead estimation, which is often time-consuming and misleading. Existing training systems and machine learning pipelines either physically execute each operand or estimate memory usage with a scaled input tensor. To address these challenges, we introduce a system that can jointly optimize distributed execution and gradient checkpointing plans. Additionally, we provide an easy-to-use symbolic profiler that generates memory and computing statistics for any PyTorch model with a minimal time cost. Our approach allows users to parallelize their model training on the given hardware with minimum code change based. The source code is publicly available at Colossal-AI GitHub or https://github.com/hpcaitech/ColossalAI",
+      "published": "2023-02-06T07:22:49Z",
+      "updated": "2023-02-22T04:25:38Z",
+      "authors": [
+        "Yuliang Liu",
+        "Shenggui Li",
+        "Jiarui Fang",
+        "Yanjun Shao",
+        "Boyuan Yao",
+        "Yang You"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2111.10050v3",
+      "arxiv_id": "2111.10050v3",
+      "title": "Combined Scaling for Zero-shot Transfer Learning",
+      "summary": "We present a combined scaling method - named BASIC - that achieves 85.7% top-1 accuracy on the ImageNet ILSVRC-2012 validation set without learning from any labeled ImageNet example. This accuracy surpasses best published similar models - CLIP and ALIGN - by 9.3%. Our BASIC model also shows significant improvements in robustness benchmarks. For instance, on 5 test sets with natural distribution shifts such as ImageNet-{A,R,V2,Sketch} and ObjectNet, our model achieves 84.3% top-1 average accuracy, only a small drop from its original ImageNet accuracy. To achieve these results, we scale up the contrastive learning framework of CLIP and ALIGN in three dimensions: data size, model size, and batch size. Our dataset has 6.6B noisy image-text pairs, which is 4x larger than ALIGN, and 16x larger than CLIP. Our largest model has 3B weights, which is 3.75x larger in parameters and 8x larger in FLOPs than ALIGN and CLIP. Finally, our batch size is 65536 which is 2x more than CLIP and 4x more than ALIGN. We encountered two main challenges with the scaling rules of BASIC. First, the main challenge with implementing the combined scaling rules of BASIC is the limited memory of accelerators, such as GPUs and TPUs. To overcome the memory limit, we propose two simple methods which make use of gradient checkpointing and model parallelism. Second, while increasing the dataset size and the model size has been the defacto method to improve the performance of deep learning models like BASIC, the effect of a large contrastive batch size on such contrastive-trained image-text models is not well-understood. To shed light on the benefits of large contrastive batch sizes, we develop a theoretical framework which shows that larger contrastive batch sizes lead to smaller generalization gaps for image-text models such as BASIC.",
+      "published": "2021-11-19T05:25:46Z",
+      "updated": "2023-04-12T08:26:28Z",
+      "authors": [
+        "Hieu Pham",
+        "Zihang Dai",
+        "Golnaz Ghiasi",
+        "Kenji Kawaguchi",
+        "Hanxiao Liu",
+        "Adams Wei Yu",
+        "Jiahui Yu",
+        "Yi-Ting Chen",
+        "Minh-Thang Luong",
+        "Yonghui Wu",
+        "Mingxing Tan",
+        "Quoc V. Le"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1904.10631v2",
+      "arxiv_id": "1904.10631v2",
+      "title": "Low-Memory Neural Network Training: A Technical Report",
+      "summary": "Memory is increasingly often the bottleneck when training neural network models. Despite this, techniques to lower the overall memory requirements of training have been less widely studied compared to the extensive literature on reducing the memory requirements of inference. In this paper we study a fundamental question: How much memory is actually needed to train a neural network? To answer this question, we profile the overall memory usage of training on two representative deep learning benchmarks -- the WideResNet model for image classification and the DynamicConv Transformer model for machine translation -- and comprehensively evaluate four standard techniques for reducing the training memory requirements: (1) imposing sparsity on the model, (2) using low precision, (3) microbatching, and (4) gradient checkpointing. We explore how each of these techniques in isolation affects both the peak memory usage of training and the quality of the end model, and explore the memory, accuracy, and computation tradeoffs incurred when combining these techniques. Using appropriate combinations of these techniques, we show that it is possible to the reduce the memory required to train a WideResNet-28-2 on CIFAR-10 by up to 60.7x with a 0.4% loss in accuracy, and reduce the memory required to train a DynamicConv model on IWSLT'14 German to English translation by up to 8.7x with a BLEU score drop of 0.15.",
+      "published": "2019-04-24T03:44:58Z",
+      "updated": "2022-04-08T23:46:51Z",
+      "authors": [
+        "Nimit S. Sohoni",
+        "Christopher R. Aberger",
+        "Megan Leszczynski",
+        "Jian Zhang",
+        "Christopher Ré"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    }
+  ],
+  "protocol_query": "\"gradient checkpointing\" AND training AND memory",
+  "date_window": {
+    "start": "2019-01-01",
+    "end": "2026-06-30"
+  },
+  "hit_result_cap": false
+}

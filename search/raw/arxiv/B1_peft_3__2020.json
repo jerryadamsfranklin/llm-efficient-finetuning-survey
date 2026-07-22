@@ -1,0 +1,323 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"adapter\" AND \"transformer\" AND \"fine-tuning\" AND efficient) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202001010000 TO 202012312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22adapter%22+AND+%22transformer%22+AND+%22fine-tuning%22+AND+efficient%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202001010000+TO+202012312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:33:50Z",
+  "total_results_reported": 8,
+  "returned": 8,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2012.06460v1",
+      "arxiv_id": "2012.06460v1",
+      "title": "Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer",
+      "summary": "Adapter modules, additional trainable parameters that enable efficient fine-tuning of pretrained transformers, have recently been used for language specialization of multilingual transformers, improving downstream zero-shot cross-lingual transfer. In this work, we propose orthogonal language and task adapters (dubbed orthoadapters) for cross-lingual transfer. They are trained to encode language- and task-specific information that is complementary (i.e., orthogonal) to the knowledge already stored in the pretrained transformer's parameters. Our zero-shot cross-lingual transfer experiments, involving three tasks (POS-tagging, NER, NLI) and a set of 10 diverse languages, 1) point to the usefulness of orthoadapters in cross-lingual transfer, especially for the most complex NLI task, but also 2) indicate that the optimal adapter configuration highly depends on the task and the target language. We hope that our work will motivate a wider investigation of usefulness of orthogonality constraints in language- and task-specific fine-tuning of pretrained transformers.",
+      "published": "2020-12-11T16:32:41Z",
+      "updated": "2020-12-11T16:32:41Z",
+      "authors": [
+        "Marko Vidoni",
+        "Ivan Vulić",
+        "Goran Glavaš"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.03619v2",
+      "arxiv_id": "2012.03619v2",
+      "title": "Structural Text Segmentation of Legal Documents",
+      "summary": "The growing complexity of legal cases has lead to an increasing interest in legal information retrieval systems that can effectively satisfy user-specific information needs. However, such downstream systems typically require documents to be properly formatted and segmented, which is often done with relatively simple pre-processing steps, disregarding topical coherence of segments. Systems generally rely on representations of individual sentences or paragraphs, which may lack crucial context, or document-level representations, which are too long for meaningful search results. To address this issue, we propose a segmentation system that can predict topical coherence of sequential text segments spanning several paragraphs, effectively segmenting a document and providing a more balanced representation for downstream applications. We build our model on top of popular transformer networks and formulate structural text segmentation as topical change detection, by performing a series of independent classifications that allow for efficient fine-tuning on task-specific data. We crawl a novel dataset consisting of roughly $74,000$ online Terms-of-Service documents, including hierarchical topic annotations, which we use for training. Results show that our proposed system significantly outperforms baselines, and adapts well to structural peculiarities of legal documents. We release both data and trained models to the research community for future work.https://github.com/dennlinger/TopicalChange",
+      "published": "2020-12-07T12:09:37Z",
+      "updated": "2021-05-17T11:38:28Z",
+      "authors": [
+        "Dennis Aumiller",
+        "Satya Almasian",
+        "Sebastian Lackner",
+        "Michael Gertz"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.00364v4",
+      "arxiv_id": "2012.00364v4",
+      "title": "Pre-Trained Image Processing Transformer",
+      "summary": "As the computing power of modern hardware is increasing strongly, pre-trained deep learning models (e.g., BERT, GPT-3) learned on large-scale datasets have shown their effectiveness over conventional methods. The big progress is mainly contributed to the representation ability of transformer and its variant architectures. In this paper, we study the low-level computer vision task (e.g., denoising, super-resolution and deraining) and develop a new pre-trained model, namely, image processing transformer (IPT). To maximally excavate the capability of transformer, we present to utilize the well-known ImageNet benchmark for generating a large amount of corrupted image pairs. The IPT model is trained on these images with multi-heads and multi-tails. In addition, the contrastive learning is introduced for well adapting to different image processing tasks. The pre-trained model can therefore efficiently employed on desired task after fine-tuning. With only one pre-trained model, IPT outperforms the current state-of-the-art methods on various low-level benchmarks. Code is available at https://github.com/huawei-noah/Pretrained-IPT and https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT",
+      "published": "2020-12-01T09:42:46Z",
+      "updated": "2021-11-08T07:08:21Z",
+      "authors": [
+        "Hanting Chen",
+        "Yunhe Wang",
+        "Tianyu Guo",
+        "Chang Xu",
+        "Yiping Deng",
+        "Zhenhua Liu",
+        "Siwei Ma",
+        "Chunjing Xu",
+        "Chao Xu",
+        "Wen Gao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.11918v2",
+      "arxiv_id": "2010.11918v2",
+      "title": "AdapterDrop: On the Efficiency of Adapters in Transformers",
+      "summary": "Massively pre-trained transformer models are computationally expensive to fine-tune, slow for inference, and have large storage requirements. Recent approaches tackle these shortcomings by training smaller models, dynamically reducing the model size, and by training light-weight adapters. In this paper, we propose AdapterDrop, removing adapters from lower transformer layers during training and inference, which incorporates concepts from all three directions. We show that AdapterDrop can dynamically reduce the computational overhead when performing inference over multiple tasks simultaneously, with minimal decrease in task performances. We further prune adapters from AdapterFusion, which improves the inference efficiency while maintaining the task performances entirely.",
+      "published": "2020-10-22T17:49:42Z",
+      "updated": "2021-10-05T18:37:04Z",
+      "authors": [
+        "Andreas Rücklé",
+        "Gregor Geigle",
+        "Max Glockner",
+        "Tilman Beck",
+        "Jonas Pfeiffer",
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.09139v3",
+      "arxiv_id": "2009.09139v3",
+      "title": "Conditionally Adaptive Multi-Task Learning: Improving Transfer Learning in NLP Using Fewer Parameters & Less Data",
+      "summary": "Multi-Task Learning (MTL) networks have emerged as a promising method for transferring learned knowledge across different tasks. However, MTL must deal with challenges such as: overfitting to low resource tasks, catastrophic forgetting, and negative task transfer, or learning interference. Often, in Natural Language Processing (NLP), a separate model per task is needed to obtain the best performance. However, many fine-tuning approaches are both parameter inefficient, i.e., potentially involving one new model per task, and highly susceptible to losing knowledge acquired during pretraining. We propose a novel Transformer architecture consisting of a new conditional attention mechanism as well as a set of task-conditioned modules that facilitate weight sharing. Through this construction (a hypernetwork adapter), we achieve more efficient parameter sharing and mitigate forgetting by keeping half of the weights of a pretrained model fixed. We also use a new multi-task data sampling strategy to mitigate the negative effects of data imbalance across tasks. Using this approach, we are able to surpass single task fine-tuning methods while being parameter and data efficient (using around 66% of the data for weight updates). Compared to other BERT Large methods on GLUE, our 8-task model surpasses other Adapter methods by 2.8% and our 24-task model outperforms by 0.7-1.0% models that use MTL and single task fine-tuning. We show that a larger variant of our single multi-task model approach performs competitively across 26 NLP tasks and yields state-of-the-art results on a number of test and development sets. Our code is publicly available at https://github.com/CAMTL/CA-MTL.",
+      "published": "2020-09-19T02:04:34Z",
+      "updated": "2022-04-21T15:09:54Z",
+      "authors": [
+        "Jonathan Pilault",
+        "Amine Elhattami",
+        "Christopher Pal"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2007.15290v1",
+      "arxiv_id": "2007.15290v1",
+      "title": "A Data Augmentation-based Defense Method Against Adversarial Attacks in Neural Networks",
+      "summary": "Deep Neural Networks (DNNs) in Computer Vision (CV) are well-known to be vulnerable to Adversarial Examples (AEs), namely imperceptible perturbations added maliciously to cause wrong classification results. Such variability has been a potential risk for systems in real-life equipped DNNs as core components. Numerous efforts have been put into research on how to protect DNN models from being tackled by AEs. However, no previous work can efficiently reduce the effects caused by novel adversarial attacks and be compatible with real-life constraints at the same time. In this paper, we focus on developing a lightweight defense method that can efficiently invalidate full whitebox adversarial attacks with the compatibility of real-life constraints. From basic affine transformations, we integrate three transformations with randomized coefficients that fine-tuned respecting the amount of change to the defended sample. Comparing to 4 state-of-art defense methods published in top-tier AI conferences in the past two years, our method demonstrates outstanding robustness and efficiency. It is worth highlighting that, our model can withstand advanced adaptive attack, namely BPDA with 50 rounds, and still helps the target model maintain an accuracy around 80 %, meanwhile constraining the attack success rate to almost zero.",
+      "published": "2020-07-30T08:06:53Z",
+      "updated": "2020-07-30T08:06:53Z",
+      "authors": [
+        "Yi Zeng",
+        "Han Qiu",
+        "Gerard Memmi",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.12779v2",
+      "arxiv_id": "2006.12779v2",
+      "title": "Density-embedding layers: a general framework for adaptive receptive fields",
+      "summary": "The effectiveness and performance of artificial neural networks, particularly for visual tasks, depends in crucial ways on the receptive field of neurons. The receptive field itself depends on the interplay between several architectural aspects, including sparsity, pooling, and activation functions. In recent literature there are several ad hoc proposals trying to make receptive fields more flexible and adaptive to data. For instance, different parameterizations of convolutional and pooling layers have been proposed to increase their adaptivity. In this paper, we propose the novel theoretical framework of density-embedded layers, generalizing the transformation represented by a neuron. Specifically, the affine transformation applied on the input is replaced by a scalar product of the input, suitably represented as a piecewise constant function, with a density function associated with the neuron. This density is shown to describe directly the receptive field of the neuron. Crucially, by suitably representing such a density as a linear combination of a parametric family of functions, we can efficiently train the densities by means of any automatic differentiation system, making it adaptable to the problem at hand, and computationally efficient to evaluate. This framework captures and generalizes recent methods, allowing a fine tuning of the receptive field. In the paper, we define some novel layers and we experimentally validate them on the classic MNIST dataset.",
+      "published": "2020-06-23T06:09:16Z",
+      "updated": "2020-07-06T07:36:24Z",
+      "authors": [
+        "Francesco Cicala",
+        "Luca Bortolussi"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2005.05298v4",
+      "arxiv_id": "2005.05298v4",
+      "title": "SOLOIST: Building Task Bots at Scale with Transfer Learning and Machine Teaching",
+      "summary": "We present a new method SOLOIST that uses transfer learning and machine teaching to build task bots at scale. We parameterize classical modular task-oriented dialog systems using a Transformer-based auto-regressive language model, which subsumes different dialog modules into a single neural model. We pre-train, on heterogeneous dialog corpora, a task-grounded response generation model, which can generate dialog responses grounded in user goals and real-world knowledge for task completion. The pre-trained model can be efficiently adapted to accomplish new tasks with a handful of task-specific dialogs via machine teaching, where training samples are generated by human teachers interacting with the system. Experiments show that (i) SOLOIST creates new state-of-the-art on well-studied task-oriented dialog benchmarks, including CamRest676 and MultiWOZ; (ii) in the few-shot fine-tuning settings, SOLOIST significantly outperforms existing methods, and (iii) the use of machine teaching substantially reduces the labeling cost of fine-tuning. The pre-trained models and codes are available at https://aka.ms/soloist.",
+      "published": "2020-05-11T17:58:34Z",
+      "updated": "2021-04-09T03:14:57Z",
+      "authors": [
+        "Baolin Peng",
+        "Chunyuan Li",
+        "Jinchao Li",
+        "Shahin Shayandeh",
+        "Lars Liden",
+        "Jianfeng Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"adapter\" AND \"transformer\" AND \"fine-tuning\" AND efficient",
+  "slice_id": "2020",
+  "date_window": {
+    "start": "2020-01-01",
+    "end": "2020-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2012.06460v1",
+      "arxiv_id": "2012.06460v1",
+      "title": "Orthogonal Language and Task Adapters in Zero-Shot Cross-Lingual Transfer",
+      "summary": "Adapter modules, additional trainable parameters that enable efficient fine-tuning of pretrained transformers, have recently been used for language specialization of multilingual transformers, improving downstream zero-shot cross-lingual transfer. In this work, we propose orthogonal language and task adapters (dubbed orthoadapters) for cross-lingual transfer. They are trained to encode language- and task-specific information that is complementary (i.e., orthogonal) to the knowledge already stored in the pretrained transformer's parameters. Our zero-shot cross-lingual transfer experiments, involving three tasks (POS-tagging, NER, NLI) and a set of 10 diverse languages, 1) point to the usefulness of orthoadapters in cross-lingual transfer, especially for the most complex NLI task, but also 2) indicate that the optimal adapter configuration highly depends on the task and the target language. We hope that our work will motivate a wider investigation of usefulness of orthogonality constraints in language- and task-specific fine-tuning of pretrained transformers.",
+      "published": "2020-12-11T16:32:41Z",
+      "updated": "2020-12-11T16:32:41Z",
+      "authors": [
+        "Marko Vidoni",
+        "Ivan Vulić",
+        "Goran Glavaš"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.03619v2",
+      "arxiv_id": "2012.03619v2",
+      "title": "Structural Text Segmentation of Legal Documents",
+      "summary": "The growing complexity of legal cases has lead to an increasing interest in legal information retrieval systems that can effectively satisfy user-specific information needs. However, such downstream systems typically require documents to be properly formatted and segmented, which is often done with relatively simple pre-processing steps, disregarding topical coherence of segments. Systems generally rely on representations of individual sentences or paragraphs, which may lack crucial context, or document-level representations, which are too long for meaningful search results. To address this issue, we propose a segmentation system that can predict topical coherence of sequential text segments spanning several paragraphs, effectively segmenting a document and providing a more balanced representation for downstream applications. We build our model on top of popular transformer networks and formulate structural text segmentation as topical change detection, by performing a series of independent classifications that allow for efficient fine-tuning on task-specific data. We crawl a novel dataset consisting of roughly $74,000$ online Terms-of-Service documents, including hierarchical topic annotations, which we use for training. Results show that our proposed system significantly outperforms baselines, and adapts well to structural peculiarities of legal documents. We release both data and trained models to the research community for future work.https://github.com/dennlinger/TopicalChange",
+      "published": "2020-12-07T12:09:37Z",
+      "updated": "2021-05-17T11:38:28Z",
+      "authors": [
+        "Dennis Aumiller",
+        "Satya Almasian",
+        "Sebastian Lackner",
+        "Michael Gertz"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.00364v4",
+      "arxiv_id": "2012.00364v4",
+      "title": "Pre-Trained Image Processing Transformer",
+      "summary": "As the computing power of modern hardware is increasing strongly, pre-trained deep learning models (e.g., BERT, GPT-3) learned on large-scale datasets have shown their effectiveness over conventional methods. The big progress is mainly contributed to the representation ability of transformer and its variant architectures. In this paper, we study the low-level computer vision task (e.g., denoising, super-resolution and deraining) and develop a new pre-trained model, namely, image processing transformer (IPT). To maximally excavate the capability of transformer, we present to utilize the well-known ImageNet benchmark for generating a large amount of corrupted image pairs. The IPT model is trained on these images with multi-heads and multi-tails. In addition, the contrastive learning is introduced for well adapting to different image processing tasks. The pre-trained model can therefore efficiently employed on desired task after fine-tuning. With only one pre-trained model, IPT outperforms the current state-of-the-art methods on various low-level benchmarks. Code is available at https://github.com/huawei-noah/Pretrained-IPT and https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT",
+      "published": "2020-12-01T09:42:46Z",
+      "updated": "2021-11-08T07:08:21Z",
+      "authors": [
+        "Hanting Chen",
+        "Yunhe Wang",
+        "Tianyu Guo",
+        "Chang Xu",
+        "Yiping Deng",
+        "Zhenhua Liu",
+        "Siwei Ma",
+        "Chunjing Xu",
+        "Chao Xu",
+        "Wen Gao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.11918v2",
+      "arxiv_id": "2010.11918v2",
+      "title": "AdapterDrop: On the Efficiency of Adapters in Transformers",
+      "summary": "Massively pre-trained transformer models are computationally expensive to fine-tune, slow for inference, and have large storage requirements. Recent approaches tackle these shortcomings by training smaller models, dynamically reducing the model size, and by training light-weight adapters. In this paper, we propose AdapterDrop, removing adapters from lower transformer layers during training and inference, which incorporates concepts from all three directions. We show that AdapterDrop can dynamically reduce the computational overhead when performing inference over multiple tasks simultaneously, with minimal decrease in task performances. We further prune adapters from AdapterFusion, which improves the inference efficiency while maintaining the task performances entirely.",
+      "published": "2020-10-22T17:49:42Z",
+      "updated": "2021-10-05T18:37:04Z",
+      "authors": [
+        "Andreas Rücklé",
+        "Gregor Geigle",
+        "Max Glockner",
+        "Tilman Beck",
+        "Jonas Pfeiffer",
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.09139v3",
+      "arxiv_id": "2009.09139v3",
+      "title": "Conditionally Adaptive Multi-Task Learning: Improving Transfer Learning in NLP Using Fewer Parameters & Less Data",
+      "summary": "Multi-Task Learning (MTL) networks have emerged as a promising method for transferring learned knowledge across different tasks. However, MTL must deal with challenges such as: overfitting to low resource tasks, catastrophic forgetting, and negative task transfer, or learning interference. Often, in Natural Language Processing (NLP), a separate model per task is needed to obtain the best performance. However, many fine-tuning approaches are both parameter inefficient, i.e., potentially involving one new model per task, and highly susceptible to losing knowledge acquired during pretraining. We propose a novel Transformer architecture consisting of a new conditional attention mechanism as well as a set of task-conditioned modules that facilitate weight sharing. Through this construction (a hypernetwork adapter), we achieve more efficient parameter sharing and mitigate forgetting by keeping half of the weights of a pretrained model fixed. We also use a new multi-task data sampling strategy to mitigate the negative effects of data imbalance across tasks. Using this approach, we are able to surpass single task fine-tuning methods while being parameter and data efficient (using around 66% of the data for weight updates). Compared to other BERT Large methods on GLUE, our 8-task model surpasses other Adapter methods by 2.8% and our 24-task model outperforms by 0.7-1.0% models that use MTL and single task fine-tuning. We show that a larger variant of our single multi-task model approach performs competitively across 26 NLP tasks and yields state-of-the-art results on a number of test and development sets. Our code is publicly available at https://github.com/CAMTL/CA-MTL.",
+      "published": "2020-09-19T02:04:34Z",
+      "updated": "2022-04-21T15:09:54Z",
+      "authors": [
+        "Jonathan Pilault",
+        "Amine Elhattami",
+        "Christopher Pal"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2007.15290v1",
+      "arxiv_id": "2007.15290v1",
+      "title": "A Data Augmentation-based Defense Method Against Adversarial Attacks in Neural Networks",
+      "summary": "Deep Neural Networks (DNNs) in Computer Vision (CV) are well-known to be vulnerable to Adversarial Examples (AEs), namely imperceptible perturbations added maliciously to cause wrong classification results. Such variability has been a potential risk for systems in real-life equipped DNNs as core components. Numerous efforts have been put into research on how to protect DNN models from being tackled by AEs. However, no previous work can efficiently reduce the effects caused by novel adversarial attacks and be compatible with real-life constraints at the same time. In this paper, we focus on developing a lightweight defense method that can efficiently invalidate full whitebox adversarial attacks with the compatibility of real-life constraints. From basic affine transformations, we integrate three transformations with randomized coefficients that fine-tuned respecting the amount of change to the defended sample. Comparing to 4 state-of-art defense methods published in top-tier AI conferences in the past two years, our method demonstrates outstanding robustness and efficiency. It is worth highlighting that, our model can withstand advanced adaptive attack, namely BPDA with 50 rounds, and still helps the target model maintain an accuracy around 80 %, meanwhile constraining the attack success rate to almost zero.",
+      "published": "2020-07-30T08:06:53Z",
+      "updated": "2020-07-30T08:06:53Z",
+      "authors": [
+        "Yi Zeng",
+        "Han Qiu",
+        "Gerard Memmi",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.12779v2",
+      "arxiv_id": "2006.12779v2",
+      "title": "Density-embedding layers: a general framework for adaptive receptive fields",
+      "summary": "The effectiveness and performance of artificial neural networks, particularly for visual tasks, depends in crucial ways on the receptive field of neurons. The receptive field itself depends on the interplay between several architectural aspects, including sparsity, pooling, and activation functions. In recent literature there are several ad hoc proposals trying to make receptive fields more flexible and adaptive to data. For instance, different parameterizations of convolutional and pooling layers have been proposed to increase their adaptivity. In this paper, we propose the novel theoretical framework of density-embedded layers, generalizing the transformation represented by a neuron. Specifically, the affine transformation applied on the input is replaced by a scalar product of the input, suitably represented as a piecewise constant function, with a density function associated with the neuron. This density is shown to describe directly the receptive field of the neuron. Crucially, by suitably representing such a density as a linear combination of a parametric family of functions, we can efficiently train the densities by means of any automatic differentiation system, making it adaptable to the problem at hand, and computationally efficient to evaluate. This framework captures and generalizes recent methods, allowing a fine tuning of the receptive field. In the paper, we define some novel layers and we experimentally validate them on the classic MNIST dataset.",
+      "published": "2020-06-23T06:09:16Z",
+      "updated": "2020-07-06T07:36:24Z",
+      "authors": [
+        "Francesco Cicala",
+        "Luca Bortolussi"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2005.05298v4",
+      "arxiv_id": "2005.05298v4",
+      "title": "SOLOIST: Building Task Bots at Scale with Transfer Learning and Machine Teaching",
+      "summary": "We present a new method SOLOIST that uses transfer learning and machine teaching to build task bots at scale. We parameterize classical modular task-oriented dialog systems using a Transformer-based auto-regressive language model, which subsumes different dialog modules into a single neural model. We pre-train, on heterogeneous dialog corpora, a task-grounded response generation model, which can generate dialog responses grounded in user goals and real-world knowledge for task completion. The pre-trained model can be efficiently adapted to accomplish new tasks with a handful of task-specific dialogs via machine teaching, where training samples are generated by human teachers interacting with the system. Experiments show that (i) SOLOIST creates new state-of-the-art on well-studied task-oriented dialog benchmarks, including CamRest676 and MultiWOZ; (ii) in the few-shot fine-tuning settings, SOLOIST significantly outperforms existing methods, and (iii) the use of machine teaching substantially reduces the labeling cost of fine-tuning. The pre-trained models and codes are available at https://aka.ms/soloist.",
+      "published": "2020-05-11T17:58:34Z",
+      "updated": "2021-04-09T03:14:57Z",
+      "authors": [
+        "Baolin Peng",
+        "Chunyuan Li",
+        "Jinchao Li",
+        "Shahin Shayandeh",
+        "Lars Liden",
+        "Jianfeng Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    }
+  ]
+}

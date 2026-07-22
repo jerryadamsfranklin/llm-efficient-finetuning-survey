@@ -1,0 +1,65 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"federated learning\" AND \"large language model\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202101010000 TO 202112312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22federated+learning%22+AND+%22large+language+model%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202101010000+TO+202112312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:41:13Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2102.00875v1",
+      "arxiv_id": "2102.00875v1",
+      "title": "Scaling Federated Learning for Fine-tuning of Large Language Models",
+      "summary": "Federated learning (FL) is a promising approach to distributed compute, as well as distributed data, and provides a level of privacy and compliance to legal frameworks. This makes FL attractive for both consumer and healthcare applications. While the area is actively being explored, few studies have examined FL in the context of larger language models and there is a lack of comprehensive reviews of robustness across tasks, architectures, numbers of clients, and other relevant factors. In this paper, we explore the fine-tuning of Transformer-based language models in a federated learning setting. We evaluate three popular BERT-variants of different sizes (BERT, ALBERT, and DistilBERT) on a number of text classification tasks such as sentiment analysis and author identification. We perform an extensive sweep over the number of clients, ranging up to 32, to evaluate the impact of distributed compute on task performance in the federated averaging setting. While our findings suggest that the large sizes of the evaluated models are not generally prohibitive to federated training, we found that the different models handle federated averaging to a varying degree. Most notably, DistilBERT converges significantly slower with larger numbers of clients, and under some circumstances, even collapses to chance level performance. Investigating this issue presents an interesting perspective for future research.",
+      "published": "2021-02-01T14:31:39Z",
+      "updated": "2021-02-01T14:31:39Z",
+      "authors": [
+        "Agrin Hilmkil",
+        "Sebastian Callh",
+        "Matteo Barbieri",
+        "Leon René Sütfeld",
+        "Edvin Listo Zec",
+        "Olof Mogren"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"federated learning\" AND \"large language model\"",
+  "slice_id": "2021",
+  "date_window": {
+    "start": "2021-01-01",
+    "end": "2021-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2102.00875v1",
+      "arxiv_id": "2102.00875v1",
+      "title": "Scaling Federated Learning for Fine-tuning of Large Language Models",
+      "summary": "Federated learning (FL) is a promising approach to distributed compute, as well as distributed data, and provides a level of privacy and compliance to legal frameworks. This makes FL attractive for both consumer and healthcare applications. While the area is actively being explored, few studies have examined FL in the context of larger language models and there is a lack of comprehensive reviews of robustness across tasks, architectures, numbers of clients, and other relevant factors. In this paper, we explore the fine-tuning of Transformer-based language models in a federated learning setting. We evaluate three popular BERT-variants of different sizes (BERT, ALBERT, and DistilBERT) on a number of text classification tasks such as sentiment analysis and author identification. We perform an extensive sweep over the number of clients, ranging up to 32, to evaluate the impact of distributed compute on task performance in the federated averaging setting. While our findings suggest that the large sizes of the evaluated models are not generally prohibitive to federated training, we found that the different models handle federated averaging to a varying degree. Most notably, DistilBERT converges significantly slower with larger numbers of clients, and under some circumstances, even collapses to chance level performance. Investigating this issue presents an interesting perspective for future research.",
+      "published": "2021-02-01T14:31:39Z",
+      "updated": "2021-02-01T14:31:39Z",
+      "authors": [
+        "Agrin Hilmkil",
+        "Sebastian Callh",
+        "Matteo Barbieri",
+        "Leon René Sütfeld",
+        "Edvin Listo Zec",
+        "Olof Mogren"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    }
+  ]
+}

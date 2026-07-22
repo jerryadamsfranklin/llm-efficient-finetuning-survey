@@ -24,7 +24,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from _common import (  # noqa: E402
     append_search_log,
-    iter_queries,
+    iter_s2_queries,
     load_queries,
     raw_path,
     save_json,
@@ -130,7 +130,7 @@ def main() -> int:
         headers["x-api-key"] = api_key
     session.headers.update(headers)
 
-    for block_id, _name, q_idx, query in iter_queries(data):
+    for block_id, _name, q_idx, query in iter_s2_queries(data):
         if args.block and block_id != args.block:
             continue
         out = raw_path("semanticscholar", block_id, q_idx)
@@ -139,10 +139,10 @@ def main() -> int:
                 existing = json.loads(out.read_text(encoding="utf-8"))
             except (OSError, json.JSONDecodeError):
                 existing = {}
-            if existing.get("returned", 0) > 0:
+            if existing.get("returned", 0) > 0 and existing.get("protocol_version") == "1.1":
                 print(f"skip existing {out.name}")
                 continue
-            print(f"retry empty {out.name}", flush=True)
+            print(f"re-run (v1.1 s2_queries) {out.name}", flush=True)
 
         print(f"semanticscholar {block_id} q{q_idx}: {query}", flush=True)
         try:
@@ -153,7 +153,9 @@ def main() -> int:
                 max_results=max_results,
                 session=session,
             )
+            payload["protocol_version"] = "1.1"
             payload["protocol_query"] = query
+            payload["query_form"] = "s2_keyword_variant"
         except (requests.RequestException, RuntimeError) as exc:
             print(f"  ERROR: {exc}", flush=True)
             append_search_log(
@@ -167,9 +169,13 @@ def main() -> int:
             time.sleep(INTER_REQUEST_SEC)
             continue
 
-        notes = f"API totalReported={payload['total_results_reported']}"
+        notes = (
+            "protocol=1.1; s2_keyword_variant (semantic equivalent of boolean query, "
+            "not identical string); "
+            f"API totalReported={payload['total_results_reported']}"
+        )
         if payload.get("hit_result_cap"):
-            notes += f"; HIT_CAP={max_results} — consider narrowing this query"
+            notes += f"; HIT_CAP={max_results}"
         if payload.get("warnings"):
             notes += "; " + "; ".join(payload["warnings"])
         # Do not persist empty rate-limited failures — allows clean resume.

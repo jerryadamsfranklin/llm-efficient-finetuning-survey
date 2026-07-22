@@ -1,0 +1,701 @@
+{
+  "source": "arxiv",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"PEFT\" AND survey) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[201901010000 TO 202606302359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22PEFT%22+AND+survey%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B201901010000+TO+202606302359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T20:13:54Z",
+  "total_results_reported": 17,
+  "returned": 17,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2603.22276v1",
+      "arxiv_id": "2603.22276v1",
+      "title": "Scaling DoRA: High-Rank Adaptation via Factored Norms and Fused Kernels",
+      "summary": "Weight-Decomposed Low-Rank Adaptation (DoRA) extends LoRA by decoupling weight magnitude from direction, but its forward pass requires the row-wise norm of W + sBA, a computation that every major framework we surveyed implements by materializing the dense [d_out, d_in] product BA. At d_in = 8192 and rank r = 384, a single module's norm requires about 512 MB of transient working memory in bf16, making high-rank DoRA costly and often infeasible on common single-GPU setups once hundreds of adapted modules and checkpointing are involved. We present two systems contributions. A factored norm decomposes the squared norm into base, cross, and Gram terms computable through O(d_out r + r^2) intermediates, eliminating the dense product. Fused Triton kernels collapse the four-kernel DoRA composition into a single pass, reducing memory traffic by about 4x and using a numerically stable form that avoids catastrophic cancellation in the near-unity rescaling regime where magnitude scales concentrate in practice. Across six 8-32B vision-language models (VLMs) on three NVIDIA GPUs (RTX 6000 PRO, H200, B200) at r = 384 in bf16, the fused implementation is 1.5-2.0x faster than Hugging Face PEFT's DoRA implementation for inference and 1.5-1.9x faster for gradient computation (optimizer step excluded), with up to 7 GB lower peak VRAM. Microbenchmarks on six GPUs spanning four architecture generations (L40S, A100, RTX 6000 PRO, H200, B200, B300) confirm 1.5-2.7x compose-kernel speedup. Final-logit cosine similarity exceeds 0.9999 across all model/GPU pairs, and multi-seed training curves match within 7.1 x 10^-4 mean per-step loss delta over 2000 steps.",
+      "published": "2026-03-23T17:57:24Z",
+      "updated": "2026-03-23T17:57:24Z",
+      "authors": [
+        "Alexandra Zelenin",
+        "Alexandra Zhuravlyova"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2510.12178v1",
+      "arxiv_id": "2510.12178v1",
+      "title": "Evolution of meta's llama models and parameter-efficient fine-tuning of large language models: a survey",
+      "summary": "This review surveys the rapid evolution of Meta AI's LLaMA (Large Language Model Meta AI) series - from LLaMA 1 through LLaMA 4 and the specialized parameter-efficient fine-tuning (PEFT) methods developed for these models. We first describe the LLaMA family of foundation models (7B-65B to 288B parameters), their architectures (including native multimodal and Mixtureof-Experts variants), and key performance characteristics. We then describe and discuss the concept of PEFT, which adapts large pre-trained models by updating only a small subset of parameters, and review five PEFT methods that have been applied to LLaMA: LoRA (Low-Rank Adaptation), LLaMA-Adapter V1 and V2, LLaMA-Excitor, and QLoRA (Quantized LoRA). We discuss each method's mechanism, parameter savings, and example application to LLaMA (e.g., instruction tuning, multimodal tasks). We provide structured discussion and analysis of model and adapter architectures, parameter counts, and benchmark results (including examples where fine-tuned LLaMA models outperform larger baselines). Finally, we examine real-world use cases where LLaMA-based models and PEFT have been successfully applied (e.g., legal and medical domains), and we discuss ongoing challenges and future research directions (such as scaling to even larger contexts and improving robustness). This survey paper provides a one-stop resource for ML researchers and practitioners interested in LLaMA models and efficient fine-tuning strategies.",
+      "published": "2025-10-14T06:12:44Z",
+      "updated": "2025-10-14T06:12:44Z",
+      "authors": [
+        "Abdulhady Abas Abdullah",
+        "Arkaitz Zubiaga",
+        "Seyedali Mirjalili",
+        "Amir H. Gandomi",
+        "Fatemeh Daneshfar",
+        "Mohammadsadra Amini",
+        "Alan Salam Mohammed",
+        "Hadi Veisi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.18868v1",
+      "arxiv_id": "2509.18868v1",
+      "title": "Memory in Large Language Models: Mechanisms, Evaluation and Evolution",
+      "summary": "Under a unified operational definition, we define LLM memory as a persistent state written during pretraining, finetuning, or inference that can later be addressed and that stably influences outputs. We propose a four-part taxonomy (parametric, contextual, external, procedural/episodic) and a memory quadruple (location, persistence, write/access path, controllability). We link mechanism, evaluation, and governance via the chain write -> read -> inhibit/update. To avoid distorted comparisons across heterogeneous setups, we adopt a three-setting protocol (parametric only, offline retrieval, online retrieval) that decouples capability from information availability on the same data and timeline. On this basis we build a layered evaluation: parametric (closed-book recall, edit differential, memorization/privacy), contextual (position curves and the mid-sequence drop), external (answer correctness vs snippet attribution/faithfulness), and procedural/episodic (cross-session consistency and timeline replay, E MARS+). The framework integrates temporal governance and leakage auditing (freshness hits, outdated answers, refusal slices) and uncertainty reporting via inter-rater agreement plus paired tests with multiple-comparison correction. For updating and forgetting, we present DMM Gov: coordinating DAPT/TAPT, PEFT, model editing (ROME, MEND, MEMIT, SERAC), and RAG to form an auditable loop covering admission thresholds, rollout, monitoring, rollback, and change audits, with specs for timeliness, conflict handling, and long-horizon consistency. Finally, we give four testable propositions: minimum identifiability; a minimal evaluation card; causally constrained editing with verifiable forgetting; and when retrieval with small-window replay outperforms ultra-long-context reading. This yields a reproducible, comparable, and governable coordinate system for research and deployment.",
+      "published": "2025-09-23T10:06:58Z",
+      "updated": "2025-09-23T10:06:58Z",
+      "authors": [
+        "Dianxing Zhang",
+        "Wendong Li",
+        "Kani Song",
+        "Jiaye Lu",
+        "Gang Li",
+        "Liuchun Yang",
+        "Sheng Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.16244v1",
+      "arxiv_id": "2509.16244v1",
+      "title": "How Can Quantum Deep Learning Improve Large Language Models?",
+      "summary": "The rapid progress of large language models (LLMs) has transformed natural language processing, yet the challenge of efficient adaptation remains unresolved. Full fine-tuning achieves strong performance but imposes prohibitive computational and memory costs. Parameter-efficient fine-tuning (PEFT) strategies, such as low-rank adaptation (LoRA), Prefix tuning, and sparse low-rank adaptation (SoRA), address this issue by reducing trainable parameters while maintaining competitive accuracy. However, these methods often encounter limitations in scalability, stability, and generalization across diverse tasks. Recent advances in quantum deep learning introduce novel opportunities through quantum-inspired encoding and parameterized quantum circuits (PQCs). In particular, the quantum-amplitude embedded adaptation (QAA) framework demonstrates expressive model updates with minimal overhead. This paper presents a systematic survey and comparative analysis of conventional PEFT methods and QAA. The analysis demonstrates trade-offs in convergence, efficiency, and representational capacity, while providing insight into the potential of quantum approaches for future LLM adaptation.",
+      "published": "2025-09-17T08:18:58Z",
+      "updated": "2025-09-17T08:18:58Z",
+      "authors": [
+        "Emily Jimin Roh",
+        "Hyojun Ahn",
+        "Samuel Yen-Chi Chen",
+        "Soohyun Park",
+        "Joongheon Kim"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.13268v1",
+      "arxiv_id": "2509.13268v1",
+      "title": "LLMs for energy and macronutrients estimation using only text data from 24-hour dietary recalls: a parameter-efficient fine-tuning experiment using a 10-shot prompt",
+      "summary": "BACKGROUND: Most artificial intelligence tools used to estimate nutritional content rely on image input. However, whether large language models (LLMs) can accurately predict nutritional values based solely on text descriptions of foods consumed remains unknown. If effective, this approach could enable simpler dietary monitoring without the need for photographs. METHODS: We used 24-hour dietary recalls from adolescents aged 12-19 years in the National Health and Nutrition Examination Survey (NHANES). An open-source quantized LLM was prompted using a 10-shot, chain-of-thought approach to estimate energy and five macronutrients based solely on text strings listing foods and their quantities. We then applied parameter-efficient fine-tuning (PEFT) to evaluate whether predictive accuracy improved. NHANES-calculated values served as the ground truth for energy, proteins, carbohydrates, total sugar, dietary fiber and total fat. RESULTS: In a pooled dataset of 11,281 adolescents (49.9% male, mean age 15.4 years), the vanilla LLM yielded poor predictions. The mean absolute error (MAE) was 652.08 for energy and the Lin's CCC <0.46 across endpoints. In contrast, the fine-tuned model performed substantially better, with energy MAEs ranging from 171.34 to 190.90 across subsets, and Lin's CCC exceeding 0.89 for all outcomes. CONCLUSIONS: When prompted using a chain-of-thought approach and fine-tuned with PEFT, open-source LLMs exposed solely to text input can accurately predict energy and macronutrient values from 24-hour dietary recalls. This approach holds promise for low-burden, text-based dietary monitoring tools.",
+      "published": "2025-09-16T17:26:17Z",
+      "updated": "2025-09-16T17:26:17Z",
+      "authors": [
+        "Rodrigo M Carrillo-Larco"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.21099v1",
+      "arxiv_id": "2504.21099v1",
+      "title": "A Survey on Parameter-Efficient Fine-Tuning for Foundation Models in Federated Learning",
+      "summary": "Foundation models have revolutionized artificial intelligence by providing robust, versatile architectures pre-trained on large-scale datasets. However, adapting these massive models to specific downstream tasks requires fine-tuning, which can be prohibitively expensive in computational resources. Parameter-Efficient Fine-Tuning (PEFT) methods address this challenge by selectively updating only a small subset of parameters. Meanwhile, Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it ideal for privacy-sensitive applications. This survey provides a comprehensive review of the integration of PEFT techniques within federated learning environments. We systematically categorize existing approaches into three main groups: Additive PEFT (which introduces new trainable parameters), Selective PEFT (which fine-tunes only subsets of existing parameters), and Reparameterized PEFT (which transforms model architectures to enable efficient updates). For each category, we analyze how these methods address the unique challenges of federated settings, including data heterogeneity, communication efficiency, computational constraints, and privacy concerns. We further organize the literature based on application domains, covering both natural language processing and computer vision tasks. Finally, we discuss promising research directions, including scaling to larger foundation models, theoretical analysis of federated PEFT methods, and sustainable approaches for resource-constrained environments.",
+      "published": "2025-04-29T18:18:39Z",
+      "updated": "2025-04-29T18:18:39Z",
+      "authors": [
+        "Jieming Bian",
+        "Yuanzhe Peng",
+        "Lei Wang",
+        "Yin Huang",
+        "Jie Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.14117v1",
+      "arxiv_id": "2504.14117v1",
+      "title": "PEFT A2Z: Parameter-Efficient Fine-Tuning Survey for Large Language and Vision Models",
+      "summary": "Large models such as Large Language Models (LLMs) and Vision Language Models (VLMs) have transformed artificial intelligence, powering applications in natural language processing, computer vision, and multimodal learning. However, fully fine-tuning these models remains expensive, requiring extensive computational resources, memory, and task-specific data. Parameter-Efficient Fine-Tuning (PEFT) has emerged as a promising solution that allows adapting large models to downstream tasks by updating only a small portion of parameters. This survey presents a comprehensive overview of PEFT techniques, focusing on their motivations, design principles, and effectiveness. We begin by analyzing the resource and accessibility challenges posed by traditional fine-tuning and highlight key issues, such as overfitting, catastrophic forgetting, and parameter inefficiency. We then introduce a structured taxonomy of PEFT methods -- grouped into additive, selective, reparameterized, hybrid, and unified frameworks -- and systematically compare their mechanisms and trade-offs. Beyond taxonomy, we explore the impact of PEFT across diverse domains, including language, vision, and generative modeling, showing how these techniques offer strong performance with lower resource costs. We also discuss important open challenges in scalability, interpretability, and robustness, and suggest future directions such as federated learning, domain adaptation, and theoretical grounding. Our goal is to provide a unified understanding of PEFT and its growing role in enabling practical, efficient, and sustainable use of large models.",
+      "published": "2025-04-19T00:33:16Z",
+      "updated": "2025-04-19T00:33:16Z",
+      "authors": [
+        "Nusrat Jahan Prottasha",
+        "Upama Roy Chowdhury",
+        "Shetu Mohanto",
+        "Tasfia Nuzhat",
+        "Abdullah As Sami",
+        "Md Shamol Ali",
+        "Md Shohanur Islam Sobuj",
+        "Hafijur Raman",
+        "Md Kowsher",
+        "Ozlem Ozmen Garibay"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.13822v2",
+      "arxiv_id": "2504.13822v2",
+      "title": "Parameter-Efficient Continual Fine-Tuning: A Survey",
+      "summary": "The emergence of large pre-trained networks has revolutionized the AI field, unlocking new possibilities and achieving unprecedented performance. However, these models inherit a fundamental limitation from traditional Machine Learning approaches: their strong dependence on the \\textit{i.i.d.} assumption hinders their adaptability to dynamic learning scenarios. We believe the next breakthrough in AI lies in enabling efficient adaptation to evolving environments -- such as the real world -- where new data and tasks arrive sequentially. This challenge defines the field of Continual Learning (CL), a Machine Learning paradigm focused on developing lifelong learning neural models. One alternative to efficiently adapt these large-scale models is known Parameter-Efficient Fine-Tuning (PEFT). These methods tackle the issue of adapting the model to a particular data or scenario by performing small and efficient modifications, achieving similar performance to full fine-tuning. However, these techniques still lack the ability to adjust the model to multiple tasks continually, as they suffer from the issue of Catastrophic Forgetting. In this survey, we first provide an overview of CL algorithms and PEFT methods before reviewing the state-of-the-art on Parameter-Efficient Continual Fine-Tuning (PECFT). We examine various approaches, discuss evaluation metrics, and explore potential future research directions. Our goal is to highlight the synergy between CL and Parameter-Efficient Fine-Tuning, guide researchers in this field, and pave the way for novel future research directions.",
+      "published": "2025-04-18T17:51:51Z",
+      "updated": "2025-08-19T09:33:44Z",
+      "authors": [
+        "Eric Nuertey Coleman",
+        "Luigi Quarantiello",
+        "Ziyue Liu",
+        "Qinwen Yang",
+        "Samrat Mukherjee",
+        "Julio Hurtado",
+        "Vincenzo Lomonaco"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.12016v3",
+      "arxiv_id": "2503.12016v3",
+      "title": "A Survey on Federated Fine-tuning of Large Language Models",
+      "summary": "Large Language Models (LLMs) have demonstrated impressive success across various tasks. Integrating LLMs with Federated Learning (FL), a paradigm known as FedLLM, offers a promising avenue for collaborative model adaptation while preserving data privacy. This survey provides a systematic and comprehensive review of FedLLM. We begin by tracing the historical development of both LLMs and FL, summarizing relevant prior research to set the context. Subsequently, we delve into an in-depth analysis of the fundamental challenges inherent in deploying FedLLM. Addressing these challenges often requires efficient adaptation strategies; therefore, we conduct an extensive examination of existing Parameter-Efficient Fine-tuning (PEFT) methods and explore their applicability within the FL framework. To rigorously evaluate the performance of FedLLM, we undertake a thorough review of existing fine-tuning datasets and evaluation benchmarks. Furthermore, we discuss FedLLM's diverse real-world applications across multiple domains. Finally, we identify critical open challenges and outline promising research directions to foster future advancements in FedLLM. This survey aims to serve as a foundational resource for researchers and practitioners, offering valuable insights into the rapidly evolving landscape of federated fine-tuning for LLMs. It also establishes a roadmap for future innovations in privacy-preserving AI. We actively maintain a \\href{https://github.com/Clin0212/Awesome-Federated-LLM-Learning}{GitHub repo} to track cutting-edge advancements in this field.",
+      "published": "2025-03-15T06:52:10Z",
+      "updated": "2026-02-24T08:06:52Z",
+      "authors": [
+        "Yebo Wu",
+        "Chunlin Tian",
+        "Jingguang Li",
+        "He Sun",
+        "Kahou Tam",
+        "Zhanting Zhou",
+        "Haicheng Liao",
+        "Jing Xiong",
+        "Zhijiang Guo",
+        "Li Li",
+        "Chengzhong Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.13787v1",
+      "arxiv_id": "2501.13787v1",
+      "title": "Parameter-Efficient Fine-Tuning for Foundation Models",
+      "summary": "This survey delves into the realm of Parameter-Efficient Fine-Tuning (PEFT) within the context of Foundation Models (FMs). PEFT, a cost-effective fine-tuning technique, minimizes parameters and computational complexity while striving for optimal downstream task performance. FMs, like ChatGPT, DALL-E, and LLaVA specialize in language understanding, generative tasks, and multimodal tasks, trained on diverse datasets spanning text, images, and videos. The diversity of FMs guides various adaptation strategies for PEFT. Therefore, this survey aims to provide a comprehensive overview of PEFT techniques applied to diverse FMs and address critical gaps in understanding the techniques, trends, and applications. We start by providing a detailed development of FMs and PEFT. Subsequently, we systematically review the key categories and core mechanisms of PEFT across diverse FMs to offer a comprehensive understanding of trends. We also explore the most recent applications across various FMs to demonstrate the versatility of PEFT, shedding light on the integration of systematic PEFT methods with a range of FMs. Furthermore, we identify potential research and development directions for improving PEFTs in the future. This survey provides a valuable resource for both newcomers and experts seeking to understand and use the power of PEFT across FMs. All reviewed papers are listed at \\url{https://github.com/THUDM/Awesome-Parameter-Efficient-Fine-Tuning-for-Foundation-Models}.",
+      "published": "2025-01-23T16:04:23Z",
+      "updated": "2025-01-23T16:04:23Z",
+      "authors": [
+        "Dan Zhang",
+        "Tao Feng",
+        "Lilong Xue",
+        "Yuandong Wang",
+        "Yuxiao Dong",
+        "Jie Tang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2411.16775v1",
+      "arxiv_id": "2411.16775v1",
+      "title": "Parameter Efficient Instruction Tuning: An Empirical Study",
+      "summary": "Instruction tuning has become an important step for finetuning pretrained language models to better follow human instructions and generalize on various tasks. Nowadays, pretrained language models become increasingly larger, and full parameter finetuning is overwhelmingly costly. Therefore, Parameter Efficient Finetuning (PEFT) has arisen as a cost-effective practice for instruction tuning because of significantly smaller computational, memory, and storage cost compared to full finetuning. Despite their widespread adaptations, the vast hyperparameter spaces, the number of PEFT methods, the different focus of instruction tuning capabilities make disentangling the impact of each aspect difficult. This study systematically investigates several representative PEFT methods, surveying the effect of hyperparameter choices including training hyperparameters and PEFT-specific hyperparameters, how different models sizes and the number of instruction tasks affect the performance, in-task-distribution memorization and open instruction following capability. Our empirical study shows that only LoRA and adapter can get close to full finetuning with ideal training settings. The ideal training setting includes an appropriate learning rate, largest LoRA rank or adapter size allowed and diverse training tasks. On the other hand, LoRA and adapter suffer from training instability if such an ideal training condition is not met. Additionally, LoRA requires a greater number of tasks for effective unseen task generalization, exhibit slower learning speed. Moreover, LoRA has weaker task-level memorization. Lastly, LoRA and adapter fall short in complex reasoning, coding and long-form generation compared to finetuning in open instruction tuning settings but it shows stronger capabilities compared to adapter.",
+      "published": "2024-11-25T07:06:09Z",
+      "updated": "2024-11-25T07:06:09Z",
+      "authors": [
+        "Pengfei He"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.19878v3",
+      "arxiv_id": "2410.19878v3",
+      "title": "Parameter-Efficient Fine-Tuning in Large Models: A Survey of Methodologies",
+      "summary": "The large models, as predicted by scaling raw forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs. These large models require substantial computational resources and GPU memory to operate. When adapting large models to specific downstream tasks, their massive parameter scale poses a significant challenge in fine-tuning on hardware platforms with limited computational power and GPU memory. To address this issue, Parameter-Efficient Fine-Tuning (PEFT) offers a practical solution by efficiently adjusting the parameters of large pre-trained models to suit various downstream tasks. Specifically, PEFT adjusts the parameters of pre-trained large models to adapt to specific tasks or domains, minimizing the introduction of additional parameters and the computational resources required. This review mainly introduces the preliminary knowledge of PEFT, the core ideas and principles of various PEFT algorithms, the applications of PEFT, and potential future research directions. By reading this review, we believe that interested parties can quickly grasp the PEFT methodology, thereby accelerating its development and innovation.",
+      "published": "2024-10-24T13:58:59Z",
+      "updated": "2025-04-24T07:20:31Z",
+      "authors": [
+        "Luping Wang",
+        "Sheng Chen",
+        "Linnan Jiang",
+        "Shu Pan",
+        "Runze Cai",
+        "Sen Yang",
+        "Fei Yang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.12388v2",
+      "arxiv_id": "2410.12388v2",
+      "title": "Prompt Compression for Large Language Models: A Survey",
+      "summary": "Leveraging large language models (LLMs) for complex natural language tasks typically requires long-form prompts to convey detailed requirements and information, which results in increased memory usage and inference costs. To mitigate these challenges, multiple efficient methods have been proposed, with prompt compression gaining significant research interest. This survey provides an overview of prompt compression techniques, categorized into hard prompt methods and soft prompt methods. First, the technical approaches of these methods are compared, followed by an exploration of various ways to understand their mechanisms, including the perspectives of attention optimization, Parameter-Efficient Fine-Tuning (PEFT), modality integration, and new synthetic language. We also examine the downstream adaptations of various prompt compression techniques. Finally, the limitations of current prompt compression methods are analyzed, and several future directions are outlined, such as optimizing the compression encoder, combining hard and soft prompts methods, and leveraging insights from multimodality.",
+      "published": "2024-10-16T09:13:23Z",
+      "updated": "2024-10-17T04:09:09Z",
+      "authors": [
+        "Zongqian Li",
+        "Yinhong Liu",
+        "Yixuan Su",
+        "Nigel Collier"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2403.14608v7",
+      "arxiv_id": "2403.14608v7",
+      "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+      "summary": "Large models represent a groundbreaking advancement in multiple application fields, enabling remarkable achievements across various tasks. However, their unprecedented scale comes with significant computational costs. These models, often consisting of billions of parameters, require vast amounts of computational resources for execution. Especially, the expansive scale and computational demands pose considerable challenges when customizing them for particular downstream tasks, particularly over the hardware platforms constrained by computational capabilities. Parameter Efficient Fine-Tuning (PEFT) provides a practical solution by efficiently adjusting the large models over the various downstream tasks. In particular, PEFT refers to the process of adjusting the parameters of a pre-trained large model to adapt it to a specific task or domain while minimizing the number of additional parameters introduced or computational resources required. This approach is particularly important when dealing with large-scale language models with high parameter counts, as fine-tuning these models from scratch can be computationally expensive and resource-intensive, posing considerable challenges in the supporting system platform design. In this survey, we present comprehensive studies of various PEFT algorithms, examining their performance and computational overhead. Moreover, we provide an overview of applications developed using different PEFT algorithms and discuss common techniques employed to mitigate computation costs for PEFT. In addition to providing an extensive survey from an algorithmic standpoint, we also examine various real-world system designs to investigate the implementation costs associated with different PEFT approaches. This survey serves as a valuable resource for researchers aiming to understand both the PEFT algorithm and its system implementation, offering detailed ......",
+      "published": "2024-03-21T17:55:50Z",
+      "updated": "2024-09-16T02:54:50Z",
+      "authors": [
+        "Zeyu Han",
+        "Chao Gao",
+        "Jinyang Liu",
+        "Jeff Zhang",
+        "Sai Qian Zhang"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.02242v7",
+      "arxiv_id": "2402.02242v7",
+      "title": "Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey and Benchmark",
+      "summary": "Pre-trained vision models (PVMs) have demonstrated remarkable adaptability across a wide range of downstream vision tasks, showcasing exceptional performance. However, as these models scale to billions or even trillions of parameters, conventional full fine-tuning has become increasingly impractical due to its high computational and storage demands. To address these challenges, parameter-efficient fine-tuning (PEFT) has emerged as a promising alternative, aiming to achieve performance comparable to full fine-tuning while making minimal adjustments to the model parameters. This paper presents a comprehensive survey of the latest advancements in the visual PEFT field, systematically reviewing current methodologies and categorizing them into four primary categories: addition-based, partial-based, unified-based, and multi-task tuning. In addition, this paper offers an in-depth analysis of widely used visual datasets and real-world applications where PEFT methods have been successfully applied. Furthermore, this paper introduces the V-PEFT Bench, a unified benchmark designed to standardize the evaluation of PEFT methods across a diverse set of vision tasks, ensuring consistency and fairness in comparison. Finally, the paper outlines potential directions for future research to propel advances in the PEFT field. A comprehensive collection of resources is available at https://github.com/synbol/Awesome-Parameter-Efficient-Transfer-Learning.",
+      "published": "2024-02-03T19:12:20Z",
+      "updated": "2025-12-09T05:20:30Z",
+      "authors": [
+        "Yi Xin",
+        "Jianjiang Yang",
+        "Siqi Luo",
+        "Yuntao Du",
+        "Qi Qin",
+        "Kangrui Cen",
+        "Yangfan He",
+        "Zhiwei Zhang",
+        "Bin Fu",
+        "Xiaokang Yang",
+        "Guangtao Zhai",
+        "Ming-Hsuan Yang",
+        "Xiaohong Liu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2401.04472v3",
+      "arxiv_id": "2401.04472v3",
+      "title": "A Survey on Efficient Federated Learning Methods for Foundation Model Training",
+      "summary": "Federated Learning (FL) has become an established technique to facilitate privacy-preserving collaborative training across a multitude of clients. However, new approaches to FL often discuss their contributions involving small deep-learning models only and focus on training full models on clients. In the wake of Foundation Models (FM), the reality is different for many deep learning applications. Typically, FMs have already been pre-trained across a wide variety of tasks and can be fine-tuned to specific downstream tasks over significantly smaller datasets than required for full model training. However, access to such datasets is often challenging. By its design, FL can help to open data silos. With this survey, we introduce a novel taxonomy focused on computational and communication efficiency, the vital elements to make use of FMs in FL systems. We discuss the benefits and drawbacks of parameter-efficient fine-tuning (PEFT) for FL applications, elaborate on the readiness of FL frameworks to work with FMs, and provide future research opportunities on how to evaluate generative models in FL as well as the interplay of privacy and PEFT.",
+      "published": "2024-01-09T10:22:23Z",
+      "updated": "2024-09-05T20:11:40Z",
+      "authors": [
+        "Herbert Woisetschläger",
+        "Alexander Isenko",
+        "Shiqiang Wang",
+        "Ruben Mayer",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.12148v1",
+      "arxiv_id": "2312.12148v1",
+      "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+      "summary": "With the continuous growth in the number of parameters of transformer-based pretrained language models (PLMs), particularly the emergence of large language models (LLMs) with billions of parameters, many natural language processing (NLP) tasks have demonstrated remarkable success. However, the enormous size and computational demands of these models pose significant challenges for adapting them to specific downstream tasks, especially in environments with limited computational resources. Parameter Efficient Fine-Tuning (PEFT) offers an effective solution by reducing the number of fine-tuning parameters and memory usage while achieving comparable performance to full fine-tuning. The demands for fine-tuning PLMs, especially LLMs, have led to a surge in the development of PEFT methods, as depicted in Fig. 1. In this paper, we present a comprehensive and systematic review of PEFT methods for PLMs. We summarize these PEFT methods, discuss their applications, and outline future directions. Furthermore, we conduct experiments using several representative PEFT methods to better understand their effectiveness in parameter efficiency and memory efficiency. By offering insights into the latest advancements and practical applications, this survey serves as an invaluable resource for researchers and practitioners seeking to navigate the challenges and opportunities presented by PEFT in the context of PLMs.",
+      "published": "2023-12-19T13:31:24Z",
+      "updated": "2023-12-19T13:31:24Z",
+      "authors": [
+        "Lingling Xu",
+        "Haoran Xie",
+        "Si-Zhao Joe Qin",
+        "Xiaohui Tao",
+        "Fu Lee Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2603.22276v1",
+      "arxiv_id": "2603.22276v1",
+      "title": "Scaling DoRA: High-Rank Adaptation via Factored Norms and Fused Kernels",
+      "summary": "Weight-Decomposed Low-Rank Adaptation (DoRA) extends LoRA by decoupling weight magnitude from direction, but its forward pass requires the row-wise norm of W + sBA, a computation that every major framework we surveyed implements by materializing the dense [d_out, d_in] product BA. At d_in = 8192 and rank r = 384, a single module's norm requires about 512 MB of transient working memory in bf16, making high-rank DoRA costly and often infeasible on common single-GPU setups once hundreds of adapted modules and checkpointing are involved. We present two systems contributions. A factored norm decomposes the squared norm into base, cross, and Gram terms computable through O(d_out r + r^2) intermediates, eliminating the dense product. Fused Triton kernels collapse the four-kernel DoRA composition into a single pass, reducing memory traffic by about 4x and using a numerically stable form that avoids catastrophic cancellation in the near-unity rescaling regime where magnitude scales concentrate in practice. Across six 8-32B vision-language models (VLMs) on three NVIDIA GPUs (RTX 6000 PRO, H200, B200) at r = 384 in bf16, the fused implementation is 1.5-2.0x faster than Hugging Face PEFT's DoRA implementation for inference and 1.5-1.9x faster for gradient computation (optimizer step excluded), with up to 7 GB lower peak VRAM. Microbenchmarks on six GPUs spanning four architecture generations (L40S, A100, RTX 6000 PRO, H200, B200, B300) confirm 1.5-2.7x compose-kernel speedup. Final-logit cosine similarity exceeds 0.9999 across all model/GPU pairs, and multi-seed training curves match within 7.1 x 10^-4 mean per-step loss delta over 2000 steps.",
+      "published": "2026-03-23T17:57:24Z",
+      "updated": "2026-03-23T17:57:24Z",
+      "authors": [
+        "Alexandra Zelenin",
+        "Alexandra Zhuravlyova"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2510.12178v1",
+      "arxiv_id": "2510.12178v1",
+      "title": "Evolution of meta's llama models and parameter-efficient fine-tuning of large language models: a survey",
+      "summary": "This review surveys the rapid evolution of Meta AI's LLaMA (Large Language Model Meta AI) series - from LLaMA 1 through LLaMA 4 and the specialized parameter-efficient fine-tuning (PEFT) methods developed for these models. We first describe the LLaMA family of foundation models (7B-65B to 288B parameters), their architectures (including native multimodal and Mixtureof-Experts variants), and key performance characteristics. We then describe and discuss the concept of PEFT, which adapts large pre-trained models by updating only a small subset of parameters, and review five PEFT methods that have been applied to LLaMA: LoRA (Low-Rank Adaptation), LLaMA-Adapter V1 and V2, LLaMA-Excitor, and QLoRA (Quantized LoRA). We discuss each method's mechanism, parameter savings, and example application to LLaMA (e.g., instruction tuning, multimodal tasks). We provide structured discussion and analysis of model and adapter architectures, parameter counts, and benchmark results (including examples where fine-tuned LLaMA models outperform larger baselines). Finally, we examine real-world use cases where LLaMA-based models and PEFT have been successfully applied (e.g., legal and medical domains), and we discuss ongoing challenges and future research directions (such as scaling to even larger contexts and improving robustness). This survey paper provides a one-stop resource for ML researchers and practitioners interested in LLaMA models and efficient fine-tuning strategies.",
+      "published": "2025-10-14T06:12:44Z",
+      "updated": "2025-10-14T06:12:44Z",
+      "authors": [
+        "Abdulhady Abas Abdullah",
+        "Arkaitz Zubiaga",
+        "Seyedali Mirjalili",
+        "Amir H. Gandomi",
+        "Fatemeh Daneshfar",
+        "Mohammadsadra Amini",
+        "Alan Salam Mohammed",
+        "Hadi Veisi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.18868v1",
+      "arxiv_id": "2509.18868v1",
+      "title": "Memory in Large Language Models: Mechanisms, Evaluation and Evolution",
+      "summary": "Under a unified operational definition, we define LLM memory as a persistent state written during pretraining, finetuning, or inference that can later be addressed and that stably influences outputs. We propose a four-part taxonomy (parametric, contextual, external, procedural/episodic) and a memory quadruple (location, persistence, write/access path, controllability). We link mechanism, evaluation, and governance via the chain write -> read -> inhibit/update. To avoid distorted comparisons across heterogeneous setups, we adopt a three-setting protocol (parametric only, offline retrieval, online retrieval) that decouples capability from information availability on the same data and timeline. On this basis we build a layered evaluation: parametric (closed-book recall, edit differential, memorization/privacy), contextual (position curves and the mid-sequence drop), external (answer correctness vs snippet attribution/faithfulness), and procedural/episodic (cross-session consistency and timeline replay, E MARS+). The framework integrates temporal governance and leakage auditing (freshness hits, outdated answers, refusal slices) and uncertainty reporting via inter-rater agreement plus paired tests with multiple-comparison correction. For updating and forgetting, we present DMM Gov: coordinating DAPT/TAPT, PEFT, model editing (ROME, MEND, MEMIT, SERAC), and RAG to form an auditable loop covering admission thresholds, rollout, monitoring, rollback, and change audits, with specs for timeliness, conflict handling, and long-horizon consistency. Finally, we give four testable propositions: minimum identifiability; a minimal evaluation card; causally constrained editing with verifiable forgetting; and when retrieval with small-window replay outperforms ultra-long-context reading. This yields a reproducible, comparable, and governable coordinate system for research and deployment.",
+      "published": "2025-09-23T10:06:58Z",
+      "updated": "2025-09-23T10:06:58Z",
+      "authors": [
+        "Dianxing Zhang",
+        "Wendong Li",
+        "Kani Song",
+        "Jiaye Lu",
+        "Gang Li",
+        "Liuchun Yang",
+        "Sheng Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.16244v1",
+      "arxiv_id": "2509.16244v1",
+      "title": "How Can Quantum Deep Learning Improve Large Language Models?",
+      "summary": "The rapid progress of large language models (LLMs) has transformed natural language processing, yet the challenge of efficient adaptation remains unresolved. Full fine-tuning achieves strong performance but imposes prohibitive computational and memory costs. Parameter-efficient fine-tuning (PEFT) strategies, such as low-rank adaptation (LoRA), Prefix tuning, and sparse low-rank adaptation (SoRA), address this issue by reducing trainable parameters while maintaining competitive accuracy. However, these methods often encounter limitations in scalability, stability, and generalization across diverse tasks. Recent advances in quantum deep learning introduce novel opportunities through quantum-inspired encoding and parameterized quantum circuits (PQCs). In particular, the quantum-amplitude embedded adaptation (QAA) framework demonstrates expressive model updates with minimal overhead. This paper presents a systematic survey and comparative analysis of conventional PEFT methods and QAA. The analysis demonstrates trade-offs in convergence, efficiency, and representational capacity, while providing insight into the potential of quantum approaches for future LLM adaptation.",
+      "published": "2025-09-17T08:18:58Z",
+      "updated": "2025-09-17T08:18:58Z",
+      "authors": [
+        "Emily Jimin Roh",
+        "Hyojun Ahn",
+        "Samuel Yen-Chi Chen",
+        "Soohyun Park",
+        "Joongheon Kim"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.13268v1",
+      "arxiv_id": "2509.13268v1",
+      "title": "LLMs for energy and macronutrients estimation using only text data from 24-hour dietary recalls: a parameter-efficient fine-tuning experiment using a 10-shot prompt",
+      "summary": "BACKGROUND: Most artificial intelligence tools used to estimate nutritional content rely on image input. However, whether large language models (LLMs) can accurately predict nutritional values based solely on text descriptions of foods consumed remains unknown. If effective, this approach could enable simpler dietary monitoring without the need for photographs. METHODS: We used 24-hour dietary recalls from adolescents aged 12-19 years in the National Health and Nutrition Examination Survey (NHANES). An open-source quantized LLM was prompted using a 10-shot, chain-of-thought approach to estimate energy and five macronutrients based solely on text strings listing foods and their quantities. We then applied parameter-efficient fine-tuning (PEFT) to evaluate whether predictive accuracy improved. NHANES-calculated values served as the ground truth for energy, proteins, carbohydrates, total sugar, dietary fiber and total fat. RESULTS: In a pooled dataset of 11,281 adolescents (49.9% male, mean age 15.4 years), the vanilla LLM yielded poor predictions. The mean absolute error (MAE) was 652.08 for energy and the Lin's CCC <0.46 across endpoints. In contrast, the fine-tuned model performed substantially better, with energy MAEs ranging from 171.34 to 190.90 across subsets, and Lin's CCC exceeding 0.89 for all outcomes. CONCLUSIONS: When prompted using a chain-of-thought approach and fine-tuned with PEFT, open-source LLMs exposed solely to text input can accurately predict energy and macronutrient values from 24-hour dietary recalls. This approach holds promise for low-burden, text-based dietary monitoring tools.",
+      "published": "2025-09-16T17:26:17Z",
+      "updated": "2025-09-16T17:26:17Z",
+      "authors": [
+        "Rodrigo M Carrillo-Larco"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.21099v1",
+      "arxiv_id": "2504.21099v1",
+      "title": "A Survey on Parameter-Efficient Fine-Tuning for Foundation Models in Federated Learning",
+      "summary": "Foundation models have revolutionized artificial intelligence by providing robust, versatile architectures pre-trained on large-scale datasets. However, adapting these massive models to specific downstream tasks requires fine-tuning, which can be prohibitively expensive in computational resources. Parameter-Efficient Fine-Tuning (PEFT) methods address this challenge by selectively updating only a small subset of parameters. Meanwhile, Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it ideal for privacy-sensitive applications. This survey provides a comprehensive review of the integration of PEFT techniques within federated learning environments. We systematically categorize existing approaches into three main groups: Additive PEFT (which introduces new trainable parameters), Selective PEFT (which fine-tunes only subsets of existing parameters), and Reparameterized PEFT (which transforms model architectures to enable efficient updates). For each category, we analyze how these methods address the unique challenges of federated settings, including data heterogeneity, communication efficiency, computational constraints, and privacy concerns. We further organize the literature based on application domains, covering both natural language processing and computer vision tasks. Finally, we discuss promising research directions, including scaling to larger foundation models, theoretical analysis of federated PEFT methods, and sustainable approaches for resource-constrained environments.",
+      "published": "2025-04-29T18:18:39Z",
+      "updated": "2025-04-29T18:18:39Z",
+      "authors": [
+        "Jieming Bian",
+        "Yuanzhe Peng",
+        "Lei Wang",
+        "Yin Huang",
+        "Jie Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.14117v1",
+      "arxiv_id": "2504.14117v1",
+      "title": "PEFT A2Z: Parameter-Efficient Fine-Tuning Survey for Large Language and Vision Models",
+      "summary": "Large models such as Large Language Models (LLMs) and Vision Language Models (VLMs) have transformed artificial intelligence, powering applications in natural language processing, computer vision, and multimodal learning. However, fully fine-tuning these models remains expensive, requiring extensive computational resources, memory, and task-specific data. Parameter-Efficient Fine-Tuning (PEFT) has emerged as a promising solution that allows adapting large models to downstream tasks by updating only a small portion of parameters. This survey presents a comprehensive overview of PEFT techniques, focusing on their motivations, design principles, and effectiveness. We begin by analyzing the resource and accessibility challenges posed by traditional fine-tuning and highlight key issues, such as overfitting, catastrophic forgetting, and parameter inefficiency. We then introduce a structured taxonomy of PEFT methods -- grouped into additive, selective, reparameterized, hybrid, and unified frameworks -- and systematically compare their mechanisms and trade-offs. Beyond taxonomy, we explore the impact of PEFT across diverse domains, including language, vision, and generative modeling, showing how these techniques offer strong performance with lower resource costs. We also discuss important open challenges in scalability, interpretability, and robustness, and suggest future directions such as federated learning, domain adaptation, and theoretical grounding. Our goal is to provide a unified understanding of PEFT and its growing role in enabling practical, efficient, and sustainable use of large models.",
+      "published": "2025-04-19T00:33:16Z",
+      "updated": "2025-04-19T00:33:16Z",
+      "authors": [
+        "Nusrat Jahan Prottasha",
+        "Upama Roy Chowdhury",
+        "Shetu Mohanto",
+        "Tasfia Nuzhat",
+        "Abdullah As Sami",
+        "Md Shamol Ali",
+        "Md Shohanur Islam Sobuj",
+        "Hafijur Raman",
+        "Md Kowsher",
+        "Ozlem Ozmen Garibay"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.13822v2",
+      "arxiv_id": "2504.13822v2",
+      "title": "Parameter-Efficient Continual Fine-Tuning: A Survey",
+      "summary": "The emergence of large pre-trained networks has revolutionized the AI field, unlocking new possibilities and achieving unprecedented performance. However, these models inherit a fundamental limitation from traditional Machine Learning approaches: their strong dependence on the \\textit{i.i.d.} assumption hinders their adaptability to dynamic learning scenarios. We believe the next breakthrough in AI lies in enabling efficient adaptation to evolving environments -- such as the real world -- where new data and tasks arrive sequentially. This challenge defines the field of Continual Learning (CL), a Machine Learning paradigm focused on developing lifelong learning neural models. One alternative to efficiently adapt these large-scale models is known Parameter-Efficient Fine-Tuning (PEFT). These methods tackle the issue of adapting the model to a particular data or scenario by performing small and efficient modifications, achieving similar performance to full fine-tuning. However, these techniques still lack the ability to adjust the model to multiple tasks continually, as they suffer from the issue of Catastrophic Forgetting. In this survey, we first provide an overview of CL algorithms and PEFT methods before reviewing the state-of-the-art on Parameter-Efficient Continual Fine-Tuning (PECFT). We examine various approaches, discuss evaluation metrics, and explore potential future research directions. Our goal is to highlight the synergy between CL and Parameter-Efficient Fine-Tuning, guide researchers in this field, and pave the way for novel future research directions.",
+      "published": "2025-04-18T17:51:51Z",
+      "updated": "2025-08-19T09:33:44Z",
+      "authors": [
+        "Eric Nuertey Coleman",
+        "Luigi Quarantiello",
+        "Ziyue Liu",
+        "Qinwen Yang",
+        "Samrat Mukherjee",
+        "Julio Hurtado",
+        "Vincenzo Lomonaco"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.12016v3",
+      "arxiv_id": "2503.12016v3",
+      "title": "A Survey on Federated Fine-tuning of Large Language Models",
+      "summary": "Large Language Models (LLMs) have demonstrated impressive success across various tasks. Integrating LLMs with Federated Learning (FL), a paradigm known as FedLLM, offers a promising avenue for collaborative model adaptation while preserving data privacy. This survey provides a systematic and comprehensive review of FedLLM. We begin by tracing the historical development of both LLMs and FL, summarizing relevant prior research to set the context. Subsequently, we delve into an in-depth analysis of the fundamental challenges inherent in deploying FedLLM. Addressing these challenges often requires efficient adaptation strategies; therefore, we conduct an extensive examination of existing Parameter-Efficient Fine-tuning (PEFT) methods and explore their applicability within the FL framework. To rigorously evaluate the performance of FedLLM, we undertake a thorough review of existing fine-tuning datasets and evaluation benchmarks. Furthermore, we discuss FedLLM's diverse real-world applications across multiple domains. Finally, we identify critical open challenges and outline promising research directions to foster future advancements in FedLLM. This survey aims to serve as a foundational resource for researchers and practitioners, offering valuable insights into the rapidly evolving landscape of federated fine-tuning for LLMs. It also establishes a roadmap for future innovations in privacy-preserving AI. We actively maintain a \\href{https://github.com/Clin0212/Awesome-Federated-LLM-Learning}{GitHub repo} to track cutting-edge advancements in this field.",
+      "published": "2025-03-15T06:52:10Z",
+      "updated": "2026-02-24T08:06:52Z",
+      "authors": [
+        "Yebo Wu",
+        "Chunlin Tian",
+        "Jingguang Li",
+        "He Sun",
+        "Kahou Tam",
+        "Zhanting Zhou",
+        "Haicheng Liao",
+        "Jing Xiong",
+        "Zhijiang Guo",
+        "Li Li",
+        "Chengzhong Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.13787v1",
+      "arxiv_id": "2501.13787v1",
+      "title": "Parameter-Efficient Fine-Tuning for Foundation Models",
+      "summary": "This survey delves into the realm of Parameter-Efficient Fine-Tuning (PEFT) within the context of Foundation Models (FMs). PEFT, a cost-effective fine-tuning technique, minimizes parameters and computational complexity while striving for optimal downstream task performance. FMs, like ChatGPT, DALL-E, and LLaVA specialize in language understanding, generative tasks, and multimodal tasks, trained on diverse datasets spanning text, images, and videos. The diversity of FMs guides various adaptation strategies for PEFT. Therefore, this survey aims to provide a comprehensive overview of PEFT techniques applied to diverse FMs and address critical gaps in understanding the techniques, trends, and applications. We start by providing a detailed development of FMs and PEFT. Subsequently, we systematically review the key categories and core mechanisms of PEFT across diverse FMs to offer a comprehensive understanding of trends. We also explore the most recent applications across various FMs to demonstrate the versatility of PEFT, shedding light on the integration of systematic PEFT methods with a range of FMs. Furthermore, we identify potential research and development directions for improving PEFTs in the future. This survey provides a valuable resource for both newcomers and experts seeking to understand and use the power of PEFT across FMs. All reviewed papers are listed at \\url{https://github.com/THUDM/Awesome-Parameter-Efficient-Fine-Tuning-for-Foundation-Models}.",
+      "published": "2025-01-23T16:04:23Z",
+      "updated": "2025-01-23T16:04:23Z",
+      "authors": [
+        "Dan Zhang",
+        "Tao Feng",
+        "Lilong Xue",
+        "Yuandong Wang",
+        "Yuxiao Dong",
+        "Jie Tang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2411.16775v1",
+      "arxiv_id": "2411.16775v1",
+      "title": "Parameter Efficient Instruction Tuning: An Empirical Study",
+      "summary": "Instruction tuning has become an important step for finetuning pretrained language models to better follow human instructions and generalize on various tasks. Nowadays, pretrained language models become increasingly larger, and full parameter finetuning is overwhelmingly costly. Therefore, Parameter Efficient Finetuning (PEFT) has arisen as a cost-effective practice for instruction tuning because of significantly smaller computational, memory, and storage cost compared to full finetuning. Despite their widespread adaptations, the vast hyperparameter spaces, the number of PEFT methods, the different focus of instruction tuning capabilities make disentangling the impact of each aspect difficult. This study systematically investigates several representative PEFT methods, surveying the effect of hyperparameter choices including training hyperparameters and PEFT-specific hyperparameters, how different models sizes and the number of instruction tasks affect the performance, in-task-distribution memorization and open instruction following capability. Our empirical study shows that only LoRA and adapter can get close to full finetuning with ideal training settings. The ideal training setting includes an appropriate learning rate, largest LoRA rank or adapter size allowed and diverse training tasks. On the other hand, LoRA and adapter suffer from training instability if such an ideal training condition is not met. Additionally, LoRA requires a greater number of tasks for effective unseen task generalization, exhibit slower learning speed. Moreover, LoRA has weaker task-level memorization. Lastly, LoRA and adapter fall short in complex reasoning, coding and long-form generation compared to finetuning in open instruction tuning settings but it shows stronger capabilities compared to adapter.",
+      "published": "2024-11-25T07:06:09Z",
+      "updated": "2024-11-25T07:06:09Z",
+      "authors": [
+        "Pengfei He"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.19878v3",
+      "arxiv_id": "2410.19878v3",
+      "title": "Parameter-Efficient Fine-Tuning in Large Models: A Survey of Methodologies",
+      "summary": "The large models, as predicted by scaling raw forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs. These large models require substantial computational resources and GPU memory to operate. When adapting large models to specific downstream tasks, their massive parameter scale poses a significant challenge in fine-tuning on hardware platforms with limited computational power and GPU memory. To address this issue, Parameter-Efficient Fine-Tuning (PEFT) offers a practical solution by efficiently adjusting the parameters of large pre-trained models to suit various downstream tasks. Specifically, PEFT adjusts the parameters of pre-trained large models to adapt to specific tasks or domains, minimizing the introduction of additional parameters and the computational resources required. This review mainly introduces the preliminary knowledge of PEFT, the core ideas and principles of various PEFT algorithms, the applications of PEFT, and potential future research directions. By reading this review, we believe that interested parties can quickly grasp the PEFT methodology, thereby accelerating its development and innovation.",
+      "published": "2024-10-24T13:58:59Z",
+      "updated": "2025-04-24T07:20:31Z",
+      "authors": [
+        "Luping Wang",
+        "Sheng Chen",
+        "Linnan Jiang",
+        "Shu Pan",
+        "Runze Cai",
+        "Sen Yang",
+        "Fei Yang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.12388v2",
+      "arxiv_id": "2410.12388v2",
+      "title": "Prompt Compression for Large Language Models: A Survey",
+      "summary": "Leveraging large language models (LLMs) for complex natural language tasks typically requires long-form prompts to convey detailed requirements and information, which results in increased memory usage and inference costs. To mitigate these challenges, multiple efficient methods have been proposed, with prompt compression gaining significant research interest. This survey provides an overview of prompt compression techniques, categorized into hard prompt methods and soft prompt methods. First, the technical approaches of these methods are compared, followed by an exploration of various ways to understand their mechanisms, including the perspectives of attention optimization, Parameter-Efficient Fine-Tuning (PEFT), modality integration, and new synthetic language. We also examine the downstream adaptations of various prompt compression techniques. Finally, the limitations of current prompt compression methods are analyzed, and several future directions are outlined, such as optimizing the compression encoder, combining hard and soft prompts methods, and leveraging insights from multimodality.",
+      "published": "2024-10-16T09:13:23Z",
+      "updated": "2024-10-17T04:09:09Z",
+      "authors": [
+        "Zongqian Li",
+        "Yinhong Liu",
+        "Yixuan Su",
+        "Nigel Collier"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2403.14608v7",
+      "arxiv_id": "2403.14608v7",
+      "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+      "summary": "Large models represent a groundbreaking advancement in multiple application fields, enabling remarkable achievements across various tasks. However, their unprecedented scale comes with significant computational costs. These models, often consisting of billions of parameters, require vast amounts of computational resources for execution. Especially, the expansive scale and computational demands pose considerable challenges when customizing them for particular downstream tasks, particularly over the hardware platforms constrained by computational capabilities. Parameter Efficient Fine-Tuning (PEFT) provides a practical solution by efficiently adjusting the large models over the various downstream tasks. In particular, PEFT refers to the process of adjusting the parameters of a pre-trained large model to adapt it to a specific task or domain while minimizing the number of additional parameters introduced or computational resources required. This approach is particularly important when dealing with large-scale language models with high parameter counts, as fine-tuning these models from scratch can be computationally expensive and resource-intensive, posing considerable challenges in the supporting system platform design. In this survey, we present comprehensive studies of various PEFT algorithms, examining their performance and computational overhead. Moreover, we provide an overview of applications developed using different PEFT algorithms and discuss common techniques employed to mitigate computation costs for PEFT. In addition to providing an extensive survey from an algorithmic standpoint, we also examine various real-world system designs to investigate the implementation costs associated with different PEFT approaches. This survey serves as a valuable resource for researchers aiming to understand both the PEFT algorithm and its system implementation, offering detailed ......",
+      "published": "2024-03-21T17:55:50Z",
+      "updated": "2024-09-16T02:54:50Z",
+      "authors": [
+        "Zeyu Han",
+        "Chao Gao",
+        "Jinyang Liu",
+        "Jeff Zhang",
+        "Sai Qian Zhang"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.02242v7",
+      "arxiv_id": "2402.02242v7",
+      "title": "Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey and Benchmark",
+      "summary": "Pre-trained vision models (PVMs) have demonstrated remarkable adaptability across a wide range of downstream vision tasks, showcasing exceptional performance. However, as these models scale to billions or even trillions of parameters, conventional full fine-tuning has become increasingly impractical due to its high computational and storage demands. To address these challenges, parameter-efficient fine-tuning (PEFT) has emerged as a promising alternative, aiming to achieve performance comparable to full fine-tuning while making minimal adjustments to the model parameters. This paper presents a comprehensive survey of the latest advancements in the visual PEFT field, systematically reviewing current methodologies and categorizing them into four primary categories: addition-based, partial-based, unified-based, and multi-task tuning. In addition, this paper offers an in-depth analysis of widely used visual datasets and real-world applications where PEFT methods have been successfully applied. Furthermore, this paper introduces the V-PEFT Bench, a unified benchmark designed to standardize the evaluation of PEFT methods across a diverse set of vision tasks, ensuring consistency and fairness in comparison. Finally, the paper outlines potential directions for future research to propel advances in the PEFT field. A comprehensive collection of resources is available at https://github.com/synbol/Awesome-Parameter-Efficient-Transfer-Learning.",
+      "published": "2024-02-03T19:12:20Z",
+      "updated": "2025-12-09T05:20:30Z",
+      "authors": [
+        "Yi Xin",
+        "Jianjiang Yang",
+        "Siqi Luo",
+        "Yuntao Du",
+        "Qi Qin",
+        "Kangrui Cen",
+        "Yangfan He",
+        "Zhiwei Zhang",
+        "Bin Fu",
+        "Xiaokang Yang",
+        "Guangtao Zhai",
+        "Ming-Hsuan Yang",
+        "Xiaohong Liu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2401.04472v3",
+      "arxiv_id": "2401.04472v3",
+      "title": "A Survey on Efficient Federated Learning Methods for Foundation Model Training",
+      "summary": "Federated Learning (FL) has become an established technique to facilitate privacy-preserving collaborative training across a multitude of clients. However, new approaches to FL often discuss their contributions involving small deep-learning models only and focus on training full models on clients. In the wake of Foundation Models (FM), the reality is different for many deep learning applications. Typically, FMs have already been pre-trained across a wide variety of tasks and can be fine-tuned to specific downstream tasks over significantly smaller datasets than required for full model training. However, access to such datasets is often challenging. By its design, FL can help to open data silos. With this survey, we introduce a novel taxonomy focused on computational and communication efficiency, the vital elements to make use of FMs in FL systems. We discuss the benefits and drawbacks of parameter-efficient fine-tuning (PEFT) for FL applications, elaborate on the readiness of FL frameworks to work with FMs, and provide future research opportunities on how to evaluate generative models in FL as well as the interplay of privacy and PEFT.",
+      "published": "2024-01-09T10:22:23Z",
+      "updated": "2024-09-05T20:11:40Z",
+      "authors": [
+        "Herbert Woisetschläger",
+        "Alexander Isenko",
+        "Shiqiang Wang",
+        "Ruben Mayer",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.12148v1",
+      "arxiv_id": "2312.12148v1",
+      "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+      "summary": "With the continuous growth in the number of parameters of transformer-based pretrained language models (PLMs), particularly the emergence of large language models (LLMs) with billions of parameters, many natural language processing (NLP) tasks have demonstrated remarkable success. However, the enormous size and computational demands of these models pose significant challenges for adapting them to specific downstream tasks, especially in environments with limited computational resources. Parameter Efficient Fine-Tuning (PEFT) offers an effective solution by reducing the number of fine-tuning parameters and memory usage while achieving comparable performance to full fine-tuning. The demands for fine-tuning PLMs, especially LLMs, have led to a surge in the development of PEFT methods, as depicted in Fig. 1. In this paper, we present a comprehensive and systematic review of PEFT methods for PLMs. We summarize these PEFT methods, discuss their applications, and outline future directions. Furthermore, we conduct experiments using several representative PEFT methods to better understand their effectiveness in parameter efficiency and memory efficiency. By offering insights into the latest advancements and practical applications, this survey serves as an invaluable resource for researchers and practitioners seeking to navigate the challenges and opportunities presented by PEFT in the context of PLMs.",
+      "published": "2023-12-19T13:31:24Z",
+      "updated": "2023-12-19T13:31:24Z",
+      "authors": [
+        "Lingling Xu",
+        "Haoran Xie",
+        "Si-Zhao Joe Qin",
+        "Xiaohui Tao",
+        "Fu Lee Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "protocol_query": "\"PEFT\" AND survey",
+  "date_window": {
+    "start": "2019-01-01",
+    "end": "2026-06-30"
+  },
+  "hit_result_cap": false
+}

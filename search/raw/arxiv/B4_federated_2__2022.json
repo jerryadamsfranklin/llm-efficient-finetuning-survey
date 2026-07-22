@@ -1,0 +1,195 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"federated\" AND (LoRA OR \"parameter-efficient\")) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202201010000 TO 202212312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22federated%22+AND+%28LoRA+OR+%22parameter-efficient%22%29%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202201010000+TO+202212312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:41:53Z",
+  "total_results_reported": 4,
+  "returned": 4,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2212.10025v2",
+      "arxiv_id": "2212.10025v2",
+      "title": "When Federated Learning Meets Pre-trained Language Models' Parameter-Efficient Tuning Methods",
+      "summary": "With increasing privacy concerns on data, recent studies have made significant progress using federated learning (FL) on privacy-sensitive natural language processing (NLP) tasks. Much literature suggests fully fine-tuning pre-trained language models (PLMs) in the FL paradigm can mitigate the data heterogeneity problem and close the performance gap with centralized training. However, large PLMs bring the curse of prohibitive communication overhead and local model adaptation costs for the FL system. To this end, we introduce various parameter-efficient tuning (PETuning) methods into federated learning. Specifically, we provide a holistic empirical study of representative PLMs tuning methods in FL. The experimental results cover the analysis of data heterogeneity levels, data scales, and different FL scenarios. Overall communication overhead can be significantly reduced by locally tuning and globally aggregating lightweight model parameters while maintaining acceptable performance in various FL settings. To facilitate the research of PETuning in FL, we also develop a federated tuning framework FedPETuning, which allows practitioners to exploit different PETuning methods under the FL training paradigm conveniently. The source code is available at \\url{https://github.com/iezhuozhuo/FedETuning/tree/deltaTuning}.",
+      "published": "2022-12-20T06:44:32Z",
+      "updated": "2023-06-02T12:58:07Z",
+      "authors": [
+        "Zhuo Zhang",
+        "Yuanhang Yang",
+        "Yong Dai",
+        "Lizhen Qu",
+        "Zenglin Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2210.01708v5",
+      "arxiv_id": "2210.01708v5",
+      "title": "Exploring Parameter-Efficient Fine-Tuning to Enable Foundation Models in Federated Learning",
+      "summary": "Federated learning (FL) has emerged as a promising paradigm for enabling the collaborative training of models without centralized access to the raw data on local devices. In the typical FL paradigm (e.g., FedAvg), model weights are sent to and from the server each round to participating clients. Recently, the use of small pre-trained models has been shown to be effective in federated learning optimization and improving convergence. However, recent state-of-the-art pre-trained models are getting more capable but also have more parameters, known as the \"Foundation Models.\" In conventional FL, sharing the enormous model weights can quickly put a massive communication burden on the system, especially if more capable models are employed. Can we find a solution to enable those strong and readily available pre-trained models in FL to achieve excellent performance while simultaneously reducing the communication burden? To this end, we investigate the use of parameter-efficient fine-tuning in federated learning and thus introduce a new framework: FedPEFT. Specifically, we systemically evaluate the performance of FedPEFT across a variety of client stability, data distribution, and differential privacy settings. By only locally tuning and globally sharing a small portion of the model weights, significant reductions in the total communication overhead can be achieved while maintaining competitive or even better performance in a wide range of federated learning scenarios, providing insight into a new paradigm for practical and effective federated systems.",
+      "published": "2022-10-04T16:08:54Z",
+      "updated": "2024-12-24T05:57:39Z",
+      "authors": [
+        "Guangyu Sun",
+        "Umar Khalid",
+        "Matias Mendieta",
+        "Pu Wang",
+        "Chen Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2207.08988v1",
+      "arxiv_id": "2207.08988v1",
+      "title": "Training Large-Vocabulary Neural Language Models by Private Federated Learning for Resource-Constrained Devices",
+      "summary": "Federated Learning (FL) is a technique to train models using data distributed across devices. Differential Privacy (DP) provides a formal privacy guarantee for sensitive data. Our goal is to train a large neural network language model (NNLM) on compute-constrained devices while preserving privacy using FL and DP. However, the DP-noise introduced to the model increases as the model size grows, which often prevents convergence. We propose Partial Embedding Updates (PEU), a novel technique to decrease noise by decreasing payload size. Furthermore, we adopt Low Rank Adaptation (LoRA) and Noise Contrastive Estimation (NCE) to reduce the memory demands of large models on compute-constrained devices. This combination of techniques makes it possible to train large-vocabulary language models while preserving accuracy and privacy.",
+      "published": "2022-07-18T23:53:17Z",
+      "updated": "2022-07-18T23:53:17Z",
+      "authors": [
+        "Mingbin Xu",
+        "Congzheng Song",
+        "Ye Tian",
+        "Neha Agrawal",
+        "Filip Granqvist",
+        "Rogier van Dalen",
+        "Xiao Zhang",
+        "Arturo Argueta",
+        "Shiyi Han",
+        "Yaqiao Deng",
+        "Leo Liu",
+        "Anmol Walia",
+        "Alex Jin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2206.08671v2",
+      "arxiv_id": "2206.08671v2",
+      "title": "FiT: Parameter Efficient Few-shot Transfer Learning for Personalized and Federated Image Classification",
+      "summary": "Modern deep learning systems are increasingly deployed in situations such as personalization and federated learning where it is necessary to support i) learning on small amounts of data, and ii) communication efficient distributed training protocols. In this work, we develop FiLM Transfer (FiT) which fulfills these requirements in the image classification setting by combining ideas from transfer learning (fixed pretrained backbones and fine-tuned FiLM adapter layers) and meta-learning (automatically configured Naive Bayes classifiers and episodic training) to yield parameter efficient models with superior classification accuracy at low-shot. The resulting parameter efficiency is key for enabling few-shot learning, inexpensive model updates for personalization, and communication efficient federated learning. We experiment with FiT on a wide range of downstream datasets and show that it achieves better classification accuracy than the leading Big Transfer (BiT) algorithm at low-shot and achieves state-of-the art accuracy on the challenging VTAB-1k benchmark, with fewer than 1% of the updateable parameters. Finally, we demonstrate the parameter efficiency and superior accuracy of FiT in distributed low-shot applications including model personalization and federated learning where model update size is an important performance metric.",
+      "published": "2022-06-17T10:17:20Z",
+      "updated": "2023-02-02T20:22:18Z",
+      "authors": [
+        "Aliaksandra Shysheya",
+        "John Bronskill",
+        "Massimiliano Patacchiola",
+        "Sebastian Nowozin",
+        "Richard E Turner"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CV",
+        "cs.LG"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"federated\" AND (LoRA OR \"parameter-efficient\")",
+  "slice_id": "2022",
+  "date_window": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2212.10025v2",
+      "arxiv_id": "2212.10025v2",
+      "title": "When Federated Learning Meets Pre-trained Language Models' Parameter-Efficient Tuning Methods",
+      "summary": "With increasing privacy concerns on data, recent studies have made significant progress using federated learning (FL) on privacy-sensitive natural language processing (NLP) tasks. Much literature suggests fully fine-tuning pre-trained language models (PLMs) in the FL paradigm can mitigate the data heterogeneity problem and close the performance gap with centralized training. However, large PLMs bring the curse of prohibitive communication overhead and local model adaptation costs for the FL system. To this end, we introduce various parameter-efficient tuning (PETuning) methods into federated learning. Specifically, we provide a holistic empirical study of representative PLMs tuning methods in FL. The experimental results cover the analysis of data heterogeneity levels, data scales, and different FL scenarios. Overall communication overhead can be significantly reduced by locally tuning and globally aggregating lightweight model parameters while maintaining acceptable performance in various FL settings. To facilitate the research of PETuning in FL, we also develop a federated tuning framework FedPETuning, which allows practitioners to exploit different PETuning methods under the FL training paradigm conveniently. The source code is available at \\url{https://github.com/iezhuozhuo/FedETuning/tree/deltaTuning}.",
+      "published": "2022-12-20T06:44:32Z",
+      "updated": "2023-06-02T12:58:07Z",
+      "authors": [
+        "Zhuo Zhang",
+        "Yuanhang Yang",
+        "Yong Dai",
+        "Lizhen Qu",
+        "Zenglin Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2210.01708v5",
+      "arxiv_id": "2210.01708v5",
+      "title": "Exploring Parameter-Efficient Fine-Tuning to Enable Foundation Models in Federated Learning",
+      "summary": "Federated learning (FL) has emerged as a promising paradigm for enabling the collaborative training of models without centralized access to the raw data on local devices. In the typical FL paradigm (e.g., FedAvg), model weights are sent to and from the server each round to participating clients. Recently, the use of small pre-trained models has been shown to be effective in federated learning optimization and improving convergence. However, recent state-of-the-art pre-trained models are getting more capable but also have more parameters, known as the \"Foundation Models.\" In conventional FL, sharing the enormous model weights can quickly put a massive communication burden on the system, especially if more capable models are employed. Can we find a solution to enable those strong and readily available pre-trained models in FL to achieve excellent performance while simultaneously reducing the communication burden? To this end, we investigate the use of parameter-efficient fine-tuning in federated learning and thus introduce a new framework: FedPEFT. Specifically, we systemically evaluate the performance of FedPEFT across a variety of client stability, data distribution, and differential privacy settings. By only locally tuning and globally sharing a small portion of the model weights, significant reductions in the total communication overhead can be achieved while maintaining competitive or even better performance in a wide range of federated learning scenarios, providing insight into a new paradigm for practical and effective federated systems.",
+      "published": "2022-10-04T16:08:54Z",
+      "updated": "2024-12-24T05:57:39Z",
+      "authors": [
+        "Guangyu Sun",
+        "Umar Khalid",
+        "Matias Mendieta",
+        "Pu Wang",
+        "Chen Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2207.08988v1",
+      "arxiv_id": "2207.08988v1",
+      "title": "Training Large-Vocabulary Neural Language Models by Private Federated Learning for Resource-Constrained Devices",
+      "summary": "Federated Learning (FL) is a technique to train models using data distributed across devices. Differential Privacy (DP) provides a formal privacy guarantee for sensitive data. Our goal is to train a large neural network language model (NNLM) on compute-constrained devices while preserving privacy using FL and DP. However, the DP-noise introduced to the model increases as the model size grows, which often prevents convergence. We propose Partial Embedding Updates (PEU), a novel technique to decrease noise by decreasing payload size. Furthermore, we adopt Low Rank Adaptation (LoRA) and Noise Contrastive Estimation (NCE) to reduce the memory demands of large models on compute-constrained devices. This combination of techniques makes it possible to train large-vocabulary language models while preserving accuracy and privacy.",
+      "published": "2022-07-18T23:53:17Z",
+      "updated": "2022-07-18T23:53:17Z",
+      "authors": [
+        "Mingbin Xu",
+        "Congzheng Song",
+        "Ye Tian",
+        "Neha Agrawal",
+        "Filip Granqvist",
+        "Rogier van Dalen",
+        "Xiao Zhang",
+        "Arturo Argueta",
+        "Shiyi Han",
+        "Yaqiao Deng",
+        "Leo Liu",
+        "Anmol Walia",
+        "Alex Jin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2206.08671v2",
+      "arxiv_id": "2206.08671v2",
+      "title": "FiT: Parameter Efficient Few-shot Transfer Learning for Personalized and Federated Image Classification",
+      "summary": "Modern deep learning systems are increasingly deployed in situations such as personalization and federated learning where it is necessary to support i) learning on small amounts of data, and ii) communication efficient distributed training protocols. In this work, we develop FiLM Transfer (FiT) which fulfills these requirements in the image classification setting by combining ideas from transfer learning (fixed pretrained backbones and fine-tuned FiLM adapter layers) and meta-learning (automatically configured Naive Bayes classifiers and episodic training) to yield parameter efficient models with superior classification accuracy at low-shot. The resulting parameter efficiency is key for enabling few-shot learning, inexpensive model updates for personalization, and communication efficient federated learning. We experiment with FiT on a wide range of downstream datasets and show that it achieves better classification accuracy than the leading Big Transfer (BiT) algorithm at low-shot and achieves state-of-the art accuracy on the challenging VTAB-1k benchmark, with fewer than 1% of the updateable parameters. Finally, we demonstrate the parameter efficiency and superior accuracy of FiT in distributed low-shot applications including model personalization and federated learning where model update size is an important performance metric.",
+      "published": "2022-06-17T10:17:20Z",
+      "updated": "2023-02-02T20:22:18Z",
+      "authors": [
+        "Aliaksandra Shysheya",
+        "John Bronskill",
+        "Massimiliano Patacchiola",
+        "Sebastian Nowozin",
+        "Richard E Turner"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CV",
+        "cs.LG"
+      ]
+    }
+  ]
+}

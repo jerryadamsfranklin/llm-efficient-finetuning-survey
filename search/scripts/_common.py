@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 QUERIES_PATH = REPO_ROOT / "search" / "queries.yaml"
 SEARCH_LOG_PATH = REPO_ROOT / "search" / "search-log.md"
 RAW_ROOT = REPO_ROOT / "search" / "raw"
+RAW_V10_ROOT = REPO_ROOT / "search" / "raw_v1.0"
 
 
 def load_queries(path: Path = QUERIES_PATH) -> dict[str, Any]:
@@ -24,9 +25,20 @@ def load_queries(path: Path = QUERIES_PATH) -> dict[str, Any]:
     return data
 
 
-def raw_path(source: str, block_id: str, query_index: int) -> Path:
-    """Deterministic raw output path: <block_id>_<query_index>.json (1-based index)."""
-    return RAW_ROOT / source / f"{block_id}_{query_index}.json"
+def raw_path(
+    source: str,
+    block_id: str,
+    query_index: int,
+    *,
+    slice_id: str | None = None,
+    root: Path = RAW_ROOT,
+) -> Path:
+    """Deterministic raw path: <block>_<n>.json or <block>_<n>__<slice>.json."""
+    if slice_id:
+        name = f"{block_id}_{query_index}__{slice_id}.json"
+    else:
+        name = f"{block_id}_{query_index}.json"
+    return root / source / name
 
 
 def save_json(path: Path, payload: Any) -> None:
@@ -40,15 +52,17 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def log_marker(source: str, block_id: str, query_index: int) -> str:
-    return f"### {source} — {block_id} — query {query_index}"
-
-
-def already_logged(source: str, block_id: str, query_index: int, log_path: Path = SEARCH_LOG_PATH) -> bool:
-    if not log_path.exists():
-        return False
-    marker = log_marker(source, block_id, query_index)
-    return marker in log_path.read_text(encoding="utf-8")
+def log_marker(
+    source: str,
+    block_id: str,
+    query_index: int,
+    *,
+    slice_id: str | None = None,
+) -> str:
+    base = f"### {source} — {block_id} — query {query_index}"
+    if slice_id:
+        return f"{base} — slice {slice_id}"
+    return base
 
 
 def append_search_log(
@@ -59,16 +73,19 @@ def append_search_log(
     query: str,
     n_results: int,
     notes: str = "",
+    slice_id: str | None = None,
     log_path: Path = SEARCH_LOG_PATH,
 ) -> None:
-    """Append or replace a log entry for this source/block/query."""
-    marker = log_marker(source, block_id, query_index)
+    """Append or replace a log entry for this source/block/query[/slice]."""
+    marker = log_marker(source, block_id, query_index, slice_id=slice_id)
     entry_lines = [
         marker,
         f"- **Query:** {query}",
         f"- **Date run:** {utc_now_iso()}",
         f"- **Results returned:** {n_results}",
     ]
+    if slice_id:
+        entry_lines.append(f"- **Slice:** {slice_id}")
     if notes:
         entry_lines.append(f"- **Notes:** {notes}")
     entry_lines.append("")
@@ -78,15 +95,14 @@ def append_search_log(
     placeholder = "_Entries appended by search scripts after Phase 2 begins._"
     if placeholder in text:
         text = text.replace(placeholder, "")
-    if "**Status:** No searches executed yet" in text:
+    if "awaiting owner confirmation" in text.lower() or "No searches executed yet" in text:
         text = re.sub(
-            r"\*\*Status:\*\* No searches executed yet[^\n]*",
-            "**Status:** Automated search runs in progress / completed (see entries below).",
+            r"\*\*Status:\*\*[^\n]*",
+            "**Status:** Protocol v1.1 re-runs in progress / completed (see entries below).",
             text,
             count=1,
         )
 
-    # Replace existing section for this marker if present
     pattern = re.compile(
         rf"^{re.escape(marker)}\n(?:.*\n)*?(?=^### |\Z)",
         re.MULTILINE,
@@ -100,9 +116,19 @@ def append_search_log(
 
 
 def iter_queries(data: dict[str, Any]):
-    """Yield (block_id, block_name, query_index_1based, query_string)."""
+    """Yield (block_id, block_name, query_index_1based, query_string) for boolean queries."""
     for block in data["blocks"]:
         block_id = block["id"]
         name = block.get("name", block_id)
         for i, query in enumerate(block["queries"], start=1):
+            yield block_id, name, i, query
+
+
+def iter_s2_queries(data: dict[str, Any]):
+    """Yield S2 keyword variants (protocol v1.1). Falls back to boolean queries if missing."""
+    for block in data["blocks"]:
+        block_id = block["id"]
+        name = block.get("name", block_id)
+        s2 = block.get("s2_queries") or block.get("queries") or []
+        for i, query in enumerate(s2, start=1):
             yield block_id, name, i, query

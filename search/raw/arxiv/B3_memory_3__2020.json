@@ -1,0 +1,967 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "((\"ZeRO\" OR \"DeepSpeed\" OR \"offloading\") AND (\"model training\" OR \"large language model\")) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202001010000 TO 202012312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%28%22ZeRO%22+OR+%22DeepSpeed%22+OR+%22offloading%22%29+AND+%28%22model+training%22+OR+%22large+language+model%22%29%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202001010000+TO+202012312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:37:13Z",
+  "total_results_reported": 26,
+  "returned": 26,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2012.12570v1",
+      "arxiv_id": "2012.12570v1",
+      "title": "ICMSC: Intra- and Cross-modality Semantic Consistency for Unsupervised Domain Adaptation on Hip Joint Bone Segmentation",
+      "summary": "Unsupervised domain adaptation (UDA) for cross-modality medical image segmentation has shown great progress by domain-invariant feature learning or image appearance translation. Adapted feature learning usually cannot detect domain shifts at the pixel level and is not able to achieve good results in dense semantic segmentation tasks. Image appearance translation, e.g. CycleGAN, translates images into different styles with good appearance, despite its population, its semantic consistency is hardly to maintain and results in poor cross-modality segmentation. In this paper, we propose intra- and cross-modality semantic consistency (ICMSC) for UDA and our key insight is that the segmentation of synthesised images in different styles should be consistent. Specifically, our model consists of an image translation module and a domain-specific segmentation module. The image translation module is a standard CycleGAN, while the segmentation module contains two domain-specific segmentation networks. The intra-modality semantic consistency (IMSC) forces the reconstructed image after a cycle to be segmented in the same way as the original input image, while the cross-modality semantic consistency (CMSC) encourages the synthesized images after translation to be segmented exactly the same as before translation. Comprehensive experimental results on cross-modality hip joint bone segmentation show the effectiveness of our proposed method, which achieves an average DICE of 81.61% on the acetabulum and 88.16% on the proximal femur, outperforming other state-of-the-art methods. It is worth to note that without UDA, a model trained on CT for hip joint bone segmentation is non-transferable to MRI and has almost zero-DICE segmentation.",
+      "published": "2020-12-23T09:58:38Z",
+      "updated": "2020-12-23T09:58:38Z",
+      "authors": [
+        "Guodong Zeng",
+        "Till D. Lerch",
+        "Florian Schmaranzer",
+        "Guoyan Zheng",
+        "Juergen Burger",
+        "Kate Gerber",
+        "Moritz Tannast",
+        "Klaus Siebenrock",
+        "Nicolas Gerber"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.08549v1",
+      "arxiv_id": "2012.08549v1",
+      "title": "Exploring Transfer Learning For End-to-End Spoken Language Understanding",
+      "summary": "Voice Assistants such as Alexa, Siri, and Google Assistant typically use a two-stage Spoken Language Understanding pipeline; first, an Automatic Speech Recognition (ASR) component to process customer speech and generate text transcriptions, followed by a Natural Language Understanding (NLU) component to map transcriptions to an actionable hypothesis. An end-to-end (E2E) system that goes directly from speech to a hypothesis is a more attractive option. These systems were shown to be smaller, faster, and better optimized. However, they require massive amounts of end-to-end training data and in addition, don't take advantage of the already available ASR and NLU training data. In this work, we propose an E2E system that is designed to jointly train on multiple speech-to-text tasks, such as ASR (speech-transcription) and SLU (speech-hypothesis), and text-to-text tasks, such as NLU (text-hypothesis). We call this the Audio-Text All-Task (AT-AT) Model and we show that it beats the performance of E2E models trained on individual tasks, especially ones trained on limited data. We show this result on an internal music dataset and two public datasets, FluentSpeech and SNIPS Audio, where we achieve state-of-the-art results. Since our model can process both speech and text input sequences and learn to predict a target sequence, it also allows us to do zero-shot E2E SLU by training on only text-hypothesis data (without any speech) from a new domain. We evaluate this ability of our model on the Facebook TOP dataset and set a new benchmark for zeroshot E2E performance. We will soon release the audio data collected for the TOP dataset for future research.",
+      "published": "2020-12-15T19:02:15Z",
+      "updated": "2020-12-15T19:02:15Z",
+      "authors": [
+        "Subendhu Rongali",
+        "Beiye Liu",
+        "Liwei Cai",
+        "Konstantine Arkoudas",
+        "Chengwei Su",
+        "Wael Hamza"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2011.03863v2",
+      "arxiv_id": "2011.03863v2",
+      "title": "Knowledge-driven Data Construction for Zero-shot Evaluation in Commonsense Question Answering",
+      "summary": "Recent developments in pre-trained neural language modeling have led to leaps in accuracy on commonsense question-answering benchmarks. However, there is increasing concern that models overfit to specific tasks, without learning to utilize external knowledge or perform general semantic reasoning. In contrast, zero-shot evaluations have shown promise as a more robust measure of a model's general reasoning abilities. In this paper, we propose a novel neuro-symbolic framework for zero-shot question answering across commonsense tasks. Guided by a set of hypotheses, the framework studies how to transform various pre-existing knowledge resources into a form that is most effective for pre-training models. We vary the set of language models, training regimes, knowledge sources, and data generation strategies, and measure their impact across tasks. Extending on prior work, we devise and compare four constrained distractor-sampling strategies. We provide empirical results across five commonsense question-answering tasks with data generated from five external knowledge resources. We show that, while an individual knowledge graph is better suited for specific tasks, a global knowledge graph brings consistent gains across different tasks. In addition, both preserving the structure of the task as well as generating fair and informative questions help language models learn more effectively.",
+      "published": "2020-11-07T22:52:21Z",
+      "updated": "2020-12-14T22:27:10Z",
+      "authors": [
+        "Kaixin Ma",
+        "Filip Ilievski",
+        "Jonathan Francis",
+        "Yonatan Bisk",
+        "Eric Nyberg",
+        "Alessandro Oltramari"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2011.01694v2",
+      "arxiv_id": "2011.01694v2",
+      "title": "Data-to-Text Generation with Iterative Text Editing",
+      "summary": "We present a novel approach to data-to-text generation based on iterative text editing. Our approach maximizes the completeness and semantic accuracy of the output text while leveraging the abilities of recent pre-trained models for text editing (LaserTagger) and language modeling (GPT-2) to improve the text fluency. To this end, we first transform data items to text using trivial templates, and then we iteratively improve the resulting text by a neural model trained for the sentence fusion task. The output of the model is filtered by a simple heuristic and reranked with an off-the-shelf pre-trained language model. We evaluate our approach on two major data-to-text datasets (WebNLG, Cleaned E2E) and analyze its caveats and benefits. Furthermore, we show that our formulation of data-to-text generation opens up the possibility for zero-shot domain adaptation using a general-domain dataset for sentence fusion.",
+      "published": "2020-11-03T13:32:38Z",
+      "updated": "2021-01-28T14:30:14Z",
+      "authors": [
+        "Zdeněk Kasner",
+        "Ondřej Dušek"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.13984v1",
+      "arxiv_id": "2010.13984v1",
+      "title": "Interpretation of NLP models through input marginalization",
+      "summary": "To demystify the \"black box\" property of deep neural networks for natural language processing (NLP), several methods have been proposed to interpret their predictions by measuring the change in prediction probability after erasing each token of an input. Since existing methods replace each token with a predefined value (i.e., zero), the resulting sentence lies out of the training data distribution, yielding misleading interpretations. In this study, we raise the out-of-distribution problem induced by the existing interpretation methods and present a remedy; we propose to marginalize each token out. We interpret various NLP models trained for sentiment analysis and natural language inference using the proposed method.",
+      "published": "2020-10-27T01:40:41Z",
+      "updated": "2020-10-27T01:40:41Z",
+      "authors": [
+        "Siwon Kim",
+        "Jihun Yi",
+        "Eunji Kim",
+        "Sungroh Yoon"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.12755v2",
+      "arxiv_id": "2010.12755v2",
+      "title": "Effective Distant Supervision for Temporal Relation Extraction",
+      "summary": "A principal barrier to training temporal relation extraction models in new domains is the lack of varied, high quality examples and the challenge of collecting more. We present a method of automatically collecting distantly-supervised examples of temporal relations. We scrape and automatically label event pairs where the temporal relations are made explicit in text, then mask out those explicit cues, forcing a model trained on this data to learn other signals. We demonstrate that a pre-trained Transformer model is able to transfer from the weakly labeled examples to human-annotated benchmarks in both zero-shot and few-shot settings, and that the masking scheme is important in improving generalization.",
+      "published": "2020-10-24T03:17:31Z",
+      "updated": "2021-04-07T00:56:48Z",
+      "authors": [
+        "Xinyu Zhao",
+        "Shih-ting Lin",
+        "Greg Durrett"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.06478v1",
+      "arxiv_id": "2010.06478v1",
+      "title": "XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization",
+      "summary": "The ability to correctly model distinct meanings of a word is crucial for the effectiveness of semantic representation techniques. However, most existing evaluation benchmarks for assessing this criterion are tied to sense inventories (usually WordNet), restricting their usage to a small subset of knowledge-based representation techniques. The Word-in-Context dataset (WiC) addresses the dependence on sense inventories by reformulating the standard disambiguation task as a binary classification problem; but, it is limited to the English language. We put forward a large multilingual benchmark, XL-WiC, featuring gold standards in 12 new languages from varied language families and with different degrees of resource availability, opening room for evaluation scenarios such as zero-shot cross-lingual transfer. We perform a series of experiments to determine the reliability of the datasets and to set performance baselines for several recent contextualized multilingual models. Experimental results show that even when no tagged instances are available for a target language, models trained solely on the English data can attain competitive performance in the task of distinguishing different meanings of a word, even for distant languages. XL-WiC is available at https://pilehvar.github.io/xlwic/.",
+      "published": "2020-10-13T15:32:00Z",
+      "updated": "2020-10-13T15:32:00Z",
+      "authors": [
+        "Alessandro Raganato",
+        "Tommaso Pasini",
+        "Jose Camacho-Collados",
+        "Mohammad Taher Pilehvar"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.04806v2",
+      "arxiv_id": "2010.04806v2",
+      "title": "AutoQA: From Databases To QA Semantic Parsers With Only Synthetic Training Data",
+      "summary": "We propose AutoQA, a methodology and toolkit to generate semantic parsers that answer questions on databases, with no manual effort. Given a database schema and its data, AutoQA automatically generates a large set of high-quality questions for training that covers different database operations. It uses automatic paraphrasing combined with template-based parsing to find alternative expressions of an attribute in different parts of speech. It also uses a novel filtered auto-paraphraser to generate correct paraphrases of entire sentences. We apply AutoQA to the Schema2QA dataset and obtain an average logical form accuracy of 62.9% when tested on natural questions, which is only 6.4% lower than a model trained with expert natural language annotations and paraphrase data collected from crowdworkers. To demonstrate the generality of AutoQA, we also apply it to the Overnight dataset. AutoQA achieves 69.8% answer accuracy, 16.4% higher than the state-of-the-art zero-shot models and only 5.2% lower than the same model trained with human data.",
+      "published": "2020-10-09T21:06:57Z",
+      "updated": "2021-06-08T00:49:21Z",
+      "authors": [
+        "Silei Xu",
+        "Sina J. Semnani",
+        "Giovanni Campagna",
+        "Monica S. Lam"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.02523v1",
+      "arxiv_id": "2010.02523v1",
+      "title": "Multi-task Learning for Multilingual Neural Machine Translation",
+      "summary": "While monolingual data has been shown to be useful in improving bilingual neural machine translation (NMT), effectively and efficiently leveraging monolingual data for Multilingual NMT (MNMT) systems is a less explored area. In this work, we propose a multi-task learning (MTL) framework that jointly trains the model with the translation task on bitext data and two denoising tasks on the monolingual data. We conduct extensive empirical studies on MNMT systems with 10 language pairs from WMT datasets. We show that the proposed approach can effectively improve the translation quality for both high-resource and low-resource languages with large margin, achieving significantly better results than the individual bilingual models. We also demonstrate the efficacy of the proposed approach in the zero-shot setup for language pairs without bitext training data. Furthermore, we show the effectiveness of MTL over pre-training approaches for both NMT and cross-lingual transfer learning NLU tasks; the proposed approach outperforms massive scale models trained on single task.",
+      "published": "2020-10-06T06:54:12Z",
+      "updated": "2020-10-06T06:54:12Z",
+      "authors": [
+        "Yiren Wang",
+        "ChengXiang Zhai",
+        "Hany Hassan Awadalla"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.14510v1",
+      "arxiv_id": "2009.14510v1",
+      "title": "Cross-lingual Spoken Language Understanding with Regularized Representation Alignment",
+      "summary": "Despite the promising results of current cross-lingual models for spoken language understanding systems, they still suffer from imperfect cross-lingual representation alignments between the source and target languages, which makes the performance sub-optimal. To cope with this issue, we propose a regularization approach to further align word-level and sentence-level representations across languages without any external resource. First, we regularize the representation of user utterances based on their corresponding labels. Second, we regularize the latent variable model (Liu et al., 2019) by leveraging adversarial training to disentangle the latent variables. Experiments on the cross-lingual spoken language understanding task show that our model outperforms current state-of-the-art methods in both few-shot and zero-shot scenarios, and our model, trained on a few-shot setting with only 3\\% of the target language training data, achieves comparable performance to the supervised training with all the training data.",
+      "published": "2020-09-30T08:56:53Z",
+      "updated": "2020-09-30T08:56:53Z",
+      "authors": [
+        "Zihan Liu",
+        "Genta Indra Winata",
+        "Peng Xu",
+        "Zhaojiang Lin",
+        "Pascale Fung"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.06367v2",
+      "arxiv_id": "2009.06367v2",
+      "title": "GeDi: Generative Discriminator Guided Sequence Generation",
+      "summary": "While large-scale language models (LMs) are able to imitate the distribution of natural language well enough to generate realistic text, it is difficult to control which regions of the distribution they generate. This is especially problematic because datasets used for training large LMs usually contain significant toxicity, hate, bias, and negativity. We propose GeDi as an efficient method for using smaller LMs as generative discriminators to guide generation from large LMs to make them safer and more controllable. GeDi guides generation at each step by computing classification probabilities for all possible next tokens via Bayes rule by normalizing over two class-conditional distributions; one conditioned on the desired attribute, or control code, and another conditioned on the undesired attribute, or anti control code. We find that GeDi gives stronger controllability than the state of the art method while also achieving generation speeds more than 30 times faster. Additionally, training GeDi on only four topics allows us to controllably generate new topics zero-shot from just a keyword, unlocking a new capability that previous controllable generation methods do not have. Lastly, we show that GeDi can make GPT-2 (1.5B parameters) significantly less toxic without sacrificing linguistic quality, making it by far the most practical existing method for detoxifying large language models while maintaining a fast generation speed.",
+      "published": "2020-09-14T17:45:36Z",
+      "updated": "2020-10-22T14:14:09Z",
+      "authors": [
+        "Ben Krause",
+        "Akhilesh Deepak Gotmare",
+        "Bryan McCann",
+        "Nitish Shirish Keskar",
+        "Shafiq Joty",
+        "Richard Socher",
+        "Nazneen Fatema Rajani"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.05166v3",
+      "arxiv_id": "2009.05166v3",
+      "title": "FILTER: An Enhanced Fusion Method for Cross-lingual Language Understanding",
+      "summary": "Large-scale cross-lingual language models (LM), such as mBERT, Unicoder and XLM, have achieved great success in cross-lingual representation learning. However, when applied to zero-shot cross-lingual transfer tasks, most existing methods use only single-language input for LM finetuning, without leveraging the intrinsic cross-lingual alignment between different languages that proves essential for multilingual tasks. In this paper, we propose FILTER, an enhanced fusion method that takes cross-lingual data as input for XLM finetuning. Specifically, FILTER first encodes text input in the source language and its translation in the target language independently in the shallow layers, then performs cross-language fusion to extract multilingual knowledge in the intermediate layers, and finally performs further language-specific encoding. During inference, the model makes predictions based on the text input in the target language and its translation in the source language. For simple tasks such as classification, translated text in the target language shares the same label as the source language. However, this shared label becomes less accurate or even unavailable for more complex tasks such as question answering, NER and POS tagging. To tackle this issue, we further propose an additional KL-divergence self-teaching loss for model training, based on auto-generated soft pseudo-labels for translated text in the target language. Extensive experiments demonstrate that FILTER achieves new state of the art on two challenging multilingual multi-task benchmarks, XTREME and XGLUE.",
+      "published": "2020-09-10T22:42:15Z",
+      "updated": "2020-12-15T07:11:22Z",
+      "authors": [
+        "Yuwei Fang",
+        "Shuohang Wang",
+        "Zhe Gan",
+        "Siqi Sun",
+        "Jingjing Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2008.04500v1",
+      "arxiv_id": "2008.04500v1",
+      "title": "Towards Plausible Differentially Private ADMM Based Distributed Machine Learning",
+      "summary": "The Alternating Direction Method of Multipliers (ADMM) and its distributed version have been widely used in machine learning. In the iterations of ADMM, model updates using local private data and model exchanges among agents impose critical privacy concerns. Despite some pioneering works to relieve such concerns, differentially private ADMM still confronts many research challenges. For example, the guarantee of differential privacy (DP) relies on the premise that the optimality of each local problem can be perfectly attained in each ADMM iteration, which may never happen in practice. The model trained by DP ADMM may have low prediction accuracy. In this paper, we address these concerns by proposing a novel (Improved) Plausible differentially Private ADMM algorithm, called PP-ADMM and IPP-ADMM. In PP-ADMM, each agent approximately solves a perturbed optimization problem that is formulated from its local private data in an iteration, and then perturbs the approximate solution with Gaussian noise to provide the DP guarantee. To further improve the model accuracy and convergence, an improved version IPP-ADMM adopts sparse vector technique (SVT) to determine if an agent should update its neighbors with the current perturbed solution. The agent calculates the difference of the current solution from that in the last iteration, and if the difference is larger than a threshold, it passes the solution to neighbors; or otherwise the solution will be discarded. Moreover, we propose to track the total privacy loss under the zero-concentrated DP (zCDP) and provide a generalization performance analysis. Experiments on real-world datasets demonstrate that under the same privacy guarantee, the proposed algorithms are superior to the state of the art in terms of model accuracy and convergence rate.",
+      "published": "2020-08-11T03:40:55Z",
+      "updated": "2020-08-11T03:40:55Z",
+      "authors": [
+        "Jiahao Ding",
+        "Jingyi Wang",
+        "Guannan Liang",
+        "Jinbo Bi",
+        "Miao Pan"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.08052v2",
+      "arxiv_id": "2006.08052v2",
+      "title": "Autofocused oracles for model-based design",
+      "summary": "Data-driven design is making headway into a number of application areas, including protein, small-molecule, and materials engineering. The design goal is to construct an object with desired properties, such as a protein that binds to a therapeutic target, or a superconducting material with a higher critical temperature than previously observed. To that end, costly experimental measurements are being replaced with calls to high-capacity regression models trained on labeled data, which can be leveraged in an in silico search for design candidates. However, the design goal necessitates moving into regions of the design space beyond where such models were trained. Therefore, one can ask: should the regression model be altered as the design algorithm explores the design space, in the absence of new data? Herein, we answer this question in the affirmative. In particular, we (i) formalize the data-driven design problem as a non-zero-sum game, (ii) develop a principled strategy for retraining the regression model as the design algorithm proceeds---what we refer to as autofocusing, and (iii) demonstrate the promise of autofocusing empirically.",
+      "published": "2020-06-14T23:22:50Z",
+      "updated": "2020-10-24T23:32:54Z",
+      "authors": [
+        "Clara Fannjiang",
+        "Jennifer Listgarten"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.02295v2",
+      "arxiv_id": "2006.02295v2",
+      "title": "Improved acoustic word embeddings for zero-resource languages using multilingual transfer",
+      "summary": "Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. Such embeddings can form the basis for speech search, indexing and discovery systems when conventional speech recognition is not possible. In zero-resource settings where unlabelled speech is the only available resource, we need a method that gives robust embeddings on an arbitrary language. Here we explore multilingual transfer: we train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. We consider three multilingual recurrent neural network (RNN) models: a classifier trained on the joint vocabularies of all training languages; a Siamese RNN trained to discriminate between same and different words from multiple languages; and a correspondence autoencoder (CAE) RNN trained to reconstruct word pairs. In a word discrimination task on six target languages, all of these models outperform state-of-the-art unsupervised models trained on the zero-resource languages themselves, giving relative improvements of more than 30% in average precision. When using only a few training languages, the multilingual CAE performs better, but with more training languages the other multilingual models perform similarly. Using more training languages is generally beneficial, but improvements are marginal on some languages. We present probing experiments which show that the CAE encodes more phonetic, word duration, language identity and speaker information than the other multilingual models.",
+      "published": "2020-06-02T12:28:34Z",
+      "updated": "2021-02-05T08:03:25Z",
+      "authors": [
+        "Herman Kamper",
+        "Yevgen Matusevych",
+        "Sharon Goldwater"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2005.00396v3",
+      "arxiv_id": "2005.00396v3",
+      "title": "Identifying Necessary Elements for BERT's Multilinguality",
+      "summary": "It has been shown that multilingual BERT (mBERT) yields high quality multilingual representations and enables effective zero-shot transfer. This is surprising given that mBERT does not use any crosslingual signal during training. While recent literature has studied this phenomenon, the reasons for the multilinguality are still somewhat obscure. We aim to identify architectural properties of BERT and linguistic properties of languages that are necessary for BERT to become multilingual. To allow for fast experimentation we propose an efficient setup with small BERT models trained on a mix of synthetic and natural data. Overall, we identify four architectural and two linguistic elements that influence multilinguality. Based on our insights, we experiment with a multilingual pretraining setup that modifies the masking strategy using VecMap, i.e., unsupervised embedding alignment. Experiments on XNLI with three languages indicate that our findings transfer from our small setup to larger scale settings.",
+      "published": "2020-05-01T14:27:14Z",
+      "updated": "2021-02-08T14:51:56Z",
+      "authors": [
+        "Philipp Dufter",
+        "Hinrich Schütze"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.14564v2",
+      "arxiv_id": "2004.14564v2",
+      "title": "Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing",
+      "summary": "We frame the task of machine translation evaluation as one of scoring machine translation output with a sequence-to-sequence paraphraser, conditioned on a human reference. We propose training the paraphraser as a multilingual NMT system, treating paraphrasing as a zero-shot translation task (e.g., Czech to Czech). This results in the paraphraser's output mode being centered around a copy of the input sequence, which represents the best case scenario where the MT system output matches a human reference. Our method is simple and intuitive, and does not require human judgements for training. Our single model (trained in 39 languages) outperforms or statistically ties with all prior metrics on the WMT 2019 segment-level shared metrics task in all languages (excluding Gujarati where the model had no training data). We also explore using our model for the task of quality estimation as a metric--conditioning on the source instead of the reference--and find that it significantly outperforms every submission to the WMT 2019 shared task on quality estimation in every language pair.",
+      "published": "2020-04-30T03:32:34Z",
+      "updated": "2020-10-27T23:54:02Z",
+      "authors": [
+        "Brian Thompson",
+        "Matt Post"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.13956v1",
+      "arxiv_id": "2004.13956v1",
+      "title": "Zero-shot topic generation",
+      "summary": "We present an approach to generating topics using a model trained only for document title generation, with zero examples of topics given during training. We leverage features that capture the relevance of a candidate span in a document for the generation of a title for that document. The output is a weighted collection of the phrases that are most relevant for describing the document and distinguishing it within a corpus, without requiring access to the rest of the corpus. We conducted a double-blind trial in which human annotators scored the quality of our machine-generated topics along with original human-written topics associated with news articles from The Guardian and The Huffington Post. The results show that our zero-shot model generates topic labels for news documents that are on average equal to or higher quality than those written by humans, as judged by humans.",
+      "published": "2020-04-29T04:39:28Z",
+      "updated": "2020-04-29T04:39:28Z",
+      "authors": [
+        "Oleg Vasilyev",
+        "Kathryn Evans",
+        "Anna Venancio-Marques",
+        "John Bohannon"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.03090v1",
+      "arxiv_id": "2004.03090v1",
+      "title": "Interview: A Large-Scale Open-Source Corpus of Media Dialog",
+      "summary": "Existing conversational datasets consist either of written proxies for dialog or small-scale transcriptions of natural speech. We introduce 'Interview': a large-scale (105K conversations) media dialog dataset collected from news interview transcripts. Compared to existing large-scale proxies for conversational data, language models trained on our dataset exhibit better zero-shot out-of-domain performance on existing spoken dialog datasets, demonstrating its usefulness in modeling real-world conversations. 'Interview' contains speaker role annotations for each turn, facilitating the development of engaging, responsive dialog systems. In fact, experiments on two dialog tasks show that leveraging such labels improves performance over strong speaker-agnostic baselines, and enabling models to generate more specific and inquisitive responses in interview-style conversations.",
+      "published": "2020-04-07T02:44:50Z",
+      "updated": "2020-04-07T02:44:50Z",
+      "authors": [
+        "Bodhisattwa Prasad Majumder",
+        "Shuyang Li",
+        "Jianmo Ni",
+        "Julian McAuley"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.10076v1",
+      "arxiv_id": "2003.10076v1",
+      "title": "Absolute Shapley Value",
+      "summary": "Shapley value is a concept in cooperative game theory for measuring the contribution of each participant, which was named in honor of Lloyd Shapley. Shapley value has been recently applied in data marketplaces for compensation allocation based on their contribution to the models. Shapley value is the only value division scheme used for compensation allocation that meets three desirable criteria: group rationality, fairness, and additivity. In cooperative game theory, the marginal contribution of each contributor to each coalition is a nonnegative value. However, in machine learning model training, the marginal contribution of each contributor (data tuple) to each coalition (a set of data tuples) can be a negative value, i.e., the accuracy of the model trained by a dataset with an additional data tuple can be lower than the accuracy of the model trained by the dataset only. In this paper, we investigate the problem of how to handle the negative marginal contribution when computing Shapley value. We explore three philosophies: 1) taking the original value (Original Shapley Value); 2) taking the larger of the original value and zero (Zero Shapley Value); and 3) taking the absolute value of the original value (Absolute Shapley Value). Experiments on Iris dataset demonstrate that the definition of Absolute Shapley Value significantly outperforms the other two definitions in terms of evaluating data importance (the contribution of each data tuple to the trained model).",
+      "published": "2020-03-23T04:26:30Z",
+      "updated": "2020-03-23T04:26:30Z",
+      "authors": [
+        "Jinfei Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DB",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.07482v1",
+      "arxiv_id": "2003.07482v1",
+      "title": "High-Accuracy and Low-Latency Speech Recognition with Two-Head Contextual Layer Trajectory LSTM Model",
+      "summary": "While the community keeps promoting end-to-end models over conventional hybrid models, which usually are long short-term memory (LSTM) models trained with a cross entropy criterion followed by a sequence discriminative training criterion, we argue that such conventional hybrid models can still be significantly improved. In this paper, we detail our recent efforts to improve conventional hybrid LSTM acoustic models for high-accuracy and low-latency automatic speech recognition. To achieve high accuracy, we use a contextual layer trajectory LSTM (cltLSTM), which decouples the temporal modeling and target classification tasks, and incorporates future context frames to get more information for accurate acoustic modeling. We further improve the training strategy with sequence-level teacher-student learning. To obtain low latency, we design a two-head cltLSTM, in which one head has zero latency and the other head has a small latency, compared to an LSTM. When trained with Microsoft's 65 thousand hours of anonymized training data and evaluated with test sets with 1.8 million words, the proposed two-head cltLSTM model with the proposed training strategy yields a 28.2\\% relative WER reduction over the conventional LSTM acoustic model, with a similar perceived latency.",
+      "published": "2020-03-17T00:52:11Z",
+      "updated": "2020-03-17T00:52:11Z",
+      "authors": [
+        "Jinyu Li",
+        "Rui Zhao",
+        "Eric Sun",
+        "Jeremy H. M. Wong",
+        "Amit Das",
+        "Zhong Meng",
+        "Yifan Gong"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.02912v1",
+      "arxiv_id": "2003.02912v1",
+      "title": "What the [MASK]? Making Sense of Language-Specific BERT Models",
+      "summary": "Recently, Natural Language Processing (NLP) has witnessed an impressive progress in many areas, due to the advent of novel, pretrained contextual representation models. In particular, Devlin et al. (2019) proposed a model, called BERT (Bidirectional Encoder Representations from Transformers), which enables researchers to obtain state-of-the art performance on numerous NLP tasks by fine-tuning the representations on their data set and task, without the need for developing and training highly-specific architectures. The authors also released multilingual BERT (mBERT), a model trained on a corpus of 104 languages, which can serve as a universal language model. This model obtained impressive results on a zero-shot cross-lingual natural inference task. Driven by the potential of BERT models, the NLP community has started to investigate and generate an abundant number of BERT models that are trained on a particular language, and tested on a specific data domain and task. This allows us to evaluate the true potential of mBERT as a universal language model, by comparing it to the performance of these more specific models. This paper presents the current state of the art in language-specific BERT models, providing an overall picture with respect to different dimensions (i.e. architectures, data domains, and tasks). Our aim is to provide an immediate and straightforward overview of the commonalities and differences between Language-Specific (language-specific) BERT models and mBERT. We also provide an interactive and constantly updated website that can be used to explore the information we have collected, at https://bertlang.unibocconi.it.",
+      "published": "2020-03-05T20:42:51Z",
+      "updated": "2020-03-05T20:42:51Z",
+      "authors": [
+        "Debora Nozza",
+        "Federico Bianchi",
+        "Dirk Hovy"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.08155v4",
+      "arxiv_id": "2002.08155v4",
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "summary": "We present CodeBERT, a bimodal pre-trained model for programming language (PL) and nat-ural language (NL). CodeBERT learns general-purpose representations that support downstream NL-PL applications such as natural language codesearch, code documentation generation, etc. We develop CodeBERT with Transformer-based neural architecture, and train it with a hybrid objective function that incorporates the pre-training task of replaced token detection, which is to detect plausible alternatives sampled from generators. This enables us to utilize both bimodal data of NL-PL pairs and unimodal data, where the former provides input tokens for model training while the latter helps to learn better generators. We evaluate CodeBERT on two NL-PL applications by fine-tuning model parameters. Results show that CodeBERT achieves state-of-the-art performance on both natural language code search and code documentation generation tasks. Furthermore, to investigate what type of knowledge is learned in CodeBERT, we construct a dataset for NL-PL probing, and evaluate in a zero-shot setting where parameters of pre-trained models are fixed. Results show that CodeBERT performs better than previous pre-trained models on NL-PL probing.",
+      "published": "2020-02-19T13:09:07Z",
+      "updated": "2020-09-18T15:38:12Z",
+      "authors": [
+        "Zhangyin Feng",
+        "Daya Guo",
+        "Duyu Tang",
+        "Nan Duan",
+        "Xiaocheng Feng",
+        "Ming Gong",
+        "Linjun Shou",
+        "Bing Qin",
+        "Ting Liu",
+        "Daxin Jiang",
+        "Ming Zhou"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.PL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.04710v2",
+      "arxiv_id": "2002.04710v2",
+      "title": "Unique Properties of Flat Minima in Deep Networks",
+      "summary": "It is well known that (stochastic) gradient descent has an implicit bias towards flat minima. In deep neural network training, this mechanism serves to screen out minima. However, the precise effect that this has on the trained network is not yet fully understood. In this paper, we characterize the flat minima in linear neural networks trained with a quadratic loss. First, we show that linear ResNets with zero initialization necessarily converge to the flattest of all minima. We then prove that these minima correspond to nearly balanced networks whereby the gain from the input to any intermediate representation does not change drastically from one layer to the next. Finally, we show that consecutive layers in flat minima solutions are coupled. That is, one of the left singular vectors of each weight matrix, equals one of the right singular vectors of the next matrix. This forms a distinct path from input to output, that, as we show, is dedicated to the signal that experiences the largest gain end-to-end. Experiments indicate that these properties are characteristic of both linear and nonlinear models trained in practice.",
+      "published": "2020-02-11T22:01:19Z",
+      "updated": "2020-08-08T22:13:17Z",
+      "authors": [
+        "Rotem Mulayoff",
+        "Tomer Michaeli"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.02492v2",
+      "arxiv_id": "2002.02492v2",
+      "title": "Consistency of a Recurrent Language Model With Respect to Incomplete Decoding",
+      "summary": "Despite strong performance on a variety of tasks, neural sequence models trained with maximum likelihood have been shown to exhibit issues such as length bias and degenerate repetition. We study the related issue of receiving infinite-length sequences from a recurrent language model when using common decoding algorithms. To analyze this issue, we first define inconsistency of a decoding algorithm, meaning that the algorithm can yield an infinite-length sequence that has zero probability under the model. We prove that commonly used incomplete decoding algorithms - greedy search, beam search, top-k sampling, and nucleus sampling - are inconsistent, despite the fact that recurrent language models are trained to produce sequences of finite length. Based on these insights, we propose two remedies which address inconsistency: consistent variants of top-k and nucleus sampling, and a self-terminating recurrent language model. Empirical results show that inconsistency occurs in practice, and that the proposed methods prevent inconsistency.",
+      "published": "2020-02-06T19:56:15Z",
+      "updated": "2020-10-02T22:36:49Z",
+      "authors": [
+        "Sean Welleck",
+        "Ilia Kulikov",
+        "Jaedeok Kim",
+        "Richard Yuanzhe Pang",
+        "Kyunghyun Cho"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.02109v2",
+      "arxiv_id": "2002.02109v2",
+      "title": "Multilingual acoustic word embedding models for processing zero-resource languages",
+      "summary": "Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. In settings where unlabelled speech is the only available resource, such embeddings can be used in \"zero-resource\" speech search, indexing and discovery systems. Here we propose to train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. For this transfer learning approach, we consider two multilingual recurrent neural network models: a discriminative classifier trained on the joint vocabularies of all training languages, and a correspondence autoencoder trained to reconstruct word pairs. We test these using a word discrimination task on six target zero-resource languages. When trained on seven well-resourced languages, both models perform similarly and outperform unsupervised models trained on the zero-resource languages. With just a single training language, the second model works better, but performance depends more on the particular training--testing language pair.",
+      "published": "2020-02-06T05:53:41Z",
+      "updated": "2020-02-21T14:19:56Z",
+      "authors": [
+        "Herman Kamper",
+        "Yevgen Matusevych",
+        "Sharon Goldwater"
+      ],
+      "categories": [
+        "cs.CL",
+        "eess.AS"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "(\"ZeRO\" OR \"DeepSpeed\" OR \"offloading\") AND (\"model training\" OR \"large language model\")",
+  "slice_id": "2020",
+  "date_window": {
+    "start": "2020-01-01",
+    "end": "2020-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2012.12570v1",
+      "arxiv_id": "2012.12570v1",
+      "title": "ICMSC: Intra- and Cross-modality Semantic Consistency for Unsupervised Domain Adaptation on Hip Joint Bone Segmentation",
+      "summary": "Unsupervised domain adaptation (UDA) for cross-modality medical image segmentation has shown great progress by domain-invariant feature learning or image appearance translation. Adapted feature learning usually cannot detect domain shifts at the pixel level and is not able to achieve good results in dense semantic segmentation tasks. Image appearance translation, e.g. CycleGAN, translates images into different styles with good appearance, despite its population, its semantic consistency is hardly to maintain and results in poor cross-modality segmentation. In this paper, we propose intra- and cross-modality semantic consistency (ICMSC) for UDA and our key insight is that the segmentation of synthesised images in different styles should be consistent. Specifically, our model consists of an image translation module and a domain-specific segmentation module. The image translation module is a standard CycleGAN, while the segmentation module contains two domain-specific segmentation networks. The intra-modality semantic consistency (IMSC) forces the reconstructed image after a cycle to be segmented in the same way as the original input image, while the cross-modality semantic consistency (CMSC) encourages the synthesized images after translation to be segmented exactly the same as before translation. Comprehensive experimental results on cross-modality hip joint bone segmentation show the effectiveness of our proposed method, which achieves an average DICE of 81.61% on the acetabulum and 88.16% on the proximal femur, outperforming other state-of-the-art methods. It is worth to note that without UDA, a model trained on CT for hip joint bone segmentation is non-transferable to MRI and has almost zero-DICE segmentation.",
+      "published": "2020-12-23T09:58:38Z",
+      "updated": "2020-12-23T09:58:38Z",
+      "authors": [
+        "Guodong Zeng",
+        "Till D. Lerch",
+        "Florian Schmaranzer",
+        "Guoyan Zheng",
+        "Juergen Burger",
+        "Kate Gerber",
+        "Moritz Tannast",
+        "Klaus Siebenrock",
+        "Nicolas Gerber"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.08549v1",
+      "arxiv_id": "2012.08549v1",
+      "title": "Exploring Transfer Learning For End-to-End Spoken Language Understanding",
+      "summary": "Voice Assistants such as Alexa, Siri, and Google Assistant typically use a two-stage Spoken Language Understanding pipeline; first, an Automatic Speech Recognition (ASR) component to process customer speech and generate text transcriptions, followed by a Natural Language Understanding (NLU) component to map transcriptions to an actionable hypothesis. An end-to-end (E2E) system that goes directly from speech to a hypothesis is a more attractive option. These systems were shown to be smaller, faster, and better optimized. However, they require massive amounts of end-to-end training data and in addition, don't take advantage of the already available ASR and NLU training data. In this work, we propose an E2E system that is designed to jointly train on multiple speech-to-text tasks, such as ASR (speech-transcription) and SLU (speech-hypothesis), and text-to-text tasks, such as NLU (text-hypothesis). We call this the Audio-Text All-Task (AT-AT) Model and we show that it beats the performance of E2E models trained on individual tasks, especially ones trained on limited data. We show this result on an internal music dataset and two public datasets, FluentSpeech and SNIPS Audio, where we achieve state-of-the-art results. Since our model can process both speech and text input sequences and learn to predict a target sequence, it also allows us to do zero-shot E2E SLU by training on only text-hypothesis data (without any speech) from a new domain. We evaluate this ability of our model on the Facebook TOP dataset and set a new benchmark for zeroshot E2E performance. We will soon release the audio data collected for the TOP dataset for future research.",
+      "published": "2020-12-15T19:02:15Z",
+      "updated": "2020-12-15T19:02:15Z",
+      "authors": [
+        "Subendhu Rongali",
+        "Beiye Liu",
+        "Liwei Cai",
+        "Konstantine Arkoudas",
+        "Chengwei Su",
+        "Wael Hamza"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2011.03863v2",
+      "arxiv_id": "2011.03863v2",
+      "title": "Knowledge-driven Data Construction for Zero-shot Evaluation in Commonsense Question Answering",
+      "summary": "Recent developments in pre-trained neural language modeling have led to leaps in accuracy on commonsense question-answering benchmarks. However, there is increasing concern that models overfit to specific tasks, without learning to utilize external knowledge or perform general semantic reasoning. In contrast, zero-shot evaluations have shown promise as a more robust measure of a model's general reasoning abilities. In this paper, we propose a novel neuro-symbolic framework for zero-shot question answering across commonsense tasks. Guided by a set of hypotheses, the framework studies how to transform various pre-existing knowledge resources into a form that is most effective for pre-training models. We vary the set of language models, training regimes, knowledge sources, and data generation strategies, and measure their impact across tasks. Extending on prior work, we devise and compare four constrained distractor-sampling strategies. We provide empirical results across five commonsense question-answering tasks with data generated from five external knowledge resources. We show that, while an individual knowledge graph is better suited for specific tasks, a global knowledge graph brings consistent gains across different tasks. In addition, both preserving the structure of the task as well as generating fair and informative questions help language models learn more effectively.",
+      "published": "2020-11-07T22:52:21Z",
+      "updated": "2020-12-14T22:27:10Z",
+      "authors": [
+        "Kaixin Ma",
+        "Filip Ilievski",
+        "Jonathan Francis",
+        "Yonatan Bisk",
+        "Eric Nyberg",
+        "Alessandro Oltramari"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2011.01694v2",
+      "arxiv_id": "2011.01694v2",
+      "title": "Data-to-Text Generation with Iterative Text Editing",
+      "summary": "We present a novel approach to data-to-text generation based on iterative text editing. Our approach maximizes the completeness and semantic accuracy of the output text while leveraging the abilities of recent pre-trained models for text editing (LaserTagger) and language modeling (GPT-2) to improve the text fluency. To this end, we first transform data items to text using trivial templates, and then we iteratively improve the resulting text by a neural model trained for the sentence fusion task. The output of the model is filtered by a simple heuristic and reranked with an off-the-shelf pre-trained language model. We evaluate our approach on two major data-to-text datasets (WebNLG, Cleaned E2E) and analyze its caveats and benefits. Furthermore, we show that our formulation of data-to-text generation opens up the possibility for zero-shot domain adaptation using a general-domain dataset for sentence fusion.",
+      "published": "2020-11-03T13:32:38Z",
+      "updated": "2021-01-28T14:30:14Z",
+      "authors": [
+        "Zdeněk Kasner",
+        "Ondřej Dušek"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.13984v1",
+      "arxiv_id": "2010.13984v1",
+      "title": "Interpretation of NLP models through input marginalization",
+      "summary": "To demystify the \"black box\" property of deep neural networks for natural language processing (NLP), several methods have been proposed to interpret their predictions by measuring the change in prediction probability after erasing each token of an input. Since existing methods replace each token with a predefined value (i.e., zero), the resulting sentence lies out of the training data distribution, yielding misleading interpretations. In this study, we raise the out-of-distribution problem induced by the existing interpretation methods and present a remedy; we propose to marginalize each token out. We interpret various NLP models trained for sentiment analysis and natural language inference using the proposed method.",
+      "published": "2020-10-27T01:40:41Z",
+      "updated": "2020-10-27T01:40:41Z",
+      "authors": [
+        "Siwon Kim",
+        "Jihun Yi",
+        "Eunji Kim",
+        "Sungroh Yoon"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.12755v2",
+      "arxiv_id": "2010.12755v2",
+      "title": "Effective Distant Supervision for Temporal Relation Extraction",
+      "summary": "A principal barrier to training temporal relation extraction models in new domains is the lack of varied, high quality examples and the challenge of collecting more. We present a method of automatically collecting distantly-supervised examples of temporal relations. We scrape and automatically label event pairs where the temporal relations are made explicit in text, then mask out those explicit cues, forcing a model trained on this data to learn other signals. We demonstrate that a pre-trained Transformer model is able to transfer from the weakly labeled examples to human-annotated benchmarks in both zero-shot and few-shot settings, and that the masking scheme is important in improving generalization.",
+      "published": "2020-10-24T03:17:31Z",
+      "updated": "2021-04-07T00:56:48Z",
+      "authors": [
+        "Xinyu Zhao",
+        "Shih-ting Lin",
+        "Greg Durrett"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.06478v1",
+      "arxiv_id": "2010.06478v1",
+      "title": "XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization",
+      "summary": "The ability to correctly model distinct meanings of a word is crucial for the effectiveness of semantic representation techniques. However, most existing evaluation benchmarks for assessing this criterion are tied to sense inventories (usually WordNet), restricting their usage to a small subset of knowledge-based representation techniques. The Word-in-Context dataset (WiC) addresses the dependence on sense inventories by reformulating the standard disambiguation task as a binary classification problem; but, it is limited to the English language. We put forward a large multilingual benchmark, XL-WiC, featuring gold standards in 12 new languages from varied language families and with different degrees of resource availability, opening room for evaluation scenarios such as zero-shot cross-lingual transfer. We perform a series of experiments to determine the reliability of the datasets and to set performance baselines for several recent contextualized multilingual models. Experimental results show that even when no tagged instances are available for a target language, models trained solely on the English data can attain competitive performance in the task of distinguishing different meanings of a word, even for distant languages. XL-WiC is available at https://pilehvar.github.io/xlwic/.",
+      "published": "2020-10-13T15:32:00Z",
+      "updated": "2020-10-13T15:32:00Z",
+      "authors": [
+        "Alessandro Raganato",
+        "Tommaso Pasini",
+        "Jose Camacho-Collados",
+        "Mohammad Taher Pilehvar"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.04806v2",
+      "arxiv_id": "2010.04806v2",
+      "title": "AutoQA: From Databases To QA Semantic Parsers With Only Synthetic Training Data",
+      "summary": "We propose AutoQA, a methodology and toolkit to generate semantic parsers that answer questions on databases, with no manual effort. Given a database schema and its data, AutoQA automatically generates a large set of high-quality questions for training that covers different database operations. It uses automatic paraphrasing combined with template-based parsing to find alternative expressions of an attribute in different parts of speech. It also uses a novel filtered auto-paraphraser to generate correct paraphrases of entire sentences. We apply AutoQA to the Schema2QA dataset and obtain an average logical form accuracy of 62.9% when tested on natural questions, which is only 6.4% lower than a model trained with expert natural language annotations and paraphrase data collected from crowdworkers. To demonstrate the generality of AutoQA, we also apply it to the Overnight dataset. AutoQA achieves 69.8% answer accuracy, 16.4% higher than the state-of-the-art zero-shot models and only 5.2% lower than the same model trained with human data.",
+      "published": "2020-10-09T21:06:57Z",
+      "updated": "2021-06-08T00:49:21Z",
+      "authors": [
+        "Silei Xu",
+        "Sina J. Semnani",
+        "Giovanni Campagna",
+        "Monica S. Lam"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2010.02523v1",
+      "arxiv_id": "2010.02523v1",
+      "title": "Multi-task Learning for Multilingual Neural Machine Translation",
+      "summary": "While monolingual data has been shown to be useful in improving bilingual neural machine translation (NMT), effectively and efficiently leveraging monolingual data for Multilingual NMT (MNMT) systems is a less explored area. In this work, we propose a multi-task learning (MTL) framework that jointly trains the model with the translation task on bitext data and two denoising tasks on the monolingual data. We conduct extensive empirical studies on MNMT systems with 10 language pairs from WMT datasets. We show that the proposed approach can effectively improve the translation quality for both high-resource and low-resource languages with large margin, achieving significantly better results than the individual bilingual models. We also demonstrate the efficacy of the proposed approach in the zero-shot setup for language pairs without bitext training data. Furthermore, we show the effectiveness of MTL over pre-training approaches for both NMT and cross-lingual transfer learning NLU tasks; the proposed approach outperforms massive scale models trained on single task.",
+      "published": "2020-10-06T06:54:12Z",
+      "updated": "2020-10-06T06:54:12Z",
+      "authors": [
+        "Yiren Wang",
+        "ChengXiang Zhai",
+        "Hany Hassan Awadalla"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.14510v1",
+      "arxiv_id": "2009.14510v1",
+      "title": "Cross-lingual Spoken Language Understanding with Regularized Representation Alignment",
+      "summary": "Despite the promising results of current cross-lingual models for spoken language understanding systems, they still suffer from imperfect cross-lingual representation alignments between the source and target languages, which makes the performance sub-optimal. To cope with this issue, we propose a regularization approach to further align word-level and sentence-level representations across languages without any external resource. First, we regularize the representation of user utterances based on their corresponding labels. Second, we regularize the latent variable model (Liu et al., 2019) by leveraging adversarial training to disentangle the latent variables. Experiments on the cross-lingual spoken language understanding task show that our model outperforms current state-of-the-art methods in both few-shot and zero-shot scenarios, and our model, trained on a few-shot setting with only 3\\% of the target language training data, achieves comparable performance to the supervised training with all the training data.",
+      "published": "2020-09-30T08:56:53Z",
+      "updated": "2020-09-30T08:56:53Z",
+      "authors": [
+        "Zihan Liu",
+        "Genta Indra Winata",
+        "Peng Xu",
+        "Zhaojiang Lin",
+        "Pascale Fung"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.06367v2",
+      "arxiv_id": "2009.06367v2",
+      "title": "GeDi: Generative Discriminator Guided Sequence Generation",
+      "summary": "While large-scale language models (LMs) are able to imitate the distribution of natural language well enough to generate realistic text, it is difficult to control which regions of the distribution they generate. This is especially problematic because datasets used for training large LMs usually contain significant toxicity, hate, bias, and negativity. We propose GeDi as an efficient method for using smaller LMs as generative discriminators to guide generation from large LMs to make them safer and more controllable. GeDi guides generation at each step by computing classification probabilities for all possible next tokens via Bayes rule by normalizing over two class-conditional distributions; one conditioned on the desired attribute, or control code, and another conditioned on the undesired attribute, or anti control code. We find that GeDi gives stronger controllability than the state of the art method while also achieving generation speeds more than 30 times faster. Additionally, training GeDi on only four topics allows us to controllably generate new topics zero-shot from just a keyword, unlocking a new capability that previous controllable generation methods do not have. Lastly, we show that GeDi can make GPT-2 (1.5B parameters) significantly less toxic without sacrificing linguistic quality, making it by far the most practical existing method for detoxifying large language models while maintaining a fast generation speed.",
+      "published": "2020-09-14T17:45:36Z",
+      "updated": "2020-10-22T14:14:09Z",
+      "authors": [
+        "Ben Krause",
+        "Akhilesh Deepak Gotmare",
+        "Bryan McCann",
+        "Nitish Shirish Keskar",
+        "Shafiq Joty",
+        "Richard Socher",
+        "Nazneen Fatema Rajani"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2009.05166v3",
+      "arxiv_id": "2009.05166v3",
+      "title": "FILTER: An Enhanced Fusion Method for Cross-lingual Language Understanding",
+      "summary": "Large-scale cross-lingual language models (LM), such as mBERT, Unicoder and XLM, have achieved great success in cross-lingual representation learning. However, when applied to zero-shot cross-lingual transfer tasks, most existing methods use only single-language input for LM finetuning, without leveraging the intrinsic cross-lingual alignment between different languages that proves essential for multilingual tasks. In this paper, we propose FILTER, an enhanced fusion method that takes cross-lingual data as input for XLM finetuning. Specifically, FILTER first encodes text input in the source language and its translation in the target language independently in the shallow layers, then performs cross-language fusion to extract multilingual knowledge in the intermediate layers, and finally performs further language-specific encoding. During inference, the model makes predictions based on the text input in the target language and its translation in the source language. For simple tasks such as classification, translated text in the target language shares the same label as the source language. However, this shared label becomes less accurate or even unavailable for more complex tasks such as question answering, NER and POS tagging. To tackle this issue, we further propose an additional KL-divergence self-teaching loss for model training, based on auto-generated soft pseudo-labels for translated text in the target language. Extensive experiments demonstrate that FILTER achieves new state of the art on two challenging multilingual multi-task benchmarks, XTREME and XGLUE.",
+      "published": "2020-09-10T22:42:15Z",
+      "updated": "2020-12-15T07:11:22Z",
+      "authors": [
+        "Yuwei Fang",
+        "Shuohang Wang",
+        "Zhe Gan",
+        "Siqi Sun",
+        "Jingjing Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2008.04500v1",
+      "arxiv_id": "2008.04500v1",
+      "title": "Towards Plausible Differentially Private ADMM Based Distributed Machine Learning",
+      "summary": "The Alternating Direction Method of Multipliers (ADMM) and its distributed version have been widely used in machine learning. In the iterations of ADMM, model updates using local private data and model exchanges among agents impose critical privacy concerns. Despite some pioneering works to relieve such concerns, differentially private ADMM still confronts many research challenges. For example, the guarantee of differential privacy (DP) relies on the premise that the optimality of each local problem can be perfectly attained in each ADMM iteration, which may never happen in practice. The model trained by DP ADMM may have low prediction accuracy. In this paper, we address these concerns by proposing a novel (Improved) Plausible differentially Private ADMM algorithm, called PP-ADMM and IPP-ADMM. In PP-ADMM, each agent approximately solves a perturbed optimization problem that is formulated from its local private data in an iteration, and then perturbs the approximate solution with Gaussian noise to provide the DP guarantee. To further improve the model accuracy and convergence, an improved version IPP-ADMM adopts sparse vector technique (SVT) to determine if an agent should update its neighbors with the current perturbed solution. The agent calculates the difference of the current solution from that in the last iteration, and if the difference is larger than a threshold, it passes the solution to neighbors; or otherwise the solution will be discarded. Moreover, we propose to track the total privacy loss under the zero-concentrated DP (zCDP) and provide a generalization performance analysis. Experiments on real-world datasets demonstrate that under the same privacy guarantee, the proposed algorithms are superior to the state of the art in terms of model accuracy and convergence rate.",
+      "published": "2020-08-11T03:40:55Z",
+      "updated": "2020-08-11T03:40:55Z",
+      "authors": [
+        "Jiahao Ding",
+        "Jingyi Wang",
+        "Guannan Liang",
+        "Jinbo Bi",
+        "Miao Pan"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.08052v2",
+      "arxiv_id": "2006.08052v2",
+      "title": "Autofocused oracles for model-based design",
+      "summary": "Data-driven design is making headway into a number of application areas, including protein, small-molecule, and materials engineering. The design goal is to construct an object with desired properties, such as a protein that binds to a therapeutic target, or a superconducting material with a higher critical temperature than previously observed. To that end, costly experimental measurements are being replaced with calls to high-capacity regression models trained on labeled data, which can be leveraged in an in silico search for design candidates. However, the design goal necessitates moving into regions of the design space beyond where such models were trained. Therefore, one can ask: should the regression model be altered as the design algorithm explores the design space, in the absence of new data? Herein, we answer this question in the affirmative. In particular, we (i) formalize the data-driven design problem as a non-zero-sum game, (ii) develop a principled strategy for retraining the regression model as the design algorithm proceeds---what we refer to as autofocusing, and (iii) demonstrate the promise of autofocusing empirically.",
+      "published": "2020-06-14T23:22:50Z",
+      "updated": "2020-10-24T23:32:54Z",
+      "authors": [
+        "Clara Fannjiang",
+        "Jennifer Listgarten"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2006.02295v2",
+      "arxiv_id": "2006.02295v2",
+      "title": "Improved acoustic word embeddings for zero-resource languages using multilingual transfer",
+      "summary": "Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. Such embeddings can form the basis for speech search, indexing and discovery systems when conventional speech recognition is not possible. In zero-resource settings where unlabelled speech is the only available resource, we need a method that gives robust embeddings on an arbitrary language. Here we explore multilingual transfer: we train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. We consider three multilingual recurrent neural network (RNN) models: a classifier trained on the joint vocabularies of all training languages; a Siamese RNN trained to discriminate between same and different words from multiple languages; and a correspondence autoencoder (CAE) RNN trained to reconstruct word pairs. In a word discrimination task on six target languages, all of these models outperform state-of-the-art unsupervised models trained on the zero-resource languages themselves, giving relative improvements of more than 30% in average precision. When using only a few training languages, the multilingual CAE performs better, but with more training languages the other multilingual models perform similarly. Using more training languages is generally beneficial, but improvements are marginal on some languages. We present probing experiments which show that the CAE encodes more phonetic, word duration, language identity and speaker information than the other multilingual models.",
+      "published": "2020-06-02T12:28:34Z",
+      "updated": "2021-02-05T08:03:25Z",
+      "authors": [
+        "Herman Kamper",
+        "Yevgen Matusevych",
+        "Sharon Goldwater"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2005.00396v3",
+      "arxiv_id": "2005.00396v3",
+      "title": "Identifying Necessary Elements for BERT's Multilinguality",
+      "summary": "It has been shown that multilingual BERT (mBERT) yields high quality multilingual representations and enables effective zero-shot transfer. This is surprising given that mBERT does not use any crosslingual signal during training. While recent literature has studied this phenomenon, the reasons for the multilinguality are still somewhat obscure. We aim to identify architectural properties of BERT and linguistic properties of languages that are necessary for BERT to become multilingual. To allow for fast experimentation we propose an efficient setup with small BERT models trained on a mix of synthetic and natural data. Overall, we identify four architectural and two linguistic elements that influence multilinguality. Based on our insights, we experiment with a multilingual pretraining setup that modifies the masking strategy using VecMap, i.e., unsupervised embedding alignment. Experiments on XNLI with three languages indicate that our findings transfer from our small setup to larger scale settings.",
+      "published": "2020-05-01T14:27:14Z",
+      "updated": "2021-02-08T14:51:56Z",
+      "authors": [
+        "Philipp Dufter",
+        "Hinrich Schütze"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.14564v2",
+      "arxiv_id": "2004.14564v2",
+      "title": "Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing",
+      "summary": "We frame the task of machine translation evaluation as one of scoring machine translation output with a sequence-to-sequence paraphraser, conditioned on a human reference. We propose training the paraphraser as a multilingual NMT system, treating paraphrasing as a zero-shot translation task (e.g., Czech to Czech). This results in the paraphraser's output mode being centered around a copy of the input sequence, which represents the best case scenario where the MT system output matches a human reference. Our method is simple and intuitive, and does not require human judgements for training. Our single model (trained in 39 languages) outperforms or statistically ties with all prior metrics on the WMT 2019 segment-level shared metrics task in all languages (excluding Gujarati where the model had no training data). We also explore using our model for the task of quality estimation as a metric--conditioning on the source instead of the reference--and find that it significantly outperforms every submission to the WMT 2019 shared task on quality estimation in every language pair.",
+      "published": "2020-04-30T03:32:34Z",
+      "updated": "2020-10-27T23:54:02Z",
+      "authors": [
+        "Brian Thompson",
+        "Matt Post"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.13956v1",
+      "arxiv_id": "2004.13956v1",
+      "title": "Zero-shot topic generation",
+      "summary": "We present an approach to generating topics using a model trained only for document title generation, with zero examples of topics given during training. We leverage features that capture the relevance of a candidate span in a document for the generation of a title for that document. The output is a weighted collection of the phrases that are most relevant for describing the document and distinguishing it within a corpus, without requiring access to the rest of the corpus. We conducted a double-blind trial in which human annotators scored the quality of our machine-generated topics along with original human-written topics associated with news articles from The Guardian and The Huffington Post. The results show that our zero-shot model generates topic labels for news documents that are on average equal to or higher quality than those written by humans, as judged by humans.",
+      "published": "2020-04-29T04:39:28Z",
+      "updated": "2020-04-29T04:39:28Z",
+      "authors": [
+        "Oleg Vasilyev",
+        "Kathryn Evans",
+        "Anna Venancio-Marques",
+        "John Bohannon"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2004.03090v1",
+      "arxiv_id": "2004.03090v1",
+      "title": "Interview: A Large-Scale Open-Source Corpus of Media Dialog",
+      "summary": "Existing conversational datasets consist either of written proxies for dialog or small-scale transcriptions of natural speech. We introduce 'Interview': a large-scale (105K conversations) media dialog dataset collected from news interview transcripts. Compared to existing large-scale proxies for conversational data, language models trained on our dataset exhibit better zero-shot out-of-domain performance on existing spoken dialog datasets, demonstrating its usefulness in modeling real-world conversations. 'Interview' contains speaker role annotations for each turn, facilitating the development of engaging, responsive dialog systems. In fact, experiments on two dialog tasks show that leveraging such labels improves performance over strong speaker-agnostic baselines, and enabling models to generate more specific and inquisitive responses in interview-style conversations.",
+      "published": "2020-04-07T02:44:50Z",
+      "updated": "2020-04-07T02:44:50Z",
+      "authors": [
+        "Bodhisattwa Prasad Majumder",
+        "Shuyang Li",
+        "Jianmo Ni",
+        "Julian McAuley"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.10076v1",
+      "arxiv_id": "2003.10076v1",
+      "title": "Absolute Shapley Value",
+      "summary": "Shapley value is a concept in cooperative game theory for measuring the contribution of each participant, which was named in honor of Lloyd Shapley. Shapley value has been recently applied in data marketplaces for compensation allocation based on their contribution to the models. Shapley value is the only value division scheme used for compensation allocation that meets three desirable criteria: group rationality, fairness, and additivity. In cooperative game theory, the marginal contribution of each contributor to each coalition is a nonnegative value. However, in machine learning model training, the marginal contribution of each contributor (data tuple) to each coalition (a set of data tuples) can be a negative value, i.e., the accuracy of the model trained by a dataset with an additional data tuple can be lower than the accuracy of the model trained by the dataset only. In this paper, we investigate the problem of how to handle the negative marginal contribution when computing Shapley value. We explore three philosophies: 1) taking the original value (Original Shapley Value); 2) taking the larger of the original value and zero (Zero Shapley Value); and 3) taking the absolute value of the original value (Absolute Shapley Value). Experiments on Iris dataset demonstrate that the definition of Absolute Shapley Value significantly outperforms the other two definitions in terms of evaluating data importance (the contribution of each data tuple to the trained model).",
+      "published": "2020-03-23T04:26:30Z",
+      "updated": "2020-03-23T04:26:30Z",
+      "authors": [
+        "Jinfei Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DB",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.07482v1",
+      "arxiv_id": "2003.07482v1",
+      "title": "High-Accuracy and Low-Latency Speech Recognition with Two-Head Contextual Layer Trajectory LSTM Model",
+      "summary": "While the community keeps promoting end-to-end models over conventional hybrid models, which usually are long short-term memory (LSTM) models trained with a cross entropy criterion followed by a sequence discriminative training criterion, we argue that such conventional hybrid models can still be significantly improved. In this paper, we detail our recent efforts to improve conventional hybrid LSTM acoustic models for high-accuracy and low-latency automatic speech recognition. To achieve high accuracy, we use a contextual layer trajectory LSTM (cltLSTM), which decouples the temporal modeling and target classification tasks, and incorporates future context frames to get more information for accurate acoustic modeling. We further improve the training strategy with sequence-level teacher-student learning. To obtain low latency, we design a two-head cltLSTM, in which one head has zero latency and the other head has a small latency, compared to an LSTM. When trained with Microsoft's 65 thousand hours of anonymized training data and evaluated with test sets with 1.8 million words, the proposed two-head cltLSTM model with the proposed training strategy yields a 28.2\\% relative WER reduction over the conventional LSTM acoustic model, with a similar perceived latency.",
+      "published": "2020-03-17T00:52:11Z",
+      "updated": "2020-03-17T00:52:11Z",
+      "authors": [
+        "Jinyu Li",
+        "Rui Zhao",
+        "Eric Sun",
+        "Jeremy H. M. Wong",
+        "Amit Das",
+        "Zhong Meng",
+        "Yifan Gong"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2003.02912v1",
+      "arxiv_id": "2003.02912v1",
+      "title": "What the [MASK]? Making Sense of Language-Specific BERT Models",
+      "summary": "Recently, Natural Language Processing (NLP) has witnessed an impressive progress in many areas, due to the advent of novel, pretrained contextual representation models. In particular, Devlin et al. (2019) proposed a model, called BERT (Bidirectional Encoder Representations from Transformers), which enables researchers to obtain state-of-the art performance on numerous NLP tasks by fine-tuning the representations on their data set and task, without the need for developing and training highly-specific architectures. The authors also released multilingual BERT (mBERT), a model trained on a corpus of 104 languages, which can serve as a universal language model. This model obtained impressive results on a zero-shot cross-lingual natural inference task. Driven by the potential of BERT models, the NLP community has started to investigate and generate an abundant number of BERT models that are trained on a particular language, and tested on a specific data domain and task. This allows us to evaluate the true potential of mBERT as a universal language model, by comparing it to the performance of these more specific models. This paper presents the current state of the art in language-specific BERT models, providing an overall picture with respect to different dimensions (i.e. architectures, data domains, and tasks). Our aim is to provide an immediate and straightforward overview of the commonalities and differences between Language-Specific (language-specific) BERT models and mBERT. We also provide an interactive and constantly updated website that can be used to explore the information we have collected, at https://bertlang.unibocconi.it.",
+      "published": "2020-03-05T20:42:51Z",
+      "updated": "2020-03-05T20:42:51Z",
+      "authors": [
+        "Debora Nozza",
+        "Federico Bianchi",
+        "Dirk Hovy"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.08155v4",
+      "arxiv_id": "2002.08155v4",
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "summary": "We present CodeBERT, a bimodal pre-trained model for programming language (PL) and nat-ural language (NL). CodeBERT learns general-purpose representations that support downstream NL-PL applications such as natural language codesearch, code documentation generation, etc. We develop CodeBERT with Transformer-based neural architecture, and train it with a hybrid objective function that incorporates the pre-training task of replaced token detection, which is to detect plausible alternatives sampled from generators. This enables us to utilize both bimodal data of NL-PL pairs and unimodal data, where the former provides input tokens for model training while the latter helps to learn better generators. We evaluate CodeBERT on two NL-PL applications by fine-tuning model parameters. Results show that CodeBERT achieves state-of-the-art performance on both natural language code search and code documentation generation tasks. Furthermore, to investigate what type of knowledge is learned in CodeBERT, we construct a dataset for NL-PL probing, and evaluate in a zero-shot setting where parameters of pre-trained models are fixed. Results show that CodeBERT performs better than previous pre-trained models on NL-PL probing.",
+      "published": "2020-02-19T13:09:07Z",
+      "updated": "2020-09-18T15:38:12Z",
+      "authors": [
+        "Zhangyin Feng",
+        "Daya Guo",
+        "Duyu Tang",
+        "Nan Duan",
+        "Xiaocheng Feng",
+        "Ming Gong",
+        "Linjun Shou",
+        "Bing Qin",
+        "Ting Liu",
+        "Daxin Jiang",
+        "Ming Zhou"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.PL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.04710v2",
+      "arxiv_id": "2002.04710v2",
+      "title": "Unique Properties of Flat Minima in Deep Networks",
+      "summary": "It is well known that (stochastic) gradient descent has an implicit bias towards flat minima. In deep neural network training, this mechanism serves to screen out minima. However, the precise effect that this has on the trained network is not yet fully understood. In this paper, we characterize the flat minima in linear neural networks trained with a quadratic loss. First, we show that linear ResNets with zero initialization necessarily converge to the flattest of all minima. We then prove that these minima correspond to nearly balanced networks whereby the gain from the input to any intermediate representation does not change drastically from one layer to the next. Finally, we show that consecutive layers in flat minima solutions are coupled. That is, one of the left singular vectors of each weight matrix, equals one of the right singular vectors of the next matrix. This forms a distinct path from input to output, that, as we show, is dedicated to the signal that experiences the largest gain end-to-end. Experiments indicate that these properties are characteristic of both linear and nonlinear models trained in practice.",
+      "published": "2020-02-11T22:01:19Z",
+      "updated": "2020-08-08T22:13:17Z",
+      "authors": [
+        "Rotem Mulayoff",
+        "Tomer Michaeli"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.02492v2",
+      "arxiv_id": "2002.02492v2",
+      "title": "Consistency of a Recurrent Language Model With Respect to Incomplete Decoding",
+      "summary": "Despite strong performance on a variety of tasks, neural sequence models trained with maximum likelihood have been shown to exhibit issues such as length bias and degenerate repetition. We study the related issue of receiving infinite-length sequences from a recurrent language model when using common decoding algorithms. To analyze this issue, we first define inconsistency of a decoding algorithm, meaning that the algorithm can yield an infinite-length sequence that has zero probability under the model. We prove that commonly used incomplete decoding algorithms - greedy search, beam search, top-k sampling, and nucleus sampling - are inconsistent, despite the fact that recurrent language models are trained to produce sequences of finite length. Based on these insights, we propose two remedies which address inconsistency: consistent variants of top-k and nucleus sampling, and a self-terminating recurrent language model. Empirical results show that inconsistency occurs in practice, and that the proposed methods prevent inconsistency.",
+      "published": "2020-02-06T19:56:15Z",
+      "updated": "2020-10-02T22:36:49Z",
+      "authors": [
+        "Sean Welleck",
+        "Ilia Kulikov",
+        "Jaedeok Kim",
+        "Richard Yuanzhe Pang",
+        "Kyunghyun Cho"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2002.02109v2",
+      "arxiv_id": "2002.02109v2",
+      "title": "Multilingual acoustic word embedding models for processing zero-resource languages",
+      "summary": "Acoustic word embeddings are fixed-dimensional representations of variable-length speech segments. In settings where unlabelled speech is the only available resource, such embeddings can be used in \"zero-resource\" speech search, indexing and discovery systems. Here we propose to train a single supervised embedding model on labelled data from multiple well-resourced languages and then apply it to unseen zero-resource languages. For this transfer learning approach, we consider two multilingual recurrent neural network models: a discriminative classifier trained on the joint vocabularies of all training languages, and a correspondence autoencoder trained to reconstruct word pairs. We test these using a word discrimination task on six target zero-resource languages. When trained on seven well-resourced languages, both models perform similarly and outperform unsupervised models trained on the zero-resource languages. With just a single training language, the second model works better, but performance depends more on the particular training--testing language pair.",
+      "published": "2020-02-06T05:53:41Z",
+      "updated": "2020-02-21T14:19:56Z",
+      "authors": [
+        "Herman Kamper",
+        "Yevgen Matusevych",
+        "Sharon Goldwater"
+      ],
+      "categories": [
+        "cs.CL",
+        "eess.AS"
+      ]
+    }
+  ]
+}

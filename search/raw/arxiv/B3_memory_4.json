@@ -1,0 +1,661 @@
+{
+  "source": "arxiv",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"memory optimization\" AND \"large language model\" AND training) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[201901010000 TO 202606302359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22memory+optimization%22+AND+%22large+language+model%22+AND+training%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B201901010000+TO+202606302359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T20:14:48Z",
+  "total_results_reported": 16,
+  "returned": 16,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2606.25156v2",
+      "arxiv_id": "2606.25156v2",
+      "title": "ATMA: Length-Invariant Language Modeling via Polar Attention and Gated-Delta Compression Memory",
+      "summary": "Modern large language models based on softmax scaled-dot-product attention are constrained by their training sequence length: as the key-value sequence grows, softmax probability mass can dilute across a wider distribution, inducing activation shift and long-context performance collapse. Moreover, long-context language modeling faces a structural tension: a sliding-window attention core maintains a bounded local representation and low perplexity but is blind to long-range dependencies, while full-context attention preserves global recall but suffers from out-of-distribution perplexity explosion. To resolve these limitations, we introduce ATMA, a hybrid convolutional-attention architecture that integrates a novel three-channel attention mechanism. ATMA factorizes the attention mixing step into: (1) a count-blind, unit-vector direction channel, (2) a bounded magnitude channel driven by the participation ratio of effective matches over an extreme-value-corrected null sink, and (3) a long-term recurrent compression memory optimized via a gated-delta fast-weights rule. Neither the Polar Attention core nor the recurrent memory is sufficient alone; their combination enables monotonic perplexity reduction and high-fidelity long-range retrieval simultaneously. We evaluate ATMA using a 120-run factorial ablation sweep, demonstrating that the combined Polar + memory model maintains induction needle-in-a-haystack retrieval accuracy above 90% out to 64K tokens (32 times the training length of 2K) while its document perplexity improves monotonically, outperforming softmax-based memory baselines which collapse at extreme context lengths. Code: https://github.com/kreasof-ai/atma",
+      "published": "2026-06-23T20:43:51Z",
+      "updated": "2026-06-28T22:03:33Z",
+      "authors": [
+        "Habibullah Akbar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2603.26823v1",
+      "arxiv_id": "2603.26823v1",
+      "title": "Throughput Optimization as a Strategic Lever in Large-Scale AI Systems: Evidence from Dataloader and Memory Profiling Innovations",
+      "summary": "The development of large-scale foundation models, particularly Large Language Models (LLMs), is constrained by significant computational and memory bottlenecks. These challenges elevate throughput optimization from a mere engineering task to a critical strategic lever, directly influencing training time, operational cost, and the feasible scale of next-generation models. This paper synthesizes evidence from recent academic and industry innovations to analyze key advancements in training efficiency. We examine architectural solutions to dataloader bottlenecks, such as the OVERLORD framework, which has demonstrated a 4.5% improvement in end-to-end training throughput. We investigate memory optimization techniques designed to overcome the GPU memory wall, including CPU offloading strategies like DeepSpeed's ZeRO-Offload, which enable the training of models far exceeding single-accelerator capacity. Furthermore, we explore the growing importance of compiler-centric optimizations, exemplified by Triton-distributed, which enables the joint optimization of computation, memory, and communication for substantial performance gains. The analysis is contextualized by advanced profiling tools and hardware characterization studies that identify and mitigate previously overlooked overheads like Dynamic Voltage and Frequency Scaling (DVFS). Findings indicate that a holistic, system-level approach, integrating innovations across data pipelines, memory management, network fabrics, and compiler technologies, is essential for accelerating AI development, managing costs, and pushing the boundaries of model scale.",
+      "published": "2026-03-27T00:04:23Z",
+      "updated": "2026-03-27T00:04:23Z",
+      "authors": [
+        "Mayank Jha"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.11076v2",
+      "arxiv_id": "2509.11076v2",
+      "title": "SmartSwap: Swap-Based Memory Optimization for LLM Training under Varying Operator Sequences",
+      "summary": "The increasing size of large language models (LLMs) has led to a surge in memory requirements during training, often exceeding the capacity of high-bandwidth memory (HBM). Swap-based memory optimization incurs neither accuracy loss nor additional end-to-end overhead when effectively overlapped, thus being an attractive solution. However, existing swap methods assume consistent operator sequences, which is impractical in Eager Mode, where operator sequences can vary during change. We propose Chameleon, which redesigns the end-to-end process of swap-based memory optimization and is the first work to consider varying operator sequences in Eager Mode. Chameleon (i) introduces a lightweight online profiler to enable continuous profiling for monitoring operator sequences, (ii) generates effective swap policies with limited operator information, and (iii) optimizes the policy execution module for accurate policy application and better performance. Experimental results demonstrate that Chameleon reduces profiling overhead by 84.25%, enables training models up to 4x larger than hardware memory while adapting to changes in operator sequences, improves performance by up to 38.94% compared to recomputation or high-degree parallelism.",
+      "published": "2025-09-14T03:55:03Z",
+      "updated": "2026-07-15T13:51:17Z",
+      "authors": [
+        "Zibo Wang",
+        "Yuhang Zhou",
+        "Zhibin Wang",
+        "Shipeng Li",
+        "Xinjing Huang",
+        "Chendong Cai",
+        "Bingxu Mu",
+        "Yuqing Sun",
+        "Zhiheng Hu",
+        "Bin She",
+        "Shu You",
+        "Guanghuan Fang",
+        "Rong Gu",
+        "Wanchun Dou",
+        "Guihai Chen",
+        "Chen Tian"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2508.00806v2",
+      "arxiv_id": "2508.00806v2",
+      "title": "Adacc: An Adaptive Framework Unifying Compression and Activation Recomputation for LLM Training",
+      "summary": "Training large language models (LLMs) is often constrained by GPU memory limitations. To alleviate memory pressure, activation recomputation and data compression have been proposed as two major strategies. However, both approaches have limitations: recomputation introduces significant training overhead, while compression can lead to accuracy degradation and computational inefficiency when applied naively. In this paper, we propose Adacc, the first adaptive memory optimization framework that unifies activation recomputation and data compression to improve training efficiency for LLMs while preserving model accuracy. Unlike existing methods that apply static, rule-based strategies or rely solely on one technique, Adacc makes fine-grained, tensor-level decisions, dynamically selecting between recomputation, retention, and compression based on tensor characteristics and runtime hardware constraints. Adacc tackles three key challenges: (1) it introduces layer-specific compression algorithms that mitigate accuracy loss by accounting for outliers in LLM activations; (2) it employs a MILP-based scheduling policy to globally optimize memory strategies across layers; and (3) it integrates an adaptive policy evolution mechanism to update strategies during training in response to changing data distributions. Experimental results show that Adacc improves training throughput by 1.01x to 1.37x compared to state-of-the-art frameworks, while maintaining accuracy comparable to the baseline.",
+      "published": "2025-08-01T17:39:25Z",
+      "updated": "2025-08-08T09:49:52Z",
+      "authors": [
+        "Ping Chen",
+        "Zhuohong Deng",
+        "Ping Li",
+        "Shuibing He",
+        "Hongzi Zhu",
+        "Yi Zheng",
+        "Zhefeng Wang",
+        "Baoxing Huai",
+        "Minyi Guo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.08935v1",
+      "arxiv_id": "2506.08935v1",
+      "title": "Can A Gamer Train A Mathematical Reasoning Model?",
+      "summary": "While large language models (LLMs) have achieved remarkable performance in various tasks including mathematical reasoning, their development typically demands prohibitive computational resources. Recent advancements have reduced costs for training capable models, yet even these approaches rely on high-end hardware clusters. In this paper, we demonstrate that a single average gaming GPU can train a solid mathematical reasoning model, by integrating reinforcement learning and memory optimization techniques. Specifically, we train a 1.5B parameter mathematical reasoning model on RTX 3080 Ti of 16GB memory that achieves comparable or better performance on mathematical reasoning benchmarks than models several times larger, in resource-constrained environments. Our results challenge the paradigm that state-of-the-art mathematical reasoning necessitates massive infrastructure, democratizing access to high-performance AI research. https://github.com/shinandrew/YouronMath.",
+      "published": "2025-06-10T16:00:12Z",
+      "updated": "2025-06-10T16:00:12Z",
+      "authors": [
+        "Andrew Shin"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.04430v4",
+      "arxiv_id": "2506.04430v4",
+      "title": "Leveraging Coordinate Momentum in SignSGD and Muon: Memory-Optimized Zero-Order",
+      "summary": "Fine-tuning Large Language Models (LLMs) is essential for adapting pre-trained models to downstream tasks. Yet traditional first-order optimizers such as Stochastic Gradient Descent (SGD) and Adam incur prohibitive memory and computational costs that scale poorly with model size. In this paper, we investigate zero-order (ZO) optimization methods as a memory- and compute-efficient alternative, particularly in the context of parameter-efficient fine-tuning techniques like LoRA. We propose $\\texttt{JAGUAR SignSGD}$, a ZO momentum-based algorithm that extends ZO SignSGD, requiring the same number of parameters as the standard ZO SGD and only $\\mathcal{O}(1)$ function evaluations per iteration. To the best of our knowledge, this is the first study to establish rigorous convergence guarantees for SignSGD in the stochastic ZO case. We further propose $\\texttt{JAGUAR Muon}$, a novel ZO extension of the Muon optimizer that leverages the matrix structure of model parameters, and we provide its convergence rate under arbitrary stochastic noise. Through extensive experiments on challenging LLM fine-tuning benchmarks, we demonstrate that the proposed algorithms meet or exceed the convergence quality of standard first-order methods, achieving significant memory reduction. Our theoretical and empirical results establish new ZO optimization methods as a practical and theoretically grounded approach for resource-constrained LLM adaptation. Our code is available at https://github.com/brain-mmo-lab/ZO_LLM",
+      "published": "2025-06-04T20:27:17Z",
+      "updated": "2025-10-16T11:58:47Z",
+      "authors": [
+        "Egor Petrov",
+        "Grigoriy Evseev",
+        "Aleksey Antonov",
+        "Andrey Veprikov",
+        "Nikolay Bushkov",
+        "Stanislav Moiseev",
+        "Aleksandr Beznosikov"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2505.23254v4",
+      "arxiv_id": "2505.23254v4",
+      "title": "MemAscend: System Memory Optimization for SSD-Offloaded LLM Fine-Tuning",
+      "summary": "Owing to the huge success of generative artificial intelligence (AI), large language models (LLMs) have emerged as a core subclass, underpinning applications such as question answering, text generation, and code completion. While fine-tuning these models on domain-specific data can yield significant performance gains, it also poses daunting computational challenges, especially for researchers and small organizations with limited hardware resources. Although SSD offloading (i.e., ZeRO-Infinity) has emerged as a viable strategy to overcome the GPU memory barrier via leveraging both system memory (i.e., CPU DRAM) and storage space (i.e., solid-state devices, SSDs), its design primarily targets model-centric performance issues. As a result, key system-level issues, including system memory fragmentation, inefficient pinned buffer allocation, peak CPU usage spikes, and file system overhead, remain unaddressed, stifling scalability and inflating costs. Such an observation motivates this paper to introduce MemAscend, a framework that systematically tackles the underexplored system memory bottlenecks in SSD-offloaded LLM training, with a focus on resource-constrained environments. By streamlining pinned-memory allocation, eradicating fragmentation, and mitigating peak overhead, MemAscend reclaims a substantial system memory budget, enabling larger models, longer context windows, and higher batch sizes without exceeding modest hardware limits. Across diverse LLM benchmarks, MemAscend reduces peak system-memory consumption by an average of 55.7% compared with standard SSD offloading techniques, lowering the hardware barrier for fine-tuning and unlocking new possibilities for cost-effective large-scale training on limited-resource machines.",
+      "published": "2025-05-29T09:00:35Z",
+      "updated": "2026-01-31T16:12:23Z",
+      "authors": [
+        "Yong-Cheng Liaw",
+        "Shuo-Han Chen"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.19050v1",
+      "arxiv_id": "2503.19050v1",
+      "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization",
+      "summary": "Various parallelism, such as data, tensor, and pipeline parallelism, along with memory optimizations like activation checkpointing, redundancy elimination, and offloading, have been proposed to accelerate distributed training for Large Language Models. To find the best combination of these techniques, automatic distributed training systems are proposed. However, existing systems only tune a subset of optimizations, due to the lack of overlap awareness, inability to navigate the vast search space, and ignoring the inter-microbatch imbalance, leading to sub-optimal performance. To address these shortcomings, we propose Mist, a memory, overlap, and imbalance-aware automatic distributed training system that comprehensively co-optimizes all memory footprint reduction techniques alongside parallelism. Mist is based on three key ideas: (1) fine-grained overlap-centric scheduling, orchestrating optimizations in an overlapped manner, (2) symbolic-based performance analysis that predicts runtime and memory usage using symbolic expressions for fast tuning, and (3) imbalance-aware hierarchical tuning, decoupling the process into an inter-stage imbalance and overlap aware Mixed Integer Linear Programming problem and an intra-stage Dual-Objective Constrained Optimization problem, and connecting them through Pareto frontier sampling. Our evaluation results show that Mist achieves an average of 1.28$\\times$ (up to 1.73$\\times$) and 1.27$\\times$ (up to 2.04$\\times$) speedup compared to state-of-the-art manual system Megatron-LM and state-of-the-art automatic system Aceso, respectively.",
+      "published": "2025-03-24T18:21:08Z",
+      "updated": "2025-03-24T18:21:08Z",
+      "authors": [
+        "Zhanda Zhu",
+        "Christina Giannoula",
+        "Muralidhar Andoorveedu",
+        "Qidong Su",
+        "Karttikeya Mangalam",
+        "Bojian Zheng",
+        "Gennady Pekhimenko"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.01328v2",
+      "arxiv_id": "2503.01328v2",
+      "title": "PipeOffload: Improving Scalability of Pipeline Parallelism with Memory Optimization",
+      "summary": "Pipeline parallelism (PP) is widely used for training large language models (LLMs), yet its scalability is often constrained by high activation memory consumption as the number of in-flight microbatches grows with the degree of PP. In this paper, we focus on addressing this challenge by leveraging the under-explored memory offload strategy in PP. With empirical study, we discover that in the majority of standard configurations, at least half, and potentially all, of the activations can be offloaded with negligible overhead. In the cases where full overload is not possible, we introduce a novel selective offload strategy that decreases peak activation memory in a better-than-linear manner. Furthermore, we integrate memory offload with other techniques to jointly consider overall throughput and memory limitation. Our experiments proves that the per-device activation memory effectively reduces with the total number of stages, making PP a stronger alternative than TP, offering up to a 19\\% acceleration with even lower memory consumption. The implementation is open-sourced at \\href{https://github.com/sail-sg/zero-bubble-pipeline-parallelism}{this url}.",
+      "published": "2025-03-03T09:11:06Z",
+      "updated": "2025-06-30T06:37:05Z",
+      "authors": [
+        "Xinyi Wan",
+        "Penghui Qi",
+        "Guangxing Huang",
+        "Min Lin",
+        "Jialin Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.11847v2",
+      "arxiv_id": "2501.11847v2",
+      "title": "A Survey on Memory-Efficient Transformer-Based Model Training in AI for Science",
+      "summary": "Scientific research faces high costs and inefficiencies with traditional methods, but the rise of deep learning and large language models (LLMs) offers innovative solutions. This survey reviews transformer-based LLM applications across scientific fields such as biology, medicine, chemistry, and meteorology, underscoring their role in advancing research. However, the continuous expansion of model size has led to significant memory demands, hindering further development and application of LLMs for science. This survey systematically reviews and categorizes memory-efficient pre-training techniques for large-scale transformers, including algorithm-level, system-level, and hardware-software co-optimization. Using AlphaFold 2 as an example, we demonstrate how tailored memory optimization methods can reduce storage needs while preserving prediction accuracy. By bridging model efficiency and scientific application needs, we hope to provide insights for scalable and cost-effective LLM training in AI for science.",
+      "published": "2025-01-21T03:06:30Z",
+      "updated": "2025-07-29T08:51:53Z",
+      "authors": [
+        "Kaiyuan Tian",
+        "Linbo Qiao",
+        "Baihui Liu",
+        "Gongqingjian Jiang",
+        "Shanshan Li",
+        "Dongsheng Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2406.11087v5",
+      "arxiv_id": "2406.11087v5",
+      "title": "DP-MemArc: Differential Privacy Transfer Learning for Memory Efficient Language Models",
+      "summary": "Large language models have repeatedly shown outstanding performance across diverse applications. However, deploying these models can inadvertently risk user privacy. The significant memory demands during training pose a major challenge in terms of resource consumption. This substantial size places a heavy load on memory resources, raising considerable practical concerns. In this paper, we introduce DP-MemArc, a novel training framework aimed at reducing the memory costs of large language models while emphasizing the protection of user data privacy. DP-MemArc incorporates side network or reversible network designs to support a variety of differential privacy memory-efficient fine-tuning schemes. Our approach not only achieves about 2.5 times in memory optimization but also ensures robust privacy protection, keeping user data secure and confidential. Extensive experiments have demonstrated that DP-MemArc effectively provides differential privacy-efficient fine-tuning across different task scenarios.",
+      "published": "2024-06-16T22:11:41Z",
+      "updated": "2025-02-20T07:47:17Z",
+      "authors": [
+        "Yanming Liu",
+        "Xinyue Peng",
+        "Yuwei Zhang",
+        "Xiaolan Ke",
+        "Songhang Deng",
+        "Jiannan Cao",
+        "Chen Ma",
+        "Mengchen Fu",
+        "Tianyu Du",
+        "Sheng Cheng",
+        "Xun Wang",
+        "Jianwei Yin",
+        "Xuhong Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.15751v2",
+      "arxiv_id": "2402.15751v2",
+      "title": "Sparse MeZO: Less Parameters for Better Performance in Zeroth-Order LLM Fine-Tuning",
+      "summary": "While fine-tuning large language models (LLMs) for specific tasks often yields impressive results, it comes at the cost of memory inefficiency due to back-propagation in gradient-based training. Memory-efficient Zeroth-order (MeZO) optimizers, recently proposed to address this issue, only require forward passes during training, making them more memory-friendly. However, compared with exact gradients, ZO-based gradients usually exhibit an estimation error, which can significantly hurt the optimization process, leading to slower convergence and suboptimal solutions. In addition, we find that the estimation error will hurt more when adding to large weights instead of small weights. Based on this observation, this paper introduces Sparse MeZO, a novel memory-efficient zeroth-order optimization approach that applies ZO only to a carefully chosen subset of parameters. We propose a simple yet effective parameter selection scheme that yields significant performance gains with Sparse-MeZO. Additionally, we develop a memory-optimized implementation for sparse masking, ensuring the algorithm requires only inference-level memory consumption, allowing Sparse-MeZO to fine-tune LLaMA-30b on a single A100 GPU. Experimental results illustrate that Sparse-MeZO consistently improves both performance and convergence speed over MeZO without any overhead. For example, it achieves a 9\\% absolute accuracy improvement and 3.5x speedup over MeZO on the RTE task. Code is available at https://github.com/NUS-HPC-AI-Lab/SparseMeZO.",
+      "published": "2024-02-24T07:22:04Z",
+      "updated": "2026-02-16T17:54:52Z",
+      "authors": [
+        "Yong Liu",
+        "Zirui Zhu",
+        "Chaoyu Gong",
+        "Minhao Cheng",
+        "Cho-Jui Hsieh",
+        "Yang You"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.04902v6",
+      "arxiv_id": "2402.04902v6",
+      "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models",
+      "summary": "Due to the high memory and computational costs associated with large language models (LLMs), model compression techniques such as quantization, which reduces inference costs, and parameter-efficient fine-tuning (PEFT) methods like Low-Rank Adaptation (LoRA), which reduce training costs, have gained significant popularity. This trend has spurred active research into quantization-aware PEFT techniques, aimed at maintaining model accuracy while minimizing memory overhead during both inference and training. Previous quantization-aware PEFT methods typically apply post-training quantization (PTQ) to pre-trained LLMs, followed by PEFT to recover accuracy loss. Meanwhile, this approach has limitations in recovering the accuracy loss. In this paper, we propose L4Q, a method that integrates Quantization-Aware Training (QAT) with LoRA. By employing a memory-optimized layer design, L4Q significantly reduces QAT's memory overhead, making its training cost comparable to LoRA, while preserving the advantage of QAT in producing fully quantized LLMs with high accuracy. Our experiments demonstrate that this combined approach to quantization and fine-tuning achieves superior accuracy compared to decoupled fine-tuning schemes, particularly in 4-bit and 3-bit quantization, positioning L4Q as an efficient QAT solution. Using the LLaMA and Mistral models with instructional datasets, we showcase L4Q's capabilities in language tasks and few-shot learning.",
+      "published": "2024-02-07T14:35:05Z",
+      "updated": "2025-07-22T01:10:11Z",
+      "authors": [
+        "Hyesung Jeon",
+        "Yulhwa Kim",
+        "Jae-joon Kim"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.05610v3",
+      "arxiv_id": "2311.05610v3",
+      "title": "Efficient Parallelization Layouts for Large-Scale Distributed Model Training",
+      "summary": "Efficiently training large language models requires parallelizing across hundreds of hardware accelerators and invoking various compute and memory optimizations. When combined, many of these strategies have complex interactions regarding the final training efficiency. Prior work tackling this problem did not have access to the latest set of optimizations, such as FlashAttention or sequence parallelism. In this work, we conduct a comprehensive ablation study of possible training configurations for large language models. We distill this large study into several key recommendations for the most efficient training. For instance, we find that using a micro-batch size of 1 usually enables the most efficient training layouts. Larger micro-batch sizes necessitate activation checkpointing or higher degrees of model parallelism and also lead to larger pipeline bubbles. Our most efficient configurations enable us to achieve state-of-the-art training efficiency results over a range of model sizes, most notably a Model FLOPs utilization of 70.5% when training a Llama 13B model.",
+      "published": "2023-11-09T18:59:38Z",
+      "updated": "2024-09-24T15:42:51Z",
+      "authors": [
+        "Johannes Hagemann",
+        "Samuel Weinbach",
+        "Konstantin Dobler",
+        "Maximilian Schall",
+        "Gerard de Melo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10195v3",
+      "arxiv_id": "2310.10195v3",
+      "title": "AdaLomo: Low-memory Optimization with Adaptive Learning Rate",
+      "summary": "Large language models have achieved remarkable success, but their extensive parameter size necessitates substantial memory for training, thereby setting a high threshold. While the recently proposed low-memory optimization (LOMO) reduces memory footprint, its optimization technique, akin to stochastic gradient descent, is sensitive to hyper-parameters and exhibits suboptimal convergence, failing to match the performance of the prevailing optimizer for large language models, AdamW. Through empirical analysis of the Adam optimizer, we found that, compared to momentum, the adaptive learning rate is more critical for bridging the gap. Building on this insight, we introduce the low-memory optimization with adaptive learning rate (AdaLomo), which offers an adaptive learning rate for each parameter. To maintain memory efficiency, we employ non-negative matrix factorization for the second-order moment estimation in the optimizer state. Additionally, we suggest the use of a grouped update normalization to stabilize convergence. Our experiments with instruction-tuning and further pre-training demonstrate that AdaLomo achieves results on par with AdamW, while significantly reducing memory requirements, thereby lowering the hardware barrier to training large language models. The code is accessible at https://github.com/OpenLMLab/LOMO.",
+      "published": "2023-10-16T09:04:28Z",
+      "updated": "2024-06-06T13:22:25Z",
+      "authors": [
+        "Kai Lv",
+        "Hang Yan",
+        "Qipeng Guo",
+        "Haijun Lv",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09782v2",
+      "arxiv_id": "2306.09782v2",
+      "title": "Full Parameter Fine-tuning for Large Language Models with Limited Resources",
+      "summary": "Large Language Models (LLMs) have revolutionized Natural Language Processing (NLP) but demand massive GPU resources for training. Lowering the threshold for LLMs training would encourage greater participation from researchers, benefiting both academia and society. While existing approaches have focused on parameter-efficient fine-tuning, which tunes or adds a small number of parameters, few have addressed the challenge of tuning the full parameters of LLMs with limited resources. In this work, we propose a new optimizer, LOw-Memory Optimization (LOMO), which fuses the gradient computation and the parameter update in one step to reduce memory usage. By integrating LOMO with existing memory saving techniques, we reduce memory usage to 10.8% compared to the standard approach (DeepSpeed solution). Consequently, our approach enables the full parameter fine-tuning of a 65B model on a single machine with 8 RTX 3090, each with 24GB memory.Code and data are available at https://github.com/OpenLMLab/LOMO.",
+      "published": "2023-06-16T11:37:15Z",
+      "updated": "2024-06-06T13:22:26Z",
+      "authors": [
+        "Kai Lv",
+        "Yuqing Yang",
+        "Tengxiao Liu",
+        "Qinghui Gao",
+        "Qipeng Guo",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2606.25156v2",
+      "arxiv_id": "2606.25156v2",
+      "title": "ATMA: Length-Invariant Language Modeling via Polar Attention and Gated-Delta Compression Memory",
+      "summary": "Modern large language models based on softmax scaled-dot-product attention are constrained by their training sequence length: as the key-value sequence grows, softmax probability mass can dilute across a wider distribution, inducing activation shift and long-context performance collapse. Moreover, long-context language modeling faces a structural tension: a sliding-window attention core maintains a bounded local representation and low perplexity but is blind to long-range dependencies, while full-context attention preserves global recall but suffers from out-of-distribution perplexity explosion. To resolve these limitations, we introduce ATMA, a hybrid convolutional-attention architecture that integrates a novel three-channel attention mechanism. ATMA factorizes the attention mixing step into: (1) a count-blind, unit-vector direction channel, (2) a bounded magnitude channel driven by the participation ratio of effective matches over an extreme-value-corrected null sink, and (3) a long-term recurrent compression memory optimized via a gated-delta fast-weights rule. Neither the Polar Attention core nor the recurrent memory is sufficient alone; their combination enables monotonic perplexity reduction and high-fidelity long-range retrieval simultaneously. We evaluate ATMA using a 120-run factorial ablation sweep, demonstrating that the combined Polar + memory model maintains induction needle-in-a-haystack retrieval accuracy above 90% out to 64K tokens (32 times the training length of 2K) while its document perplexity improves monotonically, outperforming softmax-based memory baselines which collapse at extreme context lengths. Code: https://github.com/kreasof-ai/atma",
+      "published": "2026-06-23T20:43:51Z",
+      "updated": "2026-06-28T22:03:33Z",
+      "authors": [
+        "Habibullah Akbar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2603.26823v1",
+      "arxiv_id": "2603.26823v1",
+      "title": "Throughput Optimization as a Strategic Lever in Large-Scale AI Systems: Evidence from Dataloader and Memory Profiling Innovations",
+      "summary": "The development of large-scale foundation models, particularly Large Language Models (LLMs), is constrained by significant computational and memory bottlenecks. These challenges elevate throughput optimization from a mere engineering task to a critical strategic lever, directly influencing training time, operational cost, and the feasible scale of next-generation models. This paper synthesizes evidence from recent academic and industry innovations to analyze key advancements in training efficiency. We examine architectural solutions to dataloader bottlenecks, such as the OVERLORD framework, which has demonstrated a 4.5% improvement in end-to-end training throughput. We investigate memory optimization techniques designed to overcome the GPU memory wall, including CPU offloading strategies like DeepSpeed's ZeRO-Offload, which enable the training of models far exceeding single-accelerator capacity. Furthermore, we explore the growing importance of compiler-centric optimizations, exemplified by Triton-distributed, which enables the joint optimization of computation, memory, and communication for substantial performance gains. The analysis is contextualized by advanced profiling tools and hardware characterization studies that identify and mitigate previously overlooked overheads like Dynamic Voltage and Frequency Scaling (DVFS). Findings indicate that a holistic, system-level approach, integrating innovations across data pipelines, memory management, network fabrics, and compiler technologies, is essential for accelerating AI development, managing costs, and pushing the boundaries of model scale.",
+      "published": "2026-03-27T00:04:23Z",
+      "updated": "2026-03-27T00:04:23Z",
+      "authors": [
+        "Mayank Jha"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.11076v2",
+      "arxiv_id": "2509.11076v2",
+      "title": "SmartSwap: Swap-Based Memory Optimization for LLM Training under Varying Operator Sequences",
+      "summary": "The increasing size of large language models (LLMs) has led to a surge in memory requirements during training, often exceeding the capacity of high-bandwidth memory (HBM). Swap-based memory optimization incurs neither accuracy loss nor additional end-to-end overhead when effectively overlapped, thus being an attractive solution. However, existing swap methods assume consistent operator sequences, which is impractical in Eager Mode, where operator sequences can vary during change. We propose Chameleon, which redesigns the end-to-end process of swap-based memory optimization and is the first work to consider varying operator sequences in Eager Mode. Chameleon (i) introduces a lightweight online profiler to enable continuous profiling for monitoring operator sequences, (ii) generates effective swap policies with limited operator information, and (iii) optimizes the policy execution module for accurate policy application and better performance. Experimental results demonstrate that Chameleon reduces profiling overhead by 84.25%, enables training models up to 4x larger than hardware memory while adapting to changes in operator sequences, improves performance by up to 38.94% compared to recomputation or high-degree parallelism.",
+      "published": "2025-09-14T03:55:03Z",
+      "updated": "2026-07-15T13:51:17Z",
+      "authors": [
+        "Zibo Wang",
+        "Yuhang Zhou",
+        "Zhibin Wang",
+        "Shipeng Li",
+        "Xinjing Huang",
+        "Chendong Cai",
+        "Bingxu Mu",
+        "Yuqing Sun",
+        "Zhiheng Hu",
+        "Bin She",
+        "Shu You",
+        "Guanghuan Fang",
+        "Rong Gu",
+        "Wanchun Dou",
+        "Guihai Chen",
+        "Chen Tian"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2508.00806v2",
+      "arxiv_id": "2508.00806v2",
+      "title": "Adacc: An Adaptive Framework Unifying Compression and Activation Recomputation for LLM Training",
+      "summary": "Training large language models (LLMs) is often constrained by GPU memory limitations. To alleviate memory pressure, activation recomputation and data compression have been proposed as two major strategies. However, both approaches have limitations: recomputation introduces significant training overhead, while compression can lead to accuracy degradation and computational inefficiency when applied naively. In this paper, we propose Adacc, the first adaptive memory optimization framework that unifies activation recomputation and data compression to improve training efficiency for LLMs while preserving model accuracy. Unlike existing methods that apply static, rule-based strategies or rely solely on one technique, Adacc makes fine-grained, tensor-level decisions, dynamically selecting between recomputation, retention, and compression based on tensor characteristics and runtime hardware constraints. Adacc tackles three key challenges: (1) it introduces layer-specific compression algorithms that mitigate accuracy loss by accounting for outliers in LLM activations; (2) it employs a MILP-based scheduling policy to globally optimize memory strategies across layers; and (3) it integrates an adaptive policy evolution mechanism to update strategies during training in response to changing data distributions. Experimental results show that Adacc improves training throughput by 1.01x to 1.37x compared to state-of-the-art frameworks, while maintaining accuracy comparable to the baseline.",
+      "published": "2025-08-01T17:39:25Z",
+      "updated": "2025-08-08T09:49:52Z",
+      "authors": [
+        "Ping Chen",
+        "Zhuohong Deng",
+        "Ping Li",
+        "Shuibing He",
+        "Hongzi Zhu",
+        "Yi Zheng",
+        "Zhefeng Wang",
+        "Baoxing Huai",
+        "Minyi Guo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.08935v1",
+      "arxiv_id": "2506.08935v1",
+      "title": "Can A Gamer Train A Mathematical Reasoning Model?",
+      "summary": "While large language models (LLMs) have achieved remarkable performance in various tasks including mathematical reasoning, their development typically demands prohibitive computational resources. Recent advancements have reduced costs for training capable models, yet even these approaches rely on high-end hardware clusters. In this paper, we demonstrate that a single average gaming GPU can train a solid mathematical reasoning model, by integrating reinforcement learning and memory optimization techniques. Specifically, we train a 1.5B parameter mathematical reasoning model on RTX 3080 Ti of 16GB memory that achieves comparable or better performance on mathematical reasoning benchmarks than models several times larger, in resource-constrained environments. Our results challenge the paradigm that state-of-the-art mathematical reasoning necessitates massive infrastructure, democratizing access to high-performance AI research. https://github.com/shinandrew/YouronMath.",
+      "published": "2025-06-10T16:00:12Z",
+      "updated": "2025-06-10T16:00:12Z",
+      "authors": [
+        "Andrew Shin"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.04430v4",
+      "arxiv_id": "2506.04430v4",
+      "title": "Leveraging Coordinate Momentum in SignSGD and Muon: Memory-Optimized Zero-Order",
+      "summary": "Fine-tuning Large Language Models (LLMs) is essential for adapting pre-trained models to downstream tasks. Yet traditional first-order optimizers such as Stochastic Gradient Descent (SGD) and Adam incur prohibitive memory and computational costs that scale poorly with model size. In this paper, we investigate zero-order (ZO) optimization methods as a memory- and compute-efficient alternative, particularly in the context of parameter-efficient fine-tuning techniques like LoRA. We propose $\\texttt{JAGUAR SignSGD}$, a ZO momentum-based algorithm that extends ZO SignSGD, requiring the same number of parameters as the standard ZO SGD and only $\\mathcal{O}(1)$ function evaluations per iteration. To the best of our knowledge, this is the first study to establish rigorous convergence guarantees for SignSGD in the stochastic ZO case. We further propose $\\texttt{JAGUAR Muon}$, a novel ZO extension of the Muon optimizer that leverages the matrix structure of model parameters, and we provide its convergence rate under arbitrary stochastic noise. Through extensive experiments on challenging LLM fine-tuning benchmarks, we demonstrate that the proposed algorithms meet or exceed the convergence quality of standard first-order methods, achieving significant memory reduction. Our theoretical and empirical results establish new ZO optimization methods as a practical and theoretically grounded approach for resource-constrained LLM adaptation. Our code is available at https://github.com/brain-mmo-lab/ZO_LLM",
+      "published": "2025-06-04T20:27:17Z",
+      "updated": "2025-10-16T11:58:47Z",
+      "authors": [
+        "Egor Petrov",
+        "Grigoriy Evseev",
+        "Aleksey Antonov",
+        "Andrey Veprikov",
+        "Nikolay Bushkov",
+        "Stanislav Moiseev",
+        "Aleksandr Beznosikov"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2505.23254v4",
+      "arxiv_id": "2505.23254v4",
+      "title": "MemAscend: System Memory Optimization for SSD-Offloaded LLM Fine-Tuning",
+      "summary": "Owing to the huge success of generative artificial intelligence (AI), large language models (LLMs) have emerged as a core subclass, underpinning applications such as question answering, text generation, and code completion. While fine-tuning these models on domain-specific data can yield significant performance gains, it also poses daunting computational challenges, especially for researchers and small organizations with limited hardware resources. Although SSD offloading (i.e., ZeRO-Infinity) has emerged as a viable strategy to overcome the GPU memory barrier via leveraging both system memory (i.e., CPU DRAM) and storage space (i.e., solid-state devices, SSDs), its design primarily targets model-centric performance issues. As a result, key system-level issues, including system memory fragmentation, inefficient pinned buffer allocation, peak CPU usage spikes, and file system overhead, remain unaddressed, stifling scalability and inflating costs. Such an observation motivates this paper to introduce MemAscend, a framework that systematically tackles the underexplored system memory bottlenecks in SSD-offloaded LLM training, with a focus on resource-constrained environments. By streamlining pinned-memory allocation, eradicating fragmentation, and mitigating peak overhead, MemAscend reclaims a substantial system memory budget, enabling larger models, longer context windows, and higher batch sizes without exceeding modest hardware limits. Across diverse LLM benchmarks, MemAscend reduces peak system-memory consumption by an average of 55.7% compared with standard SSD offloading techniques, lowering the hardware barrier for fine-tuning and unlocking new possibilities for cost-effective large-scale training on limited-resource machines.",
+      "published": "2025-05-29T09:00:35Z",
+      "updated": "2026-01-31T16:12:23Z",
+      "authors": [
+        "Yong-Cheng Liaw",
+        "Shuo-Han Chen"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.19050v1",
+      "arxiv_id": "2503.19050v1",
+      "title": "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization",
+      "summary": "Various parallelism, such as data, tensor, and pipeline parallelism, along with memory optimizations like activation checkpointing, redundancy elimination, and offloading, have been proposed to accelerate distributed training for Large Language Models. To find the best combination of these techniques, automatic distributed training systems are proposed. However, existing systems only tune a subset of optimizations, due to the lack of overlap awareness, inability to navigate the vast search space, and ignoring the inter-microbatch imbalance, leading to sub-optimal performance. To address these shortcomings, we propose Mist, a memory, overlap, and imbalance-aware automatic distributed training system that comprehensively co-optimizes all memory footprint reduction techniques alongside parallelism. Mist is based on three key ideas: (1) fine-grained overlap-centric scheduling, orchestrating optimizations in an overlapped manner, (2) symbolic-based performance analysis that predicts runtime and memory usage using symbolic expressions for fast tuning, and (3) imbalance-aware hierarchical tuning, decoupling the process into an inter-stage imbalance and overlap aware Mixed Integer Linear Programming problem and an intra-stage Dual-Objective Constrained Optimization problem, and connecting them through Pareto frontier sampling. Our evaluation results show that Mist achieves an average of 1.28$\\times$ (up to 1.73$\\times$) and 1.27$\\times$ (up to 2.04$\\times$) speedup compared to state-of-the-art manual system Megatron-LM and state-of-the-art automatic system Aceso, respectively.",
+      "published": "2025-03-24T18:21:08Z",
+      "updated": "2025-03-24T18:21:08Z",
+      "authors": [
+        "Zhanda Zhu",
+        "Christina Giannoula",
+        "Muralidhar Andoorveedu",
+        "Qidong Su",
+        "Karttikeya Mangalam",
+        "Bojian Zheng",
+        "Gennady Pekhimenko"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.01328v2",
+      "arxiv_id": "2503.01328v2",
+      "title": "PipeOffload: Improving Scalability of Pipeline Parallelism with Memory Optimization",
+      "summary": "Pipeline parallelism (PP) is widely used for training large language models (LLMs), yet its scalability is often constrained by high activation memory consumption as the number of in-flight microbatches grows with the degree of PP. In this paper, we focus on addressing this challenge by leveraging the under-explored memory offload strategy in PP. With empirical study, we discover that in the majority of standard configurations, at least half, and potentially all, of the activations can be offloaded with negligible overhead. In the cases where full overload is not possible, we introduce a novel selective offload strategy that decreases peak activation memory in a better-than-linear manner. Furthermore, we integrate memory offload with other techniques to jointly consider overall throughput and memory limitation. Our experiments proves that the per-device activation memory effectively reduces with the total number of stages, making PP a stronger alternative than TP, offering up to a 19\\% acceleration with even lower memory consumption. The implementation is open-sourced at \\href{https://github.com/sail-sg/zero-bubble-pipeline-parallelism}{this url}.",
+      "published": "2025-03-03T09:11:06Z",
+      "updated": "2025-06-30T06:37:05Z",
+      "authors": [
+        "Xinyi Wan",
+        "Penghui Qi",
+        "Guangxing Huang",
+        "Min Lin",
+        "Jialin Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2501.11847v2",
+      "arxiv_id": "2501.11847v2",
+      "title": "A Survey on Memory-Efficient Transformer-Based Model Training in AI for Science",
+      "summary": "Scientific research faces high costs and inefficiencies with traditional methods, but the rise of deep learning and large language models (LLMs) offers innovative solutions. This survey reviews transformer-based LLM applications across scientific fields such as biology, medicine, chemistry, and meteorology, underscoring their role in advancing research. However, the continuous expansion of model size has led to significant memory demands, hindering further development and application of LLMs for science. This survey systematically reviews and categorizes memory-efficient pre-training techniques for large-scale transformers, including algorithm-level, system-level, and hardware-software co-optimization. Using AlphaFold 2 as an example, we demonstrate how tailored memory optimization methods can reduce storage needs while preserving prediction accuracy. By bridging model efficiency and scientific application needs, we hope to provide insights for scalable and cost-effective LLM training in AI for science.",
+      "published": "2025-01-21T03:06:30Z",
+      "updated": "2025-07-29T08:51:53Z",
+      "authors": [
+        "Kaiyuan Tian",
+        "Linbo Qiao",
+        "Baihui Liu",
+        "Gongqingjian Jiang",
+        "Shanshan Li",
+        "Dongsheng Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2406.11087v5",
+      "arxiv_id": "2406.11087v5",
+      "title": "DP-MemArc: Differential Privacy Transfer Learning for Memory Efficient Language Models",
+      "summary": "Large language models have repeatedly shown outstanding performance across diverse applications. However, deploying these models can inadvertently risk user privacy. The significant memory demands during training pose a major challenge in terms of resource consumption. This substantial size places a heavy load on memory resources, raising considerable practical concerns. In this paper, we introduce DP-MemArc, a novel training framework aimed at reducing the memory costs of large language models while emphasizing the protection of user data privacy. DP-MemArc incorporates side network or reversible network designs to support a variety of differential privacy memory-efficient fine-tuning schemes. Our approach not only achieves about 2.5 times in memory optimization but also ensures robust privacy protection, keeping user data secure and confidential. Extensive experiments have demonstrated that DP-MemArc effectively provides differential privacy-efficient fine-tuning across different task scenarios.",
+      "published": "2024-06-16T22:11:41Z",
+      "updated": "2025-02-20T07:47:17Z",
+      "authors": [
+        "Yanming Liu",
+        "Xinyue Peng",
+        "Yuwei Zhang",
+        "Xiaolan Ke",
+        "Songhang Deng",
+        "Jiannan Cao",
+        "Chen Ma",
+        "Mengchen Fu",
+        "Tianyu Du",
+        "Sheng Cheng",
+        "Xun Wang",
+        "Jianwei Yin",
+        "Xuhong Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.15751v2",
+      "arxiv_id": "2402.15751v2",
+      "title": "Sparse MeZO: Less Parameters for Better Performance in Zeroth-Order LLM Fine-Tuning",
+      "summary": "While fine-tuning large language models (LLMs) for specific tasks often yields impressive results, it comes at the cost of memory inefficiency due to back-propagation in gradient-based training. Memory-efficient Zeroth-order (MeZO) optimizers, recently proposed to address this issue, only require forward passes during training, making them more memory-friendly. However, compared with exact gradients, ZO-based gradients usually exhibit an estimation error, which can significantly hurt the optimization process, leading to slower convergence and suboptimal solutions. In addition, we find that the estimation error will hurt more when adding to large weights instead of small weights. Based on this observation, this paper introduces Sparse MeZO, a novel memory-efficient zeroth-order optimization approach that applies ZO only to a carefully chosen subset of parameters. We propose a simple yet effective parameter selection scheme that yields significant performance gains with Sparse-MeZO. Additionally, we develop a memory-optimized implementation for sparse masking, ensuring the algorithm requires only inference-level memory consumption, allowing Sparse-MeZO to fine-tune LLaMA-30b on a single A100 GPU. Experimental results illustrate that Sparse-MeZO consistently improves both performance and convergence speed over MeZO without any overhead. For example, it achieves a 9\\% absolute accuracy improvement and 3.5x speedup over MeZO on the RTE task. Code is available at https://github.com/NUS-HPC-AI-Lab/SparseMeZO.",
+      "published": "2024-02-24T07:22:04Z",
+      "updated": "2026-02-16T17:54:52Z",
+      "authors": [
+        "Yong Liu",
+        "Zirui Zhu",
+        "Chaoyu Gong",
+        "Minhao Cheng",
+        "Cho-Jui Hsieh",
+        "Yang You"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.04902v6",
+      "arxiv_id": "2402.04902v6",
+      "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models",
+      "summary": "Due to the high memory and computational costs associated with large language models (LLMs), model compression techniques such as quantization, which reduces inference costs, and parameter-efficient fine-tuning (PEFT) methods like Low-Rank Adaptation (LoRA), which reduce training costs, have gained significant popularity. This trend has spurred active research into quantization-aware PEFT techniques, aimed at maintaining model accuracy while minimizing memory overhead during both inference and training. Previous quantization-aware PEFT methods typically apply post-training quantization (PTQ) to pre-trained LLMs, followed by PEFT to recover accuracy loss. Meanwhile, this approach has limitations in recovering the accuracy loss. In this paper, we propose L4Q, a method that integrates Quantization-Aware Training (QAT) with LoRA. By employing a memory-optimized layer design, L4Q significantly reduces QAT's memory overhead, making its training cost comparable to LoRA, while preserving the advantage of QAT in producing fully quantized LLMs with high accuracy. Our experiments demonstrate that this combined approach to quantization and fine-tuning achieves superior accuracy compared to decoupled fine-tuning schemes, particularly in 4-bit and 3-bit quantization, positioning L4Q as an efficient QAT solution. Using the LLaMA and Mistral models with instructional datasets, we showcase L4Q's capabilities in language tasks and few-shot learning.",
+      "published": "2024-02-07T14:35:05Z",
+      "updated": "2025-07-22T01:10:11Z",
+      "authors": [
+        "Hyesung Jeon",
+        "Yulhwa Kim",
+        "Jae-joon Kim"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.05610v3",
+      "arxiv_id": "2311.05610v3",
+      "title": "Efficient Parallelization Layouts for Large-Scale Distributed Model Training",
+      "summary": "Efficiently training large language models requires parallelizing across hundreds of hardware accelerators and invoking various compute and memory optimizations. When combined, many of these strategies have complex interactions regarding the final training efficiency. Prior work tackling this problem did not have access to the latest set of optimizations, such as FlashAttention or sequence parallelism. In this work, we conduct a comprehensive ablation study of possible training configurations for large language models. We distill this large study into several key recommendations for the most efficient training. For instance, we find that using a micro-batch size of 1 usually enables the most efficient training layouts. Larger micro-batch sizes necessitate activation checkpointing or higher degrees of model parallelism and also lead to larger pipeline bubbles. Our most efficient configurations enable us to achieve state-of-the-art training efficiency results over a range of model sizes, most notably a Model FLOPs utilization of 70.5% when training a Llama 13B model.",
+      "published": "2023-11-09T18:59:38Z",
+      "updated": "2024-09-24T15:42:51Z",
+      "authors": [
+        "Johannes Hagemann",
+        "Samuel Weinbach",
+        "Konstantin Dobler",
+        "Maximilian Schall",
+        "Gerard de Melo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10195v3",
+      "arxiv_id": "2310.10195v3",
+      "title": "AdaLomo: Low-memory Optimization with Adaptive Learning Rate",
+      "summary": "Large language models have achieved remarkable success, but their extensive parameter size necessitates substantial memory for training, thereby setting a high threshold. While the recently proposed low-memory optimization (LOMO) reduces memory footprint, its optimization technique, akin to stochastic gradient descent, is sensitive to hyper-parameters and exhibits suboptimal convergence, failing to match the performance of the prevailing optimizer for large language models, AdamW. Through empirical analysis of the Adam optimizer, we found that, compared to momentum, the adaptive learning rate is more critical for bridging the gap. Building on this insight, we introduce the low-memory optimization with adaptive learning rate (AdaLomo), which offers an adaptive learning rate for each parameter. To maintain memory efficiency, we employ non-negative matrix factorization for the second-order moment estimation in the optimizer state. Additionally, we suggest the use of a grouped update normalization to stabilize convergence. Our experiments with instruction-tuning and further pre-training demonstrate that AdaLomo achieves results on par with AdamW, while significantly reducing memory requirements, thereby lowering the hardware barrier to training large language models. The code is accessible at https://github.com/OpenLMLab/LOMO.",
+      "published": "2023-10-16T09:04:28Z",
+      "updated": "2024-06-06T13:22:25Z",
+      "authors": [
+        "Kai Lv",
+        "Hang Yan",
+        "Qipeng Guo",
+        "Haijun Lv",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09782v2",
+      "arxiv_id": "2306.09782v2",
+      "title": "Full Parameter Fine-tuning for Large Language Models with Limited Resources",
+      "summary": "Large Language Models (LLMs) have revolutionized Natural Language Processing (NLP) but demand massive GPU resources for training. Lowering the threshold for LLMs training would encourage greater participation from researchers, benefiting both academia and society. While existing approaches have focused on parameter-efficient fine-tuning, which tunes or adds a small number of parameters, few have addressed the challenge of tuning the full parameters of LLMs with limited resources. In this work, we propose a new optimizer, LOw-Memory Optimization (LOMO), which fuses the gradient computation and the parameter update in one step to reduce memory usage. By integrating LOMO with existing memory saving techniques, we reduce memory usage to 10.8% compared to the standard approach (DeepSpeed solution). Consequently, our approach enables the full parameter fine-tuning of a 65B model on a single machine with 8 RTX 3090, each with 24GB memory.Code and data are available at https://github.com/OpenLMLab/LOMO.",
+      "published": "2023-06-16T11:37:15Z",
+      "updated": "2024-06-06T13:22:26Z",
+      "authors": [
+        "Kai Lv",
+        "Yuqing Yang",
+        "Tengxiao Liu",
+        "Qinghui Gao",
+        "Qipeng Guo",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    }
+  ],
+  "protocol_query": "\"memory optimization\" AND \"large language model\" AND training",
+  "date_window": {
+    "start": "2019-01-01",
+    "end": "2026-06-30"
+  },
+  "hit_result_cap": false
+}
