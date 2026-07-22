@@ -31,11 +31,14 @@ B1 query 2). **Confirm or correct the boundary** if needed.
 **Stopping rule applied throughout:** first 50 results by Scholar relevance ranking
 screened per query; relevant papers carried forward.
 
-**Candidate inventory:** log totals **527** carried forward. Machine-readable records are
-in `search/raw/google_scholar/google_scholar_candidates.csv` (**602** rows = 527 assigned
-to parent queries + **75 UNASSIGNED** pending a manual `parent_query` pass before Phase 3
-counts fully reconcile). Authors/venues are Scholar display truncations and must be
-verified for any paper retained in the final reference list.
+**Candidate inventory:** Machine-readable records are in
+`search/raw/google_scholar/google_scholar_candidates.csv` (**602** rows).
+A manual `parent_query` pass (2026-07-22) cleared the former **75 UNASSIGNED** rows:
+**49** mapped to protocol parents, **21** `OUT_OF_PROTOCOL` (mostly edge/mobile/wireless
+inference), **4** `NOISE_UI` (Scholar chrome), **1** `DUPLICATE` (GS0153 = GS0573).
+Protocol-mapped carried-forward total is now **576** (was 527 before the pass).
+Authors/venues remain Scholar display truncations and must be verified for any paper
+retained in the final reference list.
 
 
 ### Google Scholar — B1 query 1 — "parameter-efficient fine-tuning" AND "large language model"
@@ -49,7 +52,7 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-21 to 2026-07-22  <-- SPLIT POINT: session boundary falls inside this query. Confirm or adjust.
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 104
+- **Candidates carried forward:** 121
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B1 query 3 — "adapter" AND "transformer" AND "fine-tuning" AND efficient
@@ -63,7 +66,7 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 1
+- **Candidates carried forward:** 2
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B1 query 5 — "PEFT" AND survey
@@ -77,14 +80,14 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 71
+- **Candidates carried forward:** 83
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B2 query 2 (split into 4 sub-queries) — GPTQ/AWQ/SmoothQuant/QLoRA + quantization
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 19
+- **Candidates carried forward:** 20
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B2 query 3 — "post-training quantization" AND LLM
@@ -98,14 +101,14 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 3
+- **Candidates carried forward:** 4
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B2 query 5 — "low-bit" AND "large language model" AND survey
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 3
+- **Candidates carried forward:** 4
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B3 query 1 — "gradient checkpointing" AND training AND memory
@@ -133,7 +136,7 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 40
+- **Candidates carried forward:** 42
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B4 query 1 — "federated learning" AND "large language model"
@@ -154,7 +157,7 @@ verified for any paper retained in the final reference list.
 - **Date run:** 2026-07-22
 - **Filters:** 2019-2026, English
 - **Records screened (first 50 by relevance):** 50
-- **Candidates carried forward:** 9
+- **Candidates carried forward:** 23
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
 ### Google Scholar — B4 query 4 — "federated fine-tuning" AND heterogeneity
@@ -164,7 +167,7 @@ verified for any paper retained in the final reference list.
 - **Candidates carried forward:** 1
 - **Notes:** Relevant papers manually selected from the top 50 results by relevance.
 
-**Total candidates carried forward: 527**
+**Total candidates carried forward: 576** (protocol-mapped; excludes OUT_OF_PROTOCOL / NOISE_UI / DUPLICATE)
 
 ### IEEE Xplore — superseded by v1.2 metadata API
 - **Status:** Programmatic under protocol v1.2 (`### ieee — <block> — query N` entries below).
