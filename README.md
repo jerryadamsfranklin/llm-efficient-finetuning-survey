@@ -18,13 +18,14 @@ PeerJ Computer Science).
 | Phase | Status |
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
-| **2 — Execute searches** | In progress on `phase-2-search`. v1.0 automated discovery executed; **Protocol v1.1 amendment committed — awaiting owner confirmation before re-runs.** |
+| **2 — Execute searches** | In progress on `phase-2-search`. Protocol **v1.2** source substitution (IEEE API / OpenAlex for ACM). Google Scholar still manual. |
 | **3+** | Not started. |
 
 ### Protocol versions
 
 - **v1.0** — initial queries; raw results preserved in `search/raw_v1.0/`
 - **v1.1** — corrections after v1.0 execution evidence (`protocol/CHANGELOG.md`): fixed `B3_memory_3` parentheses, added Semantic Scholar `s2_queries`, date-slicing / stopping-rule text
+- **v1.2** — source substitution: IEEE metadata API + OpenAlex (ACM coverage); 50-cap per query; Google Scholar remains manual
 
 ### Phase 2 checklist
 
@@ -35,7 +36,11 @@ PeerJ Computer Science).
 - [x] Semantic Scholar: re-run all blocks with `s2_queries` (18/18)
 - [x] OpenReview: venue check only (no discovery re-run) → `docs/reference-corrections.md`
 - [x] Phase 2 closure corrections (reference-corrections review; B3_memory_3 residual-gap note; `protocol_version` field)
-- [ ] Manual Google Scholar / IEEE Xplore / ACM DL logging
+- [x] Protocol v1.2 amendment written and committed (before IEEE / OpenAlex / DBLP runs)
+- [ ] IEEE metadata API: 18 queries, 50-cap (`IEEE_API_KEY`)
+- [ ] OpenAlex general + ACM-filtered: 18 queries each, 50-cap
+- [ ] DBLP completeness run (adopted) or recorded as not adopted
+- [ ] Manual Google Scholar: 18 queries logged (no `TBD` remaining)
 - [ ] Deduplicated candidate pool counted
 
 ## Reproducing the search
@@ -43,15 +48,21 @@ PeerJ Computer Science).
 ```bash
 pip install -r search/scripts/requirements.txt
 
-# v1.1 re-runs (only after protocol amendment is confirmed)
-python search/scripts/search_arxiv.py            # add --slice-by-year once implemented
-python search/scripts/search_semanticscholar.py  # uses s2_queries under protocol 1.1
+# v1.1 sources (already executed on this branch)
+python search/scripts/search_arxiv.py --v11-rerun
+python search/scripts/search_semanticscholar.py
+
+# v1.2 substituted sources (after v1.2 commit; 50-cap enforced in scripts)
+python search/scripts/search_ieee.py          # requires IEEE_API_KEY
+python search/scripts/search_openalex.py      # general index
+python search/scripts/search_openalex.py --acm
+python search/scripts/search_dblp.py
 
 # Venue-upgrade check for the existing ~42 manuscript references
 python search/scripts/search_openreview.py --check-existing
 ```
 
-Optional: set `SEMANTIC_SCHOLAR_API_KEY` to raise Semantic Scholar rate limits.
+Optional env vars (via `local.env`, never commit): `SEMANTIC_SCHOLAR_API_KEY`, `IEEE_API_KEY`.
 
 Each run updates `search/search-log.md` and writes `search/raw/<source>/...`.
 

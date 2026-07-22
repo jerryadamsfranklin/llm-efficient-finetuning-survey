@@ -1,6 +1,7 @@
 # Local implementation guides (not for public companion repo)
 docs/SEARCH_PROTOCOL_AND_REPO_BUILD.md
 docs/PROTOCOL_V1.1_AMENDMENT.md
+docs/PROTOCOL_V1.2_AMENDMENT.md
 docs/PHASE2_CLOSURE_CORRECTIONS.md
 
 # Secrets — never commit API keys

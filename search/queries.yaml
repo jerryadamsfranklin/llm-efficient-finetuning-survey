@@ -1,14 +1,14 @@
 # Search queries for LLM efficient fine-tuning survey
 # Date range: 2019-01-01 to 2026-06-30
-# Protocol version: 1.1
-# Status: Locked — Protocol v1.1 amendment (post v1.0 execution evidence)
+# Protocol version: 1.2
+# Status: Locked — Protocol v1.2 source-substitution amendment
 # See protocol/CHANGELOG.md. Do not alter without a further version bump.
 
-protocol_version: "1.1"
+protocol_version: "1.2"
 
 meta:
-  protocol_version: "1.1"
-  supersedes: "1.0"
+  protocol_version: "1.2"
+  supersedes: "1.1"
   date_start: "2019-01-01"
   date_end: "2026-06-30"
   arxiv_categories:
@@ -17,7 +17,13 @@ meta:
     - cs.AI
     - cs.DC
   max_results_per_query: 200
+  # Cap for substituted / relevance-ranked sources (IEEE, OpenAlex, DBLP)
+  # and for manual Google Scholar — matches v1.0 manual stopping rule.
   manual_relevance_cap: 50
+  substituted_source_cap: 50
+  openalex_mailto: "jerry.adamsf@gmail.com"
+  # Verified against OpenAlex API at v1.2 adoption; re-check if runs fail.
+  openalex_acm_publisher_id: "P4310320503"
   date_slices:
     - "2019"
     - "2020"
@@ -28,10 +34,10 @@ meta:
     - "2025"
     - "2026-H1"
   notes: >-
-    Boolean `queries` are for arXiv and manual sources (Scholar/IEEE/ACM).
-    `s2_queries` are semantically equivalent keyword formulations for
-    Semantic Scholar (not identical strings). OpenReview discovery queries
-    are not re-run under v1.1; OpenReview is used for venue checks.
+    Boolean `queries` are for arXiv, IEEE Xplore metadata API, and Google Scholar.
+    `s2_queries` are keyword formulations for Semantic Scholar, OpenAlex, and DBLP.
+    ACM coverage is via OpenAlex (publisher filter), not the ACM DL interface.
+    OpenReview discovery queries are not re-run; OpenReview is for venue checks.
 
 blocks:
   - id: B1_peft

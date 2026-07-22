@@ -1,5 +1,37 @@
 # Protocol Changelog
 
+## v1.2 — 2026-07-22
+
+Phase 2b source-substitution amendment. Triggered because v1.0/v1.1 classified
+IEEE Xplore and ACM Digital Library as manual-only, which was partly incorrect.
+
+### Change: programmatic retrieval for IEEE and ACM coverage
+
+- **IEEE Xplore:** official Metadata Search API (`ieeexploreapi.ieee.org`) with
+  free key registration. Boolean queries, year filter, abstracts. Cap:
+  **top 50 by relevance per query** (equivalent to the manual stopping rule).
+- **ACM Digital Library:** no public search API. ACM-published works retrieved
+  via **OpenAlex** (and Crossref for DOI/venue verification), including an
+  ACM publisher-filtered OpenAlex run. Keyword `s2_queries` variants; cap 50.
+- **OpenAlex (general index):** same keyword queries and 50-cap, for broader
+  coverage beyond ACM.
+- **DBLP (optional):** CS-venue completeness check; same 50-cap. Adopted for
+  venue-string quality without expanding screening burden beyond the cap.
+- **Google Scholar:** unchanged — still manual; no scraping.
+
+### Unchanged from v1.1 / v1.0
+
+Coverage window, inclusion/exclusion, extraction schema, arXiv/S2/OpenReview
+decisions, 200-cap date-slicing for arXiv, prohibition on Scholar scraping,
+single-author non-PRISMA framing. This is a **retrieval-mechanism** change,
+not a scope change.
+
+### Sequencing
+
+v1.2 protocol text must be committed **before** IEEE / OpenAlex / DBLP runs.
+
+---
+
 ## v1.1 — 2026-07-21
 
 Triggered by execution of v1.0 (commit d7313cd). Three defects identified.

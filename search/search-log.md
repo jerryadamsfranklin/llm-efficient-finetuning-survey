@@ -2,13 +2,18 @@
 
 Human-readable record of every query run.
 
-**Protocol version:** 1.1 (amendment locked; v1.1 re-runs not yet executed)  
+**Protocol version:** 1.2 (source substitution; v1.1 automated discovery retained)  
 **Coverage window:** 2019-01-01 to 2026-06-30  
-**Status:** Protocol v1.1 re-runs in progress / completed (see entries below).
+**Status:** Protocol v1.2 — IEEE / OpenAlex / DBLP pending execution after amendment commit; Google Scholar still manual.
 
 ## Manual sources (owner-filled)
 
-Fill these after running each query in the browser. Stopping rule: first 50 by relevance.
+Google Scholar remains manual (no legitimate API). Stopping rule: first 50 by relevance.
+
+**v1.2 note:** IEEE Xplore and ACM DL are no longer manual discovery sources.
+IEEE runs via the metadata API (`search/raw/ieee/`); ACM coverage via OpenAlex
+(`search/raw/openalex_acm/`). Do not fill the legacy IEEE/ACM placeholders below
+unless falling back to manual IEEE because an API key is unavailable.
 
 ### Google Scholar — B1_peft — query 1
 - **Query:** "parameter-efficient fine-tuning" AND "large language model"
@@ -55,19 +60,13 @@ Fill these after running each query in the browser. Stopping rule: first 50 by r
 - **Candidates carried forward:** TBD
 - **Notes:**
 
-### IEEE Xplore — (blocks B1–B4)
-- **Queries:** same strings as `search/queries.yaml`
-- **Date run:** TBD
-- **Filters:** 2019–2026
-- **Results / screened / carried forward:** TBD per query
-- **Notes:** Log each query as a separate `### IEEE Xplore — <block> — query N` section when run.
+### IEEE Xplore — superseded by v1.2 metadata API
+- **Status:** Programmatic under protocol v1.2 (`### ieee — <block> — query N` entries below).
+- **Fallback:** If `IEEE_API_KEY` cannot be obtained, restore per-query manual logging here and note the fallback.
 
-### ACM Digital Library — (blocks B1–B4)
-- **Queries:** same strings as `search/queries.yaml`
-- **Date run:** TBD
-- **Filters:** 2019–2026
-- **Results / screened / carried forward:** TBD per query
-- **Notes:** Log each query as a separate `### ACM DL — <block> — query N` section when run.
+### ACM Digital Library — superseded by v1.2 OpenAlex ACM filter
+- **Status:** Programmatic under protocol v1.2 (`### openalex_acm — <block> — query N`).
+- **Notes:** Do not claim direct ACM DL interface search in the manuscript.
 
 ### Hugging Face documentation (reference source, not discovery)
 - **Pages consulted:** TBD
