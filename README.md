@@ -40,7 +40,7 @@ PeerJ Computer Science).
 - [ ] IEEE metadata API: 18 queries, 50-cap (`IEEE_API_KEY` — key pending)
 - [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
-- [ ] Manual Google Scholar: 18 queries logged (no `TBD` remaining)
+- [x] Manual Google Scholar: 18 protocol queries as 34 runs; 527 candidates logged (`search/raw/google_scholar/`)
 - [ ] Deduplicated candidate pool counted
 
 ## Reproducing the search

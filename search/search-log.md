@@ -15,50 +15,156 @@ IEEE runs via the metadata API (`search/raw/ieee/`); ACM coverage via OpenAlex
 (`search/raw/openalex_acm/`). Do not fill the legacy IEEE/ACM placeholders below
 unless falling back to manual IEEE because an API key is unavailable.
 
-### Google Scholar — B1_peft — query 1
-- **Query:** "parameter-efficient fine-tuning" AND "large language model"
-- **Date run:** TBD
-- **Filters:** 2019-2026, English
-- **Results reported by interface:** TBD
-- **Records screened (first 50 by relevance):** TBD
-- **Candidates carried forward:** TBD
-- **Notes:**
+### Google Scholar — session header note
 
-### Google Scholar — B1_peft — query 2
-- **Query:** "low-rank adaptation" AND (LoRA OR AdaLoRA OR DoRA OR VeRA)
-- **Date run:** TBD
-- **Filters:** 2019-2026, English
-- **Results reported by interface:** TBD
-- **Records screened (first 50 by relevance):** TBD
-- **Candidates carried forward:** TBD
-- **Notes:**
+> Google Scholar does not support parenthetical grouping in queries. Protocol queries
+> containing parenthetical OR-groups (B1 query 2, B2 query 2, B3 query 3, B4 query 2)
+> were split into per-term sub-queries and screened individually; candidates are
+> reported against the parent protocol query. Searches were conducted manually via the
+> Scholar web interface in accordance with its Terms of Service; no automated
+> retrieval was used. 18 protocol queries were executed as 34 individual search runs.
 
-### Google Scholar — B1_peft — query 3
-- **Query:** "adapter" AND "transformer" AND "fine-tuning" AND efficient
-- **Date run:** TBD
-- **Filters:** 2019-2026, English
-- **Results reported by interface:** TBD
-- **Records screened (first 50 by relevance):** TBD
-- **Candidates carried forward:** TBD
-- **Notes:**
+**Date assignment:** searches were run across two sessions, 2026-07-21 and 2026-07-22.
+Boundary assumed at the first ~100 candidates carried forward (session split falls inside
+B1 query 2). **Confirm or correct the boundary** if needed.
 
-### Google Scholar — B1_peft — query 4
-- **Query:** "prompt tuning" OR "prefix tuning" OR "BitFit"
-- **Date run:** TBD
-- **Filters:** 2019-2026, English
-- **Results reported by interface:** TBD
-- **Records screened (first 50 by relevance):** TBD
-- **Candidates carried forward:** TBD
-- **Notes:**
+**Stopping rule applied throughout:** first 50 results by Scholar relevance ranking
+screened per query; relevant papers carried forward.
 
-### Google Scholar — B1_peft — query 5
-- **Query:** "PEFT" AND survey
-- **Date run:** TBD
+**Candidate inventory:** log totals **527** carried forward. Machine-readable records are
+in `search/raw/google_scholar/google_scholar_candidates.csv` (**602** rows = 527 assigned
+to parent queries + **75 UNASSIGNED** pending a manual `parent_query` pass before Phase 3
+counts fully reconcile). Authors/venues are Scholar display truncations and must be
+verified for any paper retained in the final reference list.
+
+
+### Google Scholar — B1 query 1 — "parameter-efficient fine-tuning" AND "large language model"
+- **Date run:** 2026-07-21
 - **Filters:** 2019-2026, English
-- **Results reported by interface:** TBD
-- **Records screened (first 50 by relevance):** TBD
-- **Candidates carried forward:** TBD
-- **Notes:**
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 42
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B1 query 2 (split into 4 sub-queries) — "low-rank adaptation" + LoRA/AdaLoRA/DoRA/VeRA
+- **Date run:** 2026-07-21 to 2026-07-22  <-- SPLIT POINT: session boundary falls inside this query. Confirm or adjust.
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 104
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B1 query 3 — "adapter" AND "transformer" AND "fine-tuning" AND efficient
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 3
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B1 query 4 — "prompt tuning" OR "prefix tuning" OR "BitFit"
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 1
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B1 query 5 — "PEFT" AND survey
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 40
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B2 query 1 — "quantization" AND "large language model" AND "fine-tuning"
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 71
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B2 query 2 (split into 4 sub-queries) — GPTQ/AWQ/SmoothQuant/QLoRA + quantization
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 19
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B2 query 3 — "post-training quantization" AND LLM
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 16
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B2 query 4 — "quantization-aware training" AND transformer
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 3
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B2 query 5 — "low-bit" AND "large language model" AND survey
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 3
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B3 query 1 — "gradient checkpointing" AND training AND memory
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 40
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B3 query 2 — "FlashAttention" OR "memory-efficient attention"
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 40
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B3 query 3 (split into 6 sub-queries) — ZeRO/DeepSpeed/offloading + model training/LLM
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 65
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B3 query 4 — "memory optimization" AND "large language model" AND training
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 40
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B4 query 1 — "federated learning" AND "large language model"
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 11
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B4 query 2 (split into 2 sub-queries) — federated + LoRA/parameter-efficient
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 19
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B4 query 3 — "distributed training" AND "language model" AND communication
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 9
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+### Google Scholar — B4 query 4 — "federated fine-tuning" AND heterogeneity
+- **Date run:** 2026-07-22
+- **Filters:** 2019-2026, English
+- **Records screened (first 50 by relevance):** 50
+- **Candidates carried forward:** 1
+- **Notes:** Relevant papers manually selected from the top 50 results by relevance.
+
+**Total candidates carried forward: 527**
 
 ### IEEE Xplore — superseded by v1.2 metadata API
 - **Status:** Programmatic under protocol v1.2 (`### ieee — <block> — query N` entries below).
@@ -1534,3 +1640,10 @@ and in Section 10.4 (Limitations).
 - **Date run:** 2026-07-22T16:04:01Z
 - **Results returned:** 0
 - **Notes:** protocol=1.2; 9/18 s2_queries returned total=0 from DBLP after retry — treated as genuine DBLP keyword misses (strict matching), not silent skips; cap h=50 still applied on non-empty queries
+
+### ieee — AUTH — query 0
+- **Query:** (blocked)
+- **Date run:** (see latest attempt)
+- **Results returned:** 0
+- **Notes:** BLOCKED — IEEE API 403 Developer Inactive. Key is present in local.env but the developer account/product is not activated on developer.ieee.org. Activate Metadata API access for the key, then re-run search_ieee.py. If activation is denied, fall back to manual IEEE search per protocol v1.2.
+
