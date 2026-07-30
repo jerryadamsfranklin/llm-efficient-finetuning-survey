@@ -1645,8 +1645,115 @@ and in Section 10.4 (Limitations).
 - **Notes:** protocol=1.2; 9/18 s2_queries returned total=0 from DBLP after retry — treated as genuine DBLP keyword misses (strict matching), not silent skips; cap h=50 still applied on non-empty queries
 
 ### ieee — AUTH — query 0
-- **Query:** (blocked)
-- **Date run:** (see latest attempt)
+- **Query:** (resolved)
+- **Date run:** 2026-07-30
 - **Results returned:** 0
-- **Notes:** BLOCKED — IEEE API 403 Developer Inactive. Key is present in local.env but the developer account/product is not activated on developer.ieee.org. Activate Metadata API access for the key, then re-run search_ieee.py. If activation is denied, fall back to manual IEEE search per protocol v1.2.
+- **Notes:** Previously blocked (Developer Inactive). Key approved/active as of 2026-07-30; full 18-query run completed under `### ieee — <block> — query N` entries. max_records=50 enforced at request time.
 
+### ieee — B1_peft — query 1
+- **Query:** "parameter-efficient fine-tuning" AND "large language model"
+- **Date run:** 2026-07-30T18:10:17Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=116; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B1_peft — query 2
+- **Query:** "low-rank adaptation" AND (LoRA OR AdaLoRA OR DoRA OR VeRA)
+- **Date run:** 2026-07-30T18:10:20Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=1035; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B1_peft — query 3
+- **Query:** "adapter" AND "transformer" AND "fine-tuning" AND efficient
+- **Date run:** 2026-07-30T18:10:21Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=215; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B1_peft — query 4
+- **Query:** "prompt tuning" OR "prefix tuning" OR "BitFit"
+- **Date run:** 2026-07-30T18:10:23Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=732; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B1_peft — query 5
+- **Query:** "PEFT" AND survey
+- **Date run:** 2026-07-30T18:10:25Z
+- **Results returned:** 12
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=12; sort_field=relevance requested
+
+### ieee — B2_quantization — query 1
+- **Query:** "quantization" AND "large language model" AND "fine-tuning"
+- **Date run:** 2026-07-30T18:10:26Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=58; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B2_quantization — query 2
+- **Query:** (GPTQ OR AWQ OR SmoothQuant OR QLoRA) AND quantization
+- **Date run:** 2026-07-30T18:10:28Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=86; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B2_quantization — query 3
+- **Query:** "post-training quantization" AND LLM
+- **Date run:** 2026-07-30T18:10:30Z
+- **Results returned:** 25
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=25; sort_field=relevance requested
+
+### ieee — B2_quantization — query 4
+- **Query:** "quantization-aware training" AND transformer
+- **Date run:** 2026-07-30T18:10:32Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=65; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B2_quantization — query 5
+- **Query:** "low-bit" AND "large language model" AND survey
+- **Date run:** 2026-07-30T18:10:33Z
+- **Results returned:** 1
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=1; sort_field=relevance requested
+
+### ieee — B3_memory — query 1
+- **Query:** "gradient checkpointing" AND training AND memory
+- **Date run:** 2026-07-30T18:10:34Z
+- **Results returned:** 12
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=12; sort_field=relevance requested
+
+### ieee — B3_memory — query 2
+- **Query:** "FlashAttention" OR "memory-efficient attention"
+- **Date run:** 2026-07-30T18:10:36Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=52; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B3_memory — query 3
+- **Query:** ("ZeRO" OR "DeepSpeed" OR "offloading") AND ("model training" OR "large language model")
+- **Date run:** 2026-07-30T18:10:38Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=1673; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B3_memory — query 4
+- **Query:** "memory optimization" AND "large language model" AND training
+- **Date run:** 2026-07-30T18:10:39Z
+- **Results returned:** 5
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=5; sort_field=relevance requested
+
+### ieee — B4_federated — query 1
+- **Query:** "federated learning" AND "large language model"
+- **Date run:** 2026-07-30T18:10:41Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=236; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B4_federated — query 2
+- **Query:** "federated" AND (LoRA OR "parameter-efficient")
+- **Date run:** 2026-07-30T18:10:43Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=333; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B4_federated — query 3
+- **Query:** "distributed training" AND "language model" AND communication
+- **Date run:** 2026-07-30T18:10:45Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=68; sort_field=relevance requested; HIT_CAP=50
+
+### ieee — B4_federated — query 4
+- **Query:** "federated fine-tuning" AND heterogeneity
+- **Date run:** 2026-07-30T18:10:47Z
+- **Results returned:** 50
+- **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=50; sort_field=relevance requested; HIT_CAP=50

@@ -36,6 +36,21 @@ CAP = 50
 INTER_REQUEST_SEC = 1.0
 
 
+def _redact(text: str, api_key: str) -> str:
+    out = text
+    if api_key:
+        out = out.replace(api_key, "REDACTED")
+    return out
+
+
+def _safe_exc(exc: BaseException, api_key: str) -> str:
+    return _redact(str(exc), api_key)
+
+
+class IeeeAuthError(RuntimeError):
+    """API key present but developer account / product not activated."""
+
+
 def fetch_ieee(
     query: str,
     *,
@@ -68,7 +83,7 @@ def fetch_ieee(
                 resp = session.get(IEEE_API, params=params, timeout=60)
             except requests.RequestException as exc:
                 wait = min(30, 3 * (attempt + 1))
-                print(f"  network error ({exc}); sleep {wait}s", flush=True)
+                print(f"  network error ({_safe_exc(exc, api_key)}); sleep {wait}s", flush=True)
                 time.sleep(wait)
                 continue
             if resp.status_code == 429:
@@ -82,7 +97,14 @@ def fetch_ieee(
                 time.sleep(wait)
                 continue
             if resp.status_code >= 400:
-                body = (resp.text or "")[:300]
+                body = _redact((resp.text or "")[:300], api_key)
+                if "Developer Inactive" in body or resp.status_code == 403:
+                    raise IeeeAuthError(
+                        "IEEE API returned 403 Developer Inactive. On developer.ieee.org: "
+                        "confirm your account is active, subscribe/approve the Metadata API "
+                        "product for this key, then re-run. If activation is denied, fall back "
+                        "to manual IEEE search per protocol v1.2."
+                    )
                 if sort_attempt == "relevance":
                     sort_notes.append(
                         "sort_field=relevance rejected by API; retrying without sort_field "
@@ -90,7 +112,7 @@ def fetch_ieee(
                     )
                     print(f"  {sort_notes[-1]}: {body}", flush=True)
                     break
-                resp.raise_for_status()
+                raise RuntimeError(f"IEEE HTTP {resp.status_code}: {body}")
             data = resp.json()
             if sort_attempt:
                 sort_notes.append("sort_field=relevance requested")
@@ -201,15 +223,26 @@ def main() -> int:
             payload["articles"] = (payload.get("articles") or [])[:cap]
             payload["returned"] = len(payload["articles"])
             payload["hit_result_cap"] = payload["returned"] >= cap
+        except IeeeAuthError as exc:
+            print(f"  AUTH ERROR: {exc}", flush=True)
+            append_search_log(
+                source="ieee",
+                block_id="AUTH",
+                query_index=0,
+                query="(blocked)",
+                n_results=0,
+                notes=str(exc),
+            )
+            return 3
         except (requests.RequestException, RuntimeError, ValueError) as exc:
-            print(f"  ERROR: {exc}", flush=True)
+            print(f"  ERROR: {_safe_exc(exc, api_key)}", flush=True)
             append_search_log(
                 source="ieee",
                 block_id=block_id,
                 query_index=q_idx,
                 query=query,
                 n_results=0,
-                notes=f"Request failed: {exc}",
+                notes=f"Request failed: {_safe_exc(exc, api_key)}",
             )
             time.sleep(INTER_REQUEST_SEC)
             continue

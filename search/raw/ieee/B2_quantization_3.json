@@ -1,0 +1,4006 @@
+{
+  "source": "ieee",
+  "api": "https://ieeexploreapi.ieee.org/api/v1/search/articles",
+  "protocol_version": "1.2",
+  "query": "\"post-training quantization\" AND LLM",
+  "query_form": "boolean",
+  "start_year": 2019,
+  "end_year": 2026,
+  "max_records_requested": 50,
+  "cap_enforced_at_request": true,
+  "sort_notes": [
+    "sort_field=relevance requested"
+  ],
+  "request_params_sans_key": {
+    "querytext": "\"post-training quantization\" AND LLM",
+    "start_year": 2019,
+    "end_year": 2026,
+    "max_records": 50,
+    "start_record": 1,
+    "format": "json",
+    "sort_field": "relevance"
+  },
+  "fetched_at": "2026-07-30T18:10:30Z",
+  "total_results_reported": 25,
+  "returned": 25,
+  "hit_result_cap": false,
+  "articles": [
+    {
+      "doi": "10.1109/ICCT-Pacific69083.2026.11518957",
+      "title": "Comprehensive Evaluation of Adapter-Based Fine-Tuning and Post-Training Quantization for LLM Deployment",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-5968-7",
+      "rank": 1,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Faculty of Software and Information Science, Iwate Prefectural University, Takizawa, Iwate, Japan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37597150300",
+            "id": 37597150300,
+            "full_name": "Hirokazu Madokoro",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Software and Information Science, Iwate Prefectural University, Takizawa, Iwate, Japan"
+              ]
+            }
+          },
+          {
+            "affiliation": "Faculty of Software and Information Science, Iwate Prefectural University, Takizawa, Iwate, Japan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089212210",
+            "id": 37089212210,
+            "full_name": "Stephanie Nix",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Software and Information Science, Iwate Prefectural University, Takizawa, Iwate, Japan"
+              ]
+            }
+          },
+          {
+            "affiliation": "Defios Inc., Takizawa, Iwate, Japan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089853249",
+            "id": 37089853249,
+            "full_name": "Taiki Kondo",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Defios Inc., Takizawa, Iwate, Japan"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large language models (LLMs) have achieved remarkable performance across diverse tasks but remain computationally intensive, limiting their deployment on generalpurpose computing environments. This study investigates model compression techniques, specifically adapter-based fine-tuning and post-training quantization, to enable efficient operation of LLMs under resource constraints. Using the Meta Llama 3.18B Instruct model as a baseline, we evaluate two adapter methods, LoRA and QLoRA, and two quantization techniques, GPTQ and AWQ. Benchmarking on MMLU and JMMLU datasets reveals that QLoRA achieves the highest accuracy among compressed configurations, while GPTQ applied after LoRA maintains performance with reduced model size. Our findings indicate that combining adapter-based fine-tuning with posttraining quantization reduces model size and memory requirements while maintaining competitive accuracy. Although direct measurements of inference speed and power consumption are outside the scope of this study, the observed reduction in model complexity suggests potential applicability to environments with limited computational resources such as general-purpose lowpower devices.",
+      "article_number": "11518957",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11518957",
+      "html_url": "https://ieeexplore.ieee.org/document/11518957/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11518957/",
+      "publication_title": "2026 IEEE 2nd International Conference on Consumer Technology (ICCT-Pacific)",
+      "conference_location": "Yoshida, Yamaguchi-shi, Japan",
+      "conference_dates": "28-30 March 2026",
+      "publication_number": 11518556,
+      "is_number": 11517526,
+      "publication_year": 2026,
+      "publication_date": "28-30 March 2026",
+      "start_page": "486",
+      "end_page": "489",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260521",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Quantization (signal)",
+            "Printing",
+            "LoRa",
+            "Accuracy",
+            "Large language models",
+            "Surveys",
+            "Training",
+            "Tuning",
+            "Transformers"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Small Language Models",
+            "Adapter-Based FineTuning",
+            "Post-Training Quantization",
+            "Benchmarking"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Post-training Quantization",
+            "Power Consumption",
+            "Language Model",
+            "Quantification Techniques",
+            "Limited Computational Resources",
+            "Reduce Model Complexity",
+            "General-purpose Computer",
+            "Long Short-term Memory",
+            "LSTM",
+            "Recurrent Neural Network",
+            "Benchmark Datasets",
+            "Feed-forward Network",
+            "Feedforward Neural Network",
+            "Number Of Heads",
+            "Bit-width",
+            "Quantization Bits"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-5968-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-5967-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICIICS67880.2026.11483623",
+      "title": "Practical Implementation and Assessment of Post-Training Quantization Methods for Large Language Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8397-2",
+      "rank": 2,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Aigenthix Technologies Pvt. Ltd, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/226350850730064",
+            "id": 226350850730064,
+            "full_name": "Avinash. H M",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Aigenthix Technologies Pvt. Ltd, Bengaluru, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science and Engineering, Dr. Ambedkar Institue of Technology, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/176494548769238",
+            "id": 176494548769238,
+            "full_name": "Aditi Singarajipura",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science and Engineering, Dr. Ambedkar Institue of Technology, Bengaluru, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Infocion Inc, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085351124",
+            "id": 37085351124,
+            "full_name": "Pethuru Raj",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Infocion Inc, Bengaluru, India"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large language models (LLMs) require substantial memory and computational resources, limiting deployment on resource-constrained devices. This paper evaluates post-training quantization methods including SINQ, AWQ, GPTQ, GGUF, and LLM.int8() across different model architectures. We apply SINQ to Qwen3-8B achieving 62% memory reduction with 7.58 second quantization time. Experiments on LLaMA-3.2- 1B reveal GGUF variants optimize inference latency with 3-7 x speedup, while AWQ balances compression with quality preservation. Comparison of GPTQ with LLM.int8() on GPT-2 shows mixed-precision advantages at smaller scales. SINQ demonstrates exceptional speed processing 8 billion parameters in under 8 seconds. Through hands-on implementation experience, we document practical challenges including memory management, calibration requirements, and model-specific optimization needs. These findings provide actionable guidance for practitioners selecting quantization strategies based on deployment constraints.",
+      "article_number": "11483623",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11483623",
+      "html_url": "https://ieeexplore.ieee.org/document/11483623/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11483623/",
+      "publication_title": "2026 3rd International Conference on Integrated Intelligence and Communication Systems (ICIICS)",
+      "conference_location": "Kalaburagi, India",
+      "conference_dates": "20-21 Feb. 2026",
+      "publication_number": 11539010,
+      "is_number": 11483351,
+      "publication_year": 2026,
+      "publication_date": "20-21 Feb. 2026",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260611",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Adaptation models",
+            "Quantization (signal)",
+            "Systematics",
+            "Limiting",
+            "Large language models",
+            "Memory management",
+            "Transformers",
+            "Quality assessment",
+            "Model compression",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "large language models",
+            "post-training quantization",
+            "model compression",
+            "SINQ",
+            "practical deployment",
+            "AWQ",
+            "GPTQ",
+            "GGUF",
+            "int8"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Quantification Method",
+            "Large Language Models",
+            "Post-training Quantization",
+            "Post-training Quantization Methods",
+            "Small Scale",
+            "Model Architecture",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Preservation Of Quality",
+            "Memory Reduction",
+            "Memory Management",
+            "Canonical Quantization",
+            "Second-quantized",
+            "Model Selection",
+            "Evaluation System",
+            "Rating System",
+            "Yield Quality",
+            "Output Quality",
+            "Yield Characteristics",
+            "Specific Constraints",
+            "Caching",
+            "Quantification Techniques",
+            "GPU Memory",
+            "Memory Efficiency",
+            "Deployment Scenarios",
+            "Inference Performance",
+            "Deployment Model",
+            "Second-order Information",
+            "Software Requirements",
+            "Calibration Dataset",
+            "Diverse Tasks",
+            "Face Significant Challenges"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8397-2",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8396-5",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/DSAA65442.2025.11247985",
+      "title": "Small and Fast LLMs on Commodity Hardware: Post-Training Quantization in llama. cpp",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-1180-7",
+      "issn": "2472-1573",
+      "rank": 3,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "University of Bonn, Bonn, Germany",
+            "authorUrl": "https://ieeexplore.ieee.org/author/632207899043360",
+            "id": 632207899043360,
+            "full_name": "Lorenz Sparrenberg",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Bonn, Bonn, Germany"
+              ]
+            }
+          },
+          {
+            "affiliation": "University of Bonn, Bonn, Germany",
+            "authorUrl": "https://ieeexplore.ieee.org/author/967530116286413",
+            "id": 967530116286413,
+            "full_name": "Tobias Deußer",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Bonn, Bonn, Germany",
+                "Fraunhofer IAIS, Sankt Augustin, Germany"
+              ]
+            }
+          },
+          {
+            "affiliation": "University of Bonn, Bonn, Germany",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088530307",
+            "id": 37088530307,
+            "full_name": "Armin Berger",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Bonn, Bonn, Germany",
+                "Fraunhofer IAIS, Sankt Augustin, Germany"
+              ]
+            }
+          },
+          {
+            "affiliation": "University of Bonn, Bonn, Germany",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38528500100",
+            "id": 38528500100,
+            "full_name": "Rafet Sifa",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Bonn, Bonn, Germany",
+                "Fraunhofer IAIS, Sankt Augustin, Germany"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities but their significant computational and memory demands hinder widespread deployment, especially on resource-constrained devices. Quantization, the process of reducing the numerical precision of model parameters, has emerged as a critical technique for compressing LLMs and accelerating inference. This paper provides an overview of LLM quantization, with a particular focus on the Post-Training Quantization (PTQ) methods implemented within the popular llama. cpp framework and its GGUF file format. We begin by covering quantization fundamentals, including the distinction between PTQ and Quantization-Aware Training (QAT). We then describe the specific PTQ schemes employed by llama. cpp, including legacy methods, advanced K-quants, and recent IQ-quants, along with their underlying mathematical principles. The paper also discusses the impact of these techniques on model fidelity, hardware requirements, inference speed, and traces the adoption of GGUF as a de facto standard in the open-source community. This work serves as a practical guide and comprehensive reference for researchers aiming to deploy LLMs on resource-constrained hardware. By systematically documenting and comparing the PTQ methods within llama. cpp, we provide the necessary insights to navigate the trade-offs between model fidelity, inference speed, and memory footprint. This enables informed decision-making for real-world applications, from local CPU-based inference to efficient edge deployment.",
+      "article_number": "11247985",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11247985",
+      "html_url": "https://ieeexplore.ieee.org/document/11247985/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11247985/",
+      "publication_title": "2025 IEEE 12th International Conference on Data Science and Advanced Analytics (DSAA)",
+      "conference_location": "Birmingham, United Kingdom",
+      "conference_dates": "9-12 Oct. 2025",
+      "publication_number": 11247920,
+      "is_number": 11247921,
+      "publication_year": 2025,
+      "publication_date": "9-12 Oct. 2025",
+      "start_page": "1",
+      "end_page": "10",
+      "citing_paper_count": 5,
+      "citing_patent_count": 0,
+      "download_count": 178,
+      "insert_date": "20251124",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Surveys",
+            "Technological innovation",
+            "Quantization (signal)",
+            "Large language models",
+            "Computational modeling",
+            "Data science",
+            "Hardware",
+            "Mathematical models",
+            "Standards"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models",
+            "LLM",
+            "Quantization",
+            "Model Compression",
+            "Post-Training Quantization",
+            "llama. cpp",
+            "GGUF",
+            "K-quants",
+            "Inference Efficiency"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Post-training Quantization",
+            "Quantification Method",
+            "Model Inference",
+            "Language Model",
+            "Memory Footprint",
+            "Inference Speed",
+            "Model Fidelity",
+            "Open-source Community",
+            "Open Source Movement",
+            "Efficient Deployment",
+            "Scaling Factor",
+            "Codebook",
+            "List Of Codes",
+            "Model Size",
+            "Bitrate",
+            "Patient Privacy",
+            "Quantization Parameter",
+            "Perplexity",
+            "Standard Benchmark",
+            "Quantification Techniques",
+            "Quantification Model",
+            "Amount Of Models",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Memory Bandwidth",
+            "Kernel Computation",
+            "Kernel Calculation"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-1180-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-1179-1",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/TCAD.2026.3697679",
+      "title": "APTQ+: Attention-FFN-aware Post-Training Quantization for a Layer-wise LLM Accelerator on FPGA",
+      "publisher": "IEEE",
+      "issue": "99",
+      "issn": "1937-4151",
+      "rank": 4,
+      "volume": "PP",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088913222",
+            "id": 37088913222,
+            "full_name": "Ziyi Guan",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/374753690471912",
+            "id": 374753690471912,
+            "full_name": "Zhengfei Chen",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/721170555165336",
+            "id": 721170555165336,
+            "full_name": "Dongkuan Wu",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089856975",
+            "id": 37089856975,
+            "full_name": "Ao Shen",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089688308",
+            "id": 37089688308,
+            "full_name": "Yifan Guo",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087456518",
+            "id": 37087456518,
+            "full_name": "Yupeng Su",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37279686200",
+            "id": 37279686200,
+            "full_name": "Graziano Chesi",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088595359",
+            "id": 37088595359,
+            "full_name": "Mingqiang Huang",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37274346000",
+            "id": 37274346000,
+            "full_name": "Ngai Wong",
+            "author_order": 9,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37275013000",
+            "id": 37275013000,
+            "full_name": "Hao Yu",
+            "author_order": 10,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Microelectronics, Southern University of Science and Technology, Shenzhen, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Early Access Articles",
+      "abstract": "Large Language Models (LLMs) deliver impressive performance in NLP, but their enormous parameter counts and computational costs pose severe challenges for deployment on resource-limited or specialized hardware. In this work, we propose APTQ+, an Attention-FFN-aware Post-Training Quantization framework that leverages second-order Hessian information to optimize both the self-attention and feed-forward network (FFN) sub-layers of transformers, including those with Softmax and SwiGLU activation. APTQ+ enables accurate, hardware-friendly 4-bit quantization via a symmetric INT4 scheme (with per-tensor scaling), and is co-designed with an end-to-end compiler for seamless FPGA deployment. Additionally, we introduce an integrated toolchain that combines algorithms, evaluation, compilation, and deployment. We demonstrate 4-bit inference on real LLMs (LLaMA-2 7B, LLaMA-3 8B, Qwen2, etc.) with negligible accuracy loss: for example, APTQ+ yields a WikiText-2 perplexity of 5.66 on LLaMA-2 7B (vs. 5.53 in FP16) and a mean zero-shot accuracy of 72.27% on a LLaMA-3 8B model (vs. 72.83% FP16). Moreover, APTQ+ outperforms prior 4-bit methods (e.g., GPTQ and AWQ) in both perplexity and zero-shot evaluations. Our FPGA-based accelerator delivers up to ×3.29 higher energy efficiency than an NVIDIA A100 GPU while achieving comparable throughput and latency. To the best of our knowledge, this represents the first-of-its-kind end-to-end INT4 FPGA realization of an LLM, establishing a new state-of-the-art for low-bit deployment. A reference implementation is publicly available at https://github.com/EasonGZY/AutoAPTQ.",
+      "article_number": "11536074",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11536074",
+      "html_url": "https://ieeexplore.ieee.org/document/11536074/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11536074/",
+      "publication_title": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "publication_number": 43,
+      "is_number": 6917053,
+      "publication_year": 2026,
+      "start_page": "1",
+      "end_page": "1",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260527",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Field programmable gate arrays",
+            "Modeling",
+            "Hardware",
+            "Large language models",
+            "Accuracy",
+            "Matrices",
+            "Optimization",
+            "Program processors",
+            "Training"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models",
+            "quantization",
+            "global optimization",
+            "feed-forward network",
+            "hardware accelerator",
+            "compiler",
+            "toolchain",
+            "software-hardware co-design"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Post-training Quantization",
+            "Throughput",
+            "Energy Efficiency",
+            "Softmax",
+            "Feed-forward Network",
+            "Feedforward Neural Network",
+            "High Energy Efficiency",
+            "Perplexity",
+            "Specific Hardware",
+            "Symmetric Scheme",
+            "Sparsity",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Per Cycle",
+            "Average Precision",
+            "Quantization Error",
+            "Amount Of Error",
+            "Hessian Matrix",
+            "Hessian Matrices",
+            "Attention Layer",
+            "Clock Frequency",
+            "Quantification Model",
+            "Amount Of Models",
+            "Clock Cycles",
+            "Transformer Block",
+            "Quantification Algorithm",
+            "Real Hardware",
+            "Hardware Architecture",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Datapath",
+            "GPU Computation",
+            "GPGPU",
+            "General-purpose GPUs",
+            "Hardware Accelerators",
+            "Activation Gate",
+            "Calibration Dataset"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2025.3568702",
+      "title": "Addressing Activation Outliers in LLMs: A Systematic Review of Post-Training Quantization Techniques",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 5,
+      "volume": "13",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Doctoral School of Applied Informatics and Applied Mathematics, Óbuda University, Budapest, Hungary",
+            "authorUrl": "https://ieeexplore.ieee.org/author/679704802670779",
+            "id": 679704802670779,
+            "full_name": "Patrik Czakó",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Doctoral School of Applied Informatics and Applied Mathematics, Óbuda University, Budapest, Hungary"
+              ]
+            }
+          },
+          {
+            "affiliation": "John von Neumann Faculty of Informatics, Óbuda University, Budapest, Hungary",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085579024",
+            "id": 37085579024,
+            "full_name": "Gábor Kertész",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "John von Neumann Faculty of Informatics, Óbuda University, Budapest, Hungary",
+                "Laboratory of Parallel and Distributed Systems, Institute for Computer Science and Control (SZTAKI), Hungarian Research Network (HUN-REN), Budapest, Hungary"
+              ]
+            }
+          },
+          {
+            "affiliation": "John von Neumann Faculty of Informatics, Óbuda University, Budapest, Hungary",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37892083100",
+            "id": 37892083100,
+            "full_name": "Sándor Szénási",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "John von Neumann Faculty of Informatics, Óbuda University, Budapest, Hungary",
+                "Faculty of Economics and Informatics, J. Selye University, Komárno, Slovakia"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "Large Language Models (LLMs) have transformed natural language processing, yet their deployment remains challenging due to substantial computational, memory, and energy demands. Post-training quantization has emerged as a key strategy for enabling efficient inference, particularly in resource-constrained settings. This systematic review focuses on weight-activation quantization, with a unique emphasis on the emergent outlier phenomenon in LLM activations. This work evaluates recent techniques that mitigate activation outliers and improve quantization efficiency, distinguishing itself from prior reviews. Using the PRISMA methodology, we examine 52 recent studies to uncover key trends and evaluate the effectiveness of different approaches. By synthesizing insights from these works, this review presents a diverse set of techniques and their implications for activation quantization, laying the groundwork for future research and practical advancements in LLM deployment.",
+      "article_number": "10994764",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10994764",
+      "html_url": "https://ieeexplore.ieee.org/document/10994764/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10994764/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 10820123,
+      "publication_year": 2025,
+      "publication_date": "2025",
+      "start_page": "81917",
+      "end_page": "81932",
+      "citing_paper_count": 3,
+      "citing_patent_count": 0,
+      "download_count": 2558,
+      "insert_date": "20250509",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Computational modeling",
+            "Throughput",
+            "Arithmetic",
+            "Decoding",
+            "Adaptation models",
+            "Transformers",
+            "Systematics",
+            "Systematic literature review",
+            "Large language models"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Activation outliers",
+            "efficient inference",
+            "large language models (LLMs)",
+            "model compression",
+            "quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Quantification Techniques",
+            "Large Language Models",
+            "Post-training Quantization",
+            "Language Model",
+            "Recent Techniques",
+            "Factorization",
+            "Scaling Factor",
+            "Output Layer",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Singular Value",
+            "Singular Value Decomposition",
+            "Matrix Multiplication",
+            "Multiple Matrices",
+            "Matrix-vector Multiplication",
+            "Multiple Matrix",
+            "Feed-forward Network",
+            "Feedforward Neural Network",
+            "Quantization Error",
+            "Amount Of Error",
+            "Accuracy Loss",
+            "Affine Transformation",
+            "Computational Overhead",
+            "Linear Layer",
+            "Perplexity",
+            "Greedy Search Algorithm",
+            "Smoothing Factor",
+            "Group Of Channels",
+            "Vector Quantization",
+            "Largest Absolute Value",
+            "High Precision",
+            "Quantization Parameter",
+            "Transformation Matrix",
+            "Transformation Matrices",
+            "Level Of Precision",
+            "Precise Level",
+            "Relevant Papers"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/TCSI.2025.3547732",
+      "title": "OFQ-LLM: Outlier-Flexing Quantization for Efficient Low-Bit Large Language Model Acceleration",
+      "publisher": "IEEE",
+      "issue": "8",
+      "issn": "1558-0806",
+      "rank": 6,
+      "volume": "72",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089960312",
+            "id": 37089960312,
+            "full_name": "Gang Wang",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089790815",
+            "id": 37089790815,
+            "full_name": "Siqi Cai",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Computer Science, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086380730",
+            "id": 37086380730,
+            "full_name": "Wenjie Li",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Computer Science, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089958502",
+            "id": 37089958502,
+            "full_name": "Dongxu Lyu",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37391441500",
+            "id": 37391441500,
+            "full_name": "Guanghui He",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "State Key Laboratory of MicroNano Engineering Science, School of Integrated Circuits, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Journals",
+      "abstract": "Large Language Models (LLMs) have achieved significant success in various Natural Language Processing (NLP) tasks, becoming essential to modern intelligent computing. Their large memory footprint and high computational cost hinder efficient deployment. Post-Training Quantization (PTQ) is a promising technique to alleviate this issue and accelerate LLM inference. However, the presence of outliers impedes the advancement of LLM quantization to lower bit levels. In this paper, we introduce OFQ-LLM, an algorithm-hardware co-design solution that adopts outlier-flexing quantization to efficiently accelerate LLM at low-bit levels. The key insight of OFQ-LLM is that normal data can be efficiently quantized in a slightly reduced data encoding space, while the rest encoding space can be used for flexible outlier values. During quantization, we use rescale-based clipping (RBC) to optimize accuracy for normal data and group outlier clustering (GOC) to flexibly represent outlier values. At the hardware level, we introduce a memory-aligned outlier-flexing encoding scheme to encode activations and weights in LLMs at a low bit level. The outlier-normal mixed hardware architecture is devised to leverage the encoding scheme and accelerate LLMs with high speed and high energy efficiency. Our experiments show that OFQ-LLM achieves better accuracy compared to state-of-the-art (SOTA) low-bit LLM PTQ works. OFQ-LLM-based accelerator surpasses the SOTA outlier-aware accelerators by up to  $2.69\\times $  core energy efficiency, up to  $3.83\\times $  speed up and  $2.44\\times $  energy reduction in LLM prefilling phase, and up to  $2.01\\times $  speed up and  $2.88\\times $  energy reduction in LLM decoding phase, with superior accuracy.",
+      "article_number": "10924797",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10924797",
+      "html_url": "https://ieeexplore.ieee.org/document/10924797/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10924797/",
+      "publication_title": "IEEE Transactions on Circuits and Systems I: Regular Papers",
+      "publication_number": 8919,
+      "is_number": 11099062,
+      "publication_year": 2025,
+      "publication_date": "Aug. 2025",
+      "start_page": "4077",
+      "end_page": "4090",
+      "citing_paper_count": 3,
+      "citing_patent_count": 0,
+      "download_count": 1143,
+      "insert_date": "20250313",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Encoding",
+            "Accuracy",
+            "Transformers",
+            "Decoding",
+            "Large language models",
+            "Computational modeling",
+            "Memory management",
+            "Energy efficiency",
+            "Training"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language models",
+            "post-training quantization",
+            "algorithm-hardware co-design",
+            "outlier",
+            "efficient acceleration"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Efficient Acceleration",
+            "Large Language Models",
+            "Data Normalization",
+            "Energy Efficiency",
+            "Energy Reduction",
+            "Presence Of Outliers",
+            "High Energy Efficiency",
+            "Outlier Values",
+            "Reduction Phase",
+            "Hardware Architecture",
+            "Hardware Level",
+            "Core Energy",
+            "Outlier Clusters",
+            "Accuracy Of Model",
+            "Group Size",
+            "Scaling Factor",
+            "Normal Values",
+            "Multilayer Perceptron",
+            "Quantization Error",
+            "Amount Of Error",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Bit-width",
+            "Linear Layer",
+            "Core Architecture",
+            "Token Embedding",
+            "Accuracy Loss",
+            "Perplexity",
+            "Normal Part",
+            "Outlier Data",
+            "Means Clustering"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.23919/DATE69613.2026.11539489",
+      "title": "IterQuant: Iterative Quantization Framework for Mixed-Precision LLM Compression",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-4565-9",
+      "issn": "1530-1591",
+      "rank": 7,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/750856421438003",
+            "id": 750856421438003,
+            "full_name": "Hyungyo Jeong",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088429083",
+            "id": 37088429083,
+            "full_name": "Jiwoo Kim",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "ETRI, Daejeon, Republic of Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089463286",
+            "id": 37089463286,
+            "full_name": "Hyeokjun Kwon",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "ETRI, Daejeon, Republic of Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088921937",
+            "id": 37088921937,
+            "full_name": "Jaeho Lee",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, POSTECH, Pohang, Republic of Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electrical Engineering, KAIST, Daejeon, Republic of Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37539806200",
+            "id": 37539806200,
+            "full_name": "Youngjoo Lee",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electrical Engineering, KAIST, Daejeon, Republic of Korea"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Mixed-precision quantization is a promising approach for compressing large language models (LLMs) while maintaining output quality. However, the design space for selecting resolutions of different layers makes exhaustive search intractable. Existing methods either rely on rigid bit-width allocation schemes or require extensive hyperparameter tuning, often based on inaccurate layer-wise sensitivity metrics. In this work, we propose IterQuant, an iterative quantization framework that efficiently explores the mixed-precision space without requiring exhaustive enumeration. By incorporating momentum-based scoring to reflect historical performance trends and parameter grouping to balance quantization granularity, IterQuant achieves favorable trade-offs between compression and accuracy. Unlike prior approaches that assume bit allocation sensitivity from full-precision models directly transfers to quantized models, IterQuant dynamically updates its quantization decisions as the model evolves, better capturing inter-layer dependencies. Experimental results demonstrate that IterQuant significantly outperforms state-of-the-art mixed-precision quantization approaches by 2.8% near 4 bits in preserving token-level output quality across various LLM benchmarks.",
+      "article_number": "11539489",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11539489",
+      "html_url": "https://ieeexplore.ieee.org/document/11539489/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11539489/",
+      "publication_title": "2026 Design, Automation & Test in Europe Conference (DATE)",
+      "conference_location": "Verona, Italy",
+      "conference_dates": "20-22 April 2026",
+      "publication_number": 11539023,
+      "is_number": 11539024,
+      "publication_year": 2026,
+      "publication_date": "20-22 April 2026",
+      "start_page": "1",
+      "end_page": "7",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260604",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Quantization (signal)",
+            "Printing",
+            "Accuracy",
+            "Aluminum",
+            "Large language models",
+            "Resource management",
+            "Sensitivity",
+            "Training",
+            "Algorithms"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language model (LLM)",
+            "Mixed precision",
+            "Post-training quantization (PTQ)",
+            "Weight-only quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Yield Quality",
+            "Output Quality",
+            "Yield Characteristics",
+            "Exhaustive Search",
+            "Brute-force Search",
+            "Sensitivity Metrics",
+            "Computational Cost",
+            "Transformer",
+            "Multiple Layers",
+            "Quantification Method",
+            "Error Propagation",
+            "Cumulative Error",
+            "Uncertainty Propagation",
+            "Average Precision",
+            "Low Precision",
+            "Quantization Error",
+            "Amount Of Error",
+            "Computationally Intractable",
+            "Computationally Infeasible",
+            "Intractable Problem",
+            "Computational Feasibility",
+            "Sensitivity Estimates",
+            "Adaptive Framework",
+            "Framework Version",
+            "Perplexity",
+            "Calibration Set",
+            "Manual Tuning",
+            "Value Of Momentum",
+            "Self-attention Layer",
+            "Uniform Quantization",
+            "Projection Layer"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-4565-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "978-3-9826741-1-7",
+            "isbnType": "New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/ISCAS56072.2025.11043993",
+      "title": "An Integer-only Quantization Framework for Edge Deployment of Large Language Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3503-5684-7",
+      "issn": "0271-4302",
+      "rank": 8,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089401283",
+            "id": 37089401283,
+            "full_name": "Yaqi Hu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Pi2star Technology Ltd., Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088525432",
+            "id": 37088525432,
+            "full_name": "Zhuqing Yuan",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Pi2star Technology Ltd., Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Tsinghua University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088762882",
+            "id": 37088762882,
+            "full_name": "Weichen Gao",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Tsinghua University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37403496500",
+            "id": 37403496500,
+            "full_name": "Sheng Zhang",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Tsinghua University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37292036600",
+            "id": 37292036600,
+            "full_name": "Yongpan Liu",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Tsinghua University, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The rapid growth in the parameter size of large language models (LLMs) has introduced significant challenges for deployment on edge devices. To address these challenges, this paper focuses on developing a post-training quantization (PTQ) framework tailored for LLM deployment on edge devices. Our framework introduces an enhanced channel smoothing technique based on channel value ranges, combined with channel reordering to mitigate quantization errors associated with large channel value range differences and activation outliers, reducing the need for quantization and dequantization steps during inference, making it more suitable for edge deployment. Our approach achieves full integer quantization for all model operations, reducing model size by 4×. Through extensive experiments on various language tasks using the OPT model, we demonstrate that our framework surpasses state-of-the-art methods under the W4A4 configuration.",
+      "article_number": "11043993",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11043993",
+      "html_url": "https://ieeexplore.ieee.org/document/11043993/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11043993/",
+      "publication_title": "2025 IEEE International Symposium on Circuits and Systems (ISCAS)",
+      "conference_location": "London, United Kingdom",
+      "conference_dates": "25-28 May 2025",
+      "publication_number": 11043142,
+      "is_number": 11042930,
+      "publication_year": 2025,
+      "publication_date": "25-28 May 2025",
+      "start_page": "1",
+      "end_page": "5",
+      "citing_paper_count": 1,
+      "citing_patent_count": 0,
+      "download_count": 328,
+      "insert_date": "20250627",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Performance evaluation",
+            "Energy consumption",
+            "Quantization (signal)",
+            "Smoothing methods",
+            "Costs",
+            "Accuracy",
+            "Circuits and systems",
+            "Large language models",
+            "Real-time systems"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Post-training quantization",
+            "large language models",
+            "integer-only quantization",
+            "edge devices"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Deployment Model",
+            "Framework For Quantification",
+            "Large Language Models",
+            "Channel Activity",
+            "Quantization Error",
+            "Amount Of Error",
+            "Edge Devices",
+            "Smoothing Technique",
+            "Need For Steps",
+            "Maximum And Minimum",
+            "Stationary Point",
+            "Extreme Values",
+            "Extremal",
+            "K-means",
+            "K-means Clustering",
+            "Language Processing",
+            "Softmax",
+            "Quantification Method",
+            "Multiple Languages",
+            "Multi-language",
+            "Multilingual Language",
+            "Quantization Parameter",
+            "Channel Values",
+            "Calibration Dataset",
+            "Combination Of Hyperparameters",
+            "Range Of Channels",
+            "Impact Of Outliers",
+            "Bit-shift",
+            "Bit-shift Operations",
+            "Channel Clustering",
+            "Inference Cost"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3503-5684-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3503-5683-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2025.3625771",
+      "title": "Sub 4-bit Power-of-Two-Based Mixed-Precision Quantization for Efficient LLM Compression and Acceleration",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 9,
+      "volume": "13",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089719350",
+            "id": 37089719350,
+            "full_name": "Han Cho",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089805869",
+            "id": 37089805869,
+            "full_name": "Apurba Prasad Padhy",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Laboratory for Physical Sciences, College Park, MD, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/813581119183646",
+            "id": 813581119183646,
+            "full_name": "Fernando Camacho",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Laboratory for Physical Sciences, College Park, MD, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37278557500",
+            "id": 37278557500,
+            "full_name": "Saibal Mukhopadhyay",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "While Large Language Models (LLMs) have demonstrated remarkable performance, their deployment on resource-constrained edge devices is hindered by their immense size. Existing quantization methods offer a promising solution but struggle to achieve sub-4-bit precision without significant performance degradation. This work introduces a holistic framework that pairs a novel mixed-precision quantization algorithm with a custom hardware accelerator to address these challenges. Our post-training quantization method leverages an in-depth analysis of sensitivity to allocate varying bit precisions (FP16, INT2, INT3, and INT4) to weights based on their impact on model performance. In addition, to enhance accuracy at these low bit-widths, we introduce a scaled power-of-two logarithmic quantization scheme that more effectively captures the weight distributions of LLMs. To realize these algorithmic gains in practice, we co-design a dedicated hardware accelerator featuring a Dual-Mode Matrix Multiplication Unit (DM-MMU). This dual-mode matrix multiplication unit dynamically switches between an efficient logarithmic datapath for log quantized weights and a full-precision FP16 datapath for other calculations. This co-design of software and hardware achieves a compelling trade-off between model accuracy, memory footprint, and computational efficiency—resulting in up to  $11.8\\times $  model size reduction and  $1.82\\times $  higher energy efficiency, enabling the deployment of powerful and lightweight LLMs on edge devices.",
+      "article_number": "11218199",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11218199",
+      "html_url": "https://ieeexplore.ieee.org/document/11218199/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11218199/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 10820123,
+      "publication_year": 2025,
+      "publication_date": "2025",
+      "start_page": "209356",
+      "end_page": "209367",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 637,
+      "insert_date": "20251027",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Computational modeling",
+            "Sensitivity",
+            "Training",
+            "Computational efficiency",
+            "Accuracy",
+            "Performance evaluation",
+            "Memory management",
+            "Large language models",
+            "Hardware acceleration"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Accelerator",
+            "hardware acceleration",
+            "large language model",
+            "mixed-precision",
+            "model compression",
+            "post-training quantization",
+            "quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Mixed-precision Quantization",
+            "Model Performance",
+            "Accuracy Of Model",
+            "Computational Efficiency",
+            "Energy Efficiency",
+            "Quantification Method",
+            "Weight Distribution",
+            "Matrix Multiplication",
+            "Multiple Matrices",
+            "Matrix-vector Multiplication",
+            "Multiple Matrix",
+            "Language Model",
+            "High Energy Efficiency",
+            "Memory Footprint",
+            "Edge Devices",
+            "Hardware Accelerators",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Datapath",
+            "High Precision",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Low Precision",
+            "Quantization Error",
+            "Amount Of Error",
+            "Uniform Quantization",
+            "Quantification Techniques",
+            "Logarithmic Method",
+            "Logging Methods",
+            "Minimal Overhead",
+            "Sign Bit",
+            "Perplexity",
+            "Main Distribution",
+            "Resource-constrained Environments",
+            "Memory Usage",
+            "Hessian Matrix",
+            "Hessian Matrices"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/JETCAS.2025.3562937",
+      "title": "Adaptive Two-Range Quantization and Hardware Co-Design for Large Language Model Acceleration",
+      "publisher": "IEEE",
+      "issue": "2",
+      "issn": "2156-3365",
+      "rank": 10,
+      "volume": "15",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089790815",
+            "id": 37089790815,
+            "full_name": "Siqi Cai",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089960312",
+            "id": 37089960312,
+            "full_name": "Gang Wang",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086380730",
+            "id": 37086380730,
+            "full_name": "Wenjie Li",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089958502",
+            "id": 37089958502,
+            "full_name": "Dongxu Lyu",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37391441500",
+            "id": 37391441500,
+            "full_name": "Guanghui He",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China",
+                "MoE Key Laboratory of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University, Shanghai, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Journals",
+      "abstract": "Large language models (LLMs) face high computational and memory demands. While prior studies have leveraged quantization to reduce memory requirements, critical challenges persist: unaligned memory accesses, significant quantization errors when handling outliers that span larger quantization ranges, and the increased hardware overhead associated with processing high-bit-width outliers. To address these issues, we propose a quantization algorithm and hardware architecture co-design for efficient LLM acceleration. Algorithmically, a grouped adaptive two-range quantization (ATRQ) with an in-group embedded identifier is proposed to encode outliers and normal values in distinct ranges, achieving hardware-friendly aligned memory access and reducing quantization errors. From a hardware perspective, we develop a low-overhead ATRQ decoder and an outlier-bit-split processing element (PE) to reduce the hardware overhead associated with high-bit-width outliers, effectively leveraging their inherent sparsity. To support mixed-precision computation and accommodate diverse dataflows during the prefilling and decoding phases, we design a reconfigurable local accumulator that mitigates the overhead associated with additional adders. Experimental results show that the ATRQ-based accelerator outperforms existing solutions, achieving up to  $2.48\\times $  speedup and  $2.01\\times $  energy reduction in LLM prefilling phase, and  $1.87\\times $  speedup and  $2.03\\times $  energy reduction in the decoding phase, with superior model performance under post-training quantization.",
+      "article_number": "10971983",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10971983",
+      "html_url": "https://ieeexplore.ieee.org/document/10971983/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10971983/",
+      "publication_title": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
+      "publication_number": 5503868,
+      "is_number": 11050007,
+      "publication_year": 2025,
+      "publication_date": "June 2025",
+      "start_page": "272",
+      "end_page": "284",
+      "citing_paper_count": 2,
+      "citing_patent_count": 0,
+      "download_count": 580,
+      "insert_date": "20250421",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Hardware",
+            "Accuracy",
+            "Encoding",
+            "Decoding",
+            "Computational modeling",
+            "Circuits and systems",
+            "Training",
+            "Tensors",
+            "Memory management"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language models",
+            "post-training quantization",
+            "outlier",
+            "hardware architecture",
+            "algorithm-hardware co-design"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Adaptive Quantization",
+            "Large Language Models",
+            "Normal Values",
+            "Quantization Error",
+            "Amount Of Error",
+            "Energy Reduction",
+            "Computational Demands",
+            "Reduction Phase",
+            "Hardware Architecture",
+            "Hardware Overhead",
+            "Outgroup",
+            "Energy Efficiency",
+            "Normal Group",
+            "Multilayer Perceptron",
+            "Reduce Energy Consumption",
+            "Accuracy Loss",
+            "Computational Overhead",
+            "Outlier Values",
+            "Area Overhead",
+            "Most Significant Bit",
+            "High Bit",
+            "Highest Bit",
+            "Baseline Design",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Uniform Quantization",
+            "Hardware Performance",
+            "Sign Bit",
+            "Additional Overhead",
+            "Least Significant Bit",
+            "Low Bit",
+            "Power Overhead"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICEIC69189.2026.11386208",
+      "title": "RANQ: Region-Adaptive Non-uniform Quantization for Efficient LLM Compression",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8078-0",
+      "issn": "2574-1403",
+      "rank": 11,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Electrical and Information Engineering and Research Center for Electrical and Information Technology, Seoul National University of Science and Technology Seoul, Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37090089775",
+            "id": 37090089775,
+            "full_name": "Sangbeom Jeong",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical and Information Engineering and Research Center for Electrical and Information Technology, Seoul National University of Science and Technology Seoul, Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical and Information Engineering and Research Center for Electrical and Information Technology, Seoul National University of Science and Technology Seoul, Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38581306900",
+            "id": 38581306900,
+            "full_name": "Hyun Kim",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical and Information Engineering and Research Center for Electrical and Information Technology, Seoul National University of Science and Technology Seoul, Korea"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable performance across a wide range of domains. However, their deployment in real-world environments remains challenging due to the substantial model sizes and limited hardware resources. Quantization has been widely adopted to alleviate these issues, but the presence of outliers in the weight distribution of LLMs significantly degrades quantization performance, particularly in low-bit settings. To address this challenge, we propose a region-adaptive non-uniform quantization (RANQ) method that takes into account the intrinsic characteristics of LLM weight distributions. RANQ divides the entire weight space into central and outlier regions, applying distinct scale factors to each region to minimize performance degradation caused by quantization. Furthermore, we introduce a layer-wise reconstruction-based threshold optimization algorithm, which adaptively determines the optimal region boundaries according to the distributional properties of each layer, enabling more precise low-bit quantization. Experimental results on the LLaMA family using the WikiText2 and C4 datasets demonstrate that the proposed method consistently outperforms existing post training quantization (PTQ) techniques, such as round-to-nearest (RTN) and GPTQ.",
+      "article_number": "11386208",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11386208",
+      "html_url": "https://ieeexplore.ieee.org/document/11386208/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11386208/",
+      "publication_title": "2026 International Conference on Electronics, Information, and Communication (ICEIC)",
+      "conference_location": "Macau, China",
+      "conference_dates": "18-21 Jan. 2026",
+      "publication_number": 11385852,
+      "is_number": 11385844,
+      "publication_year": 2026,
+      "publication_date": "18-21 Jan. 2026",
+      "start_page": "1",
+      "end_page": "4",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 33,
+      "insert_date": "20260218",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Degradation",
+            "Electric potential",
+            "Adaptation models",
+            "Quantization (signal)",
+            "Large language models",
+            "Robustness",
+            "Hardware",
+            "Model compression",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language models",
+            "low-bit quantization",
+            "model compression"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Compression Efficiency",
+            "Large Language Models",
+            "Non-uniform Quantization",
+            "Quantification Method",
+            "Performance Degradation",
+            "Weight Distribution",
+            "Optimal Threshold",
+            "Language Model",
+            "Presence Of Outliers",
+            "Quantification Techniques",
+            "Wide Range Of Domains",
+            "Outlier Regions",
+            "Large-scale Models",
+            "Perplexity",
+            "Minimal Loss Of Information",
+            "Negligible Degradation",
+            "Efficient Deployment",
+            "Small Number Of Outliers"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8078-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8077-3",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICCVW69036.2025.00594",
+      "title": "LiteRT-Optimized INT8 LLM for Raspberry Pi4 Deployment",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8989-9",
+      "issn": "2473-9936",
+      "rank": 12,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "BLUEDOT",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089688088",
+            "id": 37089688088,
+            "full_name": "Kihwan Yoon",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "BLUEDOT"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089688757",
+            "id": 37089688757,
+            "full_name": "Hyeon-Cheol Moon",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089987509",
+            "id": 37089987509,
+            "full_name": "Aeri Kim",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea University of Technology and Education",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37404962300",
+            "id": 37404962300,
+            "full_name": "Sungjei Kim",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea University of Technology and Education"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37600741600",
+            "id": 37600741600,
+            "full_name": "Sang-Seol Lee",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085562981",
+            "id": 37085562981,
+            "full_name": "Sung-Joon Jang",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38188601200",
+            "id": 38188601200,
+            "full_name": "Ganzorig Gankhuyag",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea Electronics Technology Institute",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086123061",
+            "id": 37086123061,
+            "full_name": "Jinwoo Jeong",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea Electronics Technology Institute"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) have demonstrated impressive capabilities across a wide range of natural language processing tasks. However, their high computational and memory requirements pose significant challenges for deployment on resource-constrained edge devices such as the Raspberry Pi. In this work, we investigate post-training quantization techniques to reduce the computational burden of LLMs while preserving their quality. We evaluate several LLMs under different precision settings and show that 8-bit quantization, especially when combined with runtime-level optimizations like LiteRT achieves up to 2× faster inference on Raspberry Pi, compared to framework-native formats, without relying on hardware-specific acceleration libraries (e.g., GPU, NNAPI, or EdgeTPU), and with negligible degradation in output quality. Our experiments highlight the practicality of lightweight LLM deployment on edge devices. These findings demonstrate the feasibility of real-time applications on low-power devices, enabling broader accessibility in edge environments. Our project page is available at https://rlghksdbs.github.io/EfficientLLM/.",
+      "article_number": "11374439",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11374439",
+      "html_url": "https://ieeexplore.ieee.org/document/11374439/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11374439/",
+      "publication_title": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+      "conference_location": "Honolulu, HI, USA",
+      "conference_dates": "19-20 Oct. 2025",
+      "publication_number": 11373940,
+      "is_number": 11374285,
+      "publication_year": 2025,
+      "publication_date": "19-20 Oct. 2025",
+      "start_page": "5683",
+      "end_page": "5692",
+      "citing_paper_count": 1,
+      "citing_patent_count": 0,
+      "download_count": 22,
+      "insert_date": "20260223",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Runtime environment",
+            "Quantization (signal)",
+            "Large language models",
+            "Pipelines",
+            "Memory management",
+            "Real-time systems",
+            "Natural language processing",
+            "Libraries",
+            "Optimization",
+            "Hardware acceleration"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "efficient llms",
+            "on-device ai",
+            "llm deployment"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Raspberry Pi4",
+            "Yield Quality",
+            "Output Quality",
+            "Yield Characteristics",
+            "Language Model",
+            "Quantification Techniques",
+            "Raspberry Pi",
+            "Natural Language Processing Tasks",
+            "Edge Devices",
+            "Fast Inference",
+            "Low-power Devices",
+            "Transformer",
+            "Mobile Devices",
+            "Portable Devices",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Model Size",
+            "PyTorch",
+            "Model Architecture",
+            "Matrix Multiplication",
+            "Multiple Matrices",
+            "Matrix-vector Multiplication",
+            "Multiple Matrix",
+            "Vector Of Values",
+            "Quantization Error",
+            "Amount Of Error",
+            "Linear Projection",
+            "Feed-forward Layer",
+            "Attention Layer",
+            "Decoding Stage",
+            "Memory Bandwidth",
+            "Hardware Accelerators",
+            "Inference Speed",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Efficient Inference",
+            "Quantification Model",
+            "Amount Of Models",
+            "Key Vector"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8989-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8988-2",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/DCC66757.2026.00082",
+      "title": "Pushing Bit-Width Limits in LLM Quantization with Saliency-Guided Mix-Precision Allocation and Learnable Affine Transformation",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8262-3",
+      "issn": "1068-0314",
+      "rank": 13,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Electronic Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/709236146382259",
+            "id": 709236146382259,
+            "full_name": "Shuoyu Ma",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37065061900",
+            "id": 37065061900,
+            "full_name": "Wenrui Dai",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science & Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089441802",
+            "id": 37089441802,
+            "full_name": "Maida Cao",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science & Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Information Science and Electronic Engineering, Zhejiang University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089803396",
+            "id": 37089803396,
+            "full_name": "Shaohui Li",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Information Science and Electronic Engineering, Zhejiang University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086584398",
+            "id": 37086584398,
+            "full_name": "Ziyang Zheng",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37403933400",
+            "id": 37403933400,
+            "full_name": "Chenglin Li",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science & Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37276092700",
+            "id": 37276092700,
+            "full_name": "Junni Zou",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science & Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronic Engineering, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37090081706",
+            "id": 37090081706,
+            "full_name": "Hongkai Xiong",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronic Engineering, Shanghai Jiao Tong University, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Despite strong generalization ability, large language models (LLMs) are resource-intensive to deploy. Post-training quantization (PTQ) effectively compresses pretrained LLMs without retraining. Although recent studies target extremely low-bit quantization, most methods rely on extra parameters and the effective bit-width usually exceeds 2 bits. We introduce a saliency-guided mixed-precision PTQ framework that achieves an average bit-width of 1.70 bits while maintaining competitive performance. The proposed method allocates bit-widths across weight groups under a strict total budget, guided by a cross-precision saliency metric. The key innovation is a learnable affine transformation consisting of rotation, scaling, and shifting to align quantization grids with local weight distributions to minimize error. Experiments show that the proposed method matches state-of-the-art low-bit PTQ performance, while reducing the average bit-width by approximately 0.55 bits in Table 1.",
+      "article_number": "11510436",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11510436",
+      "html_url": "https://ieeexplore.ieee.org/document/11510436/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11510436/",
+      "publication_title": "2026 Data Compression Conference (DCC)",
+      "conference_location": "Snowbird, UT, USA",
+      "conference_dates": "24-27 March 2026",
+      "publication_number": 11510255,
+      "is_number": 11510354,
+      "publication_year": 2026,
+      "publication_date": "24-27 March 2026",
+      "start_page": "455",
+      "end_page": "455",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260513",
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8262-3",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8261-6",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/CloudCom67567.2025.11331377",
+      "title": "QER: Quantized Low-Rank Error Reconstructor for LLM Low-Bitwidth Quantization",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6635-7",
+      "issn": "2330-2194",
+      "rank": 14,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "South China University of Technology, Guangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/675627838756093",
+            "id": 675627838756093,
+            "full_name": "Shoukai Xu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "South China University of Technology, Guangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "SHENZHEN MSU-BIT UNIVERSITY, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086962107",
+            "id": 37086962107,
+            "full_name": "Runhao Zeng",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "SHENZHEN MSU-BIT UNIVERSITY, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "South China University of Technology, Guangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089897088",
+            "id": 37089897088,
+            "full_name": "Zhiyang Zhang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "South China University of Technology, Guangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "South China University of Technology, Guangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087996649",
+            "id": 37087996649,
+            "full_name": "Hao Huang",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "South China University of Technology, Guangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "PengCheng Laboratory, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37090080547",
+            "id": 37090080547,
+            "full_name": "Qingfang Zheng",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "PengCheng Laboratory, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "PengCheng Laboratory, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085440401",
+            "id": 37085440401,
+            "full_name": "Xiangyuan Lan",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "PengCheng Laboratory, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "PengCheng Laboratory, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37601140600",
+            "id": 37601140600,
+            "full_name": "Yaowei Wang",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "PengCheng Laboratory, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "South China University of Technology, Guangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37853109000",
+            "id": 37853109000,
+            "full_name": "Mingkui Tan",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "South China University of Technology, Guangzhou, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) have achieved remarkable success but face significant deployment challenges in cloud and edge environments due to their massive computational and storage requirements. Model quantization serves as a key solution to enhance the scalability and efficiency of LLMs within distributed cloud platforms. Existing Post-Training Quantization (PTQ) methods often exhibit suboptimal performance in low-bit settings. To further improve their precision, Quantization-Aware Training (QAT) combined with Low-Rank Adaptation (LoRA) has been explored for error correction. However, a critical issue is that the quantized base model and full-precision LoRA parameters suffer from precision mismatch, introducing additional errors during weight merging. To address these challenges, we propose a Quantized Low-rank Error Reconstructor (QER) for LLM low-bitwidth quantization. QER first enables lossless merging in low-bitwidth format by aligning the bitwidth of its low-rank parameters with the quantized base parameters, eliminating dequantization and requantization steps. Through this process, QER reconstructs original errors into two components: the quantization errors of QER parameters (i.e., quantized low-rank parameters) and potential overflow errors during low-bitwidth merging. These two errors are directly related to QER parameters, making them easier to optimize via gradient-based updates within an error-aware training framework. Requiring only 128 samples and 1 training epoch, QER demonstrates superior performance on LLaMA-1/2 families. In 4-bit quantization, compared to QLLM with error correction, QER reduces average perplexity by 13.8% (from 10.97 to 9.45) and improves average accuracy by 3.01 percentage points (from 51.84% to 54.85%) on LLaMA-1-7B. QER bridges the gap between quantization and low-rank adaptation, enabling efficient and accurate low-precision LLM deployment.",
+      "article_number": "11331377",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11331377",
+      "html_url": "https://ieeexplore.ieee.org/document/11331377/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11331377/",
+      "publication_title": "2025 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)",
+      "conference_location": "Shenzhen, China",
+      "conference_dates": "14-16 Nov. 2025",
+      "publication_number": 11330195,
+      "is_number": 11331311,
+      "publication_year": 2025,
+      "publication_date": "14-16 Nov. 2025",
+      "start_page": "1",
+      "end_page": "8",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 57,
+      "insert_date": "20260120",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Adaptation models",
+            "Cloud computing",
+            "Quantization (signal)",
+            "Accuracy",
+            "Computational modeling",
+            "Large language models",
+            "Scalability",
+            "Merging",
+            "Error correction"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language model",
+            "efficient computing",
+            "quantization-aware training",
+            "error correction"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Percentage Points",
+            "Quantification Method",
+            "Training Epochs",
+            "Language Model",
+            "Quantization Error",
+            "Amount Of Error",
+            "Lossless",
+            "Error Parameters",
+            "Perplexity",
+            "Quantification Model",
+            "Amount Of Models",
+            "Final Model",
+            "Performance Degradation",
+            "Types Of Errors",
+            "Teacher Model",
+            "Education Model",
+            "Instructional Model",
+            "Kullback-Leibler",
+            "Relative Entropy",
+            "Kullback Leibler Divergence",
+            "KL Divergence",
+            "Singular Value Decomposition",
+            "Severe Degradation",
+            "Quantization Parameter",
+            "Quantification Process",
+            "Recovery Error",
+            "Merge Operation"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6635-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6634-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ASSIC64892.2025.11158258",
+      "title": "A Comprehensive Review of Llm Neural Network Enhancements for Advanced Driving Assistance Systems Through Quantization",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-2303-9",
+      "rank": 15,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "dept of Electronics And Communication Engineering, Chennai Institute of Technology, Chennai, TamilNadu, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/902289361111661",
+            "id": 902289361111661,
+            "full_name": "Sudharshana B",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "dept of Electronics And Communication Engineering, Chennai Institute of Technology, Chennai, TamilNadu, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electronics and Communication Engineering, Chennai Institute of Technology, Chennai, Tamil Nadu, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089829278",
+            "id": 37089829278,
+            "full_name": "Nandhini V",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electronics and Communication Engineering, Chennai Institute of Technology, Chennai, Tamil Nadu, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Line 2: Department of Computer Science Engineering, Chennai Institute of Technology, Chennai, Tamil Nadu, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/318497778148151",
+            "id": 318497778148151,
+            "full_name": "AkilaGandhi G S ME",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Line 2: Department of Computer Science Engineering, Chennai Institute of Technology, Chennai, Tamil Nadu, India"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Deep learning models, particularly Large Language Models (LLMs), have shown high degrees of complexity in recent years and have, therefore, made effective quantization techniques necessary. These are very important for the efficient deployment of models into environments of limited resources in autonomous driving and Advanced Driver Assistance Systems (ADAS). Quantization is of paramount importance in the field of ADAS, as accuracy directly relates to safety. More importantly, quantization technique advances do allow the design of safety-critical features with higher accuracy in ADAS, such as the brand new Full Self-Driving technology developed by Tesla, whose processing speeds reach over 100 frames per second and with more than 85 % accuracy. This is a survey paper that covers the latest developments in this particular area of operator quantization, which are Gradient-based Post-Training Quantization (GPTQ), Generalized Gradient Update Framework (GGUF), and Adaptive Weight Quantization (AWQ). While memory could be reduced to a low level, performance is not affected at all. Yet, most of the time, it sacrifices the accuracy of the latest advances in quantization, like PTQ or QAT. We review a plethora of advanced quantization techniques to improve both the performance and efficiency of real-world deep learning models. The aim is to demonstrate the efficiency and effectiveness achieved when advanced methods of quantization are applied to improve deep learning models for real applications thereby offering insights into promising research opportunities.",
+      "article_number": "11158258",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11158258",
+      "html_url": "https://ieeexplore.ieee.org/document/11158258/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11158258/",
+      "publication_title": "2025 International Conference on Advancements in Smart, Secure and Intelligent Computing (ASSIC)",
+      "conference_location": "Bhubaneswar, India",
+      "conference_dates": "16-18 May 2025",
+      "publication_number": 11157927,
+      "is_number": 11157933,
+      "publication_year": 2025,
+      "publication_date": "16-18 May 2025",
+      "start_page": "1",
+      "end_page": "7",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 96,
+      "insert_date": "20250917",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Deep learning",
+            "Quantization (signal)",
+            "Accuracy",
+            "Reviews",
+            "Computational modeling",
+            "Large language models",
+            "Safety",
+            "Complexity theory",
+            "Advanced driver assistance systems",
+            "Autonomous vehicles"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Deep learning",
+            "Large Language Models",
+            "Advanced Driver Assistance Systems",
+            "Quantization",
+            "Activation Aware Weight Quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Neural Network",
+            "Advanced Driver Assistance Systems",
+            "Driver Assistance Systems",
+            "Model Performance",
+            "Deep Learning",
+            "Limited Resources",
+            "Processing Speed",
+            "Psychomotor Speed",
+            "Deep Learning Models",
+            "Quantification Method",
+            "Efficient Model",
+            "Self-driving",
+            "Self-driving Cars",
+            "Autonomous Cars",
+            "Paper Surveys",
+            "Quantification Techniques",
+            "Performance Metrics",
+            "Light Detection And Ranging",
+            "Lidar",
+            "Autonomous Vehicles",
+            "Autonomous Driving",
+            "Low Precision",
+            "Quantization Error",
+            "Amount Of Error",
+            "Accuracy Loss",
+            "Memory Usage",
+            "Reduce Memory Usage",
+            "Safety-critical Applications",
+            "Collision Detection",
+            "Impact Of Monitoring",
+            "Collision Checking",
+            "Cloud-based System",
+            "Processing Demands",
+            "Longer Training Time"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-2303-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-2302-2",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/WF-IoT62078.2024.10811385",
+      "title": "LlamaF: An Efficient Llama2 Architecture Accelerator on Embedded FPGAs",
+      "publisher": "IEEE",
+      "isbn": "979-8-3503-7302-8",
+      "issn": "2769-4003",
+      "rank": 16,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "University of Illinois at Urbana-Champaign Urbana, Illinois",
+            "authorUrl": "https://ieeexplore.ieee.org/author/911534773411157",
+            "id": 911534773411157,
+            "full_name": "Han Xu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Illinois at Urbana-Champaign Urbana, Illinois"
+              ]
+            }
+          },
+          {
+            "affiliation": "University of Illinois at Urbana-Champaign Champaign, Illinois",
+            "authorUrl": "https://ieeexplore.ieee.org/author/407155679928275",
+            "id": 407155679928275,
+            "full_name": "Yutong Li",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of Illinois at Urbana-Champaign Champaign, Illinois"
+              ]
+            }
+          },
+          {
+            "affiliation": "Georgia State University, Atlanta, Georgia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37399190500",
+            "id": 37399190500,
+            "full_name": "Shihao Ji",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Georgia State University, Atlanta, Georgia"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable abilities in natural language processing. However, their deployment on resource-constrained embedded devices remains difficult due to memory and computational demands. In this paper, we present an FPGA-based accelerator designed to improve LLM inference performance on embedded FPGAs. We employ post-training quantization to reduce model size and optimize for off-chip memory bandwidth. Our design features asynchronous computation and a fully pipelined accelerator for matrix-vector multiplication. Experiments of the TinyLlama 1.1B model on a Xilinx ZCU102 platform show a 14.3-15.8x speedup and a 6.1x power efficiency improvement over running exclusively on ZCU102 processing system (PS).",
+      "article_number": "10811385",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10811385",
+      "html_url": "https://ieeexplore.ieee.org/document/10811385/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10811385/",
+      "publication_title": "2024 IEEE 10th World Forum on Internet of Things (WF-IoT)",
+      "conference_location": "Ottawa, ON, Canada",
+      "conference_dates": "10-13 Nov. 2024",
+      "publication_number": 10811010,
+      "is_number": 10811012,
+      "publication_year": 2024,
+      "publication_date": "10-13 Nov. 2024",
+      "start_page": "1",
+      "end_page": "7",
+      "citing_paper_count": 13,
+      "citing_patent_count": 0,
+      "download_count": 737,
+      "insert_date": "20241230",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Performance evaluation",
+            "Quantization (signal)",
+            "Computational modeling",
+            "Large language models",
+            "Memory management",
+            "Bandwidth",
+            "Natural language processing",
+            "Internet of Things",
+            "Kernel",
+            "Field programmable gate arrays"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "IoT",
+            "FPGA",
+            "LLM",
+            "Llama2",
+            "Quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Efficient Acceleration",
+            "Matrix Multiplication",
+            "Multiple Matrices",
+            "Matrix-vector Multiplication",
+            "Multiple Matrix",
+            "Language Model",
+            "Off-chip Memory",
+            "Transformer",
+            "Step Size",
+            "Group Size",
+            "Energy Efficiency",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Attention Mechanism",
+            "Multi-head Attention",
+            "Benchmark Datasets",
+            "Feed-forward Network",
+            "Feedforward Neural Network",
+            "Dot Product",
+            "Output Vector",
+            "Quantization Error",
+            "Amount Of Error",
+            "Improve Energy Efficiency",
+            "Preprocessing Stage",
+            "Forward Pass",
+            "Column Size",
+            "Text Generation",
+            "Sentence Generation",
+            "Natural Language Generation",
+            "Hardware Accelerators",
+            "Large Step Size",
+            "Quantization Scheme",
+            "Quantification Strategy"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3503-7302-8",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3503-7301-1",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/AANN66429.2025.11257655",
+      "title": "Self-Learning Logarithm with Dual Shift-ln-Log2: An Activation Quantization for Large Language Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-9737-5",
+      "rank": 17,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Beijing Aerospace Automatic Control Institute, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087053597",
+            "id": 37087053597,
+            "full_name": "Bing Li",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Beijing Aerospace Automatic Control Institute, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Beijing Aerospace Automatic Control Institute, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38561442400",
+            "id": 38561442400,
+            "full_name": "Penglong Jiang",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Beijing Aerospace Automatic Control Institute, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Zhejiang Ocean University, Zhoushan, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086817082",
+            "id": 37086817082,
+            "full_name": "Jiawei Wang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Zhejiang Ocean University, Zhoushan, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Beijing Aerospace Automatic Control Institute, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089218520",
+            "id": 37089218520,
+            "full_name": "Hui Zhou",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Beijing Aerospace Automatic Control Institute, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Beijing Aerospace Automatic Control Institute, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088975144",
+            "id": 37088975144,
+            "full_name": "Yifan Ge",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Beijing Aerospace Automatic Control Institute, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) commonly adopt low-bit quantization of weights and activations during inference to mitigate the communication, storage, and computation overhead induced by their massive scale. Post-Training Quantization (PTQ) has emerged as a widely used technique in this context. However, existing PTQ approaches often struggle to maintain performance when quantizing activation outputs with non-standard distributions—such as those produced by Softmax and SiLU functions—leading to notable accuracy degradation. To address this challenge, we propose two novel non-uniform quantization schemes tailored for LLM activations. For Softmax outputs, we introduce a self-adaptive logarithmic quantizer that optimizes the logarithmic base to adapt to varying activation distributions. For SiLU outputs, we present a Double-Shift-ln-Log2 quantizer, which leverages dual shifting and piecewise logarithmic mapping to better align the quantization space with the statistical properties of the activation. We evaluate the proposed methods on three Qwen2 models of varying scales, using the Pile and WikiText2 datasets. The experimental pipeline includes activation statistics collection prior to quantization, followed by comprehensive post-quantization performance evaluation. Results show that our approach better preserves model accuracy compared to existing baselines. Specifically, on the 3B-scale model, our method reduces perplexity (PPL) by 3 percentage points relative to OmniQuant and by 9 percentage points relative to SmoothQuant. Under INT4 weight quantization and INT8 activation quantization, the proposed scheme demonstrates superior performance, providing a practical and effective solution for activation quantization in LLMs.",
+      "article_number": "11257655",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11257655",
+      "html_url": "https://ieeexplore.ieee.org/document/11257655/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11257655/",
+      "publication_title": "2025 5th International Conference on Advanced Algorithms and Neural Networks (AANN)",
+      "conference_location": "Qingdao, China",
+      "conference_dates": "15-17 Aug. 2025",
+      "publication_number": 11253536,
+      "is_number": 11257578,
+      "publication_year": 2025,
+      "publication_date": "15-17 Aug. 2025",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 37,
+      "insert_date": "20251201",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Performance evaluation",
+            "Adaptation models",
+            "Quantization (signal)",
+            "Accuracy",
+            "Runtime",
+            "Large language models",
+            "Pipelines",
+            "Neural networks",
+            "Edge AI",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "LLM",
+            "PTQ",
+            "activation function quantization",
+            "nonuniform quantizer"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Large Language Models",
+            "Activation Quantization",
+            "Comprehensive Evaluation",
+            "Softmax Function",
+            "Softmax Activation Function",
+            "Log Base",
+            "Logarithm Base",
+            "Quantization Scheme",
+            "Quantification Strategy",
+            "Softmax Output",
+            "Mean Square Error",
+            "Mean Square Deviation",
+            "Activation Function",
+            "Natural Logarithm",
+            "Natural Log",
+            "Skewed Distribution",
+            "Quantification Method",
+            "Kullback-Leibler",
+            "Relative Entropy",
+            "Kullback Leibler Divergence",
+            "KL Divergence",
+            "Night Shift",
+            "Day Shift",
+            "Quantization Error",
+            "Amount Of Error",
+            "Transformer Model",
+            "Primary Rate",
+            "Primary Evaluation",
+            "Bias Parameter",
+            "Output Distribution",
+            "Yield Distribution",
+            "Softmax Activation",
+            "Euler Number",
+            "Base Of The Natural Logarithm",
+            "Numbered",
+            "Number E",
+            "Quantization Parameter",
+            "Vision Transformer",
+            "Uniform Quantization",
+            "Quantification Process",
+            "Calibration Set",
+            "Potential Curves",
+            "Production Possibility Frontier",
+            "Small Positive Constant"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-9737-5",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3315-9735-1",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-9736-8",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICECST66106.2025.11307590",
+      "title": "Accelerating Inference in Lightweight Language Models Using Speculative Decoding and Quantization",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-9482-4",
+      "rank": 18,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of ISE, Cambridge Institute of Technology, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/556967566760013",
+            "id": 556967566760013,
+            "full_name": "Raghu P",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of ISE, Cambridge Institute of Technology, Bengaluru, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of ISE, Cambridge Institute of Technology, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/104128926644371",
+            "id": 104128926644371,
+            "full_name": "Anusha B",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of ISE, Cambridge Institute of Technology, Bengaluru, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of ISE, Cambridge Institute of Technology, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085755107",
+            "id": 37085755107,
+            "full_name": "Gagan R",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of ISE, Cambridge Institute of Technology, Bengaluru, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of ISE, Cambridge Institute of Technology, Bengaluru, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/215371222126976",
+            "id": 215371222126976,
+            "full_name": "Sachith C",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of ISE, Cambridge Institute of Technology, Bengaluru, India"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models demonstrate state-of-theart performance in natural language processing tasks but face significant deployment challenges due to high inference latency and memory requirements in resource-constrained environments. This paper investigates inference-time optimization techniques for the DistilGPT2 model by implementing and evaluating three approaches: INT8 post-training quantization, speculative decoding via layer skipping, and a hybrid combination of both methods. Experiments conducted on Google Colab using standard CPU/GPU configurations reveal that INT8 quantization and speculative decoding individually reduce inference time by approximately 29 %, while the hybrid approach achieves a 57 % speedup with minimal impact on output quality, as measured by perplexity evaluation (55.03 across all modes). These findings demonstrate that combining lightweight optimization strategies can significantly enhance language model inference efficiency on limited hardware without requiring model retraining, making advanced language models more accessible for edge deployment and resource-limited academic environments.",
+      "article_number": "11307590",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11307590",
+      "html_url": "https://ieeexplore.ieee.org/document/11307590/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11307590/",
+      "publication_title": "2025 2nd International Conference on Electronic Circuits and Signaling Technologies (ICECST)",
+      "conference_location": "Petaling Jaya, Malaysia",
+      "conference_dates": "23-25 Oct. 2025",
+      "publication_number": 11306374,
+      "is_number": 11307193,
+      "publication_year": 2025,
+      "publication_date": "23-25 Oct. 2025",
+      "start_page": "979",
+      "end_page": "985",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 45,
+      "insert_date": "20251230",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Large language models",
+            "Memory management",
+            "Time measurement",
+            "Natural language processing",
+            "Decoding",
+            "Internet",
+            "Integrated circuit modeling",
+            "Optimization",
+            "Standards"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "LLM inference",
+            "quantization",
+            "speculative decoding",
+            "hybrid decoding",
+            "DistilGPT2",
+            "performance optimization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Hybrid Approach",
+            "Yield Quality",
+            "Output Quality",
+            "Yield Characteristics",
+            "Inference Time",
+            "Natural Language Processing Tasks",
+            "Resource-limited Environments",
+            "Resource-constrained Environments",
+            "Decoding",
+            "Decryption",
+            "PyTorch",
+            "Small Model",
+            "Memory Usage",
+            "Mobile Platform",
+            "Complete Coding",
+            "Memory Consumption",
+            "Tokenized",
+            "Forward Pass",
+            "Quantification Techniques",
+            "Edge Devices",
+            "Pre-trained Weights",
+            "Practical Deployment",
+            "Hybrid Mode",
+            "Mode Hybridization",
+            "Latency Reduction",
+            "Specific Hardware",
+            "Transformer Block",
+            "Pipeline Optimization",
+            "Limited Computational Resources",
+            "Limited Work",
+            "Question Answering",
+            "Active Layer"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-9482-4",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "DVD ISBN",
+            "value": "979-8-3315-9480-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-9481-7",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICASSP55912.2026.11463220",
+      "title": "On the Importance of a Multi-Scale Calibration for Quantization",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6702-6",
+      "issn": "1520-6149",
+      "rank": 19,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Samsung Research, Seoul, South Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087210813",
+            "id": 37087210813,
+            "full_name": "Seungwoo Son",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Samsung Research, Seoul, South Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Samsung Research, Seoul, South Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/766001080238064",
+            "id": 766001080238064,
+            "full_name": "Ingyu Seong",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Samsung Research, Seoul, South Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Samsung Research, Seoul, South Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089753266",
+            "id": 37089753266,
+            "full_name": "Junhan Kim",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Samsung Research, Seoul, South Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Samsung Research, Seoul, South Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087003365",
+            "id": 37087003365,
+            "full_name": "Hyemi Jang",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Samsung Research, Seoul, South Korea"
+              ]
+            }
+          },
+          {
+            "affiliation": "Samsung Research, Seoul, South Korea",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088760045",
+            "id": 37088760045,
+            "full_name": "Yongkweon Jeon",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Samsung Research, Seoul, South Korea"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Post-training quantization (PTQ) is a cornerstone for efficiently deploying large language models (LLMs), where a small calibration set critically affects quantization performance. However, conventional practices rely on random sequences of fixed length, overlooking the variable-length nature of LLM inputs. Input length directly influences the activation distribution and, consequently, the weight importance captured by the Hessian, which in turn affects quantization outcomes. As a result, Hessian estimates derived from fixed-length calibration may fail to represent the true importance of weights across diverse input scenarios. We propose MaCa (Matryoshka Calibration), a simple yet effective method for length-aware Hessian construction. MaCa (i) incorporates multi-scale sequence length information into Hessian estimation and (ii) regularizes each sequence as an independent sample, yielding a more stable and fruitful Hessian for accurate quantization. Experiments on state-of-the-art LLMs (e.g., Qwen3, Gemma3, LLaMA3) demonstrate that MaCa consistently improves accuracy under low bit quantization, offering a lightweight enhancement compatible with existing PTQ frameworks. To the best of our knowledge, this is the first work to systematically highlight the role of multi-scale calibration in LLM quantization.",
+      "article_number": "11463220",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11463220",
+      "html_url": "https://ieeexplore.ieee.org/document/11463220/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11463220/",
+      "publication_title": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "conference_location": "Barcelona, Spain",
+      "conference_dates": "3-8 May 2026",
+      "publication_number": 11460365,
+      "is_number": 11460314,
+      "publication_year": 2026,
+      "publication_date": "3-8 May 2026",
+      "start_page": "1186",
+      "end_page": "1190",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 26,
+      "insert_date": "20260421",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Protocols",
+            "HTTP",
+            "Artificial intelligence",
+            "Large language models",
+            "Machine learning",
+            "Generative Pre-trained transformer",
+            "Cognitive systems",
+            "Backpropagation",
+            "Commonsense reasoning",
+            "Learning systems"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Model",
+            "Quantization",
+            "Model Optimization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Sequence Length",
+            "Consistent Improvement",
+            "Least Significant Bit",
+            "Low Bit",
+            "Average Accuracy",
+            "Extensive Experiments",
+            "Input Sequence",
+            "Quantization Error",
+            "Amount Of Error",
+            "Equal Importance",
+            "Input Channels",
+            "Longer Sequences",
+            "Input Sequence Length"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6702-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6701-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICASSP55912.2026.11464777",
+      "title": "EntroLLM: Entropy Encoded Weight Compression for Efficient Large Language Model Inference on Edge Devices",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6702-6",
+      "issn": "1520-6149",
+      "rank": 20,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "The University of Texas at Austin",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088489630",
+            "id": 37088489630,
+            "full_name": "Arnab Sanyal",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Texas at Austin"
+              ]
+            }
+          },
+          {
+            "affiliation": "Case Western Reserve University",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087884684",
+            "id": 37087884684,
+            "full_name": "Gourav Datta",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Case Western Reserve University"
+              ]
+            }
+          },
+          {
+            "affiliation": "Georgia Institute of Technology",
+            "authorUrl": "https://ieeexplore.ieee.org/author/441080118579711",
+            "id": 441080118579711,
+            "full_name": "Prithwish Mukherjee",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Georgia Institute of Technology"
+              ]
+            }
+          },
+          {
+            "affiliation": "The University of Texas at Austin",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089002336",
+            "id": 37089002336,
+            "full_name": "Sandeep P. Chinchali",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Texas at Austin"
+              ]
+            }
+          },
+          {
+            "affiliation": "The University of Texas at Austin",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37274704100",
+            "id": 37274704100,
+            "full_name": "Michael Orshansky",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Texas at Austin"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) achieve strong performance across tasks, but face storage and compute challenges on edge devices. We propose EntroLLM, a compression framework combining mixed quantization and entropy coding to reduce storage while preserving accuracy. We use a combination of unsigned and asymmetric quantization. Tensor-level quantization produces an entropy-reducing effect, increasing weight compressibility, and improving downstream Huffman encoding by 7× (8-bit) and 11.3× (4-bit) over state-of-the-art methods. Huffman coding further reduces memory bandwidth demands, while a parallel decoding strategy enables efficient weight retrieval with minimal latency. Experiments on edge-scale LLMs (smolLM-1.7B, phi3-mini-4k, mistral- 7B) show up to 30% storage savings over uint8 and 65% over uint4 models, with 31.9–146.6% faster inference on memory-limited devices like the NVIDIA JETSON P3450. EntroLLM requires no retraining and is compatible with existing post-training quantization pipelines, making it practical for edge LLM deployment.",
+      "article_number": "11464777",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11464777",
+      "html_url": "https://ieeexplore.ieee.org/document/11464777/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11464777/",
+      "publication_title": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "conference_location": "Barcelona, Spain",
+      "conference_dates": "3-8 May 2026",
+      "publication_number": 11460365,
+      "is_number": 11460314,
+      "publication_year": 2026,
+      "publication_date": "3-8 May 2026",
+      "start_page": "19742",
+      "end_page": "19746",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 14,
+      "insert_date": "20260421",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Central Processing Unit",
+            "Electronic circuits",
+            "Internet of Things",
+            "Communication systems",
+            "Internet",
+            "Protocols",
+            "HTTP",
+            "Radio access networks",
+            "Regional area networks",
+            "Artificial intelligence"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models (LLMs)",
+            "quantization",
+            "entropy coding",
+            "Huffman coding",
+            "parallel decoding"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Edge Devices",
+            "Large Language Models",
+            "Weight Compression",
+            "Coding Tree",
+            "Huffman Coding",
+            "Memory Bandwidth",
+            "Entropy Coding",
+            "Entropy Encoding",
+            "Benchmark",
+            "Parallelization",
+            "Parallel Computing",
+            "Binary Code",
+            "Low Entropy",
+            "Lossless Compression",
+            "Lossless Data Compression",
+            "Bit-width",
+            "Memory Transfer"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6702-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6701-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.23919/DATE64628.2025.10993079",
+      "title": "LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-design",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-3464-6",
+      "issn": "1530-1591",
+      "rank": 21,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Institute for Artificial Intelligence",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089862417",
+            "id": 37089862417,
+            "full_name": "Renjie Wei",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute for Artificial Intelligence",
+                "School of Integrated Circuits, Peking University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Software and Microelectronics, Peking University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/702432301894033",
+            "id": 702432301894033,
+            "full_name": "Songqiang Xu",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Software and Microelectronics, Peking University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Electronic and Computer Engineering, Peking University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086344254",
+            "id": 37086344254,
+            "full_name": "Linfeng Zhong",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Electronic and Computer Engineering, Peking University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute for Artificial Intelligence",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088877076",
+            "id": 37088877076,
+            "full_name": "Zebin Yang",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute for Artificial Intelligence",
+                "School of Integrated Circuits, Peking University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Integrated Circuits, Peking University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089593585",
+            "id": 37089593585,
+            "full_name": "Qingyu Guo",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Integrated Circuits, Peking University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Integrated Circuits, Peking University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37579397000",
+            "id": 37579397000,
+            "full_name": "Yuan Wang",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Integrated Circuits, Peking University, Beijing, China",
+                "Beijing Advanced Innovation Center for Integrated Circuits, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Integrated Circuits, Peking University, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089770227",
+            "id": 37089770227,
+            "full_name": "Runsheng Wang",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Integrated Circuits, Peking University, Beijing, China",
+                "Beijing Advanced Innovation Center for Integrated Circuits, Beijing, China",
+                "Institute of Electronic Design Automation, Peking University, Wuxi, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute for Artificial Intelligence",
+            "authorUrl": "https://ieeexplore.ieee.org/author/149225280564383",
+            "id": 149225280564383,
+            "full_name": "Meng Li",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute for Artificial Intelligence",
+                "School of Integrated Circuits, Peking University, Beijing, China",
+                "Beijing Advanced Innovation Center for Integrated Circuits, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "State space models (SSMs) like Mamba have recently attracted much attention. Compared to Transformer-based large language models (LLMs), Mamba achieves linear computation complexity with the sequence length and demonstrates superior performance. However, Mamba is hard to accelerate due to the scattered activation outliers and the complex computation dependency, rendering existing LLM accelerators inefficient. In this paper, we propose LightMamba that co-designs the quantization algorithm and FPGA accelerator architecture for efficient Mamba inference. We first propose an FPGA-friendly post-training quantization algorithm that features rotation-assisted quantization and power-of-two SSM quantization to reduce the majority of computation to 4-bit. We further design an FPGA accelerator that partially unrolls the Mamba computation to balance the efficiency and hardware costs. Through computation reordering as well as fine-grained tiling and fusion, the hardware utilization and memory efficiency of the accelerator get drastically improved. We implement LightMamba on Xilinx Versal VCK190 FPGA and achieve 4.65~6.06 x higher energy efficiency over the GPU baseline. When evaluated on Alveo U280 FPGA, LightMamba reaches 93 tokens/s, which is 1.43 x that of the GPU baseline.",
+      "article_number": "10993079",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10993079",
+      "html_url": "https://ieeexplore.ieee.org/document/10993079/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10993079/",
+      "publication_title": "2025 Design, Automation & Test in Europe Conference (DATE)",
+      "conference_location": "Lyon, France",
+      "conference_dates": "31 March-2 April 2025",
+      "publication_number": 10992638,
+      "is_number": 10992588,
+      "publication_year": 2025,
+      "publication_date": "31 March-2 April 2025",
+      "start_page": "1",
+      "end_page": "7",
+      "citing_paper_count": 14,
+      "citing_patent_count": 0,
+      "download_count": 1341,
+      "insert_date": "20250521",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Memory management",
+            "Graphics processing units",
+            "Transformers",
+            "Rendering (computer graphics)",
+            "Hardware",
+            "Inference algorithms",
+            "Energy efficiency",
+            "Computational efficiency",
+            "Field programmable gate arrays"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Mamba",
+            "rotation-assisted quantization",
+            "FPGA accelerator",
+            "computation reordering",
+            "fine-grained tiling and fusion"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Hardware Co-design",
+            "Sequence Length",
+            "State-space Model",
+            "State-space Representation",
+            "High Energy Efficiency",
+            "Hardware Cost",
+            "Quantification Algorithm",
+            "Throughput",
+            "Matrix Multiplication",
+            "Multiple Matrices",
+            "Matrix-vector Multiplication",
+            "Multiple Matrix",
+            "Hidden State",
+            "Quantization Error",
+            "Amount Of Error",
+            "Computational Overhead",
+            "Element-wise Multiplication",
+            "Linear Layer",
+            "Perplexity",
+            "Linear Projection",
+            "Prior Art",
+            "On-chip Memory",
+            "Projection Layer",
+            "Input Tokens"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-3464-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "978-3-9826741-0-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CIS-RAM61939.2024.10672819",
+      "title": "GPTQT: Quantize Large Language Models Twice to Push the Efficiency",
+      "publisher": "IEEE",
+      "isbn": "979-8-3503-6420-0",
+      "issn": "2326-8123",
+      "rank": 22,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "College of Control Science and Engineering, Zhejiang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/635367702947731",
+            "id": 635367702947731,
+            "full_name": "Yipin Guo",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Control Science and Engineering, Zhejiang University, Hangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Control Science and Engineering, Zhejiang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089618725",
+            "id": 37089618725,
+            "full_name": "Yilin Lang",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Control Science and Engineering, Zhejiang University, Hangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Control Science and Engineering, Zhejiang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38264350700",
+            "id": 38264350700,
+            "full_name": "Qinyuan Ren",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Control Science and Engineering, Zhejiang University, Hangzhou, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Due to their large size, generative Large Language Models (LLMs) require significant computing and storage resources. This paper introduces a new post-training quantization method, GPTQT, to reduce memory usage and enhance processing speed by expressing the weight of LLM in 3bit/2bit. Practice has shown that minimizing the quantization error of weights is ineffective, leading to overfitting. Therefore, GPTQT employs a progressive two-step approach: initially quantizing weights using Linear quantization to a relatively high bit, followed by converting obtained int weight to lower bit binary coding. A re-explore strategy is proposed to optimize initial scaling factor. During inference, these steps are merged into pure binary coding, enabling efficient computation. Testing across various models and datasets confirms GPTQT’s effectiveness. Compared to the strong 3-bit quantization baseline, GPTQT further reduces perplexity by 4.01 on opt-66B and increases speed by 1.24× on opt-30b. The results on Llama2 show that GPTQT is currently the best binary coding quantization method for such kind of LLMs.",
+      "article_number": "10672819",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10672819",
+      "html_url": "https://ieeexplore.ieee.org/document/10672819/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10672819/",
+      "publication_title": "2024 IEEE International Conference on Cybernetics and Intelligent Systems (CIS) and IEEE International Conference on Robotics, Automation and Mechatronics (RAM)",
+      "conference_location": "Hangzhou, China",
+      "conference_dates": "8-11 Aug. 2024",
+      "publication_number": 10672625,
+      "is_number": 10672631,
+      "publication_year": 2024,
+      "publication_date": "8-11 Aug. 2024",
+      "start_page": "368",
+      "end_page": "373",
+      "citing_paper_count": 2,
+      "citing_patent_count": 0,
+      "download_count": 194,
+      "insert_date": "20240916",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Quantization (signal)",
+            "Mechatronics",
+            "Large language models",
+            "Computational modeling",
+            "Random access memory",
+            "Rendering (computer graphics)",
+            "Encoding"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models",
+            "Quantization",
+            "Efficient AI"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Large Language Models",
+            "Scaling Factor",
+            "Quantification Method",
+            "Quantization Error",
+            "Amount Of Error",
+            "Binary Code",
+            "Most Significant Bit",
+            "High Bit",
+            "Highest Bit",
+            "Factorization",
+            "Model Size",
+            "Accuracy Loss",
+            "Improvements In Speed",
+            "Quantization Parameter",
+            "Binary Method",
+            "Binning Methods",
+            "Quantification Process",
+            "Floating-point Numbers",
+            "GPU Computation",
+            "General-purpose GPUs",
+            "GPGPU",
+            "Efficient Computational Methods",
+            "Efficient Calculation Method",
+            "Quantization Bits"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3503-6420-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3503-6419-4",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2026.3703899",
+      "title": "Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 23,
+      "volume": "14",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Moscow Institute of Physics and Technology (MIPT), Moscow, Russia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/966884164270738",
+            "id": 966884164270738,
+            "full_name": "Artem Kharinaev",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Moscow Institute of Physics and Technology (MIPT), Moscow, Russia",
+                "Yandex, Moscow, Russia"
+              ]
+            }
+          },
+          {
+            "affiliation": "École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland",
+            "authorUrl": "https://ieeexplore.ieee.org/author/492556125955174",
+            "id": 492556125955174,
+            "full_name": "Viktor Moskvoretskii",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland"
+              ]
+            }
+          },
+          {
+            "affiliation": "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/960007676030073",
+            "id": 960007676030073,
+            "full_name": "Egor Shvetsov",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia"
+              ]
+            }
+          },
+          {
+            "affiliation": "Lomonosov Moscow State University (MSU), Moscow, Russia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/559887212882085",
+            "id": 559887212882085,
+            "full_name": "Kseniia Studenikina",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Lomonosov Moscow State University (MSU), Moscow, Russia",
+                "Institute for System Programming of the Russian Academy of Sciences (ISP RAS), Moscow, Russia"
+              ]
+            }
+          },
+          {
+            "affiliation": "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/573525249689518",
+            "id": 573525249689518,
+            "full_name": "Mikhail Bykov",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia"
+              ]
+            }
+          },
+          {
+            "affiliation": "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085999324",
+            "id": 37085999324,
+            "full_name": "Evgeny Burnaev",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia",
+                "Artificial Intelligence Research Institute (AIRI), Moscow, Russia"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "Large Language Models (LLMs) are powerful tools for modern applications, but their computational demands limit accessibility. Quantization offers efficiency gains, yet its impact on safety and trustworthiness remains poorly understood. To address this, we introduce OpenSafetyMini, a human-curated safety dataset with 1,067 challenging questions to rigorously evaluate model behavior. We publicly release human safety evaluations for four LLMs (both quantized and full-precision), totaling 4,268 annotated question-answer pairs (Repository: https://github.com/On-Point-RND/OpenSafetyMini-Investigating-the-Impact-of-Quantization-Methods-on-the-Safety-and-Reliability-of-LLM). By assessing 66 quantized variants of these models using four post-training quantization (PTQ) and two quantization-aware training (QAT) methods across four safety benchmarks including human centric evaluations, we uncover critical safety performance trade offs. Our results show both PTQ and QAT can degrade safety alignment, with QAT techniques like QLORA or STE performing less safely. No single method consistently outperforms others across benchmarks, precision settings, or models, highlighting the need for safety-aware compression strategies. Furthermore, precision-specialized methods (e.g., QUIK/AWQ for 4-bit, AQLM/QUIP# for 2-bit) excel at their target precision, meaning that these methods are not superior compression methods but rather distinct approaches.",
+      "article_number": "11563799",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11563799",
+      "html_url": "https://ieeexplore.ieee.org/document/11563799/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11563799/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 11323511,
+      "publication_year": 2026,
+      "publication_date": "2026",
+      "start_page": "96771",
+      "end_page": "96793",
+      "citing_paper_count": 2,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260615",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Safety",
+            "Quantization (signal)",
+            "Large language models",
+            "Conferences",
+            "Training",
+            "Licenses",
+            "Computational linguistics",
+            "Machine learning",
+            "Matrices"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large language models",
+            "quantization",
+            "model safety",
+            "reliability",
+            "efficiency",
+            "SMILES"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Quantification Method",
+            "Language Model",
+            "Large Language Models",
+            "Safety Evaluation",
+            "Precise Set",
+            "Percentage Points",
+            "Large Model",
+            "Rate Set",
+            "Evaluation Set",
+            "McNemar Test",
+            "Level Of Precision",
+            "Precise Level",
+            "Bootstrap Confidence Intervals",
+            "Physical Harm",
+            "Safety Behavior",
+            "Safety Behaviours",
+            "Artificial Intelligence Systems",
+            "Quantification Techniques",
+            "Quantification Model",
+            "Amount Of Models",
+            "Modern Models",
+            "Safety Mechanism",
+            "Unsafe Behavior",
+            "Unsafe Behaviours",
+            "Vector Quantization"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/SysCon66367.2026.11503586",
+      "title": "Benchmarking Encoder–Decoder and Decoder-Only Models for Extremely Low-Resource English to Myaamia Translation",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-9152-6",
+      "issn": "1944-7620",
+      "rank": 24,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computer Science and Software Engineering, Miami University, Oxford, Ohio",
+            "authorUrl": "https://ieeexplore.ieee.org/author/701586450734307",
+            "id": 701586450734307,
+            "full_name": "Yogesh Chaudhary",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science and Software Engineering, Miami University, Oxford, Ohio"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science and Software Engineering, Miami University, Oxford, Ohio",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37533809800",
+            "id": 37533809800,
+            "full_name": "Suman Bhunia",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science and Software Engineering, Miami University, Oxford, Ohio"
+              ]
+            }
+          },
+          {
+            "affiliation": "Farmer School of Business, Miami University, Oxford, Ohio",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086289521",
+            "id": 37086289521,
+            "full_name": "Arthur Carvalho",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Farmer School of Business, Miami University, Oxford, Ohio"
+              ]
+            }
+          },
+          {
+            "affiliation": "Myaamia Center, Miami University, Oxford, Ohio",
+            "authorUrl": "https://ieeexplore.ieee.org/author/930493557447282",
+            "id": 930493557447282,
+            "full_name": "Douglas Troy",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Myaamia Center, Miami University, Oxford, Ohio"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Languages represent irreplaceable vessels of cultural knowledge and identity. Critically endangered Indigenous languages are languages spoken by Indigenous communities that face existential threats to their survival. This paper investigates the use of neural machine translation (NMT) frameworks to support the revitalization efforts of the Myamia (Miami-Illinois) language, a critically endangered Algonquian language. In this study, we train several large language models (LLMs), including both encoderdecoder and decoder-only architectures, on English-Myaamia sentence pairs compiled from archival and dictionary sources. We compare model architectures under conditions of extreme data scarcity and evaluate the impact of post-training quantization on translation quality and on-device deployment. The paper provides a benchmark for translation data and how several LLM models perform. Robust evaluation is conducted using the SacreBLEU and Character n-gram F-score (chrF++) metrics. Experimental evaluation demonstrates that the mt5_large.pte model variant, an ExecuTorch-exported multilingual encoder-decoder baseline attained the highest translation quality, achieving a SacreBLEU score of 39.67 and a chrF++ score of 80.37 for English to Myaamia translation. This result paves the way for applying machine translation (MT) systems to the revitalization of other extremely low-resource languages. Finally, we present a fully offline Android prototype, highlighting both the promise and the current limitations of LLMs for community-focused endangered language revitalization.",
+      "article_number": "11503586",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11503586",
+      "html_url": "https://ieeexplore.ieee.org/document/11503586/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11503586/",
+      "publication_title": "2026 IEEE International Systems Conference (SysCon)",
+      "conference_location": "Halifax, NS, Canada",
+      "conference_dates": "6-9 April 2026",
+      "publication_number": 11503439,
+      "is_number": 11503378,
+      "publication_year": 2026,
+      "publication_date": "6-9 April 2026",
+      "start_page": "1",
+      "end_page": "8",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260507",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Central Processing Unit",
+            "Through-silicon vias",
+            "Internet",
+            "Mobile handsets",
+            "Communication systems",
+            "LoRa",
+            "Radio access networks",
+            "Regional area networks",
+            "Protocols",
+            "Codecs"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Fine-tuning",
+            "large language models",
+            "machine translation",
+            "natural language processing",
+            "transformer architectures"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Prototype",
+            "Model Performance",
+            "Current Limitations",
+            "Fluidic",
+            "Cultural Identity",
+            "Language Model",
+            "Machine Translation",
+            "Critically Endangered",
+            "Indigenous Languages",
+            "Conditions Of Scarcity",
+            "Neural Machine Translation",
+            "Mobile Devices",
+            "Portable Devices",
+            "Validation Set",
+            "Mobile App",
+            "Mobile Application",
+            "Smartphone Application",
+            "Smartphone App",
+            "Internet Access",
+            "Internet Connection",
+            "Internet Users",
+            "Transfer Learning",
+            "Multiple Languages",
+            "Multi-language",
+            "Multilingual Language",
+            "Language Translation",
+            "Language Interpreters",
+            "Parallel Data",
+            "Data-parallel",
+            "Encoder-decoder Model",
+            "Tokenized",
+            "Parallel Corpus",
+            "Parallel Corpora",
+            "Bilingual Corpus",
+            "Parallel Texts",
+            "Multilingual Text",
+            "Translational Output",
+            "Translation Task",
+            "English Text"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-9152-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-9151-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICCVW69036.2025.00424",
+      "title": "MoPEQ: Mixture of Mixed Precision Quantized Experts",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8989-9",
+      "issn": "2473-9936",
+      "rank": 25,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Argonne National Laboratory, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086993962",
+            "id": 37086993962,
+            "full_name": "Krishna Teja Chitty-Venkata",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Argonne National Laboratory, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Illinois Institute of Technology Chicago, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088992660",
+            "id": 37088992660,
+            "full_name": "Jie Ye",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Illinois Institute of Technology Chicago, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Argonne National Laboratory, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087227356",
+            "id": 37087227356,
+            "full_name": "Murali Emani",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Argonne National Laboratory, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language and Vision Models using a Mixture-of-Experts (MoE) architecture pose significant challenges for deployment due to their computational and memory demands. Mixed Precision Quantization assigns different precisions to different layers of an LLM/VLM based on layer sensitivity and importance within the model. In this work, we propose a Post Training Quantization algorithm, MoPEQ, that assigns optimal bit width to each expert. Our method balances accuracy and model size by analyzing each expert's sensitivity using Hessian trace approximation instead of relying on the activation frequency of the expert. This per-expert granularity approach clusters similar experts to maintain model performance while reducing memory requirements. The experimental results on VLMEvalKit benchmark datasets using State-of-the-art VLMs Deepseek-VL2 -tiny, -small, -base, and MolmoE models demonstrate that our mixed precision quantized MoEs achieve competitive accuracy with substantial improvements in memory footprint compared to uniform-precision baseline methods. We perform a comprehensive study to analyze the impact of expert activation frequency and sensitivity using Hessian trace approximation at both layer-wise and model-wide expert precision allocation of 2, 3, and 4 bits to provide a thorough understanding of mixed precision quantization of VLM-MoEs. The code is available here.",
+      "article_number": "11376553",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11376553",
+      "html_url": "https://ieeexplore.ieee.org/document/11376553/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11376553/",
+      "publication_title": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+      "conference_location": "Honolulu, HI, USA",
+      "conference_dates": "19-20 Oct. 2025",
+      "publication_number": 11373940,
+      "is_number": 11374285,
+      "publication_year": 2025,
+      "publication_date": "19-20 Oct. 2025",
+      "start_page": "4082",
+      "end_page": "4091",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 15,
+      "insert_date": "20260223",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Analytical models",
+            "Sensitivity",
+            "Quantization (signal)",
+            "Accuracy",
+            "Computational modeling",
+            "Approximation algorithms",
+            "Resource management",
+            "Standards",
+            "Radio spectrum management"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Vision Language Models",
+            "Mixture of Experts",
+            "Mixed Precision Quantization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Mixed-precision",
+            "Model Size",
+            "Language Model",
+            "Visual Model",
+            "Bit-width",
+            "Accuracy Of Model",
+            "K-means",
+            "K-means Clustering",
+            "Quantification Method",
+            "Low Precision",
+            "Accuracy Loss",
+            "Frobenius Norm",
+            "Important Metrics",
+            "Most Significant Bit",
+            "High Bit",
+            "Highest Bit",
+            "Quantification Model",
+            "Amount Of Models",
+            "Calibration Dataset",
+            "Frequency Sensitivity",
+            "Hardware Performance",
+            "Visual Question Answering",
+            "Uniform Quantization",
+            "Input Tokens",
+            "Smaller Model Size"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8989-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8988-2",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    }
+  ],
+  "raw_meta": {
+    "total_records": 25,
+    "total_searched": 7355163
+  }
+}

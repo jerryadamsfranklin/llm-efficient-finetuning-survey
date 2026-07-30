@@ -1,0 +1,1832 @@
+{
+  "source": "ieee",
+  "api": "https://ieeexploreapi.ieee.org/api/v1/search/articles",
+  "protocol_version": "1.2",
+  "query": "\"gradient checkpointing\" AND training AND memory",
+  "query_form": "boolean",
+  "start_year": 2019,
+  "end_year": 2026,
+  "max_records_requested": 50,
+  "cap_enforced_at_request": true,
+  "sort_notes": [
+    "sort_field=relevance requested"
+  ],
+  "request_params_sans_key": {
+    "querytext": "\"gradient checkpointing\" AND training AND memory",
+    "start_year": 2019,
+    "end_year": 2026,
+    "max_records": 50,
+    "start_record": 1,
+    "format": "json",
+    "sort_field": "relevance"
+  },
+  "fetched_at": "2026-07-30T18:10:34Z",
+  "total_results_reported": 12,
+  "returned": 12,
+  "hit_result_cap": false,
+  "articles": [
+    {
+      "doi": "10.1109/ICSP69961.2026.11540930",
+      "title": "Training Strategies for Memory-Efficient LLM4Rec Based on Gradient Checkpointing and Activation Recomputation",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6242-7",
+      "rank": 1,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computer Science, University of Illinois Urbana-Champaign, Champaign, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/886146128515238",
+            "id": 886146128515238,
+            "full_name": "Hao Chen",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, University of Illinois Urbana-Champaign, Champaign, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "As the advantages of large language model-based recommendation systems (LLM4Rec) in sequential modeling and semantic understanding continue to emerge, the GPU memory bottleneck caused by long-sequence context, ultra-large parameter scale, and intermediate activation storage during training has become a key issue limiting the efficient optimization and large-scale deployment of these models. To address this, this paper proposes a memory-efficient training strategy that combines gradient checkpointing with activation recomputation, based on the existing Transformer-based LLM4Rec framework: using a pretrained autoregressive recommendation backbone, a hierarchical recomputation training mechanism is constructed, implementing adaptive checkpointing for different functional modules, and selectively recomputing high-cost activations such as multi-head attention, cross-feature interactions, and long-sequence representations. At the same time, a dual-branch preference modeling and cross-granularity semantic fusion structure is designed to jointly learn user dynamic interests, item semantic information, and global collaborative signals, maintaining representation capability and training stability under restricted GPU memory conditions. Experimental results show that the proposed method significantly reduces memory usage on multiple recommendation benchmark datasets while achieving a better balance between accuracy and efficiency.",
+      "article_number": "11540930",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11540930",
+      "html_url": "https://ieeexplore.ieee.org/document/11540930/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11540930/",
+      "publication_title": "2026 11th International Conference on Intelligent Computing and Signal Processing (ICSP)",
+      "conference_location": "Hefei, China",
+      "conference_dates": "17-19 April 2026",
+      "publication_number": 11540550,
+      "is_number": 11540551,
+      "publication_year": 2026,
+      "publication_date": "17-19 April 2026",
+      "start_page": "1009",
+      "end_page": "1012",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260604",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Memory",
+            "Modeling",
+            "Training",
+            "Equations",
+            "Sequences",
+            "Sequential analysis",
+            "Printing",
+            "Checkpointing",
+            "Optimization",
+            "Tagging"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Gradient Checkpointing",
+            "Activation Recomputation",
+            "Memory-Efficient Training",
+            "LLM4Rec",
+            "Recommendation Systems"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Training Strategy",
+            "Training Scheme",
+            "Gradient Check-Pointing",
+            "Attention Mechanism",
+            "Multi-head Attention",
+            "Memory Usage",
+            "Recommender Systems",
+            "GPU Memory",
+            "Intermediate Activity",
+            "Reduce Memory Usage",
+            "Memory Wall",
+            "Memory Bottleneck",
+            "Transformer",
+            "Sequence Length",
+            "Batch Size",
+            "Selection Strategy",
+            "Selection Scheme",
+            "Additional Calculations",
+            "Additional Estimates",
+            "Additional Computation",
+            "Hidden State",
+            "Language Model",
+            "Caching",
+            "Backward Pass",
+            "Hidden Dimension",
+            "User Reviews",
+            "Higher-order Tensors",
+            "High-order Tensor",
+            "Low-rank Factorization",
+            "Backpropagation"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6242-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3315-6240-3",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6241-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/JSSC.2025.3545731",
+      "title": "MINOTAUR: A Posit-Based 0.42–0.50-TOPS/W Edge Transformer Inference and Training Accelerator",
+      "publisher": "IEEE",
+      "issue": "4",
+      "issn": "1558-173X",
+      "rank": 2,
+      "volume": "60",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088920903",
+            "id": 37088920903,
+            "full_name": "Kartik Prabhu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088726443",
+            "id": 37088726443,
+            "full_name": "Robert M. Radway",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+                "Department of Electrical and Systems Engineering, University of Pennsylvania, Philadelphia, PA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088052063",
+            "id": 37088052063,
+            "full_name": "Jeffrey Yu",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/551587261443954",
+            "id": 551587261443954,
+            "full_name": "Kai Bartolone",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+                "NVIDIA Inc., Santa Clara, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086858759",
+            "id": 37086858759,
+            "full_name": "Massimo Giordano",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+                "Tesla Inc., Palo Alto, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/417268549559482",
+            "id": 417268549559482,
+            "full_name": "Fabian Peddinghaus",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+                "Axelera AI, Zürich, Switzerland"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086036350",
+            "id": 37086036350,
+            "full_name": "Yonatan Urman",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085464026",
+            "id": 37085464026,
+            "full_name": "Win-San Khwa",
+            "author_order": 8,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan"
+              ]
+            }
+          },
+          {
+            "affiliation": "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087570078",
+            "id": 37087570078,
+            "full_name": "Yu-Der Chih",
+            "author_order": 9,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan"
+              ]
+            }
+          },
+          {
+            "affiliation": "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087272674",
+            "id": 37087272674,
+            "full_name": "Meng-Fan Chang",
+            "author_order": 10,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Taiwan Semiconductor Manufacturing Company (TSMC), Hsinchu, Taiwan"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37276204700",
+            "id": 37276204700,
+            "full_name": "Subhasish Mitra",
+            "author_order": 11,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Electrical Engineering, Stanford University, Stanford, CA, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38581051300",
+            "id": 38581051300,
+            "full_name": "Priyanka Raina",
+            "author_order": 12,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Electrical Engineering, Stanford University, Stanford, CA, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Journals",
+      "abstract": "Transformer models have revolutionized natural language processing (NLP) and enabled many new applications, but are challenging to deploy on resource-constrained edge devices due to their high computation and memory demands. We present MINOTAUR, an edge system-on-chip (SoC) for inference and fine-tuning of Transformer models with all memory on the chip. MINOTAUR utilizes a configurable 8-bit posit-based accelerator to achieve highly accurate and efficient inference and fine-tuning. To minimize memory power, MINOTAUR employs fine-grained spatiotemporal power gating of on-chip resistive-RAM (RRAM). MINOTAUR enables on-chip fine-tuning through full-network low-rank adaptation (LoRA). MINOTAUR fabricates in a 40-nm CMOS process, achieves ResNet-18 inference in 8.1 mJ and MobileBERTTINY inference in 8.2 mJ, and performs on-chip fine-tuning with an accuracy that is within 1.7% of offline training.",
+      "article_number": "10916649",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916649",
+      "html_url": "https://ieeexplore.ieee.org/document/10916649/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10916649/",
+      "publication_title": "IEEE Journal of Solid-State Circuits",
+      "publication_number": 4,
+      "is_number": 10944491,
+      "publication_year": 2025,
+      "publication_date": "April 2025",
+      "start_page": "1311",
+      "end_page": "1323",
+      "citing_paper_count": 16,
+      "citing_patent_count": 0,
+      "download_count": 3090,
+      "insert_date": "20250306",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Random access memory",
+            "Transformers",
+            "System-on-chip",
+            "Computational modeling",
+            "Phasor measurement units",
+            "Memory management",
+            "Electrical engineering",
+            "Artificial intelligence",
+            "Inference algorithms",
+            "Resistive RAM"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Edge AI",
+            "fine-tuning",
+            "inference",
+            "neural network (NN) accelerator",
+            "posit",
+            "resistive ram",
+            "training",
+            "transformers"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Transformer Model",
+            "Edge Devices",
+            "Efficient Inference",
+            "Resistive Random Access Memory",
+            "RRAM",
+            "Resistive RAM",
+            "ReRAM",
+            "Neural Network",
+            "Convolutional Neural Network",
+            "Decoding",
+            "Decryption",
+            "Scaling Factor",
+            "Softmax",
+            "Model Weights",
+            "Question Answering",
+            "Memory Capacity",
+            "Digital Control",
+            "High Dynamic Range",
+            "Forward Pass",
+            "Non-volatile Memory",
+            "Pre-trained Weights",
+            "Datapath",
+            "Backward Pass",
+            "Quotient Field",
+            "Ring Of Fractions",
+            "Fraction Field",
+            "On-chip Memory",
+            "High-level Synthesis",
+            "C Synthesis",
+            "Weight Gradient",
+            "Checkpointing",
+            "Great Power",
+            "Major Powers",
+            "Global Power",
+            "Input Channels",
+            "Pipeline Stages",
+            "Recurrent Neural Network",
+            "Nominal Voltage",
+            "Vector Operations"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/IPDPSW63119.2024.00162",
+      "title": "Understanding Multi-Dimensional Efficiency of Fine-Tuning Large Language Models Using SpeedUp, MemoryUp, and EnergyUp",
+      "publisher": "IEEE",
+      "isbn": "979-8-3503-6461-3",
+      "rank": 3,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Computer Science Department, Texas State University, San Marcos, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089404958",
+            "id": 37089404958,
+            "full_name": "Dayuan Chen",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Computer Science Department, Texas State University, San Marcos, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Computer Science Department, Texas State University, San Marcos, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/548790892714465",
+            "id": 548790892714465,
+            "full_name": "Noe Soto",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Computer Science Department, Texas State University, San Marcos, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Computer Science Department, Texas State University, San Marcos, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/676974317477117",
+            "id": 676974317477117,
+            "full_name": "Jonas F. Tuttle",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Computer Science Department, Texas State University, San Marcos, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Computer Science Department, Texas State University, San Marcos, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37286801000",
+            "id": 37286801000,
+            "full_name": "Ziliang Zong",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Computer Science Department, Texas State University, San Marcos, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Training large language models (LLMs) from scratch is extremely time-consuming and computationally expensive. Fine-tuning provides an effective approach that skips the initial stages of training and focuses on adapting LLMs to downstream applications with lower demand in resources and reduced cost. A variety of optimizations have been proposed to further optimize the fine-tuning process to reduce training time, memory usage or energy consumption. This introduces a new challenge of selecting the appropriate optimizations that best fit different optimization goals and priorities. This paper presents a detailed analysis of the runtime, memory, and energy efficiency of five optimizations during the three phases of fine-tuning the facebook/opt-350m model, utilizing the DeepSpeed-Chat framework. We propose a framework, comprising of SpeedUp, MemoryUp, and EnergyUp metrics, that can quantitatively evaluate different optimizations across multiple efficiency dimensions. Our research demonstrates that different optimizations have varying impacts on the three efficiency dimensions considered. There is no universally applicable solution to enhance all dimensions simultaneously. Among the five optimizations investigated, ZeRO1 consistently exhibits commendable SpeedUp across all three fine-tuning steps, regardless of hardware resources. Gradient checkpointing excels in MemoryUp during the initial two fine-tuning steps but has the lowest EnergyUp. In addition, current fine-tuning optimizations are not effective in reducing energy consumption. This study provides valuable insights into the selection of appropriate optimizations for runtime, memory usage, and energy consumption during the fine-tuning process of large language models.",
+      "article_number": "10596333",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10596333",
+      "html_url": "https://ieeexplore.ieee.org/document/10596333/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10596333/",
+      "publication_title": "2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+      "conference_location": "San Francisco, CA, USA",
+      "conference_dates": "27-31 May 2024",
+      "publication_number": 10596331,
+      "is_number": 10596332,
+      "publication_year": 2024,
+      "publication_date": "27-31 May 2024",
+      "start_page": "929",
+      "end_page": "937",
+      "citing_paper_count": 3,
+      "citing_patent_count": 0,
+      "download_count": 243,
+      "insert_date": "20240726",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Measurement",
+            "Energy consumption",
+            "Distributed processing",
+            "Runtime",
+            "Large language models",
+            "Memory management"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "large language models",
+            "fine-tuning",
+            "optimizations",
+            "training time",
+            "memory usage",
+            "energy efficiency"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Fine-tuned Model",
+            "Large Language Models",
+            "Energy Consumption",
+            "Energy Expenditure",
+            "Energy Efficiency",
+            "Reduce Energy Consumption",
+            "Memory Usage",
+            "Hardware Resources",
+            "Memory Efficiency",
+            "Fine-tuning Process",
+            "Fine-tuning Step",
+            "Final Model",
+            "Optimization Algorithm",
+            "Energy Conservation",
+            "Energy-saving",
+            "Specific Tasks",
+            "Parallelization",
+            "Parallel Computing",
+            "Increased Energy Expenditure",
+            "Increase In Energy Consumption",
+            "High-performance Computing",
+            "Supercomputer",
+            "Question Answering",
+            "Memory Capacity",
+            "Increase In Runtime",
+            "Reduction In Runtime",
+            "Fine-tuning Stage",
+            "Powerful GPU",
+            "Reduce Memory Usage",
+            "GPU Memory",
+            "Optimal Impact",
+            "Language Translation",
+            "Language Interpreters",
+            "Power Usage"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3503-6461-3",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3503-6460-6",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2026.3660056",
+      "title": "MEAA-Net: Memory-Efficient Asymmetric Attention for Resource-Constrained Lung Nodule Classification",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 4,
+      "volume": "14",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia, Kuala Lumpur, Malaysia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/733557224820513",
+            "id": 733557224820513,
+            "full_name": "Lan Qiao",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia, Kuala Lumpur, Malaysia"
+              ]
+            }
+          },
+          {
+            "affiliation": "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia, Kuala Lumpur, Malaysia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37542360800",
+            "id": 37542360800,
+            "full_name": "Suriayati Chuprat",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia, Kuala Lumpur, Malaysia"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "OPEN_ACCESS",
+      "content_type": "Journals",
+      "abstract": "Early detection and classification of lung nodules is critical for improving lung cancer prognosis, yet existing deep learning models often exceed the memory budgets of typical clinical deployment hardware, hindering real-time deployment. We introduce MEAA-Net, a memory-efficient asymmetric attention network that processes intermediate feature maps into batch-wise partitions and leverages gradient checkpointing to reduce peak training memory requirements. Five architectural variants (ranging from 61 K to 14.65 million parameters and 0.76 to 3.73 GFLOPs) were trained under a unified protocol and evaluated on the validation splits of the LUNA16 and LIDC-IDRI public datasets. Our smallest model (61 K parameters; 0.76 GFLOPs) achieved 80.8% accuracy on LUNA16 and 65.4% on LIDC-IDRI, corresponding to about 12 accuracy points per million parameters and delivering single-slice inference in 11 ms on a standard CPU. Compared with ResNet-18 (11.24 M parameters), this variant reduces parameter count by  $184\\times $  while keeping mean validation accuracy within 2 percentage points under the same evaluation protocol. MEAA-Net’s highly compact design and competitive performance enable real-time, hardware-friendly lung nodule classification in resource-constrained clinical environments, paving the way for broader adoption of AI-assisted diagnostics in primary and community care settings.",
+      "article_number": "11370031",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11370031",
+      "html_url": "https://ieeexplore.ieee.org/document/11370031/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11370031/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 11323511,
+      "publication_year": 2026,
+      "publication_date": "2026",
+      "start_page": "18099",
+      "end_page": "18114",
+      "citing_paper_count": 2,
+      "citing_patent_count": 0,
+      "download_count": 165,
+      "insert_date": "20260202",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Accuracy",
+            "Lungs",
+            "Checkpointing",
+            "Transformers",
+            "Computational modeling",
+            "Computed tomography",
+            "Three-dimensional displays",
+            "Protocols",
+            "Memory management"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Lung nodule classification",
+            "lightweight neural networks",
+            "medical AI deployment",
+            "memory-efficient asymmetric attention",
+            "parameter efficiency",
+            "resource-constrained computing"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Lung Nodules",
+            "Solitary Pulmonary Nodules",
+            "Lung Nodule Classification",
+            "Asymmetric Attention",
+            "Primary Care",
+            "Primary Healthcare",
+            "Percentage Points",
+            "Feature Maps",
+            "Public Datasets",
+            "Validation Accuracy",
+            "Unified Protocol",
+            "Validation Split",
+            "Parameter Count",
+            "Clinical Deployment",
+            "Computational Cost",
+            "Convolutional Neural Network",
+            "Attention Mechanism",
+            "Multi-head Attention",
+            "Ground-glass Opacities",
+            "Global Attention",
+            "Forward Pass",
+            "Memory Footprint",
+            "Resource-constrained Settings",
+            "Pleural Thickening",
+            "Pleural Plaques",
+            "Complementary Metrics",
+            "Memory Reduction",
+            "Multi-head Self-attention",
+            "Efficiency Metrics",
+            "Convolutional Neural Networks Backbone",
+            "Practical Deployment",
+            "Vision Transformer",
+            "Learning Rate Schedule",
+            "Constant Learning Rate"
+          ]
+        }
+      },
+      "license": "CCBYNCND"
+    },
+    {
+      "doi": "10.1109/ICUMT67815.2025.11268643",
+      "title": "Reinforcement Learning for Mathematical Reasoning in Small-Scale Language Models with Structured Policy Optimization",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-7676-9",
+      "issn": "2157-0221",
+      "rank": 5,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Dept. of CSE, Amity School of Engineering & Technology, Amity University Uttar Pradesh, Noida, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089968322",
+            "id": 37089968322,
+            "full_name": "Naman Tyagi",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Dept. of CSE, Amity School of Engineering & Technology, Amity University Uttar Pradesh, Noida, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Amity Centre for Artificial Intelligence, Amity University Uttar Pradesh, Noida, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088385119",
+            "id": 37088385119,
+            "full_name": "Rakesh Chandra Joshi",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Amity Centre for Artificial Intelligence, Amity University Uttar Pradesh, Noida, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Dept. of CSE, Amity School of Engineering & Technology, Amity University Uttar Pradesh, Noida, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/600681963076758",
+            "id": 600681963076758,
+            "full_name": "Srishti Das",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Dept. of CSE, Amity School of Engineering & Technology, Amity University Uttar Pradesh, Noida, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "Dept. of Telecommunications, FEEC, Brno University of Technology, Brno, Czech Republic",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088464427",
+            "id": 37088464427,
+            "full_name": "Pavel Sikora",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Dept. of Telecommunications, FEEC, Brno University of Technology, Brno, Czech Republic"
+              ]
+            }
+          },
+          {
+            "affiliation": "Dept. of Telecommunications, FEEC, Brno University of Technology, Brno, Czech Republic",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086922101",
+            "id": 37086922101,
+            "full_name": "Vojtech Myska",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Dept. of Telecommunications, FEEC, Brno University of Technology, Brno, Czech Republic"
+              ]
+            }
+          },
+          {
+            "affiliation": "Amity Centre for Artificial Intelligence, Amity University Uttar Pradesh, Noida, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38256943900",
+            "id": 38256943900,
+            "full_name": "Malay Kishore Dutta",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Amity Centre for Artificial Intelligence, Amity University Uttar Pradesh, Noida, India"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Advancing mathematical reasoning in small-scale language models remains a challenge due to their limited capacity and the high computational demands of standard reinforcement learning methods like Proximal Policy Optimization (PPO). To address this, a resource-efficient training pipeline based on Group Relative Policy Optimization (GRPO) is proposed, enabling fine-tuning of compact models under strict memory constraints. The proposed method introduces structured prompting to explicitly separate reasoning steps from final answers and applies a dual reward system to jointly optimize for format adherence and mathematical correctness. The training incorporates low-overhead techniques such as 8-bit optimization, mixed-precision training, gradient checkpointing, and accelerated decoding for efficient rollout and policy updates. Experimental results show a $50.95 \\%$ accuracy on a benchmark reasoning dataset—GSM8K, outperforming several larger models—while training entirely on a single GPU. These findings demonstrate that small-scale models, when trained with structured reinforcement learning, can achieve competitive performance in mathematical reasoning tasks. The approach offers a practical pathway for deploying interpretable, reasoning-capable models in low-resource environments.",
+      "article_number": "11268643",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11268643",
+      "html_url": "https://ieeexplore.ieee.org/document/11268643/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11268643/",
+      "publication_title": "2025 17th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT)",
+      "conference_location": "Florence, Italy",
+      "conference_dates": "3-5 Nov. 2025",
+      "publication_number": 11268479,
+      "is_number": 11268547,
+      "publication_year": 2025,
+      "publication_date": "3-5 Nov. 2025",
+      "start_page": "272",
+      "end_page": "277",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 49,
+      "insert_date": "20251203",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Adaptation models",
+            "Accuracy",
+            "Computational modeling",
+            "Memory management",
+            "Graphics processing units",
+            "Reinforcement learning",
+            "Mathematical models",
+            "Cognition",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Reinforcement Learning",
+            "Small-Scale Language Models",
+            "Mathematical Reasoning",
+            "Group Relative Policy Optimization",
+            "Structured Prompting",
+            "Resource-Efficient Training"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Optimal Policy",
+            "Language Model",
+            "Mathematical Reasoning",
+            "Small-scale Model",
+            "Decoding",
+            "Decryption",
+            "Reinforcement Learning Methods",
+            "Single GPU",
+            "Compact Model",
+            "Final Answer",
+            "Proximal Policy Optimization",
+            "Low-resource Environments",
+            "Batch Size",
+            "Training Step",
+            "Memory Usage",
+            "Reward Function",
+            "Logical Reasoning",
+            "Word Problems",
+            "Resource-constrained Environments"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-7676-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-7675-2",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICCIT64611.2024.11021885",
+      "title": "Efficient Action Detection in Video Sequences: A Hybrid CRNN-Transformer Approach with Attention and HPC Strategies",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-1910-0",
+      "issn": "2474-9648",
+      "rank": 6,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/816455578602743",
+            "id": 816455578602743,
+            "full_name": "Md Fatin Ishrak",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/317924552207204",
+            "id": 317924552207204,
+            "full_name": "Mohammad Ahad Hossain",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/345136056745668",
+            "id": 345136056745668,
+            "full_name": "Anindya Mitra",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/511329232197876",
+            "id": 511329232197876,
+            "full_name": "Sheikh Abdul Araf",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089748168",
+            "id": 37089748168,
+            "full_name": "Mushfiqur Rahman",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data and Sciences, BRAC University, Dhaka, Bangladesh",
+            "authorUrl": "https://ieeexplore.ieee.org/author/539218328910040",
+            "id": 539218328910040,
+            "full_name": "Md Omar Faroque",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data and Sciences, BRAC University, Dhaka, Bangladesh"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Due to the digital processing advancement and availability of big data the field of action recognition had a great growth in recent years. This work introduces a new action detection model that combines a hybrid CRNN-Transformer model with current computational methods. The proposed model architecture presents a shift from mainstream models, although it provides superior levels of accuracy and performance. One of these is the use of the attention mechanism for focusing selectively, the second stage focuses on object identification and proposing the regions of interest, and the third uses optimized High-Performance Computing methods in the process. The model adopts the highly effective Transformer-based architecture, applied to the spatiotemporal sequences of videos in the form of 5D tensors using ResNet-164 as a base network, thus enhancing the recognition capacities. Moreover, there are Long Short-Term Memory (LSTM) layer that helps capture dependency across time, so predictive chance will increase as well. The proposed hybrid model is better compared to the current approaches; the results of performance analysis on the UCF101 dataset yielded an mAP of 50.1% and a mean class-wise AP (mcAP) of 80.8% which outperforms TSN, LRCN, I3D, and all the other previous models. Other additional techniques are Mixed Precision Training, XLA Optimization, and Gradient Checkpointing to enhance the computational speed. Evaluation measures, including Average Precision (AP), confirm the efficiency of the proposed method in all aspects of action detection.",
+      "article_number": "11021885",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11021885",
+      "html_url": "https://ieeexplore.ieee.org/document/11021885/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11021885/",
+      "publication_title": "2024 27th International Conference on Computer and Information Technology (ICCIT)",
+      "conference_location": "Cox's Bazar, Bangladesh",
+      "conference_dates": "20-22 Dec. 2024",
+      "publication_number": 11021691,
+      "is_number": 11021695,
+      "publication_year": 2024,
+      "publication_date": "20-22 Dec. 2024",
+      "start_page": "1487",
+      "end_page": "1492",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 25,
+      "insert_date": "20250610",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Analytical models",
+            "Three-dimensional displays",
+            "Computational modeling",
+            "High performance computing",
+            "Video sequences",
+            "Computer architecture",
+            "Transformers",
+            "Long short term memory",
+            "Videos"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Action Detection",
+            "High-Performance Computing",
+            "LSTM",
+            "Transformer",
+            "3D CNN",
+            "Model Fusion",
+            "XLA"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "High-performance Computing",
+            "Supercomputer",
+            "Video Sequences",
+            "Action Detection",
+            "Detection In Video Sequences",
+            "Short-term Memory",
+            "Immediate Memory",
+            "Long Short-term Memory",
+            "LSTM",
+            "Attention Mechanism",
+            "Multi-head Attention",
+            "Model Architecture",
+            "Action Recognition",
+            "Object Identification",
+            "Growth In Recent Years",
+            "Spatiotemporal Sequence",
+            "Human Activities",
+            "Convolutional Neural Network",
+            "Deep Neural Network",
+            "Human Behavior",
+            "False Positive Rate",
+            "Model Assessment",
+            "Object Detection",
+            "ImageNet",
+            "Region Proposal",
+            "Action Recognition Model",
+            "Backpropagation Through Time",
+            "Moment In Time",
+            "Region Proposal Network",
+            "Intermediate Layer",
+            "Field Of Computer Vision",
+            "Video Frames",
+            "Mixed Training",
+            "Global Average Pooling"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-1910-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-1909-4",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/CIPAE66821.2025.00009",
+      "title": "Enhanced DLM-DTI: Self-Supervised Pre-Training Strategies for Efficient Drug-Target Interaction Prediction",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-3841-5",
+      "rank": 7,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Fairleigh Dickson University, Vancouver, Canada",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086993446",
+            "id": 37086993446,
+            "full_name": "Yunjia Li",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Fairleigh Dickson University, Vancouver, Canada"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Drug-target interaction (DTI) prediction plays a crucial role in computational drug discovery, yet existing methods face challenges in cold-start scenarios and limited labeled data settings. This paper presents an enhanced DLM-DTI framework that incorporates self-supervised pre-training strategies and memory-efficient contrastive learning to improve prediction accuracy while maintaining computational efficiency. The enhanced framework introduces three key innovations: cross-modal pre-training tasks that capture drug-protein relationships through alignment prediction and structure-sequence correspondence learning, an adaptive sampling strategy for dynamic negative sample selection in contrastive learning, and memory optimization techniques including gradient checkpointing and queue-based negative sampling. Comprehensive experiments on three benchmark datasets (BindingDB, DAVIS, and BIOSNAP) demonstrate substantial improvements over baseline methods, achieving AUROC scores of 0.934, 0.942, and 0.928 respectively, representing 3-4% gains over the original DLM-DTI. The framework shows particular strength in challenging scenarios, maintaining over 89% performance with only 10% labeled data in few-shot learning and achieving 6-8% improvements in cold-start predictions involving unseen drugs or targets. Importantly, the enhanced model preserves computational efficiency, requiring only 7.9GB VRAM with merely 13% additional training time. These results establish a practical foundation for large-scale computational drug discovery applications.",
+      "article_number": "11226349",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11226349",
+      "html_url": "https://ieeexplore.ieee.org/document/11226349/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11226349/",
+      "publication_title": "2025 International Conference on Computers, Information Processing and Advanced Education (CIPAE)",
+      "conference_location": "Ottawa, ON, Canada",
+      "conference_dates": "26-28 Aug. 2025",
+      "publication_number": 11225918,
+      "is_number": 11226029,
+      "publication_year": 2025,
+      "publication_date": "26-28 Aug. 2025",
+      "start_page": "17",
+      "end_page": "23",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 35,
+      "insert_date": "20251113",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Drugs",
+            "Training",
+            "Technological innovation",
+            "Accuracy",
+            "Computational modeling",
+            "Contrastive learning",
+            "Drug discovery",
+            "Computational efficiency",
+            "Few shot learning",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "drug-target interaction",
+            "self-supervised learning",
+            "contrastive learning",
+            "transformer models",
+            "computational drug discovery"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Interaction Prediction",
+            "Drug-target Interactions",
+            "Drug-target Interaction Prediction",
+            "Pre-training Strategy",
+            "Pretraining Scheme",
+            "Self-supervised Pretraining",
+            "Drug Discovery",
+            "New Drugs",
+            "Drug Candidates",
+            "Computational Efficiency",
+            "Training Time",
+            "Negative Samples",
+            "Benchmark Datasets",
+            "Large-scale Applications",
+            "Baseline Methods",
+            "Improvement In Prediction",
+            "Self-supervised Learning",
+            "Contrastive Learning",
+            "Foundation For Application",
+            "Adaptive Sampling",
+            "Few-shot Learning",
+            "Dynamic Selection",
+            "Applications In Drug Discovery",
+            "Protein Sequences",
+            "Contrastive Loss",
+            "Language Model",
+            "Heterogeneous Network",
+            "Network Heterogeneity",
+            "Two-stage Approach",
+            "SMILES Strings",
+            "Pre-trained Language Models",
+            "Quantitative Structure–activity Relationship",
+            "Quantitative Structure Activity Relationship",
+            "QSAR",
+            "Balanced Distribution",
+            "Computational Performance",
+            "Computational Requirements"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-3841-5",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-3840-8",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1002/9781394406692.ch07",
+      "title": "Model Customization and Evaluation",
+      "publisher": "Wiley",
+      "isbn": "9781394328192",
+      "rank": 8,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "AWS",
+            "full_name": "Vikram Elango",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "AWS"
+              ]
+            }
+          },
+          {
+            "affiliation": "AWS",
+            "full_name": "Vivek Gangasani",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "AWS"
+              ]
+            }
+          },
+          {
+            "affiliation": "AWS",
+            "full_name": "Shreyas Subramanian",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "AWS"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Books",
+      "abstract": "<p>This chapter examines the critical processes of model customization and evaluation in generative AI, focusing on techniques such as pretraining, finetuning, and incontext learning. It explores the tradeoffs between cost, complexity, and performance, and discusses the utilization of AWS services for model customization. The chapter underscores the importance of rigorous evaluation metrics to ensure that customized models meet both technical standards and business objectives. Pretraining involves diverse and comprehensive datasets and self&#x2010;supervised learning approaches like causal language modeling (CLM) and masked language modeling (MLM). CLM predicts the next token in a sequence, excelling in coherent text generation, while MLM enhances contextual understanding by predicting masked tokens. Data selection and cleaning are crucial for high&#x2010;quality and diverse datasets. Pretraining from scratch involves data collection, model architecture design, initialization, training loop implementation, and monitoring. Techniques like gradient checkpointing and mixed&#x2010;precision training optimize memory and computational efficiency. Distributed training frameworks, such as PyTorch's DDP and FSDP, enable handling large models across multiple GPUs.</p>",
+      "article_number": "11505278",
+      "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=11505278.pdf&bkn=11505026&pdfType=chapter",
+      "html_url": "https://ieeexplore.ieee.org/document/11505278/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11505278/",
+      "publication_title": "AWS Certified AI Practitioner Study Guide: Foundational (AIF-C01) Exam",
+      "publication_number": 11505026,
+      "publication_year": 2026,
+      "start_page": "161",
+      "end_page": "186",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260504",
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print ISBN",
+            "value": "9781394328192",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "9781394328215",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Online ISBN",
+            "value": "9781394406692",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "9781394328208",
+            "isbnType": "New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/ICCIAA68481.2026.11544023",
+      "title": "High-Resolution 3D Dense-U-Net Architecture for Fully Automatic Volumetric Segmentation of Brain MRI and Spine CT Images",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-5660-0",
+      "rank": 9,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Computer Science Dep.t, University of Petra, Amman, Jordan",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088384508",
+            "id": 37088384508,
+            "full_name": "Faris Abuhashish",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Computer Science Dep.t, University of Petra, Amman, Jordan"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Engineering and IT, University of Dubai, Dubai, UAE",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089675777",
+            "id": 37089675777,
+            "full_name": "Hamzah A. Alkhazaleh",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Engineering and IT, University of Dubai, Dubai, UAE"
+              ]
+            }
+          },
+          {
+            "affiliation": "Dep.t of Computer Information Science, Higher Colleges of Technology, Dubai, UAE",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085634280",
+            "id": 37085634280,
+            "full_name": "Anas W. Arram",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Dep.t of Computer Information Science, Higher Colleges of Technology, Dubai, UAE"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The accurate volumetric segmentation of medical images is one of the key problems in the computer-aided diagnosis and treatment planning domains where high-resolution three-dimensional data should be processed without losing the spatial fidelity. Many deep-learning strategies rely on large-scale pre-processing such as image resampling, ending up in many situations that reduces spatial detail and masks clinically relevant anatomy structures. The given research delivers a high-resolution 3D Dense-U-Net which is created to conduct a fully automated volumetric segmentation on the original resolution of the input scans. The architecture upholds limited anatomical scales by requiring no pre-resampling as well as combining limitless connectivity with optimised three-dimensional convolutional operators to accelerate more multi-scale features propagation. An efficient memory-saving model using gradient checkpointing and mixed-precision training makes it feasible to run using standard GPUs, e.g. the NVIDIA GTX 1080 Ti. The results of experimental assessment are strong: T1 -weighted brain magnetic resonance imaging segmentation obtained a mean Dice coefficient of 99.73 percent (with a standard deviation of 0.12), and vertebral computed tomography analysis reached 99.81 percent (with a standard deviation of 0.09). Compared testing also brings out the lowering of segmentation time by 23% and a reduction of 41% to the use of the graphics card memory as compared to the current models. These findings show that the suggested architecture can be helpful in using volumetric segmentation in real time and with high accuracy in clinical practice without requiring resolution downsampling or special hardware.",
+      "article_number": "11544023",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11544023",
+      "html_url": "https://ieeexplore.ieee.org/document/11544023/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11544023/",
+      "publication_title": "2026 2nd International Conference on Computational Intelligence Approaches and Applications (ICCIAA)",
+      "conference_location": "Amman, Jordan",
+      "conference_dates": "12-14 May 2026",
+      "publication_number": 11543498,
+      "is_number": 11543527,
+      "publication_year": 2026,
+      "publication_date": "12-14 May 2026",
+      "start_page": "1",
+      "end_page": "8",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260608",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Dies",
+            "Printing",
+            "Biomedical imaging",
+            "Equations",
+            "Modeling",
+            "Memory",
+            "Optimization",
+            "Magnetic resonance imaging",
+            "Architecture",
+            "Computer architecture"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "3D medical image segmentation",
+            "Dense-U-Net",
+            "Volumetric analysis",
+            "Brain MRI",
+            "Spine CT",
+            "Deep learning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Image Segmentation",
+            "Brain Magnetic Resonance Imaging",
+            "Brain MRI",
+            "High-resolution 3D",
+            "Volumetric Segmentation",
+            "Spine CT",
+            "Spine CTs",
+            "Deep Learning",
+            "Medical Imaging",
+            "Clinical Imaging",
+            "Diagnostic Imaging",
+            "Multi-scale Features",
+            "Dice Similarity Coefficient",
+            "Dice Coefficient",
+            "Computer-aided Diagnosis",
+            "Computer-aided Detection",
+            "Automatic Diagnosis",
+            "Original Resolution",
+            "Use Of Memory",
+            "Memory Manipulation",
+            "Medical Image Segmentation",
+            "Image Resampling",
+            "Image Resizing",
+            "Image Rescaling",
+            "Convolutional Neural Network",
+            "Feature Maps",
+            "MRI Scans",
+            "Weight Decay",
+            "L2 Regularization",
+            "Tikhonov Regularization",
+            "High Connectivity",
+            "Use Of Parameters",
+            "Manipulation Of Parameters",
+            "Native Resolution",
+            "Dense Block",
+            "Dense Connections",
+            "Skip Connections",
+            "Volumetric Imaging",
+            "3D Convolution",
+            "Transition Layer",
+            "3D U-Net",
+            "Dice Loss",
+            "U-Net Structure"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-5660-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-5659-4",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/CSPA68262.2026.11517658",
+      "title": "A Novel 3D Attention-Gated Fully Convolutional Network and Adaptive Optimization for Coronary Artery Segmentation",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6913-6",
+      "issn": "2836-418X",
+      "rank": 10,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Independent Researcher, Fremont, California, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089000005",
+            "id": 37089000005,
+            "full_name": "Satvik Sharma",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Independent Researcher, Fremont, California, USA"
+              ]
+            }
+          },
+          {
+            "affiliation": "Stanford University, Palo Alto, California, USA",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087243449",
+            "id": 37087243449,
+            "full_name": "Pranav Kulkarni",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Stanford University, Palo Alto, California, USA"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Accurate coronary artery segmentation from computed tomography angiography (CTA) is essential for quantitative cardiovascular assessment and has been a field of heavy interest in recent times. Deep learning has shown promise in automating this task, but many state-of-the-art methods are memory-intensive or rely on multi-stage pipelines, limiting clinical feasibility. In this work, we address this gap by proposing a novel 3D fully convolutional network with attention gates (FCNAG) and optimized training strategies for automated coronary artery segmentation in high resolution. The model operates on full-resolution CTA volumes, integrating multiple attention gatebased vessel enhancements, memory-efficient gradient checkpointing, and adaptive optimization with Adam and a ReduceLROnPlateau scheduler to improve convergence and preserve fine anatomical detail under hardware constraints. Experiments were conducted on the public ImageCAS dataset using 4-fold cross-validation. The proposed FCN-AG model achieves a Dice Score Coefficient of 0.8492, Hausdorff Distance of 23.67 mm, and Average Hausdorff Distance of $\\mathbf{0. 6 2 3 4 ~ m m}$, demonstrating strong performance among FCN-based methods while requiring substantially less memory than other state-of-the-art approaches. These findings demonstrate that high-resolution coronary artery segmentation can be achieved with a memory-efficient architecture, supporting scalable usage in clinical workflows.",
+      "article_number": "11517658",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11517658",
+      "html_url": "https://ieeexplore.ieee.org/document/11517658/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11517658/",
+      "publication_title": "2026 22nd IEEE International Colloquium on Signal Processing & Its Applications (CSPA)",
+      "conference_location": "Kuala Lumpur, Malaysia",
+      "conference_dates": "1-2 May 2026",
+      "publication_number": 11517595,
+      "is_number": 11517609,
+      "publication_year": 2026,
+      "publication_date": "1-2 May 2026",
+      "start_page": "437",
+      "end_page": "442",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260520",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Arteries",
+            "Modeling",
+            "Printing",
+            "Training",
+            "Timing",
+            "Dies",
+            "Optimization",
+            "Silver",
+            "Architecture",
+            "Computer architecture"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "convolutional neural network",
+            "coronary artery segmentation",
+            "deep learning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Coronary Artery",
+            "Convolutional Network",
+            "Adaptive Optimization",
+            "Coronary Segments",
+            "Coronary Artery Segments",
+            "Quantitative Data",
+            "Quantitative Method",
+            "Quantitative Assessment",
+            "Quantitative Research",
+            "Quantitative Studies",
+            "Quantitative Approach",
+            "Deep Learning",
+            "Training Strategy",
+            "Training Scheme",
+            "Computed Tomography Angiography",
+            "CT Angiography",
+            "Hausdorff Distance",
+            "Dice Score",
+            "4-fold Cross-validation",
+            "Attention Gate",
+            "Coronary Artery Disease",
+            "Coronary Heart",
+            "Coronary Disease",
+            "Coronary Heart Disease",
+            "Ischemic Heart Disease",
+            "Medical Imaging",
+            "Clinical Imaging",
+            "Diagnostic Imaging",
+            "Learning Rate",
+            "Convolutional Neural Network",
+            "Acute Myeloid Leukemia",
+            "Attention Mechanism",
+            "Multi-head Attention",
+            "Weight Decay",
+            "L2 Regularization",
+            "Tikhonov Regularization",
+            "Coronary Blood Flow",
+            "Coronary Circulation",
+            "Coronary Anatomy",
+            "Subendocardial",
+            "Dice Similarity Coefficient",
+            "Dice Coefficient",
+            "Graph Convolutional Network",
+            "Graph Convolutional Neural Network",
+            "Standard Hardware",
+            "Medical Image Segmentation",
+            "Adaptive Learning Rate",
+            "Feature Encoder",
+            "Generative Adversarial Networks",
+            "Adversarial Learning",
+            "Stable Convergence",
+            "Accurate Boundary"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6913-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3315-6911-2",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6912-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2020.3009877",
+      "title": "A Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 11,
+      "volume": "8",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085510098",
+            "id": 37085510098,
+            "full_name": "Francesco Marra",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy"
+              ]
+            }
+          },
+          {
+            "affiliation": "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37064752900",
+            "id": 37064752900,
+            "full_name": "Diego Gragnaniello",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy"
+              ]
+            }
+          },
+          {
+            "affiliation": "DII, Università degli Studi di Napoli Federico II, Napoli, Italy",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37283465400",
+            "id": 37283465400,
+            "full_name": "Luisa Verdoliva",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "DII, Università degli Studi di Napoli Federico II, Napoli, Italy"
+              ]
+            }
+          },
+          {
+            "affiliation": "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37271954200",
+            "id": 37271954200,
+            "full_name": "Giovanni Poggi",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "DIETI, Università degli Studi di Napoli Federico II, Napoli, Italy"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "Due to limited computational and memory resources, current deep learning models accept only rather small images in input, calling for preliminary image resizing. This is not a problem for high-level vision problems, where discriminative features are barely affected by resizing. On the contrary, in image forensics, resizing tends to destroy precious high-frequency details, impacting heavily on performance. One can avoid resizing by means of patch-wise processing, at the cost of renouncing whole-image analysis. In this work, we propose a CNN-based image forgery detection framework which makes decisions based on full-resolution information gathered from the whole image. Thanks to gradient checkpointing, the framework is trainable end-to-end with limited memory resources and weak (image-level) supervision, allowing for the joint optimization of all parameters. Experiments on widespread image forensics datasets prove the good performance of the proposed approach, which largely outperforms all baselines and all reference methods.",
+      "article_number": "9142188",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9142188",
+      "html_url": "https://ieeexplore.ieee.org/document/9142188/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/9142188/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 8948470,
+      "publication_year": 2020,
+      "publication_date": "2020",
+      "start_page": "133488",
+      "end_page": "133502",
+      "citing_paper_count": 105,
+      "citing_patent_count": 0,
+      "download_count": 5186,
+      "insert_date": "20200716",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Feature extraction",
+            "Forgery",
+            "Training",
+            "Machine learning",
+            "Image forensics",
+            "Computer architecture"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "CNN",
+            "digital image forensics",
+            "forgery detection"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Convolutional Neural Network",
+            "Detection Framework",
+            "Forgery Detection",
+            "Counterfeit Detection",
+            "Image Forgery Detection",
+            "Deep Learning",
+            "Limited Resources",
+            "Deep Learning Models",
+            "Reference Method",
+            "Reference Methods",
+            "Small Imaging",
+            "Memory Resources",
+            "Image Resampling",
+            "Image Resizing",
+            "Image Rescaling",
+            "Weak Supervision",
+            "Training Set",
+            "Deep Network",
+            "Image Dataset",
+            "Use Of Imaging",
+            "Image Manipulation",
+            "Max-pooling",
+            "Target Image",
+            "Activation Maps",
+            "JPEG Compression",
+            "Automatic Procedure",
+            "Large Image",
+            "Aggregation Phase",
+            "Inpainting",
+            "Backward Pass",
+            "Feature Aggregation",
+            "Challenging Dataset",
+            "Camera Model",
+            "Image-level Labels"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/RAIIE70320.2026.11566962",
+      "title": "ZAb-LoRA: Adaptive Low-Rank Fine-Tuning for Personalized Generation with Diffusion Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3195-0547-7",
+      "rank": 12,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/688111751071673",
+            "id": 688111751071673,
+            "full_name": "Sheng Zhang",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/681273639126130",
+            "id": 681273639126130,
+            "full_name": "Zebin Su",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085416015",
+            "id": 37085416015,
+            "full_name": "Yibo Liang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/785987081779130",
+            "id": 785987081779130,
+            "full_name": "Boteng Wei",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/254825931351049",
+            "id": 254825931351049,
+            "full_name": "Pengfei Li",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Artificial Intelligence Joint Laboratory, School of Electronics and Information, Xi'an Polytechnic University, Xi'an, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large-scale text-to-image models excel at text-guided synthesis but cannot imitate specific objects from few examples. We introduce ZAb-LoRA, a lightweight DreamBooth framework for SDXL that reconciles parameter-efficient fine-tuning with content-aware learning under memory limits. It integrates SVDbased low-rank adapters with budget-aware rank allocation to prioritize high-impact components. Orthogonality regularization, multiview consistency, and optional CLIP alignment enhance fidelity and stability. Supporting mixed precision and gradient checkpointing, it produces compact, deployable adapters. From just a few images, our method associates a distinct identifier with the target object and synthesizes coherent, photorealistic scenes in novel environments, poses, and angles. Experiments show robust performance across recontextualization, viewpoint synthesis, and stylization while preserving core visual attributes.",
+      "article_number": "11566962",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11566962",
+      "html_url": "https://ieeexplore.ieee.org/document/11566962/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11566962/",
+      "publication_title": "2026 5th International Symposium on Robotics, Artificial Intelligence and Information Engineering (RAIIE)",
+      "conference_location": "Wuhu, China",
+      "conference_dates": "15-17 May 2026",
+      "publication_number": 11565061,
+      "is_number": 11566686,
+      "publication_year": 2026,
+      "publication_date": "15-17 May 2026",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260623",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Ranking (statistics)",
+            "Modeling",
+            "Printing",
+            "LoRa",
+            "Text to image",
+            "Training",
+            "Tagging",
+            "Seeds (agriculture)",
+            "Tuning",
+            "Diffusion models"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "diffusion personalization",
+            "DreamBooth",
+            "SDXL",
+            "low-rank adaptation",
+            "adaptive rank allocation"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Diffusion Model",
+            "Recontextualisation",
+            "Decontextualisation",
+            "Fluidic",
+            "Subject ID",
+            "Identification Of Topics",
+            "Pre-trained Weights",
+            "Style Transfer",
+            "Modest Gain"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3195-0547-7",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3195-0545-3",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3195-0546-0",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    }
+  ],
+  "raw_meta": {
+    "total_records": 12,
+    "total_searched": 7355163
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "source": "ieee",
+  "api": "https://ieeexploreapi.ieee.org/api/v1/search/articles",
+  "protocol_version": "1.2",
+  "query": "\"low-bit\" AND \"large language model\" AND survey",
+  "query_form": "boolean",
+  "start_year": 2019,
+  "end_year": 2026,
+  "max_records_requested": 50,
+  "cap_enforced_at_request": true,
+  "sort_notes": [
+    "sort_field=relevance requested"
+  ],
+  "request_params_sans_key": {
+    "querytext": "\"low-bit\" AND \"large language model\" AND survey",
+    "start_year": 2019,
+    "end_year": 2026,
+    "max_records": 50,
+    "start_record": 1,
+    "format": "json",
+    "sort_field": "relevance"
+  },
+  "fetched_at": "2026-07-30T18:10:33Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "hit_result_cap": false,
+  "articles": [
+    {
+      "doi": "10.1109/CCWC67433.2026.11393726",
+      "title": "On-Device Small Language Model Inference Acceleration for Real-Time Robotics: A Survey",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-9398-8",
+      "rank": 1,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computer Science, University of Southern California, Los Angeles, California",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088456383",
+            "id": 37088456383,
+            "full_name": "Anuja Dawane",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, University of Southern California, Los Angeles, California"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Small language models (SLMs) and on-device large language model (LLM) deployments are rapidly becoming key enablers of natural language interaction, high-level decision making, and semantic perception in robotics. Unlike datacenter-scale models, robotic deployments must satisfy tight latency, energy, and memory constraints while operating on embedded platforms such as NVIDIA Jetson, mobile systems-on-chip (SoCs), or custom controllers, often without reliable network connectivity. This paper surveys inference acceleration methods for on-device SLMs with a focus on real-time robotic use cases. We organize techniques into four layers: (i) model-level approaches such as low-bit quantization, distillation, architecture optimization, and sparsity; (ii) algorithmic methods including efficient attention, KV-cache compression, and speculative and multi-token decoding; (iii) system-level runtimes and scheduling techniques for embedded and edge platforms; and (iv) hardware trends spanning mobile neural processing units (NPUs), Jetson-class GPUs, FPGAs, and vision-language-action (VLA) accelerators. We highlight representative state-of-the-art SLM families (e.g., Llama 3.2, Phi-3, Gemma, Qwen 2.5, MobileLLM, MobileLLMPro) and robotics-oriented models such as Gemini Robotics ondevice and edge LLMs for ground robots. We also summarize design trade-offs through a comparison of inference frameworks (ExecuTorch, MLC-LLM, NanoLLM, llama.cpp, MediaPipe LLM, TensorRT-based stacks) and discuss open challenges for deploying language models as real-time components in robotic systems.",
+      "article_number": "11393726",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11393726",
+      "html_url": "https://ieeexplore.ieee.org/document/11393726/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11393726/",
+      "publication_title": "2026 IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC)",
+      "conference_location": "Las Vegas, NV, USA",
+      "conference_dates": "5-7 Jan. 2026",
+      "publication_number": 11393680,
+      "is_number": 11393642,
+      "publication_year": 2026,
+      "publication_date": "5-7 Jan. 2026",
+      "start_page": "669",
+      "end_page": "675",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 150,
+      "insert_date": "20260225",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Surveys",
+            "Runtime",
+            "Quantization (signal)",
+            "Semantics",
+            "Natural languages",
+            "Real-time systems",
+            "Inference algorithms",
+            "Hardware",
+            "Scheduling",
+            "Robots"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Small language models",
+            "on-device inference",
+            "robotics",
+            "real-time systems",
+            "quantization",
+            "edge AI",
+            "vision-language-action"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Real-time Robot",
+            "Natural Language",
+            "Sparsity",
+            "Robotic System",
+            "Latency Constraints",
+            "Perception Of The Robot",
+            "Ground Robots",
+            "Interactive",
+            "Running",
+            "Multi-core",
+            "Quad-core",
+            "Dual-core",
+            "CPU Cores",
+            "Question Answering",
+            "Low Precision",
+            "Target Model",
+            "Robotic Platform",
+            "Edge Devices",
+            "Quantification Model",
+            "Amount Of Models",
+            "Robotic Tasks",
+            "Adversary Model",
+            "Adversarial Inputs",
+            "Real-time Constraints",
+            "Parameter Count",
+            "Narrow Layer",
+            "Safety-critical Applications"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-9398-8",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-9397-1",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    }
+  ],
+  "raw_meta": {
+    "total_records": 1,
+    "total_searched": 7355163
+  }
+}
