@@ -1,5 +1,47 @@
 # Protocol Changelog
 
+## Phase 3 entry — 2026-07-31 (artifact regeneration, no protocol change)
+
+The search protocol, queries, coverage window, and inclusion/exclusion criteria are
+unchanged. Recorded here because published Phase 2 counts moved slightly.
+
+### Candidate pool regenerated to carry screening metadata
+
+`search/scripts/dedupe.py` discarded three fields the screening criteria depend on.
+It now carries them from the raw responses already on disk; **no source was re-queried**
+and `search/raw/` is byte-identical to the Phase 2 state.
+
+- **Citation counts** (`citations`, `citations_source`) from Semantic Scholar
+  `citationCount`, OpenAlex `cited_by_count`, IEEE `citing_paper_count`, and the
+  Scholar `cited_by` column. Inclusion criterion 3 cannot be applied without these.
+- **Language** (OpenAlex `language`) for criterion 4, and **record type** for
+  exclusion criterion 6.
+- **Abstracts** reconstructed from OpenAlex `abstract_inverted_index`, which was
+  previously dropped. Abstract coverage rose from 9,000 to 9,899 of the pool, which
+  matters because Stage 1 is a title/abstract screen.
+
+Two merge refinements, both narrowing rather than widening the pool:
+
+- arXiv IDs are now also read from OpenAlex alternate `locations`, not `ids` alone.
+  This merged one additional preprint/published pair: **unique candidates 10,334 →
+  10,333**, arXiv-ID coverage 7,782 → 7,974, multi-source merges 1,538 → 1,537.
+- Merged clusters now take the longest abstract and the highest citation count from
+  any record in the cluster, rather than only the canonical record's. The canonical
+  (published) record frequently carried no abstract while its merged preprint did.
+
+Pre-dedup record count is unchanged at **18,343**, confirming the regeneration did not
+alter retrieval. Counts in `screening/prisma-counts.md` are updated accordingly.
+
+### Stray duplicate files removed from the working tree
+
+124 byte-identical `"<name> 2.json"` / `"<name> 2.py"` copies (file-manager artifacts,
+never tracked by git) were present under `search/raw/` and `search/scripts/`. They
+inflated a dedup run to 28,646 raw records before removal. All were verified identical
+to their tracked originals by checksum and moved out of the repository. Tracked files
+were untouched.
+
+---
+
 ## v1.2 — 2026-07-22
 
 Phase 2b source-substitution amendment. Triggered because v1.0/v1.1 classified

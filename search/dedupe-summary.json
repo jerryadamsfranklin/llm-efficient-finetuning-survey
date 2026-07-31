@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-07-30T18:15:49Z",
+  "fetched_at": "2026-07-31T16:49:33Z",
   "protocol_rule": "DOI > arXiv ID > normalized title (exact then fuzzy \u2265 0.95)",
   "fuzzy_threshold": 95,
   "raw_records": 18343,
-  "unique_candidates": 10334,
+  "unique_candidates": 10333,
   "match_events": {
-    "arxiv": 6220,
+    "arxiv": 6487,
     "title_exact": 7965,
     "doi": 1520,
     "title_fuzzy": 11
@@ -13,16 +13,19 @@
   "fuzzy_links": 11,
   "by_canonical_source": {
     "google_scholar": 338,
-    "openalex_acm": 376,
+    "openalex_acm": 377,
     "arxiv": 5788,
-    "openalex": 450,
-    "semanticscholar": 2854,
-    "ieee": 500,
+    "openalex": 500,
+    "semanticscholar": 2807,
+    "ieee": 495,
     "dblp": 28
   },
-  "multi_source_candidates": 1538,
+  "multi_source_candidates": 1537,
   "with_doi": 3995,
-  "with_arxiv": 7782,
+  "with_arxiv": 7974,
+  "with_abstract": 9899,
+  "with_citation_data": 3586,
+  "at_or_above_50_citations": 854,
   "out_of_protocol": 21,
   "raw_by_source": {
     "arxiv": 11841,
@@ -33,5 +36,5 @@
     "dblp": 164,
     "google_scholar": 597
   },
-  "unique_for_screening": 10313
+  "unique_for_screening": 10312
 }

@@ -18,8 +18,9 @@ PeerJ Computer Science).
 | Phase | Status |
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
-| **2 — Execute searches** | **Closed 2026-07-31** on `phase-2-search` (pending merge to `main`). All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
-| **3+** | Not started (Stage 1 screening against `search/candidate-pool.csv`). |
+| **2 — Execute searches** | **Closed 2026-07-31**, merged to `main`. All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
+| **3 — Screening** | **In progress** on `phase-3-screening`. `screening/screening-log.csv` initialised with all 10,333 unique candidates; 23 excluded on metadata alone, 10,310 awaiting the Stage 1 title/abstract pass. |
+| **4+** | Not started (extraction against `protocol/extraction-schema.md`). |
 
 ### Protocol versions
 
@@ -41,12 +42,23 @@ PeerJ Computer Science).
 - [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
 - [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
-- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,334** unique; **10,313** for screening)
+- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,333** unique; **10,312** for screening — see the Phase 3 entry in `protocol/CHANGELOG.md` for the regeneration that changed this by one)
 - [x] Hugging Face documentation entry resolved (reference source; not consulted in Phase 2, zero records)
 - [x] No `TBD` placeholders remaining in `search/search-log.md`
 
 Phase 2 is closed. Candidate volume came in above the v1.2 amendment's 6,000–7,000
 planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
+
+### Phase 3 checklist
+
+- [x] Candidate pool regenerated to carry citation counts, language, record type, and OpenAlex abstracts (no source re-queried)
+- [x] `screening/screening-log.csv` initialised — one row per unique candidate (10,333)
+- [x] Metadata-decidable exclusions applied with the numbered criterion recorded (23 rows)
+- [x] Known metadata defects documented (`screening/metadata-anomalies.md`)
+- [ ] Stage 1 title/abstract screen (10,310 pending; criteria 1, 4, 5 and obvious 1–3, 6)
+- [ ] Stage 2 full-text screen (criteria 2, 3; adoption bar verified against a second source)
+- [ ] Stage 3 synthesis — category / subcategory assignment
+- [ ] `screening/prisma-counts.md` completed with final stage counts
 
 ## Reproducing the search
 
@@ -65,6 +77,9 @@ python search/scripts/search_dblp.py
 
 # Deduplicate all sources → search/candidate-pool.csv
 python search/scripts/dedupe.py
+
+# Initialise / refresh the screening log (never overwrites recorded decisions)
+python screening/scripts/init_screening_log.py
 
 # Venue-upgrade check for the existing ~42 manuscript references
 python search/scripts/search_openreview.py --check-existing

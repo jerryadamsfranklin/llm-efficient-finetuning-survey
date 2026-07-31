@@ -1764,14 +1764,16 @@ and in Section 10.4 (Limitations).
 - **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=50; sort_field=relevance requested; HIT_CAP=50
 
 ### dedupe — Phase 2 candidate pool
-- **Date run:** 2026-07-30T18:15:49Z
+- **Date run:** 2026-07-31T16:49:33Z
 - **Raw records loaded:** 18343
-- **Unique candidates:** 10334
-- **Multi-source merges:** 1538
-- **With DOI / arXiv:** 3995 / 7782
+- **Unique candidates:** 10333
+- **Multi-source merges:** 1537
+- **With DOI / arXiv:** 3995 / 7974
+- **With abstract:** 9899
+- **With citation count / ≥ 50 citations:** 3586 / 854
 - **Out-of-protocol (Scholar):** 21
-- **Match events:** {'arxiv': 6220, 'title_exact': 7965, 'doi': 1520, 'title_fuzzy': 11}
+- **Match events:** {'arxiv': 6487, 'title_exact': 7965, 'doi': 1520, 'title_fuzzy': 11}
 - **Raw by source:** {'arxiv': 11841, 'semanticscholar': 3500, 'openalex': 900, 'openalex_acm': 636, 'ieee': 705, 'dblp': 164, 'google_scholar': 597}
-- **Canonical-source mix:** {'google_scholar': 338, 'openalex_acm': 376, 'arxiv': 5788, 'openalex': 450, 'semanticscholar': 2854, 'ieee': 500, 'dblp': 28}
+- **Canonical-source mix:** {'google_scholar': 338, 'openalex_acm': 377, 'arxiv': 5788, 'openalex': 500, 'semanticscholar': 2807, 'ieee': 495, 'dblp': 28}
 - **Outputs:** `search/candidate-pool.csv`, `search/dedupe-summary.json`
 - **Notes:** Match priority DOI → arXiv ID → normalized title (exact then fuzzy ≥ 0.95). Published/DOI records preferred over arXiv-only when merged. Scholar NOISE_UI and DUPLICATE rows excluded from load.

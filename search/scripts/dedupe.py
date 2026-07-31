@@ -74,6 +74,28 @@ def norm_title(value: Any) -> str:
     return s
 
 
+def invert_abstract(index: Any) -> str:
+    """Rebuild plain text from an OpenAlex abstract_inverted_index."""
+    if not isinstance(index, dict) or not index:
+        return ""
+    positions: list[tuple[int, str]] = []
+    for word, locs in index.items():
+        if not isinstance(locs, list):
+            continue
+        for loc in locs:
+            if isinstance(loc, int):
+                positions.append((loc, word))
+    positions.sort()
+    return " ".join(word for _, word in positions)
+
+
+def to_int(value: Any) -> int:
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return 0
+
+
 def authors_to_str(authors: Any) -> str:
     if authors is None:
         return ""
@@ -109,6 +131,9 @@ class Record:
     is_published: bool = False  # has DOI / non-preprint venue signal
     title_norm: str = ""
     parent_query: str = ""
+    citations: int = 0  # inclusion criterion 3 (adoption bar)
+    language: str = ""  # inclusion criterion 4
+    work_type: str = ""  # exclusion criterion 6 (non-archival material)
 
     def __post_init__(self) -> None:
         self.title_norm = norm_title(self.title)
@@ -185,6 +210,7 @@ def load_semanticscholar() -> list[Record]:
                     abstract=p.get("abstract") or "",
                     extra_id=p.get("paperId") or "",
                     is_published=bool(ext.get("DOI")),
+                    citations=to_int(p.get("citationCount")),
                 )
             )
     return out
@@ -205,16 +231,21 @@ def load_openalex(source_dir: str) -> list[Record]:
             venue = ""
             if isinstance(src, dict):
                 venue = src.get("display_name") or ""
-            # OpenAlex ids.arxiv sometimes present
             arxiv = None
-            for loc_item in w.get("locations") or []:
-                # occasionally host landing pages include arxiv
-                pass
-            openalex_id = w.get("id") or ""
-            # try extract arxiv from ids
             for k, v in ids.items():
                 if "arxiv" in k.lower():
                     arxiv = v
+            if not arxiv:
+                # arXiv landing pages appear as alternate locations, not always in ids
+                for loc_item in w.get("locations") or []:
+                    if not isinstance(loc_item, dict):
+                        continue
+                    src_name = ((loc_item.get("source") or {}) or {}).get("display_name") or ""
+                    url = loc_item.get("landing_page_url") or ""
+                    if "arxiv" in src_name.lower() or "arxiv.org" in url.lower():
+                        arxiv = url or src_name
+                        break
+            openalex_id = w.get("id") or ""
             out.append(
                 Record(
                     source=source_dir,
@@ -230,9 +261,12 @@ def load_openalex(source_dir: str) -> list[Record]:
                     venue=venue,
                     doi=w.get("doi") or ids.get("doi"),
                     arxiv_id=arxiv,
-                    abstract="",
+                    abstract=invert_abstract(w.get("abstract_inverted_index")),
                     extra_id=openalex_id,
                     is_published=bool(w.get("doi") or ids.get("doi")),
+                    citations=to_int(w.get("cited_by_count")),
+                    language=str(w.get("language") or ""),
+                    work_type=str(w.get("type") or ""),
                 )
             )
     return out
@@ -257,6 +291,8 @@ def load_ieee() -> list[Record]:
                     abstract=a.get("abstract") or "",
                     extra_id=str(a.get("article_number") or ""),
                     is_published=True,
+                    citations=to_int(a.get("citing_paper_count")),
+                    work_type=str(a.get("content_type") or ""),
                 )
             )
     return out
@@ -312,6 +348,7 @@ def load_google_scholar() -> list[Record]:
                     extra_id=row.get("id") or "",
                     is_published=False,
                     parent_query=pq,
+                    citations=to_int(row.get("cited_by")),
                 )
             )
     return out
@@ -344,14 +381,25 @@ def merge_cluster(recs: list[Record]) -> dict[str, Any]:
     superseded = [a for a in arxivs if a != canon.arxiv_id]
     scholar_only = sources == ["google_scholar"]
     oop = scholar_only and canon.parent_query == "OUT_OF_PROTOCOL"
+    # Screening needs the richest metadata in the cluster, not only the canonical
+    # record's: the preferred (published) record often lacks an abstract that the
+    # merged preprint carries, and citation counts differ per source.
+    best_abstract = max((r.abstract or "" for r in recs), key=len)
+    cited = max(recs, key=lambda r: r.citations)
+    language = next((r.language for r in recs if r.language), "")
+    work_type = next((r.work_type for r in recs if r.work_type), "")
     return {
         "title": canon.title,
         "authors": canon.authors,
-        "year": canon.year,
-        "venue": canon.venue,
+        "year": canon.year or next((r.year for r in recs if r.year), ""),
+        "venue": canon.venue or next((r.venue for r in recs if r.venue), ""),
         "doi": canon.doi or (dois[0] if dois else ""),
         "arxiv_id": canon.arxiv_id or (arxivs[0] if arxivs else ""),
-        "abstract": (canon.abstract or "")[:2000],
+        "abstract": best_abstract[:2000],
+        "citations": cited.citations,
+        "citations_source": cited.source if cited.citations else "",
+        "language": language,
+        "work_type": work_type,
         "canonical_source": canon.source,
         "sources": "|".join(sources),
         "n_sources": len(sources),
@@ -457,6 +505,9 @@ def dedupe(records: list[Record], fuzzy: bool = True) -> tuple[list[dict[str, An
         "multi_source_candidates": sum(1 for r in pool if r["n_sources"] > 1),
         "with_doi": sum(1 for r in pool if r.get("doi")),
         "with_arxiv": sum(1 for r in pool if r.get("arxiv_id")),
+        "with_abstract": sum(1 for r in pool if (r.get("abstract") or "").strip()),
+        "with_citation_data": sum(1 for r in pool if r.get("citations")),
+        "at_or_above_50_citations": sum(1 for r in pool if (r.get("citations") or 0) >= 50),
         "out_of_protocol": sum(1 for r in pool if r.get("out_of_protocol")),
     }
     return pool, summary
@@ -476,6 +527,10 @@ def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
         "n_sources",
         "n_records_merged",
         "is_published",
+        "citations",
+        "citations_source",
+        "language",
+        "work_type",
         "out_of_protocol",
         "superseded_arxiv_ids",
         "parent_query",
@@ -502,6 +557,9 @@ def append_log(summary: dict[str, Any], by_source_raw: dict[str, int]) -> None:
         f"- **Unique candidates:** {summary['unique_candidates']}",
         f"- **Multi-source merges:** {summary['multi_source_candidates']}",
         f"- **With DOI / arXiv:** {summary['with_doi']} / {summary['with_arxiv']}",
+        f"- **With abstract:** {summary['with_abstract']}",
+        f"- **With citation count / ≥ 50 citations:** "
+        f"{summary['with_citation_data']} / {summary['at_or_above_50_citations']}",
         f"- **Out-of-protocol (Scholar):** {summary['out_of_protocol']}",
         f"- **Match events:** {summary['match_events']}",
         f"- **Raw by source:** {by_source_raw}",
