@@ -1777,3 +1777,144 @@ and in Section 10.4 (Limitations).
 - **Canonical-source mix:** {'google_scholar': 338, 'openalex_acm': 377, 'arxiv': 5788, 'openalex': 500, 'semanticscholar': 2807, 'ieee': 495, 'dblp': 28}
 - **Outputs:** `search/candidate-pool.csv`, `search/dedupe-summary.json`
 - **Notes:** Match priority DOI → arXiv ID → normalized title (exact then fuzzy ≥ 0.95). Published/DOI records preferred over arXiv-only when merged. Scholar NOISE_UI and DUPLICATE rows excluded from load.
+
+### supplementary — known_corpus — query 1
+- **Query:** title lookup: "FlexLoRA: Flexible low rank adaptation for large language models"
+- **Date run:** 2026-07-31T17:19:17Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=bayati2023; status=matched; matched via semanticscholar
+
+### supplementary — known_corpus — query 2
+- **Query:** title lookup: "GPipe: Efficient training of giant neural networks using pipeline parallelism"
+- **Date run:** 2026-07-31T17:19:21Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=huang2019; status=matched; matched via semanticscholar
+
+### supplementary — known_corpus — query 3
+- **Query:** title lookup: "Decoupled weight decay regularization"
+- **Date run:** 2026-07-31T17:19:25Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=loshchilov2019; status=matched; matched via semanticscholar
+
+### supplementary — known_corpus — query 4
+- **Query:** title lookup: "AdapterFusion: Non-destructive task composition for transfer learning"
+- **Date run:** 2026-07-31T17:19:29Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=pfeiffer2020; status=matched; matched via semanticscholar
+
+### supplementary — known_corpus — query 5
+- **Query:** title lookup: "Experience replay for continual learning"
+- **Date run:** 2026-07-31T17:19:33Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=rolnick2019; status=matched; matched via semanticscholar
+
+### supplementary — known_corpus — query 6
+- **Query:** title lookup: "Megatron-LM: Training multi-billion parameter language models using model parallelism"
+- **Date run:** 2026-07-31T17:19:37Z
+- **Results returned:** 1
+- **Notes:** protocol=1.3 targeted supplementary retrieval (verification of an already-cited reference, NOT discovery); reference_key=shoeybi2019; status=matched; matched via semanticscholar
+
+### semanticscholar_backfill — B1_peft — query 1 — slice 2019
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-31T17:21:47Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=722; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 1 — slice 2021
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-31T17:28:27Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=1424; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 2 — slice 2019
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-31T17:28:40Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=285; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 2 — slice 2020
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-31T17:28:58Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=300; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 2 — slice 2021
+- **Query:** low-rank adaptation LoRA language model
+- **Date run:** 2026-07-31T17:30:02Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=356; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 3 — slice 2019
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-31T17:30:06Z
+- **Results returned:** 12
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=12
+
+### semanticscholar_backfill — B1_peft — query 3 — slice 2020
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-31T17:30:15Z
+- **Results returned:** 17
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=17
+
+### semanticscholar_backfill — B1_peft — query 3 — slice 2021
+- **Query:** adapter modules transformer parameter efficient
+- **Date run:** 2026-07-31T17:30:24Z
+- **Results returned:** 52
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=52
+
+### semanticscholar_backfill — B1_peft — query 4 — slice 2019
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-31T17:30:38Z
+- **Results returned:** 142
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=142
+
+### semanticscholar_backfill — B1_peft — query 4 — slice 2020
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-31T17:31:02Z
+- **Results returned:** 158
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=158
+
+### semanticscholar_backfill — B1_peft — query 4 — slice 2021
+- **Query:** prompt tuning prefix tuning soft prompts
+- **Date run:** 2026-07-31T17:31:15Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=271; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 5 — slice 2019
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-31T17:31:29Z
+- **Results returned:** 182
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=182
+
+### semanticscholar_backfill — B1_peft — query 5 — slice 2020
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-31T17:31:46Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=249; HIT_CAP=200
+
+### semanticscholar_backfill — B1_peft — query 5 — slice 2021
+- **Query:** parameter-efficient fine-tuning survey
+- **Date run:** 2026-07-31T17:31:58Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=290; HIT_CAP=200
+
+### semanticscholar_backfill — B2_quantization — query 1 — slice 2019
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-31T17:32:32Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=1263; HIT_CAP=200

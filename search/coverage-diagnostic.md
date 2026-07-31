@@ -115,6 +115,53 @@ stabilised later — "large language model", "LLM", "PEFT" — whereas 2019–20
 
 ---
 
+## Supplementary retrieval outcome (protocol v1.3)
+
+Run 2026-07-31 via `search/scripts/search_supplementary.py`; raw output in
+`search/raw/supplementary/known_corpus_misses.json`. All six in-window references with no
+pool match were looked up by title. **All six resolved.**
+
+| Key | Matched title | Year (source) | Citations | Identifier |
+|---|---|---|---|---|
+| `pfeiffer2020` | AdapterFusion: Non-Destructive Task Composition for Transfer Learning | 2020 | 1,217 | `10.18653/v1/2021.eacl-main.39`, arXiv 2005.00247 |
+| `shoeybi2019` | Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism | 2019 | 3,010 | arXiv 1909.08053 |
+| `huang2019` | GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism | 2018 | 2,208 | NeurIPS |
+| `rolnick2019` | Experience Replay for Continual Learning | 2018 | 1,742 | arXiv 1811.11682 |
+| `loshchilov2019` | Decoupled Weight Decay Regularization | 2017 | 36,964 | ICLR |
+| `bayati2023` | **Flexora**: Flexible Low Rank Adaptation for Large Language Models | 2024 | 16 | arXiv 2408.10774 |
+
+AdapterFusion carries **1,217 citations** — far above the 50-citation adoption bar of
+inclusion criterion 3. Its omission was therefore a recall failure on a paper that plainly
+met the community-adoption threshold, which is the strongest form the defect could take.
+
+### `bayati2023` is a different work, and is not treated as recovered
+
+The lookup for `bayati2023` ("FlexLoRA", cited as 2023) matched **Flexora** (2024,
+arXiv 2408.10774) at title ratio 0.992 — a near-identical string for a different paper by
+different authors. This independently corroborates the Phase 2 venue-check decision to
+reject `bayati2023`: the work does not exist as cited.
+
+`dedupe.py` refuses to load any supplementary lookup whose matched title is not *identical*
+to the cited title, precisely so a near-miss cannot silently substitute one paper for
+another. `bayati2023` is therefore **not** counted as recovered. Flexora itself was already
+retrieved by the Phase 2 queries and remains in the pool on its own merits.
+
+### An additional mechanism: arXiv retrieval keys on submission date
+
+Three of the five — GPipe, experience replay, and AdamW — are in-window by *publication*
+date (NeurIPS 2019, NeurIPS 2019, ICLR 2019) but were first posted to arXiv in 2018, 2018,
+and 2017 respectively. The arXiv API filters on `submittedDate`, so a date-sliced arXiv
+search bounded at 2019-01-01 **cannot** return them regardless of query terms.
+
+This is a general boundary effect at the start of the coverage window, not specific to
+these three: any paper published in 2019 after a 2018 preprint is invisible to the
+date-sliced arXiv search while still satisfying inclusion criterion 5, which reads
+"published (**or** first posted, for preprints)". The v1.3 Semantic Scholar backfill
+mitigates this because Semantic Scholar's `year` filter keys on publication year rather
+than preprint submission date.
+
+---
+
 ## Consequences for the protocol
 
 1. The confirmation pass verifies **24 of 29** in-window manuscript references, not all of them.

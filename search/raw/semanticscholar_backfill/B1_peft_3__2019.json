@@ -1,0 +1,427 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "adapter modules transformer parameter efficient",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:30:06Z",
+  "total_results_reported": 12,
+  "returned": 12,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "29ddc1f43f28af7c846515e32cc167bc66886d0c",
+      "externalIds": {
+        "DBLP": "conf/icml/HoulsbyGJMLGAG19",
+        "MAG": "2950266224",
+        "ArXiv": "1902.00751",
+        "CorpusId": 59599816
+      },
+      "title": "Parameter-Efficient Transfer Learning for NLP",
+      "venue": "International Conference on Machine Learning",
+      "year": 2019,
+      "citationCount": 6976,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1902.00751, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2815290",
+          "name": "N. Houlsby"
+        },
+        {
+          "authorId": "1911881",
+          "name": "A. Giurgiu"
+        },
+        {
+          "authorId": "40569328",
+          "name": "Stanislaw Jastrzebski"
+        },
+        {
+          "authorId": "68973833",
+          "name": "Bruna Morrone"
+        },
+        {
+          "authorId": "51985388",
+          "name": "Quentin de Laroussilhe"
+        },
+        {
+          "authorId": "2813347",
+          "name": "Andrea Gesmundo"
+        },
+        {
+          "authorId": "2809991",
+          "name": "Mona Attariyan"
+        },
+        {
+          "authorId": "1802148",
+          "name": "S. Gelly"
+        }
+      ],
+      "abstract": "Fine-tuning large pre-trained models is an effective transfer mechanism in NLP. However, in the presence of many downstream tasks, fine-tuning is parameter inefficient: an entire new model is required for every task. As an alternative, we propose transfer with adapter modules. Adapter modules yield a compact and extensible model; they add only a few trainable parameters per task, and new tasks can be added without revisiting previous ones. The parameters of the original network remain fixed, yielding a high degree of parameter sharing. To demonstrate adapter's effectiveness, we transfer the recently proposed BERT Transformer model to 26 diverse text classification tasks, including the GLUE benchmark. Adapters attain near state-of-the-art performance, whilst adding only a few parameters per task. On GLUE, we attain within 0.4% of the performance of full fine-tuning, adding only 3.6% parameters per task. By contrast, fine-tuning trains 100% of the parameters per task."
+    },
+    {
+      "paperId": "d82547d92ed61248db0b3de7070d4df6c51fecfa",
+      "externalIds": {
+        "DOI": "10.1109/TPEL.2020.3026929",
+        "CorpusId": 231725466
+      },
+      "title": "Integrated Current Balancing Transformer Based Input-Parallel Output-Parallel LLC Resonant Converter Modules",
+      "venue": "IEEE transactions on power electronics",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TPEL.2020.3026929?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TPEL.2020.3026929, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Ubaid Ahmad"
+        },
+        {
+          "authorId": "2713674",
+          "name": "Honnyong Cha"
+        },
+        {
+          "authorId": "153037476",
+          "name": "N. Naseem"
+        }
+      ],
+      "abstract": "The input-parallel output-parallel (IPOP) connected converter system allows the use of a low-power converter module for high-power applications. However, mismatches in the IPOP circuit parameters cause uneven current sharing between the constituent modules, which makes the IPOP system unreliable for practical use. Different techniques have been proposed so far; however, they cause an increase in magnetic volume, cost, component count, and complexity of the IPOP system. In this article, a reliable and efficient magnetic integration technique is proposed for the current sharing requirements of the IPOP system based on LLC resonant converter modules. The proposed integrated magnetic current balancing transformer (ICBT) based IPOP LLC resonant converter modules ensures both the input current sharing and output current sharing between constituent LLC modules, under the open-loop condition quite effectively. The proposed ICBT is the resonant inductors of LLC resonant converter modules, coupled to perform the function of current balancing as well as generates enough leakage inductances for resonance operation, simultaneously. Thus, it can reduce the overall magnetic volume and improves power density of the IPOP LLC modules. Moreover, the current sharing performances of the proposed ICBT in both the steady-state and dynamic-state are analyzed based on the magnetic and electrical model. To validate the performance of the proposed ICBT based IPOP two LLC modules, a 2.6-kW hardware prototype was designed, fabricated, and tested successfully."
+    },
+    {
+      "paperId": "9d422c73b83de5e1636c2c63591e0ed9fa01e4be",
+      "externalIds": {
+        "MAG": "2925113552",
+        "DBLP": "journals/ew/Negadaev19",
+        "DOI": "10.4108/EAI.13-7-2018.157032",
+        "CorpusId": 85560791
+      },
+      "title": "Search and research of energy-efficient configuration of the power supply network",
+      "venue": "EAI Endorsed Transactions on Energy Web",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "http://eudl.eu/pdf/10.4108/eai.13-7-2018.157032",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.4108/EAI.13-7-2018.157032?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.4108/EAI.13-7-2018.157032, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51134432",
+          "name": "V. A. Negadaev"
+        }
+      ],
+      "abstract": "Model of main structure of power-supply is considered for research of states of working collections of induction motors. Model consists of separate electromechanic modules, which can contain different amount of motors. Modules are connected in different points to main cable, laid from transformer before remoted module. On base of this model is developed software program, intended for finding of optimum parameters of structure of network of power-supply with use the genetic algorithm."
+    },
+    {
+      "paperId": "b107e011abc6535f251bd78d4bed77f6e1f08732",
+      "externalIds": {
+        "MAG": "2972323644",
+        "DOI": "10.17531/ein.2019.4.3",
+        "CorpusId": 203125849
+      },
+      "title": "Selected issues of the reliability and operational assessment of a fire alarm system",
+      "venue": "Eksploatacja I Niezawodnosc-maintenance and Reliability",
+      "year": 2019,
+      "citationCount": 35,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.17531/ein.2019.4.3",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17531/ein.2019.4.3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17531/ein.2019.4.3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2160335",
+          "name": "J. Paś"
+        },
+        {
+          "authorId": "95539001",
+          "name": "Tomasz Klimczak"
+        }
+      ],
+      "abstract": "Transport fire alarm systems function in different, often extreme, operational condition. Type A, B fire alarm circuits, detection loops, alarm control units are located inside buildings (e.g. railway stations, signal boxes, transformer stations, switchgear), as well as outside, within an open access environment (e.g. railway stations, walkways, storage sheds, etc.) [10,11,12]. Long-term studies of the FAS operation process support the thesis that the proper functioning of these safety platforms is a reliability function of the components – sensors, modules, control units, etc. The maintenance and servicing process, spare parts availability and conducting periodic inspections also determine an appropriate reliability level [4, 6, 16, 17, 19]. The analysis of the operational phenomena, occurring within a FAS should take into account two important issues: the reliability approach already at the stage of developing the design fire scenario, as well as the efficient operational management of these complex technical objects – i.e., for example, service availability, conducting preventive inspections and the parameters of their environments [7, 12, 16]. For this purpose, the authors of the article selected two representative FAS, which are most commonly used within vast transport areas and attempted to imitate Jacek PAś Tomasz KlimczAK"
+    },
+    {
+      "paperId": "bded373cea2aa206509f626ec4f50305a708c884",
+      "externalIds": {
+        "MAG": "2966571540",
+        "DOI": "10.5075/EPFL-THESIS-7511",
+        "CorpusId": 201284964
+      },
+      "title": "Modeling and Design Optimization of Medium Frequency Transformers for Medium-Voltage High-Power Converters",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 18,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5075/EPFL-THESIS-7511?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5075/EPFL-THESIS-7511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "14041919",
+          "name": "M. Mogorovic"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ac10bf9223d96981a9d993719b2e10ebce40af1c",
+      "externalIds": {
+        "CorpusId": 204735588
+      },
+      "title": "BERT-A : Fine-tuning BERT with Adapters and Data Augmentation",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://web.stanford.edu/class/cs224n/reports/default/15848417.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1922611796",
+          "name": "Sina J. Semnani"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a395983704d07e046c6bbc571960d5fc77c3cd7e",
+      "externalIds": {
+        "MAG": "2995964454",
+        "DOI": "10.1088/1757-899X/677/3/032030",
+        "CorpusId": 212844956
+      },
+      "title": "Power Regulation Strategy of Virtual Pumped Storage Power Station Based on Compressed Air Energy Storage",
+      "venue": "IOP Conference Series: Materials Science and Engineering",
+      "year": 2019,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1088/1757-899x/677/3/032030",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1757-899X/677/3/032030?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1757-899X/677/3/032030, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "102681930",
+          "name": "Jiayu You"
+        },
+        {
+          "authorId": "46456812",
+          "name": "Tong Jiang"
+        }
+      ],
+      "abstract": "The virtual pumped storage power station based on compressed air energy storage combines compressed air energy storage and pumped storage technology organically, complements each other’s advantages, and adopts efficient hydraulic equipment to compress air. In the process of power regulation, the head of high-pressure pool is controlled to be constant, the efficiency of pump-turbine unit is improved, and the power station is operated efficiently and steadily. In this paper, a 1 MW pumped storage power station is designed, and the power regulation strategy for stable operation of power generation and electric conditions is put forward. The mathematical model of each module of the power station is established. According to the power regulation instructions, the ideal values of the operation parameters of the power station are calculated, and the regulation instructions are given to the driving equipment of the hydraulic transformer. The running process of the hydraulic piston and the fluctuation of the head of the high-pressure pool are also simulated and analyzed, which verifies the feasibility of the strategy."
+    },
+    {
+      "paperId": "d1e0828e7633d2103d6fb65121db6efc9179c34c",
+      "externalIds": {
+        "MAG": "2921998401",
+        "DOI": "10.24160/1993-6982-2019-1-98-107",
+        "CorpusId": 116849893
+      },
+      "title": "Specific Features Pertinent to Designing a System for Rationally Managing the Composition of Hydro Power Plant Units and Prospects for Its Further Development",
+      "venue": "Vestnik MEI",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.24160/1993-6982-2019-1-98-107?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.24160/1993-6982-2019-1-98-107, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144878799",
+          "name": "V. Zakharchenko"
+        },
+        {
+          "authorId": "2242004201",
+          "name": "Ooo Nvf «Sensors. Modules. Systems»"
+        }
+      ],
+      "abstract": "The article discusses the key principles of designing a system for rationally managing the composition of hydro power units in the online mode based on the criteria of achieving more efficient and safe operation of a hydro power plant’s (HPP) units. \nThe hydro power plant efficiency is calculated proceeding from the principle of determining the underproduction of its output from the difference between the generated power and the power that would be generated at the same volume of water and the same head during power unit operation with the optimal efficiency. The safety criterion is based on comparison between the power unit parameters data received from the process control system and those obtained from the model. The unit characterized by the minimum sum of deviations from the model for the entire HPP will be preferred for changing its state. A one else group of criteria is oriented at achieving uniform distribution of load among the HPP units, including the times for which the power units have been in operation, the number of startup and shutdown cycles, the number of transitions through the restricted operation zones, etc. An example illustrating the process of making a multicriteria-based decision is given. For the composition management purposes, the unit selected subject to all three groups of criteria ranked with the operator weighting coefficients has been adopted. \nThe system general mimic diagram using which the operator manages the composition is described. The following problems concerned with implementation of the system and the prospective lines of future investigations are analyzed: \n \nscheduling the changes in the composition of power units for short-term, mid-term and long-term periods of time; \noptimizing the power distribution function for group control systems, the number of switching operations in the mid- and long-term timeframes, and the effectiveness, safety and state estimation criteria; \nsupplementing the model with calculations of reactive power and power losses in transformers; \ntaking into consideration the water resources and constraints; \ncarrying out predictive state estimation of hydro power units and HPPs; \ncombining the approaches used in the rational management system with the energy management systems of key electric power consumers; \nmotivating the operators; and \ndeveloping and constructing a fully automatic system for controlling the rational composition of power units. \n \nThe solutions for coping with the mentioned problems are fully consistent with the latest worldwide trends in the Industry 4.0 system and can be used for making smart production facilities in the power industry sector."
+    },
+    {
+      "paperId": "0152dd861ad6473bc343a20b77cce86c66489f17",
+      "externalIds": {
+        "CorpusId": 212697564
+      },
+      "title": "SIMULATION OF BUCK AND BOOST CONVERTER FOR THE POWER QUALITY IMPROVEMENT",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://www.ijsdr.org/papers/IJSDR1905045.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2285366353",
+          "name": "Aishwarya Patil"
+        },
+        {
+          "authorId": "2547151",
+          "name": "M. Rashmi"
+        },
+        {
+          "authorId": "2101323035",
+          "name": "Prof. Nandesh"
+        },
+        {
+          "authorId": "2097786917",
+          "name": "Nagaraja Bodravara"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9f435353d360321adab8fb06d604b0bba464db84",
+      "externalIds": {
+        "MAG": "2971060368",
+        "DOI": "10.15673/swonaft.v83i1.1409",
+        "CorpusId": 203372341
+      },
+      "title": "Choice Criteria of Adsorbents for Heat Energy Converters in Ventilation Systems",
+      "venue": "Scientific Works",
+      "year": 2019,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.15673/swonaft.v83i1.1409",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.15673/swonaft.v83i1.1409?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.15673/swonaft.v83i1.1409, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "94287975",
+          "name": "E. Belyanovskaya"
+        },
+        {
+          "authorId": "118559328",
+          "name": "R. Lytovchenko"
+        },
+        {
+          "authorId": "2345308664",
+          "name": "K. Sukhyy"
+        },
+        {
+          "authorId": "2077375717",
+          "name": "O. Prokopenko"
+        },
+        {
+          "authorId": "118242199",
+          "name": "O. Yeromin"
+        },
+        {
+          "authorId": "95210293",
+          "name": "I. Sukha"
+        }
+      ],
+      "abstract": "The criteria of adsorbent selection for adsorption transformers of thermal energy in ventilation systems are considered. The main characteristics of adsorbents that affected the structural parameters of the adsorption module are revealed. The method of determining the mass of the adsorbent and the volume of the adsorption unit in ventilation systems has been developed. The main factor affecting the volume of adsorbent is confirmed to be maximal adsorption. The advantages of ‘salt in the porous silica gel matrix’ composites are compared with traditional silica gels. On the example of an adsorption regenerator of low-potential heat and moisture, the greater effectiveness of the composites \"silica gel-sodium sulphate\" is shown in comparison with the composite 'silica gel - sodium acetate'. According to the experimental data on the operation of the adsorption regenerator of heat and moisture on the basis of the composite 'silica gel – CH3COONa', the adequacy of the proposed algorithm for determining the temperature efficiency factor has been confirmed. \nSuggested algorithm includes the calculation of the air volume passed through the layer of heat-storage material, water concentration in the air at the exit from the heat accumulator, adsorption, heat of adsorption, the final cold air temperature, air temperature after mixing cold air from the street and the warm air in the room at the inlet, the calculation of the concentration of water in the flow at the exit from the heat regenerator, the adsorption and heat of adsorption, the final temperature of the warm air, the air temperature after mixing the cold air from the street and the warm air from the room during the discharge, determination of the temperature efficiency factor, total adsorption and time to achieve the maximal adsorption. The efficiency of the processes of operating adsorption regenerators based on composites 'silica gel - sodium sulphate' and 'silica gel-sodium acetate' in the conditions of the typical ventilation system of housing premises was compared. \nThe parameters that correspond to the maximum value of the temperature efficiency factors: the humid air velocity is about 0.22 - 0.32 m/s and the time of switching of the flows up to 5 minutes. The influence of meteorological conditions on the efficiency of the adsorption regenerator has been confirmed. The higher efficiency of adsorption regenerators based on 'silica gel - sodium sulphate' composites is explained, which is explained by higher values of maximal adsorption, which results in increasing the heat of adsorption. The results of the research can be used for the selection of adsorbents for energy-efficient heat energy converters in ventilation systems for residential and warehouse premises."
+    },
+    {
+      "paperId": "b7cbe537b1fbc343e97113ecf3ffd5988709d401",
+      "externalIds": {
+        "MAG": "3021873337",
+        "DBLP": "conf/ibpria/2019-1",
+        "DOI": "10.1007/978-3-030-31332-6",
+        "CorpusId": 202710158
+      },
+      "title": "Pattern Recognition and Image Analysis: 9th Iberian Conference, IbPRIA 2019, Madrid, Spain, July 1–4, 2019, Proceedings, Part I",
+      "venue": "Iberian Conference on Pattern Recognition and Image Analysis",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-030-31332-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-030-31332-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144083995",
+          "name": "A. Morales"
+        },
+        {
+          "authorId": "1701431",
+          "name": "Julian Fierrez"
+        },
+        {
+          "authorId": "2218294756",
+          "name": "J. S. Sánchez"
+        },
+        {
+          "authorId": "144719255",
+          "name": "B. Ribeiro"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c5fb520b5f40c8ec07cafe8820681426e537fabc",
+      "externalIds": {
+        "CorpusId": 210940650
+      },
+      "title": "VIRTUAL SRF CAVITY: TESTING SRF CAVITY SUPPORT SYSTEMS WITHOUT THE HASSLE OF LIQUID HELIUM AND KLYSTRONS *",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://accelconf.web.cern.ch/AccelConf/srf2019/papers/weteb4.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32667297",
+          "name": "P. Echevarria"
+        },
+        {
+          "authorId": "46280691",
+          "name": "A. Neumann"
+        },
+        {
+          "authorId": "145059677",
+          "name": "A. Ushakov"
+        },
+        {
+          "authorId": "50045301",
+          "name": "J. Knobloch"
+        },
+        {
+          "authorId": "51236439",
+          "name": "E. Aldekoa"
+        },
+        {
+          "authorId": "1695193",
+          "name": "J. Jugo"
+        }
+      ],
+      "abstract": null
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "adapter modules transformer parameter efficient",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

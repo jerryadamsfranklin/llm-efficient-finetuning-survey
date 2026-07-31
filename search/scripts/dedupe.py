@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -190,16 +191,19 @@ def load_arxiv() -> list[Record]:
     return out
 
 
-def load_semanticscholar() -> list[Record]:
+def load_semanticscholar(source_dir: str = "semanticscholar") -> list[Record]:
     out: list[Record] = []
-    for path in sorted((RAW_ROOT / "semanticscholar").glob("*.json")):
+    root = RAW_ROOT / source_dir
+    if not root.exists():
+        return out
+    for path in sorted(root.glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         q = data.get("protocol_query") or data.get("query") or path.stem
         for p in data.get("papers") or []:
             ext = p.get("externalIds") or {}
             out.append(
                 Record(
-                    source="semanticscholar",
+                    source=source_dir,
                     source_query=str(q),
                     title=p.get("title") or "",
                     authors=authors_to_str(p.get("authors")),
@@ -351,6 +355,52 @@ def load_google_scholar() -> list[Record]:
                     citations=to_int(row.get("cited_by")),
                 )
             )
+    return out
+
+
+def load_supplementary() -> list[Record]:
+    """Protocol v1.3 known-corpus verification lookups (search/raw/supplementary/).
+
+    These are references the manuscript already cites that Phase 2 did not retrieve. They
+    enter the pool so they can be screened on the same criteria as every other candidate.
+    A lookup whose matched title is not identical to the cited title is NOT loaded: it may
+    be a different work, and admitting it would silently substitute one paper for another.
+    """
+    path = RAW_ROOT / "supplementary" / "known_corpus_misses.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    out: list[Record] = []
+    for item in data.get("results") or []:
+        rec = item.get("record")
+        if not rec or item.get("lookup_status") != "matched":
+            continue
+        if norm_title(rec.get("title")) != norm_title(item.get("reference_title")):
+            print(
+                f"  supplementary: SKIP {item.get('reference_key')} — matched title differs "
+                f"from cited title (possible different work)",
+                flush=True,
+            )
+            continue
+        ext = rec.get("externalIds") or {}
+        authors = rec.get("authors")
+        out.append(
+            Record(
+                source="supplementary",
+                source_query=f"known_corpus:{item.get('reference_key')}",
+                title=rec.get("title") or "",
+                authors=authors_to_str(authors),
+                year=str(rec.get("year") or item.get("reference_year") or ""),
+                venue=rec.get("venue") or item.get("reference_venue") or "",
+                doi=ext.get("DOI") or rec.get("doi"),
+                arxiv_id=ext.get("ArXiv"),
+                abstract=rec.get("abstract") or "",
+                extra_id=str(rec.get("paperId") or ""),
+                is_published=bool(ext.get("DOI") or rec.get("doi")),
+                citations=to_int(rec.get("citationCount")),
+                parent_query=f"known_corpus:{item.get('reference_key')}",
+            )
+        )
     return out
 
 
@@ -513,6 +563,19 @@ def dedupe(records: list[Record], fuzzy: bool = True) -> tuple[list[dict[str, An
     return pool, summary
 
 
+def candidate_id(row: dict[str, Any]) -> str:
+    """Content-derived, stable candidate id.
+
+    Positional ids (C00001 by sort order) shift whenever the pool is regenerated, which
+    would silently reassign screening decisions recorded against them. Deriving the id from
+    the strongest available identifier keeps it stable across re-runs, so the pool can be
+    refreshed mid-screening without corrupting `screening/screening-log.csv`.
+    """
+    key = row.get("doi") or row.get("arxiv_id") or norm_title(row.get("title"))
+    digest = hashlib.sha1(str(key).encode("utf-8")).hexdigest()[:10]
+    return f"C-{digest}"
+
+
 def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
     fields = [
         "candidate_id",
@@ -538,12 +601,21 @@ def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
         "abstract",
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
+    seen: dict[str, int] = {}
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
-        for i, row in enumerate(pool, start=1):
+        for row in pool:
             out = {k: row.get(k, "") for k in fields}
-            out["candidate_id"] = f"C{i:05d}"
+            cid = candidate_id(row)
+            # Disambiguate the rare hash collision deterministically rather than silently
+            # merging two distinct candidates under one id.
+            if cid in seen:
+                seen[cid] += 1
+                cid = f"{cid}-{seen[cid]}"
+            else:
+                seen[cid] = 0
+            out["candidate_id"] = cid
             out["is_published"] = "yes" if row.get("is_published") else "no"
             out["out_of_protocol"] = "yes" if row.get("out_of_protocol") else "no"
             w.writerow(out)
@@ -590,11 +662,14 @@ def main() -> int:
     loaders = [
         ("arxiv", load_arxiv),
         ("semanticscholar", load_semanticscholar),
+        # v1.3 additions: date-sliced confirmation-band backfill and known-corpus lookups.
+        ("semanticscholar_backfill", lambda: load_semanticscholar("semanticscholar_backfill")),
         ("openalex", lambda: load_openalex("openalex")),
         ("openalex_acm", lambda: load_openalex("openalex_acm")),
         ("ieee", load_ieee),
         ("dblp", load_dblp),
         ("google_scholar", load_google_scholar),
+        ("supplementary", load_supplementary),
     ]
     records: list[Record] = []
     by_source_raw: dict[str, int] = {}
