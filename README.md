@@ -18,8 +18,8 @@ PeerJ Computer Science).
 | Phase | Status |
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
-| **2 — Execute searches** | **Complete on `phase-2-search`.** Protocol v1.2 sources run; candidate pool deduplicated. |
-| **3+** | Not started (Stage 1 screening). |
+| **2 — Execute searches** | **Closed 2026-07-31** on `phase-2-search` (pending merge to `main`). All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
+| **3+** | Not started (Stage 1 screening against `search/candidate-pool.csv`). |
 
 ### Protocol versions
 
@@ -42,6 +42,11 @@ PeerJ Computer Science).
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
 - [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
 - [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,334** unique; **10,313** for screening)
+- [x] Hugging Face documentation entry resolved (reference source; not consulted in Phase 2, zero records)
+- [x] No `TBD` placeholders remaining in `search/search-log.md`
+
+Phase 2 is closed. Candidate volume came in above the v1.2 amendment's 6,000–7,000
+planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 
 ## Reproducing the search
 

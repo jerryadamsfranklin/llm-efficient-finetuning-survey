@@ -30,6 +30,22 @@ decisions, 200-cap date-slicing for arXiv, prohibition on Scholar scraping,
 single-author non-PRISMA framing. This is a **retrieval-mechanism** change,
 not a scope change.
 
+### Execution outcome (recorded at Phase 2 close, 2026-07-31)
+
+All v1.2 sources ran to completion: IEEE 18/18 (705 records), OpenAlex general
+18/18 (900), OpenAlex ACM-filtered 18/18 (636), DBLP 18/18 (164), Google Scholar
+18 protocol queries as 34 manual runs (597 records after removing interface
+artifacts and one duplicate).
+
+Deduplication across all seven sources reduced **18,343** retrieved records to
+**10,334** unique candidates (**10,313** excluding Scholar out-of-protocol rows).
+This exceeds the 6,000–7,000 figure the amendment used when arguing for the
+50-record cap. The discrepancy comes from arXiv date-slicing under v1.1 (11,841
+records across 119 sliced query files), not from the v1.2 substituted sources,
+which contributed 2,405 capped records in total. The cap did what it was intended
+to do; the pre-existing arXiv volume was simply larger than the amendment
+assumed. Stage 1 screening should be planned against 10,313, not 7,000.
+
 ### Sequencing
 
 v1.2 protocol text must be committed **before** IEEE / OpenAlex / DBLP runs.

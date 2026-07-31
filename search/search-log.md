@@ -4,7 +4,9 @@ Human-readable record of every query run.
 
 **Protocol version:** 1.2 (source substitution; v1.1 automated discovery retained)  
 **Coverage window:** 2019-01-01 to 2026-06-30  
-**Status:** Protocol v1.2 search runs in progress / completed (see entries below).
+**Status:** **Closed 2026-07-31.** All protocol v1.2 sources executed (see entries below);
+candidate pool deduplicated to 10,334 unique records (`### dedupe` entry at the end of
+this log). No `TBD` placeholders remain.
 
 ## Manual sources (owner-filled)
 
@@ -178,9 +180,12 @@ retained in the final reference list.
 - **Notes:** Do not claim direct ACM DL interface search in the manuscript.
 
 ### Hugging Face documentation (reference source, not discovery)
-- **Pages consulted:** TBD
-- **Date consulted:** TBD
-- **Notes:**
+- **Pages consulted:** None during Phase 2.
+- **Date consulted:** n/a (Phase 2 closed 2026-07-31 without consulting this source).
+- **Notes:** Listed in `protocol/search-protocol.md` §3.2 as a reference source, explicitly
+  not a discovery index. It contributed **zero** records to the candidate pool, so the
+  dedupe counts are unaffected. Pages consulted while drafting implementation guidance in
+  later phases must be appended here with their access dates.
 
 ## Automated runs
 
