@@ -1,0 +1,1046 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "quantization large language model fine-tuning",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:46:41Z",
+  "total_results_reported": 12,
+  "returned": 12,
+  "returned_in_coverage_window": 12,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "8",
+      "@id": "159108",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "266/8002",
+              "text": "Rémy Decoupes"
+            },
+            {
+              "@pid": "89/11204",
+              "text": "Adrien Guille"
+            }
+          ]
+        },
+        "title": "Determinants of Geographic Information Quality in Large Language Models: Effects of Model Family, Scale, Language, Quantization, and Fine-tuning.",
+        "venue": "GeoExT@ECIR",
+        "pages": "22-31",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/geoext/DecoupesG26",
+        "ee": "https://ceur-ws.org/Vol-4201/paper3.pdf",
+        "url": "https://dblp.org/rec/conf/geoext/DecoupesG26"
+      },
+      "url": "URL#159108"
+    },
+    {
+      "@score": "6",
+      "@id": "532157",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models.",
+        "venue": "ACL",
+        "pages": "2002-2024",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/JeonKK25",
+        "doi": "10.18653/V1/2025.ACL-LONG.99",
+        "ee": "https://doi.org/10.18653/v1/2025.acl-long.99",
+        "url": "https://dblp.org/rec/conf/acl/JeonKK25"
+      },
+      "url": "URL#532157"
+    },
+    {
+      "@score": "6",
+      "@id": "604549",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "33/4816",
+              "text": "Pengyu Zhang"
+            },
+            {
+              "@pid": "01/5512",
+              "text": "Yingjie Liu"
+            },
+            {
+              "@pid": "72/8614-1",
+              "text": "Yingbo Zhou 0001"
+            },
+            {
+              "@pid": "82/378-3",
+              "text": "Ming Hu 0003"
+            },
+            {
+              "@pid": "139/0725",
+              "text": "Xian Wei"
+            },
+            {
+              "@pid": "95/573-1",
+              "text": "Mingsong Chen 0001"
+            }
+          ]
+        },
+        "title": "CE-FFT: Communication-Efficient Federated Fine-Tuning for Large Language Models via Quantization and In-Context Learning.",
+        "venue": "ICASSP",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icassp/ZhangLZ0W025",
+        "doi": "10.1109/ICASSP49660.2025.10889971",
+        "ee": "https://doi.org/10.1109/ICASSP49660.2025.10889971",
+        "url": "https://dblp.org/rec/conf/icassp/ZhangLZ0W025"
+      },
+      "url": "URL#604549"
+    },
+    {
+      "@score": "6",
+      "@id": "625594",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "22/2053-1",
+              "text": "Quan Wei 0001"
+            },
+            {
+              "@pid": "308/7285",
+              "text": "Chung-Yiu Yau"
+            },
+            {
+              "@pid": "29/9875",
+              "text": "Hoi-To Wai"
+            },
+            {
+              "@pid": "50/2082",
+              "text": "Yang Zhao"
+            },
+            {
+              "@pid": "69/9056",
+              "text": "Dongyeop Kang"
+            },
+            {
+              "@pid": "88/11095",
+              "text": "Youngsuk Park"
+            },
+            {
+              "@pid": "57/8053",
+              "text": "Mingyi Hong 0001"
+            }
+          ]
+        },
+        "title": "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/0001YWZKP025",
+        "ee": "https://proceedings.mlr.press/v267/wei25n.html",
+        "url": "https://dblp.org/rec/conf/icml/0001YWZKP025"
+      },
+      "url": "URL#625594"
+    },
+    {
+      "@score": "6",
+      "@id": "643739",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "274/1931",
+              "text": "Zhidong Gao"
+            },
+            {
+              "@pid": "321/1073",
+              "text": "Zhenxiao Zhang"
+            },
+            {
+              "@pid": "93/10800",
+              "text": "Yuanxiong Guo"
+            },
+            {
+              "@pid": "145/6503-1",
+              "text": "Yanmin Gong 0001"
+            }
+          ]
+        },
+        "title": "Federated Adaptive Fine-Tuning of Large Language Models with Heterogeneous Quantization and LoRA.",
+        "venue": "INFOCOM",
+        "pages": "1-10",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/infocom/GaoZG025",
+        "doi": "10.1109/INFOCOM55648.2025.11044641",
+        "ee": "https://doi.org/10.1109/INFOCOM55648.2025.11044641",
+        "url": "https://dblp.org/rec/conf/infocom/GaoZG025"
+      },
+      "url": "URL#643739"
+    },
+    {
+      "@score": "6",
+      "@id": "737917",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "22/2053-1",
+              "text": "Quan Wei 0001"
+            },
+            {
+              "@pid": "308/7285",
+              "text": "Chung-Yiu Yau"
+            },
+            {
+              "@pid": "29/9875",
+              "text": "Hoi-To Wai"
+            },
+            {
+              "@pid": "50/2082",
+              "text": "Yang Zhao"
+            },
+            {
+              "@pid": "69/9056",
+              "text": "Dongyeop Kang"
+            },
+            {
+              "@pid": "88/11095",
+              "text": "Youngsuk Park"
+            },
+            {
+              "@pid": "57/8053",
+              "text": "Mingyi Hong 0001"
+            }
+          ]
+        },
+        "title": "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.09003",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-09003",
+        "doi": "10.48550/ARXIV.2502.09003",
+        "ee": "https://doi.org/10.48550/arXiv.2502.09003",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-09003"
+      },
+      "url": "URL#737917"
+    },
+    {
+      "@score": "6",
+      "@id": "829428",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "417/8589",
+              "text": "Seojune Lee"
+            },
+            {
+              "@pid": "309/1053",
+              "text": "Beomseok Kang"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.17428",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-17428",
+        "doi": "10.48550/ARXIV.2509.17428",
+        "ee": "https://doi.org/10.48550/arXiv.2509.17428",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-17428"
+      },
+      "url": "URL#829428"
+    },
+    {
+      "@score": "6",
+      "@id": "1121302",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "144/5428",
+              "text": "Changhun Lee"
+            },
+            {
+              "@pid": "348/9213",
+              "text": "Jungyu Jin"
+            },
+            {
+              "@pid": "44/6997",
+              "text": "Taesu Kim"
+            },
+            {
+              "@pid": "46/7939",
+              "text": "Hyungjun Kim"
+            },
+            {
+              "@pid": "161/0829",
+              "text": "Eunhyeok Park"
+            }
+          ]
+        },
+        "title": "OWQ: Outlier-Aware Weight Quantization for Efficient Fine-Tuning and Inference of Large Language Models.",
+        "venue": "AAAI",
+        "pages": "13355-13364",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/LeeJKKP24",
+        "doi": "10.1609/AAAI.V38I12.29237",
+        "ee": "https://doi.org/10.1609/aaai.v38i12.29237",
+        "url": "https://dblp.org/rec/conf/aaai/LeeJKKP24"
+      },
+      "url": "URL#1121302"
+    },
+    {
+      "@score": "6",
+      "@id": "1226448",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "47/3589",
+              "text": "Yixiao Li"
+            },
+            {
+              "@pid": "67/3150-8",
+              "text": "Yifan Yu 0008"
+            },
+            {
+              "@pid": "35/3221-6",
+              "text": "Chen Liang 0006"
+            },
+            {
+              "@pid": "91/8774",
+              "text": "Nikos Karampatziakis"
+            },
+            {
+              "@pid": "116/8665",
+              "text": "Pengcheng He"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            },
+            {
+              "@pid": "82/199",
+              "text": "Tuo Zhao"
+            }
+          ]
+        },
+        "title": "LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models.",
+        "venue": "ICLR",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/Li00KHCZ24",
+        "ee": "https://openreview.net/forum?id=LzPWWPAdY4",
+        "url": "https://dblp.org/rec/conf/iclr/Li00KHCZ24"
+      },
+      "url": "URL#1226448"
+    },
+    {
+      "@score": "6",
+      "@id": "1848977",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "119/2772",
+              "text": "Jeonghoon Kim"
+            },
+            {
+              "@pid": "132/2899",
+              "text": "Jung Hyun Lee"
+            },
+            {
+              "@pid": "118/1568",
+              "text": "Sungdong Kim"
+            },
+            {
+              "@pid": "50/9717",
+              "text": "Joonsuk Park"
+            },
+            {
+              "@pid": "163/5657",
+              "text": "Kang Min Yoo"
+            },
+            {
+              "@pid": "119/5676",
+              "text": "Se Jung Kwon"
+            },
+            {
+              "@pid": "11/9680",
+              "text": "Dongsoo Lee"
+            }
+          ]
+        },
+        "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization.",
+        "venue": "NeurIPS",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/KimLKPYKL23",
+        "ee": "http://papers.nips.cc/paper_files/paper/2023/hash/7183f4fc87598f6c6e947b96714acbd6-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/KimLKPYKL23"
+      },
+      "url": "URL#1848977"
+    },
+    {
+      "@score": "6",
+      "@id": "1930452",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "119/2772",
+              "text": "Jeonghoon Kim"
+            },
+            {
+              "@pid": "132/2899",
+              "text": "Jung Hyun Lee"
+            },
+            {
+              "@pid": "118/1568",
+              "text": "Sungdong Kim"
+            },
+            {
+              "@pid": "50/9717",
+              "text": "Joonsuk Park"
+            },
+            {
+              "@pid": "163/5657",
+              "text": "Kang Min Yoo"
+            },
+            {
+              "@pid": "119/5676",
+              "text": "Se Jung Kwon"
+            },
+            {
+              "@pid": "11/9680",
+              "text": "Dongsoo Lee"
+            }
+          ]
+        },
+        "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization.",
+        "venue": "CoRR",
+        "volume": "abs/2305.14152",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2305-14152",
+        "doi": "10.48550/ARXIV.2305.14152",
+        "ee": "https://doi.org/10.48550/arXiv.2305.14152",
+        "url": "https://dblp.org/rec/journals/corr/abs-2305-14152"
+      },
+      "url": "URL#1930452"
+    },
+    {
+      "@score": "6",
+      "@id": "1970685",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "47/3589",
+              "text": "Yixiao Li"
+            },
+            {
+              "@pid": "67/3150-8",
+              "text": "Yifan Yu 0008"
+            },
+            {
+              "@pid": "35/3221-6",
+              "text": "Chen Liang 0006"
+            },
+            {
+              "@pid": "116/8665",
+              "text": "Pengcheng He"
+            },
+            {
+              "@pid": "91/8774",
+              "text": "Nikos Karampatziakis"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            },
+            {
+              "@pid": "82/199",
+              "text": "Tuo Zhao"
+            }
+          ]
+        },
+        "title": "LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2310.08659",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2310-08659",
+        "doi": "10.48550/ARXIV.2310.08659",
+        "ee": "https://doi.org/10.48550/arXiv.2310.08659",
+        "url": "https://dblp.org/rec/journals/corr/abs-2310-08659"
+      },
+      "url": "URL#1970685"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "8",
+      "@id": "159108",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "266/8002",
+              "text": "Rémy Decoupes"
+            },
+            {
+              "@pid": "89/11204",
+              "text": "Adrien Guille"
+            }
+          ]
+        },
+        "title": "Determinants of Geographic Information Quality in Large Language Models: Effects of Model Family, Scale, Language, Quantization, and Fine-tuning.",
+        "venue": "GeoExT@ECIR",
+        "pages": "22-31",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/geoext/DecoupesG26",
+        "ee": "https://ceur-ws.org/Vol-4201/paper3.pdf",
+        "url": "https://dblp.org/rec/conf/geoext/DecoupesG26"
+      },
+      "url": "URL#159108"
+    },
+    {
+      "@score": "6",
+      "@id": "532157",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models.",
+        "venue": "ACL",
+        "pages": "2002-2024",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/JeonKK25",
+        "doi": "10.18653/V1/2025.ACL-LONG.99",
+        "ee": "https://doi.org/10.18653/v1/2025.acl-long.99",
+        "url": "https://dblp.org/rec/conf/acl/JeonKK25"
+      },
+      "url": "URL#532157"
+    },
+    {
+      "@score": "6",
+      "@id": "604549",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "33/4816",
+              "text": "Pengyu Zhang"
+            },
+            {
+              "@pid": "01/5512",
+              "text": "Yingjie Liu"
+            },
+            {
+              "@pid": "72/8614-1",
+              "text": "Yingbo Zhou 0001"
+            },
+            {
+              "@pid": "82/378-3",
+              "text": "Ming Hu 0003"
+            },
+            {
+              "@pid": "139/0725",
+              "text": "Xian Wei"
+            },
+            {
+              "@pid": "95/573-1",
+              "text": "Mingsong Chen 0001"
+            }
+          ]
+        },
+        "title": "CE-FFT: Communication-Efficient Federated Fine-Tuning for Large Language Models via Quantization and In-Context Learning.",
+        "venue": "ICASSP",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icassp/ZhangLZ0W025",
+        "doi": "10.1109/ICASSP49660.2025.10889971",
+        "ee": "https://doi.org/10.1109/ICASSP49660.2025.10889971",
+        "url": "https://dblp.org/rec/conf/icassp/ZhangLZ0W025"
+      },
+      "url": "URL#604549"
+    },
+    {
+      "@score": "6",
+      "@id": "625594",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "22/2053-1",
+              "text": "Quan Wei 0001"
+            },
+            {
+              "@pid": "308/7285",
+              "text": "Chung-Yiu Yau"
+            },
+            {
+              "@pid": "29/9875",
+              "text": "Hoi-To Wai"
+            },
+            {
+              "@pid": "50/2082",
+              "text": "Yang Zhao"
+            },
+            {
+              "@pid": "69/9056",
+              "text": "Dongyeop Kang"
+            },
+            {
+              "@pid": "88/11095",
+              "text": "Youngsuk Park"
+            },
+            {
+              "@pid": "57/8053",
+              "text": "Mingyi Hong 0001"
+            }
+          ]
+        },
+        "title": "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/0001YWZKP025",
+        "ee": "https://proceedings.mlr.press/v267/wei25n.html",
+        "url": "https://dblp.org/rec/conf/icml/0001YWZKP025"
+      },
+      "url": "URL#625594"
+    },
+    {
+      "@score": "6",
+      "@id": "643739",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "274/1931",
+              "text": "Zhidong Gao"
+            },
+            {
+              "@pid": "321/1073",
+              "text": "Zhenxiao Zhang"
+            },
+            {
+              "@pid": "93/10800",
+              "text": "Yuanxiong Guo"
+            },
+            {
+              "@pid": "145/6503-1",
+              "text": "Yanmin Gong 0001"
+            }
+          ]
+        },
+        "title": "Federated Adaptive Fine-Tuning of Large Language Models with Heterogeneous Quantization and LoRA.",
+        "venue": "INFOCOM",
+        "pages": "1-10",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/infocom/GaoZG025",
+        "doi": "10.1109/INFOCOM55648.2025.11044641",
+        "ee": "https://doi.org/10.1109/INFOCOM55648.2025.11044641",
+        "url": "https://dblp.org/rec/conf/infocom/GaoZG025"
+      },
+      "url": "URL#643739"
+    },
+    {
+      "@score": "6",
+      "@id": "737917",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "22/2053-1",
+              "text": "Quan Wei 0001"
+            },
+            {
+              "@pid": "308/7285",
+              "text": "Chung-Yiu Yau"
+            },
+            {
+              "@pid": "29/9875",
+              "text": "Hoi-To Wai"
+            },
+            {
+              "@pid": "50/2082",
+              "text": "Yang Zhao"
+            },
+            {
+              "@pid": "69/9056",
+              "text": "Dongyeop Kang"
+            },
+            {
+              "@pid": "88/11095",
+              "text": "Youngsuk Park"
+            },
+            {
+              "@pid": "57/8053",
+              "text": "Mingyi Hong 0001"
+            }
+          ]
+        },
+        "title": "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.09003",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-09003",
+        "doi": "10.48550/ARXIV.2502.09003",
+        "ee": "https://doi.org/10.48550/arXiv.2502.09003",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-09003"
+      },
+      "url": "URL#737917"
+    },
+    {
+      "@score": "6",
+      "@id": "829428",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "417/8589",
+              "text": "Seojune Lee"
+            },
+            {
+              "@pid": "309/1053",
+              "text": "Beomseok Kang"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.17428",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-17428",
+        "doi": "10.48550/ARXIV.2509.17428",
+        "ee": "https://doi.org/10.48550/arXiv.2509.17428",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-17428"
+      },
+      "url": "URL#829428"
+    },
+    {
+      "@score": "6",
+      "@id": "1121302",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "144/5428",
+              "text": "Changhun Lee"
+            },
+            {
+              "@pid": "348/9213",
+              "text": "Jungyu Jin"
+            },
+            {
+              "@pid": "44/6997",
+              "text": "Taesu Kim"
+            },
+            {
+              "@pid": "46/7939",
+              "text": "Hyungjun Kim"
+            },
+            {
+              "@pid": "161/0829",
+              "text": "Eunhyeok Park"
+            }
+          ]
+        },
+        "title": "OWQ: Outlier-Aware Weight Quantization for Efficient Fine-Tuning and Inference of Large Language Models.",
+        "venue": "AAAI",
+        "pages": "13355-13364",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/LeeJKKP24",
+        "doi": "10.1609/AAAI.V38I12.29237",
+        "ee": "https://doi.org/10.1609/aaai.v38i12.29237",
+        "url": "https://dblp.org/rec/conf/aaai/LeeJKKP24"
+      },
+      "url": "URL#1121302"
+    },
+    {
+      "@score": "6",
+      "@id": "1226448",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "47/3589",
+              "text": "Yixiao Li"
+            },
+            {
+              "@pid": "67/3150-8",
+              "text": "Yifan Yu 0008"
+            },
+            {
+              "@pid": "35/3221-6",
+              "text": "Chen Liang 0006"
+            },
+            {
+              "@pid": "91/8774",
+              "text": "Nikos Karampatziakis"
+            },
+            {
+              "@pid": "116/8665",
+              "text": "Pengcheng He"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            },
+            {
+              "@pid": "82/199",
+              "text": "Tuo Zhao"
+            }
+          ]
+        },
+        "title": "LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models.",
+        "venue": "ICLR",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/Li00KHCZ24",
+        "ee": "https://openreview.net/forum?id=LzPWWPAdY4",
+        "url": "https://dblp.org/rec/conf/iclr/Li00KHCZ24"
+      },
+      "url": "URL#1226448"
+    },
+    {
+      "@score": "6",
+      "@id": "1848977",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "119/2772",
+              "text": "Jeonghoon Kim"
+            },
+            {
+              "@pid": "132/2899",
+              "text": "Jung Hyun Lee"
+            },
+            {
+              "@pid": "118/1568",
+              "text": "Sungdong Kim"
+            },
+            {
+              "@pid": "50/9717",
+              "text": "Joonsuk Park"
+            },
+            {
+              "@pid": "163/5657",
+              "text": "Kang Min Yoo"
+            },
+            {
+              "@pid": "119/5676",
+              "text": "Se Jung Kwon"
+            },
+            {
+              "@pid": "11/9680",
+              "text": "Dongsoo Lee"
+            }
+          ]
+        },
+        "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization.",
+        "venue": "NeurIPS",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/KimLKPYKL23",
+        "ee": "http://papers.nips.cc/paper_files/paper/2023/hash/7183f4fc87598f6c6e947b96714acbd6-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/KimLKPYKL23"
+      },
+      "url": "URL#1848977"
+    },
+    {
+      "@score": "6",
+      "@id": "1930452",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "119/2772",
+              "text": "Jeonghoon Kim"
+            },
+            {
+              "@pid": "132/2899",
+              "text": "Jung Hyun Lee"
+            },
+            {
+              "@pid": "118/1568",
+              "text": "Sungdong Kim"
+            },
+            {
+              "@pid": "50/9717",
+              "text": "Joonsuk Park"
+            },
+            {
+              "@pid": "163/5657",
+              "text": "Kang Min Yoo"
+            },
+            {
+              "@pid": "119/5676",
+              "text": "Se Jung Kwon"
+            },
+            {
+              "@pid": "11/9680",
+              "text": "Dongsoo Lee"
+            }
+          ]
+        },
+        "title": "Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization.",
+        "venue": "CoRR",
+        "volume": "abs/2305.14152",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2305-14152",
+        "doi": "10.48550/ARXIV.2305.14152",
+        "ee": "https://doi.org/10.48550/arXiv.2305.14152",
+        "url": "https://dblp.org/rec/journals/corr/abs-2305-14152"
+      },
+      "url": "URL#1930452"
+    },
+    {
+      "@score": "6",
+      "@id": "1970685",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "47/3589",
+              "text": "Yixiao Li"
+            },
+            {
+              "@pid": "67/3150-8",
+              "text": "Yifan Yu 0008"
+            },
+            {
+              "@pid": "35/3221-6",
+              "text": "Chen Liang 0006"
+            },
+            {
+              "@pid": "116/8665",
+              "text": "Pengcheng He"
+            },
+            {
+              "@pid": "91/8774",
+              "text": "Nikos Karampatziakis"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            },
+            {
+              "@pid": "82/199",
+              "text": "Tuo Zhao"
+            }
+          ]
+        },
+        "title": "LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2310.08659",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2310-08659",
+        "doi": "10.48550/ARXIV.2310.08659",
+        "ee": "https://doi.org/10.48550/arXiv.2310.08659",
+        "url": "https://dblp.org/rec/journals/corr/abs-2310-08659"
+      },
+      "url": "URL#1970685"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=quantization%20large%20language%20model%20fine-tuning&h=50&format=json"
+}

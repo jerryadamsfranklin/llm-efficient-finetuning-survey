@@ -1,0 +1,67 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"quantization\" AND \"large language model\" AND \"fine-tuning\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202201010000 TO 202212312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22quantization%22+AND+%22large+language+model%22+AND+%22fine-tuning%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202201010000+TO+202212312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:36:16Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2203.07259v3",
+      "arxiv_id": "2203.07259v3",
+      "title": "The Optimal BERT Surgeon: Scalable and Accurate Second-Order Pruning for Large Language Models",
+      "summary": "Transformer-based language models have become a key building block for natural language processing. While these models are extremely accurate, they can be too large and computationally intensive to run on standard deployments. A variety of compression methods, including distillation, quantization, structured and unstructured pruning are known to decrease model size and increase inference speed, with low accuracy loss. In this context, this paper's contributions are two-fold. We perform an in-depth study of the accuracy-compression trade-off for unstructured weight pruning of BERT models. We introduce Optimal BERT Surgeon (oBERT), an efficient and accurate weight pruning method based on approximate second-order information, which we show to yield state-of-the-art results in both stages of language tasks: pre-training and fine-tuning. Specifically, oBERT extends existing work on unstructured second-order pruning by allowing for pruning blocks of weights, and by being applicable at the BERT scale. Second, we investigate the impact of this pruning method when compounding compression approaches to obtain highly compressed but accurate models for deployment on edge devices. These models significantly push boundaries of the current state-of-the-art sparse BERT models with respect to all metrics: model size, inference speed and task accuracy. For example, relative to the dense BERT-base, we obtain 10x model size compression (in MB) with < 1% accuracy drop, 10x CPU-inference speedup with < 2% accuracy drop, and 29x CPU-inference speedup with < 7.5% accuracy drop. Our code, fully integrated with Transformers and SparseML, is available at https://github.com/neuralmagic/sparseml/tree/main/research/optimal_BERT_surgeon_oBERT.",
+      "published": "2022-03-14T16:40:31Z",
+      "updated": "2022-10-17T23:24:22Z",
+      "authors": [
+        "Eldar Kurtic",
+        "Daniel Campos",
+        "Tuan Nguyen",
+        "Elias Frantar",
+        "Mark Kurtz",
+        "Benjamin Fineran",
+        "Michael Goin",
+        "Dan Alistarh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"quantization\" AND \"large language model\" AND \"fine-tuning\"",
+  "slice_id": "2022",
+  "date_window": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2203.07259v3",
+      "arxiv_id": "2203.07259v3",
+      "title": "The Optimal BERT Surgeon: Scalable and Accurate Second-Order Pruning for Large Language Models",
+      "summary": "Transformer-based language models have become a key building block for natural language processing. While these models are extremely accurate, they can be too large and computationally intensive to run on standard deployments. A variety of compression methods, including distillation, quantization, structured and unstructured pruning are known to decrease model size and increase inference speed, with low accuracy loss. In this context, this paper's contributions are two-fold. We perform an in-depth study of the accuracy-compression trade-off for unstructured weight pruning of BERT models. We introduce Optimal BERT Surgeon (oBERT), an efficient and accurate weight pruning method based on approximate second-order information, which we show to yield state-of-the-art results in both stages of language tasks: pre-training and fine-tuning. Specifically, oBERT extends existing work on unstructured second-order pruning by allowing for pruning blocks of weights, and by being applicable at the BERT scale. Second, we investigate the impact of this pruning method when compounding compression approaches to obtain highly compressed but accurate models for deployment on edge devices. These models significantly push boundaries of the current state-of-the-art sparse BERT models with respect to all metrics: model size, inference speed and task accuracy. For example, relative to the dense BERT-base, we obtain 10x model size compression (in MB) with < 1% accuracy drop, 10x CPU-inference speedup with < 2% accuracy drop, and 29x CPU-inference speedup with < 7.5% accuracy drop. Our code, fully integrated with Transformers and SparseML, is available at https://github.com/neuralmagic/sparseml/tree/main/research/optimal_BERT_surgeon_oBERT.",
+      "published": "2022-03-14T16:40:31Z",
+      "updated": "2022-10-17T23:24:22Z",
+      "authors": [
+        "Eldar Kurtic",
+        "Daniel Campos",
+        "Tuan Nguyen",
+        "Elias Frantar",
+        "Mark Kurtz",
+        "Benjamin Fineran",
+        "Michael Goin",
+        "Dan Alistarh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    }
+  ]
+}

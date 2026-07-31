@@ -1,0 +1,507 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "((\"ZeRO\" OR \"DeepSpeed\" OR \"offloading\") AND (\"model training\" OR \"large language model\")) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[201901010000 TO 201912312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%28%22ZeRO%22+OR+%22DeepSpeed%22+OR+%22offloading%22%29+AND+%28%22model+training%22+OR+%22large+language+model%22%29%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B201901010000+TO+201912312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:37:09Z",
+  "total_results_reported": 13,
+  "returned": 13,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/1912.09637v1",
+      "arxiv_id": "1912.09637v1",
+      "title": "Pretrained Encyclopedia: Weakly Supervised Knowledge-Pretrained Language Model",
+      "summary": "Recent breakthroughs of pretrained language models have shown the effectiveness of self-supervised learning for a wide range of natural language processing (NLP) tasks. In addition to standard syntactic and semantic NLP tasks, pretrained models achieve strong improvements on tasks that involve real-world knowledge, suggesting that large-scale language modeling could be an implicit method to capture knowledge. In this work, we further investigate the extent to which pretrained models such as BERT capture knowledge using a zero-shot fact completion task. Moreover, we propose a simple yet effective weakly supervised pretraining objective, which explicitly forces the model to incorporate knowledge about real-world entities. Models trained with our new objective yield significant improvements on the fact completion task. When applied to downstream tasks, our model consistently outperforms BERT on four entity-related question answering datasets (i.e., WebQuestions, TriviaQA, SearchQA and Quasar-T) with an average 2.7 F1 improvements and a standard fine-grained entity typing dataset (i.e., FIGER) with 5.7 accuracy gains.",
+      "published": "2019-12-20T04:25:48Z",
+      "updated": "2019-12-20T04:25:48Z",
+      "authors": [
+        "Wenhan Xiong",
+        "Jingfei Du",
+        "William Yang Wang",
+        "Veselin Stoyanov"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.07160v1",
+      "arxiv_id": "1912.07160v1",
+      "title": "DAmageNet: A Universal Adversarial Dataset",
+      "summary": "It is now well known that deep neural networks (DNNs) are vulnerable to adversarial attack. Adversarial samples are similar to the clean ones, but are able to cheat the attacked DNN to produce incorrect predictions in high confidence. But most of the existing adversarial attacks have high success rate only when the information of the attacked DNN is well-known or could be estimated by massive queries. A promising way is to generate adversarial samples with high transferability. By this way, we generate 96020 transferable adversarial samples from original ones in ImageNet. The average difference, measured by root means squared deviation, is only around 3.8 on average. However, the adversarial samples are misclassified by various models with an error rate up to 90\\%. Since the images are generated independently with the attacked DNNs, this is essentially zero-query adversarial attack. We call the dataset \\emph{DAmageNet}, which is the first universal adversarial dataset that beats many models trained in ImageNet. By finding the drawbacks, DAmageNet could serve as a benchmark to study and improve robustness of DNNs. DAmageNet could be downloaded in http://www.pami.sjtu.edu.cn/Show/56/122.",
+      "published": "2019-12-16T02:11:24Z",
+      "updated": "2019-12-16T02:11:24Z",
+      "authors": [
+        "Sizhe Chen",
+        "Xiaolin Huang",
+        "Zhengbao He",
+        "Chengjin Sun"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "eess.IV",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.10165v1",
+      "arxiv_id": "1912.10165v1",
+      "title": "Zero-shot Text Classification With Generative Language Models",
+      "summary": "This work investigates the use of natural language to enable zero-shot model adaptation to new tasks. We use text and metadata from social commenting platforms as a source for a simple pretraining task. We then provide the language model with natural language descriptions of classification tasks as input and train it to generate the correct answer in natural language via a language modeling objective. This allows the model to generalize to new classification tasks without the need for multiple multitask classification heads. We show the zero-shot performance of these generative language models, trained with weak supervision, on six benchmark text classification datasets from the torchtext library. Despite no access to training data, we achieve up to a 45% absolute improvement in classification accuracy over random or majority class baselines. These results show that natural language can serve as simple and powerful descriptors for task adaptation. We believe this points the way to new metalearning strategies for text problems.",
+      "published": "2019-12-10T17:01:34Z",
+      "updated": "2019-12-10T17:01:34Z",
+      "authors": [
+        "Raul Puri",
+        "Bryan Catanzaro"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1911.11928v2",
+      "arxiv_id": "1911.11928v2",
+      "title": "Improving Fictitious Play Reinforcement Learning with Expanding Models",
+      "summary": "Fictitious play with reinforcement learning is a general and effective framework for zero-sum games. However, using the current deep neural network models, the implementation of fictitious play faces crucial challenges. Neural network model training employs gradient descent approaches to update all connection weights, and thus is easy to forget the old opponents after training to beat the new opponents. Existing approaches often maintain a pool of historical policy models to avoid the forgetting. However, learning to beat a pool in stochastic games, i.e., a wide distribution over policy models, is either sample-consuming or insufficient to exploit all models with limited amount of samples. In this paper, we propose a learning process with neural fictitious play to alleviate the above issues. We train a single model as our policy model, which consists of sub-models and a selector. Everytime facing a new opponent, the model is expanded by adding a new sub-model, where only the new sub-model is updated instead of the whole model. At the same time, the selector is also updated to mix up the new sub-model with the previous ones at the state-level, so that the model is maintained as a behavior strategy instead of a wide distribution over policy models. Experiments on Kuhn poker, a grid-world Treasure Hunting game, and Mini-RTS environments show that the proposed approach alleviates the forgetting problem, and consequently improves the learning efficiency and the robustness of neural fictitious play.",
+      "published": "2019-11-27T03:14:37Z",
+      "updated": "2019-11-28T04:54:29Z",
+      "authors": [
+        "Rong-Jun Qin",
+        "Jing-Cheng Pang",
+        "Yang Yu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.01389v2",
+      "arxiv_id": "1912.01389v2",
+      "title": "Towards Lingua Franca Named Entity Recognition with BERT",
+      "summary": "Information extraction is an important task in NLP, enabling the automatic extraction of data for relational database filling. Historically, research and data was produced for English text, followed in subsequent years by datasets in Arabic, Chinese (ACE/OntoNotes), Dutch, Spanish, German (CoNLL evaluations), and many others. The natural tendency has been to treat each language as a different dataset and build optimized models for each. In this paper we investigate a single Named Entity Recognition model, based on a multilingual BERT, that is trained jointly on many languages simultaneously, and is able to decode these languages with better accuracy than models trained only on one language. To improve the initial model, we study the use of regularization strategies such as multitask learning and partial gradient updates. In addition to being a single model that can tackle multiple languages (including code switch), the model could be used to make zero-shot predictions on a new language, even ones for which training data is not available, out of the box. The results show that this model not only performs competitively with monolingual models, but it also achieves state-of-the-art results on the CoNLL02 Dutch and Spanish datasets, OntoNotes Arabic and Chinese datasets. Moreover, it performs reasonably well on unseen languages, achieving state-of-the-art for zero-shot on three CoNLL languages.",
+      "published": "2019-11-19T19:48:02Z",
+      "updated": "2019-12-12T18:23:41Z",
+      "authors": [
+        "Taesun Moon",
+        "Parul Awasthy",
+        "Jian Ni",
+        "Radu Florian"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1911.02989v1",
+      "arxiv_id": "1911.02989v1",
+      "title": "Cross-Lingual Relevance Transfer for Document Retrieval",
+      "summary": "Recent work has shown the surprising ability of multi-lingual BERT to serve as a zero-shot cross-lingual transfer model for a number of language processing tasks. We combine this finding with a similarly-recently proposal on sentence-level relevance modeling for document retrieval to demonstrate the ability of multi-lingual BERT to transfer models of relevance across languages. Experiments on test collections in five different languages from diverse language families (Chinese, Arabic, French, Hindi, and Bengali) show that models trained with English data improve ranking quality, without any special processing, both for (non-English) mono-lingual retrieval as well as cross-lingual retrieval.",
+      "published": "2019-11-08T02:19:52Z",
+      "updated": "2019-11-08T02:19:52Z",
+      "authors": [
+        "Peng Shi",
+        "Jimmy Lin"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1910.10628v2",
+      "arxiv_id": "1910.10628v2",
+      "title": "Learning Deep Parameterized Skills from Demonstration for Re-targetable Visuomotor Control",
+      "summary": "Robots need to learn skills that can not only generalize across similar problems but also be directed to a specific goal. Previous methods either train a new skill for every different goal or do not infer the specific target in the presence of multiple goals from visual data. We introduce an end-to-end method that represents targetable visuomotor skills as a goal-parameterized neural network policy. By training on an informative subset of available goals with the associated target parameters, we are able to learn a policy that can zero-shot generalize to previously unseen goals. We evaluate our method in a representative 2D simulation of a button-grid and on both button-pressing and peg-insertion tasks on two different physical arms. We demonstrate that our model trained on 33% of the possible goals is able to generalize to more than 90% of the targets in the scene for both simulation and robot experiments. We also successfully learn a mapping from target pixel coordinates to a robot policy to complete a specified goal.",
+      "published": "2019-10-23T15:54:32Z",
+      "updated": "2021-02-28T23:31:58Z",
+      "authors": [
+        "Jonathan Chang",
+        "Nishanth Kumar",
+        "Sean Hastings",
+        "Aaron Gokaslan",
+        "Diego Romeres",
+        "Devesh Jha",
+        "Daniel Nikovski",
+        "George Konidaris",
+        "Stefanie Tellex"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1909.10481v3",
+      "arxiv_id": "1909.10481v3",
+      "title": "Cross-Lingual Natural Language Generation via Pre-Training",
+      "summary": "In this work we focus on transferring supervision signals of natural language generation (NLG) tasks between multiple languages. We propose to pretrain the encoder and the decoder of a sequence-to-sequence model under both monolingual and cross-lingual settings. The pre-training objective encourages the model to represent different languages in the shared space, so that we can conduct zero-shot cross-lingual transfer. After the pre-training procedure, we use monolingual data to fine-tune the pre-trained model on downstream NLG tasks. Then the sequence-to-sequence model trained in a single language can be directly evaluated beyond that language (i.e., accepting multi-lingual input and producing multi-lingual output). Experimental results on question generation and abstractive summarization show that our model outperforms the machine-translation-based pipeline methods for zero-shot cross-lingual generation. Moreover, cross-lingual transfer improves NLG performance of low-resource languages by leveraging rich-resource language data. Our implementation and data are available at https://github.com/CZWin32768/xnlg.",
+      "published": "2019-09-23T16:59:28Z",
+      "updated": "2019-11-22T09:24:46Z",
+      "authors": [
+        "Zewen Chi",
+        "Li Dong",
+        "Furu Wei",
+        "Wenhui Wang",
+        "Xian-Ling Mao",
+        "Heyan Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1909.06775v1",
+      "arxiv_id": "1909.06775v1",
+      "title": "Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing",
+      "summary": "This paper investigates the problem of learning cross-lingual representations in a contextual space. We propose Cross-Lingual BERT Transformation (CLBT), a simple and efficient approach to generate cross-lingual contextualized word embeddings based on publicly available pre-trained BERT models (Devlin et al., 2018). In this approach, a linear transformation is learned from contextual word alignments to align the contextualized embeddings independently trained in different languages. We demonstrate the effectiveness of this approach on zero-shot cross-lingual transfer parsing. Experiments show that our embeddings substantially outperform the previous state-of-the-art that uses static embeddings. We further compare our approach with XLM (Lample and Conneau, 2019), a recently proposed cross-lingual language model trained with massive parallel data, and achieve highly competitive results.",
+      "published": "2019-09-15T10:33:17Z",
+      "updated": "2019-09-15T10:33:17Z",
+      "authors": [
+        "Yuxuan Wang",
+        "Wanxiang Che",
+        "Jiang Guo",
+        "Yijia Liu",
+        "Ting Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1906.03038v3",
+      "arxiv_id": "1906.03038v3",
+      "title": "A Generative Framework for Zero-Shot Learning with Adversarial Domain Adaptation",
+      "summary": "We present a domain adaptation based generative framework for zero-shot learning. Our framework addresses the problem of domain shift between the seen and unseen class distributions in zero-shot learning and minimizes the shift by developing a generative model trained via adversarial domain adaptation. Our approach is based on end-to-end learning of the class distributions of seen classes and unseen classes. To enable the model to learn the class distributions of unseen classes, we parameterize these class distributions in terms of the class attribute information (which is available for both seen and unseen classes). This provides a very simple way to learn the class distribution of any unseen class, given only its class attribute information, and no labeled training data. Training this model with adversarial domain adaptation further provides robustness against the distribution mismatch between the data from seen and unseen classes. Our approach also provides a novel way for training neural net based classifiers to overcome the hubness problem in zero-shot learning. Through a comprehensive set of experiments, we show that our model yields superior accuracies as compared to various state-of-the-art zero shot learning models, on a variety of benchmark datasets. Code for the experiments is available at github.com/vkkhare/ZSL-ADA",
+      "published": "2019-06-07T12:11:22Z",
+      "updated": "2020-02-22T18:49:21Z",
+      "authors": [
+        "Varun Khare",
+        "Divyat Mahajan",
+        "Homanga Bharadhwaj",
+        "Vinay Verma",
+        "Piyush Rai"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1905.03177v1",
+      "arxiv_id": "1905.03177v1",
+      "title": "Does Data Augmentation Lead to Positive Margin?",
+      "summary": "Data augmentation (DA) is commonly used during model training, as it significantly improves test error and model robustness. DA artificially expands the training set by applying random noise, rotations, crops, or even adversarial perturbations to the input data. Although DA is widely used, its capacity to provably improve robustness is not fully understood. In this work, we analyze the robustness that DA begets by quantifying the margin that DA enforces on empirical risk minimizers. We first focus on linear separators, and then a class of nonlinear models whose labeling is constant within small convex hulls of data points. We present lower bounds on the number of augmented data points required for non-zero margin, and show that commonly used DA techniques may only introduce significant margin after adding exponentially many points to the data set.",
+      "published": "2019-05-08T16:03:06Z",
+      "updated": "2019-05-08T16:03:06Z",
+      "authors": [
+        "Shashank Rajput",
+        "Zhili Feng",
+        "Zachary Charles",
+        "Po-Ling Loh",
+        "Dimitris Papailiopoulos"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1904.09122v1",
+      "arxiv_id": "1904.09122v1",
+      "title": "Zero-Shot Cross-Lingual Opinion Target Extraction",
+      "summary": "Aspect-based sentiment analysis involves the recognition of so called opinion target expressions (OTEs). To automatically extract OTEs, supervised learning algorithms are usually employed which are trained on manually annotated corpora. The creation of these corpora is labor-intensive and sufficiently large datasets are therefore usually only available for a very narrow selection of languages and domains. In this work, we address the lack of available annotated data for specific languages by proposing a zero-shot cross-lingual approach for the extraction of opinion target expressions. We leverage multilingual word embeddings that share a common vector space across various languages and incorporate these into a convolutional neural network architecture for OTE extraction. Our experiments with 5 languages give promising results: We can successfully train a model on annotated data of a source language and perform accurate prediction on a target language without ever using any annotated samples in that target language. Depending on the source and target language pairs, we reach performances in a zero-shot regime of up to 77% of a model trained on target language data. Furthermore, we can increase this performance up to 87% of a baseline model trained on target language data by performing cross-lingual learning from multiple source languages.",
+      "published": "2019-04-19T08:59:13Z",
+      "updated": "2019-04-19T08:59:13Z",
+      "authors": [
+        "Soufian Jebbara",
+        "Philipp Cimiano"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1902.04522v5",
+      "arxiv_id": "1902.04522v5",
+      "title": "ELF OpenGo: An Analysis and Open Reimplementation of AlphaZero",
+      "summary": "The AlphaGo, AlphaGo Zero, and AlphaZero series of algorithms are remarkable demonstrations of deep reinforcement learning's capabilities, achieving superhuman performance in the complex game of Go with progressively increasing autonomy. However, many obstacles remain in the understanding of and usability of these promising approaches by the research community. Toward elucidating unresolved mysteries and facilitating future research, we propose ELF OpenGo, an open-source reimplementation of the AlphaZero algorithm. ELF OpenGo is the first open-source Go AI to convincingly demonstrate superhuman performance with a perfect (20:0) record against global top professionals. We apply ELF OpenGo to conduct extensive ablation studies, and to identify and analyze numerous interesting phenomena in both the model training and in the gameplay inference procedures. Our code, models, selfplay datasets, and auxiliary data are publicly available at https://ai.facebook.com/tools/elf-opengo/.",
+      "published": "2019-02-12T17:59:38Z",
+      "updated": "2022-06-03T17:37:50Z",
+      "authors": [
+        "Yuandong Tian",
+        "Jerry Ma",
+        "Qucheng Gong",
+        "Shubho Sengupta",
+        "Zhuoyuan Chen",
+        "James Pinkerton",
+        "C. Lawrence Zitnick"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "(\"ZeRO\" OR \"DeepSpeed\" OR \"offloading\") AND (\"model training\" OR \"large language model\")",
+  "slice_id": "2019",
+  "date_window": {
+    "start": "2019-01-01",
+    "end": "2019-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/1912.09637v1",
+      "arxiv_id": "1912.09637v1",
+      "title": "Pretrained Encyclopedia: Weakly Supervised Knowledge-Pretrained Language Model",
+      "summary": "Recent breakthroughs of pretrained language models have shown the effectiveness of self-supervised learning for a wide range of natural language processing (NLP) tasks. In addition to standard syntactic and semantic NLP tasks, pretrained models achieve strong improvements on tasks that involve real-world knowledge, suggesting that large-scale language modeling could be an implicit method to capture knowledge. In this work, we further investigate the extent to which pretrained models such as BERT capture knowledge using a zero-shot fact completion task. Moreover, we propose a simple yet effective weakly supervised pretraining objective, which explicitly forces the model to incorporate knowledge about real-world entities. Models trained with our new objective yield significant improvements on the fact completion task. When applied to downstream tasks, our model consistently outperforms BERT on four entity-related question answering datasets (i.e., WebQuestions, TriviaQA, SearchQA and Quasar-T) with an average 2.7 F1 improvements and a standard fine-grained entity typing dataset (i.e., FIGER) with 5.7 accuracy gains.",
+      "published": "2019-12-20T04:25:48Z",
+      "updated": "2019-12-20T04:25:48Z",
+      "authors": [
+        "Wenhan Xiong",
+        "Jingfei Du",
+        "William Yang Wang",
+        "Veselin Stoyanov"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.07160v1",
+      "arxiv_id": "1912.07160v1",
+      "title": "DAmageNet: A Universal Adversarial Dataset",
+      "summary": "It is now well known that deep neural networks (DNNs) are vulnerable to adversarial attack. Adversarial samples are similar to the clean ones, but are able to cheat the attacked DNN to produce incorrect predictions in high confidence. But most of the existing adversarial attacks have high success rate only when the information of the attacked DNN is well-known or could be estimated by massive queries. A promising way is to generate adversarial samples with high transferability. By this way, we generate 96020 transferable adversarial samples from original ones in ImageNet. The average difference, measured by root means squared deviation, is only around 3.8 on average. However, the adversarial samples are misclassified by various models with an error rate up to 90\\%. Since the images are generated independently with the attacked DNNs, this is essentially zero-query adversarial attack. We call the dataset \\emph{DAmageNet}, which is the first universal adversarial dataset that beats many models trained in ImageNet. By finding the drawbacks, DAmageNet could serve as a benchmark to study and improve robustness of DNNs. DAmageNet could be downloaded in http://www.pami.sjtu.edu.cn/Show/56/122.",
+      "published": "2019-12-16T02:11:24Z",
+      "updated": "2019-12-16T02:11:24Z",
+      "authors": [
+        "Sizhe Chen",
+        "Xiaolin Huang",
+        "Zhengbao He",
+        "Chengjin Sun"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "eess.IV",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.10165v1",
+      "arxiv_id": "1912.10165v1",
+      "title": "Zero-shot Text Classification With Generative Language Models",
+      "summary": "This work investigates the use of natural language to enable zero-shot model adaptation to new tasks. We use text and metadata from social commenting platforms as a source for a simple pretraining task. We then provide the language model with natural language descriptions of classification tasks as input and train it to generate the correct answer in natural language via a language modeling objective. This allows the model to generalize to new classification tasks without the need for multiple multitask classification heads. We show the zero-shot performance of these generative language models, trained with weak supervision, on six benchmark text classification datasets from the torchtext library. Despite no access to training data, we achieve up to a 45% absolute improvement in classification accuracy over random or majority class baselines. These results show that natural language can serve as simple and powerful descriptors for task adaptation. We believe this points the way to new metalearning strategies for text problems.",
+      "published": "2019-12-10T17:01:34Z",
+      "updated": "2019-12-10T17:01:34Z",
+      "authors": [
+        "Raul Puri",
+        "Bryan Catanzaro"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1911.11928v2",
+      "arxiv_id": "1911.11928v2",
+      "title": "Improving Fictitious Play Reinforcement Learning with Expanding Models",
+      "summary": "Fictitious play with reinforcement learning is a general and effective framework for zero-sum games. However, using the current deep neural network models, the implementation of fictitious play faces crucial challenges. Neural network model training employs gradient descent approaches to update all connection weights, and thus is easy to forget the old opponents after training to beat the new opponents. Existing approaches often maintain a pool of historical policy models to avoid the forgetting. However, learning to beat a pool in stochastic games, i.e., a wide distribution over policy models, is either sample-consuming or insufficient to exploit all models with limited amount of samples. In this paper, we propose a learning process with neural fictitious play to alleviate the above issues. We train a single model as our policy model, which consists of sub-models and a selector. Everytime facing a new opponent, the model is expanded by adding a new sub-model, where only the new sub-model is updated instead of the whole model. At the same time, the selector is also updated to mix up the new sub-model with the previous ones at the state-level, so that the model is maintained as a behavior strategy instead of a wide distribution over policy models. Experiments on Kuhn poker, a grid-world Treasure Hunting game, and Mini-RTS environments show that the proposed approach alleviates the forgetting problem, and consequently improves the learning efficiency and the robustness of neural fictitious play.",
+      "published": "2019-11-27T03:14:37Z",
+      "updated": "2019-11-28T04:54:29Z",
+      "authors": [
+        "Rong-Jun Qin",
+        "Jing-Cheng Pang",
+        "Yang Yu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1912.01389v2",
+      "arxiv_id": "1912.01389v2",
+      "title": "Towards Lingua Franca Named Entity Recognition with BERT",
+      "summary": "Information extraction is an important task in NLP, enabling the automatic extraction of data for relational database filling. Historically, research and data was produced for English text, followed in subsequent years by datasets in Arabic, Chinese (ACE/OntoNotes), Dutch, Spanish, German (CoNLL evaluations), and many others. The natural tendency has been to treat each language as a different dataset and build optimized models for each. In this paper we investigate a single Named Entity Recognition model, based on a multilingual BERT, that is trained jointly on many languages simultaneously, and is able to decode these languages with better accuracy than models trained only on one language. To improve the initial model, we study the use of regularization strategies such as multitask learning and partial gradient updates. In addition to being a single model that can tackle multiple languages (including code switch), the model could be used to make zero-shot predictions on a new language, even ones for which training data is not available, out of the box. The results show that this model not only performs competitively with monolingual models, but it also achieves state-of-the-art results on the CoNLL02 Dutch and Spanish datasets, OntoNotes Arabic and Chinese datasets. Moreover, it performs reasonably well on unseen languages, achieving state-of-the-art for zero-shot on three CoNLL languages.",
+      "published": "2019-11-19T19:48:02Z",
+      "updated": "2019-12-12T18:23:41Z",
+      "authors": [
+        "Taesun Moon",
+        "Parul Awasthy",
+        "Jian Ni",
+        "Radu Florian"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1911.02989v1",
+      "arxiv_id": "1911.02989v1",
+      "title": "Cross-Lingual Relevance Transfer for Document Retrieval",
+      "summary": "Recent work has shown the surprising ability of multi-lingual BERT to serve as a zero-shot cross-lingual transfer model for a number of language processing tasks. We combine this finding with a similarly-recently proposal on sentence-level relevance modeling for document retrieval to demonstrate the ability of multi-lingual BERT to transfer models of relevance across languages. Experiments on test collections in five different languages from diverse language families (Chinese, Arabic, French, Hindi, and Bengali) show that models trained with English data improve ranking quality, without any special processing, both for (non-English) mono-lingual retrieval as well as cross-lingual retrieval.",
+      "published": "2019-11-08T02:19:52Z",
+      "updated": "2019-11-08T02:19:52Z",
+      "authors": [
+        "Peng Shi",
+        "Jimmy Lin"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1910.10628v2",
+      "arxiv_id": "1910.10628v2",
+      "title": "Learning Deep Parameterized Skills from Demonstration for Re-targetable Visuomotor Control",
+      "summary": "Robots need to learn skills that can not only generalize across similar problems but also be directed to a specific goal. Previous methods either train a new skill for every different goal or do not infer the specific target in the presence of multiple goals from visual data. We introduce an end-to-end method that represents targetable visuomotor skills as a goal-parameterized neural network policy. By training on an informative subset of available goals with the associated target parameters, we are able to learn a policy that can zero-shot generalize to previously unseen goals. We evaluate our method in a representative 2D simulation of a button-grid and on both button-pressing and peg-insertion tasks on two different physical arms. We demonstrate that our model trained on 33% of the possible goals is able to generalize to more than 90% of the targets in the scene for both simulation and robot experiments. We also successfully learn a mapping from target pixel coordinates to a robot policy to complete a specified goal.",
+      "published": "2019-10-23T15:54:32Z",
+      "updated": "2021-02-28T23:31:58Z",
+      "authors": [
+        "Jonathan Chang",
+        "Nishanth Kumar",
+        "Sean Hastings",
+        "Aaron Gokaslan",
+        "Diego Romeres",
+        "Devesh Jha",
+        "Daniel Nikovski",
+        "George Konidaris",
+        "Stefanie Tellex"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1909.10481v3",
+      "arxiv_id": "1909.10481v3",
+      "title": "Cross-Lingual Natural Language Generation via Pre-Training",
+      "summary": "In this work we focus on transferring supervision signals of natural language generation (NLG) tasks between multiple languages. We propose to pretrain the encoder and the decoder of a sequence-to-sequence model under both monolingual and cross-lingual settings. The pre-training objective encourages the model to represent different languages in the shared space, so that we can conduct zero-shot cross-lingual transfer. After the pre-training procedure, we use monolingual data to fine-tune the pre-trained model on downstream NLG tasks. Then the sequence-to-sequence model trained in a single language can be directly evaluated beyond that language (i.e., accepting multi-lingual input and producing multi-lingual output). Experimental results on question generation and abstractive summarization show that our model outperforms the machine-translation-based pipeline methods for zero-shot cross-lingual generation. Moreover, cross-lingual transfer improves NLG performance of low-resource languages by leveraging rich-resource language data. Our implementation and data are available at https://github.com/CZWin32768/xnlg.",
+      "published": "2019-09-23T16:59:28Z",
+      "updated": "2019-11-22T09:24:46Z",
+      "authors": [
+        "Zewen Chi",
+        "Li Dong",
+        "Furu Wei",
+        "Wenhui Wang",
+        "Xian-Ling Mao",
+        "Heyan Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1909.06775v1",
+      "arxiv_id": "1909.06775v1",
+      "title": "Cross-Lingual BERT Transformation for Zero-Shot Dependency Parsing",
+      "summary": "This paper investigates the problem of learning cross-lingual representations in a contextual space. We propose Cross-Lingual BERT Transformation (CLBT), a simple and efficient approach to generate cross-lingual contextualized word embeddings based on publicly available pre-trained BERT models (Devlin et al., 2018). In this approach, a linear transformation is learned from contextual word alignments to align the contextualized embeddings independently trained in different languages. We demonstrate the effectiveness of this approach on zero-shot cross-lingual transfer parsing. Experiments show that our embeddings substantially outperform the previous state-of-the-art that uses static embeddings. We further compare our approach with XLM (Lample and Conneau, 2019), a recently proposed cross-lingual language model trained with massive parallel data, and achieve highly competitive results.",
+      "published": "2019-09-15T10:33:17Z",
+      "updated": "2019-09-15T10:33:17Z",
+      "authors": [
+        "Yuxuan Wang",
+        "Wanxiang Che",
+        "Jiang Guo",
+        "Yijia Liu",
+        "Ting Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1906.03038v3",
+      "arxiv_id": "1906.03038v3",
+      "title": "A Generative Framework for Zero-Shot Learning with Adversarial Domain Adaptation",
+      "summary": "We present a domain adaptation based generative framework for zero-shot learning. Our framework addresses the problem of domain shift between the seen and unseen class distributions in zero-shot learning and minimizes the shift by developing a generative model trained via adversarial domain adaptation. Our approach is based on end-to-end learning of the class distributions of seen classes and unseen classes. To enable the model to learn the class distributions of unseen classes, we parameterize these class distributions in terms of the class attribute information (which is available for both seen and unseen classes). This provides a very simple way to learn the class distribution of any unseen class, given only its class attribute information, and no labeled training data. Training this model with adversarial domain adaptation further provides robustness against the distribution mismatch between the data from seen and unseen classes. Our approach also provides a novel way for training neural net based classifiers to overcome the hubness problem in zero-shot learning. Through a comprehensive set of experiments, we show that our model yields superior accuracies as compared to various state-of-the-art zero shot learning models, on a variety of benchmark datasets. Code for the experiments is available at github.com/vkkhare/ZSL-ADA",
+      "published": "2019-06-07T12:11:22Z",
+      "updated": "2020-02-22T18:49:21Z",
+      "authors": [
+        "Varun Khare",
+        "Divyat Mahajan",
+        "Homanga Bharadhwaj",
+        "Vinay Verma",
+        "Piyush Rai"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1905.03177v1",
+      "arxiv_id": "1905.03177v1",
+      "title": "Does Data Augmentation Lead to Positive Margin?",
+      "summary": "Data augmentation (DA) is commonly used during model training, as it significantly improves test error and model robustness. DA artificially expands the training set by applying random noise, rotations, crops, or even adversarial perturbations to the input data. Although DA is widely used, its capacity to provably improve robustness is not fully understood. In this work, we analyze the robustness that DA begets by quantifying the margin that DA enforces on empirical risk minimizers. We first focus on linear separators, and then a class of nonlinear models whose labeling is constant within small convex hulls of data points. We present lower bounds on the number of augmented data points required for non-zero margin, and show that commonly used DA techniques may only introduce significant margin after adding exponentially many points to the data set.",
+      "published": "2019-05-08T16:03:06Z",
+      "updated": "2019-05-08T16:03:06Z",
+      "authors": [
+        "Shashank Rajput",
+        "Zhili Feng",
+        "Zachary Charles",
+        "Po-Ling Loh",
+        "Dimitris Papailiopoulos"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1904.09122v1",
+      "arxiv_id": "1904.09122v1",
+      "title": "Zero-Shot Cross-Lingual Opinion Target Extraction",
+      "summary": "Aspect-based sentiment analysis involves the recognition of so called opinion target expressions (OTEs). To automatically extract OTEs, supervised learning algorithms are usually employed which are trained on manually annotated corpora. The creation of these corpora is labor-intensive and sufficiently large datasets are therefore usually only available for a very narrow selection of languages and domains. In this work, we address the lack of available annotated data for specific languages by proposing a zero-shot cross-lingual approach for the extraction of opinion target expressions. We leverage multilingual word embeddings that share a common vector space across various languages and incorporate these into a convolutional neural network architecture for OTE extraction. Our experiments with 5 languages give promising results: We can successfully train a model on annotated data of a source language and perform accurate prediction on a target language without ever using any annotated samples in that target language. Depending on the source and target language pairs, we reach performances in a zero-shot regime of up to 77% of a model trained on target language data. Furthermore, we can increase this performance up to 87% of a baseline model trained on target language data by performing cross-lingual learning from multiple source languages.",
+      "published": "2019-04-19T08:59:13Z",
+      "updated": "2019-04-19T08:59:13Z",
+      "authors": [
+        "Soufian Jebbara",
+        "Philipp Cimiano"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1902.04522v5",
+      "arxiv_id": "1902.04522v5",
+      "title": "ELF OpenGo: An Analysis and Open Reimplementation of AlphaZero",
+      "summary": "The AlphaGo, AlphaGo Zero, and AlphaZero series of algorithms are remarkable demonstrations of deep reinforcement learning's capabilities, achieving superhuman performance in the complex game of Go with progressively increasing autonomy. However, many obstacles remain in the understanding of and usability of these promising approaches by the research community. Toward elucidating unresolved mysteries and facilitating future research, we propose ELF OpenGo, an open-source reimplementation of the AlphaZero algorithm. ELF OpenGo is the first open-source Go AI to convincingly demonstrate superhuman performance with a perfect (20:0) record against global top professionals. We apply ELF OpenGo to conduct extensive ablation studies, and to identify and analyze numerous interesting phenomena in both the model training and in the gameplay inference procedures. Our code, models, selfplay datasets, and auxiliary data are publicly available at https://ai.facebook.com/tools/elf-opengo/.",
+      "published": "2019-02-12T17:59:38Z",
+      "updated": "2022-06-03T17:37:50Z",
+      "authors": [
+        "Yuandong Tian",
+        "Jerry Ma",
+        "Qucheng Gong",
+        "Shubho Sengupta",
+        "Zhuoyuan Chen",
+        "James Pinkerton",
+        "C. Lawrence Zitnick"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ]
+    }
+  ]
+}

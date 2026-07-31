@@ -1,0 +1,14 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "(GPTQ OR AWQ OR SmoothQuant OR QLoRA) AND quantization",
+  "year": "2019-2026",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-21T20:46:03Z",
+  "total_results_reported": 0,
+  "returned": 0,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [],
+  "protocol_query": "(GPTQ OR AWQ OR SmoothQuant OR QLoRA) AND quantization"
+}

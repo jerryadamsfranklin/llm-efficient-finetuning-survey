@@ -1,0 +1,775 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"federated\" AND (LoRA OR \"parameter-efficient\")) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202301010000 TO 202312312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22federated%22+AND+%28LoRA+OR+%22parameter-efficient%22%29%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202301010000+TO+202312312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:41:56Z",
+  "total_results_reported": 19,
+  "returned": 19,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2312.17493v2",
+      "arxiv_id": "2312.17493v2",
+      "title": "Differentially Private Low-Rank Adaptation of Large Language Model Using Federated Learning",
+      "summary": "The surge in interest and application of large language models (LLMs) has sparked a drive to fine-tune these models to suit specific applications, such as finance and medical science. However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data. In this scenario, federated learning becomes a natural choice, allowing decentralized fine-tuning without exposing raw data to central servers. Motivated by this, we investigate how data privacy can be ensured in LLM fine-tuning through practical federated learning approaches, enabling secure contributions from multiple parties to enhance LLMs. Yet, challenges arise: 1) despite avoiding raw data exposure, there is a risk of inferring sensitive information from model outputs, and 2) federated learning for LLMs incurs notable communication overhead. To address these challenges, this article introduces DP-LoRA, a novel federated learning algorithm tailored for LLMs. DP-LoRA preserves data privacy by employing a Gaussian mechanism that adds noise in weight updates, maintaining individual data privacy while facilitating collaborative model training. Moreover, DP-LoRA optimizes communication efficiency via low-rank adaptation, minimizing the transmission of updated weights during distributed training. The experimental results across medical, financial, and general datasets using various LLMs demonstrate that DP-LoRA effectively ensures strict privacy constraints while minimizing communication overhead.",
+      "published": "2023-12-29T06:50:38Z",
+      "updated": "2024-06-02T06:31:21Z",
+      "authors": [
+        "Xiao-Yang Liu",
+        "Rongyi Zhu",
+        "Daochen Zha",
+        "Jiechao Gao",
+        "Shan Zhong",
+        "Matt White",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.15926v1",
+      "arxiv_id": "2312.15926v1",
+      "title": "FedMS: Federated Learning with Mixture of Sparsely Activated Foundations Models",
+      "summary": "Foundation models have shown great success in natural language processing, computer vision, and multimodal tasks. FMs have a large number of model parameters, thus requiring a substantial amount of data to help optimize the model during the training. Federated learning has revolutionized machine learning by enabling collaborative learning from decentralized data while still preserving the data privacy of clients. Despite the great benefits foundation models can have empowered by federated learning, they face severe computation, communication, and statistical challenges. In this paper, we propose a novel two-stage federated learning algorithm called FedMS. A global expert is trained in the first stage and a local expert is trained in the second stage to provide better personalization. We construct a Mixture of Foundation Models (MoFM) with these two experts and design a gate neural network with an inserted gate adapter that joins the aggregation every communication round in the second stage. To further adapt to edge computing scenarios with limited computational resources, we design a novel Sparsely Activated LoRA (SAL) algorithm that freezes the pre-trained foundation model parameters inserts low-rank adaptation matrices into transformer blocks and activates them progressively during the training. We employ extensive experiments to verify the effectiveness of FedMS, results show that FedMS outperforms other SOTA baselines by up to 55.25% in default settings.",
+      "published": "2023-12-26T07:40:26Z",
+      "updated": "2023-12-26T07:40:26Z",
+      "authors": [
+        "Panlong Wu",
+        "Kangshuo Li",
+        "Ting Wang",
+        "Fangxin Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.06353v5",
+      "arxiv_id": "2312.06353v5",
+      "title": "Federated Full-Parameter Tuning of Billion-Sized Language Models with Communication Cost under 18 Kilobytes",
+      "summary": "Pre-trained large language models (LLMs) need fine-tuning to improve their responsiveness to natural language instructions. Federated learning offers a way to fine-tune LLMs using the abundant data on end devices without compromising data privacy. Most existing federated fine-tuning methods for LLMs rely on parameter-efficient fine-tuning techniques, which may not reach the performance height possible with full-parameter tuning. However, federated full-parameter tuning of LLMs is a non-trivial problem due to the immense communication cost. This work introduces FedKSeed that employs zeroth-order optimization with a finite set of random seeds. It significantly reduces transmission requirements between the server and clients to just a few random seeds and scalar gradients, amounting to only a few thousand bytes, making federated full-parameter tuning of billion-sized LLMs possible on devices. Building on it, we develop a strategy enabling probability-differentiated seed sampling, prioritizing perturbations with greater impact on model accuracy. Experiments across six scenarios with various LLMs, datasets and data partitions demonstrate that our approach outperforms existing federated LLM fine-tuning methods in both communication efficiency and new task generalization.",
+      "published": "2023-12-11T13:03:21Z",
+      "updated": "2024-05-27T08:31:47Z",
+      "authors": [
+        "Zhen Qin",
+        "Daoyuan Chen",
+        "Bingchen Qian",
+        "Bolin Ding",
+        "Yaliang Li",
+        "Shuiguang Deng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.17491v2",
+      "arxiv_id": "2310.17491v2",
+      "title": "FedPEAT: Convergence of Federated Learning, Parameter-Efficient Fine Tuning, and Emulator Assisted Tuning for Artificial Intelligence Foundation Models with Mobile Edge Computing",
+      "summary": "The emergence of foundation models, including language and vision models, has reshaped AI's landscape, offering capabilities across various applications. Deploying and fine-tuning these large models, like GPT-3 and BERT, presents challenges, especially in the current foundation model era. We introduce Emulator-Assisted Tuning (EAT) combined with Parameter-Efficient Fine-Tuning (PEFT) to form Parameter-Efficient Emulator-Assisted Tuning (PEAT). Further, we expand this into federated learning as Federated PEAT (FedPEAT). FedPEAT uses adapters, emulators, and PEFT for federated model tuning, enhancing model privacy and memory efficiency. Adapters adjust pre-trained models, while emulators give a compact representation of original models, addressing both privacy and efficiency. Adaptable to various neural networks, our approach also uses deep reinforcement learning for hyper-parameter optimization. We tested FedPEAT in a unique scenario with a server participating in collaborative federated tuning, showcasing its potential in tackling foundation model challenges.",
+      "published": "2023-10-26T15:47:44Z",
+      "updated": "2024-02-28T13:47:33Z",
+      "authors": [
+        "Terence Jie Chua",
+        "Wenhan Yu",
+        "Jun Zhao",
+        "Kwok-Yan Lam"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.NI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.15080v3",
+      "arxiv_id": "2310.15080v3",
+      "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "summary": "Federated learning (FL) is a promising paradigm to enable collaborative model training with decentralized data. However, the training process of Large Language Models (LLMs) generally incurs the update of significant parameters, which limits the applicability of FL techniques to tackle the LLMs in real scenarios. Prompt tuning can significantly reduce the number of parameters to update, but it either incurs performance degradation or low training efficiency. The straightforward utilization of prompt tuning in the FL often raises non-trivial communication costs and dramatically degrades performance. In addition, the decentralized data is generally non-Independent and Identically Distributed (non-IID), which brings client drift problems and thus poor performance. This paper proposes a Parameter-efficient prompt Tuning approach with Adaptive Optimization, i.e., FedPepTAO, to enable efficient and effective FL of LLMs. First, an efficient partial prompt tuning approach is proposed to improve performance and efficiency simultaneously. Second, a novel adaptive optimization method is developed to address the client drift problems on both the device and server sides to enhance performance further. Extensive experiments based on 10 datasets demonstrate the superb performance (up to 60.8\\% in terms of accuracy) and efficiency (up to 97.59\\% in terms of training time) of FedPepTAO compared with 9 baseline approaches. Our code is available at https://github.com/llm-eff/FedPepTAO.",
+      "published": "2023-10-23T16:37:59Z",
+      "updated": "2024-02-11T11:59:52Z",
+      "authors": [
+        "Tianshi Che",
+        "Ji Liu",
+        "Yang Zhou",
+        "Jiaxiang Ren",
+        "Jiwen Zhou",
+        "Victor S. Sheng",
+        "Huaiyu Dai",
+        "Dejing Dou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.13283v2",
+      "arxiv_id": "2310.13283v2",
+      "title": "pFedLoRA: Model-Heterogeneous Personalized Federated Learning with LoRA Tuning",
+      "summary": "Federated learning (FL) is an emerging machine learning paradigm in which a central server coordinates multiple participants (clients) collaboratively to train on decentralized data. In practice, FL often faces statistical, system, and model heterogeneities, which inspires the field of Model-Heterogeneous Personalized Federated Learning (MHPFL). With the increased interest in adopting large language models (LLMs) in FL, the existing MHPFL methods cannot achieve acceptable computational and communication costs, while maintaining satisfactory model performance. To bridge this gap, we propose a novel and efficient model-heterogeneous personalized Federated learning framework based on LoRA tuning (pFedLoRA). Inspired by the popular LoRA method for fine-tuning pre-trained LLMs with a low-rank model (a.k.a., an adapter), we design a homogeneous small adapter to facilitate federated client's heterogeneous local model training with our proposed iterative training for global-local knowledge exchange. The homogeneous small local adapters are aggregated on the FL server to generate a global adapter. We theoretically prove the convergence of pFedLoRA. Extensive experiments on two benchmark datasets demonstrate that pFedLoRA outperforms six state-of-the-art baselines, beating the best method by 1.35% in test accuracy, 11.81 times computation overhead reduction and 7.41 times communication cost saving.",
+      "published": "2023-10-20T05:24:28Z",
+      "updated": "2024-02-11T11:38:38Z",
+      "authors": [
+        "Liping Yi",
+        "Han Yu",
+        "Gang Wang",
+        "Xiaoguang Liu",
+        "Xiaoxiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10049v1",
+      "arxiv_id": "2310.10049v1",
+      "title": "FATE-LLM: A Industrial Grade Federated Learning Framework for Large Language Models",
+      "summary": "Large Language Models (LLMs), such as ChatGPT, LLaMA, GLM, and PaLM, have exhibited remarkable performances across various tasks in recent years. However, LLMs face two main challenges in real-world applications. One challenge is that training LLMs consumes vast computing resources, preventing LLMs from being adopted by small and medium-sized enterprises with limited computing resources. Another is that training LLM requires a large amount of high-quality data, which are often scattered among enterprises. To address these challenges, we propose FATE-LLM, an industrial-grade federated learning framework for large language models. FATE-LLM (1) facilitates federated learning for large language models (coined FedLLM); (2) promotes efficient training of FedLLM using parameter-efficient fine-tuning methods; (3) protects the intellectual property of LLMs; (4) preserves data privacy during training and inference through privacy-preserving mechanisms. We release the code of FATE-LLM at https://github.com/FederatedAI/FATE-LLM to facilitate the research of FedLLM and enable a broad range of industrial applications.",
+      "published": "2023-10-16T04:17:13Z",
+      "updated": "2023-10-16T04:17:13Z",
+      "authors": [
+        "Tao Fan",
+        "Yan Kang",
+        "Guoqiang Ma",
+        "Weijing Chen",
+        "Wenbin Wei",
+        "Lixin Fan",
+        "Qiang Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.04627v1",
+      "arxiv_id": "2310.04627v1",
+      "title": "Profit: Benchmarking Personalization and Robustness Trade-off in Federated Prompt Tuning",
+      "summary": "In many applications of federated learning (FL), clients desire models that are personalized using their local data, yet are also robust in the sense that they retain general global knowledge. However, the presence of data heterogeneity across clients induces a fundamental trade-off between personalization (i.e., adaptation to a local distribution) and robustness (i.e., not forgetting previously learned general knowledge). It is critical to understand how to navigate this personalization vs robustness trade-off when designing federated systems, which are increasingly moving towards a paradigm of fine-tuning large foundation models. Due to limited computational and communication capabilities in most federated settings, this foundation model fine-tuning must be done using parameter-efficient fine-tuning (PEFT) approaches. While some recent work has studied federated approaches to PEFT, the personalization vs robustness trade-off of federated PEFT has been largely unexplored. In this work, we take a step towards bridging this gap by benchmarking fundamental FL algorithms -- FedAvg and FedSGD plus personalization (via client local fine-tuning) -- applied to one of the most ubiquitous PEFT approaches to large language models (LLMs) -- prompt tuning -- in a multitude of hyperparameter settings under varying levels of data heterogeneity. Our results show that federated-trained prompts can be surprisingly robust when using a small learning rate with many local epochs for personalization, especially when using an adaptive optimizer as the client optimizer during federated training. We also demonstrate that simple approaches such as adding regularization and interpolating two prompts are effective in improving the personalization vs robustness trade-off in computation-limited settings with few local updates allowed for personalization.",
+      "published": "2023-10-06T23:46:33Z",
+      "updated": "2023-10-06T23:46:33Z",
+      "authors": [
+        "Liam Collins",
+        "Shanshan Wu",
+        "Sewoong Oh",
+        "Khe Chai Sim"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.08173v3",
+      "arxiv_id": "2309.08173v3",
+      "title": "FedJudge: Federated Legal Large Language Model",
+      "summary": "Large Language Models (LLMs) have gained prominence in the field of Legal Intelligence, offering potential applications in assisting legal professionals and laymen. However, the centralized training of these Legal LLMs raises data privacy concerns, as legal data is distributed among various institutions containing sensitive individual information. This paper addresses this challenge by exploring the integration of Legal LLMs with Federated Learning (FL) methodologies. By employing FL, Legal LLMs can be fine-tuned locally on devices or clients, and their parameters are aggregated and distributed on a central server, ensuring data privacy without directly sharing raw data. However, computation and communication overheads hinder the full fine-tuning of LLMs under the FL setting. Moreover, the distribution shift of legal data reduces the effectiveness of FL methods. To this end, in this paper, we propose the first Federated Legal Large Language Model (FedJudge) framework, which fine-tunes Legal LLMs efficiently and effectively. Specifically, FedJudge utilizes parameter-efficient fine-tuning methods to update only a few additional parameters during the FL training. Besides, we explore the continual learning methods to preserve the global model's important parameters when training local clients to mitigate the problem of data shifts. Extensive experimental results on three real-world datasets clearly validate the effectiveness of FedJudge. Code is released at https://github.com/yuelinan/FedJudge.",
+      "published": "2023-09-15T05:45:44Z",
+      "updated": "2024-04-10T13:24:55Z",
+      "authors": [
+        "Linan Yue",
+        "Qi Liu",
+        "Yichao Du",
+        "Weibo Gao",
+        "Ye Liu",
+        "Fangzhou Yao"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00363v1",
+      "arxiv_id": "2309.00363v1",
+      "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning",
+      "summary": "LLMs have demonstrated great capabilities in various NLP tasks. Different entities can further improve the performance of those LLMs on their specific downstream tasks by fine-tuning LLMs. When several entities have similar interested tasks, but their data cannot be shared because of privacy concerns regulations, federated learning (FL) is a mainstream solution to leverage the data of different entities. However, fine-tuning LLMs in federated learning settings still lacks adequate support from existing FL frameworks because it has to deal with optimizing the consumption of significant communication and computational resources, data preparation for different tasks, and distinct information protection demands. This paper first discusses these challenges of federated fine-tuning LLMs, and introduces our package FS-LLM as a main contribution, which consists of the following components: (1) we build an end-to-end benchmarking pipeline, automizing the processes of dataset preprocessing, federated fine-tuning execution, and performance evaluation on federated LLM fine-tuning; (2) we provide comprehensive federated parameter-efficient fine-tuning algorithm implementations and versatile programming interfaces for future extension in FL scenarios with low communication and computation costs, even without accessing the full model; (3) we adopt several accelerating and resource-efficient operators for fine-tuning LLMs with limited resources and the flexible pluggable sub-routines for interdisciplinary study. We conduct extensive experiments to validate the effectiveness of FS-LLM and benchmark advanced LLMs with state-of-the-art parameter-efficient fine-tuning algorithms in FL settings, which also yields valuable insights into federated fine-tuning LLMs for the research community. To facilitate further research and adoption, we release FS-LLM at https://github.com/alibaba/FederatedScope/tree/llm.",
+      "published": "2023-09-01T09:40:36Z",
+      "updated": "2023-09-01T09:40:36Z",
+      "authors": [
+        "Weirui Kuang",
+        "Bingchen Qian",
+        "Zitao Li",
+        "Daoyuan Chen",
+        "Dawei Gao",
+        "Xuchen Pan",
+        "Yuexiang Xie",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Jingren Zhou"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13894v2",
+      "arxiv_id": "2308.13894v2",
+      "title": "FwdLLM: Efficient FedLLM using Forward Gradient",
+      "summary": "Large Language Models (LLMs) are transforming the landscape of mobile intelligence. Federated Learning (FL), a method to preserve user data privacy, is often employed in fine-tuning LLMs to downstream mobile tasks, an approach known as FedLLM. Though recent efforts have addressed the network issue induced by the vast model size, they have not practically mitigated vital challenges concerning integration with mobile devices, such as significant memory consumption and sluggish model convergence. In response to these challenges, this work introduces FwdLLM, an innovative FL protocol designed to enhance the FedLLM efficiency. The key idea of FwdLLM to employ backpropagation (BP)-free training methods, requiring devices only to execute ``perturbed inferences''. Consequently, FwdLLM delivers way better memory efficiency and time efficiency (expedited by mobile NPUs and an expanded array of participant devices). FwdLLM centers around three key designs: (1) it combines BP-free training with parameter-efficient training methods, an essential way to scale the approach to the LLM era; (2) it systematically and adaptively allocates computational loads across devices, striking a careful balance between convergence speed and accuracy; (3) it discriminatively samples perturbed predictions that are more valuable to model convergence. Comprehensive experiments with five LLMs and three NLP tasks illustrate FwdLLM's significant advantages over conventional methods, including up to three orders of magnitude faster convergence and a 14.6x reduction in memory footprint. Uniquely, FwdLLM paves the way for federated learning of billion-parameter LLMs such as LLaMA on COTS mobile devices -- a feat previously unattained.",
+      "published": "2023-08-26T14:36:30Z",
+      "updated": "2024-01-20T09:24:33Z",
+      "authors": [
+        "Mengwei Xu",
+        "Dongqi Cai",
+        "Yaozong Wu",
+        "Xiang Li",
+        "Shangguang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.12305v1",
+      "arxiv_id": "2308.12305v1",
+      "title": "FedDAT: An Approach for Foundation Model Finetuning in Multi-Modal Heterogeneous Federated Learning",
+      "summary": "Recently, foundation models have exhibited remarkable advancements in multi-modal learning. These models, equipped with millions (or billions) of parameters, typically require a substantial amount of data for finetuning. However, collecting and centralizing training data from diverse sectors becomes challenging due to distinct privacy regulations. Federated Learning (FL) emerges as a promising solution, enabling multiple clients to collaboratively train neural networks without centralizing their local data. To alleviate client computation burdens and communication overheads, previous works have adapted Parameter-efficient Finetuning (PEFT) methods for FL. Hereby, only a small fraction of the model parameters are optimized and communicated during federated communications. Nevertheless, most previous works have focused on a single modality and neglected one common phenomenon, i.e., the presence of data heterogeneity across the clients. Therefore, in this work, we propose a finetuning framework tailored to heterogeneous multi-modal FL, called Federated Dual-Aadapter Teacher (FedDAT). Specifically, our approach leverages a Dual-Adapter Teacher (DAT) to address data heterogeneity by regularizing the client local updates and applying Mutual Knowledge Distillation (MKD) for an efficient knowledge transfer. FedDAT is the first approach that enables an efficient distributed finetuning of foundation models for a variety of heterogeneous Vision-Language tasks. To demonstrate its effectiveness, we conduct extensive experiments on four multi-modality FL benchmarks with different types of data heterogeneity, where FedDAT substantially outperforms the existing centralized PEFT methods adapted for FL.",
+      "published": "2023-08-21T21:57:01Z",
+      "updated": "2023-08-21T21:57:01Z",
+      "authors": [
+        "Haokun Chen",
+        "Yao Zhang",
+        "Denis Krompass",
+        "Jindong Gu",
+        "Volker Tresp"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MM"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.06522v1",
+      "arxiv_id": "2308.06522v1",
+      "title": "SLoRA: Federated Parameter Efficient Fine-Tuning of Language Models",
+      "summary": "Transfer learning via fine-tuning pre-trained transformer models has gained significant success in delivering state-of-the-art results across various NLP tasks. In the absence of centralized data, Federated Learning (FL) can benefit from distributed and private data of the FL edge clients for fine-tuning. However, due to the limited communication, computation, and storage capabilities of edge devices and the huge sizes of popular transformer models, efficient fine-tuning is crucial to make federated training feasible. This work explores the opportunities and challenges associated with applying parameter efficient fine-tuning (PEFT) methods in different FL settings for language tasks. Specifically, our investigation reveals that as the data across users becomes more diverse, the gap between fully fine-tuning the model and employing PEFT methods widens. To bridge this performance gap, we propose a method called SLoRA, which overcomes the key limitations of LoRA in high heterogeneous data scenarios through a novel data-driven initialization technique. Our experimental results demonstrate that SLoRA achieves performance comparable to full fine-tuning, with significant sparse updates with approximately $\\sim 1\\%$ density while reducing training time by up to $90\\%$.",
+      "published": "2023-08-12T10:33:57Z",
+      "updated": "2023-08-12T10:33:57Z",
+      "authors": [
+        "Sara Babakniya",
+        "Ahmed Roushdy Elkordy",
+        "Yahya H. Ezzeldin",
+        "Qingfeng Liu",
+        "Kee-Bong Song",
+        "Mostafa El-Khamy",
+        "Salman Avestimehr"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.06051v2",
+      "arxiv_id": "2308.06051v2",
+      "title": "Towards Instance-adaptive Inference for Federated Learning",
+      "summary": "Federated learning (FL) is a distributed learning paradigm that enables multiple clients to learn a powerful global model by aggregating local training. However, the performance of the global model is often hampered by non-i.i.d. distribution among the clients, requiring extensive efforts to mitigate inter-client data heterogeneity. Going beyond inter-client data heterogeneity, we note that intra-client heterogeneity can also be observed on complex real-world data and seriously deteriorate FL performance. In this paper, we present a novel FL algorithm, i.e., FedIns, to handle intra-client data heterogeneity by enabling instance-adaptive inference in the FL framework. Instead of huge instance-adaptive models, we resort to a parameter-efficient fine-tuning method, i.e., scale and shift deep features (SSF), upon a pre-trained model. Specifically, we first train an SSF pool for each client, and aggregate these SSF pools on the server side, thus still maintaining a low communication cost. To enable instance-adaptive inference, for a given instance, we dynamically find the best-matched SSF subsets from the pool and aggregate them to generate an adaptive SSF specified for the instance, thereby reducing the intra-client as well as the inter-client heterogeneity. Extensive experiments show that our FedIns outperforms state-of-the-art FL algorithms, e.g., a 6.64\\% improvement against the top-performing method with less than 15\\% communication cost on Tiny-ImageNet. Our code and models will be publicly released.",
+      "published": "2023-08-11T09:58:47Z",
+      "updated": "2023-08-17T05:04:43Z",
+      "authors": [
+        "Chun-Mei Feng",
+        "Kai Yu",
+        "Nian Liu",
+        "Xinxing Xu",
+        "Salman Khan",
+        "Wangmeng Zuo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.13896v1",
+      "arxiv_id": "2307.13896v1",
+      "title": "Low-Parameter Federated Learning with Large Language Models",
+      "summary": "We study few-shot Natural Language Understanding (NLU) tasks with Large Language Models (LLMs) in federated learning (FL) scenarios. It is a challenging task due to limited labeled data and communication capacities in FL, especially with mobile devices. Recent studies show LLMs can be prompted to perform few-shot NLU tasks like sentiment analysis and arithmetic reasoning. However, the huge sizes of LLMs result in high computation and communication costs, making classical FL schemes impractical. To address these challenges, we propose Low-Parameter Federated Learning (LP-FL). LP-FL combines few-shot prompt learning from LLMs with efficient communication and federating techniques. Our approach enables federated clients to assign soft labels to unlabeled data using gradually learned knowledge from the global model. Through iterative soft-label assigning, we continually expand the labeled set during the FL process. Additionally, to reduce computation and communication costs, LP-FL utilizes the Low-Rank Adaptation (LoRA) technique for compact learnable parameter construction, efficient local model fine-tuning, and affordable global model federation. LP-FL consistently outperforms Full-Parameter Federated Learning (FP-FL) in sentiment analysis tasks across various FL settings. Its resistance to overfitting allows LP-FL to equal or surpass centralized training in few-shot scenarios.",
+      "published": "2023-07-26T01:44:02Z",
+      "updated": "2023-07-26T01:44:02Z",
+      "authors": [
+        "Jingang Jiang",
+        "Xiangyang Liu",
+        "Chenyou Fan"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09970v2",
+      "arxiv_id": "2306.09970v2",
+      "title": "Continual Adaptation of Vision Transformers for Federated Learning",
+      "summary": "In this paper, we focus on the important yet understudied problem of Continual Federated Learning (CFL), where a server communicates with a set of clients to incrementally learn new concepts over time without sharing or storing any data. The complexity of this problem is compounded by challenges from both the Continual and Federated Learning perspectives. Specifically, models trained in a CFL setup suffer from catastrophic forgetting which is exacerbated by data heterogeneity across clients. Existing attempts at this problem tend to impose large overheads on clients and communication channels or require access to stored data which renders them unsuitable for real-world use due to privacy. In this paper, we attempt to tackle forgetting and heterogeneity while minimizing overhead costs and without requiring access to any stored data. We study this problem in the context of Vision Transformers and explore parameter-efficient approaches to adapt to dynamic distributions while minimizing forgetting. We achieve this by leveraging a prompting based approach (such that only prompts and classifier heads have to be communicated) and proposing a novel and lightweight generation and distillation scheme to consolidate client models at the server. We formulate this problem for image classification and establish strong baselines for comparison, conduct experiments on CIFAR-100 as well as challenging, large-scale datasets like ImageNet-R and DomainNet. Our approach outperforms both existing methods and our own baselines by as much as 7% while significantly reducing communication and client-level computation costs. Code available at https://github.com/shaunak27/hepco-fed.",
+      "published": "2023-06-16T17:02:12Z",
+      "updated": "2024-09-22T01:43:01Z",
+      "authors": [
+        "Shaunak Halbe",
+        "James Seale Smith",
+        "Junjiao Tian",
+        "Zsolt Kira"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.16742v1",
+      "arxiv_id": "2305.16742v1",
+      "title": "Parameter-Efficient Fine-Tuning without Introducing New Latency",
+      "summary": "Parameter-efficient fine-tuning (PEFT) of pre-trained language models has recently demonstrated remarkable achievements, effectively matching the performance of full fine-tuning while utilizing significantly fewer trainable parameters, and consequently addressing the storage and communication constraints. Nonetheless, various PEFT methods are limited by their inherent characteristics. In the case of sparse fine-tuning, which involves modifying only a small subset of the existing parameters, the selection of fine-tuned parameters is task- and domain-specific, making it unsuitable for federated learning. On the other hand, PEFT methods with adding new parameters typically introduce additional inference latency. In this paper, we demonstrate the feasibility of generating a sparse mask in a task-agnostic manner, wherein all downstream tasks share a common mask. Our approach, which relies solely on the magnitude information of pre-trained parameters, surpasses existing methodologies by a significant margin when evaluated on the GLUE benchmark. Additionally, we introduce a novel adapter technique that directly applies the adapter to pre-trained parameters instead of the hidden representation, thereby achieving identical inference speed to that of full fine-tuning. Through extensive experiments, our proposed method attains a new state-of-the-art outcome in terms of both performance and storage efficiency, storing only 0.03% parameters of full fine-tuning.",
+      "published": "2023-05-26T08:44:42Z",
+      "updated": "2023-05-26T08:44:42Z",
+      "authors": [
+        "Baohao Liao",
+        "Yan Meng",
+        "Christof Monz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.06637v3",
+      "arxiv_id": "2302.06637v3",
+      "title": "PerAda: Parameter-Efficient Federated Learning Personalization with Generalization Guarantees",
+      "summary": "Personalized Federated Learning (pFL) has emerged as a promising solution to tackle data heterogeneity across clients in FL. However, existing pFL methods either (1) introduce high communication and computation costs or (2) overfit to local data, which can be limited in scope, and are vulnerable to evolved test samples with natural shifts. In this paper, we propose PerAda, a parameter-efficient pFL framework that reduces communication and computational costs and exhibits superior generalization performance, especially under test-time distribution shifts. PerAda reduces the costs by leveraging the power of pretrained models and only updates and communicates a small number of additional parameters from adapters. PerAda has good generalization since it regularizes each client's personalized adapter with a global adapter, while the global adapter uses knowledge distillation to aggregate generalized information from all clients. Theoretically, we provide generalization bounds to explain why PerAda improves generalization, and we prove its convergence to stationary points under non-convex settings. Empirically, PerAda demonstrates competitive personalized performance (+4.85% on CheXpert) and enables better out-of-distribution generalization (+5.23% on CIFAR-10-C) on different datasets across natural and medical domains compared with baselines, while only updating 12.6% of parameters per model based on the adapter. Our code is available at https://github.com/NVlabs/PerAda.",
+      "published": "2023-02-13T19:00:37Z",
+      "updated": "2024-07-23T11:38:37Z",
+      "authors": [
+        "Chulin Xie",
+        "De-An Huang",
+        "Wenda Chu",
+        "Daguang Xu",
+        "Chaowei Xiao",
+        "Bo Li",
+        "Anima Anandkumar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.01190v3",
+      "arxiv_id": "2302.01190v3",
+      "title": "On the Efficacy of Differentially Private Few-shot Image Classification",
+      "summary": "There has been significant recent progress in training differentially private (DP) models which achieve accuracy that approaches the best non-private models. These DP models are typically pretrained on large public datasets and then fine-tuned on private downstream datasets that are relatively large and similar in distribution to the pretraining data. However, in many applications including personalization and federated learning, it is crucial to perform well (i) in the few-shot setting, as obtaining large amounts of labeled data may be problematic; and (ii) on datasets from a wide variety of domains for use in various specialist settings. To understand under which conditions few-shot DP can be effective, we perform an exhaustive set of experiments that reveals how the accuracy and vulnerability to attack of few-shot DP image classification models are affected as the number of shots per class, privacy level, model architecture, downstream dataset, and subset of learnable parameters in the model vary. We show that to achieve DP accuracy on par with non-private models, the shots per class must be increased as the privacy level increases. We also show that learning parameter-efficient FiLM adapters under DP is competitive with learning just the final classifier layer or learning all of the network parameters. Finally, we evaluate DP federated learning systems and establish state-of-the-art performance on the challenging FLAIR benchmark.",
+      "published": "2023-02-02T16:16:25Z",
+      "updated": "2023-12-19T09:45:36Z",
+      "authors": [
+        "Marlon Tobaben",
+        "Aliaksandra Shysheya",
+        "John Bronskill",
+        "Andrew Paverd",
+        "Shruti Tople",
+        "Santiago Zanella-Beguelin",
+        "Richard E Turner",
+        "Antti Honkela"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CR",
+        "cs.LG"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"federated\" AND (LoRA OR \"parameter-efficient\")",
+  "slice_id": "2023",
+  "date_window": {
+    "start": "2023-01-01",
+    "end": "2023-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2312.17493v2",
+      "arxiv_id": "2312.17493v2",
+      "title": "Differentially Private Low-Rank Adaptation of Large Language Model Using Federated Learning",
+      "summary": "The surge in interest and application of large language models (LLMs) has sparked a drive to fine-tune these models to suit specific applications, such as finance and medical science. However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data. In this scenario, federated learning becomes a natural choice, allowing decentralized fine-tuning without exposing raw data to central servers. Motivated by this, we investigate how data privacy can be ensured in LLM fine-tuning through practical federated learning approaches, enabling secure contributions from multiple parties to enhance LLMs. Yet, challenges arise: 1) despite avoiding raw data exposure, there is a risk of inferring sensitive information from model outputs, and 2) federated learning for LLMs incurs notable communication overhead. To address these challenges, this article introduces DP-LoRA, a novel federated learning algorithm tailored for LLMs. DP-LoRA preserves data privacy by employing a Gaussian mechanism that adds noise in weight updates, maintaining individual data privacy while facilitating collaborative model training. Moreover, DP-LoRA optimizes communication efficiency via low-rank adaptation, minimizing the transmission of updated weights during distributed training. The experimental results across medical, financial, and general datasets using various LLMs demonstrate that DP-LoRA effectively ensures strict privacy constraints while minimizing communication overhead.",
+      "published": "2023-12-29T06:50:38Z",
+      "updated": "2024-06-02T06:31:21Z",
+      "authors": [
+        "Xiao-Yang Liu",
+        "Rongyi Zhu",
+        "Daochen Zha",
+        "Jiechao Gao",
+        "Shan Zhong",
+        "Matt White",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.15926v1",
+      "arxiv_id": "2312.15926v1",
+      "title": "FedMS: Federated Learning with Mixture of Sparsely Activated Foundations Models",
+      "summary": "Foundation models have shown great success in natural language processing, computer vision, and multimodal tasks. FMs have a large number of model parameters, thus requiring a substantial amount of data to help optimize the model during the training. Federated learning has revolutionized machine learning by enabling collaborative learning from decentralized data while still preserving the data privacy of clients. Despite the great benefits foundation models can have empowered by federated learning, they face severe computation, communication, and statistical challenges. In this paper, we propose a novel two-stage federated learning algorithm called FedMS. A global expert is trained in the first stage and a local expert is trained in the second stage to provide better personalization. We construct a Mixture of Foundation Models (MoFM) with these two experts and design a gate neural network with an inserted gate adapter that joins the aggregation every communication round in the second stage. To further adapt to edge computing scenarios with limited computational resources, we design a novel Sparsely Activated LoRA (SAL) algorithm that freezes the pre-trained foundation model parameters inserts low-rank adaptation matrices into transformer blocks and activates them progressively during the training. We employ extensive experiments to verify the effectiveness of FedMS, results show that FedMS outperforms other SOTA baselines by up to 55.25% in default settings.",
+      "published": "2023-12-26T07:40:26Z",
+      "updated": "2023-12-26T07:40:26Z",
+      "authors": [
+        "Panlong Wu",
+        "Kangshuo Li",
+        "Ting Wang",
+        "Fangxin Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.06353v5",
+      "arxiv_id": "2312.06353v5",
+      "title": "Federated Full-Parameter Tuning of Billion-Sized Language Models with Communication Cost under 18 Kilobytes",
+      "summary": "Pre-trained large language models (LLMs) need fine-tuning to improve their responsiveness to natural language instructions. Federated learning offers a way to fine-tune LLMs using the abundant data on end devices without compromising data privacy. Most existing federated fine-tuning methods for LLMs rely on parameter-efficient fine-tuning techniques, which may not reach the performance height possible with full-parameter tuning. However, federated full-parameter tuning of LLMs is a non-trivial problem due to the immense communication cost. This work introduces FedKSeed that employs zeroth-order optimization with a finite set of random seeds. It significantly reduces transmission requirements between the server and clients to just a few random seeds and scalar gradients, amounting to only a few thousand bytes, making federated full-parameter tuning of billion-sized LLMs possible on devices. Building on it, we develop a strategy enabling probability-differentiated seed sampling, prioritizing perturbations with greater impact on model accuracy. Experiments across six scenarios with various LLMs, datasets and data partitions demonstrate that our approach outperforms existing federated LLM fine-tuning methods in both communication efficiency and new task generalization.",
+      "published": "2023-12-11T13:03:21Z",
+      "updated": "2024-05-27T08:31:47Z",
+      "authors": [
+        "Zhen Qin",
+        "Daoyuan Chen",
+        "Bingchen Qian",
+        "Bolin Ding",
+        "Yaliang Li",
+        "Shuiguang Deng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.17491v2",
+      "arxiv_id": "2310.17491v2",
+      "title": "FedPEAT: Convergence of Federated Learning, Parameter-Efficient Fine Tuning, and Emulator Assisted Tuning for Artificial Intelligence Foundation Models with Mobile Edge Computing",
+      "summary": "The emergence of foundation models, including language and vision models, has reshaped AI's landscape, offering capabilities across various applications. Deploying and fine-tuning these large models, like GPT-3 and BERT, presents challenges, especially in the current foundation model era. We introduce Emulator-Assisted Tuning (EAT) combined with Parameter-Efficient Fine-Tuning (PEFT) to form Parameter-Efficient Emulator-Assisted Tuning (PEAT). Further, we expand this into federated learning as Federated PEAT (FedPEAT). FedPEAT uses adapters, emulators, and PEFT for federated model tuning, enhancing model privacy and memory efficiency. Adapters adjust pre-trained models, while emulators give a compact representation of original models, addressing both privacy and efficiency. Adaptable to various neural networks, our approach also uses deep reinforcement learning for hyper-parameter optimization. We tested FedPEAT in a unique scenario with a server participating in collaborative federated tuning, showcasing its potential in tackling foundation model challenges.",
+      "published": "2023-10-26T15:47:44Z",
+      "updated": "2024-02-28T13:47:33Z",
+      "authors": [
+        "Terence Jie Chua",
+        "Wenhan Yu",
+        "Jun Zhao",
+        "Kwok-Yan Lam"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.NI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.15080v3",
+      "arxiv_id": "2310.15080v3",
+      "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "summary": "Federated learning (FL) is a promising paradigm to enable collaborative model training with decentralized data. However, the training process of Large Language Models (LLMs) generally incurs the update of significant parameters, which limits the applicability of FL techniques to tackle the LLMs in real scenarios. Prompt tuning can significantly reduce the number of parameters to update, but it either incurs performance degradation or low training efficiency. The straightforward utilization of prompt tuning in the FL often raises non-trivial communication costs and dramatically degrades performance. In addition, the decentralized data is generally non-Independent and Identically Distributed (non-IID), which brings client drift problems and thus poor performance. This paper proposes a Parameter-efficient prompt Tuning approach with Adaptive Optimization, i.e., FedPepTAO, to enable efficient and effective FL of LLMs. First, an efficient partial prompt tuning approach is proposed to improve performance and efficiency simultaneously. Second, a novel adaptive optimization method is developed to address the client drift problems on both the device and server sides to enhance performance further. Extensive experiments based on 10 datasets demonstrate the superb performance (up to 60.8\\% in terms of accuracy) and efficiency (up to 97.59\\% in terms of training time) of FedPepTAO compared with 9 baseline approaches. Our code is available at https://github.com/llm-eff/FedPepTAO.",
+      "published": "2023-10-23T16:37:59Z",
+      "updated": "2024-02-11T11:59:52Z",
+      "authors": [
+        "Tianshi Che",
+        "Ji Liu",
+        "Yang Zhou",
+        "Jiaxiang Ren",
+        "Jiwen Zhou",
+        "Victor S. Sheng",
+        "Huaiyu Dai",
+        "Dejing Dou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.13283v2",
+      "arxiv_id": "2310.13283v2",
+      "title": "pFedLoRA: Model-Heterogeneous Personalized Federated Learning with LoRA Tuning",
+      "summary": "Federated learning (FL) is an emerging machine learning paradigm in which a central server coordinates multiple participants (clients) collaboratively to train on decentralized data. In practice, FL often faces statistical, system, and model heterogeneities, which inspires the field of Model-Heterogeneous Personalized Federated Learning (MHPFL). With the increased interest in adopting large language models (LLMs) in FL, the existing MHPFL methods cannot achieve acceptable computational and communication costs, while maintaining satisfactory model performance. To bridge this gap, we propose a novel and efficient model-heterogeneous personalized Federated learning framework based on LoRA tuning (pFedLoRA). Inspired by the popular LoRA method for fine-tuning pre-trained LLMs with a low-rank model (a.k.a., an adapter), we design a homogeneous small adapter to facilitate federated client's heterogeneous local model training with our proposed iterative training for global-local knowledge exchange. The homogeneous small local adapters are aggregated on the FL server to generate a global adapter. We theoretically prove the convergence of pFedLoRA. Extensive experiments on two benchmark datasets demonstrate that pFedLoRA outperforms six state-of-the-art baselines, beating the best method by 1.35% in test accuracy, 11.81 times computation overhead reduction and 7.41 times communication cost saving.",
+      "published": "2023-10-20T05:24:28Z",
+      "updated": "2024-02-11T11:38:38Z",
+      "authors": [
+        "Liping Yi",
+        "Han Yu",
+        "Gang Wang",
+        "Xiaoguang Liu",
+        "Xiaoxiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10049v1",
+      "arxiv_id": "2310.10049v1",
+      "title": "FATE-LLM: A Industrial Grade Federated Learning Framework for Large Language Models",
+      "summary": "Large Language Models (LLMs), such as ChatGPT, LLaMA, GLM, and PaLM, have exhibited remarkable performances across various tasks in recent years. However, LLMs face two main challenges in real-world applications. One challenge is that training LLMs consumes vast computing resources, preventing LLMs from being adopted by small and medium-sized enterprises with limited computing resources. Another is that training LLM requires a large amount of high-quality data, which are often scattered among enterprises. To address these challenges, we propose FATE-LLM, an industrial-grade federated learning framework for large language models. FATE-LLM (1) facilitates federated learning for large language models (coined FedLLM); (2) promotes efficient training of FedLLM using parameter-efficient fine-tuning methods; (3) protects the intellectual property of LLMs; (4) preserves data privacy during training and inference through privacy-preserving mechanisms. We release the code of FATE-LLM at https://github.com/FederatedAI/FATE-LLM to facilitate the research of FedLLM and enable a broad range of industrial applications.",
+      "published": "2023-10-16T04:17:13Z",
+      "updated": "2023-10-16T04:17:13Z",
+      "authors": [
+        "Tao Fan",
+        "Yan Kang",
+        "Guoqiang Ma",
+        "Weijing Chen",
+        "Wenbin Wei",
+        "Lixin Fan",
+        "Qiang Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.04627v1",
+      "arxiv_id": "2310.04627v1",
+      "title": "Profit: Benchmarking Personalization and Robustness Trade-off in Federated Prompt Tuning",
+      "summary": "In many applications of federated learning (FL), clients desire models that are personalized using their local data, yet are also robust in the sense that they retain general global knowledge. However, the presence of data heterogeneity across clients induces a fundamental trade-off between personalization (i.e., adaptation to a local distribution) and robustness (i.e., not forgetting previously learned general knowledge). It is critical to understand how to navigate this personalization vs robustness trade-off when designing federated systems, which are increasingly moving towards a paradigm of fine-tuning large foundation models. Due to limited computational and communication capabilities in most federated settings, this foundation model fine-tuning must be done using parameter-efficient fine-tuning (PEFT) approaches. While some recent work has studied federated approaches to PEFT, the personalization vs robustness trade-off of federated PEFT has been largely unexplored. In this work, we take a step towards bridging this gap by benchmarking fundamental FL algorithms -- FedAvg and FedSGD plus personalization (via client local fine-tuning) -- applied to one of the most ubiquitous PEFT approaches to large language models (LLMs) -- prompt tuning -- in a multitude of hyperparameter settings under varying levels of data heterogeneity. Our results show that federated-trained prompts can be surprisingly robust when using a small learning rate with many local epochs for personalization, especially when using an adaptive optimizer as the client optimizer during federated training. We also demonstrate that simple approaches such as adding regularization and interpolating two prompts are effective in improving the personalization vs robustness trade-off in computation-limited settings with few local updates allowed for personalization.",
+      "published": "2023-10-06T23:46:33Z",
+      "updated": "2023-10-06T23:46:33Z",
+      "authors": [
+        "Liam Collins",
+        "Shanshan Wu",
+        "Sewoong Oh",
+        "Khe Chai Sim"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.08173v3",
+      "arxiv_id": "2309.08173v3",
+      "title": "FedJudge: Federated Legal Large Language Model",
+      "summary": "Large Language Models (LLMs) have gained prominence in the field of Legal Intelligence, offering potential applications in assisting legal professionals and laymen. However, the centralized training of these Legal LLMs raises data privacy concerns, as legal data is distributed among various institutions containing sensitive individual information. This paper addresses this challenge by exploring the integration of Legal LLMs with Federated Learning (FL) methodologies. By employing FL, Legal LLMs can be fine-tuned locally on devices or clients, and their parameters are aggregated and distributed on a central server, ensuring data privacy without directly sharing raw data. However, computation and communication overheads hinder the full fine-tuning of LLMs under the FL setting. Moreover, the distribution shift of legal data reduces the effectiveness of FL methods. To this end, in this paper, we propose the first Federated Legal Large Language Model (FedJudge) framework, which fine-tunes Legal LLMs efficiently and effectively. Specifically, FedJudge utilizes parameter-efficient fine-tuning methods to update only a few additional parameters during the FL training. Besides, we explore the continual learning methods to preserve the global model's important parameters when training local clients to mitigate the problem of data shifts. Extensive experimental results on three real-world datasets clearly validate the effectiveness of FedJudge. Code is released at https://github.com/yuelinan/FedJudge.",
+      "published": "2023-09-15T05:45:44Z",
+      "updated": "2024-04-10T13:24:55Z",
+      "authors": [
+        "Linan Yue",
+        "Qi Liu",
+        "Yichao Du",
+        "Weibo Gao",
+        "Ye Liu",
+        "Fangzhou Yao"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00363v1",
+      "arxiv_id": "2309.00363v1",
+      "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning",
+      "summary": "LLMs have demonstrated great capabilities in various NLP tasks. Different entities can further improve the performance of those LLMs on their specific downstream tasks by fine-tuning LLMs. When several entities have similar interested tasks, but their data cannot be shared because of privacy concerns regulations, federated learning (FL) is a mainstream solution to leverage the data of different entities. However, fine-tuning LLMs in federated learning settings still lacks adequate support from existing FL frameworks because it has to deal with optimizing the consumption of significant communication and computational resources, data preparation for different tasks, and distinct information protection demands. This paper first discusses these challenges of federated fine-tuning LLMs, and introduces our package FS-LLM as a main contribution, which consists of the following components: (1) we build an end-to-end benchmarking pipeline, automizing the processes of dataset preprocessing, federated fine-tuning execution, and performance evaluation on federated LLM fine-tuning; (2) we provide comprehensive federated parameter-efficient fine-tuning algorithm implementations and versatile programming interfaces for future extension in FL scenarios with low communication and computation costs, even without accessing the full model; (3) we adopt several accelerating and resource-efficient operators for fine-tuning LLMs with limited resources and the flexible pluggable sub-routines for interdisciplinary study. We conduct extensive experiments to validate the effectiveness of FS-LLM and benchmark advanced LLMs with state-of-the-art parameter-efficient fine-tuning algorithms in FL settings, which also yields valuable insights into federated fine-tuning LLMs for the research community. To facilitate further research and adoption, we release FS-LLM at https://github.com/alibaba/FederatedScope/tree/llm.",
+      "published": "2023-09-01T09:40:36Z",
+      "updated": "2023-09-01T09:40:36Z",
+      "authors": [
+        "Weirui Kuang",
+        "Bingchen Qian",
+        "Zitao Li",
+        "Daoyuan Chen",
+        "Dawei Gao",
+        "Xuchen Pan",
+        "Yuexiang Xie",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Jingren Zhou"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13894v2",
+      "arxiv_id": "2308.13894v2",
+      "title": "FwdLLM: Efficient FedLLM using Forward Gradient",
+      "summary": "Large Language Models (LLMs) are transforming the landscape of mobile intelligence. Federated Learning (FL), a method to preserve user data privacy, is often employed in fine-tuning LLMs to downstream mobile tasks, an approach known as FedLLM. Though recent efforts have addressed the network issue induced by the vast model size, they have not practically mitigated vital challenges concerning integration with mobile devices, such as significant memory consumption and sluggish model convergence. In response to these challenges, this work introduces FwdLLM, an innovative FL protocol designed to enhance the FedLLM efficiency. The key idea of FwdLLM to employ backpropagation (BP)-free training methods, requiring devices only to execute ``perturbed inferences''. Consequently, FwdLLM delivers way better memory efficiency and time efficiency (expedited by mobile NPUs and an expanded array of participant devices). FwdLLM centers around three key designs: (1) it combines BP-free training with parameter-efficient training methods, an essential way to scale the approach to the LLM era; (2) it systematically and adaptively allocates computational loads across devices, striking a careful balance between convergence speed and accuracy; (3) it discriminatively samples perturbed predictions that are more valuable to model convergence. Comprehensive experiments with five LLMs and three NLP tasks illustrate FwdLLM's significant advantages over conventional methods, including up to three orders of magnitude faster convergence and a 14.6x reduction in memory footprint. Uniquely, FwdLLM paves the way for federated learning of billion-parameter LLMs such as LLaMA on COTS mobile devices -- a feat previously unattained.",
+      "published": "2023-08-26T14:36:30Z",
+      "updated": "2024-01-20T09:24:33Z",
+      "authors": [
+        "Mengwei Xu",
+        "Dongqi Cai",
+        "Yaozong Wu",
+        "Xiang Li",
+        "Shangguang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.12305v1",
+      "arxiv_id": "2308.12305v1",
+      "title": "FedDAT: An Approach for Foundation Model Finetuning in Multi-Modal Heterogeneous Federated Learning",
+      "summary": "Recently, foundation models have exhibited remarkable advancements in multi-modal learning. These models, equipped with millions (or billions) of parameters, typically require a substantial amount of data for finetuning. However, collecting and centralizing training data from diverse sectors becomes challenging due to distinct privacy regulations. Federated Learning (FL) emerges as a promising solution, enabling multiple clients to collaboratively train neural networks without centralizing their local data. To alleviate client computation burdens and communication overheads, previous works have adapted Parameter-efficient Finetuning (PEFT) methods for FL. Hereby, only a small fraction of the model parameters are optimized and communicated during federated communications. Nevertheless, most previous works have focused on a single modality and neglected one common phenomenon, i.e., the presence of data heterogeneity across the clients. Therefore, in this work, we propose a finetuning framework tailored to heterogeneous multi-modal FL, called Federated Dual-Aadapter Teacher (FedDAT). Specifically, our approach leverages a Dual-Adapter Teacher (DAT) to address data heterogeneity by regularizing the client local updates and applying Mutual Knowledge Distillation (MKD) for an efficient knowledge transfer. FedDAT is the first approach that enables an efficient distributed finetuning of foundation models for a variety of heterogeneous Vision-Language tasks. To demonstrate its effectiveness, we conduct extensive experiments on four multi-modality FL benchmarks with different types of data heterogeneity, where FedDAT substantially outperforms the existing centralized PEFT methods adapted for FL.",
+      "published": "2023-08-21T21:57:01Z",
+      "updated": "2023-08-21T21:57:01Z",
+      "authors": [
+        "Haokun Chen",
+        "Yao Zhang",
+        "Denis Krompass",
+        "Jindong Gu",
+        "Volker Tresp"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MM"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.06522v1",
+      "arxiv_id": "2308.06522v1",
+      "title": "SLoRA: Federated Parameter Efficient Fine-Tuning of Language Models",
+      "summary": "Transfer learning via fine-tuning pre-trained transformer models has gained significant success in delivering state-of-the-art results across various NLP tasks. In the absence of centralized data, Federated Learning (FL) can benefit from distributed and private data of the FL edge clients for fine-tuning. However, due to the limited communication, computation, and storage capabilities of edge devices and the huge sizes of popular transformer models, efficient fine-tuning is crucial to make federated training feasible. This work explores the opportunities and challenges associated with applying parameter efficient fine-tuning (PEFT) methods in different FL settings for language tasks. Specifically, our investigation reveals that as the data across users becomes more diverse, the gap between fully fine-tuning the model and employing PEFT methods widens. To bridge this performance gap, we propose a method called SLoRA, which overcomes the key limitations of LoRA in high heterogeneous data scenarios through a novel data-driven initialization technique. Our experimental results demonstrate that SLoRA achieves performance comparable to full fine-tuning, with significant sparse updates with approximately $\\sim 1\\%$ density while reducing training time by up to $90\\%$.",
+      "published": "2023-08-12T10:33:57Z",
+      "updated": "2023-08-12T10:33:57Z",
+      "authors": [
+        "Sara Babakniya",
+        "Ahmed Roushdy Elkordy",
+        "Yahya H. Ezzeldin",
+        "Qingfeng Liu",
+        "Kee-Bong Song",
+        "Mostafa El-Khamy",
+        "Salman Avestimehr"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.06051v2",
+      "arxiv_id": "2308.06051v2",
+      "title": "Towards Instance-adaptive Inference for Federated Learning",
+      "summary": "Federated learning (FL) is a distributed learning paradigm that enables multiple clients to learn a powerful global model by aggregating local training. However, the performance of the global model is often hampered by non-i.i.d. distribution among the clients, requiring extensive efforts to mitigate inter-client data heterogeneity. Going beyond inter-client data heterogeneity, we note that intra-client heterogeneity can also be observed on complex real-world data and seriously deteriorate FL performance. In this paper, we present a novel FL algorithm, i.e., FedIns, to handle intra-client data heterogeneity by enabling instance-adaptive inference in the FL framework. Instead of huge instance-adaptive models, we resort to a parameter-efficient fine-tuning method, i.e., scale and shift deep features (SSF), upon a pre-trained model. Specifically, we first train an SSF pool for each client, and aggregate these SSF pools on the server side, thus still maintaining a low communication cost. To enable instance-adaptive inference, for a given instance, we dynamically find the best-matched SSF subsets from the pool and aggregate them to generate an adaptive SSF specified for the instance, thereby reducing the intra-client as well as the inter-client heterogeneity. Extensive experiments show that our FedIns outperforms state-of-the-art FL algorithms, e.g., a 6.64\\% improvement against the top-performing method with less than 15\\% communication cost on Tiny-ImageNet. Our code and models will be publicly released.",
+      "published": "2023-08-11T09:58:47Z",
+      "updated": "2023-08-17T05:04:43Z",
+      "authors": [
+        "Chun-Mei Feng",
+        "Kai Yu",
+        "Nian Liu",
+        "Xinxing Xu",
+        "Salman Khan",
+        "Wangmeng Zuo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.13896v1",
+      "arxiv_id": "2307.13896v1",
+      "title": "Low-Parameter Federated Learning with Large Language Models",
+      "summary": "We study few-shot Natural Language Understanding (NLU) tasks with Large Language Models (LLMs) in federated learning (FL) scenarios. It is a challenging task due to limited labeled data and communication capacities in FL, especially with mobile devices. Recent studies show LLMs can be prompted to perform few-shot NLU tasks like sentiment analysis and arithmetic reasoning. However, the huge sizes of LLMs result in high computation and communication costs, making classical FL schemes impractical. To address these challenges, we propose Low-Parameter Federated Learning (LP-FL). LP-FL combines few-shot prompt learning from LLMs with efficient communication and federating techniques. Our approach enables federated clients to assign soft labels to unlabeled data using gradually learned knowledge from the global model. Through iterative soft-label assigning, we continually expand the labeled set during the FL process. Additionally, to reduce computation and communication costs, LP-FL utilizes the Low-Rank Adaptation (LoRA) technique for compact learnable parameter construction, efficient local model fine-tuning, and affordable global model federation. LP-FL consistently outperforms Full-Parameter Federated Learning (FP-FL) in sentiment analysis tasks across various FL settings. Its resistance to overfitting allows LP-FL to equal or surpass centralized training in few-shot scenarios.",
+      "published": "2023-07-26T01:44:02Z",
+      "updated": "2023-07-26T01:44:02Z",
+      "authors": [
+        "Jingang Jiang",
+        "Xiangyang Liu",
+        "Chenyou Fan"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09970v2",
+      "arxiv_id": "2306.09970v2",
+      "title": "Continual Adaptation of Vision Transformers for Federated Learning",
+      "summary": "In this paper, we focus on the important yet understudied problem of Continual Federated Learning (CFL), where a server communicates with a set of clients to incrementally learn new concepts over time without sharing or storing any data. The complexity of this problem is compounded by challenges from both the Continual and Federated Learning perspectives. Specifically, models trained in a CFL setup suffer from catastrophic forgetting which is exacerbated by data heterogeneity across clients. Existing attempts at this problem tend to impose large overheads on clients and communication channels or require access to stored data which renders them unsuitable for real-world use due to privacy. In this paper, we attempt to tackle forgetting and heterogeneity while minimizing overhead costs and without requiring access to any stored data. We study this problem in the context of Vision Transformers and explore parameter-efficient approaches to adapt to dynamic distributions while minimizing forgetting. We achieve this by leveraging a prompting based approach (such that only prompts and classifier heads have to be communicated) and proposing a novel and lightweight generation and distillation scheme to consolidate client models at the server. We formulate this problem for image classification and establish strong baselines for comparison, conduct experiments on CIFAR-100 as well as challenging, large-scale datasets like ImageNet-R and DomainNet. Our approach outperforms both existing methods and our own baselines by as much as 7% while significantly reducing communication and client-level computation costs. Code available at https://github.com/shaunak27/hepco-fed.",
+      "published": "2023-06-16T17:02:12Z",
+      "updated": "2024-09-22T01:43:01Z",
+      "authors": [
+        "Shaunak Halbe",
+        "James Seale Smith",
+        "Junjiao Tian",
+        "Zsolt Kira"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.16742v1",
+      "arxiv_id": "2305.16742v1",
+      "title": "Parameter-Efficient Fine-Tuning without Introducing New Latency",
+      "summary": "Parameter-efficient fine-tuning (PEFT) of pre-trained language models has recently demonstrated remarkable achievements, effectively matching the performance of full fine-tuning while utilizing significantly fewer trainable parameters, and consequently addressing the storage and communication constraints. Nonetheless, various PEFT methods are limited by their inherent characteristics. In the case of sparse fine-tuning, which involves modifying only a small subset of the existing parameters, the selection of fine-tuned parameters is task- and domain-specific, making it unsuitable for federated learning. On the other hand, PEFT methods with adding new parameters typically introduce additional inference latency. In this paper, we demonstrate the feasibility of generating a sparse mask in a task-agnostic manner, wherein all downstream tasks share a common mask. Our approach, which relies solely on the magnitude information of pre-trained parameters, surpasses existing methodologies by a significant margin when evaluated on the GLUE benchmark. Additionally, we introduce a novel adapter technique that directly applies the adapter to pre-trained parameters instead of the hidden representation, thereby achieving identical inference speed to that of full fine-tuning. Through extensive experiments, our proposed method attains a new state-of-the-art outcome in terms of both performance and storage efficiency, storing only 0.03% parameters of full fine-tuning.",
+      "published": "2023-05-26T08:44:42Z",
+      "updated": "2023-05-26T08:44:42Z",
+      "authors": [
+        "Baohao Liao",
+        "Yan Meng",
+        "Christof Monz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.06637v3",
+      "arxiv_id": "2302.06637v3",
+      "title": "PerAda: Parameter-Efficient Federated Learning Personalization with Generalization Guarantees",
+      "summary": "Personalized Federated Learning (pFL) has emerged as a promising solution to tackle data heterogeneity across clients in FL. However, existing pFL methods either (1) introduce high communication and computation costs or (2) overfit to local data, which can be limited in scope, and are vulnerable to evolved test samples with natural shifts. In this paper, we propose PerAda, a parameter-efficient pFL framework that reduces communication and computational costs and exhibits superior generalization performance, especially under test-time distribution shifts. PerAda reduces the costs by leveraging the power of pretrained models and only updates and communicates a small number of additional parameters from adapters. PerAda has good generalization since it regularizes each client's personalized adapter with a global adapter, while the global adapter uses knowledge distillation to aggregate generalized information from all clients. Theoretically, we provide generalization bounds to explain why PerAda improves generalization, and we prove its convergence to stationary points under non-convex settings. Empirically, PerAda demonstrates competitive personalized performance (+4.85% on CheXpert) and enables better out-of-distribution generalization (+5.23% on CIFAR-10-C) on different datasets across natural and medical domains compared with baselines, while only updating 12.6% of parameters per model based on the adapter. Our code is available at https://github.com/NVlabs/PerAda.",
+      "published": "2023-02-13T19:00:37Z",
+      "updated": "2024-07-23T11:38:37Z",
+      "authors": [
+        "Chulin Xie",
+        "De-An Huang",
+        "Wenda Chu",
+        "Daguang Xu",
+        "Chaowei Xiao",
+        "Bo Li",
+        "Anima Anandkumar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.01190v3",
+      "arxiv_id": "2302.01190v3",
+      "title": "On the Efficacy of Differentially Private Few-shot Image Classification",
+      "summary": "There has been significant recent progress in training differentially private (DP) models which achieve accuracy that approaches the best non-private models. These DP models are typically pretrained on large public datasets and then fine-tuned on private downstream datasets that are relatively large and similar in distribution to the pretraining data. However, in many applications including personalization and federated learning, it is crucial to perform well (i) in the few-shot setting, as obtaining large amounts of labeled data may be problematic; and (ii) on datasets from a wide variety of domains for use in various specialist settings. To understand under which conditions few-shot DP can be effective, we perform an exhaustive set of experiments that reveals how the accuracy and vulnerability to attack of few-shot DP image classification models are affected as the number of shots per class, privacy level, model architecture, downstream dataset, and subset of learnable parameters in the model vary. We show that to achieve DP accuracy on par with non-private models, the shots per class must be increased as the privacy level increases. We also show that learning parameter-efficient FiLM adapters under DP is competitive with learning just the final classifier layer or learning all of the network parameters. Finally, we evaluate DP federated learning systems and establish state-of-the-art performance on the challenging FLAIR benchmark.",
+      "published": "2023-02-02T16:16:25Z",
+      "updated": "2023-12-19T09:45:36Z",
+      "authors": [
+        "Marlon Tobaben",
+        "Aliaksandra Shysheya",
+        "John Bronskill",
+        "Andrew Paverd",
+        "Shruti Tople",
+        "Santiago Zanella-Beguelin",
+        "Richard E Turner",
+        "Antti Honkela"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CR",
+        "cs.LG"
+      ]
+    }
+  ]
+}

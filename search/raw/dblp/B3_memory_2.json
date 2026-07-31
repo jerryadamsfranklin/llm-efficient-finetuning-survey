@@ -1,0 +1,180 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "FlashAttention memory efficient attention",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:57:23Z",
+  "total_results_reported": 2,
+  "returned": 2,
+  "returned_in_coverage_window": 2,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "4",
+      "@id": "2358419",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "206/7018",
+              "text": "Tri Dao"
+            },
+            {
+              "@pid": "218/5728",
+              "text": "Daniel Y. Fu"
+            },
+            {
+              "@pid": "47/8135",
+              "text": "Stefano Ermon"
+            },
+            {
+              "@pid": "04/4980",
+              "text": "Atri Rudra"
+            },
+            {
+              "@pid": "r/ChristopherRe",
+              "text": "Christopher Ré"
+            }
+          ]
+        },
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness.",
+        "venue": "NeurIPS",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/DaoFERR22",
+        "ee": "http://papers.nips.cc/paper_files/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/DaoFERR22"
+      },
+      "url": "URL#2358419"
+    },
+    {
+      "@score": "4",
+      "@id": "2434419",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "206/7018",
+              "text": "Tri Dao"
+            },
+            {
+              "@pid": "218/5728",
+              "text": "Daniel Y. Fu"
+            },
+            {
+              "@pid": "47/8135",
+              "text": "Stefano Ermon"
+            },
+            {
+              "@pid": "04/4980",
+              "text": "Atri Rudra"
+            },
+            {
+              "@pid": "r/ChristopherRe",
+              "text": "Christopher Ré"
+            }
+          ]
+        },
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness.",
+        "venue": "CoRR",
+        "volume": "abs/2205.14135",
+        "year": "2022",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2205-14135",
+        "doi": "10.48550/ARXIV.2205.14135",
+        "ee": "https://doi.org/10.48550/arXiv.2205.14135",
+        "url": "https://dblp.org/rec/journals/corr/abs-2205-14135"
+      },
+      "url": "URL#2434419"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "4",
+      "@id": "2358419",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "206/7018",
+              "text": "Tri Dao"
+            },
+            {
+              "@pid": "218/5728",
+              "text": "Daniel Y. Fu"
+            },
+            {
+              "@pid": "47/8135",
+              "text": "Stefano Ermon"
+            },
+            {
+              "@pid": "04/4980",
+              "text": "Atri Rudra"
+            },
+            {
+              "@pid": "r/ChristopherRe",
+              "text": "Christopher Ré"
+            }
+          ]
+        },
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness.",
+        "venue": "NeurIPS",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/DaoFERR22",
+        "ee": "http://papers.nips.cc/paper_files/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/DaoFERR22"
+      },
+      "url": "URL#2358419"
+    },
+    {
+      "@score": "4",
+      "@id": "2434419",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "206/7018",
+              "text": "Tri Dao"
+            },
+            {
+              "@pid": "218/5728",
+              "text": "Daniel Y. Fu"
+            },
+            {
+              "@pid": "47/8135",
+              "text": "Stefano Ermon"
+            },
+            {
+              "@pid": "04/4980",
+              "text": "Atri Rudra"
+            },
+            {
+              "@pid": "r/ChristopherRe",
+              "text": "Christopher Ré"
+            }
+          ]
+        },
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness.",
+        "venue": "CoRR",
+        "volume": "abs/2205.14135",
+        "year": "2022",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2205-14135",
+        "doi": "10.48550/ARXIV.2205.14135",
+        "ee": "https://doi.org/10.48550/arXiv.2205.14135",
+        "url": "https://dblp.org/rec/journals/corr/abs-2205-14135"
+      },
+      "url": "URL#2434419"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=FlashAttention%20memory%20efficient%20attention&h=50&format=json"
+}

@@ -6,22 +6,73 @@ PeerJ Computer Science).
 
 ## Contents
 
-- `protocol/` — search protocol, inclusion criteria, extraction schema (written before searching)
+- `protocol/` — search protocol, inclusion criteria, extraction schema, changelog
 - `search/` — query definitions, search log, raw API responses, search scripts
 - `screening/` — screening decisions for every candidate, PRISMA-style counts
 - `data/` — final corpus, table data as CSV, BibTeX references
 - `figures/` — figure generation scripts and outputs
-- `docs/` — Table 4 per-column sourcing and provenance
+- `docs/` — Table 4 provenance and reference-correction notes
 
 ## Status
 
-**Phase 1 (protocol design) is complete on branch `phase-1-protocol`.**
-Protocol v1.0 is locked in `protocol/` and `search/queries.yaml`.
-No search scripts may be executed until the owner confirms this protocol.
+| Phase | Status |
+|---|---|
+| **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
+| **2 — Execute searches** | **Closed 2026-07-31** on `phase-2-search` (pending merge to `main`). All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
+| **3+** | Not started (Stage 1 screening against `search/candidate-pool.csv`). |
+
+### Protocol versions
+
+- **v1.0** — initial queries; raw results preserved in `search/raw_v1.0/`
+- **v1.1** — corrections after v1.0 execution evidence (`protocol/CHANGELOG.md`): fixed `B3_memory_3` parentheses, added Semantic Scholar `s2_queries`, date-slicing / stopping-rule text
+- **v1.2** — source substitution: IEEE metadata API + OpenAlex (ACM coverage); 50-cap per query; Google Scholar remains manual
+
+### Phase 2 checklist
+
+- [x] v1.0 arXiv / Semantic Scholar / OpenReview discovery runs (evidence under `search/raw_v1.0/`)
+- [x] Protocol v1.1 amendment written and committed (before any v1.1 re-run)
+- [x] `search/existing-references.yaml` populated (42 manuscript references; 12 `priority: HIGH`)
+- [x] arXiv: re-run capped queries with date-slicing; re-run corrected `B3_memory_3` (residual quarterly gaps recorded for B3_memory_3)
+- [x] Semantic Scholar: re-run all blocks with `s2_queries` (18/18)
+- [x] OpenReview: venue check only (no discovery re-run) → `docs/reference-corrections.md`
+- [x] Phase 2 closure corrections (reference-corrections review; B3_memory_3 residual-gap note; `protocol_version` field)
+- [x] Protocol v1.2 amendment written and committed (before IEEE / OpenAlex / DBLP runs)
+- [x] IEEE metadata API: 18 queries, 50-cap (`search/raw/ieee/`)
+- [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
+- [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
+- [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
+- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,334** unique; **10,313** for screening)
+- [x] Hugging Face documentation entry resolved (reference source; not consulted in Phase 2, zero records)
+- [x] No `TBD` placeholders remaining in `search/search-log.md`
+
+Phase 2 is closed. Candidate volume came in above the v1.2 amendment's 6,000–7,000
+planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 
 ## Reproducing the search
 
-_To be filled after Phase 2 scripts are written._
+```bash
+pip install -r search/scripts/requirements.txt
+
+# v1.1 sources (already executed on this branch)
+python search/scripts/search_arxiv.py --v11-rerun
+python search/scripts/search_semanticscholar.py
+
+# v1.2 substituted sources (after v1.2 commit; 50-cap enforced in scripts)
+python search/scripts/search_ieee.py          # requires IEEE_API_KEY
+python search/scripts/search_openalex.py      # general index
+python search/scripts/search_openalex.py --acm
+python search/scripts/search_dblp.py
+
+# Deduplicate all sources → search/candidate-pool.csv
+python search/scripts/dedupe.py
+
+# Venue-upgrade check for the existing ~42 manuscript references
+python search/scripts/search_openreview.py --check-existing
+```
+
+Optional env vars (via `local.env`, never commit): `SEMANTIC_SCHOLAR_API_KEY`, `IEEE_API_KEY`.
+
+Each run updates `search/search-log.md` and writes `search/raw/<source>/...`.
 
 ## Data provenance
 

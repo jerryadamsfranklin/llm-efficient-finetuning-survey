@@ -1,0 +1,1313 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"federated learning\" AND \"large language model\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202301010000 TO 202312312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22federated+learning%22+AND+%22large+language+model%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202301010000+TO+202312312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:41:22Z",
+  "total_results_reported": 32,
+  "returned": 32,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2312.17493v2",
+      "arxiv_id": "2312.17493v2",
+      "title": "Differentially Private Low-Rank Adaptation of Large Language Model Using Federated Learning",
+      "summary": "The surge in interest and application of large language models (LLMs) has sparked a drive to fine-tune these models to suit specific applications, such as finance and medical science. However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data. In this scenario, federated learning becomes a natural choice, allowing decentralized fine-tuning without exposing raw data to central servers. Motivated by this, we investigate how data privacy can be ensured in LLM fine-tuning through practical federated learning approaches, enabling secure contributions from multiple parties to enhance LLMs. Yet, challenges arise: 1) despite avoiding raw data exposure, there is a risk of inferring sensitive information from model outputs, and 2) federated learning for LLMs incurs notable communication overhead. To address these challenges, this article introduces DP-LoRA, a novel federated learning algorithm tailored for LLMs. DP-LoRA preserves data privacy by employing a Gaussian mechanism that adds noise in weight updates, maintaining individual data privacy while facilitating collaborative model training. Moreover, DP-LoRA optimizes communication efficiency via low-rank adaptation, minimizing the transmission of updated weights during distributed training. The experimental results across medical, financial, and general datasets using various LLMs demonstrate that DP-LoRA effectively ensures strict privacy constraints while minimizing communication overhead.",
+      "published": "2023-12-29T06:50:38Z",
+      "updated": "2024-06-02T06:31:21Z",
+      "authors": [
+        "Xiao-Yang Liu",
+        "Rongyi Zhu",
+        "Daochen Zha",
+        "Jiechao Gao",
+        "Shan Zhong",
+        "Matt White",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.06353v5",
+      "arxiv_id": "2312.06353v5",
+      "title": "Federated Full-Parameter Tuning of Billion-Sized Language Models with Communication Cost under 18 Kilobytes",
+      "summary": "Pre-trained large language models (LLMs) need fine-tuning to improve their responsiveness to natural language instructions. Federated learning offers a way to fine-tune LLMs using the abundant data on end devices without compromising data privacy. Most existing federated fine-tuning methods for LLMs rely on parameter-efficient fine-tuning techniques, which may not reach the performance height possible with full-parameter tuning. However, federated full-parameter tuning of LLMs is a non-trivial problem due to the immense communication cost. This work introduces FedKSeed that employs zeroth-order optimization with a finite set of random seeds. It significantly reduces transmission requirements between the server and clients to just a few random seeds and scalar gradients, amounting to only a few thousand bytes, making federated full-parameter tuning of billion-sized LLMs possible on devices. Building on it, we develop a strategy enabling probability-differentiated seed sampling, prioritizing perturbations with greater impact on model accuracy. Experiments across six scenarios with various LLMs, datasets and data partitions demonstrate that our approach outperforms existing federated LLM fine-tuning methods in both communication efficiency and new task generalization.",
+      "published": "2023-12-11T13:03:21Z",
+      "updated": "2024-05-27T08:31:47Z",
+      "authors": [
+        "Zhen Qin",
+        "Daoyuan Chen",
+        "Bingchen Qian",
+        "Bolin Ding",
+        "Yaliang Li",
+        "Shuiguang Deng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.05720v4",
+      "arxiv_id": "2312.05720v4",
+      "title": "Beyond Gradient and Priors in Privacy Attacks: Leveraging Pooler Layer Inputs of Language Models in Federated Learning",
+      "summary": "Language models trained via federated learning (FL) demonstrate impressive capabilities in handling complex tasks while protecting user privacy. Recent studies indicate that leveraging gradient information and prior knowledge can potentially reveal training samples within FL setting. However, these investigations have overlooked the potential privacy risks tied to the intrinsic architecture of the models. This paper presents a two-stage privacy attack strategy that targets the vulnerabilities in the architecture of contemporary language models, significantly enhancing attack performance by initially recovering certain feature directions as additional supervisory signals. Our comparative experiments demonstrate superior attack performance across various datasets and scenarios, highlighting the privacy leakage risk associated with the increasingly complex architectures of language models. We call for the community to recognize and address these potential privacy risks in designing large language models.",
+      "published": "2023-12-10T01:19:59Z",
+      "updated": "2024-03-15T18:23:05Z",
+      "authors": [
+        "Jianwei Li",
+        "Sheng Liu",
+        "Qi Lei"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.00843v1",
+      "arxiv_id": "2312.00843v1",
+      "title": "Exploring the Robustness of Decentralized Training for Large Language Models",
+      "summary": "Decentralized training of large language models has emerged as an effective way to democratize this technology. However, the potential threats associated with this approach have not been carefully discussed, which would hinder the development of decentralized training infrastructures. This paper aims to initiate discussion towards this end by exploring the robustness of decentralized training from three main perspectives. First, we demonstrate the vulnerabilities inherent in decentralized training frameworks in terms of hardware, data, and models. Second, we highlight the fundamental difference between decentralized foundation model training and vanilla federated learning, where the security techniques employed in federated learning cannot be applied directly. Third, we discuss the essential components required for a robust and efficient decentralized training framework and present a case study by modeling a concrete threat model. Our objective in this vision paper is to emphasize the importance of addressing security concerns in the context of decentralized training for large language models.",
+      "published": "2023-12-01T04:04:03Z",
+      "updated": "2023-12-01T04:04:03Z",
+      "authors": [
+        "Lin Lu",
+        "Chenxi Dai",
+        "Wangcheng Tao",
+        "Binhang Yuan",
+        "Yanan Sun",
+        "Pan Zhou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.06805v1",
+      "arxiv_id": "2311.06805v1",
+      "title": "Tunable Soft Prompts are Messengers in Federated Learning",
+      "summary": "Federated learning (FL) enables multiple participants to collaboratively train machine learning models using decentralized data sources, alleviating privacy concerns that arise from directly sharing local data. However, the lack of model privacy protection in FL becomes an unneglectable challenge, especially when people want to federally finetune models based on a proprietary large language model. In this study, we propose a novel FL training approach that accomplishes information exchange among participants via tunable soft prompts. These soft prompts, updated and transmitted between the server and clients, assume the role of the global model parameters and serve as messengers to deliver useful knowledge from the local data and global model. As the global model itself is not required to be shared and the local training is conducted based on an auxiliary model with fewer parameters than the global model, the proposed approach provides protection for the global model while reducing communication and computation costs in FL. Extensive experiments show the effectiveness of the proposed approach compared to several baselines. We have released the source code at \\url{https://github.com/alibaba/FederatedScope/tree/fedsp/federatedscope/nlp/fedsp}.",
+      "published": "2023-11-12T11:01:10Z",
+      "updated": "2023-11-12T11:01:10Z",
+      "authors": [
+        "Chenhe Dong",
+        "Yuexiang Xie",
+        "Bolin Ding",
+        "Ying Shen",
+        "Yaliang Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.07585v2",
+      "arxiv_id": "2311.07585v2",
+      "title": "Input Reconstruction Attack against Vertical Federated Large Language Models",
+      "summary": "Recently, large language models (LLMs) have drawn extensive attention from academia and the public, due to the advent of the ChatGPT. While LLMs show their astonishing ability in text generation for various tasks, privacy concerns limit their usage in real-life businesses. More specifically, either the user's inputs (the user sends the query to the model-hosting server) or the model (the user downloads the complete model) itself will be revealed during the usage. Vertical federated learning (VFL) is a promising solution to this kind of problem. It protects both the user's input and the knowledge of the model by splitting the model into a bottom part and a top part, which is maintained by the user and the model provider, respectively. However, in this paper, we demonstrate that in LLMs, VFL fails to protect the user input since it is simple and cheap to reconstruct the input from the intermediate embeddings. Experiments show that even with a commercial GPU, the input sentence can be reconstructed in only one second. We also discuss several possible solutions to enhance the privacy of vertical federated LLMs.",
+      "published": "2023-11-07T09:39:22Z",
+      "updated": "2023-11-24T07:46:23Z",
+      "authors": [
+        "Fei Zheng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16152v5",
+      "arxiv_id": "2310.16152v5",
+      "title": "Gradient-Free Privacy Leakage in Federated Language Models through Selective Weight Tampering",
+      "summary": "Federated learning (FL) has become a key component in various language modeling applications such as machine translation, next-word prediction, and medical record analysis. These applications are trained on datasets from many FL participants that often include privacy-sensitive data, such as healthcare records, phone/credit card numbers, login credentials, etc. Although FL enables computation without necessitating clients to share their raw data, existing works show that privacy leakage is still probable in federated language models. In this paper, we present two novel findings on the leakage of privacy-sensitive user data from federated large language models without requiring access to gradients. Firstly, we make a key observation that model snapshots from the intermediate rounds in FL can cause greater privacy leakage than the final trained model. Secondly, we identify that a malicious FL participant can aggravate the leakage by tampering with the model's selective weights that are responsible for memorizing the sensitive training data of some other clients, even without any cooperation from the server. Our best-performing method increases the membership inference recall by 29% and achieves up to 71% private data reconstruction, evidently outperforming existing attacks that consider much stronger adversary capabilities. Lastly, we recommend a balanced suite of techniques for an FL client to defend against such privacy risk.",
+      "published": "2023-10-24T19:50:01Z",
+      "updated": "2026-07-19T05:10:45Z",
+      "authors": [
+        "Md Rafi Ur Rashid",
+        "Vishnu Asutosh Dasu",
+        "Kang Gu",
+        "Najrin Sultana",
+        "Shagufta Mehnaz"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.15080v3",
+      "arxiv_id": "2310.15080v3",
+      "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "summary": "Federated learning (FL) is a promising paradigm to enable collaborative model training with decentralized data. However, the training process of Large Language Models (LLMs) generally incurs the update of significant parameters, which limits the applicability of FL techniques to tackle the LLMs in real scenarios. Prompt tuning can significantly reduce the number of parameters to update, but it either incurs performance degradation or low training efficiency. The straightforward utilization of prompt tuning in the FL often raises non-trivial communication costs and dramatically degrades performance. In addition, the decentralized data is generally non-Independent and Identically Distributed (non-IID), which brings client drift problems and thus poor performance. This paper proposes a Parameter-efficient prompt Tuning approach with Adaptive Optimization, i.e., FedPepTAO, to enable efficient and effective FL of LLMs. First, an efficient partial prompt tuning approach is proposed to improve performance and efficiency simultaneously. Second, a novel adaptive optimization method is developed to address the client drift problems on both the device and server sides to enhance performance further. Extensive experiments based on 10 datasets demonstrate the superb performance (up to 60.8\\% in terms of accuracy) and efficiency (up to 97.59\\% in terms of training time) of FedPepTAO compared with 9 baseline approaches. Our code is available at https://github.com/llm-eff/FedPepTAO.",
+      "published": "2023-10-23T16:37:59Z",
+      "updated": "2024-02-11T11:59:52Z",
+      "authors": [
+        "Tianshi Che",
+        "Ji Liu",
+        "Yang Zhou",
+        "Jiaxiang Ren",
+        "Jiwen Zhou",
+        "Victor S. Sheng",
+        "Huaiyu Dai",
+        "Dejing Dou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.13283v2",
+      "arxiv_id": "2310.13283v2",
+      "title": "pFedLoRA: Model-Heterogeneous Personalized Federated Learning with LoRA Tuning",
+      "summary": "Federated learning (FL) is an emerging machine learning paradigm in which a central server coordinates multiple participants (clients) collaboratively to train on decentralized data. In practice, FL often faces statistical, system, and model heterogeneities, which inspires the field of Model-Heterogeneous Personalized Federated Learning (MHPFL). With the increased interest in adopting large language models (LLMs) in FL, the existing MHPFL methods cannot achieve acceptable computational and communication costs, while maintaining satisfactory model performance. To bridge this gap, we propose a novel and efficient model-heterogeneous personalized Federated learning framework based on LoRA tuning (pFedLoRA). Inspired by the popular LoRA method for fine-tuning pre-trained LLMs with a low-rank model (a.k.a., an adapter), we design a homogeneous small adapter to facilitate federated client's heterogeneous local model training with our proposed iterative training for global-local knowledge exchange. The homogeneous small local adapters are aggregated on the FL server to generate a global adapter. We theoretically prove the convergence of pFedLoRA. Extensive experiments on two benchmark datasets demonstrate that pFedLoRA outperforms six state-of-the-art baselines, beating the best method by 1.35% in test accuracy, 11.81 times computation overhead reduction and 7.41 times communication cost saving.",
+      "published": "2023-10-20T05:24:28Z",
+      "updated": "2024-02-11T11:38:38Z",
+      "authors": [
+        "Liping Yi",
+        "Han Yu",
+        "Gang Wang",
+        "Xiaoguang Liu",
+        "Xiaoxiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10844v1",
+      "arxiv_id": "2310.10844v1",
+      "title": "Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks",
+      "summary": "Large Language Models (LLMs) are swiftly advancing in architecture and capability, and as they integrate more deeply into complex systems, the urgency to scrutinize their security properties grows. This paper surveys research in the emerging interdisciplinary field of adversarial attacks on LLMs, a subfield of trustworthy ML, combining the perspectives of Natural Language Processing and Security. Prior work has shown that even safety-aligned LLMs (via instruction tuning and reinforcement learning through human feedback) can be susceptible to adversarial attacks, which exploit weaknesses and mislead AI systems, as evidenced by the prevalence of `jailbreak' attacks on models like ChatGPT and Bard. In this survey, we first provide an overview of large language models, describe their safety alignment, and categorize existing research based on various learning structures: textual-only attacks, multi-modal attacks, and additional attack methods specifically targeting complex systems, such as federated learning or multi-agent systems. We also offer comprehensive remarks on works that focus on the fundamental sources of vulnerabilities and potential defenses. To make this field more accessible to newcomers, we present a systematic review of existing works, a structured typology of adversarial attack concepts, and additional resources, including slides for presentations on related topics at the 62nd Annual Meeting of the Association for Computational Linguistics (ACL'24).",
+      "published": "2023-10-16T21:37:24Z",
+      "updated": "2023-10-16T21:37:24Z",
+      "authors": [
+        "Erfan Shayegani",
+        "Md Abdullah Al Mamun",
+        "Yu Fu",
+        "Pedram Zaree",
+        "Yue Dong",
+        "Nael Abu-Ghazaleh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10049v1",
+      "arxiv_id": "2310.10049v1",
+      "title": "FATE-LLM: A Industrial Grade Federated Learning Framework for Large Language Models",
+      "summary": "Large Language Models (LLMs), such as ChatGPT, LLaMA, GLM, and PaLM, have exhibited remarkable performances across various tasks in recent years. However, LLMs face two main challenges in real-world applications. One challenge is that training LLMs consumes vast computing resources, preventing LLMs from being adopted by small and medium-sized enterprises with limited computing resources. Another is that training LLM requires a large amount of high-quality data, which are often scattered among enterprises. To address these challenges, we propose FATE-LLM, an industrial-grade federated learning framework for large language models. FATE-LLM (1) facilitates federated learning for large language models (coined FedLLM); (2) promotes efficient training of FedLLM using parameter-efficient fine-tuning methods; (3) protects the intellectual property of LLMs; (4) preserves data privacy during training and inference through privacy-preserving mechanisms. We release the code of FATE-LLM at https://github.com/FederatedAI/FATE-LLM to facilitate the research of FedLLM and enable a broad range of industrial applications.",
+      "published": "2023-10-16T04:17:13Z",
+      "updated": "2023-10-16T04:17:13Z",
+      "authors": [
+        "Tao Fan",
+        "Yan Kang",
+        "Guoqiang Ma",
+        "Weijing Chen",
+        "Wenbin Wei",
+        "Lixin Fan",
+        "Qiang Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.05696v4",
+      "arxiv_id": "2310.05696v4",
+      "title": "Little is Enough: Boosting Privacy by Sharing Only Hard Labels in Federated Semi-Supervised Learning",
+      "summary": "In many critical applications, sensitive data is inherently distributed and cannot be centralized due to privacy concerns. A wide range of federated learning approaches have been proposed to train models locally at each client without sharing their sensitive data, typically by exchanging model parameters, or probabilistic predictions (soft labels) on a public dataset or a combination of both. However, these methods still disclose private information and restrict local models to those that can be trained using gradient-based methods. We propose a federated co-training (FedCT) approach that improves privacy by sharing only definitive (hard) labels on a public unlabeled dataset. Clients use a consensus of these shared labels as pseudo-labels for local training. This federated co-training approach empirically enhances privacy without compromising model quality. In addition, it allows the use of local models that are not suitable for parameter aggregation in traditional federated learning, such as gradient-boosted decision trees, rule ensembles, and random forests. Furthermore, we observe that FedCT performs effectively in federated fine-tuning of large language models, where its pseudo-labeling mechanism is particularly beneficial. Empirical evaluations and theoretical analyses suggest its applicability across a range of federated learning scenarios.",
+      "published": "2023-10-09T13:16:10Z",
+      "updated": "2024-12-20T14:51:31Z",
+      "authors": [
+        "Amr Abourayya",
+        "Jens Kleesiek",
+        "Kanishka Rao",
+        "Erman Ayday",
+        "Bharat Rao",
+        "Geoff Webb",
+        "Michael Kamp"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.05269v3",
+      "arxiv_id": "2310.05269v3",
+      "title": "Federated Learning: A Cutting-Edge Survey of the Latest Advancements and Applications",
+      "summary": "Robust machine learning (ML) models can be developed by leveraging large volumes of data and distributing the computational tasks across numerous devices or servers. Federated learning (FL) is a technique in the realm of ML that facilitates this goal by utilizing cloud infrastructure to enable collaborative model training among a network of decentralized devices. Beyond distributing the computational load, FL targets the resolution of privacy issues and the reduction of communication costs simultaneously. To protect user privacy, FL requires users to send model updates rather than transmitting large quantities of raw and potentially confidential data. Specifically, individuals train ML models locally using their own data and then upload the results in the form of weights and gradients to the cloud for aggregation into the global model. This strategy is also advantageous in environments with limited bandwidth or high communication costs, as it prevents the transmission of large data volumes. With the increasing volume of data and rising privacy concerns, alongside the emergence of large-scale ML models like Large Language Models (LLMs), FL presents itself as a timely and relevant solution. It is therefore essential to review current FL algorithms to guide future research that meets the rapidly evolving ML demands. This survey provides a comprehensive analysis and comparison of the most recent FL algorithms, evaluating them on various fronts including mathematical frameworks, privacy protection, resource allocation, and applications. Beyond summarizing existing FL methods, this survey identifies potential gaps, open areas, and future challenges based on the performance reports and algorithms used in recent studies. This survey enables researchers to readily identify existing limitations in the FL field for further exploration.",
+      "published": "2023-10-08T19:54:26Z",
+      "updated": "2024-05-26T02:37:36Z",
+      "authors": [
+        "Azim Akhtarshenas",
+        "Mohammad Ali Vahedifar",
+        "Navid Ayoobi",
+        "Behrouz Maham",
+        "Tohid Alizadeh",
+        "Sina Ebrahimi",
+        "David López-Pérez"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.04627v1",
+      "arxiv_id": "2310.04627v1",
+      "title": "Profit: Benchmarking Personalization and Robustness Trade-off in Federated Prompt Tuning",
+      "summary": "In many applications of federated learning (FL), clients desire models that are personalized using their local data, yet are also robust in the sense that they retain general global knowledge. However, the presence of data heterogeneity across clients induces a fundamental trade-off between personalization (i.e., adaptation to a local distribution) and robustness (i.e., not forgetting previously learned general knowledge). It is critical to understand how to navigate this personalization vs robustness trade-off when designing federated systems, which are increasingly moving towards a paradigm of fine-tuning large foundation models. Due to limited computational and communication capabilities in most federated settings, this foundation model fine-tuning must be done using parameter-efficient fine-tuning (PEFT) approaches. While some recent work has studied federated approaches to PEFT, the personalization vs robustness trade-off of federated PEFT has been largely unexplored. In this work, we take a step towards bridging this gap by benchmarking fundamental FL algorithms -- FedAvg and FedSGD plus personalization (via client local fine-tuning) -- applied to one of the most ubiquitous PEFT approaches to large language models (LLMs) -- prompt tuning -- in a multitude of hyperparameter settings under varying levels of data heterogeneity. Our results show that federated-trained prompts can be surprisingly robust when using a small learning rate with many local epochs for personalization, especially when using an adaptive optimizer as the client optimizer during federated training. We also demonstrate that simple approaches such as adding regularization and interpolating two prompts are effective in improving the personalization vs robustness trade-off in computation-limited settings with few local updates allowed for personalization.",
+      "published": "2023-10-06T23:46:33Z",
+      "updated": "2023-10-06T23:46:33Z",
+      "authors": [
+        "Liam Collins",
+        "Shanshan Wu",
+        "Sewoong Oh",
+        "Khe Chai Sim"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03150v2",
+      "arxiv_id": "2310.03150v2",
+      "title": "Federated Fine-Tuning of LLMs on the Very Edge: The Good, the Bad, the Ugly",
+      "summary": "Large Language Models (LLM) and foundation models are popular as they offer new opportunities for individuals and businesses to improve natural language processing, interact with data, and retrieve information faster. However, training or fine-tuning LLMs requires a vast amount of data, which can be challenging to access due to legal or technical restrictions and may require private computing resources. Federated Learning (FL) is a solution designed to overcome these challenges and expand data access for deep learning applications. This paper takes a hardware-centric approach to explore how LLMs can be brought to modern edge computing systems. Our study fine-tunes the FLAN-T5 model family, ranging from 80M to 3B parameters, using FL for a text summarization task. We provide a micro-level hardware benchmark, compare the model FLOP utilization to a state-of-the-art data center GPU, and study the network utilization in realistic conditions. Our contribution is twofold: First, we evaluate the current capabilities of edge computing systems and their potential for LLM FL workloads. Second, by comparing these systems with a data-center GPU, we demonstrate the potential for improvement and the next steps toward achieving greater computational efficiency at the edge.",
+      "published": "2023-10-04T20:27:20Z",
+      "updated": "2024-05-02T10:12:34Z",
+      "authors": [
+        "Herbert Woisetschläger",
+        "Alexander Isenko",
+        "Shiqiang Wang",
+        "Ruben Mayer",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.01467v1",
+      "arxiv_id": "2310.01467v1",
+      "title": "FedBPT: Efficient Federated Black-box Prompt Tuning for Large Language Models",
+      "summary": "Pre-trained language models (PLM) have revolutionized the NLP landscape, achieving stellar performances across diverse tasks. These models, while benefiting from vast training data, often require fine-tuning on specific data to cater to distinct downstream tasks. However, this data adaptation process has inherent security and privacy concerns, primarily when leveraging user-generated, device-residing data. Federated learning (FL) provides a solution, allowing collaborative model fine-tuning without centralized data collection. However, applying FL to finetune PLMs is hampered by challenges, including restricted model parameter access, high computational requirements, and communication overheads. This paper introduces Federated Black-box Prompt Tuning (FedBPT), a framework designed to address these challenges. FedBPT does not require the clients to access the model parameters. By focusing on training optimal prompts and utilizing gradient-free optimization methods, FedBPT reduces the number of exchanged variables, boosts communication efficiency, and minimizes computational and storage costs. Experiments highlight the framework's ability to drastically cut communication and memory costs while maintaining competitive performance. Ultimately, FedBPT presents a promising solution for efficient, privacy-preserving fine-tuning of PLM in the age of large language models.",
+      "published": "2023-10-02T16:43:14Z",
+      "updated": "2023-10-02T16:43:14Z",
+      "authors": [
+        "Jingwei Sun",
+        "Ziyue Xu",
+        "Hongxu Yin",
+        "Dong Yang",
+        "Daguang Xu",
+        "Yiran Chen",
+        "Holger R. Roth"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14726v2",
+      "arxiv_id": "2309.14726v2",
+      "title": "PLMM: Personal Large Language Models on Mobile Devices",
+      "summary": "Inspired by Federated Learning, in this paper, we propose personal large models that are distilled from traditional large language models but more adaptive to local users' personal information such as education background and hobbies. We classify the large language models into three levels: the personal level, expert level and traditional level. The personal level models are adaptive to users' personal information. They encrypt the users' input and protect their privacy. The expert level models focus on merging specific knowledge such as finance, IT and art. The traditional models focus on the universal knowledge discovery and upgrading the expert models. In such classifications, the personal models directly interact with the user. For the whole system, the personal models have users' (encrypted) personal information. Moreover, such models must be small enough to be performed on personal computers or mobile devices. Finally, they also have to response in real-time for better user experience and produce high quality results. The proposed personal large models can be applied in a wide range of applications such as language and vision tasks.",
+      "published": "2023-09-26T07:36:20Z",
+      "updated": "2024-05-05T02:33:38Z",
+      "authors": [
+        "Yuanhao Gong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CE",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.08173v3",
+      "arxiv_id": "2309.08173v3",
+      "title": "FedJudge: Federated Legal Large Language Model",
+      "summary": "Large Language Models (LLMs) have gained prominence in the field of Legal Intelligence, offering potential applications in assisting legal professionals and laymen. However, the centralized training of these Legal LLMs raises data privacy concerns, as legal data is distributed among various institutions containing sensitive individual information. This paper addresses this challenge by exploring the integration of Legal LLMs with Federated Learning (FL) methodologies. By employing FL, Legal LLMs can be fine-tuned locally on devices or clients, and their parameters are aggregated and distributed on a central server, ensuring data privacy without directly sharing raw data. However, computation and communication overheads hinder the full fine-tuning of LLMs under the FL setting. Moreover, the distribution shift of legal data reduces the effectiveness of FL methods. To this end, in this paper, we propose the first Federated Legal Large Language Model (FedJudge) framework, which fine-tunes Legal LLMs efficiently and effectively. Specifically, FedJudge utilizes parameter-efficient fine-tuning methods to update only a few additional parameters during the FL training. Besides, we explore the continual learning methods to preserve the global model's important parameters when training local clients to mitigate the problem of data shifts. Extensive experimental results on three real-world datasets clearly validate the effectiveness of FedJudge. Code is released at https://github.com/yuelinan/FedJudge.",
+      "published": "2023-09-15T05:45:44Z",
+      "updated": "2024-04-10T13:24:55Z",
+      "authors": [
+        "Linan Yue",
+        "Qi Liu",
+        "Yichao Du",
+        "Weibo Gao",
+        "Ye Liu",
+        "Fangzhou Yao"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00363v1",
+      "arxiv_id": "2309.00363v1",
+      "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning",
+      "summary": "LLMs have demonstrated great capabilities in various NLP tasks. Different entities can further improve the performance of those LLMs on their specific downstream tasks by fine-tuning LLMs. When several entities have similar interested tasks, but their data cannot be shared because of privacy concerns regulations, federated learning (FL) is a mainstream solution to leverage the data of different entities. However, fine-tuning LLMs in federated learning settings still lacks adequate support from existing FL frameworks because it has to deal with optimizing the consumption of significant communication and computational resources, data preparation for different tasks, and distinct information protection demands. This paper first discusses these challenges of federated fine-tuning LLMs, and introduces our package FS-LLM as a main contribution, which consists of the following components: (1) we build an end-to-end benchmarking pipeline, automizing the processes of dataset preprocessing, federated fine-tuning execution, and performance evaluation on federated LLM fine-tuning; (2) we provide comprehensive federated parameter-efficient fine-tuning algorithm implementations and versatile programming interfaces for future extension in FL scenarios with low communication and computation costs, even without accessing the full model; (3) we adopt several accelerating and resource-efficient operators for fine-tuning LLMs with limited resources and the flexible pluggable sub-routines for interdisciplinary study. We conduct extensive experiments to validate the effectiveness of FS-LLM and benchmark advanced LLMs with state-of-the-art parameter-efficient fine-tuning algorithms in FL settings, which also yields valuable insights into federated fine-tuning LLMs for the research community. To facilitate further research and adoption, we release FS-LLM at https://github.com/alibaba/FederatedScope/tree/llm.",
+      "published": "2023-09-01T09:40:36Z",
+      "updated": "2023-09-01T09:40:36Z",
+      "authors": [
+        "Weirui Kuang",
+        "Bingchen Qian",
+        "Zitao Li",
+        "Daoyuan Chen",
+        "Dawei Gao",
+        "Xuchen Pan",
+        "Yuexiang Xie",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Jingren Zhou"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13894v2",
+      "arxiv_id": "2308.13894v2",
+      "title": "FwdLLM: Efficient FedLLM using Forward Gradient",
+      "summary": "Large Language Models (LLMs) are transforming the landscape of mobile intelligence. Federated Learning (FL), a method to preserve user data privacy, is often employed in fine-tuning LLMs to downstream mobile tasks, an approach known as FedLLM. Though recent efforts have addressed the network issue induced by the vast model size, they have not practically mitigated vital challenges concerning integration with mobile devices, such as significant memory consumption and sluggish model convergence. In response to these challenges, this work introduces FwdLLM, an innovative FL protocol designed to enhance the FedLLM efficiency. The key idea of FwdLLM to employ backpropagation (BP)-free training methods, requiring devices only to execute ``perturbed inferences''. Consequently, FwdLLM delivers way better memory efficiency and time efficiency (expedited by mobile NPUs and an expanded array of participant devices). FwdLLM centers around three key designs: (1) it combines BP-free training with parameter-efficient training methods, an essential way to scale the approach to the LLM era; (2) it systematically and adaptively allocates computational loads across devices, striking a careful balance between convergence speed and accuracy; (3) it discriminatively samples perturbed predictions that are more valuable to model convergence. Comprehensive experiments with five LLMs and three NLP tasks illustrate FwdLLM's significant advantages over conventional methods, including up to three orders of magnitude faster convergence and a 14.6x reduction in memory footprint. Uniquely, FwdLLM paves the way for federated learning of billion-parameter LLMs such as LLaMA on COTS mobile devices -- a feat previously unattained.",
+      "published": "2023-08-26T14:36:30Z",
+      "updated": "2024-01-20T09:24:33Z",
+      "authors": [
+        "Mengwei Xu",
+        "Dongqi Cai",
+        "Yaozong Wu",
+        "Xiang Li",
+        "Shangguang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.13896v1",
+      "arxiv_id": "2307.13896v1",
+      "title": "Low-Parameter Federated Learning with Large Language Models",
+      "summary": "We study few-shot Natural Language Understanding (NLU) tasks with Large Language Models (LLMs) in federated learning (FL) scenarios. It is a challenging task due to limited labeled data and communication capacities in FL, especially with mobile devices. Recent studies show LLMs can be prompted to perform few-shot NLU tasks like sentiment analysis and arithmetic reasoning. However, the huge sizes of LLMs result in high computation and communication costs, making classical FL schemes impractical. To address these challenges, we propose Low-Parameter Federated Learning (LP-FL). LP-FL combines few-shot prompt learning from LLMs with efficient communication and federating techniques. Our approach enables federated clients to assign soft labels to unlabeled data using gradually learned knowledge from the global model. Through iterative soft-label assigning, we continually expand the labeled set during the FL process. Additionally, to reduce computation and communication costs, LP-FL utilizes the Low-Rank Adaptation (LoRA) technique for compact learnable parameter construction, efficient local model fine-tuning, and affordable global model federation. LP-FL consistently outperforms Full-Parameter Federated Learning (FP-FL) in sentiment analysis tasks across various FL settings. Its resistance to overfitting allows LP-FL to equal or surpass centralized training in few-shot scenarios.",
+      "published": "2023-07-26T01:44:02Z",
+      "updated": "2023-07-26T01:44:02Z",
+      "authors": [
+        "Jingang Jiang",
+        "Xiangyang Liu",
+        "Chenyou Fan"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.12181v1",
+      "arxiv_id": "2307.12181v1",
+      "title": "Security and Privacy Issues of Federated Learning",
+      "summary": "Federated Learning (FL) has emerged as a promising approach to address data privacy and confidentiality concerns by allowing multiple participants to construct a shared model without centralizing sensitive data. However, this decentralized paradigm introduces new security challenges, necessitating a comprehensive identification and classification of potential risks to ensure FL's security guarantees. This paper presents a comprehensive taxonomy of security and privacy challenges in Federated Learning (FL) across various machine learning models, including large language models. We specifically categorize attacks performed by the aggregator and participants, focusing on poisoning attacks, backdoor attacks, membership inference attacks, generative adversarial network (GAN) based attacks, and differential privacy attacks. Additionally, we propose new directions for future research, seeking innovative solutions to fortify FL systems against emerging security risks and uphold sensitive data confidentiality in distributed learning environments.",
+      "published": "2023-07-22T22:51:07Z",
+      "updated": "2023-07-22T22:51:07Z",
+      "authors": [
+        "Jahid Hasan"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.11254v2",
+      "arxiv_id": "2307.11254v2",
+      "title": "An In-Depth Evaluation of Federated Learning on Biomedical Natural Language Processing",
+      "summary": "Language models (LMs) such as BERT and GPT have revolutionized natural language processing (NLP). However, the medical field faces challenges in training LMs due to limited data access and privacy constraints imposed by regulations like the Health Insurance Portability and Accountability Act (HIPPA) and the General Data Protection Regulation (GDPR). Federated learning (FL) offers a decentralized solution that enables collaborative learning while ensuring data privacy. In this study, we evaluated FL on 2 biomedical NLP tasks encompassing 8 corpora using 6 LMs. Our results show that: 1) FL models consistently outperformed models trained on individual clients' data and sometimes performed comparably with models trained with polled data; 2) with the fixed number of total data, FL models training with more clients produced inferior performance but pre-trained transformer-based models exhibited great resilience. 3) FL models significantly outperformed large language models using zero-/one-shot learning and offered lightning inference speed.",
+      "published": "2023-07-20T22:10:04Z",
+      "updated": "2023-11-11T23:50:59Z",
+      "authors": [
+        "Le Peng",
+        "Gaoxiang Luo",
+        "sicheng zhou",
+        "jiandong chen",
+        "Rui Zhang",
+        "Ziyue Xu",
+        "Ju Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.08925v3",
+      "arxiv_id": "2307.08925v3",
+      "title": "Integration of Large Language Models and Federated Learning",
+      "summary": "As the parameter size of Large Language Models (LLMs) continues to expand, there is an urgent need to address the scarcity of high-quality data. In response, existing research has attempted to make a breakthrough by incorporating Federated Learning (FL) into LLMs. Conversely, considering the outstanding performance of LLMs in task generalization, researchers have also tried applying LLMs within FL to tackle challenges in relevant domains. The complementarity between LLMs and FL has already ignited widespread research interest. In this paper, we aim to deeply explore the integration of LLMs and FL. We propose a research framework, dividing the fusion of LLMs and FL into three parts: the combination of LLM sub-technologies with FL, the integration of FL sub-technologies with LLMs, and the overall merger of LLMs and FL. We first provide a comprehensive review of the current state of research in the domain of LLMs combined with FL, including their typical applications, integration advantages, challenges faced, and future directions for resolution. Subsequently, we discuss the practical applications of the combination of LLMs and FL in critical scenarios such as healthcare, finance, and education, and provide new perspectives and insights into future research directions for LLMs and FL.",
+      "published": "2023-07-18T02:09:14Z",
+      "updated": "2024-10-30T03:04:21Z",
+      "authors": [
+        "Chaochao Chen",
+        "Xiaohua Feng",
+        "Yuyuan Li",
+        "Lingjuan Lyu",
+        "Jun Zhou",
+        "Xiaolin Zheng",
+        "Jianwei Yin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.02779v3",
+      "arxiv_id": "2307.02779v3",
+      "title": "Large Language Models Empowered Autonomous Edge AI for Connected Intelligence",
+      "summary": "The evolution of wireless networks gravitates towards connected intelligence, a concept that envisions seamless interconnectivity among humans, objects, and intelligence in a hyper-connected cyber-physical world. Edge artificial intelligence (Edge AI) is a promising solution to achieve connected intelligence by delivering high-quality, low-latency, and privacy-preserving AI services at the network edge. This article presents a vision of autonomous edge AI systems that automatically organize, adapt, and optimize themselves to meet users' diverse requirements, leveraging the power of large language models (LLMs), i.e., Generative Pretrained Transformer (GPT). By exploiting the powerful abilities of GPT in language understanding, planning, and code generation, as well as incorporating classic wisdom such as task-oriented communication and edge federated learning, we present a versatile framework that efficiently coordinates edge AI models to cater to users' personal demands while automatically generating code to train new models in a privacy-preserving manner. Experimental results demonstrate the system's remarkable ability to accurately comprehend user demands, efficiently execute AI models with minimal cost, and effectively create high-performance AI models at edge servers.",
+      "published": "2023-07-06T05:16:55Z",
+      "updated": "2023-12-25T06:25:38Z",
+      "authors": [
+        "Yifei Shen",
+        "Jiawei Shao",
+        "Xinjie Zhang",
+        "Zehong Lin",
+        "Hao Pan",
+        "Dongsheng Li",
+        "Jun Zhang",
+        "Khaled B. Letaief"
+      ],
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "cs.NI",
+        "eess.SP"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.00470v4",
+      "arxiv_id": "2307.00470v4",
+      "title": "PatternGPT :A Pattern-Driven Framework for Large Language Model Text Generation",
+      "summary": "Large language models(LLMS)have shown excellent text generation capabilities, capable of generating fluent human-like responses for many downstream tasks. However, applying large language models to real-world critical tasks remains challenging due to their susceptibility to hallucinations and inability to directly use external knowledge. To cope with the above challenges, this paper proposes PatternGPT, a pattern-driven text generation framework for Large Language Models. Firstly, the framework utilizes the extraction capability of Large Language Models to generate rich and diversified structured and formalized patterns, which facilitates the introduction of external knowledge to do the computation, and then draws on the idea of federated learning to use multiple agents to achieve the sharing in order to obtain more diversified patterns, and finally uses judgment criteria and optimization algorithm to search for high-quality patterns to guide the generation of models. Finally, external knowledge such as judgment criteria and optimization algorithms are used to search for high-quality patterns, and the searched patterns are used to guide model generation. This framework has the advantages of generating diversified patterns, protecting data privacy, combining external knowledge, and improving the quality of generation, which provides an effective method to optimize the text generation capability of large language models, and make it better applied to the field of intelligent dialogue and content generation.",
+      "published": "2023-07-02T04:32:41Z",
+      "updated": "2023-07-20T03:03:25Z",
+      "authors": [
+        "Le Xiao",
+        "Xin Shan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09273v3",
+      "arxiv_id": "2306.09273v3",
+      "title": "Privacy Risks in Reinforcement Learning for Household Robots",
+      "summary": "The prominence of embodied Artificial Intelligence (AI), which empowers robots to navigate, perceive, and engage within virtual environments, has attracted significant attention, owing to the remarkable advances in computer vision and large language models. Privacy emerges as a pivotal concern within the realm of embodied AI, as the robot accesses substantial personal information. However, the issue of privacy leakage in embodied AI tasks, particularly concerning reinforcement learning algorithms, has not received adequate consideration in research. This paper aims to address this gap by proposing an attack on the training process of the value-based algorithm and the gradient-based algorithm, utilizing gradient inversion to reconstruct states, actions, and supervisory signals. The choice of using gradients for the attack is motivated by the fact that commonly employed federated learning techniques solely utilize gradients computed based on private user data to optimize models, without storing or transmitting the data to public servers. Nevertheless, these gradients contain sufficient information to potentially expose private data. To validate our approach, we conducted experiments on the AI2THOR simulator and evaluated our algorithm on active perception, a prevalent task in embodied AI. The experimental results demonstrate the effectiveness of our method in successfully reconstructing all information from the data in 120 room layouts. Check our website for videos.",
+      "published": "2023-06-15T16:53:26Z",
+      "updated": "2024-12-06T21:14:26Z",
+      "authors": [
+        "Miao Li",
+        "Wenhao Ding",
+        "Ding Zhao"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CR",
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.04959v5",
+      "arxiv_id": "2306.04959v5",
+      "title": "FedSecurity: Benchmarking Attacks and Defenses in Federated Learning and Federated LLMs",
+      "summary": "This paper introduces FedSecurity, an end-to-end benchmark that serves as a supplementary component of the FedML library for simulating adversarial attacks and corresponding defense mechanisms in Federated Learning (FL). FedSecurity eliminates the need for implementing the fundamental FL procedures, e.g., FL training and data loading, from scratch, thus enables users to focus on developing their own attack and defense strategies. It contains two key components, including FedAttacker that conducts a variety of attacks during FL training, and FedDefender that implements defensive mechanisms to counteract these attacks. FedSecurity has the following features: i) It offers extensive customization options to accommodate a broad range of machine learning models (e.g., Logistic Regression, ResNet, and GAN) and FL optimizers (e.g., FedAVG, FedOPT, and FedNOVA); ii) it enables exploring the effectiveness of attacks and defenses across different datasets and models; and iii) it supports flexible configuration and customization through a configuration file and some APIs. We further demonstrate FedSecurity's utility and adaptability through federated training of Large Language Models (LLMs) to showcase its potential on a wide range of complex applications.",
+      "published": "2023-06-08T06:21:35Z",
+      "updated": "2024-06-21T00:01:52Z",
+      "authors": [
+        "Shanshan Han",
+        "Baturalp Buyukates",
+        "Zijian Hu",
+        "Han Jin",
+        "Weizhao Jin",
+        "Lichao Sun",
+        "Xiaoyang Wang",
+        "Wenxuan Wu",
+        "Chulin Xie",
+        "Yuhang Yao",
+        "Kai Zhang",
+        "Qifan Zhang",
+        "Yuhui Zhang",
+        "Carlee Joe-Wong",
+        "Salman Avestimehr",
+        "Chaoyang He"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.12132v2",
+      "arxiv_id": "2305.12132v2",
+      "title": "Can Public Large Language Models Help Private Cross-device Federated Learning?",
+      "summary": "We study (differentially) private federated learning (FL) of language models. The language models in cross-device FL are relatively small, which can be trained with meaningful formal user-level differential privacy (DP) guarantees when massive parallelism in training is enabled by the participation of a moderate size of users. Recently, public data has been used to improve privacy-utility trade-offs for both large and small language models. In this work, we provide a systematic study of using large-scale public data and LLMs to help differentially private training of on-device FL models, and further improve the privacy-utility tradeoff by techniques of distillation. Moreover, we propose a novel distribution matching algorithm with theoretical grounding to sample public data close to private data distribution, which significantly improves the sample efficiency of (pre-)training on public data. The proposed method is efficient and effective for training private models by taking advantage of public data, especially for customized on-device architectures that do not have ready-to-use pre-trained models.",
+      "published": "2023-05-20T07:55:58Z",
+      "updated": "2024-04-12T21:01:12Z",
+      "authors": [
+        "Boxin Wang",
+        "Yibo Jacky Zhang",
+        "Yuan Cao",
+        "Bo Li",
+        "H. Brendan McMahan",
+        "Sewoong Oh",
+        "Zheng Xu",
+        "Manzil Zaheer"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.11414v3",
+      "arxiv_id": "2305.11414v3",
+      "title": "Federated Foundation Models: Privacy-Preserving and Collaborative Learning for Large Models",
+      "summary": "Foundation Models (FMs), such as LLaMA, BERT, GPT, ViT, and CLIP, have demonstrated remarkable success in a wide range of applications, driven by their ability to leverage vast amounts of data for pre-training. However, optimizing FMs often requires access to sensitive data, raising privacy concerns and limiting their applicability in many domains. In this paper, we propose the Federated Foundation Models (FFMs) paradigm, which combines the benefits of FMs and Federated Learning (FL) to enable privacy-preserving and collaborative learning across multiple end-users. We discuss the potential benefits and challenges of integrating FL into the lifespan of FMs, covering pre-training, fine-tuning, and application. We further outline potential future research avenues in FFM, including FFM pre-training, FFM fine-tuning, and federated prompt tuning, which allow the development of more personalized and context-aware models while ensuring data privacy. Moreover, we explore the possibility of continual/lifelong learning in FFMs, as increased computational power at the edge may unlock the potential for optimizing FMs using newly generated private data close to the data source. The proposed FFM concepts offer a flexible and scalable framework for training large language models in a privacy-preserving manner, setting the stage for subsequent advancements in both FM training and federated learning.",
+      "published": "2023-05-19T03:51:59Z",
+      "updated": "2024-03-19T20:04:43Z",
+      "authors": [
+        "Sixing Yu",
+        "J. Pablo Muñoz",
+        "Ali Jannesari"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.05644v2",
+      "arxiv_id": "2305.05644v2",
+      "title": "Towards Building the Federated GPT: Federated Instruction Tuning",
+      "summary": "While \"instruction-tuned\" generative large language models (LLMs) have demonstrated an impressive ability to generalize to new tasks, the training phases heavily rely on large amounts of diverse and high-quality instruction data (such as ChatGPT and GPT-4). Unfortunately, acquiring high-quality data, especially when it comes to human-written data, can pose significant challenges both in terms of cost and accessibility. Moreover, concerns related to privacy can further limit access to such data, making the process of obtaining it a complex and nuanced undertaking. Consequently, this hinders the generality of the tuned models and may restrict their effectiveness in certain contexts. To tackle this issue, our study introduces a new approach called Federated Instruction Tuning (FedIT), which leverages federated learning (FL) as the learning framework for the instruction tuning of LLMs. This marks the first exploration of FL-based instruction tuning for LLMs. This is especially important since text data is predominantly generated by end users. Therefore, it is imperative to design and adapt FL approaches to effectively leverage these users' diverse instructions stored on local devices, while preserving privacy and ensuring data security. In the current paper, by conducting widely used GPT-4 auto-evaluation, we demonstrate that by exploiting the heterogeneous and diverse sets of instructions on the client's end with the proposed framework FedIT, we improved the performance of LLMs compared to centralized training with only limited local instructions. Further, in this paper, we developed a Github repository named Shepherd. This repository offers a foundational framework for exploring federated fine-tuning of LLMs using heterogeneous instructions across diverse categories.",
+      "published": "2023-05-09T17:42:34Z",
+      "updated": "2024-01-29T17:13:04Z",
+      "authors": [
+        "Jianyi Zhang",
+        "Saeed Vahidian",
+        "Martin Kuo",
+        "Chunyuan Li",
+        "Ruiyi Zhang",
+        "Tong Yu",
+        "Yufan Zhou",
+        "Guoyin Wang",
+        "Yiran Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.DC",
+        "eess.SY"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.09042v2",
+      "arxiv_id": "2302.09042v2",
+      "title": "Privately Customizing Prefinetuning to Better Match User Data in Federated Learning",
+      "summary": "In Federated Learning (FL), accessing private client data incurs communication and privacy costs. As a result, FL deployments commonly prefinetune pretrained foundation models on a (large, possibly public) dataset that is held by the central server; they then FL-finetune the model on a private, federated dataset held by clients. Evaluating prefinetuning dataset quality reliably and privately is therefore of high importance. To this end, we propose FreD (Federated Private Fréchet Distance) -- a privately computed distance between a prefinetuning dataset and federated datasets. Intuitively, it privately computes and compares a Fréchet distance between embeddings generated by a large language model on both the central (public) dataset and the federated private client data. To make this computation privacy-preserving, we use distributed, differentially-private mean and covariance estimators. We show empirically that FreD accurately predicts the best prefinetuning dataset at minimal privacy cost. Altogether, using FreD we demonstrate a proof-of-concept for a new approach in private FL training: (1) customize a prefinetuning dataset to better match user data (2) prefinetune (3) perform FL-finetuning.",
+      "published": "2023-02-17T18:18:22Z",
+      "updated": "2023-02-23T00:44:26Z",
+      "authors": [
+        "Charlie Hou",
+        "Hongyuan Zhan",
+        "Akshat Shrivastava",
+        "Sid Wang",
+        "Aleksandr Livshits",
+        "Giulia Fanti",
+        "Daniel Lazar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"federated learning\" AND \"large language model\"",
+  "slice_id": "2023",
+  "date_window": {
+    "start": "2023-01-01",
+    "end": "2023-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2312.17493v2",
+      "arxiv_id": "2312.17493v2",
+      "title": "Differentially Private Low-Rank Adaptation of Large Language Model Using Federated Learning",
+      "summary": "The surge in interest and application of large language models (LLMs) has sparked a drive to fine-tune these models to suit specific applications, such as finance and medical science. However, concerns regarding data privacy have emerged, especially when multiple stakeholders aim to collaboratively enhance LLMs using sensitive data. In this scenario, federated learning becomes a natural choice, allowing decentralized fine-tuning without exposing raw data to central servers. Motivated by this, we investigate how data privacy can be ensured in LLM fine-tuning through practical federated learning approaches, enabling secure contributions from multiple parties to enhance LLMs. Yet, challenges arise: 1) despite avoiding raw data exposure, there is a risk of inferring sensitive information from model outputs, and 2) federated learning for LLMs incurs notable communication overhead. To address these challenges, this article introduces DP-LoRA, a novel federated learning algorithm tailored for LLMs. DP-LoRA preserves data privacy by employing a Gaussian mechanism that adds noise in weight updates, maintaining individual data privacy while facilitating collaborative model training. Moreover, DP-LoRA optimizes communication efficiency via low-rank adaptation, minimizing the transmission of updated weights during distributed training. The experimental results across medical, financial, and general datasets using various LLMs demonstrate that DP-LoRA effectively ensures strict privacy constraints while minimizing communication overhead.",
+      "published": "2023-12-29T06:50:38Z",
+      "updated": "2024-06-02T06:31:21Z",
+      "authors": [
+        "Xiao-Yang Liu",
+        "Rongyi Zhu",
+        "Daochen Zha",
+        "Jiechao Gao",
+        "Shan Zhong",
+        "Matt White",
+        "Meikang Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.06353v5",
+      "arxiv_id": "2312.06353v5",
+      "title": "Federated Full-Parameter Tuning of Billion-Sized Language Models with Communication Cost under 18 Kilobytes",
+      "summary": "Pre-trained large language models (LLMs) need fine-tuning to improve their responsiveness to natural language instructions. Federated learning offers a way to fine-tune LLMs using the abundant data on end devices without compromising data privacy. Most existing federated fine-tuning methods for LLMs rely on parameter-efficient fine-tuning techniques, which may not reach the performance height possible with full-parameter tuning. However, federated full-parameter tuning of LLMs is a non-trivial problem due to the immense communication cost. This work introduces FedKSeed that employs zeroth-order optimization with a finite set of random seeds. It significantly reduces transmission requirements between the server and clients to just a few random seeds and scalar gradients, amounting to only a few thousand bytes, making federated full-parameter tuning of billion-sized LLMs possible on devices. Building on it, we develop a strategy enabling probability-differentiated seed sampling, prioritizing perturbations with greater impact on model accuracy. Experiments across six scenarios with various LLMs, datasets and data partitions demonstrate that our approach outperforms existing federated LLM fine-tuning methods in both communication efficiency and new task generalization.",
+      "published": "2023-12-11T13:03:21Z",
+      "updated": "2024-05-27T08:31:47Z",
+      "authors": [
+        "Zhen Qin",
+        "Daoyuan Chen",
+        "Bingchen Qian",
+        "Bolin Ding",
+        "Yaliang Li",
+        "Shuiguang Deng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.05720v4",
+      "arxiv_id": "2312.05720v4",
+      "title": "Beyond Gradient and Priors in Privacy Attacks: Leveraging Pooler Layer Inputs of Language Models in Federated Learning",
+      "summary": "Language models trained via federated learning (FL) demonstrate impressive capabilities in handling complex tasks while protecting user privacy. Recent studies indicate that leveraging gradient information and prior knowledge can potentially reveal training samples within FL setting. However, these investigations have overlooked the potential privacy risks tied to the intrinsic architecture of the models. This paper presents a two-stage privacy attack strategy that targets the vulnerabilities in the architecture of contemporary language models, significantly enhancing attack performance by initially recovering certain feature directions as additional supervisory signals. Our comparative experiments demonstrate superior attack performance across various datasets and scenarios, highlighting the privacy leakage risk associated with the increasingly complex architectures of language models. We call for the community to recognize and address these potential privacy risks in designing large language models.",
+      "published": "2023-12-10T01:19:59Z",
+      "updated": "2024-03-15T18:23:05Z",
+      "authors": [
+        "Jianwei Li",
+        "Sheng Liu",
+        "Qi Lei"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.00843v1",
+      "arxiv_id": "2312.00843v1",
+      "title": "Exploring the Robustness of Decentralized Training for Large Language Models",
+      "summary": "Decentralized training of large language models has emerged as an effective way to democratize this technology. However, the potential threats associated with this approach have not been carefully discussed, which would hinder the development of decentralized training infrastructures. This paper aims to initiate discussion towards this end by exploring the robustness of decentralized training from three main perspectives. First, we demonstrate the vulnerabilities inherent in decentralized training frameworks in terms of hardware, data, and models. Second, we highlight the fundamental difference between decentralized foundation model training and vanilla federated learning, where the security techniques employed in federated learning cannot be applied directly. Third, we discuss the essential components required for a robust and efficient decentralized training framework and present a case study by modeling a concrete threat model. Our objective in this vision paper is to emphasize the importance of addressing security concerns in the context of decentralized training for large language models.",
+      "published": "2023-12-01T04:04:03Z",
+      "updated": "2023-12-01T04:04:03Z",
+      "authors": [
+        "Lin Lu",
+        "Chenxi Dai",
+        "Wangcheng Tao",
+        "Binhang Yuan",
+        "Yanan Sun",
+        "Pan Zhou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.06805v1",
+      "arxiv_id": "2311.06805v1",
+      "title": "Tunable Soft Prompts are Messengers in Federated Learning",
+      "summary": "Federated learning (FL) enables multiple participants to collaboratively train machine learning models using decentralized data sources, alleviating privacy concerns that arise from directly sharing local data. However, the lack of model privacy protection in FL becomes an unneglectable challenge, especially when people want to federally finetune models based on a proprietary large language model. In this study, we propose a novel FL training approach that accomplishes information exchange among participants via tunable soft prompts. These soft prompts, updated and transmitted between the server and clients, assume the role of the global model parameters and serve as messengers to deliver useful knowledge from the local data and global model. As the global model itself is not required to be shared and the local training is conducted based on an auxiliary model with fewer parameters than the global model, the proposed approach provides protection for the global model while reducing communication and computation costs in FL. Extensive experiments show the effectiveness of the proposed approach compared to several baselines. We have released the source code at \\url{https://github.com/alibaba/FederatedScope/tree/fedsp/federatedscope/nlp/fedsp}.",
+      "published": "2023-11-12T11:01:10Z",
+      "updated": "2023-11-12T11:01:10Z",
+      "authors": [
+        "Chenhe Dong",
+        "Yuexiang Xie",
+        "Bolin Ding",
+        "Ying Shen",
+        "Yaliang Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.07585v2",
+      "arxiv_id": "2311.07585v2",
+      "title": "Input Reconstruction Attack against Vertical Federated Large Language Models",
+      "summary": "Recently, large language models (LLMs) have drawn extensive attention from academia and the public, due to the advent of the ChatGPT. While LLMs show their astonishing ability in text generation for various tasks, privacy concerns limit their usage in real-life businesses. More specifically, either the user's inputs (the user sends the query to the model-hosting server) or the model (the user downloads the complete model) itself will be revealed during the usage. Vertical federated learning (VFL) is a promising solution to this kind of problem. It protects both the user's input and the knowledge of the model by splitting the model into a bottom part and a top part, which is maintained by the user and the model provider, respectively. However, in this paper, we demonstrate that in LLMs, VFL fails to protect the user input since it is simple and cheap to reconstruct the input from the intermediate embeddings. Experiments show that even with a commercial GPU, the input sentence can be reconstructed in only one second. We also discuss several possible solutions to enhance the privacy of vertical federated LLMs.",
+      "published": "2023-11-07T09:39:22Z",
+      "updated": "2023-11-24T07:46:23Z",
+      "authors": [
+        "Fei Zheng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16152v5",
+      "arxiv_id": "2310.16152v5",
+      "title": "Gradient-Free Privacy Leakage in Federated Language Models through Selective Weight Tampering",
+      "summary": "Federated learning (FL) has become a key component in various language modeling applications such as machine translation, next-word prediction, and medical record analysis. These applications are trained on datasets from many FL participants that often include privacy-sensitive data, such as healthcare records, phone/credit card numbers, login credentials, etc. Although FL enables computation without necessitating clients to share their raw data, existing works show that privacy leakage is still probable in federated language models. In this paper, we present two novel findings on the leakage of privacy-sensitive user data from federated large language models without requiring access to gradients. Firstly, we make a key observation that model snapshots from the intermediate rounds in FL can cause greater privacy leakage than the final trained model. Secondly, we identify that a malicious FL participant can aggravate the leakage by tampering with the model's selective weights that are responsible for memorizing the sensitive training data of some other clients, even without any cooperation from the server. Our best-performing method increases the membership inference recall by 29% and achieves up to 71% private data reconstruction, evidently outperforming existing attacks that consider much stronger adversary capabilities. Lastly, we recommend a balanced suite of techniques for an FL client to defend against such privacy risk.",
+      "published": "2023-10-24T19:50:01Z",
+      "updated": "2026-07-19T05:10:45Z",
+      "authors": [
+        "Md Rafi Ur Rashid",
+        "Vishnu Asutosh Dasu",
+        "Kang Gu",
+        "Najrin Sultana",
+        "Shagufta Mehnaz"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.15080v3",
+      "arxiv_id": "2310.15080v3",
+      "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+      "summary": "Federated learning (FL) is a promising paradigm to enable collaborative model training with decentralized data. However, the training process of Large Language Models (LLMs) generally incurs the update of significant parameters, which limits the applicability of FL techniques to tackle the LLMs in real scenarios. Prompt tuning can significantly reduce the number of parameters to update, but it either incurs performance degradation or low training efficiency. The straightforward utilization of prompt tuning in the FL often raises non-trivial communication costs and dramatically degrades performance. In addition, the decentralized data is generally non-Independent and Identically Distributed (non-IID), which brings client drift problems and thus poor performance. This paper proposes a Parameter-efficient prompt Tuning approach with Adaptive Optimization, i.e., FedPepTAO, to enable efficient and effective FL of LLMs. First, an efficient partial prompt tuning approach is proposed to improve performance and efficiency simultaneously. Second, a novel adaptive optimization method is developed to address the client drift problems on both the device and server sides to enhance performance further. Extensive experiments based on 10 datasets demonstrate the superb performance (up to 60.8\\% in terms of accuracy) and efficiency (up to 97.59\\% in terms of training time) of FedPepTAO compared with 9 baseline approaches. Our code is available at https://github.com/llm-eff/FedPepTAO.",
+      "published": "2023-10-23T16:37:59Z",
+      "updated": "2024-02-11T11:59:52Z",
+      "authors": [
+        "Tianshi Che",
+        "Ji Liu",
+        "Yang Zhou",
+        "Jiaxiang Ren",
+        "Jiwen Zhou",
+        "Victor S. Sheng",
+        "Huaiyu Dai",
+        "Dejing Dou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.13283v2",
+      "arxiv_id": "2310.13283v2",
+      "title": "pFedLoRA: Model-Heterogeneous Personalized Federated Learning with LoRA Tuning",
+      "summary": "Federated learning (FL) is an emerging machine learning paradigm in which a central server coordinates multiple participants (clients) collaboratively to train on decentralized data. In practice, FL often faces statistical, system, and model heterogeneities, which inspires the field of Model-Heterogeneous Personalized Federated Learning (MHPFL). With the increased interest in adopting large language models (LLMs) in FL, the existing MHPFL methods cannot achieve acceptable computational and communication costs, while maintaining satisfactory model performance. To bridge this gap, we propose a novel and efficient model-heterogeneous personalized Federated learning framework based on LoRA tuning (pFedLoRA). Inspired by the popular LoRA method for fine-tuning pre-trained LLMs with a low-rank model (a.k.a., an adapter), we design a homogeneous small adapter to facilitate federated client's heterogeneous local model training with our proposed iterative training for global-local knowledge exchange. The homogeneous small local adapters are aggregated on the FL server to generate a global adapter. We theoretically prove the convergence of pFedLoRA. Extensive experiments on two benchmark datasets demonstrate that pFedLoRA outperforms six state-of-the-art baselines, beating the best method by 1.35% in test accuracy, 11.81 times computation overhead reduction and 7.41 times communication cost saving.",
+      "published": "2023-10-20T05:24:28Z",
+      "updated": "2024-02-11T11:38:38Z",
+      "authors": [
+        "Liping Yi",
+        "Han Yu",
+        "Gang Wang",
+        "Xiaoguang Liu",
+        "Xiaoxiao Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10844v1",
+      "arxiv_id": "2310.10844v1",
+      "title": "Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks",
+      "summary": "Large Language Models (LLMs) are swiftly advancing in architecture and capability, and as they integrate more deeply into complex systems, the urgency to scrutinize their security properties grows. This paper surveys research in the emerging interdisciplinary field of adversarial attacks on LLMs, a subfield of trustworthy ML, combining the perspectives of Natural Language Processing and Security. Prior work has shown that even safety-aligned LLMs (via instruction tuning and reinforcement learning through human feedback) can be susceptible to adversarial attacks, which exploit weaknesses and mislead AI systems, as evidenced by the prevalence of `jailbreak' attacks on models like ChatGPT and Bard. In this survey, we first provide an overview of large language models, describe their safety alignment, and categorize existing research based on various learning structures: textual-only attacks, multi-modal attacks, and additional attack methods specifically targeting complex systems, such as federated learning or multi-agent systems. We also offer comprehensive remarks on works that focus on the fundamental sources of vulnerabilities and potential defenses. To make this field more accessible to newcomers, we present a systematic review of existing works, a structured typology of adversarial attack concepts, and additional resources, including slides for presentations on related topics at the 62nd Annual Meeting of the Association for Computational Linguistics (ACL'24).",
+      "published": "2023-10-16T21:37:24Z",
+      "updated": "2023-10-16T21:37:24Z",
+      "authors": [
+        "Erfan Shayegani",
+        "Md Abdullah Al Mamun",
+        "Yu Fu",
+        "Pedram Zaree",
+        "Yue Dong",
+        "Nael Abu-Ghazaleh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.10049v1",
+      "arxiv_id": "2310.10049v1",
+      "title": "FATE-LLM: A Industrial Grade Federated Learning Framework for Large Language Models",
+      "summary": "Large Language Models (LLMs), such as ChatGPT, LLaMA, GLM, and PaLM, have exhibited remarkable performances across various tasks in recent years. However, LLMs face two main challenges in real-world applications. One challenge is that training LLMs consumes vast computing resources, preventing LLMs from being adopted by small and medium-sized enterprises with limited computing resources. Another is that training LLM requires a large amount of high-quality data, which are often scattered among enterprises. To address these challenges, we propose FATE-LLM, an industrial-grade federated learning framework for large language models. FATE-LLM (1) facilitates federated learning for large language models (coined FedLLM); (2) promotes efficient training of FedLLM using parameter-efficient fine-tuning methods; (3) protects the intellectual property of LLMs; (4) preserves data privacy during training and inference through privacy-preserving mechanisms. We release the code of FATE-LLM at https://github.com/FederatedAI/FATE-LLM to facilitate the research of FedLLM and enable a broad range of industrial applications.",
+      "published": "2023-10-16T04:17:13Z",
+      "updated": "2023-10-16T04:17:13Z",
+      "authors": [
+        "Tao Fan",
+        "Yan Kang",
+        "Guoqiang Ma",
+        "Weijing Chen",
+        "Wenbin Wei",
+        "Lixin Fan",
+        "Qiang Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.05696v4",
+      "arxiv_id": "2310.05696v4",
+      "title": "Little is Enough: Boosting Privacy by Sharing Only Hard Labels in Federated Semi-Supervised Learning",
+      "summary": "In many critical applications, sensitive data is inherently distributed and cannot be centralized due to privacy concerns. A wide range of federated learning approaches have been proposed to train models locally at each client without sharing their sensitive data, typically by exchanging model parameters, or probabilistic predictions (soft labels) on a public dataset or a combination of both. However, these methods still disclose private information and restrict local models to those that can be trained using gradient-based methods. We propose a federated co-training (FedCT) approach that improves privacy by sharing only definitive (hard) labels on a public unlabeled dataset. Clients use a consensus of these shared labels as pseudo-labels for local training. This federated co-training approach empirically enhances privacy without compromising model quality. In addition, it allows the use of local models that are not suitable for parameter aggregation in traditional federated learning, such as gradient-boosted decision trees, rule ensembles, and random forests. Furthermore, we observe that FedCT performs effectively in federated fine-tuning of large language models, where its pseudo-labeling mechanism is particularly beneficial. Empirical evaluations and theoretical analyses suggest its applicability across a range of federated learning scenarios.",
+      "published": "2023-10-09T13:16:10Z",
+      "updated": "2024-12-20T14:51:31Z",
+      "authors": [
+        "Amr Abourayya",
+        "Jens Kleesiek",
+        "Kanishka Rao",
+        "Erman Ayday",
+        "Bharat Rao",
+        "Geoff Webb",
+        "Michael Kamp"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.05269v3",
+      "arxiv_id": "2310.05269v3",
+      "title": "Federated Learning: A Cutting-Edge Survey of the Latest Advancements and Applications",
+      "summary": "Robust machine learning (ML) models can be developed by leveraging large volumes of data and distributing the computational tasks across numerous devices or servers. Federated learning (FL) is a technique in the realm of ML that facilitates this goal by utilizing cloud infrastructure to enable collaborative model training among a network of decentralized devices. Beyond distributing the computational load, FL targets the resolution of privacy issues and the reduction of communication costs simultaneously. To protect user privacy, FL requires users to send model updates rather than transmitting large quantities of raw and potentially confidential data. Specifically, individuals train ML models locally using their own data and then upload the results in the form of weights and gradients to the cloud for aggregation into the global model. This strategy is also advantageous in environments with limited bandwidth or high communication costs, as it prevents the transmission of large data volumes. With the increasing volume of data and rising privacy concerns, alongside the emergence of large-scale ML models like Large Language Models (LLMs), FL presents itself as a timely and relevant solution. It is therefore essential to review current FL algorithms to guide future research that meets the rapidly evolving ML demands. This survey provides a comprehensive analysis and comparison of the most recent FL algorithms, evaluating them on various fronts including mathematical frameworks, privacy protection, resource allocation, and applications. Beyond summarizing existing FL methods, this survey identifies potential gaps, open areas, and future challenges based on the performance reports and algorithms used in recent studies. This survey enables researchers to readily identify existing limitations in the FL field for further exploration.",
+      "published": "2023-10-08T19:54:26Z",
+      "updated": "2024-05-26T02:37:36Z",
+      "authors": [
+        "Azim Akhtarshenas",
+        "Mohammad Ali Vahedifar",
+        "Navid Ayoobi",
+        "Behrouz Maham",
+        "Tohid Alizadeh",
+        "Sina Ebrahimi",
+        "David López-Pérez"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR",
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.04627v1",
+      "arxiv_id": "2310.04627v1",
+      "title": "Profit: Benchmarking Personalization and Robustness Trade-off in Federated Prompt Tuning",
+      "summary": "In many applications of federated learning (FL), clients desire models that are personalized using their local data, yet are also robust in the sense that they retain general global knowledge. However, the presence of data heterogeneity across clients induces a fundamental trade-off between personalization (i.e., adaptation to a local distribution) and robustness (i.e., not forgetting previously learned general knowledge). It is critical to understand how to navigate this personalization vs robustness trade-off when designing federated systems, which are increasingly moving towards a paradigm of fine-tuning large foundation models. Due to limited computational and communication capabilities in most federated settings, this foundation model fine-tuning must be done using parameter-efficient fine-tuning (PEFT) approaches. While some recent work has studied federated approaches to PEFT, the personalization vs robustness trade-off of federated PEFT has been largely unexplored. In this work, we take a step towards bridging this gap by benchmarking fundamental FL algorithms -- FedAvg and FedSGD plus personalization (via client local fine-tuning) -- applied to one of the most ubiquitous PEFT approaches to large language models (LLMs) -- prompt tuning -- in a multitude of hyperparameter settings under varying levels of data heterogeneity. Our results show that federated-trained prompts can be surprisingly robust when using a small learning rate with many local epochs for personalization, especially when using an adaptive optimizer as the client optimizer during federated training. We also demonstrate that simple approaches such as adding regularization and interpolating two prompts are effective in improving the personalization vs robustness trade-off in computation-limited settings with few local updates allowed for personalization.",
+      "published": "2023-10-06T23:46:33Z",
+      "updated": "2023-10-06T23:46:33Z",
+      "authors": [
+        "Liam Collins",
+        "Shanshan Wu",
+        "Sewoong Oh",
+        "Khe Chai Sim"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.03150v2",
+      "arxiv_id": "2310.03150v2",
+      "title": "Federated Fine-Tuning of LLMs on the Very Edge: The Good, the Bad, the Ugly",
+      "summary": "Large Language Models (LLM) and foundation models are popular as they offer new opportunities for individuals and businesses to improve natural language processing, interact with data, and retrieve information faster. However, training or fine-tuning LLMs requires a vast amount of data, which can be challenging to access due to legal or technical restrictions and may require private computing resources. Federated Learning (FL) is a solution designed to overcome these challenges and expand data access for deep learning applications. This paper takes a hardware-centric approach to explore how LLMs can be brought to modern edge computing systems. Our study fine-tunes the FLAN-T5 model family, ranging from 80M to 3B parameters, using FL for a text summarization task. We provide a micro-level hardware benchmark, compare the model FLOP utilization to a state-of-the-art data center GPU, and study the network utilization in realistic conditions. Our contribution is twofold: First, we evaluate the current capabilities of edge computing systems and their potential for LLM FL workloads. Second, by comparing these systems with a data-center GPU, we demonstrate the potential for improvement and the next steps toward achieving greater computational efficiency at the edge.",
+      "published": "2023-10-04T20:27:20Z",
+      "updated": "2024-05-02T10:12:34Z",
+      "authors": [
+        "Herbert Woisetschläger",
+        "Alexander Isenko",
+        "Shiqiang Wang",
+        "Ruben Mayer",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.PF"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.01467v1",
+      "arxiv_id": "2310.01467v1",
+      "title": "FedBPT: Efficient Federated Black-box Prompt Tuning for Large Language Models",
+      "summary": "Pre-trained language models (PLM) have revolutionized the NLP landscape, achieving stellar performances across diverse tasks. These models, while benefiting from vast training data, often require fine-tuning on specific data to cater to distinct downstream tasks. However, this data adaptation process has inherent security and privacy concerns, primarily when leveraging user-generated, device-residing data. Federated learning (FL) provides a solution, allowing collaborative model fine-tuning without centralized data collection. However, applying FL to finetune PLMs is hampered by challenges, including restricted model parameter access, high computational requirements, and communication overheads. This paper introduces Federated Black-box Prompt Tuning (FedBPT), a framework designed to address these challenges. FedBPT does not require the clients to access the model parameters. By focusing on training optimal prompts and utilizing gradient-free optimization methods, FedBPT reduces the number of exchanged variables, boosts communication efficiency, and minimizes computational and storage costs. Experiments highlight the framework's ability to drastically cut communication and memory costs while maintaining competitive performance. Ultimately, FedBPT presents a promising solution for efficient, privacy-preserving fine-tuning of PLM in the age of large language models.",
+      "published": "2023-10-02T16:43:14Z",
+      "updated": "2023-10-02T16:43:14Z",
+      "authors": [
+        "Jingwei Sun",
+        "Ziyue Xu",
+        "Hongxu Yin",
+        "Dong Yang",
+        "Daguang Xu",
+        "Yiran Chen",
+        "Holger R. Roth"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14726v2",
+      "arxiv_id": "2309.14726v2",
+      "title": "PLMM: Personal Large Language Models on Mobile Devices",
+      "summary": "Inspired by Federated Learning, in this paper, we propose personal large models that are distilled from traditional large language models but more adaptive to local users' personal information such as education background and hobbies. We classify the large language models into three levels: the personal level, expert level and traditional level. The personal level models are adaptive to users' personal information. They encrypt the users' input and protect their privacy. The expert level models focus on merging specific knowledge such as finance, IT and art. The traditional models focus on the universal knowledge discovery and upgrading the expert models. In such classifications, the personal models directly interact with the user. For the whole system, the personal models have users' (encrypted) personal information. Moreover, such models must be small enough to be performed on personal computers or mobile devices. Finally, they also have to response in real-time for better user experience and produce high quality results. The proposed personal large models can be applied in a wide range of applications such as language and vision tasks.",
+      "published": "2023-09-26T07:36:20Z",
+      "updated": "2024-05-05T02:33:38Z",
+      "authors": [
+        "Yuanhao Gong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CE",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.08173v3",
+      "arxiv_id": "2309.08173v3",
+      "title": "FedJudge: Federated Legal Large Language Model",
+      "summary": "Large Language Models (LLMs) have gained prominence in the field of Legal Intelligence, offering potential applications in assisting legal professionals and laymen. However, the centralized training of these Legal LLMs raises data privacy concerns, as legal data is distributed among various institutions containing sensitive individual information. This paper addresses this challenge by exploring the integration of Legal LLMs with Federated Learning (FL) methodologies. By employing FL, Legal LLMs can be fine-tuned locally on devices or clients, and their parameters are aggregated and distributed on a central server, ensuring data privacy without directly sharing raw data. However, computation and communication overheads hinder the full fine-tuning of LLMs under the FL setting. Moreover, the distribution shift of legal data reduces the effectiveness of FL methods. To this end, in this paper, we propose the first Federated Legal Large Language Model (FedJudge) framework, which fine-tunes Legal LLMs efficiently and effectively. Specifically, FedJudge utilizes parameter-efficient fine-tuning methods to update only a few additional parameters during the FL training. Besides, we explore the continual learning methods to preserve the global model's important parameters when training local clients to mitigate the problem of data shifts. Extensive experimental results on three real-world datasets clearly validate the effectiveness of FedJudge. Code is released at https://github.com/yuelinan/FedJudge.",
+      "published": "2023-09-15T05:45:44Z",
+      "updated": "2024-04-10T13:24:55Z",
+      "authors": [
+        "Linan Yue",
+        "Qi Liu",
+        "Yichao Du",
+        "Weibo Gao",
+        "Ye Liu",
+        "Fangzhou Yao"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.00363v1",
+      "arxiv_id": "2309.00363v1",
+      "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning",
+      "summary": "LLMs have demonstrated great capabilities in various NLP tasks. Different entities can further improve the performance of those LLMs on their specific downstream tasks by fine-tuning LLMs. When several entities have similar interested tasks, but their data cannot be shared because of privacy concerns regulations, federated learning (FL) is a mainstream solution to leverage the data of different entities. However, fine-tuning LLMs in federated learning settings still lacks adequate support from existing FL frameworks because it has to deal with optimizing the consumption of significant communication and computational resources, data preparation for different tasks, and distinct information protection demands. This paper first discusses these challenges of federated fine-tuning LLMs, and introduces our package FS-LLM as a main contribution, which consists of the following components: (1) we build an end-to-end benchmarking pipeline, automizing the processes of dataset preprocessing, federated fine-tuning execution, and performance evaluation on federated LLM fine-tuning; (2) we provide comprehensive federated parameter-efficient fine-tuning algorithm implementations and versatile programming interfaces for future extension in FL scenarios with low communication and computation costs, even without accessing the full model; (3) we adopt several accelerating and resource-efficient operators for fine-tuning LLMs with limited resources and the flexible pluggable sub-routines for interdisciplinary study. We conduct extensive experiments to validate the effectiveness of FS-LLM and benchmark advanced LLMs with state-of-the-art parameter-efficient fine-tuning algorithms in FL settings, which also yields valuable insights into federated fine-tuning LLMs for the research community. To facilitate further research and adoption, we release FS-LLM at https://github.com/alibaba/FederatedScope/tree/llm.",
+      "published": "2023-09-01T09:40:36Z",
+      "updated": "2023-09-01T09:40:36Z",
+      "authors": [
+        "Weirui Kuang",
+        "Bingchen Qian",
+        "Zitao Li",
+        "Daoyuan Chen",
+        "Dawei Gao",
+        "Xuchen Pan",
+        "Yuexiang Xie",
+        "Yaliang Li",
+        "Bolin Ding",
+        "Jingren Zhou"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13894v2",
+      "arxiv_id": "2308.13894v2",
+      "title": "FwdLLM: Efficient FedLLM using Forward Gradient",
+      "summary": "Large Language Models (LLMs) are transforming the landscape of mobile intelligence. Federated Learning (FL), a method to preserve user data privacy, is often employed in fine-tuning LLMs to downstream mobile tasks, an approach known as FedLLM. Though recent efforts have addressed the network issue induced by the vast model size, they have not practically mitigated vital challenges concerning integration with mobile devices, such as significant memory consumption and sluggish model convergence. In response to these challenges, this work introduces FwdLLM, an innovative FL protocol designed to enhance the FedLLM efficiency. The key idea of FwdLLM to employ backpropagation (BP)-free training methods, requiring devices only to execute ``perturbed inferences''. Consequently, FwdLLM delivers way better memory efficiency and time efficiency (expedited by mobile NPUs and an expanded array of participant devices). FwdLLM centers around three key designs: (1) it combines BP-free training with parameter-efficient training methods, an essential way to scale the approach to the LLM era; (2) it systematically and adaptively allocates computational loads across devices, striking a careful balance between convergence speed and accuracy; (3) it discriminatively samples perturbed predictions that are more valuable to model convergence. Comprehensive experiments with five LLMs and three NLP tasks illustrate FwdLLM's significant advantages over conventional methods, including up to three orders of magnitude faster convergence and a 14.6x reduction in memory footprint. Uniquely, FwdLLM paves the way for federated learning of billion-parameter LLMs such as LLaMA on COTS mobile devices -- a feat previously unattained.",
+      "published": "2023-08-26T14:36:30Z",
+      "updated": "2024-01-20T09:24:33Z",
+      "authors": [
+        "Mengwei Xu",
+        "Dongqi Cai",
+        "Yaozong Wu",
+        "Xiang Li",
+        "Shangguang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.13896v1",
+      "arxiv_id": "2307.13896v1",
+      "title": "Low-Parameter Federated Learning with Large Language Models",
+      "summary": "We study few-shot Natural Language Understanding (NLU) tasks with Large Language Models (LLMs) in federated learning (FL) scenarios. It is a challenging task due to limited labeled data and communication capacities in FL, especially with mobile devices. Recent studies show LLMs can be prompted to perform few-shot NLU tasks like sentiment analysis and arithmetic reasoning. However, the huge sizes of LLMs result in high computation and communication costs, making classical FL schemes impractical. To address these challenges, we propose Low-Parameter Federated Learning (LP-FL). LP-FL combines few-shot prompt learning from LLMs with efficient communication and federating techniques. Our approach enables federated clients to assign soft labels to unlabeled data using gradually learned knowledge from the global model. Through iterative soft-label assigning, we continually expand the labeled set during the FL process. Additionally, to reduce computation and communication costs, LP-FL utilizes the Low-Rank Adaptation (LoRA) technique for compact learnable parameter construction, efficient local model fine-tuning, and affordable global model federation. LP-FL consistently outperforms Full-Parameter Federated Learning (FP-FL) in sentiment analysis tasks across various FL settings. Its resistance to overfitting allows LP-FL to equal or surpass centralized training in few-shot scenarios.",
+      "published": "2023-07-26T01:44:02Z",
+      "updated": "2023-07-26T01:44:02Z",
+      "authors": [
+        "Jingang Jiang",
+        "Xiangyang Liu",
+        "Chenyou Fan"
+      ],
+      "categories": [
+        "cs.DC"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.12181v1",
+      "arxiv_id": "2307.12181v1",
+      "title": "Security and Privacy Issues of Federated Learning",
+      "summary": "Federated Learning (FL) has emerged as a promising approach to address data privacy and confidentiality concerns by allowing multiple participants to construct a shared model without centralizing sensitive data. However, this decentralized paradigm introduces new security challenges, necessitating a comprehensive identification and classification of potential risks to ensure FL's security guarantees. This paper presents a comprehensive taxonomy of security and privacy challenges in Federated Learning (FL) across various machine learning models, including large language models. We specifically categorize attacks performed by the aggregator and participants, focusing on poisoning attacks, backdoor attacks, membership inference attacks, generative adversarial network (GAN) based attacks, and differential privacy attacks. Additionally, we propose new directions for future research, seeking innovative solutions to fortify FL systems against emerging security risks and uphold sensitive data confidentiality in distributed learning environments.",
+      "published": "2023-07-22T22:51:07Z",
+      "updated": "2023-07-22T22:51:07Z",
+      "authors": [
+        "Jahid Hasan"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.11254v2",
+      "arxiv_id": "2307.11254v2",
+      "title": "An In-Depth Evaluation of Federated Learning on Biomedical Natural Language Processing",
+      "summary": "Language models (LMs) such as BERT and GPT have revolutionized natural language processing (NLP). However, the medical field faces challenges in training LMs due to limited data access and privacy constraints imposed by regulations like the Health Insurance Portability and Accountability Act (HIPPA) and the General Data Protection Regulation (GDPR). Federated learning (FL) offers a decentralized solution that enables collaborative learning while ensuring data privacy. In this study, we evaluated FL on 2 biomedical NLP tasks encompassing 8 corpora using 6 LMs. Our results show that: 1) FL models consistently outperformed models trained on individual clients' data and sometimes performed comparably with models trained with polled data; 2) with the fixed number of total data, FL models training with more clients produced inferior performance but pre-trained transformer-based models exhibited great resilience. 3) FL models significantly outperformed large language models using zero-/one-shot learning and offered lightning inference speed.",
+      "published": "2023-07-20T22:10:04Z",
+      "updated": "2023-11-11T23:50:59Z",
+      "authors": [
+        "Le Peng",
+        "Gaoxiang Luo",
+        "sicheng zhou",
+        "jiandong chen",
+        "Rui Zhang",
+        "Ziyue Xu",
+        "Ju Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.08925v3",
+      "arxiv_id": "2307.08925v3",
+      "title": "Integration of Large Language Models and Federated Learning",
+      "summary": "As the parameter size of Large Language Models (LLMs) continues to expand, there is an urgent need to address the scarcity of high-quality data. In response, existing research has attempted to make a breakthrough by incorporating Federated Learning (FL) into LLMs. Conversely, considering the outstanding performance of LLMs in task generalization, researchers have also tried applying LLMs within FL to tackle challenges in relevant domains. The complementarity between LLMs and FL has already ignited widespread research interest. In this paper, we aim to deeply explore the integration of LLMs and FL. We propose a research framework, dividing the fusion of LLMs and FL into three parts: the combination of LLM sub-technologies with FL, the integration of FL sub-technologies with LLMs, and the overall merger of LLMs and FL. We first provide a comprehensive review of the current state of research in the domain of LLMs combined with FL, including their typical applications, integration advantages, challenges faced, and future directions for resolution. Subsequently, we discuss the practical applications of the combination of LLMs and FL in critical scenarios such as healthcare, finance, and education, and provide new perspectives and insights into future research directions for LLMs and FL.",
+      "published": "2023-07-18T02:09:14Z",
+      "updated": "2024-10-30T03:04:21Z",
+      "authors": [
+        "Chaochao Chen",
+        "Xiaohua Feng",
+        "Yuyuan Li",
+        "Lingjuan Lyu",
+        "Jun Zhou",
+        "Xiaolin Zheng",
+        "Jianwei Yin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.02779v3",
+      "arxiv_id": "2307.02779v3",
+      "title": "Large Language Models Empowered Autonomous Edge AI for Connected Intelligence",
+      "summary": "The evolution of wireless networks gravitates towards connected intelligence, a concept that envisions seamless interconnectivity among humans, objects, and intelligence in a hyper-connected cyber-physical world. Edge artificial intelligence (Edge AI) is a promising solution to achieve connected intelligence by delivering high-quality, low-latency, and privacy-preserving AI services at the network edge. This article presents a vision of autonomous edge AI systems that automatically organize, adapt, and optimize themselves to meet users' diverse requirements, leveraging the power of large language models (LLMs), i.e., Generative Pretrained Transformer (GPT). By exploiting the powerful abilities of GPT in language understanding, planning, and code generation, as well as incorporating classic wisdom such as task-oriented communication and edge federated learning, we present a versatile framework that efficiently coordinates edge AI models to cater to users' personal demands while automatically generating code to train new models in a privacy-preserving manner. Experimental results demonstrate the system's remarkable ability to accurately comprehend user demands, efficiently execute AI models with minimal cost, and effectively create high-performance AI models at edge servers.",
+      "published": "2023-07-06T05:16:55Z",
+      "updated": "2023-12-25T06:25:38Z",
+      "authors": [
+        "Yifei Shen",
+        "Jiawei Shao",
+        "Xinjie Zhang",
+        "Zehong Lin",
+        "Hao Pan",
+        "Dongsheng Li",
+        "Jun Zhang",
+        "Khaled B. Letaief"
+      ],
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "cs.NI",
+        "eess.SP"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.00470v4",
+      "arxiv_id": "2307.00470v4",
+      "title": "PatternGPT :A Pattern-Driven Framework for Large Language Model Text Generation",
+      "summary": "Large language models(LLMS)have shown excellent text generation capabilities, capable of generating fluent human-like responses for many downstream tasks. However, applying large language models to real-world critical tasks remains challenging due to their susceptibility to hallucinations and inability to directly use external knowledge. To cope with the above challenges, this paper proposes PatternGPT, a pattern-driven text generation framework for Large Language Models. Firstly, the framework utilizes the extraction capability of Large Language Models to generate rich and diversified structured and formalized patterns, which facilitates the introduction of external knowledge to do the computation, and then draws on the idea of federated learning to use multiple agents to achieve the sharing in order to obtain more diversified patterns, and finally uses judgment criteria and optimization algorithm to search for high-quality patterns to guide the generation of models. Finally, external knowledge such as judgment criteria and optimization algorithms are used to search for high-quality patterns, and the searched patterns are used to guide model generation. This framework has the advantages of generating diversified patterns, protecting data privacy, combining external knowledge, and improving the quality of generation, which provides an effective method to optimize the text generation capability of large language models, and make it better applied to the field of intelligent dialogue and content generation.",
+      "published": "2023-07-02T04:32:41Z",
+      "updated": "2023-07-20T03:03:25Z",
+      "authors": [
+        "Le Xiao",
+        "Xin Shan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.09273v3",
+      "arxiv_id": "2306.09273v3",
+      "title": "Privacy Risks in Reinforcement Learning for Household Robots",
+      "summary": "The prominence of embodied Artificial Intelligence (AI), which empowers robots to navigate, perceive, and engage within virtual environments, has attracted significant attention, owing to the remarkable advances in computer vision and large language models. Privacy emerges as a pivotal concern within the realm of embodied AI, as the robot accesses substantial personal information. However, the issue of privacy leakage in embodied AI tasks, particularly concerning reinforcement learning algorithms, has not received adequate consideration in research. This paper aims to address this gap by proposing an attack on the training process of the value-based algorithm and the gradient-based algorithm, utilizing gradient inversion to reconstruct states, actions, and supervisory signals. The choice of using gradients for the attack is motivated by the fact that commonly employed federated learning techniques solely utilize gradients computed based on private user data to optimize models, without storing or transmitting the data to public servers. Nevertheless, these gradients contain sufficient information to potentially expose private data. To validate our approach, we conducted experiments on the AI2THOR simulator and evaluated our algorithm on active perception, a prevalent task in embodied AI. The experimental results demonstrate the effectiveness of our method in successfully reconstructing all information from the data in 120 room layouts. Check our website for videos.",
+      "published": "2023-06-15T16:53:26Z",
+      "updated": "2024-12-06T21:14:26Z",
+      "authors": [
+        "Miao Li",
+        "Wenhao Ding",
+        "Ding Zhao"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CR",
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.04959v5",
+      "arxiv_id": "2306.04959v5",
+      "title": "FedSecurity: Benchmarking Attacks and Defenses in Federated Learning and Federated LLMs",
+      "summary": "This paper introduces FedSecurity, an end-to-end benchmark that serves as a supplementary component of the FedML library for simulating adversarial attacks and corresponding defense mechanisms in Federated Learning (FL). FedSecurity eliminates the need for implementing the fundamental FL procedures, e.g., FL training and data loading, from scratch, thus enables users to focus on developing their own attack and defense strategies. It contains two key components, including FedAttacker that conducts a variety of attacks during FL training, and FedDefender that implements defensive mechanisms to counteract these attacks. FedSecurity has the following features: i) It offers extensive customization options to accommodate a broad range of machine learning models (e.g., Logistic Regression, ResNet, and GAN) and FL optimizers (e.g., FedAVG, FedOPT, and FedNOVA); ii) it enables exploring the effectiveness of attacks and defenses across different datasets and models; and iii) it supports flexible configuration and customization through a configuration file and some APIs. We further demonstrate FedSecurity's utility and adaptability through federated training of Large Language Models (LLMs) to showcase its potential on a wide range of complex applications.",
+      "published": "2023-06-08T06:21:35Z",
+      "updated": "2024-06-21T00:01:52Z",
+      "authors": [
+        "Shanshan Han",
+        "Baturalp Buyukates",
+        "Zijian Hu",
+        "Han Jin",
+        "Weizhao Jin",
+        "Lichao Sun",
+        "Xiaoyang Wang",
+        "Wenxuan Wu",
+        "Chulin Xie",
+        "Yuhang Yao",
+        "Kai Zhang",
+        "Qifan Zhang",
+        "Yuhui Zhang",
+        "Carlee Joe-Wong",
+        "Salman Avestimehr",
+        "Chaoyang He"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.12132v2",
+      "arxiv_id": "2305.12132v2",
+      "title": "Can Public Large Language Models Help Private Cross-device Federated Learning?",
+      "summary": "We study (differentially) private federated learning (FL) of language models. The language models in cross-device FL are relatively small, which can be trained with meaningful formal user-level differential privacy (DP) guarantees when massive parallelism in training is enabled by the participation of a moderate size of users. Recently, public data has been used to improve privacy-utility trade-offs for both large and small language models. In this work, we provide a systematic study of using large-scale public data and LLMs to help differentially private training of on-device FL models, and further improve the privacy-utility tradeoff by techniques of distillation. Moreover, we propose a novel distribution matching algorithm with theoretical grounding to sample public data close to private data distribution, which significantly improves the sample efficiency of (pre-)training on public data. The proposed method is efficient and effective for training private models by taking advantage of public data, especially for customized on-device architectures that do not have ready-to-use pre-trained models.",
+      "published": "2023-05-20T07:55:58Z",
+      "updated": "2024-04-12T21:01:12Z",
+      "authors": [
+        "Boxin Wang",
+        "Yibo Jacky Zhang",
+        "Yuan Cao",
+        "Bo Li",
+        "H. Brendan McMahan",
+        "Sewoong Oh",
+        "Zheng Xu",
+        "Manzil Zaheer"
+      ],
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.11414v3",
+      "arxiv_id": "2305.11414v3",
+      "title": "Federated Foundation Models: Privacy-Preserving and Collaborative Learning for Large Models",
+      "summary": "Foundation Models (FMs), such as LLaMA, BERT, GPT, ViT, and CLIP, have demonstrated remarkable success in a wide range of applications, driven by their ability to leverage vast amounts of data for pre-training. However, optimizing FMs often requires access to sensitive data, raising privacy concerns and limiting their applicability in many domains. In this paper, we propose the Federated Foundation Models (FFMs) paradigm, which combines the benefits of FMs and Federated Learning (FL) to enable privacy-preserving and collaborative learning across multiple end-users. We discuss the potential benefits and challenges of integrating FL into the lifespan of FMs, covering pre-training, fine-tuning, and application. We further outline potential future research avenues in FFM, including FFM pre-training, FFM fine-tuning, and federated prompt tuning, which allow the development of more personalized and context-aware models while ensuring data privacy. Moreover, we explore the possibility of continual/lifelong learning in FFMs, as increased computational power at the edge may unlock the potential for optimizing FMs using newly generated private data close to the data source. The proposed FFM concepts offer a flexible and scalable framework for training large language models in a privacy-preserving manner, setting the stage for subsequent advancements in both FM training and federated learning.",
+      "published": "2023-05-19T03:51:59Z",
+      "updated": "2024-03-19T20:04:43Z",
+      "authors": [
+        "Sixing Yu",
+        "J. Pablo Muñoz",
+        "Ali Jannesari"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.05644v2",
+      "arxiv_id": "2305.05644v2",
+      "title": "Towards Building the Federated GPT: Federated Instruction Tuning",
+      "summary": "While \"instruction-tuned\" generative large language models (LLMs) have demonstrated an impressive ability to generalize to new tasks, the training phases heavily rely on large amounts of diverse and high-quality instruction data (such as ChatGPT and GPT-4). Unfortunately, acquiring high-quality data, especially when it comes to human-written data, can pose significant challenges both in terms of cost and accessibility. Moreover, concerns related to privacy can further limit access to such data, making the process of obtaining it a complex and nuanced undertaking. Consequently, this hinders the generality of the tuned models and may restrict their effectiveness in certain contexts. To tackle this issue, our study introduces a new approach called Federated Instruction Tuning (FedIT), which leverages federated learning (FL) as the learning framework for the instruction tuning of LLMs. This marks the first exploration of FL-based instruction tuning for LLMs. This is especially important since text data is predominantly generated by end users. Therefore, it is imperative to design and adapt FL approaches to effectively leverage these users' diverse instructions stored on local devices, while preserving privacy and ensuring data security. In the current paper, by conducting widely used GPT-4 auto-evaluation, we demonstrate that by exploiting the heterogeneous and diverse sets of instructions on the client's end with the proposed framework FedIT, we improved the performance of LLMs compared to centralized training with only limited local instructions. Further, in this paper, we developed a Github repository named Shepherd. This repository offers a foundational framework for exploring federated fine-tuning of LLMs using heterogeneous instructions across diverse categories.",
+      "published": "2023-05-09T17:42:34Z",
+      "updated": "2024-01-29T17:13:04Z",
+      "authors": [
+        "Jianyi Zhang",
+        "Saeed Vahidian",
+        "Martin Kuo",
+        "Chunyuan Li",
+        "Ruiyi Zhang",
+        "Tong Yu",
+        "Yufan Zhou",
+        "Guoyin Wang",
+        "Yiran Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.DC",
+        "eess.SY"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.09042v2",
+      "arxiv_id": "2302.09042v2",
+      "title": "Privately Customizing Prefinetuning to Better Match User Data in Federated Learning",
+      "summary": "In Federated Learning (FL), accessing private client data incurs communication and privacy costs. As a result, FL deployments commonly prefinetune pretrained foundation models on a (large, possibly public) dataset that is held by the central server; they then FL-finetune the model on a private, federated dataset held by clients. Evaluating prefinetuning dataset quality reliably and privately is therefore of high importance. To this end, we propose FreD (Federated Private Fréchet Distance) -- a privately computed distance between a prefinetuning dataset and federated datasets. Intuitively, it privately computes and compares a Fréchet distance between embeddings generated by a large language model on both the central (public) dataset and the federated private client data. To make this computation privacy-preserving, we use distributed, differentially-private mean and covariance estimators. We show empirically that FreD accurately predicts the best prefinetuning dataset at minimal privacy cost. Altogether, using FreD we demonstrate a proof-of-concept for a new approach in private FL training: (1) customize a prefinetuning dataset to better match user data (2) prefinetune (3) perform FL-finetuning.",
+      "published": "2023-02-17T18:18:22Z",
+      "updated": "2023-02-23T00:44:26Z",
+      "authors": [
+        "Charlie Hou",
+        "Hongyuan Zhan",
+        "Akshat Shrivastava",
+        "Sid Wang",
+        "Aleksandr Livshits",
+        "Giulia Fanti",
+        "Daniel Lazar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ]
+    }
+  ]
+}

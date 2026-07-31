@@ -1,0 +1,21 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"parameter-efficient fine-tuning\" AND \"large language model\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202001010000 TO 202012312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22parameter-efficient+fine-tuning%22+AND+%22large+language+model%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202001010000+TO+202012312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:18:44Z",
+  "total_results_reported": 0,
+  "returned": 0,
+  "entries": [],
+  "hit_result_cap": false,
+  "protocol_query": "\"parameter-efficient fine-tuning\" AND \"large language model\"",
+  "slice_id": "2020",
+  "date_window": {
+    "start": "2020-01-01",
+    "end": "2020-12-31"
+  },
+  "entries_in_date_window": []
+}

@@ -1,0 +1,167 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"parameter-efficient fine-tuning\" AND \"large language model\") AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202201010000 TO 202212312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22parameter-efficient+fine-tuning%22+AND+%22large+language+model%22%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202201010000+TO+202212312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:18:51Z",
+  "total_results_reported": 3,
+  "returned": 3,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2212.10929v1",
+      "arxiv_id": "2212.10929v1",
+      "title": "SPT: Semi-Parametric Prompt Tuning for Multitask Prompted Learning",
+      "summary": "Pre-trained large language models can efficiently interpolate human-written prompts in a natural way. Multitask prompted learning can help generalization through a diverse set of tasks at once, thus enhancing the potential for more effective downstream fine-tuning. To perform efficient multitask-inference in the same batch, parameter-efficient fine-tuning methods such as prompt tuning have been proposed. However, the existing prompt tuning methods may lack generalization. We propose SPT, a semi-parametric prompt tuning method for multitask prompted learning. The novel component of SPT is a memory bank from where memory prompts are retrieved based on discrete prompts. Extensive experiments, such as (i) fine-tuning a full language model with SPT on 31 different tasks from 8 different domains and evaluating zero-shot generalization on 9 heldout datasets under 5 NLP task categories and (ii) pretraining SPT on the GLUE datasets and evaluating fine-tuning on the SuperGLUE datasets, demonstrate effectiveness of SPT.",
+      "published": "2022-12-21T11:18:09Z",
+      "updated": "2022-12-21T11:18:09Z",
+      "authors": [
+        "M Saiful Bari",
+        "Aston Zhang",
+        "Shuai Zheng",
+        "Xingjian Shi",
+        "Yi Zhu",
+        "Shafiq Joty",
+        "Mu Li"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2211.12485v1",
+      "arxiv_id": "2211.12485v1",
+      "title": "HyperTuning: Toward Adapting Large Language Models without Back-propagation",
+      "summary": "Fine-tuning large language models for different tasks can be costly and inefficient, and even methods that reduce the number of tuned parameters still require full gradient-based optimization. We propose HyperTuning, a novel approach to model adaptation that uses a hypermodel to generate task-specific parameters for a fixed downstream model. We demonstrate a simple setup for hypertuning with HyperT5, a T5-based hypermodel that produces soft prefixes or LoRA parameters for a frozen T5 model from few-shot examples. We train HyperT5 in two stages: first, hyperpretraining with a modified conditional language modeling objective that trains a hypermodel to generate parameters; second, multi-task fine-tuning (MTF) on a large number of diverse language tasks. We evaluate HyperT5 on P3, MetaICL and Super-NaturalInstructions datasets, and show that it can effectively generate parameters for unseen tasks. Moreover, we show that using hypermodel-generated parameters as initializations for further parameter-efficient fine-tuning improves performance. HyperTuning can thus be a flexible and efficient way to leverage large language models for diverse downstream applications.",
+      "published": "2022-11-22T18:52:25Z",
+      "updated": "2022-11-22T18:52:25Z",
+      "authors": [
+        "Jason Phang",
+        "Yi Mao",
+        "Pengcheng He",
+        "Weizhu Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2208.05545v4",
+      "arxiv_id": "2208.05545v4",
+      "title": "The Moral Foundations Reddit Corpus",
+      "summary": "Moral framing and sentiment can affect a variety of online and offline behaviors, including donation, environmental action, political engagement, and protest. Various computational methods in Natural Language Processing (NLP) have been used to detect moral sentiment from textual data, but achieving strong performance in such subjective tasks requires large, hand-annotated datasets. Previous corpora annotated for moral sentiment have proven valuable, and have generated new insights both within NLP and across the social sciences, but have been limited to Twitter. To facilitate improving our understanding of the role of moral rhetoric, we present the Moral Foundations Reddit Corpus, a collection of 16,123 English Reddit comments that have been curated from 12 distinct subreddits, hand-annotated by at least three trained annotators for 8 categories of moral sentiment (i.e., Care, Proportionality, Equality, Purity, Authority, Loyalty, Thin Morality, Implicit/Explicit Morality) based on the updated Moral Foundations Theory (MFT) framework. We evaluate baselines using large language models (Llama3-8B, Ministral-8B) in zero-shot, few-shot, and PEFT (Parameter-Efficient Fine-Tuning) settings, comparing their performance to fine-tuned encoder-only models like BERT (Bidirectional Encoder Representations from Transformers). The results show that LLMs continue to lag behind fine-tuned encoders on this subjective task, underscoring the ongoing need for human-annotated moral corpora for AI alignment evaluation. Keywords: moral sentiment annotation, moral values, moral foundations theory, multi-label text classification, large language models, benchmark dataset, evaluation and alignment resource",
+      "published": "2022-08-10T20:08:10Z",
+      "updated": "2026-03-17T23:48:18Z",
+      "authors": [
+        "Jackson Trager",
+        "Alireza S. Ziabari",
+        "Elnaz Rahmati",
+        "Aida Mostafazadeh Davani",
+        "Preni Golazizian",
+        "Farzan Karimi-Malekabadi",
+        "Ali Omrani",
+        "Zhihe Li",
+        "Brendan Kennedy",
+        "Georgios Chochlakis",
+        "Nils Karl Reimer",
+        "Melissa Reyes",
+        "Kelsey Cheng",
+        "Mellow Wei",
+        "Christina Merrifield",
+        "Arta Khosravi",
+        "Evans Alvarez",
+        "Morteza Dehghani"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.LG"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"parameter-efficient fine-tuning\" AND \"large language model\"",
+  "slice_id": "2022",
+  "date_window": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2212.10929v1",
+      "arxiv_id": "2212.10929v1",
+      "title": "SPT: Semi-Parametric Prompt Tuning for Multitask Prompted Learning",
+      "summary": "Pre-trained large language models can efficiently interpolate human-written prompts in a natural way. Multitask prompted learning can help generalization through a diverse set of tasks at once, thus enhancing the potential for more effective downstream fine-tuning. To perform efficient multitask-inference in the same batch, parameter-efficient fine-tuning methods such as prompt tuning have been proposed. However, the existing prompt tuning methods may lack generalization. We propose SPT, a semi-parametric prompt tuning method for multitask prompted learning. The novel component of SPT is a memory bank from where memory prompts are retrieved based on discrete prompts. Extensive experiments, such as (i) fine-tuning a full language model with SPT on 31 different tasks from 8 different domains and evaluating zero-shot generalization on 9 heldout datasets under 5 NLP task categories and (ii) pretraining SPT on the GLUE datasets and evaluating fine-tuning on the SuperGLUE datasets, demonstrate effectiveness of SPT.",
+      "published": "2022-12-21T11:18:09Z",
+      "updated": "2022-12-21T11:18:09Z",
+      "authors": [
+        "M Saiful Bari",
+        "Aston Zhang",
+        "Shuai Zheng",
+        "Xingjian Shi",
+        "Yi Zhu",
+        "Shafiq Joty",
+        "Mu Li"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2211.12485v1",
+      "arxiv_id": "2211.12485v1",
+      "title": "HyperTuning: Toward Adapting Large Language Models without Back-propagation",
+      "summary": "Fine-tuning large language models for different tasks can be costly and inefficient, and even methods that reduce the number of tuned parameters still require full gradient-based optimization. We propose HyperTuning, a novel approach to model adaptation that uses a hypermodel to generate task-specific parameters for a fixed downstream model. We demonstrate a simple setup for hypertuning with HyperT5, a T5-based hypermodel that produces soft prefixes or LoRA parameters for a frozen T5 model from few-shot examples. We train HyperT5 in two stages: first, hyperpretraining with a modified conditional language modeling objective that trains a hypermodel to generate parameters; second, multi-task fine-tuning (MTF) on a large number of diverse language tasks. We evaluate HyperT5 on P3, MetaICL and Super-NaturalInstructions datasets, and show that it can effectively generate parameters for unseen tasks. Moreover, we show that using hypermodel-generated parameters as initializations for further parameter-efficient fine-tuning improves performance. HyperTuning can thus be a flexible and efficient way to leverage large language models for diverse downstream applications.",
+      "published": "2022-11-22T18:52:25Z",
+      "updated": "2022-11-22T18:52:25Z",
+      "authors": [
+        "Jason Phang",
+        "Yi Mao",
+        "Pengcheng He",
+        "Weizhu Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2208.05545v4",
+      "arxiv_id": "2208.05545v4",
+      "title": "The Moral Foundations Reddit Corpus",
+      "summary": "Moral framing and sentiment can affect a variety of online and offline behaviors, including donation, environmental action, political engagement, and protest. Various computational methods in Natural Language Processing (NLP) have been used to detect moral sentiment from textual data, but achieving strong performance in such subjective tasks requires large, hand-annotated datasets. Previous corpora annotated for moral sentiment have proven valuable, and have generated new insights both within NLP and across the social sciences, but have been limited to Twitter. To facilitate improving our understanding of the role of moral rhetoric, we present the Moral Foundations Reddit Corpus, a collection of 16,123 English Reddit comments that have been curated from 12 distinct subreddits, hand-annotated by at least three trained annotators for 8 categories of moral sentiment (i.e., Care, Proportionality, Equality, Purity, Authority, Loyalty, Thin Morality, Implicit/Explicit Morality) based on the updated Moral Foundations Theory (MFT) framework. We evaluate baselines using large language models (Llama3-8B, Ministral-8B) in zero-shot, few-shot, and PEFT (Parameter-Efficient Fine-Tuning) settings, comparing their performance to fine-tuned encoder-only models like BERT (Bidirectional Encoder Representations from Transformers). The results show that LLMs continue to lag behind fine-tuned encoders on this subjective task, underscoring the ongoing need for human-annotated moral corpora for AI alignment evaluation. Keywords: moral sentiment annotation, moral values, moral foundations theory, multi-label text classification, large language models, benchmark dataset, evaluation and alignment resource",
+      "published": "2022-08-10T20:08:10Z",
+      "updated": "2026-03-17T23:48:18Z",
+      "authors": [
+        "Jackson Trager",
+        "Alireza S. Ziabari",
+        "Elnaz Rahmati",
+        "Aida Mostafazadeh Davani",
+        "Preni Golazizian",
+        "Farzan Karimi-Malekabadi",
+        "Ali Omrani",
+        "Zhihe Li",
+        "Brendan Kennedy",
+        "Georgios Chochlakis",
+        "Nils Karl Reimer",
+        "Melissa Reyes",
+        "Kelsey Cheng",
+        "Mellow Wei",
+        "Christina Merrifield",
+        "Arta Khosravi",
+        "Evans Alvarez",
+        "Morteza Dehghani"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.LG"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "source": "ieee",
+  "api": "https://ieeexploreapi.ieee.org/api/v1/search/articles",
+  "protocol_version": "1.2",
+  "query": "\"memory optimization\" AND \"large language model\" AND training",
+  "query_form": "boolean",
+  "start_year": 2019,
+  "end_year": 2026,
+  "max_records_requested": 50,
+  "cap_enforced_at_request": true,
+  "sort_notes": [
+    "sort_field=relevance requested"
+  ],
+  "request_params_sans_key": {
+    "querytext": "\"memory optimization\" AND \"large language model\" AND training",
+    "start_year": 2019,
+    "end_year": 2026,
+    "max_records": 50,
+    "start_record": 1,
+    "format": "json",
+    "sort_field": "relevance"
+  },
+  "fetched_at": "2026-07-30T18:10:39Z",
+  "total_results_reported": 5,
+  "returned": 5,
+  "hit_result_cap": false,
+  "articles": [
+    {
+      "doi": "10.1109/OEEC66525.2025.11100170",
+      "title": "HyLL: Hybrid LSTM and Large Language Model-Based Recommendation System for Energy Management and Consumption Optimization in Smart Homes",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-7559-5",
+      "rank": 1,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran",
+            "authorUrl": "https://ieeexplore.ieee.org/author/507594602627790",
+            "id": 507594602627790,
+            "full_name": "Amin Aslanzadeh Moghanjooghi",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran"
+              ]
+            }
+          },
+          {
+            "affiliation": "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran",
+            "authorUrl": "https://ieeexplore.ieee.org/author/634804942300954",
+            "id": 634804942300954,
+            "full_name": "Mahdi Mazloomi",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran"
+              ]
+            }
+          },
+          {
+            "affiliation": "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089259287",
+            "id": 37089259287,
+            "full_name": "Mohammad Asgari",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran"
+              ]
+            }
+          },
+          {
+            "affiliation": "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran",
+            "authorUrl": "https://ieeexplore.ieee.org/author/432102825925937",
+            "id": 432102825925937,
+            "full_name": "Mohammad Sadegh Mehrabikia",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Media Technology and Engineering, IRIB University, Tehran, Iran"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The reasoning capabilities and broad general knowledge of Large Language Models (LLMs) make them a natural choice for interpreting user requests and managing energy in smart home contexts. However, LLMs lack specific knowledge about individual homes and the ability to predict future energy consumption, limiting their effectiveness in energy optimization and management. This paper introduces HyLL, a hybrid framework that integrates Long Short-Term Memory (LSTM) networks for energy consumption prediction with an LLM, such as GPT-4o, enhanced through in-context learning for real-time optimization and energy management. The LSTM models predict daily energy usage for ten household appliances using historical data and weather conditions, ensuring accuracy through iterative updates. The LLM utilizes 24-hour energy predictions to guide users in shifting their energy consumption to off-peak hours and reducing usage during peak demand periods. By combining predictive modeling with AI-driven decision-making, HyLL improves energy efficiency, alleviates grid stress, and reduces consumer costs, underscoring the critical role of AI in sustainable smart home energy management.",
+      "article_number": "11100170",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11100170",
+      "html_url": "https://ieeexplore.ieee.org/document/11100170/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11100170/",
+      "publication_title": "2025 6th International Conference on Optimizing Electrical Energy Consumption (OEEC)",
+      "conference_location": "Najafabad, Iran, Islamic Republic of",
+      "conference_dates": "25-26 Feb. 2025",
+      "publication_number": 11099579,
+      "is_number": 11100135,
+      "publication_year": 2025,
+      "publication_date": "25-26 Feb. 2025",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 2,
+      "citing_patent_count": 0,
+      "download_count": 162,
+      "insert_date": "20250806",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Energy consumption",
+            "Large language models",
+            "Smart homes",
+            "Predictive models",
+            "Real-time systems",
+            "Long short term memory",
+            "Optimization",
+            "Stress",
+            "Recommender systems",
+            "Meteorology"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Smart Homes",
+            "Energy Management",
+            "LSTM",
+            "Large Language Model",
+            "Predictive Optimization"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Energy Consumption",
+            "Energy Expenditure",
+            "Long Short-term Memory",
+            "LSTM",
+            "Energy Management",
+            "Smart Home",
+            "Consumption Optimization",
+            "Hybrid Long Short-term Memory",
+            "Short-term Memory",
+            "Immediate Memory",
+            "Prediction Network",
+            "Language Model",
+            "Memory Network",
+            "Optimal Energy",
+            "Energy Usage",
+            "Long Short-term Memory Network",
+            "Short-term Memory Network",
+            "Long Short-term Memory Model",
+            "Peak Demand",
+            "Off-peak",
+            "User Requests",
+            "Energy Prediction",
+            "Hybrid Framework",
+            "Historical Weather",
+            "User Preferences",
+            "Energy Management System",
+            "Training Time",
+            "Mean Square Error Loss",
+            "Weather Information",
+            "Forecast Data",
+            "End Of The Day",
+            "End Of Each Day",
+            "Peak Hours",
+            "Recommendations For Action",
+            "Natural Language"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-7559-5",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-7558-8",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/IPDPS65963.2026.00100",
+      "title": "PowerMorph: Shaping LLM Training for Data Center Demand Response",
+      "publisher": "IEEE",
+      "isbn": "979-8-3195-0603-0",
+      "issn": "1530-2075",
+      "rank": 2,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Clemson University, Clemson, South Carolina",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088875242",
+            "id": 37088875242,
+            "full_name": "Boqiang Li",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Clemson University, Clemson, South Carolina"
+              ]
+            }
+          },
+          {
+            "affiliation": "Pacific Northwest National Laboratory, Richland, Washington",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089198769",
+            "id": 37089198769,
+            "full_name": "Luanzheng Guo",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Pacific Northwest National Laboratory, Richland, Washington"
+              ]
+            }
+          },
+          {
+            "affiliation": "Pacific Northwest National Laboratory, Richland, Washington",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088580967",
+            "id": 37088580967,
+            "full_name": "Buxin She",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Pacific Northwest National Laboratory, Richland, Washington"
+              ]
+            }
+          },
+          {
+            "affiliation": "Pacific Northwest National Laboratory, Richland, Washington",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085671581",
+            "id": 37085671581,
+            "full_name": "Nathan R. Tallent",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Pacific Northwest National Laboratory, Richland, Washington"
+              ]
+            }
+          },
+          {
+            "affiliation": "Pacific Northwest National Laboratory, Richland, Washington",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37300863200",
+            "id": 37300863200,
+            "full_name": "Veronica Adetola",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Pacific Northwest National Laboratory, Richland, Washington"
+              ]
+            }
+          },
+          {
+            "affiliation": "Clemson University, Clemson, South Carolina",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37281837400",
+            "id": 37281837400,
+            "full_name": "Rong Ge",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Clemson University, Clemson, South Carolina"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The rapid growth of artificial intelligence (AI) is driving significant power demand and introducing challenges for the secure operation of power grids. As a result, data centers are increasingly expected to act as active grid participants with obligations to provide demand response capabilities. This has created a need for AI training jobs to adjust their power consumption dynamically based on specific energy requirements. Existing methods are ad hoc, relying heavily on profiling, lacking effective memory optimization and adaptability, and failing to track reference power efficiently. We present PowerMorph, a solution designed to optimize hardware resources and AI training processes to efficiently manage energy consumption during operations. PowerMorph predicts power usage and performance through lightweight selective profiling and interpolation. It makes progressively better decisions, adapts to changing conditions during runtime, and reduces cold starts by analyzing historical data. PowerMorph offers an effective and reliable tracking approach to power demand response curves, ensuring higher throughput while preserving training accuracy. Evaluations on multiple large language models (LLMs), various GPU types, and across varying reference power curves demonstrate that PowerMorph maintains a low tracking error of just 1.8%, achieves up to 197.9% higher throughput, and reduces cold starts by 82.5%, without compromising training accuracy.",
+      "article_number": "11575428",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11575428",
+      "html_url": "https://ieeexplore.ieee.org/document/11575428/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11575428/",
+      "publication_title": "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+      "conference_location": "New Orleans, LA, USA",
+      "conference_dates": "25-29 May 2026",
+      "publication_number": 11575315,
+      "is_number": 11575316,
+      "publication_year": 2026,
+      "publication_date": "25-29 May 2026",
+      "start_page": "1204",
+      "end_page": "1218",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260630",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Graphics processing units",
+            "Information rates",
+            "Modeling",
+            "Throughput",
+            "Training",
+            "Data centers",
+            "Printing",
+            "Memory",
+            "Tracking",
+            "Timing"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Data center demand response",
+            "Large language model (LLM) training",
+            "Online adaptive control"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Data Center",
+            "Large Language Models",
+            "High Throughput",
+            "Power Consumption",
+            "Power Efficiency",
+            "Tracking Error",
+            "Power Demand",
+            "Electricity Demand",
+            "Selectivity Profile",
+            "Hardware Resources",
+            "Power Reference",
+            "Cold Start",
+            "Artificial Intelligence Training",
+            "Alternative Models",
+            "Surrogate Model",
+            "Sequence Length",
+            "Batch Size",
+            "Online Learning",
+            "Supercapacitors",
+            "Trainable Parameters",
+            "Minimum Information",
+            "Mean Absolute Percentage Error",
+            "MAPE",
+            "Communication Overhead",
+            "Parallel Strategy",
+            "Analogous Strategy",
+            "Parallel Scheme",
+            "Power Tracking",
+            "GPU Memory",
+            "Low Overhead",
+            "Power Constraint",
+            "Training Configurations",
+            "Network Throughput",
+            "Maximum Throughput",
+            "Channel Utilization",
+            "Powerful GPU",
+            "Stable Convergence"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3195-0603-0",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3195-0602-3",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/TEVC.2026.3708317",
+      "title": "LLM-Enhanced Accumulated Learning Prediction for Evolutionary Dynamic Multiobjective Optimization",
+      "publisher": "IEEE",
+      "issue": "99",
+      "issn": "1941-0026",
+      "rank": 3,
+      "volume": "PP",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Artificial Intelligence, Shenzhen University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085648860",
+            "id": 37085648860,
+            "full_name": "Qingling Zhu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Artificial Intelligence, Shenzhen University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Computer Science and Software Engineering, Shenzhen University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088953284",
+            "id": 37088953284,
+            "full_name": "Jiahao Fu",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Computer Science and Software Engineering, Shenzhen University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Artificial Intelligence, Shenzhen Technology University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/207310620234953",
+            "id": 207310620234953,
+            "full_name": "Junchuang Cai",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Artificial Intelligence, Shenzhen Technology University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science, City University of Hong Kong, Hong Kong, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085634169",
+            "id": 37085634169,
+            "full_name": "Ka-Chun Wong",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, City University of Hong Kong, Hong Kong, China",
+                "Shenzhen Research Institute, City University of Hong Kong, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "College of Computer Science and Software Engineering, Shenzhen University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37065491800",
+            "id": 37065491800,
+            "full_name": "Qiuzhen Lin",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "College of Computer Science and Software Engineering, Shenzhen University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Artificial Intelligence, Shenzhen University, Shenzhen, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/38150614500",
+            "id": 38150614500,
+            "full_name": "Jianqiang Li",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Artificial Intelligence, Shenzhen University, Shenzhen, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University, Hong Kong, SAR, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37334471700",
+            "id": 37334471700,
+            "full_name": "Kay Chen Tan",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University, Hong Kong, SAR, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Early Access Articles",
+      "abstract": "PPrediction-based dynamic multiobjective evolutionary algorithms (DMOEAs) often fail to fully exploit comprehensive historical information when solving dynamic multiobjective optimization problems (DMOPs). To alleviate this challenge, this paper proposes a DMOEA with a large language model (LLM)-enhanced accumulated learning prediction for addressing DMOPs. Specifically, a bidirectional long short-term memory (BiLSTM) network is trained online using approximated Paretooptimal solutions from all previously encountered environments, enabling it to effectively capture the problem’s dynamics and maintain a favorable trade-off between convergence and diversity. Moreover, as a novel contribution to this field, an LLM is used to refine the BiLSTM model by generating high-quality solutions as enhanced training data, thereby substantially reducing prediction error and enhancing robustness. Comprehensive empirical studies have been conducted on 14 commonly used benchmark DMOPs and a real-world problem, which demonstrate the superior performance of the proposed algorithm over five competitive DMOEAs.",
+      "article_number": "11586093",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11586093",
+      "html_url": "https://ieeexplore.ieee.org/document/11586093/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11586093/",
+      "publication_title": "IEEE Transactions on Evolutionary Computation",
+      "publication_number": 4235,
+      "is_number": 4358751,
+      "publication_year": 2026,
+      "start_page": "1",
+      "end_page": "1",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260629",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Large language models",
+            "Bidirectional long short term memory",
+            "Optimization",
+            "Algorithms",
+            "Timing",
+            "Educational institutions",
+            "Learning (artificial intelligence)",
+            "Evolutionary computation",
+            "Training"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Dynamic multiobjective optimization",
+            "evolutionary algorithms",
+            "bidirectional long short-term memory neural network",
+            "large language model"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Multi-objective Optimization",
+            "Multi-objective Problem",
+            "Dynamic Optimization",
+            "Dynamic Multi-objective Optimization",
+            "Training Data",
+            "Short-term Memory",
+            "Immediate Memory",
+            "Long Short-term Memory",
+            "LSTM",
+            "Historical Information",
+            "Real-world Problems",
+            "Pareto Optimal",
+            "Long Short-term Memory Network",
+            "Dynamic Problem",
+            "Bidirectional Long Short-term Memory",
+            "Bidirectional LSTM",
+            "Pareto Optimal Solutions",
+            "High-quality Solutions",
+            "Dynamic Optimization Problems",
+            "Environmental Changes",
+            "Centroid",
+            "Recurrent Neural Network",
+            "Systematic Bias",
+            "Transfer Learning",
+            "Environmental History",
+            "Ecological History",
+            "Prediction Bias",
+            "Biased Predictions",
+            "Long-range Dependencies",
+            "Multiple Environments",
+            "Support Vector Regression",
+            "Dynamic Setting",
+            "Hierarchical Clustering Method",
+            "Linear Problem",
+            "Linear Programming Problem",
+            "Decision Variables",
+            "Artificial Intelligence Training"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/INFOCOM59046.2026.11571461",
+      "title": "RAP: Resource-Adaptive Planning for Efficient LLM Tool Calling in Edge Computing",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-4962-6",
+      "issn": "0743-166X",
+      "rank": 4,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Faculty of Arts and Sciences, Beijing Normal University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/737113030533962",
+            "id": 737113030533962,
+            "full_name": "Tao Liu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Faculty of Arts and Sciences, Beijing Normal University, China",
+                "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086562370",
+            "id": 37086562370,
+            "full_name": "Zhiqing Tang",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086934146",
+            "id": 37086934146,
+            "full_name": "Jianxiong Guo",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+                "Guangdong Key Lab of AI and Multi-Modal Data Processing, Beijing Normal-Hong Kong Baptist University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Computer Science, Shanghai Jiao Tong University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088374523",
+            "id": 37088374523,
+            "full_name": "Jiong Lou",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Computer Science, Shanghai Jiao Tong University, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085490946",
+            "id": 37085490946,
+            "full_name": "Tian Wang",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+                "College of Computer and Data Science, Fuzhou University, China",
+                "Computer Science and Mathematics, Fujian University of Technology, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37266130300",
+            "id": 37266130300,
+            "full_name": "Weijia Jia",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Institute of Artificial Intelligence and Future Networks, Beijing Normal University, China",
+                "Guangdong Key Lab of AI and Multi-Modal Data Processing, Beijing Normal-Hong Kong Baptist University, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "As Large Language Model (LLM)-based agents increasingly run complex multimodal tasks on resource-constrained edge devices, existing frameworks fall short. Built for the cloud, these systems focus on discrete tool selection but neglect resource-aware parameter configuration, making them poorly suited to edge environments. To address these issues, this paper proposes Resource-Adaptive Planning (RAP) for efficient LLM tool calling in resource-constrained edge computing. Specifically: 1) RAP uses a retrieval-augmented adaptive scheduler to distribute workloads between edge-based Small Language Models (SLMs) and cloud-based LLMs based on estimated task complexity under resource constraints. 2) A model-based control mechanism decouples task planning from parameter optimization with reinforcement learning and a learnable environment model that simulates file-state changes to optimize execution parameters and reduce resource consumption during planning. 3) Experimental results show that RAP significantly outperforms existing baselines, achieving a 63% task success rate while reducing inference latency and peak memory usage by up to 62% and 29%, respectively.",
+      "article_number": "11571461",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11571461",
+      "html_url": "https://ieeexplore.ieee.org/document/11571461/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11571461/",
+      "publication_title": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+      "conference_location": "Tokyo, Japan",
+      "conference_dates": "18-21 May 2026",
+      "publication_number": 11571071,
+      "is_number": 11571169,
+      "publication_year": 2026,
+      "publication_date": "18-21 May 2026",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260629",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Tools",
+            "Planning",
+            "Large language models",
+            "Printing",
+            "Training",
+            "Memory",
+            "Optimization",
+            "Equations",
+            "Strontium"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Model Agents",
+            "Reinforcement Learning",
+            "Resource-Aware Scheduling",
+            "Multimedia Processing"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Edge Computing",
+            "Edge Cloud",
+            "Large Language Models",
+            "Optimal Parameters",
+            "Resource Constraints",
+            "Budget Constraints",
+            "Resource Consumption",
+            "Language Model",
+            "Memory Usage",
+            "Edge Devices",
+            "Task Planning",
+            "Reduce Resource Consumption",
+            "Benchmark",
+            "Training Set",
+            "Service Quality",
+            "K-nearest Neighbor",
+            "Fluidic",
+            "Multilayer Perceptron",
+            "Resource Efficiency",
+            "Actor Network",
+            "Actor-network Theory",
+            "Reward Function",
+            "Deep Reinforcement Learning",
+            "Continuous Parameters",
+            "Large Penalty",
+            "Deterministic Policy Gradient"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-4962-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-4961-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2026.3689947",
+      "title": "An On-Site Equipment Defect Recognition Method for UAV Inspection Scenarios via Spatial Reasoning Learning With Vision–Language Multimodal Large Models",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 5,
+      "volume": "14",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Fuzhou University, Fuzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/389072322666343",
+            "id": 389072322666343,
+            "full_name": "Fengyuan Dong",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Fuzhou University, Fuzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Information and Communication Branch, State Grid Hebei Electric Power Company Ltd., Shijiazhuang, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086267086",
+            "id": 37086267086,
+            "full_name": "Xing Xu",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Information and Communication Branch, State Grid Hebei Electric Power Company Ltd., Shijiazhuang, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Beijing Institute of Technology, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085736646",
+            "id": 37085736646,
+            "full_name": "Zeyang Dou",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Beijing Institute of Technology, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "OPEN_ACCESS",
+      "content_type": "Journals",
+      "abstract": "Power drone inspections have become a crucial method for monitoring the status of transmission lines and substation equipment. However, in real-world scenarios, defect targets typically exhibit features such as small scale, weak texture, and complex backgrounds with strong interference. The traditional model struggles to meet the demand for rapid on-site closed-loop resolution. To address these challenges, this paper proposes an on-site defect identification method for drone inspection scenarios based on spatial reasoning learning from multimodal image-text large models. First, we develop a defect image generation method using Variational Autoencoders (VAE) and conditional score matching diffusion. By embedding semantic information into the feature layer of the U-Net decoder via the multi-layer Spatial Adaptive Normalization and Decomposition (SPADE) operator, we precisely control the generation location and morphology of defect features. Second, at the model level, a visual encoder based on Swin Transformer is constructed. A hierarchical window attention mechanism extracts multi-scale defect and scene topological features. A text encoder is built using the Next Token Prediction pre-training method and a large language model, combined with domain-specific fine-tuning using power system terminology databases and equipment ledger knowledge. At the cross-modal fusion layer, a contrastive learning mechanism aligns defect images and textual descriptions within a unified vector space. For spatial reasoning learning, we construct visually-linguistically intertwined regional inference samples. Region-level instruction fine-tuning drives the model to perform dynamic region cropping and multi-step reasoning analysis. Regarding on-site deployment, we combine CPU-NPU heterogeneous co-acceleration with memory optimization strategies. Through dynamic task allocation and data prefetching techniques, we achieve low-power, low-latency real-time edge inference. Experimental results demonstrate that our method delivers high-precision and high-efficiency defect detection in power inspection scenarios, effectively addressing complex backgrounds and resource-constrained field environments.",
+      "article_number": "11505867",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11505867",
+      "html_url": "https://ieeexplore.ieee.org/document/11505867/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11505867/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 11323511,
+      "publication_year": 2026,
+      "publication_date": "2026",
+      "start_page": "84787",
+      "end_page": "84796",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260504",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Attitude control",
+            "Central Processing Unit",
+            "Circuits and systems",
+            "Feedback",
+            "Filtering",
+            "Filters",
+            "Circuits",
+            "Oscillators",
+            "Anisotropic",
+            "Contacts"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Power equipment fault identification",
+            "multimodal large language model",
+            "contrastive learning",
+            "Swin Transformer"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Spatial Memory",
+            "Spatial Working Memory",
+            "Spatial Learning",
+            "Visuospatial",
+            "Visuospatial Attention",
+            "Multimodal Model",
+            "Inspection Scenarios",
+            "Small Scale",
+            "Precise Control",
+            "Transmission Line",
+            "Language Model",
+            "Textual Descriptions",
+            "Complex Background",
+            "Variational Autoencoder",
+            "Self-supervised Learning",
+            "Contrastive Learning",
+            "Fault Features",
+            "Fault Characteristics",
+            "Strong Interference",
+            "Power Equipment",
+            "Visual Encoding",
+            "Multi-step Analysis",
+            "Text Encoder",
+            "Convolutional Neural Network",
+            "Latent Variables",
+            "Fault Samples",
+            "Defective Samples",
+            "Visual Features",
+            "Visual Characteristics",
+            "Fréchet Inception Distance",
+            "Frechet Inception Distance",
+            "Diffusion Model",
+            "Forward Propagation",
+            "Generative Adversarial Networks",
+            "Adversarial Learning",
+            "Stochastic Differential Equations",
+            "Structural Guidance",
+            "Scarcity Of Samples",
+            "Latent Space",
+            "Embedding Space"
+          ]
+        }
+      },
+      "license": "CCBYNCND"
+    }
+  ],
+  "raw_meta": {
+    "total_records": 5,
+    "total_searched": 7355163
+  }
+}

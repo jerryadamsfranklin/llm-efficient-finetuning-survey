@@ -1,0 +1,1386 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "low-rank adaptation LoRA language model",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:42:59Z",
+  "total_results_reported": 16,
+  "returned": 16,
+  "returned_in_coverage_window": 16,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "6",
+      "@id": "143415",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "338/8556",
+              "text": "Hoang-Chau Luong"
+            },
+            {
+              "@pid": "169/7444",
+              "text": "Lingwei Chen"
+            }
+          ]
+        },
+        "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models.",
+        "venue": "ACL",
+        "pages": "34692-34705",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/acl/LuongC26",
+        "ee": "https://aclanthology.org/2026.findings-acl.1732/",
+        "url": "https://dblp.org/rec/conf/acl/LuongC26"
+      },
+      "url": "URL#143415"
+    },
+    {
+      "@score": "6",
+      "@id": "190557",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "338/8556",
+              "text": "Hoang-Chau Luong"
+            },
+            {
+              "@pid": "169/7444",
+              "text": "Lingwei Chen"
+            }
+          ]
+        },
+        "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2601.06305",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2601-06305",
+        "doi": "10.48550/ARXIV.2601.06305",
+        "ee": "https://doi.org/10.48550/arXiv.2601.06305",
+        "url": "https://dblp.org/rec/journals/corr/abs-2601-06305"
+      },
+      "url": "URL#190557"
+    },
+    {
+      "@score": "6",
+      "@id": "198238",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "306/3260",
+              "text": "Moule Lin"
+            },
+            {
+              "@pid": "379/6113",
+              "text": "Shuhao Guan"
+            },
+            {
+              "@pid": "169/0621",
+              "text": "Andrea Patane"
+            },
+            {
+              "@pid": "g/DavidGregg",
+              "text": "David Gregg"
+            },
+            {
+              "@pid": "60/2897",
+              "text": "Goetz Botterweck"
+            }
+          ]
+        },
+        "title": "Bayesian-LoRA: Probabilistic Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2601.21003",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2601-21003",
+        "doi": "10.48550/ARXIV.2601.21003",
+        "ee": "https://doi.org/10.48550/arXiv.2601.21003",
+        "url": "https://dblp.org/rec/journals/corr/abs-2601-21003"
+      },
+      "url": "URL#198238"
+    },
+    {
+      "@score": "6",
+      "@id": "267327",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "211/0023",
+              "text": "Elliott Delaye"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA for Aggressive Quantization: Reclaiming Accuracy in 2-Bit Language Models via Low-Rank Adaptation with Knowledge Distillation on Synthetic Data.",
+        "venue": "CoRR",
+        "volume": "abs/2606.04238",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2606-04238",
+        "doi": "10.48550/ARXIV.2606.04238",
+        "ee": "https://doi.org/10.48550/arXiv.2606.04238",
+        "url": "https://dblp.org/rec/journals/corr/abs-2606-04238"
+      },
+      "url": "URL#267327"
+    },
+    {
+      "@score": "6",
+      "@id": "300114",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "75/639",
+              "text": "Hong Ye"
+            },
+            {
+              "@pid": "409/4102",
+              "text": "Xialin Xie"
+            },
+            {
+              "@pid": "409/4513",
+              "text": "Fenlong Xie"
+            },
+            {
+              "@pid": "179/2275",
+              "text": "Jun Zuo"
+            },
+            {
+              "@pid": "409/5162",
+              "text": "Chunyan Bu"
+            }
+          ]
+        },
+        "title": "LoRA-Adv: Boosting Text Classification in Large Language Models Through Adversarial Low-Rank Adaptations.",
+        "venue": "IEEE Access",
+        "volume": "13",
+        "pages": "103234-103244",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/YeXXZB25",
+        "doi": "10.1109/ACCESS.2025.3579539",
+        "ee": "https://doi.org/10.1109/ACCESS.2025.3579539",
+        "url": "https://dblp.org/rec/journals/access/YeXXZB25"
+      },
+      "url": "URL#300114"
+    },
+    {
+      "@score": "6",
+      "@id": "578925",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA: Data-Free Accuracy Recovery of Degraded Language Models via Low-Rank Adaptation.",
+        "venue": "EMNLP",
+        "pages": "2377-2386",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/DasPS25",
+        "doi": "10.18653/V1/2025.EMNLP-INDUSTRY.164",
+        "ee": "https://doi.org/10.18653/v1/2025.emnlp-industry.164",
+        "url": "https://dblp.org/rec/conf/emnlp/DasPS25"
+      },
+      "url": "URL#578925"
+    },
+    {
+      "@score": "6",
+      "@id": "618112",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "13/4682",
+              "text": "Ping Zhang"
+            },
+            {
+              "@pid": "412/2852",
+              "text": "Haocun Li"
+            },
+            {
+              "@pid": "412/1930",
+              "text": "Kaiyan Song"
+            },
+            {
+              "@pid": "54/8885",
+              "text": "Haizheng Yu"
+            },
+            {
+              "@pid": "66/8049",
+              "text": "Hong Bian"
+            }
+          ]
+        },
+        "title": "LoRA-CLIP: Low-Rank Adaptation of Text Prompts for Vision-Language Models.",
+        "venue": "ICIC",
+        "pages": "479-490",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icic/ZhangLSYB25",
+        "doi": "10.1007/978-981-96-9794-6_40",
+        "ee": "https://doi.org/10.1007/978-981-96-9794-6_40",
+        "url": "https://dblp.org/rec/conf/icic/ZhangLSYB25"
+      },
+      "url": "URL#618112"
+    },
+    {
+      "@score": "6",
+      "@id": "746277",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "271/8314",
+              "text": "Pengwei Tang"
+            },
+            {
+              "@pid": "29/4867-18",
+              "text": "Yong Liu 0018"
+            },
+            {
+              "@pid": "13/11197",
+              "text": "Dongjie Zhang"
+            },
+            {
+              "@pid": "04/55",
+              "text": "Xing Wu"
+            },
+            {
+              "@pid": "29/11094",
+              "text": "Debing Zhang"
+            }
+          ]
+        },
+        "title": "LoRA-Null: Low-Rank Adaptation via Null Space for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2503.02659",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-02659",
+        "doi": "10.48550/ARXIV.2503.02659",
+        "ee": "https://doi.org/10.48550/arXiv.2503.02659",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-02659"
+      },
+      "url": "URL#746277"
+    },
+    {
+      "@score": "6",
+      "@id": "778844",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "386/3604",
+              "text": "Amir Hossein Rahmati"
+            },
+            {
+              "@pid": "312/7589",
+              "text": "Sanket R. Jantre"
+            },
+            {
+              "@pid": "19/949",
+              "text": "Weifeng Zhang"
+            },
+            {
+              "@pid": "66/4822",
+              "text": "Yucheng Wang"
+            },
+            {
+              "@pid": "14/1887",
+              "text": "Byung-Jun Yoon"
+            },
+            {
+              "@pid": "66/10376",
+              "text": "Nathan M. Urban"
+            },
+            {
+              "@pid": "62/4504",
+              "text": "Xiaoning Qian"
+            }
+          ]
+        },
+        "title": "C-LoRA: Contextual Low-Rank Adaptation for Uncertainty Estimation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.17773",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-17773",
+        "doi": "10.48550/ARXIV.2505.17773",
+        "ee": "https://doi.org/10.48550/arXiv.2505.17773",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-17773"
+      },
+      "url": "URL#778844"
+    },
+    {
+      "@score": "6",
+      "@id": "839613",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA: Data-Free Accuracy Recovery of Degraded Language Models via Low-Rank Adaptation.",
+        "venue": "CoRR",
+        "volume": "abs/2510.08600",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-08600",
+        "doi": "10.48550/ARXIV.2510.08600",
+        "ee": "https://doi.org/10.48550/arXiv.2510.08600",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-08600"
+      },
+      "url": "URL#839613"
+    },
+    {
+      "@score": "6",
+      "@id": "843696",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "372/7631",
+              "text": "Zhuxuanzi Wang"
+            },
+            {
+              "@pid": "420/1547",
+              "text": "Mingqiao Mo"
+            },
+            {
+              "@pid": "83/6642-3",
+              "text": "Xi Xiao 0003"
+            },
+            {
+              "@pid": "10/2639-20",
+              "text": "Chen Liu 0020"
+            },
+            {
+              "@pid": "340/1580",
+              "text": "Chenrui Ma"
+            },
+            {
+              "@pid": "351/0497",
+              "text": "Yunbei Zhang"
+            },
+            {
+              "@pid": "49/67-4",
+              "text": "Xiao Wang 0004"
+            },
+            {
+              "@pid": "74/2457",
+              "text": "Smita Krishnaswamy"
+            },
+            {
+              "@pid": "04/2814-4",
+              "text": "Tianyang Wang 0004"
+            }
+          ]
+        },
+        "title": "CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2510.15962",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-15962",
+        "doi": "10.48550/ARXIV.2510.15962",
+        "ee": "https://doi.org/10.48550/arXiv.2510.15962",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-15962"
+      },
+      "url": "URL#843696"
+    },
+    {
+      "@score": "6",
+      "@id": "1227454",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/3725-2",
+              "text": "Yuhui Xu 0002"
+            },
+            {
+              "@pid": "123/2869",
+              "text": "Lingxi Xie"
+            },
+            {
+              "@pid": "190/5278",
+              "text": "Xiaotao Gu"
+            },
+            {
+              "@pid": "24/1518-33",
+              "text": "Xin Chen 0033"
+            },
+            {
+              "@pid": "79/5668",
+              "text": "Heng Chang"
+            },
+            {
+              "@pid": "133/6550",
+              "text": "Hengheng Zhang"
+            },
+            {
+              "@pid": "228/8212",
+              "text": "Zhengsu Chen"
+            },
+            {
+              "@pid": "167/1261-8",
+              "text": "Xiaopeng Zhang 0008"
+            },
+            {
+              "@pid": "78/1467-1",
+              "text": "Qi Tian 0001"
+            }
+          ]
+        },
+        "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models.",
+        "venue": "ICLR",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/XuXG0CZC0024",
+        "ee": "https://openreview.net/forum?id=WvFoJccpo8",
+        "url": "https://dblp.org/rec/conf/iclr/XuXG0CZC0024"
+      },
+      "url": "URL#1227454"
+    },
+    {
+      "@score": "6",
+      "@id": "1951514",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "303/0083",
+              "text": "Longteng Zhang"
+            },
+            {
+              "@pid": "37/1629-59",
+              "text": "Lin Zhang 0059"
+            },
+            {
+              "@pid": "79/8378",
+              "text": "Shaohuai Shi"
+            },
+            {
+              "@pid": "24/2536",
+              "text": "Xiaowen Chu 0001"
+            },
+            {
+              "@pid": "50/3402-1",
+              "text": "Bo Li 0001"
+            }
+          ]
+        },
+        "title": "LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning.",
+        "venue": "CoRR",
+        "volume": "abs/2308.03303",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2308-03303",
+        "doi": "10.48550/ARXIV.2308.03303",
+        "ee": "https://doi.org/10.48550/arXiv.2308.03303",
+        "url": "https://dblp.org/rec/journals/corr/abs-2308-03303"
+      },
+      "url": "URL#1951514"
+    },
+    {
+      "@score": "6",
+      "@id": "1964935",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/3725-2",
+              "text": "Yuhui Xu 0002"
+            },
+            {
+              "@pid": "123/2869",
+              "text": "Lingxi Xie"
+            },
+            {
+              "@pid": "190/5278",
+              "text": "Xiaotao Gu"
+            },
+            {
+              "@pid": "24/1518-33",
+              "text": "Xin Chen 0033"
+            },
+            {
+              "@pid": "79/5668",
+              "text": "Heng Chang"
+            },
+            {
+              "@pid": "133/6550",
+              "text": "Hengheng Zhang"
+            },
+            {
+              "@pid": "228/8212",
+              "text": "Zhengsu Chen"
+            },
+            {
+              "@pid": "167/1261-8",
+              "text": "Xiaopeng Zhang 0008"
+            },
+            {
+              "@pid": "78/1467-1",
+              "text": "Qi Tian 0001"
+            }
+          ]
+        },
+        "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2309.14717",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2309-14717",
+        "doi": "10.48550/ARXIV.2309.14717",
+        "ee": "https://doi.org/10.48550/arXiv.2309.14717",
+        "url": "https://dblp.org/rec/journals/corr/abs-2309-14717"
+      },
+      "url": "URL#1964935"
+    },
+    {
+      "@score": "6",
+      "@id": "2306440",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "295/8436",
+              "text": "Edward J. Hu"
+            },
+            {
+              "@pid": "37/9376",
+              "text": "Yelong Shen"
+            },
+            {
+              "@pid": "241/6270",
+              "text": "Phillip Wallis"
+            },
+            {
+              "@pid": "10/7536",
+              "text": "Zeyuan Allen-Zhu"
+            },
+            {
+              "@pid": "73/3628",
+              "text": "Yuanzhi Li"
+            },
+            {
+              "@pid": "295/8592",
+              "text": "Shean Wang"
+            },
+            {
+              "@pid": "49/3800",
+              "text": "Lu Wang"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            }
+          ]
+        },
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models.",
+        "venue": "ICLR",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/HuSWALWWC22",
+        "ee": "https://openreview.net/forum?id=nZeVKeeFYf9",
+        "url": "https://dblp.org/rec/conf/iclr/HuSWALWWC22"
+      },
+      "url": "URL#2306440"
+    },
+    {
+      "@score": "6",
+      "@id": "2910617",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "295/8436",
+              "text": "Edward J. Hu"
+            },
+            {
+              "@pid": "37/9376",
+              "text": "Yelong Shen"
+            },
+            {
+              "@pid": "241/6270",
+              "text": "Phillip Wallis"
+            },
+            {
+              "@pid": "10/7536",
+              "text": "Zeyuan Allen-Zhu"
+            },
+            {
+              "@pid": "73/3628",
+              "text": "Yuanzhi Li"
+            },
+            {
+              "@pid": "295/8592",
+              "text": "Shean Wang"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            }
+          ]
+        },
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2106.09685",
+        "year": "2021",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2106-09685",
+        "ee": "https://arxiv.org/abs/2106.09685",
+        "url": "https://dblp.org/rec/journals/corr/abs-2106-09685"
+      },
+      "url": "URL#2910617"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "6",
+      "@id": "143415",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "338/8556",
+              "text": "Hoang-Chau Luong"
+            },
+            {
+              "@pid": "169/7444",
+              "text": "Lingwei Chen"
+            }
+          ]
+        },
+        "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models.",
+        "venue": "ACL",
+        "pages": "34692-34705",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/acl/LuongC26",
+        "ee": "https://aclanthology.org/2026.findings-acl.1732/",
+        "url": "https://dblp.org/rec/conf/acl/LuongC26"
+      },
+      "url": "URL#143415"
+    },
+    {
+      "@score": "6",
+      "@id": "190557",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "338/8556",
+              "text": "Hoang-Chau Luong"
+            },
+            {
+              "@pid": "169/7444",
+              "text": "Lingwei Chen"
+            }
+          ]
+        },
+        "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2601.06305",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2601-06305",
+        "doi": "10.48550/ARXIV.2601.06305",
+        "ee": "https://doi.org/10.48550/arXiv.2601.06305",
+        "url": "https://dblp.org/rec/journals/corr/abs-2601-06305"
+      },
+      "url": "URL#190557"
+    },
+    {
+      "@score": "6",
+      "@id": "198238",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "306/3260",
+              "text": "Moule Lin"
+            },
+            {
+              "@pid": "379/6113",
+              "text": "Shuhao Guan"
+            },
+            {
+              "@pid": "169/0621",
+              "text": "Andrea Patane"
+            },
+            {
+              "@pid": "g/DavidGregg",
+              "text": "David Gregg"
+            },
+            {
+              "@pid": "60/2897",
+              "text": "Goetz Botterweck"
+            }
+          ]
+        },
+        "title": "Bayesian-LoRA: Probabilistic Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2601.21003",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2601-21003",
+        "doi": "10.48550/ARXIV.2601.21003",
+        "ee": "https://doi.org/10.48550/arXiv.2601.21003",
+        "url": "https://dblp.org/rec/journals/corr/abs-2601-21003"
+      },
+      "url": "URL#198238"
+    },
+    {
+      "@score": "6",
+      "@id": "267327",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "211/0023",
+              "text": "Elliott Delaye"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA for Aggressive Quantization: Reclaiming Accuracy in 2-Bit Language Models via Low-Rank Adaptation with Knowledge Distillation on Synthetic Data.",
+        "venue": "CoRR",
+        "volume": "abs/2606.04238",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2606-04238",
+        "doi": "10.48550/ARXIV.2606.04238",
+        "ee": "https://doi.org/10.48550/arXiv.2606.04238",
+        "url": "https://dblp.org/rec/journals/corr/abs-2606-04238"
+      },
+      "url": "URL#267327"
+    },
+    {
+      "@score": "6",
+      "@id": "300114",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "75/639",
+              "text": "Hong Ye"
+            },
+            {
+              "@pid": "409/4102",
+              "text": "Xialin Xie"
+            },
+            {
+              "@pid": "409/4513",
+              "text": "Fenlong Xie"
+            },
+            {
+              "@pid": "179/2275",
+              "text": "Jun Zuo"
+            },
+            {
+              "@pid": "409/5162",
+              "text": "Chunyan Bu"
+            }
+          ]
+        },
+        "title": "LoRA-Adv: Boosting Text Classification in Large Language Models Through Adversarial Low-Rank Adaptations.",
+        "venue": "IEEE Access",
+        "volume": "13",
+        "pages": "103234-103244",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/YeXXZB25",
+        "doi": "10.1109/ACCESS.2025.3579539",
+        "ee": "https://doi.org/10.1109/ACCESS.2025.3579539",
+        "url": "https://dblp.org/rec/journals/access/YeXXZB25"
+      },
+      "url": "URL#300114"
+    },
+    {
+      "@score": "6",
+      "@id": "578925",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA: Data-Free Accuracy Recovery of Degraded Language Models via Low-Rank Adaptation.",
+        "venue": "EMNLP",
+        "pages": "2377-2386",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/DasPS25",
+        "doi": "10.18653/V1/2025.EMNLP-INDUSTRY.164",
+        "ee": "https://doi.org/10.18653/v1/2025.emnlp-industry.164",
+        "url": "https://dblp.org/rec/conf/emnlp/DasPS25"
+      },
+      "url": "URL#578925"
+    },
+    {
+      "@score": "6",
+      "@id": "618112",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "13/4682",
+              "text": "Ping Zhang"
+            },
+            {
+              "@pid": "412/2852",
+              "text": "Haocun Li"
+            },
+            {
+              "@pid": "412/1930",
+              "text": "Kaiyan Song"
+            },
+            {
+              "@pid": "54/8885",
+              "text": "Haizheng Yu"
+            },
+            {
+              "@pid": "66/8049",
+              "text": "Hong Bian"
+            }
+          ]
+        },
+        "title": "LoRA-CLIP: Low-Rank Adaptation of Text Prompts for Vision-Language Models.",
+        "venue": "ICIC",
+        "pages": "479-490",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icic/ZhangLSYB25",
+        "doi": "10.1007/978-981-96-9794-6_40",
+        "ee": "https://doi.org/10.1007/978-981-96-9794-6_40",
+        "url": "https://dblp.org/rec/conf/icic/ZhangLSYB25"
+      },
+      "url": "URL#618112"
+    },
+    {
+      "@score": "6",
+      "@id": "746277",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "271/8314",
+              "text": "Pengwei Tang"
+            },
+            {
+              "@pid": "29/4867-18",
+              "text": "Yong Liu 0018"
+            },
+            {
+              "@pid": "13/11197",
+              "text": "Dongjie Zhang"
+            },
+            {
+              "@pid": "04/55",
+              "text": "Xing Wu"
+            },
+            {
+              "@pid": "29/11094",
+              "text": "Debing Zhang"
+            }
+          ]
+        },
+        "title": "LoRA-Null: Low-Rank Adaptation via Null Space for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2503.02659",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-02659",
+        "doi": "10.48550/ARXIV.2503.02659",
+        "ee": "https://doi.org/10.48550/arXiv.2503.02659",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-02659"
+      },
+      "url": "URL#746277"
+    },
+    {
+      "@score": "6",
+      "@id": "778844",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "386/3604",
+              "text": "Amir Hossein Rahmati"
+            },
+            {
+              "@pid": "312/7589",
+              "text": "Sanket R. Jantre"
+            },
+            {
+              "@pid": "19/949",
+              "text": "Weifeng Zhang"
+            },
+            {
+              "@pid": "66/4822",
+              "text": "Yucheng Wang"
+            },
+            {
+              "@pid": "14/1887",
+              "text": "Byung-Jun Yoon"
+            },
+            {
+              "@pid": "66/10376",
+              "text": "Nathan M. Urban"
+            },
+            {
+              "@pid": "62/4504",
+              "text": "Xiaoning Qian"
+            }
+          ]
+        },
+        "title": "C-LoRA: Contextual Low-Rank Adaptation for Uncertainty Estimation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.17773",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-17773",
+        "doi": "10.48550/ARXIV.2505.17773",
+        "ee": "https://doi.org/10.48550/arXiv.2505.17773",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-17773"
+      },
+      "url": "URL#778844"
+    },
+    {
+      "@score": "6",
+      "@id": "839613",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "234/1603",
+              "text": "Devleena Das"
+            },
+            {
+              "@pid": "263/0787",
+              "text": "Rajeev Patwari"
+            },
+            {
+              "@pid": "19/4292",
+              "text": "Ashish Sirasao"
+            }
+          ]
+        },
+        "title": "Recover-LoRA: Data-Free Accuracy Recovery of Degraded Language Models via Low-Rank Adaptation.",
+        "venue": "CoRR",
+        "volume": "abs/2510.08600",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-08600",
+        "doi": "10.48550/ARXIV.2510.08600",
+        "ee": "https://doi.org/10.48550/arXiv.2510.08600",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-08600"
+      },
+      "url": "URL#839613"
+    },
+    {
+      "@score": "6",
+      "@id": "843696",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "372/7631",
+              "text": "Zhuxuanzi Wang"
+            },
+            {
+              "@pid": "420/1547",
+              "text": "Mingqiao Mo"
+            },
+            {
+              "@pid": "83/6642-3",
+              "text": "Xi Xiao 0003"
+            },
+            {
+              "@pid": "10/2639-20",
+              "text": "Chen Liu 0020"
+            },
+            {
+              "@pid": "340/1580",
+              "text": "Chenrui Ma"
+            },
+            {
+              "@pid": "351/0497",
+              "text": "Yunbei Zhang"
+            },
+            {
+              "@pid": "49/67-4",
+              "text": "Xiao Wang 0004"
+            },
+            {
+              "@pid": "74/2457",
+              "text": "Smita Krishnaswamy"
+            },
+            {
+              "@pid": "04/2814-4",
+              "text": "Tianyang Wang 0004"
+            }
+          ]
+        },
+        "title": "CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2510.15962",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-15962",
+        "doi": "10.48550/ARXIV.2510.15962",
+        "ee": "https://doi.org/10.48550/arXiv.2510.15962",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-15962"
+      },
+      "url": "URL#843696"
+    },
+    {
+      "@score": "6",
+      "@id": "1227454",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/3725-2",
+              "text": "Yuhui Xu 0002"
+            },
+            {
+              "@pid": "123/2869",
+              "text": "Lingxi Xie"
+            },
+            {
+              "@pid": "190/5278",
+              "text": "Xiaotao Gu"
+            },
+            {
+              "@pid": "24/1518-33",
+              "text": "Xin Chen 0033"
+            },
+            {
+              "@pid": "79/5668",
+              "text": "Heng Chang"
+            },
+            {
+              "@pid": "133/6550",
+              "text": "Hengheng Zhang"
+            },
+            {
+              "@pid": "228/8212",
+              "text": "Zhengsu Chen"
+            },
+            {
+              "@pid": "167/1261-8",
+              "text": "Xiaopeng Zhang 0008"
+            },
+            {
+              "@pid": "78/1467-1",
+              "text": "Qi Tian 0001"
+            }
+          ]
+        },
+        "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models.",
+        "venue": "ICLR",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/XuXG0CZC0024",
+        "ee": "https://openreview.net/forum?id=WvFoJccpo8",
+        "url": "https://dblp.org/rec/conf/iclr/XuXG0CZC0024"
+      },
+      "url": "URL#1227454"
+    },
+    {
+      "@score": "6",
+      "@id": "1951514",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "303/0083",
+              "text": "Longteng Zhang"
+            },
+            {
+              "@pid": "37/1629-59",
+              "text": "Lin Zhang 0059"
+            },
+            {
+              "@pid": "79/8378",
+              "text": "Shaohuai Shi"
+            },
+            {
+              "@pid": "24/2536",
+              "text": "Xiaowen Chu 0001"
+            },
+            {
+              "@pid": "50/3402-1",
+              "text": "Bo Li 0001"
+            }
+          ]
+        },
+        "title": "LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning.",
+        "venue": "CoRR",
+        "volume": "abs/2308.03303",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2308-03303",
+        "doi": "10.48550/ARXIV.2308.03303",
+        "ee": "https://doi.org/10.48550/arXiv.2308.03303",
+        "url": "https://dblp.org/rec/journals/corr/abs-2308-03303"
+      },
+      "url": "URL#1951514"
+    },
+    {
+      "@score": "6",
+      "@id": "1964935",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/3725-2",
+              "text": "Yuhui Xu 0002"
+            },
+            {
+              "@pid": "123/2869",
+              "text": "Lingxi Xie"
+            },
+            {
+              "@pid": "190/5278",
+              "text": "Xiaotao Gu"
+            },
+            {
+              "@pid": "24/1518-33",
+              "text": "Xin Chen 0033"
+            },
+            {
+              "@pid": "79/5668",
+              "text": "Heng Chang"
+            },
+            {
+              "@pid": "133/6550",
+              "text": "Hengheng Zhang"
+            },
+            {
+              "@pid": "228/8212",
+              "text": "Zhengsu Chen"
+            },
+            {
+              "@pid": "167/1261-8",
+              "text": "Xiaopeng Zhang 0008"
+            },
+            {
+              "@pid": "78/1467-1",
+              "text": "Qi Tian 0001"
+            }
+          ]
+        },
+        "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2309.14717",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2309-14717",
+        "doi": "10.48550/ARXIV.2309.14717",
+        "ee": "https://doi.org/10.48550/arXiv.2309.14717",
+        "url": "https://dblp.org/rec/journals/corr/abs-2309-14717"
+      },
+      "url": "URL#1964935"
+    },
+    {
+      "@score": "6",
+      "@id": "2306440",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "295/8436",
+              "text": "Edward J. Hu"
+            },
+            {
+              "@pid": "37/9376",
+              "text": "Yelong Shen"
+            },
+            {
+              "@pid": "241/6270",
+              "text": "Phillip Wallis"
+            },
+            {
+              "@pid": "10/7536",
+              "text": "Zeyuan Allen-Zhu"
+            },
+            {
+              "@pid": "73/3628",
+              "text": "Yuanzhi Li"
+            },
+            {
+              "@pid": "295/8592",
+              "text": "Shean Wang"
+            },
+            {
+              "@pid": "49/3800",
+              "text": "Lu Wang"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            }
+          ]
+        },
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models.",
+        "venue": "ICLR",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/HuSWALWWC22",
+        "ee": "https://openreview.net/forum?id=nZeVKeeFYf9",
+        "url": "https://dblp.org/rec/conf/iclr/HuSWALWWC22"
+      },
+      "url": "URL#2306440"
+    },
+    {
+      "@score": "6",
+      "@id": "2910617",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "295/8436",
+              "text": "Edward J. Hu"
+            },
+            {
+              "@pid": "37/9376",
+              "text": "Yelong Shen"
+            },
+            {
+              "@pid": "241/6270",
+              "text": "Phillip Wallis"
+            },
+            {
+              "@pid": "10/7536",
+              "text": "Zeyuan Allen-Zhu"
+            },
+            {
+              "@pid": "73/3628",
+              "text": "Yuanzhi Li"
+            },
+            {
+              "@pid": "295/8592",
+              "text": "Shean Wang"
+            },
+            {
+              "@pid": "79/2536",
+              "text": "Weizhu Chen"
+            }
+          ]
+        },
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2106.09685",
+        "year": "2021",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2106-09685",
+        "ee": "https://arxiv.org/abs/2106.09685",
+        "url": "https://dblp.org/rec/journals/corr/abs-2106-09685"
+      },
+      "url": "URL#2910617"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=low-rank%20adaptation%20LoRA%20language%20model&h=50&format=json"
+}

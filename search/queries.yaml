@@ -1,10 +1,14 @@
 # Search queries for LLM efficient fine-tuning survey
 # Date range: 2019-01-01 to 2026-06-30
-# Protocol version: 1.0
-# Status: Locked — Phase 1; do not alter after Protocol v1.0 commit without a version bump
+# Protocol version: 1.2
+# Status: Locked — Protocol v1.2 source-substitution amendment
+# See protocol/CHANGELOG.md. Do not alter without a further version bump.
+
+protocol_version: "1.2"
 
 meta:
-  protocol_version: "1.0"
+  protocol_version: "1.2"
+  supersedes: "1.1"
   date_start: "2019-01-01"
   date_end: "2026-06-30"
   arxiv_categories:
@@ -13,7 +17,27 @@ meta:
     - cs.AI
     - cs.DC
   max_results_per_query: 200
+  # Cap for substituted / relevance-ranked sources (IEEE, OpenAlex, DBLP)
+  # and for manual Google Scholar — matches v1.0 manual stopping rule.
   manual_relevance_cap: 50
+  substituted_source_cap: 50
+  openalex_mailto: "jerry.adamsf@gmail.com"
+  # Verified against OpenAlex API at v1.2 adoption; re-check if runs fail.
+  openalex_acm_publisher_id: "P4310319798"
+  date_slices:
+    - "2019"
+    - "2020"
+    - "2021"
+    - "2022"
+    - "2023"
+    - "2024"
+    - "2025"
+    - "2026-H1"
+  notes: >-
+    Boolean `queries` are for arXiv, IEEE Xplore metadata API, and Google Scholar.
+    `s2_queries` are keyword formulations for Semantic Scholar, OpenAlex, and DBLP.
+    ACM coverage is via OpenAlex (publisher filter), not the ACM DL interface.
+    OpenReview discovery queries are not re-run; OpenReview is for venue checks.
 
 blocks:
   - id: B1_peft
@@ -24,6 +48,12 @@ blocks:
       - '"adapter" AND "transformer" AND "fine-tuning" AND efficient'
       - '"prompt tuning" OR "prefix tuning" OR "BitFit"'
       - '"PEFT" AND survey'
+    s2_queries:
+      - 'parameter-efficient fine-tuning large language models'
+      - 'low-rank adaptation LoRA language model'
+      - 'adapter modules transformer parameter efficient'
+      - 'prompt tuning prefix tuning soft prompts'
+      - 'parameter-efficient fine-tuning survey'
 
   - id: B2_quantization
     name: Quantization
@@ -33,14 +63,26 @@ blocks:
       - '"post-training quantization" AND LLM'
       - '"quantization-aware training" AND transformer'
       - '"low-bit" AND "large language model" AND survey'
+    s2_queries:
+      - 'quantization large language model fine-tuning'
+      - 'post-training quantization LLM GPTQ AWQ'
+      - 'QLoRA quantized low-rank adaptation'
+      - 'quantization-aware training transformer'
+      - 'low-bit quantization large language models survey'
 
   - id: B3_memory
     name: Memory Optimization
     queries:
       - '"gradient checkpointing" AND training AND memory'
       - '"FlashAttention" OR "memory-efficient attention"'
-      - '"ZeRO" OR "DeepSpeed" OR "offloading" AND "model training"'
+      # CORRECTED in v1.1 — explicit parentheses (defect 1)
+      - '("ZeRO" OR "DeepSpeed" OR "offloading") AND ("model training" OR "large language model")'
       - '"memory optimization" AND "large language model" AND training'
+    s2_queries:
+      - 'gradient checkpointing activation memory training'
+      - 'FlashAttention memory efficient attention'
+      - 'ZeRO DeepSpeed offloading distributed training memory'
+      - 'memory optimization large language model training'
 
   - id: B4_federated
     name: Distributed and Federated
@@ -49,3 +91,8 @@ blocks:
       - '"federated" AND (LoRA OR "parameter-efficient")'
       - '"distributed training" AND "language model" AND communication'
       - '"federated fine-tuning" AND heterogeneity'
+    s2_queries:
+      - 'federated learning large language models'
+      - 'federated LoRA parameter efficient fine-tuning'
+      - 'communication efficient distributed language model training'
+      - 'federated fine-tuning data heterogeneity non-IID'

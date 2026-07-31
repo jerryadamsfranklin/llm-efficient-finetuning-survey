@@ -1,0 +1,881 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"post-training quantization\" AND LLM) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202301010000 TO 202312312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22post-training+quantization%22+AND+LLM%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202301010000+TO+202312312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:36:54Z",
+  "total_results_reported": 21,
+  "returned": 21,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2312.07950v5",
+      "arxiv_id": "2312.07950v5",
+      "title": "CBQ: Cross-Block Quantization for Large Language Models",
+      "summary": "Post-training quantization (PTQ) has played a key role in compressing large language models (LLMs) with ultra-low costs. However, existing PTQ methods only focus on handling the outliers within one layer or one block, which ignores the dependency of blocks and leads to severe performance degradation in low-bit settings. In this paper, we propose CBQ, a cross-block reconstruction-based PTQ method for LLMs. CBQ employs a cross-block dependency using a homologous reconstruction scheme, establishing long-range dependencies across multiple blocks to minimize error accumulation. Furthermore, CBQ incorporates a coarse-to-fine preprocessing (CFP) strategy for suppressing weight and activation outliers, coupled with an adaptive LoRA-Rounding technique for precise weight quantization. These innovations enable CBQ to not only handle extreme outliers effectively but also improve overall quantization accuracy. Extensive experiments show that CBQ achieves superior low-bit quantization (W4A4, W4A8, W2A16) and outperforms existing state-of-the-art methods across various LLMs and datasets. Notably, CBQ quantizes the 4-bit LLAMA1-65B model within only 4.3 hours on a single GPU, achieving a commendable tradeoff between performance and quantization efficiency.",
+      "published": "2023-12-13T07:56:27Z",
+      "updated": "2025-02-25T09:14:18Z",
+      "authors": [
+        "Xin Ding",
+        "Xiaoyu Liu",
+        "Zhijun Tu",
+        "Yun Zhang",
+        "Wei Li",
+        "Jie Hu",
+        "Hanting Chen",
+        "Yehui Tang",
+        "Zhiwei Xiong",
+        "Baoqun Yin",
+        "Yunhe Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.03788v1",
+      "arxiv_id": "2312.03788v1",
+      "title": "SmoothQuant+: Accurate and Efficient 4-bit Post-Training WeightQuantization for LLM",
+      "summary": "Large language models (LLMs) have shown remarkable capabilities in various tasks. However their huge model size and the consequent demand for computational and memory resources also pose challenges to model deployment. Currently, 4-bit post-training quantization (PTQ) has achieved some success in LLMs, reducing the memory footprint by approximately 75% compared to FP16 models, albeit with some accuracy loss. In this paper, we propose SmoothQuant+, an accurate and efficient 4-bit weight-only PTQ that requires no additional training, which enables lossless in accuracy for LLMs for the first time. Based on the fact that the loss of weight quantization is amplified by the activation outliers, SmoothQuant+ smoothes the activation outliers by channel before quantization, while adjusting the corresponding weights for mathematical equivalence, and then performs group-wise 4-bit weight quantization for linear layers. We have integrated SmoothQuant+ into the vLLM framework, an advanced high-throughput inference engine specially developed for LLMs, and equipped it with an efficient W4A16 CUDA kernels, so that vLLM can seamlessly support SmoothQuant+ 4-bit weight quantization. Our results show that, with SmoothQuant+, the Code Llama-34B model can be quantized and deployed on a A100 40GB GPU, achieving lossless accuracy and a throughput increase of 1.9 to 4.0 times compared to the FP16 model deployed on two A100 40GB GPUs. Moreover, the latency per token is only 68% of the FP16 model deployed on two A100 40GB GPUs. This is the state-of-the-art 4-bit weight quantization for LLMs as we know.",
+      "published": "2023-12-06T11:10:55Z",
+      "updated": "2023-12-06T11:10:55Z",
+      "authors": [
+        "Jiayi Pan",
+        "Chengcan Wang",
+        "Kaifu Zheng",
+        "Yangguang Li",
+        "Zhenyu Wang",
+        "Bin Feng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.09755v2",
+      "arxiv_id": "2311.09755v2",
+      "title": "On the Impact of Calibration Data in Post-training Quantization and Pruning",
+      "summary": "Quantization and pruning form the foundation of compression for neural networks, enabling efficient inference for large language models (LLMs). Recently, various quantization and pruning techniques have demonstrated remarkable performance in a post-training setting. They rely upon calibration data, a small set of unlabeled examples that are used to generate layer activations. However, no prior work has systematically investigated how the calibration data impacts the effectiveness of model compression methods. In this paper, we present the first extensive empirical study on the effect of calibration data upon LLM performance. We trial a variety of quantization and pruning methods, datasets, tasks, and models. Surprisingly, we find substantial variations in downstream task performance, contrasting existing work that suggests a greater level of robustness to the calibration data. Finally, we make a series of recommendations for the effective use of calibration data in LLM quantization and pruning.",
+      "published": "2023-11-16T10:30:00Z",
+      "updated": "2024-08-12T17:57:00Z",
+      "authors": [
+        "Miles Williams",
+        "Nikolaos Aletras"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.05161v2",
+      "arxiv_id": "2311.05161v2",
+      "title": "Enhancing Computation Efficiency in Large Language Models through Weight and Activation Quantization",
+      "summary": "Large Language Models (LLMs) are proficient in natural language processing tasks, but their deployment is often restricted by extensive parameter sizes and computational demands. This paper focuses on post-training quantization (PTQ) in LLMs, specifically 4-bit weight and 8-bit activation (W4A8) quantization, to enhance computational efficiency -- a topic less explored compared to weight-only quantization. We present two innovative techniques: activation-quantization-aware scaling (AQAS) and sequence-length-aware calibration (SLAC) to enhance PTQ by considering the combined effects on weights and activations and aligning calibration sequence lengths to target tasks. Moreover, we introduce dINT, a hybrid data format combining integer and denormal representations, to address the underflow issue in W4A8 quantization, where small values are rounded to zero. Through rigorous evaluations of LLMs, including OPT and LLaMA, we demonstrate that our techniques significantly boost task accuracies to levels comparable with full-precision models. By developing arithmetic units compatible with dINT, we further confirm that our methods yield a 2$\\times$ hardware efficiency improvement compared to 8-bit integer MAC unit.",
+      "published": "2023-11-09T06:19:51Z",
+      "updated": "2024-07-18T06:35:17Z",
+      "authors": [
+        "Janghwan Lee",
+        "Minsoo Kim",
+        "Seungcheol Baek",
+        "Seok Joong Hwang",
+        "Wonyong Sung",
+        "Jungwook Choi"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.01305v3",
+      "arxiv_id": "2311.01305v3",
+      "title": "AWEQ: Post-Training Quantization with Activation-Weight Equalization for Large Language Models",
+      "summary": "Large language models(LLMs) exhibit excellent performance across a variety of tasks, but they come with significant computational and storage costs. Quantizing these models is an effective way to alleviate this issue. However, existing methods struggle to strike a balance between model accuracy and hardware efficiency. This is where we introduce AWEQ, a post-training method that requires no additional training overhead. AWEQ excels in both ultra-low-bit quantization and 8-bit weight and activation (W8A8) quantization. There is an observation that weight quantization is less challenging than activation quantization. AWEQ transfers the difficulty of activation quantization to weights using channel equalization, achieving a balance between the quantization difficulties of both, and thereby maximizing performance. We have further refined the equalization method to mitigate quantization bias error, ensuring the robustness of the model. Extensive experiments on popular models such as LLaMA and OPT demonstrate that AWEQ outperforms all existing post-training quantization methods for large models.",
+      "published": "2023-11-02T15:18:22Z",
+      "updated": "2023-11-12T07:54:09Z",
+      "authors": [
+        "Baisong Li",
+        "Xingwang Wang",
+        "Haixiao Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16836v1",
+      "arxiv_id": "2310.16836v1",
+      "title": "LLM-FP4: 4-Bit Floating-Point Quantized Transformers",
+      "summary": "We propose LLM-FP4 for quantizing both weights and activations in large language models (LLMs) down to 4-bit floating-point values, in a post-training manner. Existing post-training quantization (PTQ) solutions are primarily integer-based and struggle with bit widths below 8 bits. Compared to integer quantization, floating-point (FP) quantization is more flexible and can better handle long-tail or bell-shaped distributions, and it has emerged as a default choice in many hardware platforms. One characteristic of FP quantization is that its performance largely depends on the choice of exponent bits and clipping range. In this regard, we construct a strong FP-PTQ baseline by searching for the optimal quantization parameters. Furthermore, we observe a high inter-channel variance and low intra-channel variance pattern in activation distributions, which adds activation quantization difficulty. We recognize this pattern to be consistent across a spectrum of transformer models designed for diverse tasks, such as LLMs, BERT, and Vision Transformer models. To tackle this, we propose per-channel activation quantization and show that these additional scaling factors can be reparameterized as exponential biases of weights, incurring a negligible cost. Our method, for the first time, can quantize both weights and activations in the LLaMA-13B to only 4-bit and achieves an average score of 63.1 on the common sense zero-shot reasoning tasks, which is only 5.8 lower than the full-precision model, significantly outperforming the previous state-of-the-art by 12.7 points. Code is available at: https://github.com/nbasyl/LLM-FP4.",
+      "published": "2023-10-25T17:59:32Z",
+      "updated": "2023-10-25T17:59:32Z",
+      "authors": [
+        "Shih-yang Liu",
+        "Zechun Liu",
+        "Xijie Huang",
+        "Pingcheng Dong",
+        "Kwang-Ting Cheng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.AR",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.08041v3",
+      "arxiv_id": "2310.08041v3",
+      "title": "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+      "summary": "Large Language Models (LLMs) excel in NLP, but their demands hinder their widespread deployment. While Quantization-Aware Training (QAT) offers a solution, its extensive training costs make Post-Training Quantization (PTQ) a more practical approach for LLMs. In existing studies, activation outliers in particular channels are identified as the bottleneck to PTQ accuracy. They propose to transform the magnitudes from activations to weights, which however offers limited alleviation or suffers from unstable gradients, resulting in a severe performance drop at low-bitwidth. In this paper, we propose QLLM, an accurate and efficient low-bitwidth PTQ method designed for LLMs. QLLM introduces an adaptive channel reassembly technique that reallocates the magnitude of outliers to other channels, thereby mitigating their impact on the quantization range. This is achieved by channel disassembly and channel assembly, which first breaks down the outlier channels into several sub-channels to ensure a more balanced distribution of activation magnitudes. Then similar channels are merged to maintain the original channel number for efficiency. Additionally, an adaptive strategy is designed to autonomously determine the optimal number of sub-channels for channel disassembly. To further compensate for the performance loss caused by quantization, we propose an efficient tuning method that only learns a small number of low-rank weights while freezing the pre-trained quantized model. After training, these low-rank parameters can be fused into the frozen weights without affecting inference. Extensive experiments on LLaMA-1 and LLaMA-2 show that QLLM can obtain accurate quantized models efficiently. For example, QLLM quantizes the 4-bit LLaMA-2-70B within 10 hours on a single A100-80G GPU, outperforming the previous state-of-the-art method by 7.89% on the average accuracy across five zero-shot tasks.",
+      "published": "2023-10-12T05:25:49Z",
+      "updated": "2024-04-06T10:22:57Z",
+      "authors": [
+        "Jing Liu",
+        "Ruihao Gong",
+        "Xiuying Wei",
+        "Zhiwei Dong",
+        "Jianfei Cai",
+        "Bohan Zhuang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.00034v2",
+      "arxiv_id": "2310.00034v2",
+      "title": "PB-LLM: Partially Binarized Large Language Models",
+      "summary": "This paper explores network binarization, a radical form of quantization, compressing model weights to a single bit, specifically for Large Language Models (LLMs) compression. Due to previous binarization methods collapsing LLMs, we propose a novel approach, Partially-Binarized LLM (PB-LLM), which can achieve extreme low-bit quantization while maintaining the linguistic reasoning capacity of quantized LLMs. Specifically, our exploration first uncovers the ineffectiveness of naive applications of existing binarization algorithms and highlights the imperative role of salient weights in achieving low-bit quantization. Thus, PB-LLM filters a small ratio of salient weights during binarization, allocating them to higher-bit storage, i.e., partially-binarization. PB-LLM is extended to recover the capacities of quantized LMMs, by analyzing from the perspective of post-training quantization (PTQ) and quantization-aware training (QAT). Under PTQ, combining the concepts from GPTQ, we reconstruct the binarized weight matrix guided by the Hessian matrix and successfully recover the reasoning capacity of PB-LLM in low-bit. Under QAT, we freeze the salient weights during training, explore the derivation of optimal scaling factors crucial for minimizing the quantization error, and propose a scaling mechanism based on this derived scaling strategy for residual binarized weights. Those explorations and the developed methodologies significantly contribute to rejuvenating the performance of low-bit quantized LLMs and present substantial advancements in the field of network binarization for LLMs.The code is available at https://github.com/hahnyuan/BinaryLLM.",
+      "published": "2023-09-29T14:35:27Z",
+      "updated": "2023-11-07T20:41:22Z",
+      "authors": [
+        "Yuzhang Shang",
+        "Zhihang Yuan",
+        "Qiang Wu",
+        "Zhen Dong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14592v2",
+      "arxiv_id": "2309.14592v2",
+      "title": "Efficient Post-training Quantization with FP8 Formats",
+      "summary": "Recent advances in deep learning methods such as LLMs and Diffusion models have created a need for improved quantization methods that can meet the computational demands of these modern architectures while maintaining accuracy. Towards this goal, we study the advantages of FP8 data formats for post-training quantization across 75 unique network architectures covering a wide range of tasks, including machine translation, language modeling, text generation, image classification, generation, and segmentation. We examine three different FP8 representations (E5M2, E4M3, and E3M4) to study the effects of varying degrees of trade-off between dynamic range and precision on model accuracy. Based on our extensive study, we developed a quantization workflow that generalizes across different network architectures. Our empirical results show that FP8 formats outperform INT8 in multiple aspects, including workload coverage (92.64% vs. 65.87%), model accuracy and suitability for a broader range of operations. Furthermore, our findings suggest that E4M3 is better suited for NLP models, whereas E3M4 performs marginally better than E4M3 on computer vision tasks. The code is publicly available on Intel Neural Compressor: https://github.com/intel/neural-compressor.",
+      "published": "2023-09-26T00:58:36Z",
+      "updated": "2024-03-31T23:05:53Z",
+      "authors": [
+        "Haihao Shen",
+        "Naveen Mellempudi",
+        "Xin He",
+        "Qun Gao",
+        "Chang Wang",
+        "Mengni Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.05516v5",
+      "arxiv_id": "2309.05516v5",
+      "title": "Optimize Weight Rounding via Signed Gradient Descent for the Quantization of LLMs",
+      "summary": "Large Language Models (LLMs) have demonstrated exceptional proficiency in language-related tasks, but their deployment poses significant challenges due to substantial memory and storage requirements. Weight-only quantization has emerged as a promising solution, significantly reducing memory and storage needs without sacrificing too much performance. In this study, we introduce SignRound, a method that leverages signed gradient descent (SignSGD) to optimize rounding values and weight clipping in just 200 steps. SignRound integrates the advantages of Quantization-Aware Training (QAT) and Post-Training Quantization (PTQ), delivering exceptional results across 2 to 4 bits while minimizing tuning costs and avoiding additional inference overhead. For example, SignRound achieved absolute average accuracy improvements ranging from 6.91% to 33.22% at 2bits, as measured by the average zero-shot accuracy across 11 tasks. It also demonstrates strong generalization in recent models, achieving near-lossless 4-bit quantization in most scenarios. The source code is publicly available at https://github.com/intel/auto-round.",
+      "published": "2023-09-11T14:58:23Z",
+      "updated": "2024-10-08T02:02:35Z",
+      "authors": [
+        "Wenhua Cheng",
+        "Weiwei Zhang",
+        "Haihao Shen",
+        "Yiyang Cai",
+        "Xin He",
+        "Kaokao Lv",
+        "Yi Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.05210v3",
+      "arxiv_id": "2309.05210v3",
+      "title": "Understanding the Impact of Post-Training Quantization on Large Language Models",
+      "summary": "Large language models (LLMs) are rapidly increasing in size, with the number of parameters becoming a key factor in the success of many commercial models, such as ChatGPT, Claude, and Bard. Even the recently released publicly accessible models for commercial usage, such as Falcon and Llama2, come equipped with billions of parameters. This significant increase in the number of parameters makes deployment and operation very costly. The remarkable progress in the field of quantization for large neural networks in general and LLMs in particular, has made these models more accessible by enabling them to be deployed on consumer-grade GPUs. Quantized models generally demonstrate comparable performance levels to their unquantized base counterparts. Nonetheless, there exists a notable gap in our comprehensive understanding of how these quantized models respond to hyperparameters, such as temperature, max new tokens, and topk, particularly for next word prediction. The present analysis reveals that nf4 and fp4 are equally proficient 4-bit quantization techniques, characterized by similar attributes such as inference speed, memory consumption, and the quality of generated content. the study identifies nf4 as displaying greater resilience to temperature variations in the case of the llama2 series of models at lower temperature, while fp4 and fp4-dq proves to be a more suitable choice for falcon series of models. It is noteworthy that, in general, 4-bit quantized models of varying sizes exhibit higher sensitivity to temperature in the range of 0.5 to 0.8, unlike their unquantized counterparts. Additionally, int8 quantization is associated with significantly slower inference speeds, whereas unquantized bfloat16 models consistently yield the fastest inference speeds across models of all sizes.",
+      "published": "2023-09-11T02:58:32Z",
+      "updated": "2023-09-17T05:38:46Z",
+      "authors": [
+        "Somnath Roy"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.01885v2",
+      "arxiv_id": "2309.01885v2",
+      "title": "QuantEase: Optimization-based Quantization for Language Models",
+      "summary": "With the rising popularity of Large Language Models (LLMs), there has been an increasing interest in compression techniques that enable their efficient deployment. This study focuses on the Post-Training Quantization (PTQ) of LLMs. Drawing from recent advances, our work introduces QuantEase, a layer-wise quantization framework where individual layers undergo separate quantization. The problem is framed as a discrete-structured non-convex optimization, prompting the development of algorithms rooted in Coordinate Descent (CD) techniques. These CD-based methods provide high-quality solutions to the complex non-convex layer-wise quantization problems. Notably, our CD-based approach features straightforward updates, relying solely on matrix and vector operations, circumventing the need for matrix inversion or decomposition. We also explore an outlier-aware variant of our approach, allowing for retaining significant weights (outliers) with complete precision. Our proposal attains state-of-the-art performance in terms of perplexity and zero-shot accuracy in empirical evaluations across various LLMs and datasets, with relative improvements up to 15% over methods such as GPTQ. Leveraging careful linear algebra optimizations, QuantEase can quantize models like Falcon-180B on a single NVIDIA A100 GPU in $\\sim$3 hours. Particularly noteworthy is our outlier-aware algorithm's capability to achieve near or sub-3-bit quantization of LLMs with an acceptable drop in accuracy, obviating the need for non-uniform quantization or grouping techniques, improving upon methods such as SpQR by up to two times in terms of perplexity.",
+      "published": "2023-09-05T01:39:09Z",
+      "updated": "2023-12-01T07:04:05Z",
+      "authors": [
+        "Kayhan Behdin",
+        "Ayan Acharya",
+        "Aman Gupta",
+        "Qingquan Song",
+        "Siyu Zhu",
+        "Sathiya Keerthi",
+        "Rahul Mazumder"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.15987v1",
+      "arxiv_id": "2308.15987v1",
+      "title": "FPTQ: Fine-grained Post-Training Quantization for Large Language Models",
+      "summary": "In the era of large-scale language models, the substantial parameter size poses significant challenges for deployment. Being a prevalent compression technique, quantization has emerged as the mainstream practice to tackle this issue, which is mainly centered on two recipes W8A8 and W4A16 (i.e. weights and activations in such bit widths). In this study, we propose a novel W4A8 post-training quantization method for the available open-sourced LLMs, which combines the advantages of both two recipes. Therefore, we can leverage the benefit in the I/O utilization of 4-bit weight quantization and the acceleration due to 8-bit matrix computation. Nevertheless, the W4A8 faces notorious performance degradation. As a remedy, we involve layerwise activation quantization strategies which feature a novel logarithmic equalization for most intractable layers, and we combine them with fine-grained weight quantization. Without whistles and bells, we eliminate the necessity for further fine-tuning and obtain the state-of-the-art W4A8 quantized performance on BLOOM, LLaMA, and LLaMA-2 on standard benchmarks. We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.",
+      "published": "2023-08-30T12:18:18Z",
+      "updated": "2023-08-30T12:18:18Z",
+      "authors": [
+        "Qingyuan Li",
+        "Yifan Zhang",
+        "Liang Li",
+        "Peng Yao",
+        "Bo Zhang",
+        "Xiangxiang Chu",
+        "Yerui Sun",
+        "Li Du",
+        "Yuchen Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13137v3",
+      "arxiv_id": "2308.13137v3",
+      "title": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "summary": "Large language models (LLMs) have revolutionized natural language processing tasks. However, their practical deployment is hindered by their immense memory and computation requirements. Although recent post-training quantization (PTQ) methods are effective in reducing memory footprint and improving the computational efficiency of LLM, they hand-craft quantization parameters, leading to low performance, especially in extremely low-bit quantization. To tackle this issue, we introduce an Omnidirectionally calibrated Quantization (\\textbf{OmniQuant}) technique for LLMs, which achieves good performance in diverse quantization settings while maintaining the computational efficiency of PTQ by efficiently optimizing various quantization parameters. OmniQuant comprises two innovative components including Learnable Weight Clipping (LWC) and Learnable Equivalent Transformation (LET). LWC modulates the extreme values of weights by optimizing the clipping threshold. Meanwhile, LET tackles activation outliers by shifting the challenge of quantization from activations to weights. Operating within a differentiable framework using block-wise error minimization, OmniQuant can optimize the quantization process efficiently for both weight-only and weight-activation quantization. For instance, the LLaMA-2 model family size 7-70B can be processed with OmniQuant on a single A100-40G GPU within 1-16 hours using 128 samples. Extensive experiments validate OmniQuant's superior performance across diverse quantization configurations such as W4A4 (4-bit weight, 4-bit activation), W6A6, W4A16, W3A16, and W2A16. Additionally, OmniQuant demonstrates effectiveness in instruction-tuned models and delivers notable improvements in inference speed and memory reduction on real devices. Codes are available at \\url{https://github.com/OpenGVLab/OmniQuant}.",
+      "published": "2023-08-25T02:28:35Z",
+      "updated": "2024-03-18T05:33:22Z",
+      "authors": [
+        "Wenqi Shao",
+        "Mengzhao Chen",
+        "Zhaoyang Zhang",
+        "Peng Xu",
+        "Lirui Zhao",
+        "Zhiqian Li",
+        "Kaipeng Zhang",
+        "Peng Gao",
+        "Yu Qiao",
+        "Ping Luo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.07662v1",
+      "arxiv_id": "2308.07662v1",
+      "title": "Gradient-Based Post-Training Quantization: Challenging the Status Quo",
+      "summary": "Quantization has become a crucial step for the efficient deployment of deep neural networks, where floating point operations are converted to simpler fixed point operations. In its most naive form, it simply consists in a combination of scaling and rounding transformations, leading to either a limited compression rate or a significant accuracy drop. Recently, Gradient-based post-training quantization (GPTQ) methods appears to be constitute a suitable trade-off between such simple methods and more powerful, yet expensive Quantization-Aware Training (QAT) approaches, particularly when attempting to quantize LLMs, where scalability of the quantization process is of paramount importance. GPTQ essentially consists in learning the rounding operation using a small calibration set. In this work, we challenge common choices in GPTQ methods. In particular, we show that the process is, to a certain extent, robust to a number of variables (weight selection, feature augmentation, choice of calibration set). More importantly, we derive a number of best practices for designing more efficient and scalable GPTQ methods, regarding the problem formulation (loss, degrees of freedom, use of non-uniform quantization schemes) or optimization process (choice of variable and optimizer). Lastly, we propose a novel importance-based mixed-precision technique. Those guidelines lead to significant performance improvements on all the tested state-of-the-art GPTQ methods and networks (e.g. +6.819 points on ViT for 4-bit quantization), paving the way for the design of scalable, yet effective quantization methods.",
+      "published": "2023-08-15T09:25:11Z",
+      "updated": "2023-08-15T09:25:11Z",
+      "authors": [
+        "Edouard Yvinec",
+        "Arnaud Dapogny",
+        "Kevin Bailly"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.05600v1",
+      "arxiv_id": "2308.05600v1",
+      "title": "NUPES : Non-Uniform Post-Training Quantization via Power Exponent Search",
+      "summary": "Deep neural network (DNN) deployment has been confined to larger hardware devices due to their expensive computational requirements. This challenge has recently reached another scale with the emergence of large language models (LLMs). In order to reduce both their memory footprint and latency, a promising technique is quantization. It consists in converting floating point representations to low bit-width fixed point representations, usually by assuming a uniform mapping onto a regular grid. This process, referred to in the literature as uniform quantization, may however be ill-suited as most DNN weights and activations follow a bell-shaped distribution. This is even worse on LLMs whose weight distributions are known to exhibit large, high impact, outlier values. In this work, we propose an improvement over the most commonly adopted way to tackle this limitation in deep learning models quantization, namely, non-uniform quantization. NUPES leverages automorphisms to preserve the scalar multiplications. Such transformations are derived from power functions. However, the optimization of the exponent parameter and weight values remains a challenging and novel problem which could not be solved with previous post training optimization techniques which only learn to round up or down weight values in order to preserve the predictive function. We circumvent this limitation with a new paradigm: learning new quantized weights over the entire quantized space. Similarly, we enable the optimization of the power exponent, i.e. the optimization of the quantization operator itself during training by alleviating all the numerical instabilities. The resulting predictive function is compatible with integer-only low-bit inference. We show the ability of the method to achieve state-of-the-art compression rates in both, data-free and data-driven configurations.",
+      "published": "2023-08-10T14:19:58Z",
+      "updated": "2023-08-10T14:19:58Z",
+      "authors": [
+        "Edouard Yvinec",
+        "Arnaud Dapogny",
+        "Kevin Bailly"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.07629v4",
+      "arxiv_id": "2306.07629v4",
+      "title": "SqueezeLLM: Dense-and-Sparse Quantization",
+      "summary": "Generative Large Language Models (LLMs) have demonstrated remarkable results for a wide range of tasks. However, deploying these models for inference has been a significant challenge due to their unprecedented resource requirements. This has forced existing deployment frameworks to use multi-GPU inference pipelines, which are often complex and costly, or to use smaller and less performant models. In this work, we demonstrate that the main bottleneck for generative inference with LLMs is memory bandwidth, rather than compute, specifically for single batch inference. While quantization has emerged as a promising solution by representing weights with reduced precision, previous efforts have often resulted in notable performance degradation. To address this, we introduce SqueezeLLM, a post-training quantization framework that not only enables lossless compression to ultra-low precisions of up to 3-bit, but also achieves higher quantization performance under the same memory constraint. Our framework incorporates two novel ideas: (i) sensitivity-based non-uniform quantization, which searches for the optimal bit precision assignment based on second-order information; and (ii) the Dense-and-Sparse decomposition that stores outliers and sensitive weight values in an efficient sparse format. When applied to the LLaMA models, our 3-bit quantization significantly reduces the perplexity gap from the FP16 baseline by up to 2.1x as compared to the state-of-the-art methods with the same memory requirement. Furthermore, when deployed on an A6000 GPU, our quantized models achieve up to 2.3x speedup compared to the baseline. Our code is available at https://github.com/SqueezeAILab/SqueezeLLM.",
+      "published": "2023-06-13T08:57:54Z",
+      "updated": "2024-06-05T03:57:41Z",
+      "authors": [
+        "Sehoon Kim",
+        "Coleman Hooper",
+        "Amir Gholami",
+        "Zhen Dong",
+        "Xiuyu Li",
+        "Sheng Shen",
+        "Michael W. Mahoney",
+        "Kurt Keutzer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.17888v1",
+      "arxiv_id": "2305.17888v1",
+      "title": "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+      "summary": "Several post-training quantization methods have been applied to large language models (LLMs), and have been shown to perform well down to 8-bits. We find that these methods break down at lower bit precision, and investigate quantization aware training for LLMs (LLM-QAT) to push quantization levels even further. We propose a data-free distillation method that leverages generations produced by the pre-trained model, which better preserves the original output distribution and allows quantizing any generative model independent of its training data, similar to post-training quantization methods. In addition to quantizing weights and activations, we also quantize the KV cache, which is critical for increasing throughput and support long sequence dependencies at current model sizes. We experiment with LLaMA models of sizes 7B, 13B, and 30B, at quantization levels down to 4-bits. We observe large improvements over training-free methods, especially in the low-bit settings.",
+      "published": "2023-05-29T05:22:11Z",
+      "updated": "2023-05-29T05:22:11Z",
+      "authors": [
+        "Zechun Liu",
+        "Barlas Oguz",
+        "Changsheng Zhao",
+        "Ernie Chang",
+        "Pierre Stock",
+        "Yashar Mehdad",
+        "Yangyang Shi",
+        "Raghuraman Krishnamoorthi",
+        "Vikas Chandra"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.12356v1",
+      "arxiv_id": "2305.12356v1",
+      "title": "Integer or Floating Point? New Outlooks for Low-Bit Quantization on Large Language Models",
+      "summary": "Efficient deployment of large language models (LLMs) necessitates low-bit quantization to minimize model size and inference cost. While low-bit integer formats (e.g., INT8/INT4) have been the conventional choice, emerging low-bit floating-point formats (e.g., FP8/FP4) offer a compelling alternative and are gaining support from cutting-edge hardware, such as NVIDIA's H100 GPU. However, the superiority of low-bit INT versus FP formats for quantization on LLMs remains unclear. In this study, we conduct a comparative analysis of INT and FP quantization with the same bit-width, revealing that the optimal quantization format varies across different layers due to the complexity and diversity of tensor distribution. Consequently, we advocate the Mixture of Formats Quantization (MoFQ), which selects the optimal format on a layer-wise basis. This simple yet effective approach achieves state-of-the-art results in both weight-only (W-only) and weight-activation (WA) post-training quantization scenarios when tested on LLaMA across various tasks. In 4-bit W-only quantization, MoFQ surpasses GPTQ without complex hyperparameter tuning and with an order of magnitude faster quantization speed. While in 8-bit WA quantization, MoFQ significantly outperforms INT/FP-only methods, achieving performance close to the full precision model. Notably, MoFQ incurs no hardware overhead compared to INT/FP-only quantization, as the bit-width remains unchanged.",
+      "published": "2023-05-21T05:28:37Z",
+      "updated": "2023-05-21T05:28:37Z",
+      "authors": [
+        "Yijia Zhang",
+        "Lingran Zhao",
+        "Shijie Cao",
+        "Wenqiang Wang",
+        "Ting Cao",
+        "Fan Yang",
+        "Mao Yang",
+        "Shanghang Zhang",
+        "Ningyi Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2304.01089v4",
+      "arxiv_id": "2304.01089v4",
+      "title": "RPTQ: Reorder-based Post-training Quantization for Large Language Models",
+      "summary": "Large-scale language models (LLMs) have demonstrated impressive performance, but their deployment presents challenges due to their significant memory usage. This issue can be alleviated through quantization. In this paper, we identify that the challenge in quantizing activations in LLMs arises from varying ranges across channels, rather than solely the presence of outliers. To address this challenge, we introduce a quantization method called RPTQ, which utilizes a reorder-based approach. By rearranging the channels and quantizing them in clusters, RPTQ effectively mitigates the impact of range differences between channels. To minimize the overhead of the reorder operation, we fuse it into the layer norm operation and weights in linear layers. In our experiments, RPTQ achieved a significant breakthrough by utilizing 3-bit activation in LLMs for the first time, resulting in a substantial reduction in memory usage. For instance, quantizing OPT-175b can lead to a memory consumption reduction of up to 80%.",
+      "published": "2023-04-03T15:46:15Z",
+      "updated": "2023-05-17T10:07:33Z",
+      "authors": [
+        "Zhihang Yuan",
+        "Lin Niu",
+        "Jiawei Liu",
+        "Wenyu Liu",
+        "Xinggang Wang",
+        "Yuzhang Shang",
+        "Guangyu Sun",
+        "Qiang Wu",
+        "Jiaxiang Wu",
+        "Bingzhe Wu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2303.08302v3",
+      "arxiv_id": "2303.08302v3",
+      "title": "ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation",
+      "summary": "Post-training quantization (PTQ) has emerged as a promising technique for mitigating memory consumption and computational costs in large language models (LLMs). However, a systematic examination of various quantization schemes, model families, and quantization bit precision has been absent from the literature. In this paper, we conduct a comprehensive analysis of these factors by investigating the effects of PTQ on weight-only, activation-only, and weight-and-activation quantization using diverse methods such as round-to-nearest (RTN), GPTQ, ZeroQuant, and their variants. We apply these methods to two distinct model families with parameters ranging from 125M to 176B. Our contributions include: (1) a sensitivity analysis revealing that activation quantization is generally more susceptible to weight quantization, with smaller models often outperforming larger models in terms of activation quantization; (2) an evaluation and comparison of existing PTQ methods to optimize model size reduction while minimizing the impact on accuracy, revealing that none of the current methods can achieve the original model quality for quantization with either INT4-weight or INT4-weight-and-INT8-activation; (3) based on these insights, we propose an optimized method called Low-Rank Compensation (LoRC), which employs low-rank matrices to enhance model quality recovery with a minimal increase in model size.",
+      "published": "2023-03-15T01:27:15Z",
+      "updated": "2023-05-26T00:17:06Z",
+      "authors": [
+        "Zhewei Yao",
+        "Xiaoxia Wu",
+        "Cheng Li",
+        "Stephen Youn",
+        "Yuxiong He"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"post-training quantization\" AND LLM",
+  "slice_id": "2023",
+  "date_window": {
+    "start": "2023-01-01",
+    "end": "2023-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2312.07950v5",
+      "arxiv_id": "2312.07950v5",
+      "title": "CBQ: Cross-Block Quantization for Large Language Models",
+      "summary": "Post-training quantization (PTQ) has played a key role in compressing large language models (LLMs) with ultra-low costs. However, existing PTQ methods only focus on handling the outliers within one layer or one block, which ignores the dependency of blocks and leads to severe performance degradation in low-bit settings. In this paper, we propose CBQ, a cross-block reconstruction-based PTQ method for LLMs. CBQ employs a cross-block dependency using a homologous reconstruction scheme, establishing long-range dependencies across multiple blocks to minimize error accumulation. Furthermore, CBQ incorporates a coarse-to-fine preprocessing (CFP) strategy for suppressing weight and activation outliers, coupled with an adaptive LoRA-Rounding technique for precise weight quantization. These innovations enable CBQ to not only handle extreme outliers effectively but also improve overall quantization accuracy. Extensive experiments show that CBQ achieves superior low-bit quantization (W4A4, W4A8, W2A16) and outperforms existing state-of-the-art methods across various LLMs and datasets. Notably, CBQ quantizes the 4-bit LLAMA1-65B model within only 4.3 hours on a single GPU, achieving a commendable tradeoff between performance and quantization efficiency.",
+      "published": "2023-12-13T07:56:27Z",
+      "updated": "2025-02-25T09:14:18Z",
+      "authors": [
+        "Xin Ding",
+        "Xiaoyu Liu",
+        "Zhijun Tu",
+        "Yun Zhang",
+        "Wei Li",
+        "Jie Hu",
+        "Hanting Chen",
+        "Yehui Tang",
+        "Zhiwei Xiong",
+        "Baoqun Yin",
+        "Yunhe Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.03788v1",
+      "arxiv_id": "2312.03788v1",
+      "title": "SmoothQuant+: Accurate and Efficient 4-bit Post-Training WeightQuantization for LLM",
+      "summary": "Large language models (LLMs) have shown remarkable capabilities in various tasks. However their huge model size and the consequent demand for computational and memory resources also pose challenges to model deployment. Currently, 4-bit post-training quantization (PTQ) has achieved some success in LLMs, reducing the memory footprint by approximately 75% compared to FP16 models, albeit with some accuracy loss. In this paper, we propose SmoothQuant+, an accurate and efficient 4-bit weight-only PTQ that requires no additional training, which enables lossless in accuracy for LLMs for the first time. Based on the fact that the loss of weight quantization is amplified by the activation outliers, SmoothQuant+ smoothes the activation outliers by channel before quantization, while adjusting the corresponding weights for mathematical equivalence, and then performs group-wise 4-bit weight quantization for linear layers. We have integrated SmoothQuant+ into the vLLM framework, an advanced high-throughput inference engine specially developed for LLMs, and equipped it with an efficient W4A16 CUDA kernels, so that vLLM can seamlessly support SmoothQuant+ 4-bit weight quantization. Our results show that, with SmoothQuant+, the Code Llama-34B model can be quantized and deployed on a A100 40GB GPU, achieving lossless accuracy and a throughput increase of 1.9 to 4.0 times compared to the FP16 model deployed on two A100 40GB GPUs. Moreover, the latency per token is only 68% of the FP16 model deployed on two A100 40GB GPUs. This is the state-of-the-art 4-bit weight quantization for LLMs as we know.",
+      "published": "2023-12-06T11:10:55Z",
+      "updated": "2023-12-06T11:10:55Z",
+      "authors": [
+        "Jiayi Pan",
+        "Chengcan Wang",
+        "Kaifu Zheng",
+        "Yangguang Li",
+        "Zhenyu Wang",
+        "Bin Feng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.09755v2",
+      "arxiv_id": "2311.09755v2",
+      "title": "On the Impact of Calibration Data in Post-training Quantization and Pruning",
+      "summary": "Quantization and pruning form the foundation of compression for neural networks, enabling efficient inference for large language models (LLMs). Recently, various quantization and pruning techniques have demonstrated remarkable performance in a post-training setting. They rely upon calibration data, a small set of unlabeled examples that are used to generate layer activations. However, no prior work has systematically investigated how the calibration data impacts the effectiveness of model compression methods. In this paper, we present the first extensive empirical study on the effect of calibration data upon LLM performance. We trial a variety of quantization and pruning methods, datasets, tasks, and models. Surprisingly, we find substantial variations in downstream task performance, contrasting existing work that suggests a greater level of robustness to the calibration data. Finally, we make a series of recommendations for the effective use of calibration data in LLM quantization and pruning.",
+      "published": "2023-11-16T10:30:00Z",
+      "updated": "2024-08-12T17:57:00Z",
+      "authors": [
+        "Miles Williams",
+        "Nikolaos Aletras"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.05161v2",
+      "arxiv_id": "2311.05161v2",
+      "title": "Enhancing Computation Efficiency in Large Language Models through Weight and Activation Quantization",
+      "summary": "Large Language Models (LLMs) are proficient in natural language processing tasks, but their deployment is often restricted by extensive parameter sizes and computational demands. This paper focuses on post-training quantization (PTQ) in LLMs, specifically 4-bit weight and 8-bit activation (W4A8) quantization, to enhance computational efficiency -- a topic less explored compared to weight-only quantization. We present two innovative techniques: activation-quantization-aware scaling (AQAS) and sequence-length-aware calibration (SLAC) to enhance PTQ by considering the combined effects on weights and activations and aligning calibration sequence lengths to target tasks. Moreover, we introduce dINT, a hybrid data format combining integer and denormal representations, to address the underflow issue in W4A8 quantization, where small values are rounded to zero. Through rigorous evaluations of LLMs, including OPT and LLaMA, we demonstrate that our techniques significantly boost task accuracies to levels comparable with full-precision models. By developing arithmetic units compatible with dINT, we further confirm that our methods yield a 2$\\times$ hardware efficiency improvement compared to 8-bit integer MAC unit.",
+      "published": "2023-11-09T06:19:51Z",
+      "updated": "2024-07-18T06:35:17Z",
+      "authors": [
+        "Janghwan Lee",
+        "Minsoo Kim",
+        "Seungcheol Baek",
+        "Seok Joong Hwang",
+        "Wonyong Sung",
+        "Jungwook Choi"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2311.01305v3",
+      "arxiv_id": "2311.01305v3",
+      "title": "AWEQ: Post-Training Quantization with Activation-Weight Equalization for Large Language Models",
+      "summary": "Large language models(LLMs) exhibit excellent performance across a variety of tasks, but they come with significant computational and storage costs. Quantizing these models is an effective way to alleviate this issue. However, existing methods struggle to strike a balance between model accuracy and hardware efficiency. This is where we introduce AWEQ, a post-training method that requires no additional training overhead. AWEQ excels in both ultra-low-bit quantization and 8-bit weight and activation (W8A8) quantization. There is an observation that weight quantization is less challenging than activation quantization. AWEQ transfers the difficulty of activation quantization to weights using channel equalization, achieving a balance between the quantization difficulties of both, and thereby maximizing performance. We have further refined the equalization method to mitigate quantization bias error, ensuring the robustness of the model. Extensive experiments on popular models such as LLaMA and OPT demonstrate that AWEQ outperforms all existing post-training quantization methods for large models.",
+      "published": "2023-11-02T15:18:22Z",
+      "updated": "2023-11-12T07:54:09Z",
+      "authors": [
+        "Baisong Li",
+        "Xingwang Wang",
+        "Haixiao Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.16836v1",
+      "arxiv_id": "2310.16836v1",
+      "title": "LLM-FP4: 4-Bit Floating-Point Quantized Transformers",
+      "summary": "We propose LLM-FP4 for quantizing both weights and activations in large language models (LLMs) down to 4-bit floating-point values, in a post-training manner. Existing post-training quantization (PTQ) solutions are primarily integer-based and struggle with bit widths below 8 bits. Compared to integer quantization, floating-point (FP) quantization is more flexible and can better handle long-tail or bell-shaped distributions, and it has emerged as a default choice in many hardware platforms. One characteristic of FP quantization is that its performance largely depends on the choice of exponent bits and clipping range. In this regard, we construct a strong FP-PTQ baseline by searching for the optimal quantization parameters. Furthermore, we observe a high inter-channel variance and low intra-channel variance pattern in activation distributions, which adds activation quantization difficulty. We recognize this pattern to be consistent across a spectrum of transformer models designed for diverse tasks, such as LLMs, BERT, and Vision Transformer models. To tackle this, we propose per-channel activation quantization and show that these additional scaling factors can be reparameterized as exponential biases of weights, incurring a negligible cost. Our method, for the first time, can quantize both weights and activations in the LLaMA-13B to only 4-bit and achieves an average score of 63.1 on the common sense zero-shot reasoning tasks, which is only 5.8 lower than the full-precision model, significantly outperforming the previous state-of-the-art by 12.7 points. Code is available at: https://github.com/nbasyl/LLM-FP4.",
+      "published": "2023-10-25T17:59:32Z",
+      "updated": "2023-10-25T17:59:32Z",
+      "authors": [
+        "Shih-yang Liu",
+        "Zechun Liu",
+        "Xijie Huang",
+        "Pingcheng Dong",
+        "Kwang-Ting Cheng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.AR",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.08041v3",
+      "arxiv_id": "2310.08041v3",
+      "title": "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+      "summary": "Large Language Models (LLMs) excel in NLP, but their demands hinder their widespread deployment. While Quantization-Aware Training (QAT) offers a solution, its extensive training costs make Post-Training Quantization (PTQ) a more practical approach for LLMs. In existing studies, activation outliers in particular channels are identified as the bottleneck to PTQ accuracy. They propose to transform the magnitudes from activations to weights, which however offers limited alleviation or suffers from unstable gradients, resulting in a severe performance drop at low-bitwidth. In this paper, we propose QLLM, an accurate and efficient low-bitwidth PTQ method designed for LLMs. QLLM introduces an adaptive channel reassembly technique that reallocates the magnitude of outliers to other channels, thereby mitigating their impact on the quantization range. This is achieved by channel disassembly and channel assembly, which first breaks down the outlier channels into several sub-channels to ensure a more balanced distribution of activation magnitudes. Then similar channels are merged to maintain the original channel number for efficiency. Additionally, an adaptive strategy is designed to autonomously determine the optimal number of sub-channels for channel disassembly. To further compensate for the performance loss caused by quantization, we propose an efficient tuning method that only learns a small number of low-rank weights while freezing the pre-trained quantized model. After training, these low-rank parameters can be fused into the frozen weights without affecting inference. Extensive experiments on LLaMA-1 and LLaMA-2 show that QLLM can obtain accurate quantized models efficiently. For example, QLLM quantizes the 4-bit LLaMA-2-70B within 10 hours on a single A100-80G GPU, outperforming the previous state-of-the-art method by 7.89% on the average accuracy across five zero-shot tasks.",
+      "published": "2023-10-12T05:25:49Z",
+      "updated": "2024-04-06T10:22:57Z",
+      "authors": [
+        "Jing Liu",
+        "Ruihao Gong",
+        "Xiuying Wei",
+        "Zhiwei Dong",
+        "Jianfei Cai",
+        "Bohan Zhuang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2310.00034v2",
+      "arxiv_id": "2310.00034v2",
+      "title": "PB-LLM: Partially Binarized Large Language Models",
+      "summary": "This paper explores network binarization, a radical form of quantization, compressing model weights to a single bit, specifically for Large Language Models (LLMs) compression. Due to previous binarization methods collapsing LLMs, we propose a novel approach, Partially-Binarized LLM (PB-LLM), which can achieve extreme low-bit quantization while maintaining the linguistic reasoning capacity of quantized LLMs. Specifically, our exploration first uncovers the ineffectiveness of naive applications of existing binarization algorithms and highlights the imperative role of salient weights in achieving low-bit quantization. Thus, PB-LLM filters a small ratio of salient weights during binarization, allocating them to higher-bit storage, i.e., partially-binarization. PB-LLM is extended to recover the capacities of quantized LMMs, by analyzing from the perspective of post-training quantization (PTQ) and quantization-aware training (QAT). Under PTQ, combining the concepts from GPTQ, we reconstruct the binarized weight matrix guided by the Hessian matrix and successfully recover the reasoning capacity of PB-LLM in low-bit. Under QAT, we freeze the salient weights during training, explore the derivation of optimal scaling factors crucial for minimizing the quantization error, and propose a scaling mechanism based on this derived scaling strategy for residual binarized weights. Those explorations and the developed methodologies significantly contribute to rejuvenating the performance of low-bit quantized LLMs and present substantial advancements in the field of network binarization for LLMs.The code is available at https://github.com/hahnyuan/BinaryLLM.",
+      "published": "2023-09-29T14:35:27Z",
+      "updated": "2023-11-07T20:41:22Z",
+      "authors": [
+        "Yuzhang Shang",
+        "Zhihang Yuan",
+        "Qiang Wu",
+        "Zhen Dong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.14592v2",
+      "arxiv_id": "2309.14592v2",
+      "title": "Efficient Post-training Quantization with FP8 Formats",
+      "summary": "Recent advances in deep learning methods such as LLMs and Diffusion models have created a need for improved quantization methods that can meet the computational demands of these modern architectures while maintaining accuracy. Towards this goal, we study the advantages of FP8 data formats for post-training quantization across 75 unique network architectures covering a wide range of tasks, including machine translation, language modeling, text generation, image classification, generation, and segmentation. We examine three different FP8 representations (E5M2, E4M3, and E3M4) to study the effects of varying degrees of trade-off between dynamic range and precision on model accuracy. Based on our extensive study, we developed a quantization workflow that generalizes across different network architectures. Our empirical results show that FP8 formats outperform INT8 in multiple aspects, including workload coverage (92.64% vs. 65.87%), model accuracy and suitability for a broader range of operations. Furthermore, our findings suggest that E4M3 is better suited for NLP models, whereas E3M4 performs marginally better than E4M3 on computer vision tasks. The code is publicly available on Intel Neural Compressor: https://github.com/intel/neural-compressor.",
+      "published": "2023-09-26T00:58:36Z",
+      "updated": "2024-03-31T23:05:53Z",
+      "authors": [
+        "Haihao Shen",
+        "Naveen Mellempudi",
+        "Xin He",
+        "Qun Gao",
+        "Chang Wang",
+        "Mengni Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.05516v5",
+      "arxiv_id": "2309.05516v5",
+      "title": "Optimize Weight Rounding via Signed Gradient Descent for the Quantization of LLMs",
+      "summary": "Large Language Models (LLMs) have demonstrated exceptional proficiency in language-related tasks, but their deployment poses significant challenges due to substantial memory and storage requirements. Weight-only quantization has emerged as a promising solution, significantly reducing memory and storage needs without sacrificing too much performance. In this study, we introduce SignRound, a method that leverages signed gradient descent (SignSGD) to optimize rounding values and weight clipping in just 200 steps. SignRound integrates the advantages of Quantization-Aware Training (QAT) and Post-Training Quantization (PTQ), delivering exceptional results across 2 to 4 bits while minimizing tuning costs and avoiding additional inference overhead. For example, SignRound achieved absolute average accuracy improvements ranging from 6.91% to 33.22% at 2bits, as measured by the average zero-shot accuracy across 11 tasks. It also demonstrates strong generalization in recent models, achieving near-lossless 4-bit quantization in most scenarios. The source code is publicly available at https://github.com/intel/auto-round.",
+      "published": "2023-09-11T14:58:23Z",
+      "updated": "2024-10-08T02:02:35Z",
+      "authors": [
+        "Wenhua Cheng",
+        "Weiwei Zhang",
+        "Haihao Shen",
+        "Yiyang Cai",
+        "Xin He",
+        "Kaokao Lv",
+        "Yi Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.05210v3",
+      "arxiv_id": "2309.05210v3",
+      "title": "Understanding the Impact of Post-Training Quantization on Large Language Models",
+      "summary": "Large language models (LLMs) are rapidly increasing in size, with the number of parameters becoming a key factor in the success of many commercial models, such as ChatGPT, Claude, and Bard. Even the recently released publicly accessible models for commercial usage, such as Falcon and Llama2, come equipped with billions of parameters. This significant increase in the number of parameters makes deployment and operation very costly. The remarkable progress in the field of quantization for large neural networks in general and LLMs in particular, has made these models more accessible by enabling them to be deployed on consumer-grade GPUs. Quantized models generally demonstrate comparable performance levels to their unquantized base counterparts. Nonetheless, there exists a notable gap in our comprehensive understanding of how these quantized models respond to hyperparameters, such as temperature, max new tokens, and topk, particularly for next word prediction. The present analysis reveals that nf4 and fp4 are equally proficient 4-bit quantization techniques, characterized by similar attributes such as inference speed, memory consumption, and the quality of generated content. the study identifies nf4 as displaying greater resilience to temperature variations in the case of the llama2 series of models at lower temperature, while fp4 and fp4-dq proves to be a more suitable choice for falcon series of models. It is noteworthy that, in general, 4-bit quantized models of varying sizes exhibit higher sensitivity to temperature in the range of 0.5 to 0.8, unlike their unquantized counterparts. Additionally, int8 quantization is associated with significantly slower inference speeds, whereas unquantized bfloat16 models consistently yield the fastest inference speeds across models of all sizes.",
+      "published": "2023-09-11T02:58:32Z",
+      "updated": "2023-09-17T05:38:46Z",
+      "authors": [
+        "Somnath Roy"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2309.01885v2",
+      "arxiv_id": "2309.01885v2",
+      "title": "QuantEase: Optimization-based Quantization for Language Models",
+      "summary": "With the rising popularity of Large Language Models (LLMs), there has been an increasing interest in compression techniques that enable their efficient deployment. This study focuses on the Post-Training Quantization (PTQ) of LLMs. Drawing from recent advances, our work introduces QuantEase, a layer-wise quantization framework where individual layers undergo separate quantization. The problem is framed as a discrete-structured non-convex optimization, prompting the development of algorithms rooted in Coordinate Descent (CD) techniques. These CD-based methods provide high-quality solutions to the complex non-convex layer-wise quantization problems. Notably, our CD-based approach features straightforward updates, relying solely on matrix and vector operations, circumventing the need for matrix inversion or decomposition. We also explore an outlier-aware variant of our approach, allowing for retaining significant weights (outliers) with complete precision. Our proposal attains state-of-the-art performance in terms of perplexity and zero-shot accuracy in empirical evaluations across various LLMs and datasets, with relative improvements up to 15% over methods such as GPTQ. Leveraging careful linear algebra optimizations, QuantEase can quantize models like Falcon-180B on a single NVIDIA A100 GPU in $\\sim$3 hours. Particularly noteworthy is our outlier-aware algorithm's capability to achieve near or sub-3-bit quantization of LLMs with an acceptable drop in accuracy, obviating the need for non-uniform quantization or grouping techniques, improving upon methods such as SpQR by up to two times in terms of perplexity.",
+      "published": "2023-09-05T01:39:09Z",
+      "updated": "2023-12-01T07:04:05Z",
+      "authors": [
+        "Kayhan Behdin",
+        "Ayan Acharya",
+        "Aman Gupta",
+        "Qingquan Song",
+        "Siyu Zhu",
+        "Sathiya Keerthi",
+        "Rahul Mazumder"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.15987v1",
+      "arxiv_id": "2308.15987v1",
+      "title": "FPTQ: Fine-grained Post-Training Quantization for Large Language Models",
+      "summary": "In the era of large-scale language models, the substantial parameter size poses significant challenges for deployment. Being a prevalent compression technique, quantization has emerged as the mainstream practice to tackle this issue, which is mainly centered on two recipes W8A8 and W4A16 (i.e. weights and activations in such bit widths). In this study, we propose a novel W4A8 post-training quantization method for the available open-sourced LLMs, which combines the advantages of both two recipes. Therefore, we can leverage the benefit in the I/O utilization of 4-bit weight quantization and the acceleration due to 8-bit matrix computation. Nevertheless, the W4A8 faces notorious performance degradation. As a remedy, we involve layerwise activation quantization strategies which feature a novel logarithmic equalization for most intractable layers, and we combine them with fine-grained weight quantization. Without whistles and bells, we eliminate the necessity for further fine-tuning and obtain the state-of-the-art W4A8 quantized performance on BLOOM, LLaMA, and LLaMA-2 on standard benchmarks. We confirm that the W4A8 quantization is achievable for the deployment of large language models, fostering their wide-spreading real-world applications.",
+      "published": "2023-08-30T12:18:18Z",
+      "updated": "2023-08-30T12:18:18Z",
+      "authors": [
+        "Qingyuan Li",
+        "Yifan Zhang",
+        "Liang Li",
+        "Peng Yao",
+        "Bo Zhang",
+        "Xiangxiang Chu",
+        "Yerui Sun",
+        "Li Du",
+        "Yuchen Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.13137v3",
+      "arxiv_id": "2308.13137v3",
+      "title": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "summary": "Large language models (LLMs) have revolutionized natural language processing tasks. However, their practical deployment is hindered by their immense memory and computation requirements. Although recent post-training quantization (PTQ) methods are effective in reducing memory footprint and improving the computational efficiency of LLM, they hand-craft quantization parameters, leading to low performance, especially in extremely low-bit quantization. To tackle this issue, we introduce an Omnidirectionally calibrated Quantization (\\textbf{OmniQuant}) technique for LLMs, which achieves good performance in diverse quantization settings while maintaining the computational efficiency of PTQ by efficiently optimizing various quantization parameters. OmniQuant comprises two innovative components including Learnable Weight Clipping (LWC) and Learnable Equivalent Transformation (LET). LWC modulates the extreme values of weights by optimizing the clipping threshold. Meanwhile, LET tackles activation outliers by shifting the challenge of quantization from activations to weights. Operating within a differentiable framework using block-wise error minimization, OmniQuant can optimize the quantization process efficiently for both weight-only and weight-activation quantization. For instance, the LLaMA-2 model family size 7-70B can be processed with OmniQuant on a single A100-40G GPU within 1-16 hours using 128 samples. Extensive experiments validate OmniQuant's superior performance across diverse quantization configurations such as W4A4 (4-bit weight, 4-bit activation), W6A6, W4A16, W3A16, and W2A16. Additionally, OmniQuant demonstrates effectiveness in instruction-tuned models and delivers notable improvements in inference speed and memory reduction on real devices. Codes are available at \\url{https://github.com/OpenGVLab/OmniQuant}.",
+      "published": "2023-08-25T02:28:35Z",
+      "updated": "2024-03-18T05:33:22Z",
+      "authors": [
+        "Wenqi Shao",
+        "Mengzhao Chen",
+        "Zhaoyang Zhang",
+        "Peng Xu",
+        "Lirui Zhao",
+        "Zhiqian Li",
+        "Kaipeng Zhang",
+        "Peng Gao",
+        "Yu Qiao",
+        "Ping Luo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.07662v1",
+      "arxiv_id": "2308.07662v1",
+      "title": "Gradient-Based Post-Training Quantization: Challenging the Status Quo",
+      "summary": "Quantization has become a crucial step for the efficient deployment of deep neural networks, where floating point operations are converted to simpler fixed point operations. In its most naive form, it simply consists in a combination of scaling and rounding transformations, leading to either a limited compression rate or a significant accuracy drop. Recently, Gradient-based post-training quantization (GPTQ) methods appears to be constitute a suitable trade-off between such simple methods and more powerful, yet expensive Quantization-Aware Training (QAT) approaches, particularly when attempting to quantize LLMs, where scalability of the quantization process is of paramount importance. GPTQ essentially consists in learning the rounding operation using a small calibration set. In this work, we challenge common choices in GPTQ methods. In particular, we show that the process is, to a certain extent, robust to a number of variables (weight selection, feature augmentation, choice of calibration set). More importantly, we derive a number of best practices for designing more efficient and scalable GPTQ methods, regarding the problem formulation (loss, degrees of freedom, use of non-uniform quantization schemes) or optimization process (choice of variable and optimizer). Lastly, we propose a novel importance-based mixed-precision technique. Those guidelines lead to significant performance improvements on all the tested state-of-the-art GPTQ methods and networks (e.g. +6.819 points on ViT for 4-bit quantization), paving the way for the design of scalable, yet effective quantization methods.",
+      "published": "2023-08-15T09:25:11Z",
+      "updated": "2023-08-15T09:25:11Z",
+      "authors": [
+        "Edouard Yvinec",
+        "Arnaud Dapogny",
+        "Kevin Bailly"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.05600v1",
+      "arxiv_id": "2308.05600v1",
+      "title": "NUPES : Non-Uniform Post-Training Quantization via Power Exponent Search",
+      "summary": "Deep neural network (DNN) deployment has been confined to larger hardware devices due to their expensive computational requirements. This challenge has recently reached another scale with the emergence of large language models (LLMs). In order to reduce both their memory footprint and latency, a promising technique is quantization. It consists in converting floating point representations to low bit-width fixed point representations, usually by assuming a uniform mapping onto a regular grid. This process, referred to in the literature as uniform quantization, may however be ill-suited as most DNN weights and activations follow a bell-shaped distribution. This is even worse on LLMs whose weight distributions are known to exhibit large, high impact, outlier values. In this work, we propose an improvement over the most commonly adopted way to tackle this limitation in deep learning models quantization, namely, non-uniform quantization. NUPES leverages automorphisms to preserve the scalar multiplications. Such transformations are derived from power functions. However, the optimization of the exponent parameter and weight values remains a challenging and novel problem which could not be solved with previous post training optimization techniques which only learn to round up or down weight values in order to preserve the predictive function. We circumvent this limitation with a new paradigm: learning new quantized weights over the entire quantized space. Similarly, we enable the optimization of the power exponent, i.e. the optimization of the quantization operator itself during training by alleviating all the numerical instabilities. The resulting predictive function is compatible with integer-only low-bit inference. We show the ability of the method to achieve state-of-the-art compression rates in both, data-free and data-driven configurations.",
+      "published": "2023-08-10T14:19:58Z",
+      "updated": "2023-08-10T14:19:58Z",
+      "authors": [
+        "Edouard Yvinec",
+        "Arnaud Dapogny",
+        "Kevin Bailly"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2306.07629v4",
+      "arxiv_id": "2306.07629v4",
+      "title": "SqueezeLLM: Dense-and-Sparse Quantization",
+      "summary": "Generative Large Language Models (LLMs) have demonstrated remarkable results for a wide range of tasks. However, deploying these models for inference has been a significant challenge due to their unprecedented resource requirements. This has forced existing deployment frameworks to use multi-GPU inference pipelines, which are often complex and costly, or to use smaller and less performant models. In this work, we demonstrate that the main bottleneck for generative inference with LLMs is memory bandwidth, rather than compute, specifically for single batch inference. While quantization has emerged as a promising solution by representing weights with reduced precision, previous efforts have often resulted in notable performance degradation. To address this, we introduce SqueezeLLM, a post-training quantization framework that not only enables lossless compression to ultra-low precisions of up to 3-bit, but also achieves higher quantization performance under the same memory constraint. Our framework incorporates two novel ideas: (i) sensitivity-based non-uniform quantization, which searches for the optimal bit precision assignment based on second-order information; and (ii) the Dense-and-Sparse decomposition that stores outliers and sensitive weight values in an efficient sparse format. When applied to the LLaMA models, our 3-bit quantization significantly reduces the perplexity gap from the FP16 baseline by up to 2.1x as compared to the state-of-the-art methods with the same memory requirement. Furthermore, when deployed on an A6000 GPU, our quantized models achieve up to 2.3x speedup compared to the baseline. Our code is available at https://github.com/SqueezeAILab/SqueezeLLM.",
+      "published": "2023-06-13T08:57:54Z",
+      "updated": "2024-06-05T03:57:41Z",
+      "authors": [
+        "Sehoon Kim",
+        "Coleman Hooper",
+        "Amir Gholami",
+        "Zhen Dong",
+        "Xiuyu Li",
+        "Sheng Shen",
+        "Michael W. Mahoney",
+        "Kurt Keutzer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.17888v1",
+      "arxiv_id": "2305.17888v1",
+      "title": "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+      "summary": "Several post-training quantization methods have been applied to large language models (LLMs), and have been shown to perform well down to 8-bits. We find that these methods break down at lower bit precision, and investigate quantization aware training for LLMs (LLM-QAT) to push quantization levels even further. We propose a data-free distillation method that leverages generations produced by the pre-trained model, which better preserves the original output distribution and allows quantizing any generative model independent of its training data, similar to post-training quantization methods. In addition to quantizing weights and activations, we also quantize the KV cache, which is critical for increasing throughput and support long sequence dependencies at current model sizes. We experiment with LLaMA models of sizes 7B, 13B, and 30B, at quantization levels down to 4-bits. We observe large improvements over training-free methods, especially in the low-bit settings.",
+      "published": "2023-05-29T05:22:11Z",
+      "updated": "2023-05-29T05:22:11Z",
+      "authors": [
+        "Zechun Liu",
+        "Barlas Oguz",
+        "Changsheng Zhao",
+        "Ernie Chang",
+        "Pierre Stock",
+        "Yashar Mehdad",
+        "Yangyang Shi",
+        "Raghuraman Krishnamoorthi",
+        "Vikas Chandra"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.12356v1",
+      "arxiv_id": "2305.12356v1",
+      "title": "Integer or Floating Point? New Outlooks for Low-Bit Quantization on Large Language Models",
+      "summary": "Efficient deployment of large language models (LLMs) necessitates low-bit quantization to minimize model size and inference cost. While low-bit integer formats (e.g., INT8/INT4) have been the conventional choice, emerging low-bit floating-point formats (e.g., FP8/FP4) offer a compelling alternative and are gaining support from cutting-edge hardware, such as NVIDIA's H100 GPU. However, the superiority of low-bit INT versus FP formats for quantization on LLMs remains unclear. In this study, we conduct a comparative analysis of INT and FP quantization with the same bit-width, revealing that the optimal quantization format varies across different layers due to the complexity and diversity of tensor distribution. Consequently, we advocate the Mixture of Formats Quantization (MoFQ), which selects the optimal format on a layer-wise basis. This simple yet effective approach achieves state-of-the-art results in both weight-only (W-only) and weight-activation (WA) post-training quantization scenarios when tested on LLaMA across various tasks. In 4-bit W-only quantization, MoFQ surpasses GPTQ without complex hyperparameter tuning and with an order of magnitude faster quantization speed. While in 8-bit WA quantization, MoFQ significantly outperforms INT/FP-only methods, achieving performance close to the full precision model. Notably, MoFQ incurs no hardware overhead compared to INT/FP-only quantization, as the bit-width remains unchanged.",
+      "published": "2023-05-21T05:28:37Z",
+      "updated": "2023-05-21T05:28:37Z",
+      "authors": [
+        "Yijia Zhang",
+        "Lingran Zhao",
+        "Shijie Cao",
+        "Wenqiang Wang",
+        "Ting Cao",
+        "Fan Yang",
+        "Mao Yang",
+        "Shanghang Zhang",
+        "Ningyi Xu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2304.01089v4",
+      "arxiv_id": "2304.01089v4",
+      "title": "RPTQ: Reorder-based Post-training Quantization for Large Language Models",
+      "summary": "Large-scale language models (LLMs) have demonstrated impressive performance, but their deployment presents challenges due to their significant memory usage. This issue can be alleviated through quantization. In this paper, we identify that the challenge in quantizing activations in LLMs arises from varying ranges across channels, rather than solely the presence of outliers. To address this challenge, we introduce a quantization method called RPTQ, which utilizes a reorder-based approach. By rearranging the channels and quantizing them in clusters, RPTQ effectively mitigates the impact of range differences between channels. To minimize the overhead of the reorder operation, we fuse it into the layer norm operation and weights in linear layers. In our experiments, RPTQ achieved a significant breakthrough by utilizing 3-bit activation in LLMs for the first time, resulting in a substantial reduction in memory usage. For instance, quantizing OPT-175b can lead to a memory consumption reduction of up to 80%.",
+      "published": "2023-04-03T15:46:15Z",
+      "updated": "2023-05-17T10:07:33Z",
+      "authors": [
+        "Zhihang Yuan",
+        "Lin Niu",
+        "Jiawei Liu",
+        "Wenyu Liu",
+        "Xinggang Wang",
+        "Yuzhang Shang",
+        "Guangyu Sun",
+        "Qiang Wu",
+        "Jiaxiang Wu",
+        "Bingzhe Wu"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2303.08302v3",
+      "arxiv_id": "2303.08302v3",
+      "title": "ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation",
+      "summary": "Post-training quantization (PTQ) has emerged as a promising technique for mitigating memory consumption and computational costs in large language models (LLMs). However, a systematic examination of various quantization schemes, model families, and quantization bit precision has been absent from the literature. In this paper, we conduct a comprehensive analysis of these factors by investigating the effects of PTQ on weight-only, activation-only, and weight-and-activation quantization using diverse methods such as round-to-nearest (RTN), GPTQ, ZeroQuant, and their variants. We apply these methods to two distinct model families with parameters ranging from 125M to 176B. Our contributions include: (1) a sensitivity analysis revealing that activation quantization is generally more susceptible to weight quantization, with smaller models often outperforming larger models in terms of activation quantization; (2) an evaluation and comparison of existing PTQ methods to optimize model size reduction while minimizing the impact on accuracy, revealing that none of the current methods can achieve the original model quality for quantization with either INT4-weight or INT4-weight-and-INT8-activation; (3) based on these insights, we propose an optimized method called Low-Rank Compensation (LoRC), which employs low-rank matrices to enhance model quality recovery with a minimal increase in model size.",
+      "published": "2023-03-15T01:27:15Z",
+      "updated": "2023-05-26T00:17:06Z",
+      "authors": [
+        "Zhewei Yao",
+        "Xiaoxia Wu",
+        "Cheng Li",
+        "Stephen Youn",
+        "Yuxiong He"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ]
+    }
+  ]
+}

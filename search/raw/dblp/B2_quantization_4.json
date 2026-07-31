@@ -1,0 +1,1396 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "quantization-aware training transformer",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:53:53Z",
+  "total_results_reported": 17,
+  "returned": 17,
+  "returned_in_coverage_window": 17,
+  "hit_result_cap": false,
+  "hits": [
+    {
+      "@score": "4",
+      "@id": "80070",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/5564-9",
+              "text": "Rui Ding 0009"
+            },
+            {
+              "@pid": "395/5468",
+              "text": "Sihuan Zhao"
+            },
+            {
+              "@pid": "256/4051",
+              "text": "Jiayu Shi"
+            },
+            {
+              "@pid": "39/5493-1",
+              "text": "Jing Nie 0001"
+            },
+            {
+              "@pid": "56/1277-2",
+              "text": "Lihui Chen 0002"
+            },
+            {
+              "@pid": "40/2619-1",
+              "text": "Haijun Liu 0001"
+            },
+            {
+              "@pid": "116/3393",
+              "text": "Xichuan Zhou"
+            }
+          ]
+        },
+        "title": "RA-PTQ: Reparameterization-Aware Post-Training Quantization for accurate vision transformers in low-bit scenarios.",
+        "venue": "Knowl. Based Syst.",
+        "volume": "345",
+        "pages": "116114",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/kbs/DingZSNCLZ26",
+        "doi": "10.1016/J.KNOSYS.2026.116114",
+        "ee": "https://doi.org/10.1016/j.knosys.2026.116114",
+        "url": "https://dblp.org/rec/journals/kbs/DingZSNCLZ26"
+      },
+      "url": "URL#80070"
+    },
+    {
+      "@score": "4",
+      "@id": "81286",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "68/887",
+              "text": "Shiqi Zhao"
+            },
+            {
+              "@pid": "34/10115",
+              "text": "Zhengjie Wang"
+            },
+            {
+              "@pid": "434/7775",
+              "text": "Haozu Sun"
+            },
+            {
+              "@pid": "368/6921",
+              "text": "Sibo Wang"
+            },
+            {
+              "@pid": "139/3503",
+              "text": "Zihan Chen"
+            },
+            {
+              "@pid": "260/0086",
+              "text": "Changzeng Fu"
+            },
+            {
+              "@pid": "12/1198-33",
+              "text": "Jie Yang 0033"
+            },
+            {
+              "@pid": "18/681",
+              "text": "Mohamad Sawan"
+            }
+          ]
+        },
+        "title": "HAQ-ViT: A hardware-aware post-training quantization for efficient vision transformer inference.",
+        "venue": "Knowl. Based Syst.",
+        "volume": "342",
+        "pages": "115830",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/kbs/ZhaoWSWCFYS26",
+        "doi": "10.1016/J.KNOSYS.2026.115830",
+        "ee": "https://doi.org/10.1016/j.knosys.2026.115830",
+        "url": "https://dblp.org/rec/journals/kbs/ZhaoWSWCFYS26"
+      },
+      "url": "URL#81286"
+    },
+    {
+      "@score": "4",
+      "@id": "95054",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "58/6810-148",
+              "text": "Li Wang 0148"
+            },
+            {
+              "@pid": "35/2167",
+              "text": "Chao Zeng"
+            },
+            {
+              "@pid": "60/7041-22",
+              "text": "Miao Zhang 0022"
+            },
+            {
+              "@pid": "170/4643",
+              "text": "Jianlong Wu"
+            },
+            {
+              "@pid": "92/8277",
+              "text": "Liqiang Nie"
+            }
+          ]
+        },
+        "title": "Domain aware post training quantization for vision transformers in deployment.",
+        "venue": "Pattern Recognit.",
+        "volume": "171",
+        "pages": "112182",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/pr/WangZZWN26",
+        "doi": "10.1016/J.PATCOG.2025.112182",
+        "ee": "https://doi.org/10.1016/j.patcog.2025.112182",
+        "url": "https://dblp.org/rec/journals/pr/WangZZWN26"
+      },
+      "url": "URL#95054"
+    },
+    {
+      "@score": "4",
+      "@id": "171906",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "336/3622",
+              "text": "Lianwei Yang"
+            },
+            {
+              "@pid": "338/6350",
+              "text": "Haokun Lin"
+            },
+            {
+              "@pid": "11/10388",
+              "text": "Yichen Wu"
+            },
+            {
+              "@pid": "13/5916",
+              "text": "Zhenan Sun"
+            },
+            {
+              "@pid": "86/8369",
+              "text": "Qingyi Gu"
+            }
+          ]
+        },
+        "title": "DapQ-DiT: Distribution-Aware Post-Training Quantization for Efficient Generative Tasks in Diffusion Transformers.",
+        "venue": "ICMR",
+        "pages": "2371-2380",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/mir/YangLWSG26",
+        "doi": "10.1145/3805622.3810825",
+        "ee": "https://doi.org/10.1145/3805622.3810825",
+        "url": "https://dblp.org/rec/conf/mir/YangLWSG26"
+      },
+      "url": "URL#171906"
+    },
+    {
+      "@score": "4",
+      "@id": "411870",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "126/3273",
+              "text": "Weixing Zhang"
+            },
+            {
+              "@pid": "182/2423",
+              "text": "Zhuang Tian"
+            },
+            {
+              "@pid": "88/2478",
+              "text": "Nan Lin"
+            },
+            {
+              "@pid": "27/3366",
+              "text": "Cong Yang"
+            },
+            {
+              "@pid": "168/9286",
+              "text": "Yongxia Chen"
+            }
+          ]
+        },
+        "title": "Hessian matrix-aware comprehensive post-training quantization for vision transformers.",
+        "venue": "J. Electronic Imaging",
+        "volume": "34",
+        "number": "1",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/jei/ZhangTLYC25",
+        "doi": "10.1117/1.JEI.34.1.013009",
+        "ee": "https://doi.org/10.1117/1.jei.34.1.013009",
+        "url": "https://dblp.org/rec/journals/jei/ZhangTLYC25"
+      },
+      "url": "URL#411870"
+    },
+    {
+      "@score": "4",
+      "@id": "536287",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "255/1952",
+              "text": "Kazi Barria Nine"
+            },
+            {
+              "@pid": "169/3604",
+              "text": "Foroozan Karimzadeh"
+            },
+            {
+              "@pid": "249/8047",
+              "text": "Zishen Wan"
+            },
+            {
+              "@pid": "60/4440",
+              "text": "Arijit Raychowdhury"
+            }
+          ]
+        },
+        "title": "MemQuant: Towards Memory-aware Post-Training Quantization for Multimodal Transformers.",
+        "venue": "AICAS",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/aicas/NineKWR25",
+        "doi": "10.1109/AICAS64808.2025.11173143",
+        "ee": "https://doi.org/10.1109/AICAS64808.2025.11173143",
+        "url": "https://dblp.org/rec/conf/aicas/NineKWR25"
+      },
+      "url": "URL#536287"
+    },
+    {
+      "@score": "4",
+      "@id": "575077",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "426/8933",
+              "text": "Pan Peng 0006"
+            },
+            {
+              "@pid": "40/1902",
+              "text": "Wenbin Guo"
+            },
+            {
+              "@pid": "49/6362",
+              "text": "Ping Wei"
+            },
+            {
+              "@pid": "69/5011-11",
+              "text": "Wei Zhou 0011"
+            }
+          ]
+        },
+        "title": "GCQ-ViT: Group-Aware Collaborative Post-Training Quantization for Vision Transformers.",
+        "venue": "ECAI",
+        "pages": "419-426",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/ecai/PengGW025",
+        "doi": "10.3233/FAIA250834",
+        "ee": "https://doi.org/10.3233/FAIA250834",
+        "url": "https://dblp.org/rec/conf/ecai/PengGW025"
+      },
+      "url": "URL#575077"
+    },
+    {
+      "@score": "4",
+      "@id": "1230322",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "299/8966",
+              "text": "Yuexiao Ma"
+            },
+            {
+              "@pid": "140/1219",
+              "text": "Huixia Li"
+            },
+            {
+              "@pid": "222/7865",
+              "text": "Xiawu Zheng"
+            },
+            {
+              "@pid": "20/7846",
+              "text": "Feng Ling"
+            },
+            {
+              "@pid": "245/9547-1",
+              "text": "Xuefeng Xiao 0001"
+            },
+            {
+              "@pid": "06/2293-89",
+              "text": "Rui Wang 0089"
+            },
+            {
+              "@pid": "159/2939",
+              "text": "Shilei Wen"
+            },
+            {
+              "@pid": "118/5221-1",
+              "text": "Fei Chao 0001"
+            },
+            {
+              "@pid": "86/5681",
+              "text": "Rongrong Ji"
+            }
+          ]
+        },
+        "title": "Outlier-aware Slicing for Post-Training Quantization in Vision Transformer.",
+        "venue": "ICML",
+        "pages": "33811-33825",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/MaLZLX0W0J24",
+        "ee": "https://proceedings.mlr.press/v235/ma24f.html",
+        "url": "https://dblp.org/rec/conf/icml/MaLZLX0W0J24"
+      },
+      "url": "URL#1230322"
+    },
+    {
+      "@score": "4",
+      "@id": "1412389",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "336/3622",
+              "text": "Lianwei Yang"
+            },
+            {
+              "@pid": "371/1011",
+              "text": "Haisong Gong"
+            },
+            {
+              "@pid": "86/8369",
+              "text": "Qingyi Gu"
+            }
+          ]
+        },
+        "title": "DopQ-ViT: Towards Distribution-Friendly and Outlier-Aware Post-Training Quantization for Vision Transformers.",
+        "venue": "CoRR",
+        "volume": "abs/2408.03291",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2408-03291",
+        "doi": "10.48550/ARXIV.2408.03291",
+        "ee": "https://doi.org/10.48550/arXiv.2408.03291",
+        "url": "https://dblp.org/rec/journals/corr/abs-2408-03291"
+      },
+      "url": "URL#1412389"
+    },
+    {
+      "@score": "4",
+      "@id": "1419079",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "340/0386",
+              "text": "Tianheng Ling"
+            },
+            {
+              "@pid": "97/4594",
+              "text": "Gregor Schiele"
+            }
+          ]
+        },
+        "title": "On-device AI: Quantization-aware Training of Transformers in Time-Series.",
+        "venue": "CoRR",
+        "volume": "abs/2408.16495",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2408-16495",
+        "doi": "10.48550/ARXIV.2408.16495",
+        "ee": "https://doi.org/10.48550/arXiv.2408.16495",
+        "url": "https://dblp.org/rec/journals/corr/abs-2408-16495"
+      },
+      "url": "URL#1419079"
+    },
+    {
+      "@score": "4",
+      "@id": "1736714",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "209/4981",
+              "text": "Kyuhong Shim"
+            },
+            {
+              "@pid": "97/4757-3",
+              "text": "Seongmin Park 0003"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers.",
+        "venue": "EACL",
+        "pages": "916-929",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/eacl/KimSPSC23",
+        "doi": "10.18653/V1/2023.EACL-MAIN.64",
+        "ee": "https://doi.org/10.18653/v1/2023.eacl-main.64",
+        "url": "https://dblp.org/rec/conf/eacl/KimSPSC23"
+      },
+      "url": "URL#1736714"
+    },
+    {
+      "@score": "4",
+      "@id": "1817380",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/3180",
+              "text": "Zi Yang"
+            },
+            {
+              "@pid": "203/8504",
+              "text": "Samridhi Choudhary"
+            },
+            {
+              "@pid": "64/3172",
+              "text": "Siegfried Kunzmann"
+            },
+            {
+              "@pid": "181/2621",
+              "text": "Zheng Zhang"
+            }
+          ]
+        },
+        "title": "Quantization-aware and Tensor-compressed Training of Transformers for Natural Language Understanding.",
+        "venue": "INTERSPEECH",
+        "pages": "3292-3296",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/interspeech/YangCKZ23",
+        "doi": "10.21437/INTERSPEECH.2023-2045",
+        "ee": "https://doi.org/10.21437/Interspeech.2023-2045",
+        "url": "https://dblp.org/rec/conf/interspeech/YangCKZ23"
+      },
+      "url": "URL#1817380"
+    },
+    {
+      "@score": "4",
+      "@id": "1854570",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "340/0386",
+              "text": "Tianheng Ling"
+            },
+            {
+              "@pid": "97/4594",
+              "text": "Gregor Schiele"
+            }
+          ]
+        },
+        "title": "On-Device AI: Quantization-Aware Training of Transformers in Time-Series.",
+        "venue": "PerCom Workshops",
+        "pages": "235-236",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/percom/LingS23",
+        "doi": "10.1109/PERCOMWORKSHOPS56833.2023.10150339",
+        "ee": "https://doi.org/10.1109/PerComWorkshops56833.2023.10150339",
+        "url": "https://dblp.org/rec/conf/percom/LingS23"
+      },
+      "url": "URL#1854570"
+    },
+    {
+      "@score": "4",
+      "@id": "1906325",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "209/4981",
+              "text": "Kyuhong Shim"
+            },
+            {
+              "@pid": "97/4757-3",
+              "text": "Seongmin Park 0003"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers.",
+        "venue": "CoRR",
+        "volume": "abs/2302.11812",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2302-11812",
+        "doi": "10.48550/ARXIV.2302.11812",
+        "ee": "https://doi.org/10.48550/arXiv.2302.11812",
+        "url": "https://dblp.org/rec/journals/corr/abs-2302-11812"
+      },
+      "url": "URL#1906325"
+    },
+    {
+      "@score": "4",
+      "@id": "1934382",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/3180",
+              "text": "Zi Yang"
+            },
+            {
+              "@pid": "203/8504",
+              "text": "Samridhi Choudhary"
+            },
+            {
+              "@pid": "64/3172",
+              "text": "Siegfried Kunzmann"
+            },
+            {
+              "@pid": "181/2621",
+              "text": "Zheng Zhang"
+            }
+          ]
+        },
+        "title": "Quantization-Aware and Tensor-Compressed Training of Transformers for Natural Language Understanding.",
+        "venue": "CoRR",
+        "volume": "abs/2306.01076",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2306-01076",
+        "doi": "10.48550/ARXIV.2306.01076",
+        "ee": "https://doi.org/10.48550/arXiv.2306.01076",
+        "url": "https://dblp.org/rec/journals/corr/abs-2306-01076"
+      },
+      "url": "URL#1934382"
+    },
+    {
+      "@score": "4",
+      "@id": "2268687",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "334/0967",
+              "text": "Sukjin Hong"
+            },
+            {
+              "@pid": "92/3996",
+              "text": "Du-Seong Chang"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Understanding and Improving Knowledge Distillation for Quantization Aware Training of Large Transformer Encoders.",
+        "venue": "EMNLP",
+        "pages": "6713-6725",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/KimLHCC22",
+        "doi": "10.18653/V1/2022.EMNLP-MAIN.450",
+        "ee": "https://doi.org/10.18653/v1/2022.emnlp-main.450",
+        "url": "https://dblp.org/rec/conf/emnlp/KimLHCC22"
+      },
+      "url": "URL#2268687"
+    },
+    {
+      "@score": "4",
+      "@id": "2474651",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "334/0967",
+              "text": "Sukjin Hong"
+            },
+            {
+              "@pid": "92/3996",
+              "text": "Du-Seong Chang"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Understanding and Improving Knowledge Distillation for Quantization-Aware Training of Large Transformer Encoders.",
+        "venue": "CoRR",
+        "volume": "abs/2211.11014",
+        "year": "2022",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2211-11014",
+        "doi": "10.48550/ARXIV.2211.11014",
+        "ee": "https://doi.org/10.48550/arXiv.2211.11014",
+        "url": "https://dblp.org/rec/journals/corr/abs-2211-11014"
+      },
+      "url": "URL#2474651"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "4",
+      "@id": "80070",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/5564-9",
+              "text": "Rui Ding 0009"
+            },
+            {
+              "@pid": "395/5468",
+              "text": "Sihuan Zhao"
+            },
+            {
+              "@pid": "256/4051",
+              "text": "Jiayu Shi"
+            },
+            {
+              "@pid": "39/5493-1",
+              "text": "Jing Nie 0001"
+            },
+            {
+              "@pid": "56/1277-2",
+              "text": "Lihui Chen 0002"
+            },
+            {
+              "@pid": "40/2619-1",
+              "text": "Haijun Liu 0001"
+            },
+            {
+              "@pid": "116/3393",
+              "text": "Xichuan Zhou"
+            }
+          ]
+        },
+        "title": "RA-PTQ: Reparameterization-Aware Post-Training Quantization for accurate vision transformers in low-bit scenarios.",
+        "venue": "Knowl. Based Syst.",
+        "volume": "345",
+        "pages": "116114",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/kbs/DingZSNCLZ26",
+        "doi": "10.1016/J.KNOSYS.2026.116114",
+        "ee": "https://doi.org/10.1016/j.knosys.2026.116114",
+        "url": "https://dblp.org/rec/journals/kbs/DingZSNCLZ26"
+      },
+      "url": "URL#80070"
+    },
+    {
+      "@score": "4",
+      "@id": "81286",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "68/887",
+              "text": "Shiqi Zhao"
+            },
+            {
+              "@pid": "34/10115",
+              "text": "Zhengjie Wang"
+            },
+            {
+              "@pid": "434/7775",
+              "text": "Haozu Sun"
+            },
+            {
+              "@pid": "368/6921",
+              "text": "Sibo Wang"
+            },
+            {
+              "@pid": "139/3503",
+              "text": "Zihan Chen"
+            },
+            {
+              "@pid": "260/0086",
+              "text": "Changzeng Fu"
+            },
+            {
+              "@pid": "12/1198-33",
+              "text": "Jie Yang 0033"
+            },
+            {
+              "@pid": "18/681",
+              "text": "Mohamad Sawan"
+            }
+          ]
+        },
+        "title": "HAQ-ViT: A hardware-aware post-training quantization for efficient vision transformer inference.",
+        "venue": "Knowl. Based Syst.",
+        "volume": "342",
+        "pages": "115830",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/kbs/ZhaoWSWCFYS26",
+        "doi": "10.1016/J.KNOSYS.2026.115830",
+        "ee": "https://doi.org/10.1016/j.knosys.2026.115830",
+        "url": "https://dblp.org/rec/journals/kbs/ZhaoWSWCFYS26"
+      },
+      "url": "URL#81286"
+    },
+    {
+      "@score": "4",
+      "@id": "95054",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "58/6810-148",
+              "text": "Li Wang 0148"
+            },
+            {
+              "@pid": "35/2167",
+              "text": "Chao Zeng"
+            },
+            {
+              "@pid": "60/7041-22",
+              "text": "Miao Zhang 0022"
+            },
+            {
+              "@pid": "170/4643",
+              "text": "Jianlong Wu"
+            },
+            {
+              "@pid": "92/8277",
+              "text": "Liqiang Nie"
+            }
+          ]
+        },
+        "title": "Domain aware post training quantization for vision transformers in deployment.",
+        "venue": "Pattern Recognit.",
+        "volume": "171",
+        "pages": "112182",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/pr/WangZZWN26",
+        "doi": "10.1016/J.PATCOG.2025.112182",
+        "ee": "https://doi.org/10.1016/j.patcog.2025.112182",
+        "url": "https://dblp.org/rec/journals/pr/WangZZWN26"
+      },
+      "url": "URL#95054"
+    },
+    {
+      "@score": "4",
+      "@id": "171906",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "336/3622",
+              "text": "Lianwei Yang"
+            },
+            {
+              "@pid": "338/6350",
+              "text": "Haokun Lin"
+            },
+            {
+              "@pid": "11/10388",
+              "text": "Yichen Wu"
+            },
+            {
+              "@pid": "13/5916",
+              "text": "Zhenan Sun"
+            },
+            {
+              "@pid": "86/8369",
+              "text": "Qingyi Gu"
+            }
+          ]
+        },
+        "title": "DapQ-DiT: Distribution-Aware Post-Training Quantization for Efficient Generative Tasks in Diffusion Transformers.",
+        "venue": "ICMR",
+        "pages": "2371-2380",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/mir/YangLWSG26",
+        "doi": "10.1145/3805622.3810825",
+        "ee": "https://doi.org/10.1145/3805622.3810825",
+        "url": "https://dblp.org/rec/conf/mir/YangLWSG26"
+      },
+      "url": "URL#171906"
+    },
+    {
+      "@score": "4",
+      "@id": "411870",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "126/3273",
+              "text": "Weixing Zhang"
+            },
+            {
+              "@pid": "182/2423",
+              "text": "Zhuang Tian"
+            },
+            {
+              "@pid": "88/2478",
+              "text": "Nan Lin"
+            },
+            {
+              "@pid": "27/3366",
+              "text": "Cong Yang"
+            },
+            {
+              "@pid": "168/9286",
+              "text": "Yongxia Chen"
+            }
+          ]
+        },
+        "title": "Hessian matrix-aware comprehensive post-training quantization for vision transformers.",
+        "venue": "J. Electronic Imaging",
+        "volume": "34",
+        "number": "1",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/jei/ZhangTLYC25",
+        "doi": "10.1117/1.JEI.34.1.013009",
+        "ee": "https://doi.org/10.1117/1.jei.34.1.013009",
+        "url": "https://dblp.org/rec/journals/jei/ZhangTLYC25"
+      },
+      "url": "URL#411870"
+    },
+    {
+      "@score": "4",
+      "@id": "536287",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "255/1952",
+              "text": "Kazi Barria Nine"
+            },
+            {
+              "@pid": "169/3604",
+              "text": "Foroozan Karimzadeh"
+            },
+            {
+              "@pid": "249/8047",
+              "text": "Zishen Wan"
+            },
+            {
+              "@pid": "60/4440",
+              "text": "Arijit Raychowdhury"
+            }
+          ]
+        },
+        "title": "MemQuant: Towards Memory-aware Post-Training Quantization for Multimodal Transformers.",
+        "venue": "AICAS",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/aicas/NineKWR25",
+        "doi": "10.1109/AICAS64808.2025.11173143",
+        "ee": "https://doi.org/10.1109/AICAS64808.2025.11173143",
+        "url": "https://dblp.org/rec/conf/aicas/NineKWR25"
+      },
+      "url": "URL#536287"
+    },
+    {
+      "@score": "4",
+      "@id": "575077",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "426/8933",
+              "text": "Pan Peng 0006"
+            },
+            {
+              "@pid": "40/1902",
+              "text": "Wenbin Guo"
+            },
+            {
+              "@pid": "49/6362",
+              "text": "Ping Wei"
+            },
+            {
+              "@pid": "69/5011-11",
+              "text": "Wei Zhou 0011"
+            }
+          ]
+        },
+        "title": "GCQ-ViT: Group-Aware Collaborative Post-Training Quantization for Vision Transformers.",
+        "venue": "ECAI",
+        "pages": "419-426",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/ecai/PengGW025",
+        "doi": "10.3233/FAIA250834",
+        "ee": "https://doi.org/10.3233/FAIA250834",
+        "url": "https://dblp.org/rec/conf/ecai/PengGW025"
+      },
+      "url": "URL#575077"
+    },
+    {
+      "@score": "4",
+      "@id": "1230322",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "299/8966",
+              "text": "Yuexiao Ma"
+            },
+            {
+              "@pid": "140/1219",
+              "text": "Huixia Li"
+            },
+            {
+              "@pid": "222/7865",
+              "text": "Xiawu Zheng"
+            },
+            {
+              "@pid": "20/7846",
+              "text": "Feng Ling"
+            },
+            {
+              "@pid": "245/9547-1",
+              "text": "Xuefeng Xiao 0001"
+            },
+            {
+              "@pid": "06/2293-89",
+              "text": "Rui Wang 0089"
+            },
+            {
+              "@pid": "159/2939",
+              "text": "Shilei Wen"
+            },
+            {
+              "@pid": "118/5221-1",
+              "text": "Fei Chao 0001"
+            },
+            {
+              "@pid": "86/5681",
+              "text": "Rongrong Ji"
+            }
+          ]
+        },
+        "title": "Outlier-aware Slicing for Post-Training Quantization in Vision Transformer.",
+        "venue": "ICML",
+        "pages": "33811-33825",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/MaLZLX0W0J24",
+        "ee": "https://proceedings.mlr.press/v235/ma24f.html",
+        "url": "https://dblp.org/rec/conf/icml/MaLZLX0W0J24"
+      },
+      "url": "URL#1230322"
+    },
+    {
+      "@score": "4",
+      "@id": "1412389",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "336/3622",
+              "text": "Lianwei Yang"
+            },
+            {
+              "@pid": "371/1011",
+              "text": "Haisong Gong"
+            },
+            {
+              "@pid": "86/8369",
+              "text": "Qingyi Gu"
+            }
+          ]
+        },
+        "title": "DopQ-ViT: Towards Distribution-Friendly and Outlier-Aware Post-Training Quantization for Vision Transformers.",
+        "venue": "CoRR",
+        "volume": "abs/2408.03291",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2408-03291",
+        "doi": "10.48550/ARXIV.2408.03291",
+        "ee": "https://doi.org/10.48550/arXiv.2408.03291",
+        "url": "https://dblp.org/rec/journals/corr/abs-2408-03291"
+      },
+      "url": "URL#1412389"
+    },
+    {
+      "@score": "4",
+      "@id": "1419079",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "340/0386",
+              "text": "Tianheng Ling"
+            },
+            {
+              "@pid": "97/4594",
+              "text": "Gregor Schiele"
+            }
+          ]
+        },
+        "title": "On-device AI: Quantization-aware Training of Transformers in Time-Series.",
+        "venue": "CoRR",
+        "volume": "abs/2408.16495",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2408-16495",
+        "doi": "10.48550/ARXIV.2408.16495",
+        "ee": "https://doi.org/10.48550/arXiv.2408.16495",
+        "url": "https://dblp.org/rec/journals/corr/abs-2408-16495"
+      },
+      "url": "URL#1419079"
+    },
+    {
+      "@score": "4",
+      "@id": "1736714",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "209/4981",
+              "text": "Kyuhong Shim"
+            },
+            {
+              "@pid": "97/4757-3",
+              "text": "Seongmin Park 0003"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers.",
+        "venue": "EACL",
+        "pages": "916-929",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/eacl/KimSPSC23",
+        "doi": "10.18653/V1/2023.EACL-MAIN.64",
+        "ee": "https://doi.org/10.18653/v1/2023.eacl-main.64",
+        "url": "https://dblp.org/rec/conf/eacl/KimSPSC23"
+      },
+      "url": "URL#1736714"
+    },
+    {
+      "@score": "4",
+      "@id": "1817380",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/3180",
+              "text": "Zi Yang"
+            },
+            {
+              "@pid": "203/8504",
+              "text": "Samridhi Choudhary"
+            },
+            {
+              "@pid": "64/3172",
+              "text": "Siegfried Kunzmann"
+            },
+            {
+              "@pid": "181/2621",
+              "text": "Zheng Zhang"
+            }
+          ]
+        },
+        "title": "Quantization-aware and Tensor-compressed Training of Transformers for Natural Language Understanding.",
+        "venue": "INTERSPEECH",
+        "pages": "3292-3296",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/interspeech/YangCKZ23",
+        "doi": "10.21437/INTERSPEECH.2023-2045",
+        "ee": "https://doi.org/10.21437/Interspeech.2023-2045",
+        "url": "https://dblp.org/rec/conf/interspeech/YangCKZ23"
+      },
+      "url": "URL#1817380"
+    },
+    {
+      "@score": "4",
+      "@id": "1854570",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "340/0386",
+              "text": "Tianheng Ling"
+            },
+            {
+              "@pid": "97/4594",
+              "text": "Gregor Schiele"
+            }
+          ]
+        },
+        "title": "On-Device AI: Quantization-Aware Training of Transformers in Time-Series.",
+        "venue": "PerCom Workshops",
+        "pages": "235-236",
+        "year": "2023",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/percom/LingS23",
+        "doi": "10.1109/PERCOMWORKSHOPS56833.2023.10150339",
+        "ee": "https://doi.org/10.1109/PerComWorkshops56833.2023.10150339",
+        "url": "https://dblp.org/rec/conf/percom/LingS23"
+      },
+      "url": "URL#1854570"
+    },
+    {
+      "@score": "4",
+      "@id": "1906325",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "209/4981",
+              "text": "Kyuhong Shim"
+            },
+            {
+              "@pid": "97/4757-3",
+              "text": "Seongmin Park 0003"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers.",
+        "venue": "CoRR",
+        "volume": "abs/2302.11812",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2302-11812",
+        "doi": "10.48550/ARXIV.2302.11812",
+        "ee": "https://doi.org/10.48550/arXiv.2302.11812",
+        "url": "https://dblp.org/rec/journals/corr/abs-2302-11812"
+      },
+      "url": "URL#1906325"
+    },
+    {
+      "@score": "4",
+      "@id": "1934382",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/3180",
+              "text": "Zi Yang"
+            },
+            {
+              "@pid": "203/8504",
+              "text": "Samridhi Choudhary"
+            },
+            {
+              "@pid": "64/3172",
+              "text": "Siegfried Kunzmann"
+            },
+            {
+              "@pid": "181/2621",
+              "text": "Zheng Zhang"
+            }
+          ]
+        },
+        "title": "Quantization-Aware and Tensor-Compressed Training of Transformers for Natural Language Understanding.",
+        "venue": "CoRR",
+        "volume": "abs/2306.01076",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2306-01076",
+        "doi": "10.48550/ARXIV.2306.01076",
+        "ee": "https://doi.org/10.48550/arXiv.2306.01076",
+        "url": "https://dblp.org/rec/journals/corr/abs-2306-01076"
+      },
+      "url": "URL#1934382"
+    },
+    {
+      "@score": "4",
+      "@id": "2268687",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "334/0967",
+              "text": "Sukjin Hong"
+            },
+            {
+              "@pid": "92/3996",
+              "text": "Du-Seong Chang"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Understanding and Improving Knowledge Distillation for Quantization Aware Training of Large Transformer Encoders.",
+        "venue": "EMNLP",
+        "pages": "6713-6725",
+        "year": "2022",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/KimLHCC22",
+        "doi": "10.18653/V1/2022.EMNLP-MAIN.450",
+        "ee": "https://doi.org/10.18653/v1/2022.emnlp-main.450",
+        "url": "https://dblp.org/rec/conf/emnlp/KimLHCC22"
+      },
+      "url": "URL#2268687"
+    },
+    {
+      "@score": "4",
+      "@id": "2474651",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "334/0967",
+              "text": "Sukjin Hong"
+            },
+            {
+              "@pid": "92/3996",
+              "text": "Du-Seong Chang"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "Understanding and Improving Knowledge Distillation for Quantization-Aware Training of Large Transformer Encoders.",
+        "venue": "CoRR",
+        "volume": "abs/2211.11014",
+        "year": "2022",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2211-11014",
+        "doi": "10.48550/ARXIV.2211.11014",
+        "ee": "https://doi.org/10.48550/arXiv.2211.11014",
+        "url": "https://dblp.org/rec/journals/corr/abs-2211-11014"
+      },
+      "url": "URL#2474651"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=quantization-aware%20training%20transformer&h=50&format=json"
+}

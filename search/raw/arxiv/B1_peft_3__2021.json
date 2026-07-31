@@ -1,0 +1,401 @@
+{
+  "source": "arxiv",
+  "protocol_version": "1.1",
+  "api": "http://export.arxiv.org/api/query",
+  "search_query": "(\"adapter\" AND \"transformer\" AND \"fine-tuning\" AND efficient) AND (cat:cs.LG OR cat:cs.CL OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202101010000 TO 202112312359]",
+  "request_urls": [
+    "http://export.arxiv.org/api/query?search_query=%28%22adapter%22+AND+%22transformer%22+AND+%22fine-tuning%22+AND+efficient%29+AND+%28cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202101010000+TO+202112312359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+  ],
+  "fetched_at": "2026-07-21T21:33:54Z",
+  "total_results_reported": 10,
+  "returned": 10,
+  "entries": [
+    {
+      "id": "http://arxiv.org/abs/2112.08718v3",
+      "arxiv_id": "2112.08718v3",
+      "title": "Prompt Tuning GPT-2 language model for parameter-efficient domain adaptation of ASR systems",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains creating a need to adapt to new domains with small memory and deployment overhead. In this work, we introduce domain-prompts, a methodology that involves training a small number of domain embedding parameters to prime a Transformer-based Language Model (LM) to a particular domain. Using this domain-adapted LM for rescoring ASR hypotheses can achieve 7-13% WER reduction for a new domain with just 1000 unlabeled textual domain-specific sentences. This improvement is comparable or even better than fully fine-tuned models even though just 0.02% of the parameters of the base LM are updated. Additionally, our method is deployment-friendly as the learnt domain embeddings are prefixed to the input to the model rather than changing the base model architecture. Therefore, our method is an ideal choice for on-the-fly adaptation of LMs used in ASR systems to progressively scale it to new domains.",
+      "published": "2021-12-16T09:13:04Z",
+      "updated": "2022-07-21T21:24:34Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.07074v1",
+      "arxiv_id": "2112.07074v1",
+      "title": "Towards a Unified Foundation Model: Jointly Pre-Training Transformers on Unpaired Images and Text",
+      "summary": "In this paper, we explore the possibility of building a unified foundation model that can be adapted to both vision-only and text-only tasks. Starting from BERT and ViT, we design a unified transformer consisting of modality-specific tokenizers, a shared transformer encoder, and task-specific output heads. To efficiently pre-train the proposed model jointly on unpaired images and text, we propose two novel techniques: (i) We employ the separately-trained BERT and ViT models as teachers and apply knowledge distillation to provide additional, accurate supervision signals for the joint training; (ii) We propose a novel gradient masking strategy to balance the parameter updates from the image and text pre-training losses. We evaluate the jointly pre-trained transformer by fine-tuning it on image classification tasks and natural language understanding tasks, respectively. The experiments show that the resultant unified foundation transformer works surprisingly well on both the vision-only and text-only tasks, and the proposed knowledge distillation and gradient masking strategy can effectively lift the performance to approach the level of separately-trained models.",
+      "published": "2021-12-14T00:20:55Z",
+      "updated": "2021-12-14T00:20:55Z",
+      "authors": [
+        "Qing Li",
+        "Boqing Gong",
+        "Yin Cui",
+        "Dan Kondratyuk",
+        "Xianzhi Du",
+        "Ming-Hsuan Yang",
+        "Matthew Brown"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.05717v2",
+      "arxiv_id": "2112.05717v2",
+      "title": "Discourse-Aware Soft Prompting for Text Generation",
+      "summary": "Current efficient fine-tuning methods (e.g., adapters, prefix-tuning, etc.) have optimized conditional text generation via training a small set of extra parameters of the neural language model, while freezing the rest for efficiency. While showing strong performance on some generation tasks, they don't generalize across all generation tasks. We show that soft-prompt based conditional text generation can be improved with simple and efficient methods that simulate modeling the discourse structure of human written text. We investigate two design choices: First, we apply \\textit{hierarchical blocking} on the prefix parameters to simulate a higher-level discourse structure of human written text. Second, we apply \\textit{attention sparsity} on the prefix parameters at different layers of the network and learn sparse transformations on the softmax-function. We show that structured design of prefix parameters yields more coherent, faithful and relevant generations than the baseline prefix-tuning on all generation tasks.",
+      "published": "2021-12-10T18:15:44Z",
+      "updated": "2022-05-23T17:27:22Z",
+      "authors": [
+        "Marjan Ghazvininejad",
+        "Vladimir Karpukhin",
+        "Vera Gor",
+        "Asli Celikyilmaz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08329v2",
+      "arxiv_id": "2110.08329v2",
+      "title": "Control Prefixes for Parameter-Efficient Text Generation",
+      "summary": "Prefix-tuning is a powerful lightweight technique for adapting a large pre-trained language model to a downstream application. However, it uses the same dataset-level tuned prompt for all examples in the dataset. We extend this idea and propose a dynamic method, Control Prefixes, which allows for the inclusion of conditional input-dependent information, combining the benefits of prompt tuning and controlled generation. The method incorporates attribute-level learnable representations into different layers of a pre-trained transformer, allowing for the generated text to be guided in a particular direction. We provide a systematic evaluation of the technique and apply it to five datasets from the GEM benchmark for natural language generation (NLG). Although the aim is to develop a parameter-efficient model, we show Control Prefixes can even outperform full fine-tuning methods. We present state-of-the-art results on several data-to-text datasets, including WebNLG.",
+      "published": "2021-10-15T19:32:17Z",
+      "updated": "2022-05-10T16:54:15Z",
+      "authors": [
+        "Jordan Clive",
+        "Kris Cao",
+        "Marek Rei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.06502v2",
+      "arxiv_id": "2110.06502v2",
+      "title": "Prompt-tuning in ASR systems for efficient domain-adaptation",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains. Since domain-specific systems perform better than their generic counterparts on in-domain evaluation, the need for memory and compute-efficient domain adaptation is obvious. Particularly, adapting parameter-heavy transformer-based language models used for rescoring ASR hypothesis is challenging. In this work, we overcome the problem using prompt-tuning, a methodology that trains a small number of domain token embedding parameters to prime a transformer-based LM to a particular domain. With just a handful of extra parameters per domain, we achieve much better perplexity scores over the baseline of using an unadapted LM. Despite being parameter-efficient, these improvements are comparable to those of fully-fine-tuned models with hundreds of millions of parameters. We replicate our findings in perplexity numbers to Word Error Rate in a domain-specific ASR system for one such domain.",
+      "published": "2021-10-13T05:20:57Z",
+      "updated": "2021-10-22T22:31:42Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.01955v1",
+      "arxiv_id": "2110.01955v1",
+      "title": "Distribution Mismatch Correction for Improved Robustness in Deep Neural Networks",
+      "summary": "Deep neural networks rely heavily on normalization methods to improve their performance and learning behavior. Although normalization methods spurred the development of increasingly deep and efficient architectures, they also increase the vulnerability with respect to noise and input corruptions. In most applications, however, noise is ubiquitous and diverse; this can often lead to complete failure of machine learning systems as they fail to cope with mismatches between the input distribution during training- and test-time. The most common normalization method, batch normalization, reduces the distribution shift during training but is agnostic to changes in the input distribution during test time. This makes batch normalization prone to performance degradation whenever noise is present during test-time. Sample-based normalization methods can correct linear transformations of the activation distribution but cannot mitigate changes in the distribution shape; this makes the network vulnerable to distribution changes that cannot be reflected in the normalization parameters. We propose an unsupervised non-parametric distribution correction method that adapts the activation distribution of each layer. This reduces the mismatch between the training and test-time distribution by minimizing the 1-D Wasserstein distance. In our experiments, we empirically show that the proposed method effectively reduces the impact of intense image corruptions and thus improves the classification performance without the need for retraining or fine-tuning the model.",
+      "published": "2021-10-05T11:36:25Z",
+      "updated": "2021-10-05T11:36:25Z",
+      "authors": [
+        "Alexander Fuchs",
+        "Christian Knoll",
+        "Franz Pernkopf"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.12275v1",
+      "arxiv_id": "2108.12275v1",
+      "title": "Can the Transformer Be Used as a Drop-in Replacement for RNNs in Text-Generating GANs?",
+      "summary": "In this paper we address the problem of fine-tuned text generation with a limited computational budget. For that, we use a well-performing text generative adversarial network (GAN) architecture - Diversity-Promoting GAN (DPGAN), and attempted a drop-in replacement of the LSTM layer with a self-attention-based Transformer layer in order to leverage their efficiency. The resulting Self-Attention DPGAN (SADPGAN) was evaluated for performance, quality and diversity of generated text and stability. Computational experiments suggested that a transformer architecture is unable to drop-in replace the LSTM layer, under-performing during the pre-training phase and undergoing a complete mode collapse during the GAN tuning phase. Our results suggest that the transformer architecture need to be adapted before it can be used as a replacement for RNNs in text-generating GANs.",
+      "published": "2021-08-26T14:15:36Z",
+      "updated": "2021-08-26T14:15:36Z",
+      "authors": [
+        "Kevin Blin",
+        "Andrei Kucharavy"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.04489v1",
+      "arxiv_id": "2106.04489v1",
+      "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+      "summary": "State-of-the-art parameter-efficient fine-tuning methods rely on introducing adapter modules between the layers of a pretrained language model. However, such modules are trained separately for each task and thus do not enable sharing information across tasks. In this paper, we show that we can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model. This parameter-efficient multi-task learning framework allows us to achieve the best of both worlds by sharing knowledge across tasks via hypernetworks while enabling the model to adapt to each individual task through task-specific adapters. Experiments on the well-known GLUE benchmark show improved performance in multi-task learning while adding only 0.29% parameters per task. We additionally demonstrate substantial performance improvements in few-shot domain generalization across a variety of tasks. Our code is publicly available in https://github.com/rabeehk/hyperformer.",
+      "published": "2021-06-08T16:16:40Z",
+      "updated": "2021-06-08T16:16:40Z",
+      "authors": [
+        "Rabeeh Karimi Mahabadi",
+        "Sebastian Ruder",
+        "Mostafa Dehghani",
+        "James Henderson"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2105.11905v2",
+      "arxiv_id": "2105.11905v2",
+      "title": "Exploiting Adapters for Cross-lingual Low-resource Speech Recognition",
+      "summary": "Cross-lingual speech adaptation aims to solve the problem of leveraging multiple rich-resource languages to build models for a low-resource target language. Since the low-resource language has limited training data, speech recognition models can easily overfit. In this paper, we propose to use adapters to investigate the performance of multiple adapters for parameter-efficient cross-lingual speech adaptation. Based on our previous MetaAdapter that implicitly leverages adapters, we propose a novel algorithms called SimAdapter for explicitly learning knowledge from adapters. Our algorithm leverages adapters which can be easily integrated into the Transformer structure.MetaAdapter leverages meta-learning to transfer the general knowledge from training data to the test language. SimAdapter aims to learn the similarities between the source and target languages during fine-tuning using the adapters. We conduct extensive experiments on five-low-resource languages in Common Voice dataset. Results demonstrate that our MetaAdapter and SimAdapter methods can reduce WER by 2.98% and 2.55% with only 2.5% and 15.5% of trainable parameters compared to the strong full-model fine-tuning baseline. Moreover, we also show that these two novel algorithms can be integrated for better performance with up to 3.55% relative WER reduction.",
+      "published": "2021-05-18T08:30:37Z",
+      "updated": "2021-12-18T04:28:47Z",
+      "authors": [
+        "Wenxin Hou",
+        "Han Zhu",
+        "Yidong Wang",
+        "Jindong Wang",
+        "Tao Qin",
+        "Renjun Xu",
+        "Takahiro Shinozaki"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2103.06752v2",
+      "arxiv_id": "2103.06752v2",
+      "title": "Knowledge Graph Question Answering using Graph-Pattern Isomorphism",
+      "summary": "Knowledge Graph Question Answering (KGQA) systems are based on machine learning algorithms, requiring thousands of question-answer pairs as training examples or natural language processing pipelines that need module fine-tuning. In this paper, we present a novel QA approach, dubbed TeBaQA. Our approach learns to answer questions based on graph isomorphisms from basic graph patterns of SPARQL queries. Learning basic graph patterns is efficient due to the small number of possible patterns. This novel paradigm reduces the amount of training data necessary to achieve state-of-the-art performance. TeBaQA also speeds up the domain adaption process by transforming the QA system development task into a much smaller and easier data compilation task. In our evaluation, TeBaQA achieves state-of-the-art performance on QALD-8 and delivers comparable results on QALD-9 and LC-QuAD v1. Additionally, we performed a fine-grained evaluation on complex queries that deal with aggregation and superlative questions as well as an ablation study, highlighting future research challenges.",
+      "published": "2021-03-11T16:03:24Z",
+      "updated": "2022-02-02T09:56:34Z",
+      "authors": [
+        "Daniel Vollmers",
+        "Rricha Jalota",
+        "Diego Moussallem",
+        "Hardik Topiwala",
+        "Axel-Cyrille Ngonga Ngomo",
+        "Ricardo Usbeck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ]
+    }
+  ],
+  "hit_result_cap": false,
+  "protocol_query": "\"adapter\" AND \"transformer\" AND \"fine-tuning\" AND efficient",
+  "slice_id": "2021",
+  "date_window": {
+    "start": "2021-01-01",
+    "end": "2021-12-31"
+  },
+  "entries_in_date_window": [
+    {
+      "id": "http://arxiv.org/abs/2112.08718v3",
+      "arxiv_id": "2112.08718v3",
+      "title": "Prompt Tuning GPT-2 language model for parameter-efficient domain adaptation of ASR systems",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains creating a need to adapt to new domains with small memory and deployment overhead. In this work, we introduce domain-prompts, a methodology that involves training a small number of domain embedding parameters to prime a Transformer-based Language Model (LM) to a particular domain. Using this domain-adapted LM for rescoring ASR hypotheses can achieve 7-13% WER reduction for a new domain with just 1000 unlabeled textual domain-specific sentences. This improvement is comparable or even better than fully fine-tuned models even though just 0.02% of the parameters of the base LM are updated. Additionally, our method is deployment-friendly as the learnt domain embeddings are prefixed to the input to the model rather than changing the base model architecture. Therefore, our method is an ideal choice for on-the-fly adaptation of LMs used in ASR systems to progressively scale it to new domains.",
+      "published": "2021-12-16T09:13:04Z",
+      "updated": "2022-07-21T21:24:34Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.07074v1",
+      "arxiv_id": "2112.07074v1",
+      "title": "Towards a Unified Foundation Model: Jointly Pre-Training Transformers on Unpaired Images and Text",
+      "summary": "In this paper, we explore the possibility of building a unified foundation model that can be adapted to both vision-only and text-only tasks. Starting from BERT and ViT, we design a unified transformer consisting of modality-specific tokenizers, a shared transformer encoder, and task-specific output heads. To efficiently pre-train the proposed model jointly on unpaired images and text, we propose two novel techniques: (i) We employ the separately-trained BERT and ViT models as teachers and apply knowledge distillation to provide additional, accurate supervision signals for the joint training; (ii) We propose a novel gradient masking strategy to balance the parameter updates from the image and text pre-training losses. We evaluate the jointly pre-trained transformer by fine-tuning it on image classification tasks and natural language understanding tasks, respectively. The experiments show that the resultant unified foundation transformer works surprisingly well on both the vision-only and text-only tasks, and the proposed knowledge distillation and gradient masking strategy can effectively lift the performance to approach the level of separately-trained models.",
+      "published": "2021-12-14T00:20:55Z",
+      "updated": "2021-12-14T00:20:55Z",
+      "authors": [
+        "Qing Li",
+        "Boqing Gong",
+        "Yin Cui",
+        "Dan Kondratyuk",
+        "Xianzhi Du",
+        "Ming-Hsuan Yang",
+        "Matthew Brown"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2112.05717v2",
+      "arxiv_id": "2112.05717v2",
+      "title": "Discourse-Aware Soft Prompting for Text Generation",
+      "summary": "Current efficient fine-tuning methods (e.g., adapters, prefix-tuning, etc.) have optimized conditional text generation via training a small set of extra parameters of the neural language model, while freezing the rest for efficiency. While showing strong performance on some generation tasks, they don't generalize across all generation tasks. We show that soft-prompt based conditional text generation can be improved with simple and efficient methods that simulate modeling the discourse structure of human written text. We investigate two design choices: First, we apply \\textit{hierarchical blocking} on the prefix parameters to simulate a higher-level discourse structure of human written text. Second, we apply \\textit{attention sparsity} on the prefix parameters at different layers of the network and learn sparse transformations on the softmax-function. We show that structured design of prefix parameters yields more coherent, faithful and relevant generations than the baseline prefix-tuning on all generation tasks.",
+      "published": "2021-12-10T18:15:44Z",
+      "updated": "2022-05-23T17:27:22Z",
+      "authors": [
+        "Marjan Ghazvininejad",
+        "Vladimir Karpukhin",
+        "Vera Gor",
+        "Asli Celikyilmaz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08329v2",
+      "arxiv_id": "2110.08329v2",
+      "title": "Control Prefixes for Parameter-Efficient Text Generation",
+      "summary": "Prefix-tuning is a powerful lightweight technique for adapting a large pre-trained language model to a downstream application. However, it uses the same dataset-level tuned prompt for all examples in the dataset. We extend this idea and propose a dynamic method, Control Prefixes, which allows for the inclusion of conditional input-dependent information, combining the benefits of prompt tuning and controlled generation. The method incorporates attribute-level learnable representations into different layers of a pre-trained transformer, allowing for the generated text to be guided in a particular direction. We provide a systematic evaluation of the technique and apply it to five datasets from the GEM benchmark for natural language generation (NLG). Although the aim is to develop a parameter-efficient model, we show Control Prefixes can even outperform full fine-tuning methods. We present state-of-the-art results on several data-to-text datasets, including WebNLG.",
+      "published": "2021-10-15T19:32:17Z",
+      "updated": "2022-05-10T16:54:15Z",
+      "authors": [
+        "Jordan Clive",
+        "Kris Cao",
+        "Marek Rei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.06502v2",
+      "arxiv_id": "2110.06502v2",
+      "title": "Prompt-tuning in ASR systems for efficient domain-adaptation",
+      "summary": "Automatic Speech Recognition (ASR) systems have found their use in numerous industrial applications in very diverse domains. Since domain-specific systems perform better than their generic counterparts on in-domain evaluation, the need for memory and compute-efficient domain adaptation is obvious. Particularly, adapting parameter-heavy transformer-based language models used for rescoring ASR hypothesis is challenging. In this work, we overcome the problem using prompt-tuning, a methodology that trains a small number of domain token embedding parameters to prime a transformer-based LM to a particular domain. With just a handful of extra parameters per domain, we achieve much better perplexity scores over the baseline of using an unadapted LM. Despite being parameter-efficient, these improvements are comparable to those of fully-fine-tuned models with hundreds of millions of parameters. We replicate our findings in perplexity numbers to Word Error Rate in a domain-specific ASR system for one such domain.",
+      "published": "2021-10-13T05:20:57Z",
+      "updated": "2021-10-22T22:31:42Z",
+      "authors": [
+        "Saket Dingliwal",
+        "Ashish Shenoy",
+        "Sravan Bodapati",
+        "Ankur Gandhe",
+        "Ravi Teja Gadde",
+        "Katrin Kirchhoff"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.01955v1",
+      "arxiv_id": "2110.01955v1",
+      "title": "Distribution Mismatch Correction for Improved Robustness in Deep Neural Networks",
+      "summary": "Deep neural networks rely heavily on normalization methods to improve their performance and learning behavior. Although normalization methods spurred the development of increasingly deep and efficient architectures, they also increase the vulnerability with respect to noise and input corruptions. In most applications, however, noise is ubiquitous and diverse; this can often lead to complete failure of machine learning systems as they fail to cope with mismatches between the input distribution during training- and test-time. The most common normalization method, batch normalization, reduces the distribution shift during training but is agnostic to changes in the input distribution during test time. This makes batch normalization prone to performance degradation whenever noise is present during test-time. Sample-based normalization methods can correct linear transformations of the activation distribution but cannot mitigate changes in the distribution shape; this makes the network vulnerable to distribution changes that cannot be reflected in the normalization parameters. We propose an unsupervised non-parametric distribution correction method that adapts the activation distribution of each layer. This reduces the mismatch between the training and test-time distribution by minimizing the 1-D Wasserstein distance. In our experiments, we empirically show that the proposed method effectively reduces the impact of intense image corruptions and thus improves the classification performance without the need for retraining or fine-tuning the model.",
+      "published": "2021-10-05T11:36:25Z",
+      "updated": "2021-10-05T11:36:25Z",
+      "authors": [
+        "Alexander Fuchs",
+        "Christian Knoll",
+        "Franz Pernkopf"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2108.12275v1",
+      "arxiv_id": "2108.12275v1",
+      "title": "Can the Transformer Be Used as a Drop-in Replacement for RNNs in Text-Generating GANs?",
+      "summary": "In this paper we address the problem of fine-tuned text generation with a limited computational budget. For that, we use a well-performing text generative adversarial network (GAN) architecture - Diversity-Promoting GAN (DPGAN), and attempted a drop-in replacement of the LSTM layer with a self-attention-based Transformer layer in order to leverage their efficiency. The resulting Self-Attention DPGAN (SADPGAN) was evaluated for performance, quality and diversity of generated text and stability. Computational experiments suggested that a transformer architecture is unable to drop-in replace the LSTM layer, under-performing during the pre-training phase and undergoing a complete mode collapse during the GAN tuning phase. Our results suggest that the transformer architecture need to be adapted before it can be used as a replacement for RNNs in text-generating GANs.",
+      "published": "2021-08-26T14:15:36Z",
+      "updated": "2021-08-26T14:15:36Z",
+      "authors": [
+        "Kevin Blin",
+        "Andrei Kucharavy"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2106.04489v1",
+      "arxiv_id": "2106.04489v1",
+      "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+      "summary": "State-of-the-art parameter-efficient fine-tuning methods rely on introducing adapter modules between the layers of a pretrained language model. However, such modules are trained separately for each task and thus do not enable sharing information across tasks. In this paper, we show that we can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model. This parameter-efficient multi-task learning framework allows us to achieve the best of both worlds by sharing knowledge across tasks via hypernetworks while enabling the model to adapt to each individual task through task-specific adapters. Experiments on the well-known GLUE benchmark show improved performance in multi-task learning while adding only 0.29% parameters per task. We additionally demonstrate substantial performance improvements in few-shot domain generalization across a variety of tasks. Our code is publicly available in https://github.com/rabeehk/hyperformer.",
+      "published": "2021-06-08T16:16:40Z",
+      "updated": "2021-06-08T16:16:40Z",
+      "authors": [
+        "Rabeeh Karimi Mahabadi",
+        "Sebastian Ruder",
+        "Mostafa Dehghani",
+        "James Henderson"
+      ],
+      "categories": [
+        "cs.CL"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2105.11905v2",
+      "arxiv_id": "2105.11905v2",
+      "title": "Exploiting Adapters for Cross-lingual Low-resource Speech Recognition",
+      "summary": "Cross-lingual speech adaptation aims to solve the problem of leveraging multiple rich-resource languages to build models for a low-resource target language. Since the low-resource language has limited training data, speech recognition models can easily overfit. In this paper, we propose to use adapters to investigate the performance of multiple adapters for parameter-efficient cross-lingual speech adaptation. Based on our previous MetaAdapter that implicitly leverages adapters, we propose a novel algorithms called SimAdapter for explicitly learning knowledge from adapters. Our algorithm leverages adapters which can be easily integrated into the Transformer structure.MetaAdapter leverages meta-learning to transfer the general knowledge from training data to the test language. SimAdapter aims to learn the similarities between the source and target languages during fine-tuning using the adapters. We conduct extensive experiments on five-low-resource languages in Common Voice dataset. Results demonstrate that our MetaAdapter and SimAdapter methods can reduce WER by 2.98% and 2.55% with only 2.5% and 15.5% of trainable parameters compared to the strong full-model fine-tuning baseline. Moreover, we also show that these two novel algorithms can be integrated for better performance with up to 3.55% relative WER reduction.",
+      "published": "2021-05-18T08:30:37Z",
+      "updated": "2021-12-18T04:28:47Z",
+      "authors": [
+        "Wenxin Hou",
+        "Han Zhu",
+        "Yidong Wang",
+        "Jindong Wang",
+        "Tao Qin",
+        "Renjun Xu",
+        "Takahiro Shinozaki"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/2103.06752v2",
+      "arxiv_id": "2103.06752v2",
+      "title": "Knowledge Graph Question Answering using Graph-Pattern Isomorphism",
+      "summary": "Knowledge Graph Question Answering (KGQA) systems are based on machine learning algorithms, requiring thousands of question-answer pairs as training examples or natural language processing pipelines that need module fine-tuning. In this paper, we present a novel QA approach, dubbed TeBaQA. Our approach learns to answer questions based on graph isomorphisms from basic graph patterns of SPARQL queries. Learning basic graph patterns is efficient due to the small number of possible patterns. This novel paradigm reduces the amount of training data necessary to achieve state-of-the-art performance. TeBaQA also speeds up the domain adaption process by transforming the QA system development task into a much smaller and easier data compilation task. In our evaluation, TeBaQA achieves state-of-the-art performance on QALD-8 and delivers comparable results on QALD-9 and LC-QuAD v1. Additionally, we performed a fine-grained evaluation on complex queries that deal with aggregation and superlative questions as well as an ablation study, highlighting future research challenges.",
+      "published": "2021-03-11T16:03:24Z",
+      "updated": "2022-02-02T09:56:34Z",
+      "authors": [
+        "Daniel Vollmers",
+        "Rricha Jalota",
+        "Diego Moussallem",
+        "Hardik Topiwala",
+        "Axel-Cyrille Ngonga Ngomo",
+        "Ricardo Usbeck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ]
+    }
+  ]
+}

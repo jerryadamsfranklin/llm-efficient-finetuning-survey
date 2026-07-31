@@ -1,0 +1,4192 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "federated learning large language models",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:57:43Z",
+  "total_results_reported": 73,
+  "returned": 50,
+  "returned_in_coverage_window": 50,
+  "hit_result_cap": true,
+  "hits": [
+    {
+      "@score": "6",
+      "@id": "1271334",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "318/1583",
+              "text": "Weirui Kuang"
+            },
+            {
+              "@pid": "294/3682",
+              "text": "Bingchen Qian"
+            },
+            {
+              "@pid": "220/3927",
+              "text": "Zitao Li"
+            },
+            {
+              "@pid": "217/4891",
+              "text": "Daoyuan Chen"
+            },
+            {
+              "@pid": "37/1969",
+              "text": "Dawei Gao"
+            },
+            {
+              "@pid": "323/0621",
+              "text": "Xuchen Pan"
+            },
+            {
+              "@pid": "232/2045",
+              "text": "Yuexiang Xie"
+            },
+            {
+              "@pid": "127/6999",
+              "text": "Yaliang Li"
+            },
+            {
+              "@pid": "46/3522",
+              "text": "Bolin Ding"
+            },
+            {
+              "@pid": "84/2644-1",
+              "text": "Jingren Zhou 0001"
+            }
+          ]
+        },
+        "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning.",
+        "venue": "KDD",
+        "pages": "5260-5271",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/kdd/KuangQLCGPXLDZ24",
+        "doi": "10.1145/3637528.3671573",
+        "ee": "https://doi.org/10.1145/3637528.3671573",
+        "url": "https://dblp.org/rec/conf/kdd/KuangQLCGPXLDZ24"
+      },
+      "url": "URL#1271334"
+    },
+    {
+      "@score": "6",
+      "@id": "1958150",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "318/1583",
+              "text": "Weirui Kuang"
+            },
+            {
+              "@pid": "294/3682",
+              "text": "Bingchen Qian"
+            },
+            {
+              "@pid": "220/3927",
+              "text": "Zitao Li"
+            },
+            {
+              "@pid": "217/4891",
+              "text": "Daoyuan Chen"
+            },
+            {
+              "@pid": "37/1969",
+              "text": "Dawei Gao"
+            },
+            {
+              "@pid": "323/0621",
+              "text": "Xuchen Pan"
+            },
+            {
+              "@pid": "232/2045",
+              "text": "Yuexiang Xie"
+            },
+            {
+              "@pid": "127/6999",
+              "text": "Yaliang Li"
+            },
+            {
+              "@pid": "46/3522",
+              "text": "Bolin Ding"
+            },
+            {
+              "@pid": "84/2644-1",
+              "text": "Jingren Zhou 0001"
+            }
+          ]
+        },
+        "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2309.00363",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2309-00363",
+        "doi": "10.48550/ARXIV.2309.00363",
+        "ee": "https://doi.org/10.48550/arXiv.2309.00363",
+        "url": "https://dblp.org/rec/journals/corr/abs-2309-00363"
+      },
+      "url": "URL#1958150"
+    },
+    {
+      "@score": "5",
+      "@id": "26404",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "32/4850",
+              "text": "Jialiang Lu"
+            },
+            {
+              "@pid": "72/872-8",
+              "text": "Qiang Li 0008"
+            },
+            {
+              "@pid": "05/4746-1",
+              "text": "He Li 0001"
+            }
+          ]
+        },
+        "title": "FL-LLM: Leveraging large language models for efficient device selection in federated learning.",
+        "venue": "Comput. Networks",
+        "volume": "278",
+        "pages": "112107",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/cn/LuLL26",
+        "doi": "10.1016/J.COMNET.2026.112107",
+        "ee": "https://doi.org/10.1016/j.comnet.2026.112107",
+        "url": "https://dblp.org/rec/journals/cn/LuLL26"
+      },
+      "url": "URL#26404"
+    },
+    {
+      "@score": "5",
+      "@id": "51761",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "56/7757",
+              "text": "Jianxin Dai"
+            },
+            {
+              "@pid": "78/437",
+              "text": "Rui Tang"
+            },
+            {
+              "@pid": "216/6717",
+              "text": "Feibo Jiang"
+            },
+            {
+              "@pid": "90/549-1",
+              "text": "Zhaohui Yang 0001"
+            },
+            {
+              "@pid": "10/9659-2",
+              "text": "Qianqian Yang 0002"
+            },
+            {
+              "@pid": "81/6236-1",
+              "text": "Zhaoyang Zhang 0001"
+            },
+            {
+              "@pid": "28/10607",
+              "text": "Linqing Gui"
+            }
+          ]
+        },
+        "title": "Federated Split Learning for Large Language Models With RSMA.",
+        "venue": "IET Commun.",
+        "volume": "20",
+        "number": "1",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/iet-com/DaiTJYYZG26",
+        "doi": "10.1049/CMU2.70152",
+        "ee": "https://doi.org/10.1049/cmu2.70152",
+        "url": "https://dblp.org/rec/journals/iet-com/DaiTJYYZG26"
+      },
+      "url": "URL#51761"
+    },
+    {
+      "@score": "5",
+      "@id": "52512",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "186/2860",
+              "text": "Weiguang Ma"
+            },
+            {
+              "@pid": "18/1763-16",
+              "text": "Lei Huang 0016"
+            },
+            {
+              "@pid": "351/7970",
+              "text": "Qianyao Zhang"
+            },
+            {
+              "@pid": "94/3104-36",
+              "text": "Ying Wang 0036"
+            },
+            {
+              "@pid": "06/2161",
+              "text": "Xiong Zhang"
+            },
+            {
+              "@pid": "242/2323",
+              "text": "Rongjia Song"
+            }
+          ]
+        },
+        "title": "Federated Split Learning with Large Language Models Integration: A Study on Potential Container Source Identification in Sea-Rail Intermodal Transport.",
+        "venue": "Int. J. Comput. Commun. Control",
+        "volume": "21",
+        "number": "3",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ijccc/MaHZWZS26",
+        "doi": "10.15837/IJCCC.2026.3.7263",
+        "ee": "https://doi.org/10.15837/ijccc.2026.3.7263",
+        "url": "https://dblp.org/rec/journals/ijccc/MaHZWZS26"
+      },
+      "url": "URL#52512"
+    },
+    {
+      "@score": "5",
+      "@id": "88746",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "244/4443",
+              "text": "Yalan Jiang"
+            },
+            {
+              "@pid": "09/11430",
+              "text": "Zhongliang Li"
+            },
+            {
+              "@pid": "09/2085-1",
+              "text": "Bin Song 0001"
+            }
+          ]
+        },
+        "title": "Fine-tuning large language models in federated learning with fairness-aware prompt selection.",
+        "venue": "Neural Networks",
+        "volume": "194",
+        "pages": "108160",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/nn/JiangLS26",
+        "doi": "10.1016/J.NEUNET.2025.108160",
+        "ee": "https://doi.org/10.1016/j.neunet.2025.108160",
+        "url": "https://dblp.org/rec/journals/nn/JiangLS26"
+      },
+      "url": "URL#88746"
+    },
+    {
+      "@score": "5",
+      "@id": "124984",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/1341",
+              "text": "Yujia Wang"
+            },
+            {
+              "@pid": "243/0230",
+              "text": "Yuanpu Cao"
+            },
+            {
+              "@pid": "67/5633",
+              "text": "Jinghui Chen"
+            }
+          ]
+        },
+        "title": "ParaBlock: Communication-Computation Parallel Block Coordinate Federated Learning for Large Language Models.",
+        "venue": "Trans. Mach. Learn. Res.",
+        "volume": "2026",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tmlr/WangCC26",
+        "ee": "https://openreview.net/forum?id=Hnf7eCdBeV",
+        "url": "https://dblp.org/rec/journals/tmlr/WangCC26"
+      },
+      "url": "URL#124984"
+    },
+    {
+      "@score": "5",
+      "@id": "126214",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/8499-11",
+              "text": "Haoyu Wang 0011"
+            },
+            {
+              "@pid": "245/1601",
+              "text": "Zilong Yin"
+            },
+            {
+              "@pid": "22/5523",
+              "text": "Bin Chen"
+            },
+            {
+              "@pid": "259/3554",
+              "text": "Yujie Zeng"
+            },
+            {
+              "@pid": "345/7234",
+              "text": "Xiyue Yan"
+            },
+            {
+              "@pid": "215/8318",
+              "text": "Chenyu Zhou"
+            },
+            {
+              "@pid": "368/8285-2",
+              "text": "Anji Li 0002"
+            }
+          ]
+        },
+        "title": "ROFED-LLM: Robust Federated Learning for Large Language Models in Adversarial Wireless Environments.",
+        "venue": "IEEE Trans. Netw. Sci. Eng.",
+        "volume": "13",
+        "pages": "1084-1096",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tnse/WangYCZYZL26",
+        "doi": "10.1109/TNSE.2025.3590975",
+        "ee": "https://doi.org/10.1109/TNSE.2025.3590975",
+        "url": "https://dblp.org/rec/journals/tnse/WangYCZYZL26"
+      },
+      "url": "URL#126214"
+    },
+    {
+      "@score": "5",
+      "@id": "140673",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "272/8915",
+              "text": "Fuyao Zhang"
+            },
+            {
+              "@pid": "117/4232-3",
+              "text": "Xinyu Yan 0003"
+            },
+            {
+              "@pid": "306/1028",
+              "text": "Tiantong Wu"
+            },
+            {
+              "@pid": "33/3999-8",
+              "text": "Wenjie Li 0008"
+            },
+            {
+              "@pid": "180/6789",
+              "text": "Tianxiang Chen"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "16/5791",
+              "text": "Ran Yan"
+            },
+            {
+              "@pid": "76/10119",
+              "text": "Longtao Huang"
+            },
+            {
+              "@pid": "249/5315",
+              "text": "Wei Yang Bryan Lim"
+            },
+            {
+              "@pid": "82/6362-1",
+              "text": "Qiang Yang 0001"
+            }
+          ]
+        },
+        "title": "Oblivionis: A Lightweight Learning and Unlearning Framework for Federated Large Language Models.",
+        "venue": "AAAI",
+        "pages": "28185-28193",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/ZhangYWLCCYHLY26",
+        "doi": "10.1609/AAAI.V40I33.40045",
+        "ee": "https://doi.org/10.1609/aaai.v40i33.40045",
+        "url": "https://dblp.org/rec/conf/aaai/ZhangYWLCCYHLY26"
+      },
+      "url": "URL#140673"
+    },
+    {
+      "@score": "5",
+      "@id": "163274",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "216/4393",
+              "text": "Bayan Alzahrani"
+            },
+            {
+              "@pid": "81/7890",
+              "text": "Dejun Yang"
+            }
+          ]
+        },
+        "title": "PrivLoRA: Enhancing Privacy in LoRA-Based Fine-Tuning of Large Language Models for Federated Learning.",
+        "venue": "ICNC",
+        "pages": "505-511",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/iccnc/AlzahraniY26",
+        "doi": "10.1109/ICNC68183.2026.11416880",
+        "ee": "https://doi.org/10.1109/ICNC68183.2026.11416880",
+        "url": "https://dblp.org/rec/conf/iccnc/AlzahraniY26"
+      },
+      "url": "URL#163274"
+    },
+    {
+      "@score": "5",
+      "@id": "183003",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "423/5895",
+              "text": "Jiazhuo Tian"
+            },
+            {
+              "@pid": "216/4601",
+              "text": "Yachao Yuan"
+            }
+          ]
+        },
+        "title": "HFL-FlowLLM: Large Language Models for Network Traffic Flow Classification in Heterogeneous Federated Learning.",
+        "venue": "WCNC",
+        "pages": "1-6",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/wcnc/TianY26",
+        "doi": "10.1109/WCNC65185.2026.11555297",
+        "ee": "https://doi.org/10.1109/WCNC65185.2026.11555297",
+        "url": "https://dblp.org/rec/conf/wcnc/TianY26"
+      },
+      "url": "URL#183003"
+    },
+    {
+      "@score": "5",
+      "@id": "292675",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "122/4427",
+            "text": "Koffka Khan"
+          }
+        },
+        "title": "Adaptive Federated Learning With Local Large Language Models for Modeling Photonic and Chemical Systems.",
+        "venue": "IEEE Access",
+        "volume": "13",
+        "pages": "160559-160575",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/Khan25",
+        "doi": "10.1109/ACCESS.2025.3606855",
+        "ee": "https://doi.org/10.1109/ACCESS.2025.3606855",
+        "url": "https://dblp.org/rec/journals/access/Khan25"
+      },
+      "url": "URL#292675"
+    },
+    {
+      "@score": "5",
+      "@id": "335744",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "209/6143",
+              "text": "Gaith Rjoub"
+            },
+            {
+              "@pid": "246/6725",
+              "text": "Hanae Elmekki"
+            },
+            {
+              "@pid": "349/4479",
+              "text": "Saidul Islam"
+            },
+            {
+              "@pid": "b/JamalBentahar",
+              "text": "Jamal Bentahar"
+            },
+            {
+              "@pid": "29/2226",
+              "text": "Rachida Dssouli"
+            }
+          ]
+        },
+        "title": "A hybrid swarm intelligence approach for optimizing Multimodal Large Language Models deployment in edge-cloud-based Federated Learning environments.",
+        "venue": "Comput. Commun.",
+        "volume": "237",
+        "pages": "108152",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/comcom/RjoubEIBD25",
+        "doi": "10.1016/J.COMCOM.2025.108152",
+        "ee": "https://doi.org/10.1016/j.comcom.2025.108152",
+        "url": "https://dblp.org/rec/journals/comcom/RjoubEIBD25"
+      },
+      "url": "URL#335744"
+    },
+    {
+      "@score": "5",
+      "@id": "371320",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "379/6637",
+              "text": "Ahmed Elbakary"
+            },
+            {
+              "@pid": "194/6874",
+              "text": "Chaouki Ben Issaid"
+            },
+            {
+              "@pid": "23/553",
+              "text": "Tamer ElBatt"
+            },
+            {
+              "@pid": "65/3089",
+              "text": "Karim G. Seddik"
+            },
+            {
+              "@pid": "09/3625",
+              "text": "Mehdi Bennis"
+            }
+          ]
+        },
+        "title": "MIRA: A Method of Federated Multi-Task Learning for Large Language Models.",
+        "venue": "IEEE Netw. Lett.",
+        "volume": "7",
+        "number": "3",
+        "pages": "171-175",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ieeenl/ElbakaryIESB25",
+        "doi": "10.1109/LNET.2025.3539810",
+        "ee": "https://doi.org/10.1109/LNET.2025.3539810",
+        "url": "https://dblp.org/rec/journals/ieeenl/ElbakaryIESB25"
+      },
+      "url": "URL#371320"
+    },
+    {
+      "@score": "5",
+      "@id": "385891",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "16/1234-7",
+              "text": "Zhuo Zhang 0007"
+            },
+            {
+              "@pid": "184/6378",
+              "text": "Yukun Zhang"
+            },
+            {
+              "@pid": "307/6373",
+              "text": "Guanzhong Chen"
+            },
+            {
+              "@pid": "58/3601",
+              "text": "Lizhen Qu"
+            },
+            {
+              "@pid": "16/1951-1",
+              "text": "Xun Zhou 0001"
+            },
+            {
+              "@pid": "52/4725",
+              "text": "Hui Wang 0013"
+            },
+            {
+              "@pid": "68/1538",
+              "text": "Zenglin Xu"
+            }
+          ]
+        },
+        "title": "From continuous pre-training to alignment: A comprehensive toolkit for large language models in federated learning.",
+        "venue": "Neurocomputing",
+        "volume": "647",
+        "pages": "130572",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/ijon/ZhangZCQZWX25",
+        "doi": "10.1016/J.NEUCOM.2025.130572",
+        "ee": "https://doi.org/10.1016/j.neucom.2025.130572",
+        "url": "https://dblp.org/rec/journals/ijon/ZhangZCQZWX25"
+      },
+      "url": "URL#385891"
+    },
+    {
+      "@score": "5",
+      "@id": "389785",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/10235",
+              "text": "Francesco Piccialli"
+            },
+            {
+              "@pid": "336/4085",
+              "text": "Diletta Chiaro"
+            },
+            {
+              "@pid": "264/2409",
+              "text": "Pian Qi"
+            },
+            {
+              "@pid": "57/4994",
+              "text": "Valerio Bellandi"
+            },
+            {
+              "@pid": "d/EDamiani",
+              "text": "Ernesto Damiani"
+            }
+          ]
+        },
+        "title": "Federated and edge learning for large language models.",
+        "venue": "Inf. Fusion",
+        "volume": "117",
+        "pages": "102840",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/inffus/PiccialliCQBD25",
+        "doi": "10.1016/J.INFFUS.2024.102840",
+        "ee": "https://doi.org/10.1016/j.inffus.2024.102840",
+        "url": "https://dblp.org/rec/journals/inffus/PiccialliCQBD25"
+      },
+      "url": "URL#389785"
+    },
+    {
+      "@score": "5",
+      "@id": "396707",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "17/5533",
+              "text": "Yingjie Xia"
+            },
+            {
+              "@pid": "155/2863",
+              "text": "Yuhan Chen"
+            },
+            {
+              "@pid": "297/9807",
+              "text": "Yunxiao Zhao"
+            },
+            {
+              "@pid": "86/3715",
+              "text": "Li Kuang"
+            },
+            {
+              "@pid": "21/1773-2",
+              "text": "Xuejiao Liu 0002"
+            },
+            {
+              "@pid": "61/2170-2",
+              "text": "Ji Hu 0002"
+            },
+            {
+              "@pid": "139/4288",
+              "text": "Zhiquan Liu 0001"
+            }
+          ]
+        },
+        "title": "FCLLM-DT: Enpowering Federated Continual Learning With Large Language Models for Digital-Twin-Based Industrial IoT.",
+        "venue": "IEEE Internet Things J.",
+        "volume": "12",
+        "number": "6",
+        "pages": "6070-6081",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/iotj/XiaCZKLHL25",
+        "doi": "10.1109/JIOT.2024.3510553",
+        "ee": "https://doi.org/10.1109/JIOT.2024.3510553",
+        "url": "https://dblp.org/rec/journals/iotj/XiaCZKLHL25"
+      },
+      "url": "URL#396707"
+    },
+    {
+      "@score": "5",
+      "@id": "487664",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "29/8207",
+              "text": "Tianyou Zhang"
+            },
+            {
+              "@pid": "90/6643-1",
+              "text": "Haiyang Yu 0001"
+            },
+            {
+              "@pid": "70/2539-4",
+              "text": "Zhen Yang 0004"
+            },
+            {
+              "@pid": "49/8346-2",
+              "text": "Yuwen Chen 0002"
+            },
+            {
+              "@pid": "90/3575-1",
+              "text": "Shui Yu 0001"
+            }
+          ]
+        },
+        "title": "LaVFL: Efficient Verifiable Federated Learning for Large Language Models.",
+        "venue": "IEEE Trans. Dependable Secur. Comput.",
+        "volume": "22",
+        "number": "6",
+        "pages": "6214-6229",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tdsc/ZhangYYCY25",
+        "doi": "10.1109/TDSC.2025.3581728",
+        "ee": "https://doi.org/10.1109/TDSC.2025.3581728",
+        "url": "https://dblp.org/rec/journals/tdsc/ZhangYYCY25"
+      },
+      "url": "URL#487664"
+    },
+    {
+      "@score": "5",
+      "@id": "494314",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "371/4016",
+              "text": "Aladin Djuhera"
+            },
+            {
+              "@pid": "297/5032",
+              "text": "Vlad-Costin Andrei"
+            },
+            {
+              "@pid": "00/6131",
+              "text": "Xinyang Li"
+            },
+            {
+              "@pid": "94/3910",
+              "text": "Ullrich J. Mönich"
+            },
+            {
+              "@pid": "39/3615",
+              "text": "Holger Boche"
+            },
+            {
+              "@pid": "41/6237",
+              "text": "Walid Saad 0001"
+            }
+          ]
+        },
+        "title": "R-SFLLM: Jamming Resilient Framework for Split Federated Learning With Large Language Models.",
+        "venue": "IEEE Trans. Inf. Forensics Secur.",
+        "volume": "20",
+        "pages": "8296-8311",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tifs/DjuheraALMBS25",
+        "doi": "10.1109/TIFS.2025.3594107",
+        "ee": "https://doi.org/10.1109/TIFS.2025.3594107",
+        "url": "https://dblp.org/rec/journals/tifs/DjuheraALMBS25"
+      },
+      "url": "URL#494314"
+    },
+    {
+      "@score": "5",
+      "@id": "527343",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "03/2511",
+              "text": "Hui Fang"
+            },
+            {
+              "@pid": "89/4402-24",
+              "text": "Yang Gao 0024"
+            },
+            {
+              "@pid": "21/1048-1",
+              "text": "Peng Zhang 0001"
+            },
+            {
+              "@pid": "166/5900",
+              "text": "Jiangchao Yao"
+            },
+            {
+              "@pid": "13/3715",
+              "text": "Hongyang Chen 0001"
+            },
+            {
+              "@pid": "163/0767",
+              "text": "Haishuai Wang"
+            }
+          ]
+        },
+        "title": "Large Language Models Enhanced Personalized Graph Neural Architecture Search in Federated Learning.",
+        "venue": "AAAI",
+        "pages": "16514-16522",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/Fang0ZYCW25",
+        "doi": "10.1609/AAAI.V39I16.33814",
+        "ee": "https://doi.org/10.1609/aaai.v39i16.33814",
+        "url": "https://dblp.org/rec/conf/aaai/Fang0ZYCW25"
+      },
+      "url": "URL#527343"
+    },
+    {
+      "@score": "5",
+      "@id": "547060",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "429/5680",
+              "text": "Soham Ratnaparkhi"
+            },
+            {
+              "@pid": "12/54",
+              "text": "Saeed Samet"
+            }
+          ]
+        },
+        "title": "Fine-Tuning Large-Language-Models using Federated Learning &amp; Blockchain.",
+        "venue": "IEEE Big Data",
+        "pages": "5517-5526",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/bigdataconf/RatnaparkhiS25",
+        "doi": "10.1109/BIGDATA66926.2025.11401479",
+        "ee": "https://doi.org/10.1109/BigData66926.2025.11401479",
+        "url": "https://dblp.org/rec/conf/bigdataconf/RatnaparkhiS25"
+      },
+      "url": "URL#547060"
+    },
+    {
+      "@score": "5",
+      "@id": "559690",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "420/2730",
+              "text": "Tharushi Nehara"
+            },
+            {
+              "@pid": "420/2758",
+              "text": "Chanmini Kavinya Samaraweera"
+            },
+            {
+              "@pid": "400/6448",
+              "text": "Oshan Nettasinghe"
+            },
+            {
+              "@pid": "420/2551",
+              "text": "Ashen Nethsara"
+            },
+            {
+              "@pid": "271/3089",
+              "text": "Chamara Sandeepa"
+            },
+            {
+              "@pid": "276/9206",
+              "text": "Tharindu D. Gamage"
+            },
+            {
+              "@pid": "123/9171",
+              "text": "Madhusanka Liyanage"
+            }
+          ]
+        },
+        "title": "DistilGuard - Large Language Models for Poisoning Detection in Federated Learning.",
+        "venue": "CNS",
+        "pages": "1-9",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/cns/NeharaSNNSGL25",
+        "doi": "10.1109/CNS66487.2025.11195054",
+        "ee": "https://doi.org/10.1109/CNS66487.2025.11195054",
+        "url": "https://dblp.org/rec/conf/cns/NeharaSNNSGL25"
+      },
+      "url": "URL#559690"
+    },
+    {
+      "@score": "5",
+      "@id": "600406",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "395/4643",
+              "text": "Jincheol Jung"
+            },
+            {
+              "@pid": "395/4580",
+              "text": "Hongju Jeong"
+            },
+            {
+              "@pid": "05/1693",
+              "text": "Eui-Nam Huh"
+            }
+          ]
+        },
+        "title": "Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models.",
+        "venue": "ICAIIC",
+        "pages": "968-973",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icaiic/JungJH25",
+        "doi": "10.1109/ICAIIC64266.2025.10920885",
+        "ee": "https://doi.org/10.1109/ICAIIC64266.2025.10920885",
+        "url": "https://dblp.org/rec/conf/icaiic/JungJH25"
+      },
+      "url": "URL#600406"
+    },
+    {
+      "@score": "5",
+      "@id": "600527",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "410/4042",
+              "text": "InSeo Song"
+            },
+            {
+              "@pid": "77/11204",
+              "text": "KangYoon Lee"
+            }
+          ]
+        },
+        "title": "Optimizing Communication and Performance in Federated Learning for Large Language Models.",
+        "venue": "ICAIIC",
+        "pages": "964-967",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icaiic/SongL25",
+        "doi": "10.1109/ICAIIC64266.2025.10920742",
+        "ee": "https://doi.org/10.1109/ICAIIC64266.2025.10920742",
+        "url": "https://dblp.org/rec/conf/icaiic/SongL25"
+      },
+      "url": "URL#600527"
+    },
+    {
+      "@score": "5",
+      "@id": "604549",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "33/4816",
+              "text": "Pengyu Zhang"
+            },
+            {
+              "@pid": "01/5512",
+              "text": "Yingjie Liu"
+            },
+            {
+              "@pid": "72/8614-1",
+              "text": "Yingbo Zhou 0001"
+            },
+            {
+              "@pid": "82/378-3",
+              "text": "Ming Hu 0003"
+            },
+            {
+              "@pid": "139/0725",
+              "text": "Xian Wei"
+            },
+            {
+              "@pid": "95/573-1",
+              "text": "Mingsong Chen 0001"
+            }
+          ]
+        },
+        "title": "CE-FFT: Communication-Efficient Federated Fine-Tuning for Large Language Models via Quantization and In-Context Learning.",
+        "venue": "ICASSP",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icassp/ZhangLZ0W025",
+        "doi": "10.1109/ICASSP49660.2025.10889971",
+        "ee": "https://doi.org/10.1109/ICASSP49660.2025.10889971",
+        "url": "https://dblp.org/rec/conf/icassp/ZhangLZ0W025"
+      },
+      "url": "URL#604549"
+    },
+    {
+      "@score": "5",
+      "@id": "605554",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "12/417",
+              "text": "Hui Chen"
+            },
+            {
+              "@pid": "18/4822",
+              "text": "Kaoru Ota"
+            },
+            {
+              "@pid": "62/6234",
+              "text": "Mianxiong Dong"
+            }
+          ]
+        },
+        "title": "GFLLM: Federated Learning in Large Language Models With Optimized Group Aggregation.",
+        "venue": "ICC",
+        "pages": "2791-2796",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icc/ChenOD25",
+        "doi": "10.1109/ICC52391.2025.11162027",
+        "ee": "https://doi.org/10.1109/ICC52391.2025.11162027",
+        "url": "https://dblp.org/rec/conf/icc/ChenOD25"
+      },
+      "url": "URL#605554"
+    },
+    {
+      "@score": "5",
+      "@id": "623153",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "130/8465",
+              "text": "Linh Tran"
+            },
+            {
+              "@pid": "09/5042",
+              "text": "Wei Sun"
+            },
+            {
+              "@pid": "96/1837",
+              "text": "Stacy Patterson"
+            },
+            {
+              "@pid": "252/3794",
+              "text": "Ana L. Milanova"
+            }
+          ]
+        },
+        "title": "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models.",
+        "venue": "ICLR",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/TranSPM25",
+        "ee": "https://openreview.net/forum?id=Equ277PBN0",
+        "url": "https://dblp.org/rec/conf/iclr/TranSPM25"
+      },
+      "url": "URL#623153"
+    },
+    {
+      "@score": "5",
+      "@id": "627214",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "421/0487",
+              "text": "Yangxu Liao"
+            },
+            {
+              "@pid": "330/1664-3",
+              "text": "Wenke Huang 0003"
+            },
+            {
+              "@pid": "354/1252",
+              "text": "Guancheng Wan"
+            },
+            {
+              "@pid": "19/2208-3",
+              "text": "Jian Liang 0003"
+            },
+            {
+              "@pid": "77/377-26",
+              "text": "Bin Yang 0026"
+            },
+            {
+              "@pid": "156/0610",
+              "text": "Mang Ye"
+            }
+          ]
+        },
+        "title": "Splitting with Importance-aware Updating for Heterogeneous Federated Learning with Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/Liao0W00Y25",
+        "ee": "https://proceedings.mlr.press/v267/liao25c.html",
+        "url": "https://dblp.org/rec/conf/icml/Liao0W00Y25"
+      },
+      "url": "URL#627214"
+    },
+    {
+      "@score": "5",
+      "@id": "699352",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/3130",
+              "text": "Kasra Ahmadi"
+            },
+            {
+              "@pid": "118/0026",
+              "text": "Rouzbeh Behnia"
+            },
+            {
+              "@pid": "26/7531-1",
+              "text": "Reza Ebrahimi 0001"
+            },
+            {
+              "@pid": "85/5526",
+              "text": "Mehran Mozaffari Kermani"
+            },
+            {
+              "@pid": "156/2855",
+              "text": "Jeremiah Birrell"
+            },
+            {
+              "@pid": "126/1745",
+              "text": "Jason Pacheco"
+            },
+            {
+              "@pid": "73/4897",
+              "text": "Attila A. Yavuz"
+            }
+          ]
+        },
+        "title": "An Interactive Framework for Implementing Privacy-Preserving Federated Learning: Experiments on Large Language Models.",
+        "venue": "SP",
+        "pages": "251-259",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/sp/AhmadiB0KBPY25",
+        "doi": "10.1109/SPW67851.2025.00035",
+        "ee": "https://doi.org/10.1109/SPW67851.2025.00035",
+        "url": "https://dblp.org/rec/conf/sp/AhmadiB0KBPY25"
+      },
+      "url": "URL#699352"
+    },
+    {
+      "@score": "5",
+      "@id": "730118",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "130/8465",
+              "text": "Linh Tran"
+            },
+            {
+              "@pid": "09/5042",
+              "text": "Wei Sun"
+            },
+            {
+              "@pid": "96/1837",
+              "text": "Stacy Patterson"
+            },
+            {
+              "@pid": "252/3794",
+              "text": "Ana L. Milanova"
+            }
+          ]
+        },
+        "title": "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2501.13904",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2501-13904",
+        "doi": "10.48550/ARXIV.2501.13904",
+        "ee": "https://doi.org/10.48550/arXiv.2501.13904",
+        "url": "https://dblp.org/rec/journals/corr/abs-2501-13904"
+      },
+      "url": "URL#730118"
+    },
+    {
+      "@score": "5",
+      "@id": "737408",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/3130",
+              "text": "Kasra Ahmadi"
+            },
+            {
+              "@pid": "118/0026",
+              "text": "Rouzbeh Behnia"
+            },
+            {
+              "@pid": "26/7531-1",
+              "text": "Reza Ebrahimi 0001"
+            },
+            {
+              "@pid": "85/5526",
+              "text": "Mehran Mozaffari Kermani"
+            },
+            {
+              "@pid": "156/2855",
+              "text": "Jeremiah Birrell"
+            },
+            {
+              "@pid": "126/1745",
+              "text": "Jason Pacheco"
+            },
+            {
+              "@pid": "73/4897",
+              "text": "Attila A. Yavuz"
+            }
+          ]
+        },
+        "title": "An Interactive Framework for Implementing Privacy-Preserving Federated Learning: Experiments on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.08008",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-08008",
+        "doi": "10.48550/ARXIV.2502.08008",
+        "ee": "https://doi.org/10.48550/arXiv.2502.08008",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-08008"
+      },
+      "url": "URL#737408"
+    },
+    {
+      "@score": "5",
+      "@id": "738637",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "209/6143",
+              "text": "Gaith Rjoub"
+            },
+            {
+              "@pid": "246/6725",
+              "text": "Hanae Elmekki"
+            },
+            {
+              "@pid": "349/4479",
+              "text": "Saidul Islam"
+            },
+            {
+              "@pid": "b/JamalBentahar",
+              "text": "Jamal Bentahar"
+            },
+            {
+              "@pid": "29/2226",
+              "text": "Rachida Dssouli"
+            }
+          ]
+        },
+        "title": "A Hybrid Swarm Intelligence Approach for Optimizing Multimodal Large Language Models Deployment in Edge-Cloud-based Federated Learning Environments.",
+        "venue": "CoRR",
+        "volume": "abs/2502.10419",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-10419",
+        "doi": "10.48550/ARXIV.2502.10419",
+        "ee": "https://doi.org/10.48550/arXiv.2502.10419",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-10419"
+      },
+      "url": "URL#738637"
+    },
+    {
+      "@score": "5",
+      "@id": "755346",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "63/6796-5",
+              "text": "Bo Yan 0005"
+            },
+            {
+              "@pid": "304/7095",
+              "text": "Zhongjian Zhang"
+            },
+            {
+              "@pid": "129/4438",
+              "text": "Huabin Sun"
+            },
+            {
+              "@pid": "234/4670",
+              "text": "Mengmei Zhang"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "64/3041-1",
+              "text": "Chuan Shi 0001"
+            }
+          ]
+        },
+        "title": "Data-centric Federated Graph Learning with Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2503.19455",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-19455",
+        "doi": "10.48550/ARXIV.2503.19455",
+        "ee": "https://doi.org/10.48550/arXiv.2503.19455",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-19455"
+      },
+      "url": "URL#755346"
+    },
+    {
+      "@score": "5",
+      "@id": "763196",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/6923",
+              "text": "Lihong Zhang"
+            },
+            {
+              "@pid": "61/500",
+              "text": "Yue Li"
+            }
+          ]
+        },
+        "title": "Federated Learning with Layer Skipping: Efficient Training of Large Language Models for Healthcare NLP.",
+        "venue": "CoRR",
+        "volume": "abs/2504.10536",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-10536",
+        "doi": "10.48550/ARXIV.2504.10536",
+        "ee": "https://doi.org/10.48550/arXiv.2504.10536",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-10536"
+      },
+      "url": "URL#763196"
+    },
+    {
+      "@score": "5",
+      "@id": "765373",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "72/2621",
+              "text": "Kai Zhao"
+            },
+            {
+              "@pid": "90/549",
+              "text": "Zhaohui Yang"
+            }
+          ]
+        },
+        "title": "Efficient Federated Split Learning for Large Language Models over Communication Networks.",
+        "venue": "CoRR",
+        "volume": "abs/2504.14667",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-14667",
+        "doi": "10.48550/ARXIV.2504.14667",
+        "ee": "https://doi.org/10.48550/arXiv.2504.14667",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-14667"
+      },
+      "url": "URL#765373"
+    },
+    {
+      "@score": "5",
+      "@id": "781881",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "321/3959",
+              "text": "Sizai Hou"
+            },
+            {
+              "@pid": "119/2630",
+              "text": "Songze Li"
+            },
+            {
+              "@pid": "230/4023",
+              "text": "Baturalp Buyukates"
+            }
+          ]
+        },
+        "title": "Privacy-preserving Prompt Personalization in Federated Learning for Multimodal Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.22447",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-22447",
+        "doi": "10.48550/ARXIV.2505.22447",
+        "ee": "https://doi.org/10.48550/arXiv.2505.22447",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-22447"
+      },
+      "url": "URL#781881"
+    },
+    {
+      "@score": "5",
+      "@id": "793726",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "375/1356",
+              "text": "Huaiying Luo"
+            },
+            {
+              "@pid": "32/598",
+              "text": "Cheng Ji"
+            }
+          ]
+        },
+        "title": "Federated Learning-Based Data Collaboration Method for Enhancing Edge Cloud AI System Security Using Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2506.18087",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2506-18087",
+        "doi": "10.48550/ARXIV.2506.18087",
+        "ee": "https://doi.org/10.48550/arXiv.2506.18087",
+        "url": "https://dblp.org/rec/journals/corr/abs-2506-18087"
+      },
+      "url": "URL#793726"
+    },
+    {
+      "@score": "5",
+      "@id": "813836",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "272/8915",
+              "text": "Fuyao Zhang"
+            },
+            {
+              "@pid": "117/4232-3",
+              "text": "Xinyu Yan 0003"
+            },
+            {
+              "@pid": "306/1028",
+              "text": "Tiantong Wu"
+            },
+            {
+              "@pid": "33/3999-8",
+              "text": "Wenjie Li 0008"
+            },
+            {
+              "@pid": "180/6789",
+              "text": "Tianxiang Chen"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "16/5791",
+              "text": "Ran Yan"
+            },
+            {
+              "@pid": "76/10119",
+              "text": "Longtao Huang"
+            },
+            {
+              "@pid": "249/5315",
+              "text": "Wei Yang Bryan Lim"
+            },
+            {
+              "@pid": "82/6362-1",
+              "text": "Qiang Yang 0001"
+            }
+          ]
+        },
+        "title": "Oblivionis: A Lightweight Learning and Unlearning Framework for Federated Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2508.08875",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2508-08875",
+        "doi": "10.48550/ARXIV.2508.08875",
+        "ee": "https://doi.org/10.48550/arXiv.2508.08875",
+        "url": "https://dblp.org/rec/journals/corr/abs-2508-08875"
+      },
+      "url": "URL#813836"
+    },
+    {
+      "@score": "5",
+      "@id": "839705",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "419/6907",
+              "text": "Tinnakit Udsa"
+            },
+            {
+              "@pid": "213/5075",
+              "text": "Can Udomcharoenchaikit"
+            },
+            {
+              "@pid": "339/2628",
+              "text": "Patomporn Payoungkhamdee"
+            },
+            {
+              "@pid": "32/1518",
+              "text": "Sarana Nutanong"
+            },
+            {
+              "@pid": "198/1339",
+              "text": "Norrathep Rattanavipanon"
+            }
+          ]
+        },
+        "title": "Exploring Cross-Client Memorization of Training Data in Large Language Models for Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2510.08750",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-08750",
+        "doi": "10.48550/ARXIV.2510.08750",
+        "ee": "https://doi.org/10.48550/arXiv.2510.08750",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-08750"
+      },
+      "url": "URL#839705"
+    },
+    {
+      "@score": "5",
+      "@id": "857441",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "423/5895",
+              "text": "Jiazhuo Tian"
+            },
+            {
+              "@pid": "216/4601",
+              "text": "Yachao Yuan"
+            }
+          ]
+        },
+        "title": "HFL-FlowLLM: Large Language Models for Network Traffic Flow Classification in Heterogeneous Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2511.14199",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-14199",
+        "doi": "10.48550/ARXIV.2511.14199",
+        "ee": "https://doi.org/10.48550/arXiv.2511.14199",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-14199"
+      },
+      "url": "URL#857441"
+    },
+    {
+      "@score": "5",
+      "@id": "860504",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/1341",
+              "text": "Yujia Wang"
+            },
+            {
+              "@pid": "243/0230",
+              "text": "Yuanpu Cao"
+            },
+            {
+              "@pid": "67/5633",
+              "text": "Jinghui Chen"
+            }
+          ]
+        },
+        "title": "ParaBlock: Communication-Computation Parallel Block Coordinate Federated Learning for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2511.19959",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-19959",
+        "doi": "10.48550/ARXIV.2511.19959",
+        "ee": "https://doi.org/10.48550/arXiv.2511.19959",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-19959"
+      },
+      "url": "URL#860504"
+    },
+    {
+      "@score": "5",
+      "@id": "896187",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/1041",
+              "text": "Zhi Qiang Wang"
+            },
+            {
+              "@pid": "16/10459",
+              "text": "Haopeng Wang"
+            },
+            {
+              "@pid": "06/1887",
+              "text": "Abdulmotaleb El Saddik"
+            }
+          ]
+        },
+        "title": "FedITD: A Federated Parameter-Efficient Tuning With Pre-Trained Large Language Models and Transfer Learning Framework for Insider Threat Detection.",
+        "venue": "IEEE Access",
+        "volume": "12",
+        "pages": "160396-160417",
+        "year": "2024",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/WangWE24",
+        "doi": "10.1109/ACCESS.2024.3482988",
+        "ee": "https://doi.org/10.1109/ACCESS.2024.3482988",
+        "url": "https://dblp.org/rec/journals/access/WangWE24"
+      },
+      "url": "URL#896187"
+    },
+    {
+      "@score": "5",
+      "@id": "1031842",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/1492-1",
+              "text": "Chaochao Chen 0001"
+            },
+            {
+              "@pid": "67/10621-2",
+              "text": "Xiaohua Feng 0002"
+            },
+            {
+              "@pid": "35/11288-1",
+              "text": "Yuyuan Li 0001"
+            },
+            {
+              "@pid": "178/9876",
+              "text": "Lingjuan Lyu"
+            },
+            {
+              "@pid": "99/3847-11",
+              "text": "Jun Zhou 0011"
+            },
+            {
+              "@pid": "09/5763",
+              "text": "Xiaolin Zheng"
+            },
+            {
+              "@pid": "74/3786",
+              "text": "Jianwei Yin"
+            }
+          ]
+        },
+        "title": "Integration of large language models and federated learning.",
+        "venue": "Patterns",
+        "volume": "5",
+        "number": "12",
+        "pages": "101098",
+        "year": "2024",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/patterns/ChenFLLZZY24",
+        "doi": "10.1016/J.PATTER.2024.101098",
+        "ee": "https://doi.org/10.1016/j.patter.2024.101098",
+        "url": "https://dblp.org/rec/journals/patterns/ChenFLLZZY24"
+      },
+      "url": "URL#1031842"
+    },
+    {
+      "@score": "5",
+      "@id": "1120026",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "01/10183-3",
+              "text": "Jingang Jiang 0003"
+            },
+            {
+              "@pid": "223/1654-3",
+              "text": "Haiqi Jiang 0003"
+            },
+            {
+              "@pid": "142/0294",
+              "text": "Yuhan Ma"
+            },
+            {
+              "@pid": "21/505",
+              "text": "Xiangyang Liu"
+            },
+            {
+              "@pid": "180/5779",
+              "text": "Chenyou Fan"
+            }
+          ]
+        },
+        "title": "Low-Parameter Federated Learning with Large Language Models.",
+        "venue": "WISA",
+        "pages": "319-330",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/IEEEwisa/JiangJMLF24",
+        "doi": "10.1007/978-981-97-7707-5_28",
+        "ee": "https://doi.org/10.1007/978-981-97-7707-5_28",
+        "url": "https://dblp.org/rec/conf/IEEEwisa/JiangJMLF24"
+      },
+      "url": "URL#1120026"
+    },
+    {
+      "@score": "5",
+      "@id": "1181759",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/4433-3",
+              "text": "Ji Liu 0003"
+            },
+            {
+              "@pid": "205/7041-1",
+              "text": "Jiaxiang Ren 0001"
+            },
+            {
+              "@pid": "72/4662",
+              "text": "Ruoming Jin"
+            },
+            {
+              "@pid": "63/8333-1",
+              "text": "Zijie Zhang 0001"
+            },
+            {
+              "@pid": "07/4580-1",
+              "text": "Yang Zhou 0001"
+            },
+            {
+              "@pid": "v/PatrickValduriez",
+              "text": "Patrick Valduriez"
+            },
+            {
+              "@pid": "26/2854",
+              "text": "Dejing Dou"
+            }
+          ]
+        },
+        "title": "Fisher Information-based Efficient Curriculum Federated Learning with Large Language Models.",
+        "venue": "EMNLP",
+        "pages": "10497-10523",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/00030J00VD24",
+        "doi": "10.18653/V1/2024.EMNLP-MAIN.587",
+        "ee": "https://doi.org/10.18653/v1/2024.emnlp-main.587",
+        "url": "https://dblp.org/rec/conf/emnlp/00030J00VD24"
+      },
+      "url": "URL#1181759"
+    },
+    {
+      "@score": "5",
+      "@id": "1202504",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "399/1585",
+              "text": "Guangtong Lv"
+            },
+            {
+              "@pid": "245/3157",
+              "text": "Bruce Gu"
+            },
+            {
+              "@pid": "292/8280",
+              "text": "Xiaocong Jia"
+            },
+            {
+              "@pid": "44/7500",
+              "text": "Longxiang Gao"
+            },
+            {
+              "@pid": "192/6131",
+              "text": "Youyang Qu"
+            },
+            {
+              "@pid": "47/5523-6",
+              "text": "Lei Cui 0006"
+            }
+          ]
+        },
+        "title": "Federated Learning and Parallel Prompt Scheduling Strategies for Large Language Models.",
+        "venue": "ICA3PP",
+        "pages": "317-326",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ica3pp/LvGJGQC24",
+        "doi": "10.1007/978-981-96-1528-5_22",
+        "ee": "https://doi.org/10.1007/978-981-96-1528-5_22",
+        "url": "https://dblp.org/rec/conf/ica3pp/LvGJGQC24"
+      },
+      "url": "URL#1202504"
+    },
+    {
+      "@score": "5",
+      "@id": "1237751",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "371/9242",
+              "text": "Zeju Cai"
+            },
+            {
+              "@pid": "18/733-1",
+              "text": "Jianguo Chen 0001"
+            },
+            {
+              "@pid": "31/2740",
+              "text": "Wenqing Chen"
+            },
+            {
+              "@pid": "223/2623",
+              "text": "Weicheng Wang"
+            },
+            {
+              "@pid": "128/1455",
+              "text": "Xiangyuan Zhu"
+            },
+            {
+              "@pid": "23/8079",
+              "text": "Aijia Ouyang"
+            }
+          ]
+        },
+        "title": "F-CodeLLM: A Federated Learning Framework for Adapting Large Language Models to Practical Software Development.",
+        "venue": "ICSE Companion",
+        "pages": "416-417",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icse/CaiCCWZO24",
+        "doi": "10.1145/3639478.3643533",
+        "ee": "https://doi.org/10.1145/3639478.3643533",
+        "url": "https://dblp.org/rec/conf/icse/CaiCCWZO24"
+      },
+      "url": "URL#1237751"
+    },
+    {
+      "@score": "5",
+      "@id": "1252876",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "324/4033",
+              "text": "Ningxin Su"
+            },
+            {
+              "@pid": "65/10436",
+              "text": "Chenghao Hu"
+            },
+            {
+              "@pid": "l/BaochunLi",
+              "text": "Baochun Li"
+            },
+            {
+              "@pid": "50/3402-1",
+              "text": "Bo Li 0001"
+            }
+          ]
+        },
+        "title": "Titanic: Towards Production Federated Learning with Large Language Models.",
+        "venue": "INFOCOM",
+        "pages": "611-620",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/infocom/SuHLL24",
+        "doi": "10.1109/INFOCOM52122.2024.10621164",
+        "ee": "https://doi.org/10.1109/INFOCOM52122.2024.10621164",
+        "url": "https://dblp.org/rec/conf/infocom/SuHLL24"
+      },
+      "url": "URL#1252876"
+    },
+    {
+      "@score": "5",
+      "@id": "1271634",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "177/5191-1",
+              "text": "Rui Ye 0001"
+            },
+            {
+              "@pid": "57/9813-2",
+              "text": "Wenhao Wang 0002"
+            },
+            {
+              "@pid": "340/7940",
+              "text": "Jingyi Chai"
+            },
+            {
+              "@pid": "311/2150",
+              "text": "Dihan Li"
+            },
+            {
+              "@pid": "151/9187",
+              "text": "Zexi Li"
+            },
+            {
+              "@pid": "254/1072",
+              "text": "Yinda Xu"
+            },
+            {
+              "@pid": "364/0077",
+              "text": "Yaxin Du"
+            },
+            {
+              "@pid": "55/5407-1",
+              "text": "Yanfeng Wang 0001"
+            },
+            {
+              "@pid": "136/4945",
+              "text": "Siheng Chen"
+            }
+          ]
+        },
+        "title": "OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning.",
+        "venue": "KDD",
+        "pages": "6137-6147",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/kdd/YeWCLLXDWC24",
+        "doi": "10.1145/3637528.3671582",
+        "ee": "https://doi.org/10.1145/3637528.3671582",
+        "url": "https://dblp.org/rec/conf/kdd/YeWCLLXDWC24"
+      },
+      "url": "URL#1271634"
+    },
+    {
+      "@score": "5",
+      "@id": "1285397",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "236/6319",
+              "text": "Boxin Wang"
+            },
+            {
+              "@pid": "95/2419",
+              "text": "Yibo Zhang"
+            },
+            {
+              "@pid": "52/4472",
+              "text": "Yuan Cao"
+            },
+            {
+              "@pid": "50/3402-26",
+              "text": "Bo Li 0026"
+            },
+            {
+              "@pid": "384/8759",
+              "text": "Hugh McMahan"
+            },
+            {
+              "@pid": "80/4366",
+              "text": "Sewoong Oh"
+            },
+            {
+              "@pid": "83/2535-2",
+              "text": "Zheng Xu 0002"
+            },
+            {
+              "@pid": "40/10701",
+              "text": "Manzil Zaheer"
+            }
+          ]
+        },
+        "title": "Can Public Large Language Models Help Private Cross-device Federated Learning?",
+        "venue": "NAACL-HLT",
+        "pages": "934-949",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/naacl/WangZCLMOXZ24",
+        "doi": "10.18653/V1/2024.FINDINGS-NAACL.59",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-naacl.59",
+        "url": "https://dblp.org/rec/conf/naacl/WangZCLMOXZ24"
+      },
+      "url": "URL#1285397"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "6",
+      "@id": "1271334",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "318/1583",
+              "text": "Weirui Kuang"
+            },
+            {
+              "@pid": "294/3682",
+              "text": "Bingchen Qian"
+            },
+            {
+              "@pid": "220/3927",
+              "text": "Zitao Li"
+            },
+            {
+              "@pid": "217/4891",
+              "text": "Daoyuan Chen"
+            },
+            {
+              "@pid": "37/1969",
+              "text": "Dawei Gao"
+            },
+            {
+              "@pid": "323/0621",
+              "text": "Xuchen Pan"
+            },
+            {
+              "@pid": "232/2045",
+              "text": "Yuexiang Xie"
+            },
+            {
+              "@pid": "127/6999",
+              "text": "Yaliang Li"
+            },
+            {
+              "@pid": "46/3522",
+              "text": "Bolin Ding"
+            },
+            {
+              "@pid": "84/2644-1",
+              "text": "Jingren Zhou 0001"
+            }
+          ]
+        },
+        "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning.",
+        "venue": "KDD",
+        "pages": "5260-5271",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/kdd/KuangQLCGPXLDZ24",
+        "doi": "10.1145/3637528.3671573",
+        "ee": "https://doi.org/10.1145/3637528.3671573",
+        "url": "https://dblp.org/rec/conf/kdd/KuangQLCGPXLDZ24"
+      },
+      "url": "URL#1271334"
+    },
+    {
+      "@score": "6",
+      "@id": "1958150",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "318/1583",
+              "text": "Weirui Kuang"
+            },
+            {
+              "@pid": "294/3682",
+              "text": "Bingchen Qian"
+            },
+            {
+              "@pid": "220/3927",
+              "text": "Zitao Li"
+            },
+            {
+              "@pid": "217/4891",
+              "text": "Daoyuan Chen"
+            },
+            {
+              "@pid": "37/1969",
+              "text": "Dawei Gao"
+            },
+            {
+              "@pid": "323/0621",
+              "text": "Xuchen Pan"
+            },
+            {
+              "@pid": "232/2045",
+              "text": "Yuexiang Xie"
+            },
+            {
+              "@pid": "127/6999",
+              "text": "Yaliang Li"
+            },
+            {
+              "@pid": "46/3522",
+              "text": "Bolin Ding"
+            },
+            {
+              "@pid": "84/2644-1",
+              "text": "Jingren Zhou 0001"
+            }
+          ]
+        },
+        "title": "FederatedScope-LLM: A Comprehensive Package for Fine-tuning Large Language Models in Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2309.00363",
+        "year": "2023",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2309-00363",
+        "doi": "10.48550/ARXIV.2309.00363",
+        "ee": "https://doi.org/10.48550/arXiv.2309.00363",
+        "url": "https://dblp.org/rec/journals/corr/abs-2309-00363"
+      },
+      "url": "URL#1958150"
+    },
+    {
+      "@score": "5",
+      "@id": "26404",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "32/4850",
+              "text": "Jialiang Lu"
+            },
+            {
+              "@pid": "72/872-8",
+              "text": "Qiang Li 0008"
+            },
+            {
+              "@pid": "05/4746-1",
+              "text": "He Li 0001"
+            }
+          ]
+        },
+        "title": "FL-LLM: Leveraging large language models for efficient device selection in federated learning.",
+        "venue": "Comput. Networks",
+        "volume": "278",
+        "pages": "112107",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/cn/LuLL26",
+        "doi": "10.1016/J.COMNET.2026.112107",
+        "ee": "https://doi.org/10.1016/j.comnet.2026.112107",
+        "url": "https://dblp.org/rec/journals/cn/LuLL26"
+      },
+      "url": "URL#26404"
+    },
+    {
+      "@score": "5",
+      "@id": "51761",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "56/7757",
+              "text": "Jianxin Dai"
+            },
+            {
+              "@pid": "78/437",
+              "text": "Rui Tang"
+            },
+            {
+              "@pid": "216/6717",
+              "text": "Feibo Jiang"
+            },
+            {
+              "@pid": "90/549-1",
+              "text": "Zhaohui Yang 0001"
+            },
+            {
+              "@pid": "10/9659-2",
+              "text": "Qianqian Yang 0002"
+            },
+            {
+              "@pid": "81/6236-1",
+              "text": "Zhaoyang Zhang 0001"
+            },
+            {
+              "@pid": "28/10607",
+              "text": "Linqing Gui"
+            }
+          ]
+        },
+        "title": "Federated Split Learning for Large Language Models With RSMA.",
+        "venue": "IET Commun.",
+        "volume": "20",
+        "number": "1",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/iet-com/DaiTJYYZG26",
+        "doi": "10.1049/CMU2.70152",
+        "ee": "https://doi.org/10.1049/cmu2.70152",
+        "url": "https://dblp.org/rec/journals/iet-com/DaiTJYYZG26"
+      },
+      "url": "URL#51761"
+    },
+    {
+      "@score": "5",
+      "@id": "52512",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "186/2860",
+              "text": "Weiguang Ma"
+            },
+            {
+              "@pid": "18/1763-16",
+              "text": "Lei Huang 0016"
+            },
+            {
+              "@pid": "351/7970",
+              "text": "Qianyao Zhang"
+            },
+            {
+              "@pid": "94/3104-36",
+              "text": "Ying Wang 0036"
+            },
+            {
+              "@pid": "06/2161",
+              "text": "Xiong Zhang"
+            },
+            {
+              "@pid": "242/2323",
+              "text": "Rongjia Song"
+            }
+          ]
+        },
+        "title": "Federated Split Learning with Large Language Models Integration: A Study on Potential Container Source Identification in Sea-Rail Intermodal Transport.",
+        "venue": "Int. J. Comput. Commun. Control",
+        "volume": "21",
+        "number": "3",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ijccc/MaHZWZS26",
+        "doi": "10.15837/IJCCC.2026.3.7263",
+        "ee": "https://doi.org/10.15837/ijccc.2026.3.7263",
+        "url": "https://dblp.org/rec/journals/ijccc/MaHZWZS26"
+      },
+      "url": "URL#52512"
+    },
+    {
+      "@score": "5",
+      "@id": "88746",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "244/4443",
+              "text": "Yalan Jiang"
+            },
+            {
+              "@pid": "09/11430",
+              "text": "Zhongliang Li"
+            },
+            {
+              "@pid": "09/2085-1",
+              "text": "Bin Song 0001"
+            }
+          ]
+        },
+        "title": "Fine-tuning large language models in federated learning with fairness-aware prompt selection.",
+        "venue": "Neural Networks",
+        "volume": "194",
+        "pages": "108160",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/nn/JiangLS26",
+        "doi": "10.1016/J.NEUNET.2025.108160",
+        "ee": "https://doi.org/10.1016/j.neunet.2025.108160",
+        "url": "https://dblp.org/rec/journals/nn/JiangLS26"
+      },
+      "url": "URL#88746"
+    },
+    {
+      "@score": "5",
+      "@id": "124984",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/1341",
+              "text": "Yujia Wang"
+            },
+            {
+              "@pid": "243/0230",
+              "text": "Yuanpu Cao"
+            },
+            {
+              "@pid": "67/5633",
+              "text": "Jinghui Chen"
+            }
+          ]
+        },
+        "title": "ParaBlock: Communication-Computation Parallel Block Coordinate Federated Learning for Large Language Models.",
+        "venue": "Trans. Mach. Learn. Res.",
+        "volume": "2026",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tmlr/WangCC26",
+        "ee": "https://openreview.net/forum?id=Hnf7eCdBeV",
+        "url": "https://dblp.org/rec/journals/tmlr/WangCC26"
+      },
+      "url": "URL#124984"
+    },
+    {
+      "@score": "5",
+      "@id": "126214",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/8499-11",
+              "text": "Haoyu Wang 0011"
+            },
+            {
+              "@pid": "245/1601",
+              "text": "Zilong Yin"
+            },
+            {
+              "@pid": "22/5523",
+              "text": "Bin Chen"
+            },
+            {
+              "@pid": "259/3554",
+              "text": "Yujie Zeng"
+            },
+            {
+              "@pid": "345/7234",
+              "text": "Xiyue Yan"
+            },
+            {
+              "@pid": "215/8318",
+              "text": "Chenyu Zhou"
+            },
+            {
+              "@pid": "368/8285-2",
+              "text": "Anji Li 0002"
+            }
+          ]
+        },
+        "title": "ROFED-LLM: Robust Federated Learning for Large Language Models in Adversarial Wireless Environments.",
+        "venue": "IEEE Trans. Netw. Sci. Eng.",
+        "volume": "13",
+        "pages": "1084-1096",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tnse/WangYCZYZL26",
+        "doi": "10.1109/TNSE.2025.3590975",
+        "ee": "https://doi.org/10.1109/TNSE.2025.3590975",
+        "url": "https://dblp.org/rec/journals/tnse/WangYCZYZL26"
+      },
+      "url": "URL#126214"
+    },
+    {
+      "@score": "5",
+      "@id": "140673",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "272/8915",
+              "text": "Fuyao Zhang"
+            },
+            {
+              "@pid": "117/4232-3",
+              "text": "Xinyu Yan 0003"
+            },
+            {
+              "@pid": "306/1028",
+              "text": "Tiantong Wu"
+            },
+            {
+              "@pid": "33/3999-8",
+              "text": "Wenjie Li 0008"
+            },
+            {
+              "@pid": "180/6789",
+              "text": "Tianxiang Chen"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "16/5791",
+              "text": "Ran Yan"
+            },
+            {
+              "@pid": "76/10119",
+              "text": "Longtao Huang"
+            },
+            {
+              "@pid": "249/5315",
+              "text": "Wei Yang Bryan Lim"
+            },
+            {
+              "@pid": "82/6362-1",
+              "text": "Qiang Yang 0001"
+            }
+          ]
+        },
+        "title": "Oblivionis: A Lightweight Learning and Unlearning Framework for Federated Large Language Models.",
+        "venue": "AAAI",
+        "pages": "28185-28193",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/ZhangYWLCCYHLY26",
+        "doi": "10.1609/AAAI.V40I33.40045",
+        "ee": "https://doi.org/10.1609/aaai.v40i33.40045",
+        "url": "https://dblp.org/rec/conf/aaai/ZhangYWLCCYHLY26"
+      },
+      "url": "URL#140673"
+    },
+    {
+      "@score": "5",
+      "@id": "163274",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "216/4393",
+              "text": "Bayan Alzahrani"
+            },
+            {
+              "@pid": "81/7890",
+              "text": "Dejun Yang"
+            }
+          ]
+        },
+        "title": "PrivLoRA: Enhancing Privacy in LoRA-Based Fine-Tuning of Large Language Models for Federated Learning.",
+        "venue": "ICNC",
+        "pages": "505-511",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/iccnc/AlzahraniY26",
+        "doi": "10.1109/ICNC68183.2026.11416880",
+        "ee": "https://doi.org/10.1109/ICNC68183.2026.11416880",
+        "url": "https://dblp.org/rec/conf/iccnc/AlzahraniY26"
+      },
+      "url": "URL#163274"
+    },
+    {
+      "@score": "5",
+      "@id": "183003",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "423/5895",
+              "text": "Jiazhuo Tian"
+            },
+            {
+              "@pid": "216/4601",
+              "text": "Yachao Yuan"
+            }
+          ]
+        },
+        "title": "HFL-FlowLLM: Large Language Models for Network Traffic Flow Classification in Heterogeneous Federated Learning.",
+        "venue": "WCNC",
+        "pages": "1-6",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/wcnc/TianY26",
+        "doi": "10.1109/WCNC65185.2026.11555297",
+        "ee": "https://doi.org/10.1109/WCNC65185.2026.11555297",
+        "url": "https://dblp.org/rec/conf/wcnc/TianY26"
+      },
+      "url": "URL#183003"
+    },
+    {
+      "@score": "5",
+      "@id": "292675",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "122/4427",
+            "text": "Koffka Khan"
+          }
+        },
+        "title": "Adaptive Federated Learning With Local Large Language Models for Modeling Photonic and Chemical Systems.",
+        "venue": "IEEE Access",
+        "volume": "13",
+        "pages": "160559-160575",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/Khan25",
+        "doi": "10.1109/ACCESS.2025.3606855",
+        "ee": "https://doi.org/10.1109/ACCESS.2025.3606855",
+        "url": "https://dblp.org/rec/journals/access/Khan25"
+      },
+      "url": "URL#292675"
+    },
+    {
+      "@score": "5",
+      "@id": "335744",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "209/6143",
+              "text": "Gaith Rjoub"
+            },
+            {
+              "@pid": "246/6725",
+              "text": "Hanae Elmekki"
+            },
+            {
+              "@pid": "349/4479",
+              "text": "Saidul Islam"
+            },
+            {
+              "@pid": "b/JamalBentahar",
+              "text": "Jamal Bentahar"
+            },
+            {
+              "@pid": "29/2226",
+              "text": "Rachida Dssouli"
+            }
+          ]
+        },
+        "title": "A hybrid swarm intelligence approach for optimizing Multimodal Large Language Models deployment in edge-cloud-based Federated Learning environments.",
+        "venue": "Comput. Commun.",
+        "volume": "237",
+        "pages": "108152",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/comcom/RjoubEIBD25",
+        "doi": "10.1016/J.COMCOM.2025.108152",
+        "ee": "https://doi.org/10.1016/j.comcom.2025.108152",
+        "url": "https://dblp.org/rec/journals/comcom/RjoubEIBD25"
+      },
+      "url": "URL#335744"
+    },
+    {
+      "@score": "5",
+      "@id": "371320",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "379/6637",
+              "text": "Ahmed Elbakary"
+            },
+            {
+              "@pid": "194/6874",
+              "text": "Chaouki Ben Issaid"
+            },
+            {
+              "@pid": "23/553",
+              "text": "Tamer ElBatt"
+            },
+            {
+              "@pid": "65/3089",
+              "text": "Karim G. Seddik"
+            },
+            {
+              "@pid": "09/3625",
+              "text": "Mehdi Bennis"
+            }
+          ]
+        },
+        "title": "MIRA: A Method of Federated Multi-Task Learning for Large Language Models.",
+        "venue": "IEEE Netw. Lett.",
+        "volume": "7",
+        "number": "3",
+        "pages": "171-175",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ieeenl/ElbakaryIESB25",
+        "doi": "10.1109/LNET.2025.3539810",
+        "ee": "https://doi.org/10.1109/LNET.2025.3539810",
+        "url": "https://dblp.org/rec/journals/ieeenl/ElbakaryIESB25"
+      },
+      "url": "URL#371320"
+    },
+    {
+      "@score": "5",
+      "@id": "385891",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "16/1234-7",
+              "text": "Zhuo Zhang 0007"
+            },
+            {
+              "@pid": "184/6378",
+              "text": "Yukun Zhang"
+            },
+            {
+              "@pid": "307/6373",
+              "text": "Guanzhong Chen"
+            },
+            {
+              "@pid": "58/3601",
+              "text": "Lizhen Qu"
+            },
+            {
+              "@pid": "16/1951-1",
+              "text": "Xun Zhou 0001"
+            },
+            {
+              "@pid": "52/4725",
+              "text": "Hui Wang 0013"
+            },
+            {
+              "@pid": "68/1538",
+              "text": "Zenglin Xu"
+            }
+          ]
+        },
+        "title": "From continuous pre-training to alignment: A comprehensive toolkit for large language models in federated learning.",
+        "venue": "Neurocomputing",
+        "volume": "647",
+        "pages": "130572",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/ijon/ZhangZCQZWX25",
+        "doi": "10.1016/J.NEUCOM.2025.130572",
+        "ee": "https://doi.org/10.1016/j.neucom.2025.130572",
+        "url": "https://dblp.org/rec/journals/ijon/ZhangZCQZWX25"
+      },
+      "url": "URL#385891"
+    },
+    {
+      "@score": "5",
+      "@id": "389785",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "45/10235",
+              "text": "Francesco Piccialli"
+            },
+            {
+              "@pid": "336/4085",
+              "text": "Diletta Chiaro"
+            },
+            {
+              "@pid": "264/2409",
+              "text": "Pian Qi"
+            },
+            {
+              "@pid": "57/4994",
+              "text": "Valerio Bellandi"
+            },
+            {
+              "@pid": "d/EDamiani",
+              "text": "Ernesto Damiani"
+            }
+          ]
+        },
+        "title": "Federated and edge learning for large language models.",
+        "venue": "Inf. Fusion",
+        "volume": "117",
+        "pages": "102840",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/inffus/PiccialliCQBD25",
+        "doi": "10.1016/J.INFFUS.2024.102840",
+        "ee": "https://doi.org/10.1016/j.inffus.2024.102840",
+        "url": "https://dblp.org/rec/journals/inffus/PiccialliCQBD25"
+      },
+      "url": "URL#389785"
+    },
+    {
+      "@score": "5",
+      "@id": "396707",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "17/5533",
+              "text": "Yingjie Xia"
+            },
+            {
+              "@pid": "155/2863",
+              "text": "Yuhan Chen"
+            },
+            {
+              "@pid": "297/9807",
+              "text": "Yunxiao Zhao"
+            },
+            {
+              "@pid": "86/3715",
+              "text": "Li Kuang"
+            },
+            {
+              "@pid": "21/1773-2",
+              "text": "Xuejiao Liu 0002"
+            },
+            {
+              "@pid": "61/2170-2",
+              "text": "Ji Hu 0002"
+            },
+            {
+              "@pid": "139/4288",
+              "text": "Zhiquan Liu 0001"
+            }
+          ]
+        },
+        "title": "FCLLM-DT: Enpowering Federated Continual Learning With Large Language Models for Digital-Twin-Based Industrial IoT.",
+        "venue": "IEEE Internet Things J.",
+        "volume": "12",
+        "number": "6",
+        "pages": "6070-6081",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/iotj/XiaCZKLHL25",
+        "doi": "10.1109/JIOT.2024.3510553",
+        "ee": "https://doi.org/10.1109/JIOT.2024.3510553",
+        "url": "https://dblp.org/rec/journals/iotj/XiaCZKLHL25"
+      },
+      "url": "URL#396707"
+    },
+    {
+      "@score": "5",
+      "@id": "487664",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "29/8207",
+              "text": "Tianyou Zhang"
+            },
+            {
+              "@pid": "90/6643-1",
+              "text": "Haiyang Yu 0001"
+            },
+            {
+              "@pid": "70/2539-4",
+              "text": "Zhen Yang 0004"
+            },
+            {
+              "@pid": "49/8346-2",
+              "text": "Yuwen Chen 0002"
+            },
+            {
+              "@pid": "90/3575-1",
+              "text": "Shui Yu 0001"
+            }
+          ]
+        },
+        "title": "LaVFL: Efficient Verifiable Federated Learning for Large Language Models.",
+        "venue": "IEEE Trans. Dependable Secur. Comput.",
+        "volume": "22",
+        "number": "6",
+        "pages": "6214-6229",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tdsc/ZhangYYCY25",
+        "doi": "10.1109/TDSC.2025.3581728",
+        "ee": "https://doi.org/10.1109/TDSC.2025.3581728",
+        "url": "https://dblp.org/rec/journals/tdsc/ZhangYYCY25"
+      },
+      "url": "URL#487664"
+    },
+    {
+      "@score": "5",
+      "@id": "494314",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "371/4016",
+              "text": "Aladin Djuhera"
+            },
+            {
+              "@pid": "297/5032",
+              "text": "Vlad-Costin Andrei"
+            },
+            {
+              "@pid": "00/6131",
+              "text": "Xinyang Li"
+            },
+            {
+              "@pid": "94/3910",
+              "text": "Ullrich J. Mönich"
+            },
+            {
+              "@pid": "39/3615",
+              "text": "Holger Boche"
+            },
+            {
+              "@pid": "41/6237",
+              "text": "Walid Saad 0001"
+            }
+          ]
+        },
+        "title": "R-SFLLM: Jamming Resilient Framework for Split Federated Learning With Large Language Models.",
+        "venue": "IEEE Trans. Inf. Forensics Secur.",
+        "volume": "20",
+        "pages": "8296-8311",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tifs/DjuheraALMBS25",
+        "doi": "10.1109/TIFS.2025.3594107",
+        "ee": "https://doi.org/10.1109/TIFS.2025.3594107",
+        "url": "https://dblp.org/rec/journals/tifs/DjuheraALMBS25"
+      },
+      "url": "URL#494314"
+    },
+    {
+      "@score": "5",
+      "@id": "527343",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "03/2511",
+              "text": "Hui Fang"
+            },
+            {
+              "@pid": "89/4402-24",
+              "text": "Yang Gao 0024"
+            },
+            {
+              "@pid": "21/1048-1",
+              "text": "Peng Zhang 0001"
+            },
+            {
+              "@pid": "166/5900",
+              "text": "Jiangchao Yao"
+            },
+            {
+              "@pid": "13/3715",
+              "text": "Hongyang Chen 0001"
+            },
+            {
+              "@pid": "163/0767",
+              "text": "Haishuai Wang"
+            }
+          ]
+        },
+        "title": "Large Language Models Enhanced Personalized Graph Neural Architecture Search in Federated Learning.",
+        "venue": "AAAI",
+        "pages": "16514-16522",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/Fang0ZYCW25",
+        "doi": "10.1609/AAAI.V39I16.33814",
+        "ee": "https://doi.org/10.1609/aaai.v39i16.33814",
+        "url": "https://dblp.org/rec/conf/aaai/Fang0ZYCW25"
+      },
+      "url": "URL#527343"
+    },
+    {
+      "@score": "5",
+      "@id": "547060",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "429/5680",
+              "text": "Soham Ratnaparkhi"
+            },
+            {
+              "@pid": "12/54",
+              "text": "Saeed Samet"
+            }
+          ]
+        },
+        "title": "Fine-Tuning Large-Language-Models using Federated Learning &amp; Blockchain.",
+        "venue": "IEEE Big Data",
+        "pages": "5517-5526",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/bigdataconf/RatnaparkhiS25",
+        "doi": "10.1109/BIGDATA66926.2025.11401479",
+        "ee": "https://doi.org/10.1109/BigData66926.2025.11401479",
+        "url": "https://dblp.org/rec/conf/bigdataconf/RatnaparkhiS25"
+      },
+      "url": "URL#547060"
+    },
+    {
+      "@score": "5",
+      "@id": "559690",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "420/2730",
+              "text": "Tharushi Nehara"
+            },
+            {
+              "@pid": "420/2758",
+              "text": "Chanmini Kavinya Samaraweera"
+            },
+            {
+              "@pid": "400/6448",
+              "text": "Oshan Nettasinghe"
+            },
+            {
+              "@pid": "420/2551",
+              "text": "Ashen Nethsara"
+            },
+            {
+              "@pid": "271/3089",
+              "text": "Chamara Sandeepa"
+            },
+            {
+              "@pid": "276/9206",
+              "text": "Tharindu D. Gamage"
+            },
+            {
+              "@pid": "123/9171",
+              "text": "Madhusanka Liyanage"
+            }
+          ]
+        },
+        "title": "DistilGuard - Large Language Models for Poisoning Detection in Federated Learning.",
+        "venue": "CNS",
+        "pages": "1-9",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/cns/NeharaSNNSGL25",
+        "doi": "10.1109/CNS66487.2025.11195054",
+        "ee": "https://doi.org/10.1109/CNS66487.2025.11195054",
+        "url": "https://dblp.org/rec/conf/cns/NeharaSNNSGL25"
+      },
+      "url": "URL#559690"
+    },
+    {
+      "@score": "5",
+      "@id": "600406",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "395/4643",
+              "text": "Jincheol Jung"
+            },
+            {
+              "@pid": "395/4580",
+              "text": "Hongju Jeong"
+            },
+            {
+              "@pid": "05/1693",
+              "text": "Eui-Nam Huh"
+            }
+          ]
+        },
+        "title": "Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models.",
+        "venue": "ICAIIC",
+        "pages": "968-973",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icaiic/JungJH25",
+        "doi": "10.1109/ICAIIC64266.2025.10920885",
+        "ee": "https://doi.org/10.1109/ICAIIC64266.2025.10920885",
+        "url": "https://dblp.org/rec/conf/icaiic/JungJH25"
+      },
+      "url": "URL#600406"
+    },
+    {
+      "@score": "5",
+      "@id": "600527",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "410/4042",
+              "text": "InSeo Song"
+            },
+            {
+              "@pid": "77/11204",
+              "text": "KangYoon Lee"
+            }
+          ]
+        },
+        "title": "Optimizing Communication and Performance in Federated Learning for Large Language Models.",
+        "venue": "ICAIIC",
+        "pages": "964-967",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icaiic/SongL25",
+        "doi": "10.1109/ICAIIC64266.2025.10920742",
+        "ee": "https://doi.org/10.1109/ICAIIC64266.2025.10920742",
+        "url": "https://dblp.org/rec/conf/icaiic/SongL25"
+      },
+      "url": "URL#600527"
+    },
+    {
+      "@score": "5",
+      "@id": "604549",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "33/4816",
+              "text": "Pengyu Zhang"
+            },
+            {
+              "@pid": "01/5512",
+              "text": "Yingjie Liu"
+            },
+            {
+              "@pid": "72/8614-1",
+              "text": "Yingbo Zhou 0001"
+            },
+            {
+              "@pid": "82/378-3",
+              "text": "Ming Hu 0003"
+            },
+            {
+              "@pid": "139/0725",
+              "text": "Xian Wei"
+            },
+            {
+              "@pid": "95/573-1",
+              "text": "Mingsong Chen 0001"
+            }
+          ]
+        },
+        "title": "CE-FFT: Communication-Efficient Federated Fine-Tuning for Large Language Models via Quantization and In-Context Learning.",
+        "venue": "ICASSP",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icassp/ZhangLZ0W025",
+        "doi": "10.1109/ICASSP49660.2025.10889971",
+        "ee": "https://doi.org/10.1109/ICASSP49660.2025.10889971",
+        "url": "https://dblp.org/rec/conf/icassp/ZhangLZ0W025"
+      },
+      "url": "URL#604549"
+    },
+    {
+      "@score": "5",
+      "@id": "605554",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "12/417",
+              "text": "Hui Chen"
+            },
+            {
+              "@pid": "18/4822",
+              "text": "Kaoru Ota"
+            },
+            {
+              "@pid": "62/6234",
+              "text": "Mianxiong Dong"
+            }
+          ]
+        },
+        "title": "GFLLM: Federated Learning in Large Language Models With Optimized Group Aggregation.",
+        "venue": "ICC",
+        "pages": "2791-2796",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icc/ChenOD25",
+        "doi": "10.1109/ICC52391.2025.11162027",
+        "ee": "https://doi.org/10.1109/ICC52391.2025.11162027",
+        "url": "https://dblp.org/rec/conf/icc/ChenOD25"
+      },
+      "url": "URL#605554"
+    },
+    {
+      "@score": "5",
+      "@id": "623153",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "130/8465",
+              "text": "Linh Tran"
+            },
+            {
+              "@pid": "09/5042",
+              "text": "Wei Sun"
+            },
+            {
+              "@pid": "96/1837",
+              "text": "Stacy Patterson"
+            },
+            {
+              "@pid": "252/3794",
+              "text": "Ana L. Milanova"
+            }
+          ]
+        },
+        "title": "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models.",
+        "venue": "ICLR",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/iclr/TranSPM25",
+        "ee": "https://openreview.net/forum?id=Equ277PBN0",
+        "url": "https://dblp.org/rec/conf/iclr/TranSPM25"
+      },
+      "url": "URL#623153"
+    },
+    {
+      "@score": "5",
+      "@id": "627214",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "421/0487",
+              "text": "Yangxu Liao"
+            },
+            {
+              "@pid": "330/1664-3",
+              "text": "Wenke Huang 0003"
+            },
+            {
+              "@pid": "354/1252",
+              "text": "Guancheng Wan"
+            },
+            {
+              "@pid": "19/2208-3",
+              "text": "Jian Liang 0003"
+            },
+            {
+              "@pid": "77/377-26",
+              "text": "Bin Yang 0026"
+            },
+            {
+              "@pid": "156/0610",
+              "text": "Mang Ye"
+            }
+          ]
+        },
+        "title": "Splitting with Importance-aware Updating for Heterogeneous Federated Learning with Large Language Models.",
+        "venue": "ICML",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/Liao0W00Y25",
+        "ee": "https://proceedings.mlr.press/v267/liao25c.html",
+        "url": "https://dblp.org/rec/conf/icml/Liao0W00Y25"
+      },
+      "url": "URL#627214"
+    },
+    {
+      "@score": "5",
+      "@id": "699352",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/3130",
+              "text": "Kasra Ahmadi"
+            },
+            {
+              "@pid": "118/0026",
+              "text": "Rouzbeh Behnia"
+            },
+            {
+              "@pid": "26/7531-1",
+              "text": "Reza Ebrahimi 0001"
+            },
+            {
+              "@pid": "85/5526",
+              "text": "Mehran Mozaffari Kermani"
+            },
+            {
+              "@pid": "156/2855",
+              "text": "Jeremiah Birrell"
+            },
+            {
+              "@pid": "126/1745",
+              "text": "Jason Pacheco"
+            },
+            {
+              "@pid": "73/4897",
+              "text": "Attila A. Yavuz"
+            }
+          ]
+        },
+        "title": "An Interactive Framework for Implementing Privacy-Preserving Federated Learning: Experiments on Large Language Models.",
+        "venue": "SP",
+        "pages": "251-259",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/sp/AhmadiB0KBPY25",
+        "doi": "10.1109/SPW67851.2025.00035",
+        "ee": "https://doi.org/10.1109/SPW67851.2025.00035",
+        "url": "https://dblp.org/rec/conf/sp/AhmadiB0KBPY25"
+      },
+      "url": "URL#699352"
+    },
+    {
+      "@score": "5",
+      "@id": "730118",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "130/8465",
+              "text": "Linh Tran"
+            },
+            {
+              "@pid": "09/5042",
+              "text": "Wei Sun"
+            },
+            {
+              "@pid": "96/1837",
+              "text": "Stacy Patterson"
+            },
+            {
+              "@pid": "252/3794",
+              "text": "Ana L. Milanova"
+            }
+          ]
+        },
+        "title": "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2501.13904",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2501-13904",
+        "doi": "10.48550/ARXIV.2501.13904",
+        "ee": "https://doi.org/10.48550/arXiv.2501.13904",
+        "url": "https://dblp.org/rec/journals/corr/abs-2501-13904"
+      },
+      "url": "URL#730118"
+    },
+    {
+      "@score": "5",
+      "@id": "737408",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/3130",
+              "text": "Kasra Ahmadi"
+            },
+            {
+              "@pid": "118/0026",
+              "text": "Rouzbeh Behnia"
+            },
+            {
+              "@pid": "26/7531-1",
+              "text": "Reza Ebrahimi 0001"
+            },
+            {
+              "@pid": "85/5526",
+              "text": "Mehran Mozaffari Kermani"
+            },
+            {
+              "@pid": "156/2855",
+              "text": "Jeremiah Birrell"
+            },
+            {
+              "@pid": "126/1745",
+              "text": "Jason Pacheco"
+            },
+            {
+              "@pid": "73/4897",
+              "text": "Attila A. Yavuz"
+            }
+          ]
+        },
+        "title": "An Interactive Framework for Implementing Privacy-Preserving Federated Learning: Experiments on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2502.08008",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-08008",
+        "doi": "10.48550/ARXIV.2502.08008",
+        "ee": "https://doi.org/10.48550/arXiv.2502.08008",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-08008"
+      },
+      "url": "URL#737408"
+    },
+    {
+      "@score": "5",
+      "@id": "738637",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "209/6143",
+              "text": "Gaith Rjoub"
+            },
+            {
+              "@pid": "246/6725",
+              "text": "Hanae Elmekki"
+            },
+            {
+              "@pid": "349/4479",
+              "text": "Saidul Islam"
+            },
+            {
+              "@pid": "b/JamalBentahar",
+              "text": "Jamal Bentahar"
+            },
+            {
+              "@pid": "29/2226",
+              "text": "Rachida Dssouli"
+            }
+          ]
+        },
+        "title": "A Hybrid Swarm Intelligence Approach for Optimizing Multimodal Large Language Models Deployment in Edge-Cloud-based Federated Learning Environments.",
+        "venue": "CoRR",
+        "volume": "abs/2502.10419",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2502-10419",
+        "doi": "10.48550/ARXIV.2502.10419",
+        "ee": "https://doi.org/10.48550/arXiv.2502.10419",
+        "url": "https://dblp.org/rec/journals/corr/abs-2502-10419"
+      },
+      "url": "URL#738637"
+    },
+    {
+      "@score": "5",
+      "@id": "755346",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "63/6796-5",
+              "text": "Bo Yan 0005"
+            },
+            {
+              "@pid": "304/7095",
+              "text": "Zhongjian Zhang"
+            },
+            {
+              "@pid": "129/4438",
+              "text": "Huabin Sun"
+            },
+            {
+              "@pid": "234/4670",
+              "text": "Mengmei Zhang"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "64/3041-1",
+              "text": "Chuan Shi 0001"
+            }
+          ]
+        },
+        "title": "Data-centric Federated Graph Learning with Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2503.19455",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-19455",
+        "doi": "10.48550/ARXIV.2503.19455",
+        "ee": "https://doi.org/10.48550/arXiv.2503.19455",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-19455"
+      },
+      "url": "URL#755346"
+    },
+    {
+      "@score": "5",
+      "@id": "763196",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/6923",
+              "text": "Lihong Zhang"
+            },
+            {
+              "@pid": "61/500",
+              "text": "Yue Li"
+            }
+          ]
+        },
+        "title": "Federated Learning with Layer Skipping: Efficient Training of Large Language Models for Healthcare NLP.",
+        "venue": "CoRR",
+        "volume": "abs/2504.10536",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-10536",
+        "doi": "10.48550/ARXIV.2504.10536",
+        "ee": "https://doi.org/10.48550/arXiv.2504.10536",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-10536"
+      },
+      "url": "URL#763196"
+    },
+    {
+      "@score": "5",
+      "@id": "765373",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "72/2621",
+              "text": "Kai Zhao"
+            },
+            {
+              "@pid": "90/549",
+              "text": "Zhaohui Yang"
+            }
+          ]
+        },
+        "title": "Efficient Federated Split Learning for Large Language Models over Communication Networks.",
+        "venue": "CoRR",
+        "volume": "abs/2504.14667",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-14667",
+        "doi": "10.48550/ARXIV.2504.14667",
+        "ee": "https://doi.org/10.48550/arXiv.2504.14667",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-14667"
+      },
+      "url": "URL#765373"
+    },
+    {
+      "@score": "5",
+      "@id": "781881",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "321/3959",
+              "text": "Sizai Hou"
+            },
+            {
+              "@pid": "119/2630",
+              "text": "Songze Li"
+            },
+            {
+              "@pid": "230/4023",
+              "text": "Baturalp Buyukates"
+            }
+          ]
+        },
+        "title": "Privacy-preserving Prompt Personalization in Federated Learning for Multimodal Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.22447",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-22447",
+        "doi": "10.48550/ARXIV.2505.22447",
+        "ee": "https://doi.org/10.48550/arXiv.2505.22447",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-22447"
+      },
+      "url": "URL#781881"
+    },
+    {
+      "@score": "5",
+      "@id": "793726",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "375/1356",
+              "text": "Huaiying Luo"
+            },
+            {
+              "@pid": "32/598",
+              "text": "Cheng Ji"
+            }
+          ]
+        },
+        "title": "Federated Learning-Based Data Collaboration Method for Enhancing Edge Cloud AI System Security Using Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2506.18087",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2506-18087",
+        "doi": "10.48550/ARXIV.2506.18087",
+        "ee": "https://doi.org/10.48550/arXiv.2506.18087",
+        "url": "https://dblp.org/rec/journals/corr/abs-2506-18087"
+      },
+      "url": "URL#793726"
+    },
+    {
+      "@score": "5",
+      "@id": "813836",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "272/8915",
+              "text": "Fuyao Zhang"
+            },
+            {
+              "@pid": "117/4232-3",
+              "text": "Xinyu Yan 0003"
+            },
+            {
+              "@pid": "306/1028",
+              "text": "Tiantong Wu"
+            },
+            {
+              "@pid": "33/3999-8",
+              "text": "Wenjie Li 0008"
+            },
+            {
+              "@pid": "180/6789",
+              "text": "Tianxiang Chen"
+            },
+            {
+              "@pid": "25/7045-11",
+              "text": "Yang Cao 0011"
+            },
+            {
+              "@pid": "16/5791",
+              "text": "Ran Yan"
+            },
+            {
+              "@pid": "76/10119",
+              "text": "Longtao Huang"
+            },
+            {
+              "@pid": "249/5315",
+              "text": "Wei Yang Bryan Lim"
+            },
+            {
+              "@pid": "82/6362-1",
+              "text": "Qiang Yang 0001"
+            }
+          ]
+        },
+        "title": "Oblivionis: A Lightweight Learning and Unlearning Framework for Federated Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2508.08875",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2508-08875",
+        "doi": "10.48550/ARXIV.2508.08875",
+        "ee": "https://doi.org/10.48550/arXiv.2508.08875",
+        "url": "https://dblp.org/rec/journals/corr/abs-2508-08875"
+      },
+      "url": "URL#813836"
+    },
+    {
+      "@score": "5",
+      "@id": "839705",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "419/6907",
+              "text": "Tinnakit Udsa"
+            },
+            {
+              "@pid": "213/5075",
+              "text": "Can Udomcharoenchaikit"
+            },
+            {
+              "@pid": "339/2628",
+              "text": "Patomporn Payoungkhamdee"
+            },
+            {
+              "@pid": "32/1518",
+              "text": "Sarana Nutanong"
+            },
+            {
+              "@pid": "198/1339",
+              "text": "Norrathep Rattanavipanon"
+            }
+          ]
+        },
+        "title": "Exploring Cross-Client Memorization of Training Data in Large Language Models for Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2510.08750",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-08750",
+        "doi": "10.48550/ARXIV.2510.08750",
+        "ee": "https://doi.org/10.48550/arXiv.2510.08750",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-08750"
+      },
+      "url": "URL#839705"
+    },
+    {
+      "@score": "5",
+      "@id": "857441",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "423/5895",
+              "text": "Jiazhuo Tian"
+            },
+            {
+              "@pid": "216/4601",
+              "text": "Yachao Yuan"
+            }
+          ]
+        },
+        "title": "HFL-FlowLLM: Large Language Models for Network Traffic Flow Classification in Heterogeneous Federated Learning.",
+        "venue": "CoRR",
+        "volume": "abs/2511.14199",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-14199",
+        "doi": "10.48550/ARXIV.2511.14199",
+        "ee": "https://doi.org/10.48550/arXiv.2511.14199",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-14199"
+      },
+      "url": "URL#857441"
+    },
+    {
+      "@score": "5",
+      "@id": "860504",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "50/1341",
+              "text": "Yujia Wang"
+            },
+            {
+              "@pid": "243/0230",
+              "text": "Yuanpu Cao"
+            },
+            {
+              "@pid": "67/5633",
+              "text": "Jinghui Chen"
+            }
+          ]
+        },
+        "title": "ParaBlock: Communication-Computation Parallel Block Coordinate Federated Learning for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2511.19959",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-19959",
+        "doi": "10.48550/ARXIV.2511.19959",
+        "ee": "https://doi.org/10.48550/arXiv.2511.19959",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-19959"
+      },
+      "url": "URL#860504"
+    },
+    {
+      "@score": "5",
+      "@id": "896187",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "359/1041",
+              "text": "Zhi Qiang Wang"
+            },
+            {
+              "@pid": "16/10459",
+              "text": "Haopeng Wang"
+            },
+            {
+              "@pid": "06/1887",
+              "text": "Abdulmotaleb El Saddik"
+            }
+          ]
+        },
+        "title": "FedITD: A Federated Parameter-Efficient Tuning With Pre-Trained Large Language Models and Transfer Learning Framework for Insider Threat Detection.",
+        "venue": "IEEE Access",
+        "volume": "12",
+        "pages": "160396-160417",
+        "year": "2024",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/access/WangWE24",
+        "doi": "10.1109/ACCESS.2024.3482988",
+        "ee": "https://doi.org/10.1109/ACCESS.2024.3482988",
+        "url": "https://dblp.org/rec/journals/access/WangWE24"
+      },
+      "url": "URL#896187"
+    },
+    {
+      "@score": "5",
+      "@id": "1031842",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "26/1492-1",
+              "text": "Chaochao Chen 0001"
+            },
+            {
+              "@pid": "67/10621-2",
+              "text": "Xiaohua Feng 0002"
+            },
+            {
+              "@pid": "35/11288-1",
+              "text": "Yuyuan Li 0001"
+            },
+            {
+              "@pid": "178/9876",
+              "text": "Lingjuan Lyu"
+            },
+            {
+              "@pid": "99/3847-11",
+              "text": "Jun Zhou 0011"
+            },
+            {
+              "@pid": "09/5763",
+              "text": "Xiaolin Zheng"
+            },
+            {
+              "@pid": "74/3786",
+              "text": "Jianwei Yin"
+            }
+          ]
+        },
+        "title": "Integration of large language models and federated learning.",
+        "venue": "Patterns",
+        "volume": "5",
+        "number": "12",
+        "pages": "101098",
+        "year": "2024",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/patterns/ChenFLLZZY24",
+        "doi": "10.1016/J.PATTER.2024.101098",
+        "ee": "https://doi.org/10.1016/j.patter.2024.101098",
+        "url": "https://dblp.org/rec/journals/patterns/ChenFLLZZY24"
+      },
+      "url": "URL#1031842"
+    },
+    {
+      "@score": "5",
+      "@id": "1120026",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "01/10183-3",
+              "text": "Jingang Jiang 0003"
+            },
+            {
+              "@pid": "223/1654-3",
+              "text": "Haiqi Jiang 0003"
+            },
+            {
+              "@pid": "142/0294",
+              "text": "Yuhan Ma"
+            },
+            {
+              "@pid": "21/505",
+              "text": "Xiangyang Liu"
+            },
+            {
+              "@pid": "180/5779",
+              "text": "Chenyou Fan"
+            }
+          ]
+        },
+        "title": "Low-Parameter Federated Learning with Large Language Models.",
+        "venue": "WISA",
+        "pages": "319-330",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/IEEEwisa/JiangJMLF24",
+        "doi": "10.1007/978-981-97-7707-5_28",
+        "ee": "https://doi.org/10.1007/978-981-97-7707-5_28",
+        "url": "https://dblp.org/rec/conf/IEEEwisa/JiangJMLF24"
+      },
+      "url": "URL#1120026"
+    },
+    {
+      "@score": "5",
+      "@id": "1181759",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/4433-3",
+              "text": "Ji Liu 0003"
+            },
+            {
+              "@pid": "205/7041-1",
+              "text": "Jiaxiang Ren 0001"
+            },
+            {
+              "@pid": "72/4662",
+              "text": "Ruoming Jin"
+            },
+            {
+              "@pid": "63/8333-1",
+              "text": "Zijie Zhang 0001"
+            },
+            {
+              "@pid": "07/4580-1",
+              "text": "Yang Zhou 0001"
+            },
+            {
+              "@pid": "v/PatrickValduriez",
+              "text": "Patrick Valduriez"
+            },
+            {
+              "@pid": "26/2854",
+              "text": "Dejing Dou"
+            }
+          ]
+        },
+        "title": "Fisher Information-based Efficient Curriculum Federated Learning with Large Language Models.",
+        "venue": "EMNLP",
+        "pages": "10497-10523",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/00030J00VD24",
+        "doi": "10.18653/V1/2024.EMNLP-MAIN.587",
+        "ee": "https://doi.org/10.18653/v1/2024.emnlp-main.587",
+        "url": "https://dblp.org/rec/conf/emnlp/00030J00VD24"
+      },
+      "url": "URL#1181759"
+    },
+    {
+      "@score": "5",
+      "@id": "1202504",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "399/1585",
+              "text": "Guangtong Lv"
+            },
+            {
+              "@pid": "245/3157",
+              "text": "Bruce Gu"
+            },
+            {
+              "@pid": "292/8280",
+              "text": "Xiaocong Jia"
+            },
+            {
+              "@pid": "44/7500",
+              "text": "Longxiang Gao"
+            },
+            {
+              "@pid": "192/6131",
+              "text": "Youyang Qu"
+            },
+            {
+              "@pid": "47/5523-6",
+              "text": "Lei Cui 0006"
+            }
+          ]
+        },
+        "title": "Federated Learning and Parallel Prompt Scheduling Strategies for Large Language Models.",
+        "venue": "ICA3PP",
+        "pages": "317-326",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ica3pp/LvGJGQC24",
+        "doi": "10.1007/978-981-96-1528-5_22",
+        "ee": "https://doi.org/10.1007/978-981-96-1528-5_22",
+        "url": "https://dblp.org/rec/conf/ica3pp/LvGJGQC24"
+      },
+      "url": "URL#1202504"
+    },
+    {
+      "@score": "5",
+      "@id": "1237751",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "371/9242",
+              "text": "Zeju Cai"
+            },
+            {
+              "@pid": "18/733-1",
+              "text": "Jianguo Chen 0001"
+            },
+            {
+              "@pid": "31/2740",
+              "text": "Wenqing Chen"
+            },
+            {
+              "@pid": "223/2623",
+              "text": "Weicheng Wang"
+            },
+            {
+              "@pid": "128/1455",
+              "text": "Xiangyuan Zhu"
+            },
+            {
+              "@pid": "23/8079",
+              "text": "Aijia Ouyang"
+            }
+          ]
+        },
+        "title": "F-CodeLLM: A Federated Learning Framework for Adapting Large Language Models to Practical Software Development.",
+        "venue": "ICSE Companion",
+        "pages": "416-417",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icse/CaiCCWZO24",
+        "doi": "10.1145/3639478.3643533",
+        "ee": "https://doi.org/10.1145/3639478.3643533",
+        "url": "https://dblp.org/rec/conf/icse/CaiCCWZO24"
+      },
+      "url": "URL#1237751"
+    },
+    {
+      "@score": "5",
+      "@id": "1252876",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "324/4033",
+              "text": "Ningxin Su"
+            },
+            {
+              "@pid": "65/10436",
+              "text": "Chenghao Hu"
+            },
+            {
+              "@pid": "l/BaochunLi",
+              "text": "Baochun Li"
+            },
+            {
+              "@pid": "50/3402-1",
+              "text": "Bo Li 0001"
+            }
+          ]
+        },
+        "title": "Titanic: Towards Production Federated Learning with Large Language Models.",
+        "venue": "INFOCOM",
+        "pages": "611-620",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/infocom/SuHLL24",
+        "doi": "10.1109/INFOCOM52122.2024.10621164",
+        "ee": "https://doi.org/10.1109/INFOCOM52122.2024.10621164",
+        "url": "https://dblp.org/rec/conf/infocom/SuHLL24"
+      },
+      "url": "URL#1252876"
+    },
+    {
+      "@score": "5",
+      "@id": "1271634",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "177/5191-1",
+              "text": "Rui Ye 0001"
+            },
+            {
+              "@pid": "57/9813-2",
+              "text": "Wenhao Wang 0002"
+            },
+            {
+              "@pid": "340/7940",
+              "text": "Jingyi Chai"
+            },
+            {
+              "@pid": "311/2150",
+              "text": "Dihan Li"
+            },
+            {
+              "@pid": "151/9187",
+              "text": "Zexi Li"
+            },
+            {
+              "@pid": "254/1072",
+              "text": "Yinda Xu"
+            },
+            {
+              "@pid": "364/0077",
+              "text": "Yaxin Du"
+            },
+            {
+              "@pid": "55/5407-1",
+              "text": "Yanfeng Wang 0001"
+            },
+            {
+              "@pid": "136/4945",
+              "text": "Siheng Chen"
+            }
+          ]
+        },
+        "title": "OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning.",
+        "venue": "KDD",
+        "pages": "6137-6147",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/kdd/YeWCLLXDWC24",
+        "doi": "10.1145/3637528.3671582",
+        "ee": "https://doi.org/10.1145/3637528.3671582",
+        "url": "https://dblp.org/rec/conf/kdd/YeWCLLXDWC24"
+      },
+      "url": "URL#1271634"
+    },
+    {
+      "@score": "5",
+      "@id": "1285397",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "236/6319",
+              "text": "Boxin Wang"
+            },
+            {
+              "@pid": "95/2419",
+              "text": "Yibo Zhang"
+            },
+            {
+              "@pid": "52/4472",
+              "text": "Yuan Cao"
+            },
+            {
+              "@pid": "50/3402-26",
+              "text": "Bo Li 0026"
+            },
+            {
+              "@pid": "384/8759",
+              "text": "Hugh McMahan"
+            },
+            {
+              "@pid": "80/4366",
+              "text": "Sewoong Oh"
+            },
+            {
+              "@pid": "83/2535-2",
+              "text": "Zheng Xu 0002"
+            },
+            {
+              "@pid": "40/10701",
+              "text": "Manzil Zaheer"
+            }
+          ]
+        },
+        "title": "Can Public Large Language Models Help Private Cross-device Federated Learning?",
+        "venue": "NAACL-HLT",
+        "pages": "934-949",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/naacl/WangZCLMOXZ24",
+        "doi": "10.18653/V1/2024.FINDINGS-NAACL.59",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-naacl.59",
+        "url": "https://dblp.org/rec/conf/naacl/WangZCLMOXZ24"
+      },
+      "url": "URL#1285397"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=federated%20learning%20large%20language%20models&h=50&format=json"
+}

@@ -1,0 +1,4312 @@
+{
+  "source": "dblp",
+  "api": "https://dblp.org/search/publ/api",
+  "protocol_version": "1.2",
+  "query": "parameter-efficient fine-tuning large language models",
+  "query_form": "s2_keyword_variant",
+  "h_requested": 50,
+  "cap_enforced_at_request": true,
+  "year_window": "2019-2026",
+  "fetched_at": "2026-07-22T15:42:57Z",
+  "total_results_reported": 80,
+  "returned": 50,
+  "returned_in_coverage_window": 50,
+  "hit_result_cap": true,
+  "hits": [
+    {
+      "@score": "8",
+      "@id": "374737",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "228/7253",
+              "text": "Zhengjie Gao"
+            },
+            {
+              "@pid": "387/3880",
+              "text": "Rongcheng Li"
+            },
+            {
+              "@pid": "218/3103",
+              "text": "Yuxin Fan"
+            },
+            {
+              "@pid": "25/11277",
+              "text": "Min Liao"
+            },
+            {
+              "@pid": "63/5591",
+              "text": "Xinyu Song"
+            }
+          ]
+        },
+        "title": "Late Adapter Tuning: A Cost-Effective Approach to Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "Int. J. Comput. Commun. Control",
+        "volume": "20",
+        "number": "6",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ijccc/GaoLFLS25",
+        "doi": "10.15837/IJCCC.2025.6.6928",
+        "ee": "https://doi.org/10.15837/ijccc.2025.6.6928",
+        "url": "https://dblp.org/rec/journals/ijccc/GaoLFLS25"
+      },
+      "url": "URL#374737"
+    },
+    {
+      "@score": "8",
+      "@id": "841639",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/1619",
+              "text": "Abdulhady Abas Abdullah"
+            },
+            {
+              "@pid": "34/7374",
+              "text": "Arkaitz Zubiaga"
+            },
+            {
+              "@pid": "144/0554",
+              "text": "Seyedali Mirjalili"
+            },
+            {
+              "@pid": "43/8647",
+              "text": "Amir H. Gandomi"
+            },
+            {
+              "@pid": "16/8198",
+              "text": "Fatemeh Daneshfar"
+            },
+            {
+              "@pid": "375/8290",
+              "text": "Mohammad Sadra Amini"
+            },
+            {
+              "@pid": "419/8548",
+              "text": "Alan Salam Mohammed"
+            },
+            {
+              "@pid": "61/8894",
+              "text": "Hadi Veisi"
+            }
+          ]
+        },
+        "title": "Evolution of meta&apos;s llama models and parameter-efficient fine-tuning of large language models: a survey.",
+        "venue": "CoRR",
+        "volume": "abs/2510.12178",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-12178",
+        "doi": "10.48550/ARXIV.2510.12178",
+        "ee": "https://doi.org/10.48550/arXiv.2510.12178",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-12178"
+      },
+      "url": "URL#841639"
+    },
+    {
+      "@score": "8",
+      "@id": "1434704",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "316/9236",
+              "text": "Nusrat Jahan Prottasha"
+            },
+            {
+              "@pid": "207/0150",
+              "text": "Asif Mahmud"
+            },
+            {
+              "@pid": "312/6067",
+              "text": "Md. Shohanur Islam Sobuj"
+            },
+            {
+              "@pid": "90/10932",
+              "text": "Prakash Bhat"
+            },
+            {
+              "@pid": "272/9677",
+              "text": "Md. Kowsher"
+            },
+            {
+              "@pid": "146/2098-1",
+              "text": "Niloofar Yousefi 0001"
+            },
+            {
+              "@pid": "25/4013",
+              "text": "Özlem Özmen Garibay"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models using Semantic Knowledge Tuning.",
+        "venue": "CoRR",
+        "volume": "abs/2410.08598",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2410-08598",
+        "doi": "10.48550/ARXIV.2410.08598",
+        "ee": "https://doi.org/10.48550/arXiv.2410.08598",
+        "url": "https://dblp.org/rec/journals/corr/abs-2410-08598"
+      },
+      "url": "URL#1434704"
+    },
+    {
+      "@score": "7",
+      "@id": "49801",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "57/4707-9",
+              "text": "Yifan Zhang 0009"
+            },
+            {
+              "@pid": "71/8313",
+              "text": "Jingxuan Li"
+            },
+            {
+              "@pid": "31/966",
+              "text": "Wenbo Zhang"
+            },
+            {
+              "@pid": "47/46",
+              "text": "Zhiyun Wang"
+            },
+            {
+              "@pid": "200/8027",
+              "text": "Ziyi Zeng"
+            },
+            {
+              "@pid": "05/6715-10",
+              "text": "Wei Luo 0010"
+            },
+            {
+              "@pid": "52/3863-1",
+              "text": "Qingfeng Guan 0001"
+            },
+            {
+              "@pid": "50/2581-4",
+              "text": "Jianfeng Lin 0004"
+            },
+            {
+              "@pid": "159/8117-1",
+              "text": "Wenhao Yu 0001"
+            }
+          ]
+        },
+        "title": "GLoRA: a novel parameter-efficient fine-tuning framework for GIS large language models.",
+        "venue": "Int. J. Geogr. Inf. Sci.",
+        "volume": "40",
+        "number": "7",
+        "pages": "2247-2275",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/gis/ZhangLZWZLGLY26",
+        "doi": "10.1080/13658816.2025.2591830",
+        "ee": "https://doi.org/10.1080/13658816.2025.2591830",
+        "url": "https://dblp.org/rec/journals/gis/ZhangLZWZLGLY26"
+      },
+      "url": "URL#49801"
+    },
+    {
+      "@score": "7",
+      "@id": "89220",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/5407",
+              "text": "Yanfeng Wang"
+            },
+            {
+              "@pid": "32/1013",
+              "text": "Yingjie Li"
+            },
+            {
+              "@pid": "415/0255",
+              "text": "Youqi Wang"
+            }
+          ]
+        },
+        "title": "ResVaRe: Parameter-efficient fine-tuning for large language models via cross-layer residual vector adaptation and representation editing.",
+        "venue": "Neural Networks",
+        "volume": "204",
+        "pages": "109273",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/nn/WangLW26",
+        "doi": "10.1016/J.NEUNET.2026.109273",
+        "ee": "https://doi.org/10.1016/j.neunet.2026.109273",
+        "url": "https://dblp.org/rec/journals/nn/WangLW26"
+      },
+      "url": "URL#89220"
+    },
+    {
+      "@score": "7",
+      "@id": "123136",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/3457",
+              "text": "Zihan Fang"
+            },
+            {
+              "@pid": "51/3740-1",
+              "text": "Zheng Lin 0001"
+            },
+            {
+              "@pid": "06/4240-15",
+              "text": "Zhe Chen 0015"
+            },
+            {
+              "@pid": "211/0585",
+              "text": "Xianhao Chen"
+            },
+            {
+              "@pid": "33/3099-1",
+              "text": "Yue Gao 0001"
+            },
+            {
+              "@pid": "f/YuguangFang",
+              "text": "Yuguang Fang"
+            }
+          ]
+        },
+        "title": "Automated Federated Pipeline for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "IEEE Trans. Mob. Comput.",
+        "volume": "25",
+        "number": "6",
+        "pages": "8782-8797",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tmc/FangLCCGF26",
+        "doi": "10.1109/TMC.2025.3649881",
+        "ee": "https://doi.org/10.1109/TMC.2025.3649881",
+        "url": "https://dblp.org/rec/journals/tmc/FangLCCGF26"
+      },
+      "url": "URL#123136"
+    },
+    {
+      "@score": "7",
+      "@id": "138781",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/0301",
+              "text": "Dayan Pan"
+            },
+            {
+              "@pid": "75/5135-1",
+              "text": "Jingyuan Wang 0001"
+            },
+            {
+              "@pid": "180/2071",
+              "text": "Yilong Zhou"
+            },
+            {
+              "@pid": "213/1957",
+              "text": "Jiawei Cheng"
+            },
+            {
+              "@pid": "313/9275",
+              "text": "Pengyue Jia"
+            },
+            {
+              "@pid": "08/890-1",
+              "text": "Xiangyu Zhao 0001"
+            }
+          ]
+        },
+        "title": "RoSA: Enhancing Parameter-Efficient Fine-Tuning via RoPE-aware Selective Adaptation in Large Language Models.",
+        "venue": "AAAI",
+        "pages": "15600-15608",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/PanWZCJZ26",
+        "doi": "10.1609/AAAI.V40I18.38589",
+        "ee": "https://doi.org/10.1609/aaai.v40i18.38589",
+        "url": "https://dblp.org/rec/conf/aaai/PanWZCJZ26"
+      },
+      "url": "URL#138781"
+    },
+    {
+      "@score": "7",
+      "@id": "141475",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "39/6191",
+              "text": "Jie Cao"
+            },
+            {
+              "@pid": "203/8355-1",
+              "text": "Tianwei Lin 0001"
+            },
+            {
+              "@pid": "41/1662",
+              "text": "Bo Yuan"
+            },
+            {
+              "@pid": "409/9610",
+              "text": "Rolan Yan"
+            },
+            {
+              "@pid": "03/8056",
+              "text": "Hongyang He"
+            },
+            {
+              "@pid": "250/4486",
+              "text": "Wenqiao Zhang"
+            },
+            {
+              "@pid": "182/7674-6",
+              "text": "Juncheng Li 0006"
+            },
+            {
+              "@pid": "157/9066",
+              "text": "Dongping Zhang"
+            },
+            {
+              "@pid": "44/5693",
+              "text": "Siliang Tang"
+            },
+            {
+              "@pid": "218/7793",
+              "text": "Yueting Zhuang"
+            }
+          ]
+        },
+        "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "ACL",
+        "pages": "21056-21073",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/CaoLYYHZLZTZ26",
+        "ee": "https://aclanthology.org/2026.acl-long.965/",
+        "url": "https://dblp.org/rec/conf/acl/CaoLYYHZLZTZ26"
+      },
+      "url": "URL#141475"
+    },
+    {
+      "@score": "7",
+      "@id": "155224",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "361/0255",
+              "text": "Róbert Belanec"
+            },
+            {
+              "@pid": "06/9076",
+              "text": "Ivan Srba"
+            },
+            {
+              "@pid": "b/MariaBielikova",
+              "text": "Mária Bieliková"
+            }
+          ]
+        },
+        "title": "PEFT-Factory: Unified Parameter-Efficient Fine-Tuning of Autoregressive Large Language Models.",
+        "venue": "EACL",
+        "pages": "188-202",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/eacl/BelanecSB26",
+        "doi": "10.18653/V1/2026.EACL-DEMO.15",
+        "ee": "https://doi.org/10.18653/v1/2026.eacl-demo.15",
+        "url": "https://dblp.org/rec/conf/eacl/BelanecSB26"
+      },
+      "url": "URL#155224"
+    },
+    {
+      "@score": "7",
+      "@id": "184406",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "150/4872",
+              "text": "Qiuyu Li"
+            },
+            {
+              "@pid": "96/3115-15",
+              "text": "Kun Zhang 0015"
+            },
+            {
+              "@pid": "121/4234",
+              "text": "Le Wu"
+            },
+            {
+              "@pid": "09/3214-78",
+              "text": "Hao Liu 0078"
+            },
+            {
+              "@pid": "317/5460",
+              "text": "Hefei Xu"
+            },
+            {
+              "@pid": "09/1365-64",
+              "text": "Xin Li 0064"
+            },
+            {
+              "@pid": "06/7720",
+              "text": "Si Wei"
+            }
+          ]
+        },
+        "title": "Mitigating Fine-tuning Bias: A Parameter-Efficient Debiasing Framework for Large Language Models.",
+        "venue": "WWW",
+        "pages": "9482-9493",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/www/LiZWLXLW26",
+        "doi": "10.1145/3774904.3793029",
+        "ee": "https://doi.org/10.1145/3774904.3793029",
+        "url": "https://dblp.org/rec/conf/www/LiZWLXLW26"
+      },
+      "url": "URL#184406"
+    },
+    {
+      "@score": "7",
+      "@id": "202233",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "177/6703-5",
+              "text": "Yichen Xu 0005"
+            },
+            {
+              "@pid": "194/9617",
+              "text": "Yuyang Liang"
+            },
+            {
+              "@pid": "155/6972",
+              "text": "Shan Dai"
+            },
+            {
+              "@pid": "170/2551",
+              "text": "Tianyang Hu"
+            },
+            {
+              "@pid": "166/7652",
+              "text": "Tsz Nam Chan"
+            },
+            {
+              "@pid": "251/5251",
+              "text": "Chenhao Ma 0001"
+            }
+          ]
+        },
+        "title": "Understanding and Guiding Layer Placement in Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2602.04019",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2602-04019",
+        "doi": "10.48550/ARXIV.2602.04019",
+        "ee": "https://doi.org/10.48550/arXiv.2602.04019",
+        "url": "https://dblp.org/rec/journals/corr/abs-2602-04019"
+      },
+      "url": "URL#202233"
+    },
+    {
+      "@score": "7",
+      "@id": "237732",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "307/3016",
+              "text": "Yarui Cao"
+            },
+            {
+              "@pid": "73/4566",
+              "text": "Kai Liu"
+            }
+          ]
+        },
+        "title": "TLoRA+: A Low-Rank Parameter-Efficient Fine-Tuning Method for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2604.13368",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2604-13368",
+        "doi": "10.48550/ARXIV.2604.13368",
+        "ee": "https://doi.org/10.48550/arXiv.2604.13368",
+        "url": "https://dblp.org/rec/journals/corr/abs-2604-13368"
+      },
+      "url": "URL#237732"
+    },
+    {
+      "@score": "7",
+      "@id": "247952",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "437/0050",
+            "text": "Mullosharaf K. Arabov"
+          }
+        },
+        "title": "Benchmarking Parameter-Efficient Fine-Tuning of Large Language Models for Low-Resource Tajik Text Generation with the Tajik Web Corpus.",
+        "venue": "CoRR",
+        "volume": "abs/2605.03742",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2605-03742",
+        "doi": "10.48550/ARXIV.2605.03742",
+        "ee": "https://doi.org/10.48550/arXiv.2605.03742",
+        "url": "https://dblp.org/rec/journals/corr/abs-2605-03742"
+      },
+      "url": "URL#247952"
+    },
+    {
+      "@score": "7",
+      "@id": "304831",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "137/9646",
+              "text": "Luping Wang"
+            },
+            {
+              "@pid": "97/10424",
+              "text": "Sheng Chen"
+            },
+            {
+              "@pid": "228/6049",
+              "text": "Linnan Jiang"
+            },
+            {
+              "@pid": "193/7543",
+              "text": "Shu Pan"
+            },
+            {
+              "@pid": "179/7277",
+              "text": "Runze Cai"
+            },
+            {
+              "@pid": "90/4655",
+              "text": "Sen Yang"
+            },
+            {
+              "@pid": "19/2504",
+              "text": "Fei Yang"
+            }
+          ]
+        },
+        "title": "Parameter-efficient fine-tuning in large language models: a survey of methodologies.",
+        "venue": "Artif. Intell. Rev.",
+        "volume": "58",
+        "number": "8",
+        "pages": "227",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/air/WangCJPCYY25",
+        "doi": "10.1007/S10462-025-11236-4",
+        "ee": "https://doi.org/10.1007/s10462-025-11236-4",
+        "url": "https://dblp.org/rec/journals/air/WangCJPCYY25"
+      },
+      "url": "URL#304831"
+    },
+    {
+      "@score": "7",
+      "@id": "311527",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "98/5886",
+              "text": "Yinghong Li"
+            },
+            {
+              "@pid": "250/0446",
+              "text": "Yudong Yan"
+            },
+            {
+              "@pid": "376/1777",
+              "text": "Zhuohao Tong"
+            },
+            {
+              "@pid": "02/5889",
+              "text": "Yu Wang"
+            },
+            {
+              "@pid": "217/6931",
+              "text": "Yinqi Yang"
+            },
+            {
+              "@pid": "67/7585",
+              "text": "Mingze Bai"
+            },
+            {
+              "@pid": "159/3590",
+              "text": "Dan Pu"
+            },
+            {
+              "@pid": "242/6253",
+              "text": "Jiazheng Xie"
+            },
+            {
+              "@pid": "31/3472",
+              "text": "Chuan Liu"
+            },
+            {
+              "@pid": "50/3402",
+              "text": "Bo Li"
+            },
+            {
+              "@pid": "136/5528",
+              "text": "Mingwei Liu"
+            },
+            {
+              "@pid": "221/5247",
+              "text": "Kunxian Shu"
+            }
+          ]
+        },
+        "title": "Efficient fine-tuning of small-parameter large language models for biomedical bilingual multi-task applications.",
+        "venue": "Appl. Soft Comput.",
+        "volume": "175",
+        "pages": "113084",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/asc/LiYTWYBPXLLLS25",
+        "doi": "10.1016/J.ASOC.2025.113084",
+        "ee": "https://doi.org/10.1016/j.asoc.2025.113084",
+        "url": "https://dblp.org/rec/journals/asc/LiYTWYBPXLLLS25"
+      },
+      "url": "URL#311527"
+    },
+    {
+      "@score": "7",
+      "@id": "474122",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "372/6431",
+              "text": "Aradhye Agarwal"
+            },
+            {
+              "@pid": "386/2631",
+              "text": "Suhas Kamasetty Ramesh"
+            },
+            {
+              "@pid": "132/8078",
+              "text": "Ayan Sengupta"
+            },
+            {
+              "@pid": "65/2136-2",
+              "text": "Tanmoy Chakraborty 0002"
+            }
+          ]
+        },
+        "title": "Step-by-Step Unmasking for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "Trans. Assoc. Comput. Linguistics",
+        "volume": "13",
+        "pages": "1767-1788",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tacl/AgarwalRSC25",
+        "doi": "10.1162/TACL.A.59",
+        "ee": "https://doi.org/10.1162/tacl.a.59",
+        "url": "https://dblp.org/rec/journals/tacl/AgarwalRSC25"
+      },
+      "url": "URL#474122"
+    },
+    {
+      "@score": "7",
+      "@id": "506469",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "04/10084",
+              "text": "Deliang Wang 0001"
+            },
+            {
+              "@pid": "209/7801",
+              "text": "Yaqian Zheng"
+            },
+            {
+              "@pid": "97/7026-4",
+              "text": "Jinjiang Li 0004"
+            },
+            {
+              "@pid": "93/3555",
+              "text": "Gaowei Chen"
+            }
+          ]
+        },
+        "title": "Parameter-Efficiently Fine-Tuning Large Language Models for Classroom Dialogue Analysis.",
+        "venue": "IEEE Trans. Learn. Technol.",
+        "volume": "18",
+        "pages": "542-555",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tlt/WangZLC25",
+        "doi": "10.1109/TLT.2025.3567995",
+        "ee": "https://doi.org/10.1109/TLT.2025.3567995",
+        "url": "https://dblp.org/rec/journals/tlt/WangZLC25"
+      },
+      "url": "URL#506469"
+    },
+    {
+      "@score": "7",
+      "@id": "514301",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "274/5737",
+              "text": "Martin Weyssow"
+            },
+            {
+              "@pid": "05/3403-14",
+              "text": "Xin Zhou 0014"
+            },
+            {
+              "@pid": "216/3065",
+              "text": "Kisub Kim"
+            },
+            {
+              "@pid": "89/6793-1",
+              "text": "David Lo 0001"
+            },
+            {
+              "@pid": "s/HouariASahraoui",
+              "text": "Houari A. Sahraoui"
+            }
+          ]
+        },
+        "title": "Exploring Parameter-Efficient Fine-Tuning Techniques for Code Generation with Large Language Models.",
+        "venue": "ACM Trans. Softw. Eng. Methodol.",
+        "volume": "34",
+        "number": "7",
+        "pages": "204:1-204:25",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tosem/WeyssowZKLS25",
+        "doi": "10.1145/3714461",
+        "ee": "https://doi.org/10.1145/3714461",
+        "url": "https://dblp.org/rec/journals/tosem/WeyssowZKLS25"
+      },
+      "url": "URL#514301"
+    },
+    {
+      "@score": "7",
+      "@id": "532157",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models.",
+        "venue": "ACL",
+        "pages": "2002-2024",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/JeonKK25",
+        "doi": "10.18653/V1/2025.ACL-LONG.99",
+        "ee": "https://doi.org/10.18653/v1/2025.acl-long.99",
+        "url": "https://dblp.org/rec/conf/acl/JeonKK25"
+      },
+      "url": "URL#532157"
+    },
+    {
+      "@score": "7",
+      "@id": "543130",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "392/0172",
+              "text": "Dongping Guo"
+            },
+            {
+              "@pid": "87/3231",
+              "text": "Anh Tran"
+            },
+            {
+              "@pid": "184/8628",
+              "text": "Xinli Xiao"
+            },
+            {
+              "@pid": "118/6414-1",
+              "text": "Hongmin Li 0001"
+            },
+            {
+              "@pid": "40/2098",
+              "text": "Doina Caragea"
+            }
+          ]
+        },
+        "title": "Multimodal Disaster-Related Tweet Classification with Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "ASONAM",
+        "pages": "413-428",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/asunam/GuoTXLC25",
+        "doi": "10.1007/978-3-032-14107-1_34",
+        "ee": "https://doi.org/10.1007/978-3-032-14107-1_34",
+        "url": "https://dblp.org/rec/conf/asunam/GuoTXLC25"
+      },
+      "url": "URL#543130"
+    },
+    {
+      "@score": "7",
+      "@id": "557567",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "395/8395",
+              "text": "Emily Jimin Roh"
+            },
+            {
+              "@pid": "69/4977",
+              "text": "Joongheon Kim"
+            }
+          ]
+        },
+        "title": "Quantum-Amplitude Embedded Adaptation for Parameter-Efficient Fine-Tuning in Large Language Models.",
+        "venue": "CIKM",
+        "pages": "5171-5175",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/cikm/RohK25",
+        "doi": "10.1145/3746252.3760795",
+        "ee": "https://doi.org/10.1145/3746252.3760795",
+        "url": "https://dblp.org/rec/conf/cikm/RohK25"
+      },
+      "url": "URL#557567"
+    },
+    {
+      "@score": "7",
+      "@id": "563344",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/7509",
+              "text": "Jia-Chen Zhang"
+            },
+            {
+              "@pid": "316/0945",
+              "text": "Yu-Jie Xiong"
+            },
+            {
+              "@pid": "120/4589",
+              "text": "Chun-Ming Xia"
+            },
+            {
+              "@pid": "385/7261",
+              "text": "Dong-Hai Zhu"
+            },
+            {
+              "@pid": "258/7989",
+              "text": "Xihe Qiu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models via Deconvolution in Subspace.",
+        "venue": "COLING",
+        "pages": "3924-3935",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/coling/ZhangXXZQ25",
+        "ee": "https://aclanthology.org/2025.coling-main.265/",
+        "url": "https://dblp.org/rec/conf/coling/ZhangXXZQ25"
+      },
+      "url": "URL#563344"
+    },
+    {
+      "@score": "7",
+      "@id": "635263",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "290/1869",
+              "text": "Alireza Salemi"
+            },
+            {
+              "@pid": "150/5324",
+              "text": "Hamed Zamani"
+            }
+          ]
+        },
+        "title": "Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models.",
+        "venue": "ICTIR",
+        "pages": "286-296",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ictir/SalemiZ25a",
+        "doi": "10.1145/3731120.3744595",
+        "ee": "https://doi.org/10.1145/3731120.3744595",
+        "url": "https://dblp.org/rec/conf/ictir/SalemiZ25a"
+      },
+      "url": "URL#635263"
+    },
+    {
+      "@score": "7",
+      "@id": "642200",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "333/2832",
+              "text": "Lingzhi Shen"
+            },
+            {
+              "@pid": "168/4623",
+              "text": "Yunfei Long"
+            },
+            {
+              "@pid": "16/10261",
+              "text": "Xiaohao Cai"
+            },
+            {
+              "@pid": "320/3729",
+              "text": "Guanming Chen"
+            },
+            {
+              "@pid": "59/8379",
+              "text": "Imran Razzak"
+            },
+            {
+              "@pid": "94/10440",
+              "text": "Shoaib Jameel"
+            }
+          ]
+        },
+        "title": "Less but Better: Parameter-Efficient Fine-Tuning of Large Language Models for Personality Detection.",
+        "venue": "IJCNN",
+        "pages": "1-8",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ijcnn/ShenLCCRJ25",
+        "doi": "10.1109/IJCNN64981.2025.11228339",
+        "ee": "https://doi.org/10.1109/IJCNN64981.2025.11228339",
+        "url": "https://dblp.org/rec/conf/ijcnn/ShenLCCRJ25"
+      },
+      "url": "URL#642200"
+    },
+    {
+      "@score": "7",
+      "@id": "649492",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "204/0042",
+              "text": "Jinlong He"
+            },
+            {
+              "@pid": "10/1749",
+              "text": "Pengfei Li"
+            },
+            {
+              "@pid": "37/2109",
+              "text": "Gang Liu"
+            },
+            {
+              "@pid": "207/8295",
+              "text": "Shenjun Zhong"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning Medical Multimodal Large Language Models for Medical Visual Grounding.",
+        "venue": "ISBI",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/isbi/HeLLZ25",
+        "doi": "10.1109/ISBI60581.2025.10981029",
+        "ee": "https://doi.org/10.1109/ISBI60581.2025.10981029",
+        "url": "https://dblp.org/rec/conf/isbi/HeLLZ25"
+      },
+      "url": "URL#649492"
+    },
+    {
+      "@score": "7",
+      "@id": "661825",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "28/10706",
+              "text": "Xiaorui Luo"
+            },
+            {
+              "@pid": "242/0120",
+              "text": "Chi Jiang"
+            },
+            {
+              "@pid": "42/1503",
+              "text": "Shuai Wang"
+            },
+            {
+              "@pid": "91/3045-2",
+              "text": "Yin Zhang 0002"
+            }
+          ]
+        },
+        "title": "DynamicFedPEFT: Efficient Fine-Tuning of Dynamic Federated Parameters for Large Language Models.",
+        "venue": "KSEM",
+        "pages": "89-100",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ksem/LuoJWZ25",
+        "doi": "10.1007/978-981-95-3055-7_8",
+        "ee": "https://doi.org/10.1007/978-981-95-3055-7_8",
+        "url": "https://dblp.org/rec/conf/ksem/LuoJWZ25"
+      },
+      "url": "URL#661825"
+    },
+    {
+      "@score": "7",
+      "@id": "745557",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/7509",
+              "text": "Jia-Chen Zhang"
+            },
+            {
+              "@pid": "316/0945",
+              "text": "Yu-Jie Xiong"
+            },
+            {
+              "@pid": "120/4589",
+              "text": "Chun-Ming Xia"
+            },
+            {
+              "@pid": "385/7261",
+              "text": "Dong-Hai Zhu"
+            },
+            {
+              "@pid": "258/7989",
+              "text": "Xihe Qiu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models via Deconvolution in Subspace.",
+        "venue": "CoRR",
+        "volume": "abs/2503.01419",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-01419",
+        "doi": "10.48550/ARXIV.2503.01419",
+        "ee": "https://doi.org/10.48550/arXiv.2503.01419",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-01419"
+      },
+      "url": "URL#745557"
+    },
+    {
+      "@score": "7",
+      "@id": "760556",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "333/2832",
+              "text": "Lingzhi Shen"
+            },
+            {
+              "@pid": "168/4623",
+              "text": "Yunfei Long"
+            },
+            {
+              "@pid": "16/10261",
+              "text": "Xiaohao Cai"
+            },
+            {
+              "@pid": "320/3729",
+              "text": "Guanming Chen"
+            },
+            {
+              "@pid": "59/8379",
+              "text": "Imran Razzak"
+            },
+            {
+              "@pid": "94/10440",
+              "text": "Shoaib Jameel"
+            }
+          ]
+        },
+        "title": "Less but Better: Parameter-Efficient Fine-Tuning of Large Language Models for Personality Detection.",
+        "venue": "CoRR",
+        "volume": "abs/2504.05411",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-05411",
+        "doi": "10.48550/ARXIV.2504.05411",
+        "ee": "https://doi.org/10.48550/arXiv.2504.05411",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-05411"
+      },
+      "url": "URL#760556"
+    },
+    {
+      "@score": "7",
+      "@id": "765063",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "316/9236",
+              "text": "Nusrat Jahan Prottasha"
+            },
+            {
+              "@pid": "405/5071",
+              "text": "Upama Roy Chowdhury"
+            },
+            {
+              "@pid": "405/4960",
+              "text": "Shetu Mohanto"
+            },
+            {
+              "@pid": "333/9332",
+              "text": "Tasfia Nuzhat"
+            },
+            {
+              "@pid": "327/5483",
+              "text": "Abdullah As Sami"
+            },
+            {
+              "@pid": "405/4996",
+              "text": "Md Shamol Ali"
+            },
+            {
+              "@pid": "312/6067",
+              "text": "Md. Shohanur Islam Sobuj"
+            },
+            {
+              "@pid": "400/3149",
+              "text": "Hafijur Raman"
+            },
+            {
+              "@pid": "272/9677",
+              "text": "Md. Kowsher"
+            },
+            {
+              "@pid": "25/4013",
+              "text": "Ozlem O. Garibay"
+            }
+          ]
+        },
+        "title": "PEFT A2Z: Parameter-Efficient Fine-Tuning Survey for Large Language and Vision Models.",
+        "venue": "CoRR",
+        "volume": "abs/2504.14117",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-14117",
+        "doi": "10.48550/ARXIV.2504.14117",
+        "ee": "https://doi.org/10.48550/arXiv.2504.14117",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-14117"
+      },
+      "url": "URL#765063"
+    },
+    {
+      "@score": "7",
+      "@id": "768415",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "80/1949",
+              "text": "Jin Xie"
+            },
+            {
+              "@pid": "405/8696",
+              "text": "Ruishi He"
+            },
+            {
+              "@pid": "119/2630",
+              "text": "Songze Li"
+            },
+            {
+              "@pid": "57/5656",
+              "text": "Xiaojun Jia"
+            },
+            {
+              "@pid": "07/8388",
+              "text": "Shouling Ji"
+            }
+          ]
+        },
+        "title": "ReCIT: Reconstructing Full Private Data from Gradient in Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2504.20570",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-20570",
+        "doi": "10.48550/ARXIV.2504.20570",
+        "ee": "https://doi.org/10.48550/arXiv.2504.20570",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-20570"
+      },
+      "url": "URL#768415"
+    },
+    {
+      "@score": "7",
+      "@id": "770463",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/3740-1",
+              "text": "Zheng Lin 0001"
+            },
+            {
+              "@pid": "03/7346",
+              "text": "Yuxin Zhang"
+            },
+            {
+              "@pid": "06/4240-15",
+              "text": "Zhe Chen 0015"
+            },
+            {
+              "@pid": "273/3457",
+              "text": "Zihan Fang"
+            },
+            {
+              "@pid": "211/0585",
+              "text": "Xianhao Chen"
+            },
+            {
+              "@pid": "131/6694",
+              "text": "Praneeth Vepakomma"
+            },
+            {
+              "@pid": "31/2597-1",
+              "text": "Wei Ni 0001"
+            },
+            {
+              "@pid": "42/2501-1",
+              "text": "Jun Luo 0001"
+            },
+            {
+              "@pid": "33/3099-1",
+              "text": "Yue Gao 0001"
+            }
+          ]
+        },
+        "title": "HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.02795",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-02795",
+        "doi": "10.48550/ARXIV.2505.02795",
+        "ee": "https://doi.org/10.48550/arXiv.2505.02795",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-02795"
+      },
+      "url": "URL#770463"
+    },
+    {
+      "@score": "7",
+      "@id": "786937",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "39/6191",
+              "text": "Jie Cao"
+            },
+            {
+              "@pid": "203/8355-1",
+              "text": "Tianwei Lin 0001"
+            },
+            {
+              "@pid": "03/8056",
+              "text": "Hongyang He"
+            },
+            {
+              "@pid": "409/9610",
+              "text": "Rolan Yan"
+            },
+            {
+              "@pid": "250/4486",
+              "text": "Wenqiao Zhang"
+            },
+            {
+              "@pid": "182/7674-6",
+              "text": "Juncheng Li 0006"
+            },
+            {
+              "@pid": "157/9066",
+              "text": "Dongping Zhang"
+            },
+            {
+              "@pid": "44/5693",
+              "text": "Siliang Tang"
+            },
+            {
+              "@pid": "218/7793",
+              "text": "Yueting Zhuang"
+            }
+          ]
+        },
+        "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2506.05928",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2506-05928",
+        "doi": "10.48550/ARXIV.2506.05928",
+        "ee": "https://doi.org/10.48550/arXiv.2506.05928",
+        "url": "https://dblp.org/rec/journals/corr/abs-2506-05928"
+      },
+      "url": "URL#786937"
+    },
+    {
+      "@score": "7",
+      "@id": "810480",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "205/8540",
+              "text": "Yidong Chai"
+            },
+            {
+              "@pid": "51/3710",
+              "text": "Yang Liu"
+            },
+            {
+              "@pid": "316/1827",
+              "text": "Yonghang Zhou"
+            },
+            {
+              "@pid": "154/3919",
+              "text": "Jiaheng Xie"
+            },
+            {
+              "@pid": "z/DanielDajunZeng",
+              "text": "Daniel Dajun Zeng"
+            }
+          ]
+        },
+        "title": "A Bayesian Hybrid Parameter-Efficient Fine-Tuning Method for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2508.02711",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2508-02711",
+        "doi": "10.48550/ARXIV.2508.02711",
+        "ee": "https://doi.org/10.48550/arXiv.2508.02711",
+        "url": "https://dblp.org/rec/journals/corr/abs-2508-02711"
+      },
+      "url": "URL#810480"
+    },
+    {
+      "@score": "7",
+      "@id": "822175",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "34/4521",
+              "text": "Ming Gong"
+            },
+            {
+              "@pid": "402/6037",
+              "text": "Yingnan Deng"
+            },
+            {
+              "@pid": "413/1923",
+              "text": "Nia Qi"
+            },
+            {
+              "@pid": "413/2831",
+              "text": "Yujun Zou"
+            },
+            {
+              "@pid": "283/5196",
+              "text": "Zhihao Xue"
+            },
+            {
+              "@pid": "378/0962",
+              "text": "Yun Zi"
+            }
+          ]
+        },
+        "title": "Structure-Learnable Adapter Fine-Tuning for Parameter-Efficient Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.03057",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-03057",
+        "doi": "10.48550/ARXIV.2509.03057",
+        "ee": "https://doi.org/10.48550/arXiv.2509.03057",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-03057"
+      },
+      "url": "URL#822175"
+    },
+    {
+      "@score": "7",
+      "@id": "829428",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "417/8589",
+              "text": "Seojune Lee"
+            },
+            {
+              "@pid": "309/1053",
+              "text": "Beomseok Kang"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.17428",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-17428",
+        "doi": "10.48550/ARXIV.2509.17428",
+        "ee": "https://doi.org/10.48550/arXiv.2509.17428",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-17428"
+      },
+      "url": "URL#829428"
+    },
+    {
+      "@score": "7",
+      "@id": "861433",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/0301",
+              "text": "Dayan Pan"
+            },
+            {
+              "@pid": "75/5135-1",
+              "text": "Jingyuan Wang 0001"
+            },
+            {
+              "@pid": "180/2071",
+              "text": "Yilong Zhou"
+            },
+            {
+              "@pid": "213/1957",
+              "text": "Jiawei Cheng"
+            },
+            {
+              "@pid": "313/9275",
+              "text": "Pengyue Jia"
+            },
+            {
+              "@pid": "08/890-1",
+              "text": "Xiangyu Zhao 0001"
+            }
+          ]
+        },
+        "title": "RoSA: Enhancing Parameter-Efficient Fine-Tuning via RoPE-aware Selective Adaptation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2511.21733",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-21733",
+        "doi": "10.48550/ARXIV.2511.21733",
+        "ee": "https://doi.org/10.48550/arXiv.2511.21733",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-21733"
+      },
+      "url": "URL#861433"
+    },
+    {
+      "@score": "7",
+      "@id": "863732",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "361/0255",
+              "text": "Róbert Belanec"
+            },
+            {
+              "@pid": "06/9076",
+              "text": "Ivan Srba"
+            },
+            {
+              "@pid": "b/MariaBielikova",
+              "text": "Mária Bieliková"
+            }
+          ]
+        },
+        "title": "PEFT-Factory: Unified Parameter-Efficient Fine-Tuning of Autoregressive Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2512.02764",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2512-02764",
+        "doi": "10.48550/ARXIV.2512.02764",
+        "ee": "https://doi.org/10.48550/arXiv.2512.02764",
+        "url": "https://dblp.org/rec/journals/corr/abs-2512-02764"
+      },
+      "url": "URL#863732"
+    },
+    {
+      "@score": "7",
+      "@id": "865671",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "95/5874",
+              "text": "Yulin Huang"
+            },
+            {
+              "@pid": "420/0282",
+              "text": "Yaxuan Luan"
+            },
+            {
+              "@pid": "12/3832",
+              "text": "Jinxu Guo"
+            },
+            {
+              "@pid": "261/9024",
+              "text": "Xiangchen Song"
+            },
+            {
+              "@pid": "69/10440",
+              "text": "Yuchen Liu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning with Differential Privacy for Robust Instruction Adaptation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2512.06711",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2512-06711",
+        "doi": "10.48550/ARXIV.2512.06711",
+        "ee": "https://doi.org/10.48550/arXiv.2512.06711",
+        "url": "https://dblp.org/rec/journals/corr/abs-2512-06711"
+      },
+      "url": "URL#865671"
+    },
+    {
+      "@score": "7",
+      "@id": "1125237",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "RA-LoRA: Rank-Adaptive Parameter-Efficient Fine-Tuning for Accurate 2-bit Quantized Large Language Models.",
+        "venue": "ACL",
+        "pages": "15773-15786",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/KimLSC24",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.933",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.933",
+        "url": "https://dblp.org/rec/conf/acl/KimLSC24"
+      },
+      "url": "URL#1125237"
+    },
+    {
+      "@score": "7",
+      "@id": "1125926",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "302/1805",
+              "text": "Shiyu Tian"
+            },
+            {
+              "@pid": "276/9723",
+              "text": "Yangyang Luo"
+            },
+            {
+              "@pid": "43/7408",
+              "text": "Tianze Xu"
+            },
+            {
+              "@pid": "69/9013",
+              "text": "Caixia Yuan"
+            },
+            {
+              "@pid": "23/8214",
+              "text": "Huixing Jiang"
+            },
+            {
+              "@pid": "181/2831",
+              "text": "Chen Wei"
+            },
+            {
+              "@pid": "99/7033-6",
+              "text": "Xiaojie Wang 0006"
+            }
+          ]
+        },
+        "title": "KG-Adapter: Enabling Knowledge Graph Integration in Large Language Models through Parameter-Efficient Fine-Tuning.",
+        "venue": "ACL",
+        "pages": "3813-3828",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/TianLXYJW024",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.229",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.229",
+        "url": "https://dblp.org/rec/conf/acl/TianLXYJW024"
+      },
+      "url": "URL#1125926"
+    },
+    {
+      "@score": "7",
+      "@id": "1126464",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "289/2511",
+              "text": "Xiongtao Zhou"
+            },
+            {
+              "@pid": "28/4019-4",
+              "text": "Jie He 0004"
+            },
+            {
+              "@pid": "360/6194",
+              "text": "Yuhua Ke"
+            },
+            {
+              "@pid": "48/7775",
+              "text": "Guangyao Zhu"
+            },
+            {
+              "@pid": "36/8486",
+              "text": "Víctor Gutiérrez-Basulto"
+            },
+            {
+              "@pid": "59/6490",
+              "text": "Jeff Z. Pan"
+            }
+          ]
+        },
+        "title": "An Empirical Study on Parameter-Efficient Fine-Tuning for MultiModal Large Language Models.",
+        "venue": "ACL",
+        "pages": "10057-10084",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/Zhou0KZGP24",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.598",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.598",
+        "url": "https://dblp.org/rec/conf/acl/Zhou0KZGP24"
+      },
+      "url": "URL#1126464"
+    },
+    {
+      "@score": "7",
+      "@id": "1144811",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "290/1098",
+              "text": "Emre Kocyigit"
+            },
+            {
+              "@pid": "246/0272",
+              "text": "Davide Liga"
+            },
+            {
+              "@pid": "78/5724",
+              "text": "Gabriele Lenzini"
+            }
+          ]
+        },
+        "title": "Augmenting Dark Patterns Text Data by Leveraging Large Language Models: A Multi-agent Framework and Parameter-Efficient Fine-Tuning.",
+        "venue": "CALM",
+        "pages": "65-87",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/calm/KocyigitLL24",
+        "doi": "10.1007/978-3-031-89103-8_5",
+        "ee": "https://doi.org/10.1007/978-3-031-89103-8_5",
+        "url": "https://dblp.org/rec/conf/calm/KocyigitLL24"
+      },
+      "url": "URL#1144811"
+    },
+    {
+      "@score": "7",
+      "@id": "1182004",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "305/9839",
+              "text": "Aofei Chang"
+            },
+            {
+              "@pid": "44/740-2",
+              "text": "Jiaqi Wang 0002"
+            },
+            {
+              "@pid": "35/2899-8",
+              "text": "Han Liu 0008"
+            },
+            {
+              "@pid": "168/8615",
+              "text": "Parminder Bhatia"
+            },
+            {
+              "@pid": "170/1833",
+              "text": "Cao Xiao"
+            },
+            {
+              "@pid": "12/2633-6",
+              "text": "Ting Wang 0006"
+            },
+            {
+              "@pid": "85/10856",
+              "text": "Fenglong Ma"
+            }
+          ]
+        },
+        "title": "BIPEFT: Budget-Guided Iterative Search for Parameter Efficient Fine-Tuning of Large Pretrained Language Models.",
+        "venue": "EMNLP",
+        "pages": "7429-7440",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/Chang00BXWM24",
+        "doi": "10.18653/V1/2024.FINDINGS-EMNLP.437",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-emnlp.437",
+        "url": "https://dblp.org/rec/conf/emnlp/Chang00BXWM24"
+      },
+      "url": "URL#1182004"
+    },
+    {
+      "@score": "7",
+      "@id": "1183507",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "301/7706",
+              "text": "Zhaoxuan Tan"
+            },
+            {
+              "@pid": "66/3005-1",
+              "text": "Qingkai Zeng 0001"
+            },
+            {
+              "@pid": "234/9123-1",
+              "text": "Yijun Tian 0001"
+            },
+            {
+              "@pid": "191/0249-10",
+              "text": "Zheyuan Liu 0010"
+            },
+            {
+              "@pid": "98/8323",
+              "text": "Bing Yin"
+            },
+            {
+              "@pid": "69/339-1",
+              "text": "Meng Jiang 0001"
+            }
+          ]
+        },
+        "title": "Democratizing Large Language Models via Personalized Parameter-Efficient Fine-tuning.",
+        "venue": "EMNLP",
+        "pages": "6476-6491",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/Tan000Y024",
+        "doi": "10.18653/V1/2024.EMNLP-MAIN.372",
+        "ee": "https://doi.org/10.18653/v1/2024.emnlp-main.372",
+        "url": "https://dblp.org/rec/conf/emnlp/Tan000Y024"
+      },
+      "url": "URL#1183507"
+    },
+    {
+      "@score": "7",
+      "@id": "1183873",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/6594",
+              "text": "Kai Yao"
+            },
+            {
+              "@pid": "279/6230",
+              "text": "Penglei Gao"
+            },
+            {
+              "@pid": "16/1282",
+              "text": "Lichun Li"
+            },
+            {
+              "@pid": "65/2105-15",
+              "text": "Yuan Zhao 0015"
+            },
+            {
+              "@pid": "99/2479-7",
+              "text": "Xiaofeng Wang 0007"
+            },
+            {
+              "@pid": "w/WeiWang2",
+              "text": "Wei Wang 0002"
+            },
+            {
+              "@pid": "10/4016",
+              "text": "Jianke Zhu"
+            }
+          ]
+        },
+        "title": "Layer-wise Importance Matters: Less Memory for Better Performance in Parameter-efficient Fine-tuning of Large Language Models.",
+        "venue": "EMNLP",
+        "pages": "1977-1992",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/YaoGLZWWZ24",
+        "doi": "10.18653/V1/2024.FINDINGS-EMNLP.109",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-emnlp.109",
+        "url": "https://dblp.org/rec/conf/emnlp/YaoGLZWWZ24"
+      },
+      "url": "URL#1183873"
+    },
+    {
+      "@score": "7",
+      "@id": "1199913",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "303/4722",
+              "text": "Nawras Alnaasan"
+            },
+            {
+              "@pid": "296/1098",
+              "text": "Horng-Ruey Huang"
+            },
+            {
+              "@pid": "34/3740",
+              "text": "Aamir Shafi"
+            },
+            {
+              "@pid": "65/1958",
+              "text": "Hari Subramoni"
+            },
+            {
+              "@pid": "p/DhabaleswarKPanda",
+              "text": "Dhabaleswar K. Panda 0001"
+            }
+          ]
+        },
+        "title": "Characterizing Communication in Distributed Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "HOTI",
+        "pages": "11-19",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/hoti/AlnaasanHSSP24",
+        "doi": "10.1109/HOTI63208.2024.00014",
+        "ee": "https://doi.org/10.1109/HOTI63208.2024.00014",
+        "url": "https://dblp.org/rec/conf/hoti/AlnaasanHSSP24"
+      },
+      "url": "URL#1199913"
+    },
+    {
+      "@score": "7",
+      "@id": "1230298",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "15/3008",
+              "text": "Xudong Lu"
+            },
+            {
+              "@pid": "195/6034",
+              "text": "Aojun Zhou"
+            },
+            {
+              "@pid": "26/3725",
+              "text": "Yuhui Xu"
+            },
+            {
+              "@pid": "244/1748",
+              "text": "Renrui Zhang"
+            },
+            {
+              "@pid": "29/5999-7",
+              "text": "Peng Gao 0007"
+            },
+            {
+              "@pid": "27/7402-1",
+              "text": "Hongsheng Li 0001"
+            }
+          ]
+        },
+        "title": "SPP: Sparsity-Preserved Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "ICML",
+        "pages": "33254-33269",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/LuZXZ0024",
+        "ee": "https://proceedings.mlr.press/v235/lu24p.html",
+        "url": "https://dblp.org/rec/conf/icml/LuZXZ0024"
+      },
+      "url": "URL#1230298"
+    },
+    {
+      "@score": "7",
+      "@id": "1237823",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "119/0200",
+            "text": "Fatemeh H. Fard"
+          }
+        },
+        "title": "Technical Briefing on Parameter Efficient Fine-Tuning of (Large) Language Models for Code-Intelligence.",
+        "venue": "ICSE Companion",
+        "pages": "434-435",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icse/Fard24",
+        "doi": "10.1145/3639478.3643060",
+        "ee": "https://doi.org/10.1145/3639478.3643060",
+        "url": "https://dblp.org/rec/conf/icse/Fard24"
+      },
+      "url": "URL#1237823"
+    },
+    {
+      "@score": "7",
+      "@id": "1291031",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "28/7717",
+              "text": "Yibo Yang"
+            },
+            {
+              "@pid": "85/6319",
+              "text": "Xiaojie Li"
+            },
+            {
+              "@pid": "274/7781",
+              "text": "Zhongzhu Zhou"
+            },
+            {
+              "@pid": "23/7512",
+              "text": "Shuaiwen Song"
+            },
+            {
+              "@pid": "170/4643",
+              "text": "Jianlong Wu"
+            },
+            {
+              "@pid": "92/8277",
+              "text": "Liqiang Nie"
+            },
+            {
+              "@pid": "37/2516",
+              "text": "Bernard Ghanem"
+            }
+          ]
+        },
+        "title": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning.",
+        "venue": "NeurIPS",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/YangLZSWNG24",
+        "ee": "http://papers.nips.cc/paper_files/paper/2024/hash/83f95bb0ac5046338ea2afe3390e9f4b-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/YangLZSWNG24"
+      },
+      "url": "URL#1291031"
+    },
+    {
+      "@score": "7",
+      "@id": "1291717",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "187/9118",
+              "text": "Zezhou Chen"
+            },
+            {
+              "@pid": "93/2654",
+              "text": "Zhaoxiang Liu"
+            },
+            {
+              "@pid": "78/2022-12",
+              "text": "Kai Wang 0012"
+            },
+            {
+              "@pid": "23/53",
+              "text": "Shiguo Lian"
+            }
+          ]
+        },
+        "title": "Reparameterization-Based Parameter-Efficient Fine-Tuning Methods for Large Language Models: A Systematic Survey.",
+        "venue": "NLPCC",
+        "pages": "107-118",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/nlpcc/ChenLWL24",
+        "doi": "10.1007/978-981-97-9437-9_9",
+        "ee": "https://doi.org/10.1007/978-981-97-9437-9_9",
+        "url": "https://dblp.org/rec/conf/nlpcc/ChenLWL24"
+      },
+      "url": "URL#1291717"
+    }
+  ],
+  "hits_in_coverage_window": [
+    {
+      "@score": "8",
+      "@id": "374737",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "228/7253",
+              "text": "Zhengjie Gao"
+            },
+            {
+              "@pid": "387/3880",
+              "text": "Rongcheng Li"
+            },
+            {
+              "@pid": "218/3103",
+              "text": "Yuxin Fan"
+            },
+            {
+              "@pid": "25/11277",
+              "text": "Min Liao"
+            },
+            {
+              "@pid": "63/5591",
+              "text": "Xinyu Song"
+            }
+          ]
+        },
+        "title": "Late Adapter Tuning: A Cost-Effective Approach to Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "Int. J. Comput. Commun. Control",
+        "volume": "20",
+        "number": "6",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/ijccc/GaoLFLS25",
+        "doi": "10.15837/IJCCC.2025.6.6928",
+        "ee": "https://doi.org/10.15837/ijccc.2025.6.6928",
+        "url": "https://dblp.org/rec/journals/ijccc/GaoLFLS25"
+      },
+      "url": "URL#374737"
+    },
+    {
+      "@score": "8",
+      "@id": "841639",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/1619",
+              "text": "Abdulhady Abas Abdullah"
+            },
+            {
+              "@pid": "34/7374",
+              "text": "Arkaitz Zubiaga"
+            },
+            {
+              "@pid": "144/0554",
+              "text": "Seyedali Mirjalili"
+            },
+            {
+              "@pid": "43/8647",
+              "text": "Amir H. Gandomi"
+            },
+            {
+              "@pid": "16/8198",
+              "text": "Fatemeh Daneshfar"
+            },
+            {
+              "@pid": "375/8290",
+              "text": "Mohammad Sadra Amini"
+            },
+            {
+              "@pid": "419/8548",
+              "text": "Alan Salam Mohammed"
+            },
+            {
+              "@pid": "61/8894",
+              "text": "Hadi Veisi"
+            }
+          ]
+        },
+        "title": "Evolution of meta&apos;s llama models and parameter-efficient fine-tuning of large language models: a survey.",
+        "venue": "CoRR",
+        "volume": "abs/2510.12178",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2510-12178",
+        "doi": "10.48550/ARXIV.2510.12178",
+        "ee": "https://doi.org/10.48550/arXiv.2510.12178",
+        "url": "https://dblp.org/rec/journals/corr/abs-2510-12178"
+      },
+      "url": "URL#841639"
+    },
+    {
+      "@score": "8",
+      "@id": "1434704",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "316/9236",
+              "text": "Nusrat Jahan Prottasha"
+            },
+            {
+              "@pid": "207/0150",
+              "text": "Asif Mahmud"
+            },
+            {
+              "@pid": "312/6067",
+              "text": "Md. Shohanur Islam Sobuj"
+            },
+            {
+              "@pid": "90/10932",
+              "text": "Prakash Bhat"
+            },
+            {
+              "@pid": "272/9677",
+              "text": "Md. Kowsher"
+            },
+            {
+              "@pid": "146/2098-1",
+              "text": "Niloofar Yousefi 0001"
+            },
+            {
+              "@pid": "25/4013",
+              "text": "Özlem Özmen Garibay"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models using Semantic Knowledge Tuning.",
+        "venue": "CoRR",
+        "volume": "abs/2410.08598",
+        "year": "2024",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2410-08598",
+        "doi": "10.48550/ARXIV.2410.08598",
+        "ee": "https://doi.org/10.48550/arXiv.2410.08598",
+        "url": "https://dblp.org/rec/journals/corr/abs-2410-08598"
+      },
+      "url": "URL#1434704"
+    },
+    {
+      "@score": "7",
+      "@id": "49801",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "57/4707-9",
+              "text": "Yifan Zhang 0009"
+            },
+            {
+              "@pid": "71/8313",
+              "text": "Jingxuan Li"
+            },
+            {
+              "@pid": "31/966",
+              "text": "Wenbo Zhang"
+            },
+            {
+              "@pid": "47/46",
+              "text": "Zhiyun Wang"
+            },
+            {
+              "@pid": "200/8027",
+              "text": "Ziyi Zeng"
+            },
+            {
+              "@pid": "05/6715-10",
+              "text": "Wei Luo 0010"
+            },
+            {
+              "@pid": "52/3863-1",
+              "text": "Qingfeng Guan 0001"
+            },
+            {
+              "@pid": "50/2581-4",
+              "text": "Jianfeng Lin 0004"
+            },
+            {
+              "@pid": "159/8117-1",
+              "text": "Wenhao Yu 0001"
+            }
+          ]
+        },
+        "title": "GLoRA: a novel parameter-efficient fine-tuning framework for GIS large language models.",
+        "venue": "Int. J. Geogr. Inf. Sci.",
+        "volume": "40",
+        "number": "7",
+        "pages": "2247-2275",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/gis/ZhangLZWZLGLY26",
+        "doi": "10.1080/13658816.2025.2591830",
+        "ee": "https://doi.org/10.1080/13658816.2025.2591830",
+        "url": "https://dblp.org/rec/journals/gis/ZhangLZWZLGLY26"
+      },
+      "url": "URL#49801"
+    },
+    {
+      "@score": "7",
+      "@id": "89220",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/5407",
+              "text": "Yanfeng Wang"
+            },
+            {
+              "@pid": "32/1013",
+              "text": "Yingjie Li"
+            },
+            {
+              "@pid": "415/0255",
+              "text": "Youqi Wang"
+            }
+          ]
+        },
+        "title": "ResVaRe: Parameter-efficient fine-tuning for large language models via cross-layer residual vector adaptation and representation editing.",
+        "venue": "Neural Networks",
+        "volume": "204",
+        "pages": "109273",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/nn/WangLW26",
+        "doi": "10.1016/J.NEUNET.2026.109273",
+        "ee": "https://doi.org/10.1016/j.neunet.2026.109273",
+        "url": "https://dblp.org/rec/journals/nn/WangLW26"
+      },
+      "url": "URL#89220"
+    },
+    {
+      "@score": "7",
+      "@id": "123136",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/3457",
+              "text": "Zihan Fang"
+            },
+            {
+              "@pid": "51/3740-1",
+              "text": "Zheng Lin 0001"
+            },
+            {
+              "@pid": "06/4240-15",
+              "text": "Zhe Chen 0015"
+            },
+            {
+              "@pid": "211/0585",
+              "text": "Xianhao Chen"
+            },
+            {
+              "@pid": "33/3099-1",
+              "text": "Yue Gao 0001"
+            },
+            {
+              "@pid": "f/YuguangFang",
+              "text": "Yuguang Fang"
+            }
+          ]
+        },
+        "title": "Automated Federated Pipeline for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "IEEE Trans. Mob. Comput.",
+        "volume": "25",
+        "number": "6",
+        "pages": "8782-8797",
+        "year": "2026",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tmc/FangLCCGF26",
+        "doi": "10.1109/TMC.2025.3649881",
+        "ee": "https://doi.org/10.1109/TMC.2025.3649881",
+        "url": "https://dblp.org/rec/journals/tmc/FangLCCGF26"
+      },
+      "url": "URL#123136"
+    },
+    {
+      "@score": "7",
+      "@id": "138781",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/0301",
+              "text": "Dayan Pan"
+            },
+            {
+              "@pid": "75/5135-1",
+              "text": "Jingyuan Wang 0001"
+            },
+            {
+              "@pid": "180/2071",
+              "text": "Yilong Zhou"
+            },
+            {
+              "@pid": "213/1957",
+              "text": "Jiawei Cheng"
+            },
+            {
+              "@pid": "313/9275",
+              "text": "Pengyue Jia"
+            },
+            {
+              "@pid": "08/890-1",
+              "text": "Xiangyu Zhao 0001"
+            }
+          ]
+        },
+        "title": "RoSA: Enhancing Parameter-Efficient Fine-Tuning via RoPE-aware Selective Adaptation in Large Language Models.",
+        "venue": "AAAI",
+        "pages": "15600-15608",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/aaai/PanWZCJZ26",
+        "doi": "10.1609/AAAI.V40I18.38589",
+        "ee": "https://doi.org/10.1609/aaai.v40i18.38589",
+        "url": "https://dblp.org/rec/conf/aaai/PanWZCJZ26"
+      },
+      "url": "URL#138781"
+    },
+    {
+      "@score": "7",
+      "@id": "141475",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "39/6191",
+              "text": "Jie Cao"
+            },
+            {
+              "@pid": "203/8355-1",
+              "text": "Tianwei Lin 0001"
+            },
+            {
+              "@pid": "41/1662",
+              "text": "Bo Yuan"
+            },
+            {
+              "@pid": "409/9610",
+              "text": "Rolan Yan"
+            },
+            {
+              "@pid": "03/8056",
+              "text": "Hongyang He"
+            },
+            {
+              "@pid": "250/4486",
+              "text": "Wenqiao Zhang"
+            },
+            {
+              "@pid": "182/7674-6",
+              "text": "Juncheng Li 0006"
+            },
+            {
+              "@pid": "157/9066",
+              "text": "Dongping Zhang"
+            },
+            {
+              "@pid": "44/5693",
+              "text": "Siliang Tang"
+            },
+            {
+              "@pid": "218/7793",
+              "text": "Yueting Zhuang"
+            }
+          ]
+        },
+        "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "ACL",
+        "pages": "21056-21073",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/CaoLYYHZLZTZ26",
+        "ee": "https://aclanthology.org/2026.acl-long.965/",
+        "url": "https://dblp.org/rec/conf/acl/CaoLYYHZLZTZ26"
+      },
+      "url": "URL#141475"
+    },
+    {
+      "@score": "7",
+      "@id": "155224",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "361/0255",
+              "text": "Róbert Belanec"
+            },
+            {
+              "@pid": "06/9076",
+              "text": "Ivan Srba"
+            },
+            {
+              "@pid": "b/MariaBielikova",
+              "text": "Mária Bieliková"
+            }
+          ]
+        },
+        "title": "PEFT-Factory: Unified Parameter-Efficient Fine-Tuning of Autoregressive Large Language Models.",
+        "venue": "EACL",
+        "pages": "188-202",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/eacl/BelanecSB26",
+        "doi": "10.18653/V1/2026.EACL-DEMO.15",
+        "ee": "https://doi.org/10.18653/v1/2026.eacl-demo.15",
+        "url": "https://dblp.org/rec/conf/eacl/BelanecSB26"
+      },
+      "url": "URL#155224"
+    },
+    {
+      "@score": "7",
+      "@id": "184406",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "150/4872",
+              "text": "Qiuyu Li"
+            },
+            {
+              "@pid": "96/3115-15",
+              "text": "Kun Zhang 0015"
+            },
+            {
+              "@pid": "121/4234",
+              "text": "Le Wu"
+            },
+            {
+              "@pid": "09/3214-78",
+              "text": "Hao Liu 0078"
+            },
+            {
+              "@pid": "317/5460",
+              "text": "Hefei Xu"
+            },
+            {
+              "@pid": "09/1365-64",
+              "text": "Xin Li 0064"
+            },
+            {
+              "@pid": "06/7720",
+              "text": "Si Wei"
+            }
+          ]
+        },
+        "title": "Mitigating Fine-tuning Bias: A Parameter-Efficient Debiasing Framework for Large Language Models.",
+        "venue": "WWW",
+        "pages": "9482-9493",
+        "year": "2026",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/www/LiZWLXLW26",
+        "doi": "10.1145/3774904.3793029",
+        "ee": "https://doi.org/10.1145/3774904.3793029",
+        "url": "https://dblp.org/rec/conf/www/LiZWLXLW26"
+      },
+      "url": "URL#184406"
+    },
+    {
+      "@score": "7",
+      "@id": "202233",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "177/6703-5",
+              "text": "Yichen Xu 0005"
+            },
+            {
+              "@pid": "194/9617",
+              "text": "Yuyang Liang"
+            },
+            {
+              "@pid": "155/6972",
+              "text": "Shan Dai"
+            },
+            {
+              "@pid": "170/2551",
+              "text": "Tianyang Hu"
+            },
+            {
+              "@pid": "166/7652",
+              "text": "Tsz Nam Chan"
+            },
+            {
+              "@pid": "251/5251",
+              "text": "Chenhao Ma 0001"
+            }
+          ]
+        },
+        "title": "Understanding and Guiding Layer Placement in Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2602.04019",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2602-04019",
+        "doi": "10.48550/ARXIV.2602.04019",
+        "ee": "https://doi.org/10.48550/arXiv.2602.04019",
+        "url": "https://dblp.org/rec/journals/corr/abs-2602-04019"
+      },
+      "url": "URL#202233"
+    },
+    {
+      "@score": "7",
+      "@id": "237732",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "307/3016",
+              "text": "Yarui Cao"
+            },
+            {
+              "@pid": "73/4566",
+              "text": "Kai Liu"
+            }
+          ]
+        },
+        "title": "TLoRA+: A Low-Rank Parameter-Efficient Fine-Tuning Method for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2604.13368",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2604-13368",
+        "doi": "10.48550/ARXIV.2604.13368",
+        "ee": "https://doi.org/10.48550/arXiv.2604.13368",
+        "url": "https://dblp.org/rec/journals/corr/abs-2604-13368"
+      },
+      "url": "URL#237732"
+    },
+    {
+      "@score": "7",
+      "@id": "247952",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "437/0050",
+            "text": "Mullosharaf K. Arabov"
+          }
+        },
+        "title": "Benchmarking Parameter-Efficient Fine-Tuning of Large Language Models for Low-Resource Tajik Text Generation with the Tajik Web Corpus.",
+        "venue": "CoRR",
+        "volume": "abs/2605.03742",
+        "year": "2026",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2605-03742",
+        "doi": "10.48550/ARXIV.2605.03742",
+        "ee": "https://doi.org/10.48550/arXiv.2605.03742",
+        "url": "https://dblp.org/rec/journals/corr/abs-2605-03742"
+      },
+      "url": "URL#247952"
+    },
+    {
+      "@score": "7",
+      "@id": "304831",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "137/9646",
+              "text": "Luping Wang"
+            },
+            {
+              "@pid": "97/10424",
+              "text": "Sheng Chen"
+            },
+            {
+              "@pid": "228/6049",
+              "text": "Linnan Jiang"
+            },
+            {
+              "@pid": "193/7543",
+              "text": "Shu Pan"
+            },
+            {
+              "@pid": "179/7277",
+              "text": "Runze Cai"
+            },
+            {
+              "@pid": "90/4655",
+              "text": "Sen Yang"
+            },
+            {
+              "@pid": "19/2504",
+              "text": "Fei Yang"
+            }
+          ]
+        },
+        "title": "Parameter-efficient fine-tuning in large language models: a survey of methodologies.",
+        "venue": "Artif. Intell. Rev.",
+        "volume": "58",
+        "number": "8",
+        "pages": "227",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/air/WangCJPCYY25",
+        "doi": "10.1007/S10462-025-11236-4",
+        "ee": "https://doi.org/10.1007/s10462-025-11236-4",
+        "url": "https://dblp.org/rec/journals/air/WangCJPCYY25"
+      },
+      "url": "URL#304831"
+    },
+    {
+      "@score": "7",
+      "@id": "311527",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "98/5886",
+              "text": "Yinghong Li"
+            },
+            {
+              "@pid": "250/0446",
+              "text": "Yudong Yan"
+            },
+            {
+              "@pid": "376/1777",
+              "text": "Zhuohao Tong"
+            },
+            {
+              "@pid": "02/5889",
+              "text": "Yu Wang"
+            },
+            {
+              "@pid": "217/6931",
+              "text": "Yinqi Yang"
+            },
+            {
+              "@pid": "67/7585",
+              "text": "Mingze Bai"
+            },
+            {
+              "@pid": "159/3590",
+              "text": "Dan Pu"
+            },
+            {
+              "@pid": "242/6253",
+              "text": "Jiazheng Xie"
+            },
+            {
+              "@pid": "31/3472",
+              "text": "Chuan Liu"
+            },
+            {
+              "@pid": "50/3402",
+              "text": "Bo Li"
+            },
+            {
+              "@pid": "136/5528",
+              "text": "Mingwei Liu"
+            },
+            {
+              "@pid": "221/5247",
+              "text": "Kunxian Shu"
+            }
+          ]
+        },
+        "title": "Efficient fine-tuning of small-parameter large language models for biomedical bilingual multi-task applications.",
+        "venue": "Appl. Soft Comput.",
+        "volume": "175",
+        "pages": "113084",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/asc/LiYTWYBPXLLLS25",
+        "doi": "10.1016/J.ASOC.2025.113084",
+        "ee": "https://doi.org/10.1016/j.asoc.2025.113084",
+        "url": "https://dblp.org/rec/journals/asc/LiYTWYBPXLLLS25"
+      },
+      "url": "URL#311527"
+    },
+    {
+      "@score": "7",
+      "@id": "474122",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "372/6431",
+              "text": "Aradhye Agarwal"
+            },
+            {
+              "@pid": "386/2631",
+              "text": "Suhas Kamasetty Ramesh"
+            },
+            {
+              "@pid": "132/8078",
+              "text": "Ayan Sengupta"
+            },
+            {
+              "@pid": "65/2136-2",
+              "text": "Tanmoy Chakraborty 0002"
+            }
+          ]
+        },
+        "title": "Step-by-Step Unmasking for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "Trans. Assoc. Comput. Linguistics",
+        "volume": "13",
+        "pages": "1767-1788",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "open",
+        "key": "journals/tacl/AgarwalRSC25",
+        "doi": "10.1162/TACL.A.59",
+        "ee": "https://doi.org/10.1162/tacl.a.59",
+        "url": "https://dblp.org/rec/journals/tacl/AgarwalRSC25"
+      },
+      "url": "URL#474122"
+    },
+    {
+      "@score": "7",
+      "@id": "506469",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "04/10084",
+              "text": "Deliang Wang 0001"
+            },
+            {
+              "@pid": "209/7801",
+              "text": "Yaqian Zheng"
+            },
+            {
+              "@pid": "97/7026-4",
+              "text": "Jinjiang Li 0004"
+            },
+            {
+              "@pid": "93/3555",
+              "text": "Gaowei Chen"
+            }
+          ]
+        },
+        "title": "Parameter-Efficiently Fine-Tuning Large Language Models for Classroom Dialogue Analysis.",
+        "venue": "IEEE Trans. Learn. Technol.",
+        "volume": "18",
+        "pages": "542-555",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tlt/WangZLC25",
+        "doi": "10.1109/TLT.2025.3567995",
+        "ee": "https://doi.org/10.1109/TLT.2025.3567995",
+        "url": "https://dblp.org/rec/journals/tlt/WangZLC25"
+      },
+      "url": "URL#506469"
+    },
+    {
+      "@score": "7",
+      "@id": "514301",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "274/5737",
+              "text": "Martin Weyssow"
+            },
+            {
+              "@pid": "05/3403-14",
+              "text": "Xin Zhou 0014"
+            },
+            {
+              "@pid": "216/3065",
+              "text": "Kisub Kim"
+            },
+            {
+              "@pid": "89/6793-1",
+              "text": "David Lo 0001"
+            },
+            {
+              "@pid": "s/HouariASahraoui",
+              "text": "Houari A. Sahraoui"
+            }
+          ]
+        },
+        "title": "Exploring Parameter-Efficient Fine-Tuning Techniques for Code Generation with Large Language Models.",
+        "venue": "ACM Trans. Softw. Eng. Methodol.",
+        "volume": "34",
+        "number": "7",
+        "pages": "204:1-204:25",
+        "year": "2025",
+        "type": "Journal Articles",
+        "access": "closed",
+        "key": "journals/tosem/WeyssowZKLS25",
+        "doi": "10.1145/3714461",
+        "ee": "https://doi.org/10.1145/3714461",
+        "url": "https://dblp.org/rec/journals/tosem/WeyssowZKLS25"
+      },
+      "url": "URL#514301"
+    },
+    {
+      "@score": "7",
+      "@id": "532157",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models.",
+        "venue": "ACL",
+        "pages": "2002-2024",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/JeonKK25",
+        "doi": "10.18653/V1/2025.ACL-LONG.99",
+        "ee": "https://doi.org/10.18653/v1/2025.acl-long.99",
+        "url": "https://dblp.org/rec/conf/acl/JeonKK25"
+      },
+      "url": "URL#532157"
+    },
+    {
+      "@score": "7",
+      "@id": "543130",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "392/0172",
+              "text": "Dongping Guo"
+            },
+            {
+              "@pid": "87/3231",
+              "text": "Anh Tran"
+            },
+            {
+              "@pid": "184/8628",
+              "text": "Xinli Xiao"
+            },
+            {
+              "@pid": "118/6414-1",
+              "text": "Hongmin Li 0001"
+            },
+            {
+              "@pid": "40/2098",
+              "text": "Doina Caragea"
+            }
+          ]
+        },
+        "title": "Multimodal Disaster-Related Tweet Classification with Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "ASONAM",
+        "pages": "413-428",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/asunam/GuoTXLC25",
+        "doi": "10.1007/978-3-032-14107-1_34",
+        "ee": "https://doi.org/10.1007/978-3-032-14107-1_34",
+        "url": "https://dblp.org/rec/conf/asunam/GuoTXLC25"
+      },
+      "url": "URL#543130"
+    },
+    {
+      "@score": "7",
+      "@id": "557567",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "395/8395",
+              "text": "Emily Jimin Roh"
+            },
+            {
+              "@pid": "69/4977",
+              "text": "Joongheon Kim"
+            }
+          ]
+        },
+        "title": "Quantum-Amplitude Embedded Adaptation for Parameter-Efficient Fine-Tuning in Large Language Models.",
+        "venue": "CIKM",
+        "pages": "5171-5175",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/cikm/RohK25",
+        "doi": "10.1145/3746252.3760795",
+        "ee": "https://doi.org/10.1145/3746252.3760795",
+        "url": "https://dblp.org/rec/conf/cikm/RohK25"
+      },
+      "url": "URL#557567"
+    },
+    {
+      "@score": "7",
+      "@id": "563344",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/7509",
+              "text": "Jia-Chen Zhang"
+            },
+            {
+              "@pid": "316/0945",
+              "text": "Yu-Jie Xiong"
+            },
+            {
+              "@pid": "120/4589",
+              "text": "Chun-Ming Xia"
+            },
+            {
+              "@pid": "385/7261",
+              "text": "Dong-Hai Zhu"
+            },
+            {
+              "@pid": "258/7989",
+              "text": "Xihe Qiu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models via Deconvolution in Subspace.",
+        "venue": "COLING",
+        "pages": "3924-3935",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/coling/ZhangXXZQ25",
+        "ee": "https://aclanthology.org/2025.coling-main.265/",
+        "url": "https://dblp.org/rec/conf/coling/ZhangXXZQ25"
+      },
+      "url": "URL#563344"
+    },
+    {
+      "@score": "7",
+      "@id": "635263",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "290/1869",
+              "text": "Alireza Salemi"
+            },
+            {
+              "@pid": "150/5324",
+              "text": "Hamed Zamani"
+            }
+          ]
+        },
+        "title": "Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models.",
+        "venue": "ICTIR",
+        "pages": "286-296",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ictir/SalemiZ25a",
+        "doi": "10.1145/3731120.3744595",
+        "ee": "https://doi.org/10.1145/3731120.3744595",
+        "url": "https://dblp.org/rec/conf/ictir/SalemiZ25a"
+      },
+      "url": "URL#635263"
+    },
+    {
+      "@score": "7",
+      "@id": "642200",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "333/2832",
+              "text": "Lingzhi Shen"
+            },
+            {
+              "@pid": "168/4623",
+              "text": "Yunfei Long"
+            },
+            {
+              "@pid": "16/10261",
+              "text": "Xiaohao Cai"
+            },
+            {
+              "@pid": "320/3729",
+              "text": "Guanming Chen"
+            },
+            {
+              "@pid": "59/8379",
+              "text": "Imran Razzak"
+            },
+            {
+              "@pid": "94/10440",
+              "text": "Shoaib Jameel"
+            }
+          ]
+        },
+        "title": "Less but Better: Parameter-Efficient Fine-Tuning of Large Language Models for Personality Detection.",
+        "venue": "IJCNN",
+        "pages": "1-8",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ijcnn/ShenLCCRJ25",
+        "doi": "10.1109/IJCNN64981.2025.11228339",
+        "ee": "https://doi.org/10.1109/IJCNN64981.2025.11228339",
+        "url": "https://dblp.org/rec/conf/ijcnn/ShenLCCRJ25"
+      },
+      "url": "URL#642200"
+    },
+    {
+      "@score": "7",
+      "@id": "649492",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "204/0042",
+              "text": "Jinlong He"
+            },
+            {
+              "@pid": "10/1749",
+              "text": "Pengfei Li"
+            },
+            {
+              "@pid": "37/2109",
+              "text": "Gang Liu"
+            },
+            {
+              "@pid": "207/8295",
+              "text": "Shenjun Zhong"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning Medical Multimodal Large Language Models for Medical Visual Grounding.",
+        "venue": "ISBI",
+        "pages": "1-5",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/isbi/HeLLZ25",
+        "doi": "10.1109/ISBI60581.2025.10981029",
+        "ee": "https://doi.org/10.1109/ISBI60581.2025.10981029",
+        "url": "https://dblp.org/rec/conf/isbi/HeLLZ25"
+      },
+      "url": "URL#649492"
+    },
+    {
+      "@score": "7",
+      "@id": "661825",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "28/10706",
+              "text": "Xiaorui Luo"
+            },
+            {
+              "@pid": "242/0120",
+              "text": "Chi Jiang"
+            },
+            {
+              "@pid": "42/1503",
+              "text": "Shuai Wang"
+            },
+            {
+              "@pid": "91/3045-2",
+              "text": "Yin Zhang 0002"
+            }
+          ]
+        },
+        "title": "DynamicFedPEFT: Efficient Fine-Tuning of Dynamic Federated Parameters for Large Language Models.",
+        "venue": "KSEM",
+        "pages": "89-100",
+        "year": "2025",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/ksem/LuoJWZ25",
+        "doi": "10.1007/978-981-95-3055-7_8",
+        "ee": "https://doi.org/10.1007/978-981-95-3055-7_8",
+        "url": "https://dblp.org/rec/conf/ksem/LuoJWZ25"
+      },
+      "url": "URL#661825"
+    },
+    {
+      "@score": "7",
+      "@id": "745557",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "385/7509",
+              "text": "Jia-Chen Zhang"
+            },
+            {
+              "@pid": "316/0945",
+              "text": "Yu-Jie Xiong"
+            },
+            {
+              "@pid": "120/4589",
+              "text": "Chun-Ming Xia"
+            },
+            {
+              "@pid": "385/7261",
+              "text": "Dong-Hai Zhu"
+            },
+            {
+              "@pid": "258/7989",
+              "text": "Xihe Qiu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models via Deconvolution in Subspace.",
+        "venue": "CoRR",
+        "volume": "abs/2503.01419",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2503-01419",
+        "doi": "10.48550/ARXIV.2503.01419",
+        "ee": "https://doi.org/10.48550/arXiv.2503.01419",
+        "url": "https://dblp.org/rec/journals/corr/abs-2503-01419"
+      },
+      "url": "URL#745557"
+    },
+    {
+      "@score": "7",
+      "@id": "760556",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "333/2832",
+              "text": "Lingzhi Shen"
+            },
+            {
+              "@pid": "168/4623",
+              "text": "Yunfei Long"
+            },
+            {
+              "@pid": "16/10261",
+              "text": "Xiaohao Cai"
+            },
+            {
+              "@pid": "320/3729",
+              "text": "Guanming Chen"
+            },
+            {
+              "@pid": "59/8379",
+              "text": "Imran Razzak"
+            },
+            {
+              "@pid": "94/10440",
+              "text": "Shoaib Jameel"
+            }
+          ]
+        },
+        "title": "Less but Better: Parameter-Efficient Fine-Tuning of Large Language Models for Personality Detection.",
+        "venue": "CoRR",
+        "volume": "abs/2504.05411",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-05411",
+        "doi": "10.48550/ARXIV.2504.05411",
+        "ee": "https://doi.org/10.48550/arXiv.2504.05411",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-05411"
+      },
+      "url": "URL#760556"
+    },
+    {
+      "@score": "7",
+      "@id": "765063",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "316/9236",
+              "text": "Nusrat Jahan Prottasha"
+            },
+            {
+              "@pid": "405/5071",
+              "text": "Upama Roy Chowdhury"
+            },
+            {
+              "@pid": "405/4960",
+              "text": "Shetu Mohanto"
+            },
+            {
+              "@pid": "333/9332",
+              "text": "Tasfia Nuzhat"
+            },
+            {
+              "@pid": "327/5483",
+              "text": "Abdullah As Sami"
+            },
+            {
+              "@pid": "405/4996",
+              "text": "Md Shamol Ali"
+            },
+            {
+              "@pid": "312/6067",
+              "text": "Md. Shohanur Islam Sobuj"
+            },
+            {
+              "@pid": "400/3149",
+              "text": "Hafijur Raman"
+            },
+            {
+              "@pid": "272/9677",
+              "text": "Md. Kowsher"
+            },
+            {
+              "@pid": "25/4013",
+              "text": "Ozlem O. Garibay"
+            }
+          ]
+        },
+        "title": "PEFT A2Z: Parameter-Efficient Fine-Tuning Survey for Large Language and Vision Models.",
+        "venue": "CoRR",
+        "volume": "abs/2504.14117",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-14117",
+        "doi": "10.48550/ARXIV.2504.14117",
+        "ee": "https://doi.org/10.48550/arXiv.2504.14117",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-14117"
+      },
+      "url": "URL#765063"
+    },
+    {
+      "@score": "7",
+      "@id": "768415",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "80/1949",
+              "text": "Jin Xie"
+            },
+            {
+              "@pid": "405/8696",
+              "text": "Ruishi He"
+            },
+            {
+              "@pid": "119/2630",
+              "text": "Songze Li"
+            },
+            {
+              "@pid": "57/5656",
+              "text": "Xiaojun Jia"
+            },
+            {
+              "@pid": "07/8388",
+              "text": "Shouling Ji"
+            }
+          ]
+        },
+        "title": "ReCIT: Reconstructing Full Private Data from Gradient in Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2504.20570",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2504-20570",
+        "doi": "10.48550/ARXIV.2504.20570",
+        "ee": "https://doi.org/10.48550/arXiv.2504.20570",
+        "url": "https://dblp.org/rec/journals/corr/abs-2504-20570"
+      },
+      "url": "URL#768415"
+    },
+    {
+      "@score": "7",
+      "@id": "770463",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "51/3740-1",
+              "text": "Zheng Lin 0001"
+            },
+            {
+              "@pid": "03/7346",
+              "text": "Yuxin Zhang"
+            },
+            {
+              "@pid": "06/4240-15",
+              "text": "Zhe Chen 0015"
+            },
+            {
+              "@pid": "273/3457",
+              "text": "Zihan Fang"
+            },
+            {
+              "@pid": "211/0585",
+              "text": "Xianhao Chen"
+            },
+            {
+              "@pid": "131/6694",
+              "text": "Praneeth Vepakomma"
+            },
+            {
+              "@pid": "31/2597-1",
+              "text": "Wei Ni 0001"
+            },
+            {
+              "@pid": "42/2501-1",
+              "text": "Jun Luo 0001"
+            },
+            {
+              "@pid": "33/3099-1",
+              "text": "Yue Gao 0001"
+            }
+          ]
+        },
+        "title": "HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2505.02795",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2505-02795",
+        "doi": "10.48550/ARXIV.2505.02795",
+        "ee": "https://doi.org/10.48550/arXiv.2505.02795",
+        "url": "https://dblp.org/rec/journals/corr/abs-2505-02795"
+      },
+      "url": "URL#770463"
+    },
+    {
+      "@score": "7",
+      "@id": "786937",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "39/6191",
+              "text": "Jie Cao"
+            },
+            {
+              "@pid": "203/8355-1",
+              "text": "Tianwei Lin 0001"
+            },
+            {
+              "@pid": "03/8056",
+              "text": "Hongyang He"
+            },
+            {
+              "@pid": "409/9610",
+              "text": "Rolan Yan"
+            },
+            {
+              "@pid": "250/4486",
+              "text": "Wenqiao Zhang"
+            },
+            {
+              "@pid": "182/7674-6",
+              "text": "Juncheng Li 0006"
+            },
+            {
+              "@pid": "157/9066",
+              "text": "Dongping Zhang"
+            },
+            {
+              "@pid": "44/5693",
+              "text": "Siliang Tang"
+            },
+            {
+              "@pid": "218/7793",
+              "text": "Yueting Zhuang"
+            }
+          ]
+        },
+        "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient Fine-Tuning of Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2506.05928",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2506-05928",
+        "doi": "10.48550/ARXIV.2506.05928",
+        "ee": "https://doi.org/10.48550/arXiv.2506.05928",
+        "url": "https://dblp.org/rec/journals/corr/abs-2506-05928"
+      },
+      "url": "URL#786937"
+    },
+    {
+      "@score": "7",
+      "@id": "810480",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "205/8540",
+              "text": "Yidong Chai"
+            },
+            {
+              "@pid": "51/3710",
+              "text": "Yang Liu"
+            },
+            {
+              "@pid": "316/1827",
+              "text": "Yonghang Zhou"
+            },
+            {
+              "@pid": "154/3919",
+              "text": "Jiaheng Xie"
+            },
+            {
+              "@pid": "z/DanielDajunZeng",
+              "text": "Daniel Dajun Zeng"
+            }
+          ]
+        },
+        "title": "A Bayesian Hybrid Parameter-Efficient Fine-Tuning Method for Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2508.02711",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2508-02711",
+        "doi": "10.48550/ARXIV.2508.02711",
+        "ee": "https://doi.org/10.48550/arXiv.2508.02711",
+        "url": "https://dblp.org/rec/journals/corr/abs-2508-02711"
+      },
+      "url": "URL#810480"
+    },
+    {
+      "@score": "7",
+      "@id": "822175",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "34/4521",
+              "text": "Ming Gong"
+            },
+            {
+              "@pid": "402/6037",
+              "text": "Yingnan Deng"
+            },
+            {
+              "@pid": "413/1923",
+              "text": "Nia Qi"
+            },
+            {
+              "@pid": "413/2831",
+              "text": "Yujun Zou"
+            },
+            {
+              "@pid": "283/5196",
+              "text": "Zhihao Xue"
+            },
+            {
+              "@pid": "378/0962",
+              "text": "Yun Zi"
+            }
+          ]
+        },
+        "title": "Structure-Learnable Adapter Fine-Tuning for Parameter-Efficient Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.03057",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-03057",
+        "doi": "10.48550/ARXIV.2509.03057",
+        "ee": "https://doi.org/10.48550/arXiv.2509.03057",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-03057"
+      },
+      "url": "URL#822175"
+    },
+    {
+      "@score": "7",
+      "@id": "829428",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "351/1111",
+              "text": "Hyesung Jeon"
+            },
+            {
+              "@pid": "417/8589",
+              "text": "Seojune Lee"
+            },
+            {
+              "@pid": "309/1053",
+              "text": "Beomseok Kang"
+            },
+            {
+              "@pid": "223/9434",
+              "text": "Yulhwa Kim"
+            },
+            {
+              "@pid": "79/6708",
+              "text": "Jae-Joon Kim"
+            }
+          ]
+        },
+        "title": "QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2509.17428",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2509-17428",
+        "doi": "10.48550/ARXIV.2509.17428",
+        "ee": "https://doi.org/10.48550/arXiv.2509.17428",
+        "url": "https://dblp.org/rec/journals/corr/abs-2509-17428"
+      },
+      "url": "URL#829428"
+    },
+    {
+      "@score": "7",
+      "@id": "861433",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "273/0301",
+              "text": "Dayan Pan"
+            },
+            {
+              "@pid": "75/5135-1",
+              "text": "Jingyuan Wang 0001"
+            },
+            {
+              "@pid": "180/2071",
+              "text": "Yilong Zhou"
+            },
+            {
+              "@pid": "213/1957",
+              "text": "Jiawei Cheng"
+            },
+            {
+              "@pid": "313/9275",
+              "text": "Pengyue Jia"
+            },
+            {
+              "@pid": "08/890-1",
+              "text": "Xiangyu Zhao 0001"
+            }
+          ]
+        },
+        "title": "RoSA: Enhancing Parameter-Efficient Fine-Tuning via RoPE-aware Selective Adaptation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2511.21733",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2511-21733",
+        "doi": "10.48550/ARXIV.2511.21733",
+        "ee": "https://doi.org/10.48550/arXiv.2511.21733",
+        "url": "https://dblp.org/rec/journals/corr/abs-2511-21733"
+      },
+      "url": "URL#861433"
+    },
+    {
+      "@score": "7",
+      "@id": "863732",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "361/0255",
+              "text": "Róbert Belanec"
+            },
+            {
+              "@pid": "06/9076",
+              "text": "Ivan Srba"
+            },
+            {
+              "@pid": "b/MariaBielikova",
+              "text": "Mária Bieliková"
+            }
+          ]
+        },
+        "title": "PEFT-Factory: Unified Parameter-Efficient Fine-Tuning of Autoregressive Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2512.02764",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2512-02764",
+        "doi": "10.48550/ARXIV.2512.02764",
+        "ee": "https://doi.org/10.48550/arXiv.2512.02764",
+        "url": "https://dblp.org/rec/journals/corr/abs-2512-02764"
+      },
+      "url": "URL#863732"
+    },
+    {
+      "@score": "7",
+      "@id": "865671",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "95/5874",
+              "text": "Yulin Huang"
+            },
+            {
+              "@pid": "420/0282",
+              "text": "Yaxuan Luan"
+            },
+            {
+              "@pid": "12/3832",
+              "text": "Jinxu Guo"
+            },
+            {
+              "@pid": "261/9024",
+              "text": "Xiangchen Song"
+            },
+            {
+              "@pid": "69/10440",
+              "text": "Yuchen Liu"
+            }
+          ]
+        },
+        "title": "Parameter-Efficient Fine-Tuning with Differential Privacy for Robust Instruction Adaptation in Large Language Models.",
+        "venue": "CoRR",
+        "volume": "abs/2512.06711",
+        "year": "2025",
+        "type": "Informal and Other Publications",
+        "access": "open",
+        "key": "journals/corr/abs-2512-06711",
+        "doi": "10.48550/ARXIV.2512.06711",
+        "ee": "https://doi.org/10.48550/arXiv.2512.06711",
+        "url": "https://dblp.org/rec/journals/corr/abs-2512-06711"
+      },
+      "url": "URL#865671"
+    },
+    {
+      "@score": "7",
+      "@id": "1125237",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "78/661",
+              "text": "Minsoo Kim"
+            },
+            {
+              "@pid": "308/0611",
+              "text": "Sihwa Lee"
+            },
+            {
+              "@pid": "22/1975",
+              "text": "Wonyong Sung"
+            },
+            {
+              "@pid": "97/4140",
+              "text": "Jungwook Choi"
+            }
+          ]
+        },
+        "title": "RA-LoRA: Rank-Adaptive Parameter-Efficient Fine-Tuning for Accurate 2-bit Quantized Large Language Models.",
+        "venue": "ACL",
+        "pages": "15773-15786",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/KimLSC24",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.933",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.933",
+        "url": "https://dblp.org/rec/conf/acl/KimLSC24"
+      },
+      "url": "URL#1125237"
+    },
+    {
+      "@score": "7",
+      "@id": "1125926",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "302/1805",
+              "text": "Shiyu Tian"
+            },
+            {
+              "@pid": "276/9723",
+              "text": "Yangyang Luo"
+            },
+            {
+              "@pid": "43/7408",
+              "text": "Tianze Xu"
+            },
+            {
+              "@pid": "69/9013",
+              "text": "Caixia Yuan"
+            },
+            {
+              "@pid": "23/8214",
+              "text": "Huixing Jiang"
+            },
+            {
+              "@pid": "181/2831",
+              "text": "Chen Wei"
+            },
+            {
+              "@pid": "99/7033-6",
+              "text": "Xiaojie Wang 0006"
+            }
+          ]
+        },
+        "title": "KG-Adapter: Enabling Knowledge Graph Integration in Large Language Models through Parameter-Efficient Fine-Tuning.",
+        "venue": "ACL",
+        "pages": "3813-3828",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/TianLXYJW024",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.229",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.229",
+        "url": "https://dblp.org/rec/conf/acl/TianLXYJW024"
+      },
+      "url": "URL#1125926"
+    },
+    {
+      "@score": "7",
+      "@id": "1126464",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "289/2511",
+              "text": "Xiongtao Zhou"
+            },
+            {
+              "@pid": "28/4019-4",
+              "text": "Jie He 0004"
+            },
+            {
+              "@pid": "360/6194",
+              "text": "Yuhua Ke"
+            },
+            {
+              "@pid": "48/7775",
+              "text": "Guangyao Zhu"
+            },
+            {
+              "@pid": "36/8486",
+              "text": "Víctor Gutiérrez-Basulto"
+            },
+            {
+              "@pid": "59/6490",
+              "text": "Jeff Z. Pan"
+            }
+          ]
+        },
+        "title": "An Empirical Study on Parameter-Efficient Fine-Tuning for MultiModal Large Language Models.",
+        "venue": "ACL",
+        "pages": "10057-10084",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/acl/Zhou0KZGP24",
+        "doi": "10.18653/V1/2024.FINDINGS-ACL.598",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-acl.598",
+        "url": "https://dblp.org/rec/conf/acl/Zhou0KZGP24"
+      },
+      "url": "URL#1126464"
+    },
+    {
+      "@score": "7",
+      "@id": "1144811",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "290/1098",
+              "text": "Emre Kocyigit"
+            },
+            {
+              "@pid": "246/0272",
+              "text": "Davide Liga"
+            },
+            {
+              "@pid": "78/5724",
+              "text": "Gabriele Lenzini"
+            }
+          ]
+        },
+        "title": "Augmenting Dark Patterns Text Data by Leveraging Large Language Models: A Multi-agent Framework and Parameter-Efficient Fine-Tuning.",
+        "venue": "CALM",
+        "pages": "65-87",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/calm/KocyigitLL24",
+        "doi": "10.1007/978-3-031-89103-8_5",
+        "ee": "https://doi.org/10.1007/978-3-031-89103-8_5",
+        "url": "https://dblp.org/rec/conf/calm/KocyigitLL24"
+      },
+      "url": "URL#1144811"
+    },
+    {
+      "@score": "7",
+      "@id": "1182004",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "305/9839",
+              "text": "Aofei Chang"
+            },
+            {
+              "@pid": "44/740-2",
+              "text": "Jiaqi Wang 0002"
+            },
+            {
+              "@pid": "35/2899-8",
+              "text": "Han Liu 0008"
+            },
+            {
+              "@pid": "168/8615",
+              "text": "Parminder Bhatia"
+            },
+            {
+              "@pid": "170/1833",
+              "text": "Cao Xiao"
+            },
+            {
+              "@pid": "12/2633-6",
+              "text": "Ting Wang 0006"
+            },
+            {
+              "@pid": "85/10856",
+              "text": "Fenglong Ma"
+            }
+          ]
+        },
+        "title": "BIPEFT: Budget-Guided Iterative Search for Parameter Efficient Fine-Tuning of Large Pretrained Language Models.",
+        "venue": "EMNLP",
+        "pages": "7429-7440",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/Chang00BXWM24",
+        "doi": "10.18653/V1/2024.FINDINGS-EMNLP.437",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-emnlp.437",
+        "url": "https://dblp.org/rec/conf/emnlp/Chang00BXWM24"
+      },
+      "url": "URL#1182004"
+    },
+    {
+      "@score": "7",
+      "@id": "1183507",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "301/7706",
+              "text": "Zhaoxuan Tan"
+            },
+            {
+              "@pid": "66/3005-1",
+              "text": "Qingkai Zeng 0001"
+            },
+            {
+              "@pid": "234/9123-1",
+              "text": "Yijun Tian 0001"
+            },
+            {
+              "@pid": "191/0249-10",
+              "text": "Zheyuan Liu 0010"
+            },
+            {
+              "@pid": "98/8323",
+              "text": "Bing Yin"
+            },
+            {
+              "@pid": "69/339-1",
+              "text": "Meng Jiang 0001"
+            }
+          ]
+        },
+        "title": "Democratizing Large Language Models via Personalized Parameter-Efficient Fine-tuning.",
+        "venue": "EMNLP",
+        "pages": "6476-6491",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/Tan000Y024",
+        "doi": "10.18653/V1/2024.EMNLP-MAIN.372",
+        "ee": "https://doi.org/10.18653/v1/2024.emnlp-main.372",
+        "url": "https://dblp.org/rec/conf/emnlp/Tan000Y024"
+      },
+      "url": "URL#1183507"
+    },
+    {
+      "@score": "7",
+      "@id": "1183873",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "55/6594",
+              "text": "Kai Yao"
+            },
+            {
+              "@pid": "279/6230",
+              "text": "Penglei Gao"
+            },
+            {
+              "@pid": "16/1282",
+              "text": "Lichun Li"
+            },
+            {
+              "@pid": "65/2105-15",
+              "text": "Yuan Zhao 0015"
+            },
+            {
+              "@pid": "99/2479-7",
+              "text": "Xiaofeng Wang 0007"
+            },
+            {
+              "@pid": "w/WeiWang2",
+              "text": "Wei Wang 0002"
+            },
+            {
+              "@pid": "10/4016",
+              "text": "Jianke Zhu"
+            }
+          ]
+        },
+        "title": "Layer-wise Importance Matters: Less Memory for Better Performance in Parameter-efficient Fine-tuning of Large Language Models.",
+        "venue": "EMNLP",
+        "pages": "1977-1992",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/emnlp/YaoGLZWWZ24",
+        "doi": "10.18653/V1/2024.FINDINGS-EMNLP.109",
+        "ee": "https://doi.org/10.18653/v1/2024.findings-emnlp.109",
+        "url": "https://dblp.org/rec/conf/emnlp/YaoGLZWWZ24"
+      },
+      "url": "URL#1183873"
+    },
+    {
+      "@score": "7",
+      "@id": "1199913",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "303/4722",
+              "text": "Nawras Alnaasan"
+            },
+            {
+              "@pid": "296/1098",
+              "text": "Horng-Ruey Huang"
+            },
+            {
+              "@pid": "34/3740",
+              "text": "Aamir Shafi"
+            },
+            {
+              "@pid": "65/1958",
+              "text": "Hari Subramoni"
+            },
+            {
+              "@pid": "p/DhabaleswarKPanda",
+              "text": "Dhabaleswar K. Panda 0001"
+            }
+          ]
+        },
+        "title": "Characterizing Communication in Distributed Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "HOTI",
+        "pages": "11-19",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/hoti/AlnaasanHSSP24",
+        "doi": "10.1109/HOTI63208.2024.00014",
+        "ee": "https://doi.org/10.1109/HOTI63208.2024.00014",
+        "url": "https://dblp.org/rec/conf/hoti/AlnaasanHSSP24"
+      },
+      "url": "URL#1199913"
+    },
+    {
+      "@score": "7",
+      "@id": "1230298",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "15/3008",
+              "text": "Xudong Lu"
+            },
+            {
+              "@pid": "195/6034",
+              "text": "Aojun Zhou"
+            },
+            {
+              "@pid": "26/3725",
+              "text": "Yuhui Xu"
+            },
+            {
+              "@pid": "244/1748",
+              "text": "Renrui Zhang"
+            },
+            {
+              "@pid": "29/5999-7",
+              "text": "Peng Gao 0007"
+            },
+            {
+              "@pid": "27/7402-1",
+              "text": "Hongsheng Li 0001"
+            }
+          ]
+        },
+        "title": "SPP: Sparsity-Preserved Parameter-Efficient Fine-Tuning for Large Language Models.",
+        "venue": "ICML",
+        "pages": "33254-33269",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/icml/LuZXZ0024",
+        "ee": "https://proceedings.mlr.press/v235/lu24p.html",
+        "url": "https://dblp.org/rec/conf/icml/LuZXZ0024"
+      },
+      "url": "URL#1230298"
+    },
+    {
+      "@score": "7",
+      "@id": "1237823",
+      "info": {
+        "authors": {
+          "author": {
+            "@pid": "119/0200",
+            "text": "Fatemeh H. Fard"
+          }
+        },
+        "title": "Technical Briefing on Parameter Efficient Fine-Tuning of (Large) Language Models for Code-Intelligence.",
+        "venue": "ICSE Companion",
+        "pages": "434-435",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/icse/Fard24",
+        "doi": "10.1145/3639478.3643060",
+        "ee": "https://doi.org/10.1145/3639478.3643060",
+        "url": "https://dblp.org/rec/conf/icse/Fard24"
+      },
+      "url": "URL#1237823"
+    },
+    {
+      "@score": "7",
+      "@id": "1291031",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "28/7717",
+              "text": "Yibo Yang"
+            },
+            {
+              "@pid": "85/6319",
+              "text": "Xiaojie Li"
+            },
+            {
+              "@pid": "274/7781",
+              "text": "Zhongzhu Zhou"
+            },
+            {
+              "@pid": "23/7512",
+              "text": "Shuaiwen Song"
+            },
+            {
+              "@pid": "170/4643",
+              "text": "Jianlong Wu"
+            },
+            {
+              "@pid": "92/8277",
+              "text": "Liqiang Nie"
+            },
+            {
+              "@pid": "37/2516",
+              "text": "Bernard Ghanem"
+            }
+          ]
+        },
+        "title": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning.",
+        "venue": "NeurIPS",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "open",
+        "key": "conf/nips/YangLZSWNG24",
+        "ee": "http://papers.nips.cc/paper_files/paper/2024/hash/83f95bb0ac5046338ea2afe3390e9f4b-Abstract-Conference.html",
+        "url": "https://dblp.org/rec/conf/nips/YangLZSWNG24"
+      },
+      "url": "URL#1291031"
+    },
+    {
+      "@score": "7",
+      "@id": "1291717",
+      "info": {
+        "authors": {
+          "author": [
+            {
+              "@pid": "187/9118",
+              "text": "Zezhou Chen"
+            },
+            {
+              "@pid": "93/2654",
+              "text": "Zhaoxiang Liu"
+            },
+            {
+              "@pid": "78/2022-12",
+              "text": "Kai Wang 0012"
+            },
+            {
+              "@pid": "23/53",
+              "text": "Shiguo Lian"
+            }
+          ]
+        },
+        "title": "Reparameterization-Based Parameter-Efficient Fine-Tuning Methods for Large Language Models: A Systematic Survey.",
+        "venue": "NLPCC",
+        "pages": "107-118",
+        "year": "2024",
+        "type": "Conference and Workshop Papers",
+        "access": "closed",
+        "key": "conf/nlpcc/ChenLWL24",
+        "doi": "10.1007/978-981-97-9437-9_9",
+        "ee": "https://doi.org/10.1007/978-981-97-9437-9_9",
+        "url": "https://dblp.org/rec/conf/nlpcc/ChenLWL24"
+      },
+      "url": "URL#1291717"
+    }
+  ],
+  "request_url_example": "https://dblp.org/search/publ/api?q=parameter-efficient%20fine-tuning%20large%20language%20models&h=50&format=json"
+}

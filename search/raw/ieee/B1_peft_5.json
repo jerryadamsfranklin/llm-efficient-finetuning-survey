@@ -1,0 +1,1773 @@
+{
+  "source": "ieee",
+  "api": "https://ieeexploreapi.ieee.org/api/v1/search/articles",
+  "protocol_version": "1.2",
+  "query": "\"PEFT\" AND survey",
+  "query_form": "boolean",
+  "start_year": 2019,
+  "end_year": 2026,
+  "max_records_requested": 50,
+  "cap_enforced_at_request": true,
+  "sort_notes": [
+    "sort_field=relevance requested"
+  ],
+  "request_params_sans_key": {
+    "querytext": "\"PEFT\" AND survey",
+    "start_year": 2019,
+    "end_year": 2026,
+    "max_records": 50,
+    "start_record": 1,
+    "format": "json",
+    "sort_field": "relevance"
+  },
+  "fetched_at": "2026-07-30T18:10:25Z",
+  "total_results_reported": 12,
+  "returned": 12,
+  "hit_result_cap": false,
+  "articles": [
+    {
+      "doi": "10.1109/ICAISET66439.2026.11542210",
+      "title": "Multimodal and Vision Language Few Shot Learning: A Survey",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-9257-8",
+      "rank": 1,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates",
+            "authorUrl": "https://ieeexplore.ieee.org/author/917926035115814",
+            "id": 917926035115814,
+            "full_name": "Amna Alkinde",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37269153800",
+            "id": 37269153800,
+            "full_name": "Fatih Kurugollu",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37376676800",
+            "id": 37376676800,
+            "full_name": "Saad Harous",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science, University of Sharjah, Sharjah, United Arab Emirates"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Recent advancements in few shot learning have shifted from a focus solely on visual recognition to multimodal and vision language contexts, in which extensive pre-trained models are fine-tuned for novel tasks using only a limited number of annotated multimodal instances. Concurrently, the advent of vision language models (VLMs), along with advancements in parameter-efficient tuning and federated optimization, has resulted in a swiftly evolving yet fragmented research landscape. This survey aims to provide a focused survey of VLM-based few-shot learning across multimodal and vision–language domains. Initially, we delineate the problem framework and compile representative methodologies across diverse sectors, including image processing, video analysis, three-dimensional modeling, medical applications, and agricultural practices. Subsequently, we categorize the existing literature into a systematic taxonomy characterized by four interrelated dimensions: (i) learning paradigms and parameter efficiency, (ii) semantic conditioning and knowledge integration, (iii) VLM adaptation for recognition and reasoning in few shot contexts, and (iv) frameworks that prioritize federated and privacy preserving approaches. Within each dimension, we scrutinize the fundamental architectural concepts, training methodologies, and empirical trade-offs, encompassing robustness in the face of distribution shifts, control over hallucinations, as well as capabilities in temporal and three-dimensional comprehension, and continual or multi-task adaptability. Building upon this analytical foundation, we integrate overarching design patterns and emphasize the interplay between pre-trained generalization, efficient adaptation, and certified robustness in practical applications. Lastly, we identify existing challenges and propose future research trajectories for scalable, trustworthy VLM based few shot systems that operate in real world multimodal and federated settings.",
+      "article_number": "11542210",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11542210",
+      "html_url": "https://ieeexplore.ieee.org/document/11542210/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11542210/",
+      "publication_title": "2026 International Conference on Artificial Intelligence, Systems, and Emerging Technologies (ICAISET)",
+      "conference_location": "Cairo, Egypt",
+      "conference_dates": "21-23 April 2026",
+      "publication_number": 11541286,
+      "is_number": 11541298,
+      "publication_year": 2026,
+      "publication_date": "21-23 April 2026",
+      "start_page": "1",
+      "end_page": "9",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260602",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Few shot learning",
+            "Modeling",
+            "Printing",
+            "Vision language model",
+            "Visualization",
+            "Metalearning",
+            "Privacy",
+            "Surveys",
+            "Tuning",
+            "Cognition"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Few-Shot Learning (FSL)",
+            "Multimodal Learning",
+            "Vision Language Models (VLMs)",
+            "Semantic Conditioning",
+            "Parameter-Efficient Fine-Tuning (PEFT)",
+            "Federated Learning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Multimodal Learning",
+            "Multimodal Deep Learning",
+            "Shot Learning",
+            "Vision Language",
+            "Scalable",
+            "Hallucinations",
+            "Domain Shift",
+            "Shift In Distribution",
+            "Video Analysis",
+            "Video Classification",
+            "Language Model",
+            "Knowledge Integration",
+            "Few-shot Learning",
+            "Efficient Adaptation",
+            "Medical Imaging",
+            "Clinical Imaging",
+            "Diagnostic Imaging",
+            "Visual Representation",
+            "Fluidic",
+            "Point Cloud",
+            "Language Barriers",
+            "Action Recognition",
+            "Imbalanced Data",
+            "Cultural Bias",
+            "Cultural Assumptions",
+            "Image Texture",
+            "Communication Constraints",
+            "Federated Learning",
+            "Flamingo",
+            "Linear Probe",
+            "Communication Overhead",
+            "External Knowledge",
+            "Prior Survey",
+            "Text Representation",
+            "Point Cloud Classification",
+            "Classification Of Point Clouds",
+            "Few-shot Classification"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-9257-8",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-9256-1",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/BigDIA68682.2025.11383022",
+      "title": "A Survey on Federated Parameter-Efficient Fine-Tuning for Large Language Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-5696-9",
+      "issn": "2771-6910",
+      "rank": 2,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Test Center, National University of Defense Technology, Xi’an, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089675173",
+            "id": 37089675173,
+            "full_name": "Quan Wen",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Test Center, National University of Defense Technology, Xi’an, P. R. China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Test Center, National University of Defense Technology, Xi’an, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086337055",
+            "id": 37086337055,
+            "full_name": "Xiongtao Zhang",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Test Center, National University of Defense Technology, Xi’an, P. R. China"
+              ]
+            }
+          },
+          {
+            "affiliation": "National Key Laboratory of Digital Intelligence Empowerment for Aeronautical Equipment, Jiuquan, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37073263200",
+            "id": 37073263200,
+            "full_name": "Nan Xiang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "National Key Laboratory of Digital Intelligence Empowerment for Aeronautical Equipment, Jiuquan, P. R. China"
+              ]
+            }
+          },
+          {
+            "affiliation": "National Key Laboratory of Digital Intelligence Empowerment for Aeronautical Equipment, Jiuquan, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088686515",
+            "id": 37088686515,
+            "full_name": "Jiwei Chen",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "National Key Laboratory of Digital Intelligence Empowerment for Aeronautical Equipment, Jiuquan, P. R. China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Test Center, National University of Defense Technology, Xi’an, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086804694",
+            "id": 37086804694,
+            "full_name": "Xun Wang",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Test Center, National University of Defense Technology, Xi’an, P. R. China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Test Center, National University of Defense Technology, Xi’an, P. R. China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086413733",
+            "id": 37086413733,
+            "full_name": "Jialong Zhang",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Test Center, National University of Defense Technology, Xi’an, P. R. China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable efficacy across diverse domains, yet their deployment in sensitive sectors is constrained by data privacy. Federated Learning (FL) offers a promising paradigm for collaborative model training without exposing raw data, while Parameter-Efficient Fine-Tuning (PEFT) techniques substantially reduce adaptation costs. This survey systematically reviews the integration of FL and PEFT for LLMs, elucidating foundational architectures, mainstream PEFT methodologies, and federated adaptation frameworks. We analyze representative approaches, highlight open challenges, including communication bottlenecks, task and model heterogeneity, parameter anonymity, and adaptation profile misalignment, and propose future research directions. Our work aims to provide a comprehensive reference for advancing privacy-preserving, scalable, and efficient LLM fine-tuning in federated environments.",
+      "article_number": "11383022",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11383022",
+      "html_url": "https://ieeexplore.ieee.org/document/11383022/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11383022/",
+      "publication_title": "2025 11th International Conference on Big Data and Information Analytics (BigDIA)",
+      "conference_location": "Nha Trang, Vietnam",
+      "conference_dates": "8-11 Nov. 2025",
+      "publication_number": 11382210,
+      "is_number": 11382546,
+      "publication_year": 2025,
+      "publication_date": "8-11 Nov. 2025",
+      "start_page": "637",
+      "end_page": "642",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 49,
+      "insert_date": "20260218",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Surveys",
+            "Training",
+            "Adaptation models",
+            "Data privacy",
+            "Costs",
+            "Reviews",
+            "Federated learning",
+            "Large language models",
+            "Data models",
+            "Optimization"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Federated Learning",
+            "Large Language Models",
+            "Parameter-Efficient Fine-Tuning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Raw Data",
+            "Data Privacy",
+            "Private Information",
+            "Variety Of Domains",
+            "Diverse Domains",
+            "Open Challenges",
+            "Federated Learning",
+            "Model Performance",
+            "Trainable Parameters",
+            "Incremental Learning",
+            "Continuous Learning",
+            "Contemporary Research",
+            "Recommender Systems",
+            "Conceptual Foundation",
+            "Conceptual Grounds",
+            "Adaptive Modulation",
+            "Fully-connected Network",
+            "Transformer Architecture",
+            "Concept Drift",
+            "Drift Detection",
+            "Self-attention Module",
+            "Black-box Optimization"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-5696-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-5695-2",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICEI68356.2025.11603745",
+      "title": "From Billions to Bits: A Taxonomy and Survey of Optimization Methods for Large Language Models",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-8141-1",
+      "rank": 3,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089875492",
+            "id": 37089875492,
+            "full_name": "Aditi Choudhary",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/675095196268814",
+            "id": 675095196268814,
+            "full_name": "Aditya Arasamangalam",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/846036608303582",
+            "id": 846036608303582,
+            "full_name": "Sathvik Kemtur",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/915423361787233",
+            "id": 915423361787233,
+            "full_name": "Sanika Madihal",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/980315269036845",
+            "id": 980315269036845,
+            "full_name": "Sahana Mucchandi",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/549689695339485",
+            "id": 549689695339485,
+            "full_name": "Tushar Bulla",
+            "author_order": 6,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          },
+          {
+            "affiliation": "KLE Technological University, Hubballi, India",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37332298100",
+            "id": 37332298100,
+            "full_name": "Uday Kulkarni",
+            "author_order": 7,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "KLE Technological University, Hubballi, India"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "Physician shortages, rising patient numbers, and urgent clinical judgments are putting increasing strain on health-care systems around the world, especially in settings with limited resources and little access to advanced diagnostic assistance. Large Language Models (LLMs) automate medical documentation, assisting in patient triage, and supporting diagnostic workflows, yet their deployment remains impractical: a 70 billion parameter model requires 140 GB of memory in full precision, inference latency exceeds clinical acceptability on standard hardware, and privacy regulations crutial on-premise deployment that most facilities cannot support. This survey addresses the deployment gap by analyzing optimization techniques that make LLaMA models available for real-world medical applications. We evaluate three quantization methods (GPTQ, AWQ, NF4) that compress model weights to 4-bit precision, and three parameter-efficient fine-tuning approaches (LoRA, QLoRA, AdaLoRA) that enable domain adaptation by training only 0.01-0.1% of model parameters. Experimental evaluation on WikiText-2 and MMLU benchmarks demonstrates that quantization achieves 3.5-4× memory reduction with 94-99% accuracy retention across models from 7B to 65B parameters, while PEFT methods maintain 95-99% of full fine-tuning performance. Combined optimization enables a 70B model to operate within 48 GB memory with sub-2-second inference on consumer GPUs—practical for clinical deployment. Analysis of PMC-LLaMA shows that LoRA fine-tuning improved MedQA-USMLE accuracy from 36.1% to 56.4% using only 0.036% trainable parameters. While identifying important gaps in domain-specific quantization, regulatory validation frameworks, and uncertainty quantification that need more research, our findings demonstrate that the strategic integration of quantization and parameter-efficient fine-tuning increases access to advanced medical AI by allowing resource-constrained facilities to deploy models previously only available to well-funded research institutions.",
+      "article_number": "11603745",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11603745",
+      "html_url": "https://ieeexplore.ieee.org/document/11603745/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11603745/",
+      "publication_title": "2025 IEEE Conference on Engineering Informatics (ICEI)",
+      "conference_location": "Melbourne/Hawthorn, Australia",
+      "conference_dates": "3-9 Nov. 2025",
+      "publication_number": 11603595,
+      "is_number": 11603685,
+      "publication_year": 2025,
+      "publication_date": "3-9 Nov. 2025",
+      "start_page": "1",
+      "end_page": "8",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260720",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Quantization (signal)",
+            "Memory",
+            "Optimization",
+            "Accuracy",
+            "LoRa",
+            "Tuning",
+            "Printing",
+            "Ranking (statistics)",
+            "Artificial intelligence"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models",
+            "Model Quantization",
+            "Parameter-Efficient Fine-Tuning(PEFT)",
+            "Medical Artificial Intelligence",
+            "LLaMA Architecture",
+            "Edge Computing",
+            "Healthcare Applications",
+            "Model Compression"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Optimization Method",
+            "Language Model",
+            "Large Language Models",
+            "Quantification Method",
+            "Regulatory Framework",
+            "Trainable Parameters",
+            "GB Memory",
+            "Domain Adaptation",
+            "Uncertainty Quantification",
+            "Shortage Of Physicians",
+            "Shortage Of Doctors",
+            "Physician Supply",
+            "Memory Reduction",
+            "Clinical Deployment",
+            "Point-of-care",
+            "Resource Constraints",
+            "Budget Constraints",
+            "Singular Value",
+            "Singular Value Decomposition",
+            "Question Answering",
+            "Incremental Learning",
+            "Continuous Learning",
+            "Artificial Intelligence Systems",
+            "Perplexity",
+            "Catastrophic Forgetting",
+            "Edge Devices",
+            "Deployment Scenarios",
+            "Regulatory Compliance",
+            "Memory Efficiency",
+            "Quantification Techniques",
+            "Deployment Model"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-8141-1",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-8140-4",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ECAI65401.2025.11095523",
+      "title": "A Hybrid Framework for Domain-Specific Knowledge Integration in Large Language Models: A Comprehensive Survey",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-1046-6",
+      "issn": "2378-7147",
+      "rank": 4,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computing, Informatics Institute of Technology, Sri Lanka",
+            "authorUrl": "https://ieeexplore.ieee.org/author/309418413469495",
+            "id": 309418413469495,
+            "full_name": "Jerrick Godwin",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computing, Informatics Institute of Technology, Sri Lanka"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Computing, Informatics Institute of Technology, Sri Lanka",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086593783",
+            "id": 37086593783,
+            "full_name": "Banuka Athuraliya",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computing, Informatics Institute of Technology, Sri Lanka"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "In recent years, Large Language Models (LLMs) have excelled in different domains to an expert's level. Nevertheless, re-training such models is computationally expensive and incurs additional costs regarding specialized downstream tasks and information that change frequently. To address this problem, end task knowledge is added through common techniques like Retrieval Augmented Generation (RAG), Parameter Efficient Fine Tuning (PEFT). This paper critically examines several existing solutions and methodologies to overcome such limitations as computational overhead, hallucination and the end task specialization constraints remains for further study. We also propose a two staged framework, which use Facebook AI Similarity Search (FAISS) with Hierarchical Navigable Small World (HNSW) optimized RAG system and fine tune with LoRA Hyperparameter Tuning under a limited computational setting. In the initial tests, finetuning with the best LoRA hyperparameters on the dataset size and the optimized top 1 context using the optimized RAG system performs very accurate responses, while top 5 context provides accurate and diverse responses with little hallucination. Both training and evaluation were done using a publicly available dataset.",
+      "article_number": "11095523",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11095523",
+      "html_url": "https://ieeexplore.ieee.org/document/11095523/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11095523/",
+      "publication_title": "2025 17th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+      "conference_location": "Targoviste, Romania",
+      "conference_dates": "26-27 June 2025",
+      "publication_number": 11095412,
+      "is_number": 11095432,
+      "publication_year": 2025,
+      "publication_date": "26-27 June 2025",
+      "start_page": "1",
+      "end_page": "9",
+      "citing_paper_count": 1,
+      "citing_patent_count": 0,
+      "download_count": 153,
+      "insert_date": "20250804",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Training",
+            "Surveys",
+            "Accuracy",
+            "Social networking (online)",
+            "Large language models",
+            "Retrieval augmented generation",
+            "Size measurement",
+            "Distance measurement",
+            "Tuning",
+            "Indexing"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Large Language Models",
+            "Retrieval Augmented Generation",
+            "Fine-tuning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Knowledge Integration",
+            "Large Language Models",
+            "Fine-tuned",
+            "Hallucinations",
+            "Response Accuracy",
+            "Hyperparameter Tuning",
+            "Hyperparameter Optimization",
+            "Computational Overhead",
+            "Large Datasets",
+            "Computational Cost",
+            "Score Threshold",
+            "Memory Usage",
+            "Quality Of Dataset",
+            "Pareto Front",
+            "Pareto Frontier",
+            "Bayesian Optimization",
+            "Fine-tuning Process",
+            "Query Time",
+            "Synthetic Data Generation",
+            "Hard Questions",
+            "High Computational Overhead"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-1046-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3315-3351-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-3352-6",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/AEMCSE65292.2025.11042839",
+      "title": "A Survey of Low-Rank Adaptation Techniques",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-1092-3",
+      "rank": 5,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Academy of Military Science, Institute of Systems Engineering, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/750624466503933",
+            "id": 750624466503933,
+            "full_name": "Zeqin Feng",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Academy of Military Science, Institute of Systems Engineering, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Academy of Military Science, Institute of Systems Engineering, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088904634",
+            "id": 37088904634,
+            "full_name": "Yongqiang Xie",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Academy of Military Science, Institute of Systems Engineering, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Academy of Military Science, Institute of Systems Engineering, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089973418",
+            "id": 37089973418,
+            "full_name": "Jiawei Yang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Academy of Military Science, Institute of Systems Engineering, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Unit 91977, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/781162366401534",
+            "id": 781162366401534,
+            "full_name": "Wenjun Hou",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Unit 91977, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Academy of Military Science, Institute of Systems Engineering, Beijing, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37655453000",
+            "id": 37655453000,
+            "full_name": "Zhongbo Li",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Academy of Military Science, Institute of Systems Engineering, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The advent of the Transformer architecture has spurred the development of Large Language Models (LLMs), yet fine-tuning these models for downstream tasks poses challenges due to high computational costs. Low-Rank Adaptation(LoRA) has emerged as a leading parameter-efficient fine-tuning (PEFT) method, LoRA is based on the Low Intrinsic Dimensionality Hypothesis, reducing trainable parameters through low-rank matrices decomposition while maintaining or enhancing performance. This paper comprehensively reviews LoRA, covering its low-rank adaptation concept, technical optimizations, architectural innovations, existing challenges and future prospective.",
+      "article_number": "11042839",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11042839",
+      "html_url": "https://ieeexplore.ieee.org/document/11042839/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11042839/",
+      "publication_title": "2025 8th International Conference on Advanced Electronic Materials, Computers and Software Engineering (AEMCSE)",
+      "conference_location": "Nanjing, China",
+      "conference_dates": "9-11 May 2025",
+      "publication_number": 11040148,
+      "is_number": 11042278,
+      "publication_year": 2025,
+      "publication_date": "9-11 May 2025",
+      "start_page": "215",
+      "end_page": "224",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 230,
+      "insert_date": "20250624",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Surveys",
+            "Computers",
+            "Technological innovation",
+            "Reviews",
+            "Large language models",
+            "Computer architecture",
+            "Transformers",
+            "Matrix decomposition",
+            "Optimization",
+            "Software engineering"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Low-Rank Adaptation",
+            "Parameter-Efficient Fine-Tuning",
+            "Large Language Models"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Computational Cost",
+            "Transformer",
+            "Matrix Factorization",
+            "Matrix Decomposition",
+            "Factor Matrices",
+            "Trainable Parameters",
+            "Language Model",
+            "Lower Dimension",
+            "Concept Of Adaptation",
+            "Low-rank Decomposition",
+            "Reduction In The Number",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Singular Value",
+            "Singular Value Decomposition",
+            "Demand For Resources",
+            "Computational Overhead",
+            "Task Requirements",
+            "Parameter Update",
+            "Rank Of Matrix",
+            "Dynamic Adjustment",
+            "Pre-trained Weights",
+            "Additional Overhead",
+            "Updated Matrix",
+            "Updated Matrices",
+            "Dynamic Allocation",
+            "Diverse Tasks",
+            "Catastrophic Forgetting",
+            "Fine-tuning Process",
+            "Foundation Model",
+            "Decomposition Parameters",
+            "Pre-trained Language Models",
+            "Generalization Capability",
+            "Learning Rate"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-1092-3",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "USB ISBN",
+            "value": "979-8-3315-1090-9",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-1091-6",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/TPAMI.2026.3657354",
+      "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+      "publisher": "IEEE",
+      "issue": "6",
+      "issn": "1939-3539",
+      "rank": 6,
+      "volume": "48",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Science and Technology, Hong Kong Metropolitan University, Hong Kong",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085914167",
+            "id": 37085914167,
+            "full_name": "Lingling Xu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Science and Technology, Hong Kong Metropolitan University, Hong Kong",
+                "School of Data Science, Lingnan University, Hong Kong"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data Science, Lingnan University, Hong Kong",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37894853100",
+            "id": 37894853100,
+            "full_name": "Haoran Xie",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data Science, Lingnan University, Hong Kong"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Data Science, Lingnan University, Hong Kong",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37532218400",
+            "id": 37532218400,
+            "full_name": "S. Joe Qin",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Data Science, Lingnan University, Hong Kong"
+              ]
+            }
+          },
+          {
+            "affiliation": "University of the School of Mathematics, Physics and Computing, Southern Queensland, Queensland, Australia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37532223100",
+            "id": 37532223100,
+            "full_name": "Xiaohui Tao",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "University of the School of Mathematics, Physics and Computing, Southern Queensland, Queensland, Australia"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Science and Technology, Hong Kong Metropolitan University, Hong Kong",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37085692543",
+            "id": 37085692543,
+            "full_name": "Fu Lee Wang",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Science and Technology, Hong Kong Metropolitan University, Hong Kong"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "With the continuous growth in the number of parameters of the Transformer-based pretrained language models (PLMs), particularly the emergence of large language models (LLMs) with billions of parameters, many natural language processing (NLP) tasks have demonstrated remarkable success. However, the enormous size and computational demands of these models pose significant challenges for adapting them to specific downstream tasks, especially in environments with limited computational resources. Parameter-Efficient Fine-Tuning (PEFT) offers an effective solution by reducing the number of fine-tuning parameters and memory usage while achieving comparable performance to full fine-tuning. The demands for fine-tuning PLMs, especially LLMs, have led to a surge in the development of PEFT methods, as depicted in Fig. 1. In this paper, we present a comprehensive and systematic review of PEFT methods for PLMs. We summarize these PEFT methods, discuss their applications, and outline future directions. Furthermore, extensive experiments are conducted using several representative PEFT methods to better understand their effectiveness in parameter efficiency and memory efficiency. By offering insights into the latest advancements and practical applications, this survey serves as an invaluable resource for researchers and practitioners seeking to navigate the challenges and opportunities presented by PEFT in the context of PLMs.",
+      "article_number": "11364256",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11364256",
+      "html_url": "https://ieeexplore.ieee.org/document/11364256/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11364256/",
+      "publication_title": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "publication_number": 34,
+      "is_number": 11512030,
+      "publication_year": 2026,
+      "publication_date": "June 2026",
+      "start_page": "6107",
+      "end_page": "6126",
+      "citing_paper_count": 38,
+      "citing_patent_count": 0,
+      "download_count": 1467,
+      "insert_date": "20260126",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Additives",
+            "Tuning",
+            "Transformers",
+            "Computational modeling",
+            "Memory management",
+            "Vectors",
+            "Electronic mail",
+            "Systematics",
+            "Surveys",
+            "Data models"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Parameter-efficient",
+            "fine-tuning",
+            "pretrained language model",
+            "large language model",
+            "memory usage"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Language Model",
+            "Pre-trained Language Models",
+            "Fine-tuning Method",
+            "Specific Tasks",
+            "Computational Resources",
+            "Model Size",
+            "Memory Usage",
+            "Computational Demands",
+            "Natural Language Processing Tasks",
+            "Memory Efficiency",
+            "Fine-tuning Of Parameters",
+            "Weight Matrix",
+            "Weight Matrices",
+            "Feed-forward Network",
+            "Feedforward Neural Network",
+            "Trainable Parameters",
+            "Vector Of Values",
+            "Fewer Parameters",
+            "Multi-task Learning",
+            "Self-supervised Learning",
+            "Contrastive Learning",
+            "Target Task",
+            "Attention Layer",
+            "Pre-trained Weights",
+            "Transformer Layers",
+            "Neural Architecture Search",
+            "Adaptive Modulation",
+            "Pre-trained Parameters",
+            "Pruning Techniques",
+            "Self-attention Layer",
+            "Source Task",
+            "Low-rank Decomposition",
+            "Efficient Adaptation"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/MWC.008.2300516",
+      "title": "Device-Edge Cooperative Fine-Tuning of Foundation Models as a 6G Service",
+      "publisher": "IEEE",
+      "issue": "3",
+      "issn": "1558-0687",
+      "rank": 7,
+      "volume": "31",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "The University of Hong Kong, Hong Kong SAR",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089909556",
+            "id": 37089909556,
+            "full_name": "Hai Wu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Hong Kong, Hong Kong SAR"
+              ]
+            }
+          },
+          {
+            "affiliation": "The University of Hong Kong, Hong Kong SAR",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086849651",
+            "id": 37086849651,
+            "full_name": "Xu Chen",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Hong Kong, Hong Kong SAR"
+              ]
+            }
+          },
+          {
+            "affiliation": "The University of Hong Kong, Hong Kong SAR",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37290266200",
+            "id": 37290266200,
+            "full_name": "Kaibin Huang",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "The University of Hong Kong, Hong Kong SAR"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Magazines",
+      "abstract": "Foundation models (FoMos), referring to large-scale AI models, possess human-like capabilities and are able to perform competitively in the domain of human intelligence. The breakthrough in FoMos has inspired researchers to deploy such models in the sixth-generation (6G) mobile networks for automating a broad range of tasks in next-generation mobile applications. While the sizes of FoMos are reaching their peaks, their next phase is expected to focus on fine-tuning the models to specific downstream tasks. This inspires us to propose the vision of FoMo fine-tuning as a 6G service. Its key feature is the exploitation of existing parameter-efficient fine-tuning (PEFT) techniques to tweak only a small fraction of model weights for a FoMo to become customized for a specific task. To materialize this vision, we survey the state-of-the-art PEFT, and then present a novel device-edge fine-tuning (DEFT) framework for providing efficient and privacy-preserving fine-tuning services at the 6G network edge. The framework consists of the following comprehensive set of techniques: control of fine-tuning parameter sizes in different transformer blocks of a FoMo; over-the-air computation for realizing neural connections in DEFT; federated DEFT in a multi-device system by downloading a FoMo emulator or gradients; on-the-fly prompt-ensemble tuning; and device-to-device prompt transfer among devices. Experiments are conducted using pre-trained FoMos with up to 11 billion parameters to demonstrate the effectiveness of DEFT techniques. The article is concluded by presenting future research opportunities.",
+      "article_number": "10558820",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10558820",
+      "html_url": "https://ieeexplore.ieee.org/document/10558820/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10558820/",
+      "publication_title": "IEEE Wireless Communications",
+      "publication_number": 7742,
+      "is_number": 10558793,
+      "publication_year": 2024,
+      "publication_date": "June 2024",
+      "start_page": "60",
+      "end_page": "67",
+      "citing_paper_count": 17,
+      "citing_patent_count": 0,
+      "download_count": 840,
+      "insert_date": "20240614",
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/JIOT.2026.3705393",
+      "title": "Enabling Edge IoT Intelligence: A Survey on Resource-Constrained Continual Learning",
+      "publisher": "IEEE",
+      "issue": "99",
+      "issn": "2372-2541",
+      "rank": 8,
+      "volume": "PP",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089457047",
+            "id": 37089457047,
+            "full_name": "Ruotong Yang",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Tianmushan Laboratory, Beihang University, Hangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086289244",
+            "id": 37086289244,
+            "full_name": "Dawei Bie",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Tianmushan Laboratory, Beihang University, Hangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086315653",
+            "id": 37086315653,
+            "full_name": "Daochun Li",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+                "Beihang University, Beijing, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/568612008068490",
+            "id": 568612008068490,
+            "full_name": "Zhuoer Yao",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+                "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37589958600",
+            "id": 37589958600,
+            "full_name": "Jinwu Xiang",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Tianmushan Laboratory, Beihang University, Hangzhou, China",
+                "Beihang University, Beijing, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Early Access Articles",
+      "abstract": "Edge Intelligence is revolutionizing the Internet of Things (IoT) by migrating AI training from centralized clouds to distributed end devices. However, enabling Continual Learning (CL) on edge nodes faces a “rigid triangle constraint” of restricted memory, limited computation, and battery-dependent energy, heavily dictated by physical SWaP (Size, Weight, and Power) limitations. This paper systematically reviews solutions for resource-constrained CL in IoT scenarios, bridging algorithmic plasticity with these physical hardware realities. To mitigate the memory wall, we synthesize static model evolution techniques. We specifically highlight the cross-paradigm integration of Parameter-Efficient Fine-Tuning (PEFT) with low-bit quantization and structural sparsity. Furthermore, this is presented alongside knowledge distillation as a zero-buffer regularizer to effectively accommodate storage-limited microcontrollers. Crucially, we emphasize energy-efficient inference as an integral part of the CL lifecycle, as continuous perception significantly depletes the same battery budget required for future backpropagation. To sustain long-term evolution, we discuss dynamic architectures, including mixture-of-experts (MoE) and cloud-edge offloading, to achieve on-demand compute allocation for energy efficiency. Beyond isolated nodes, addressing the bandwidth and privacy bottlenecks of IoT, we analyze an end-to-end green data life-cycle—ranging from online value filtering and physical storage compression to Federated Continual Learning (FCL) in untrusted environments. Ultimately, we argue that isolated algorithmic improvements are often insufficient. Therefore, grounded by empirical hardware benchmarks, the paper emphasizes compute-optimal energy frontiers and memory-hierarchy integration (HA-NAS). We propose that a full-stack system-hardware co-design incorporating non-von Neumann paradigms is an essential path for realizing autonomous, sustainable evolution across diverse next-generation IoT sectors.",
+      "article_number": "11573052",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11573052",
+      "html_url": "https://ieeexplore.ieee.org/document/11573052/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11573052/",
+      "publication_title": "IEEE Internet of Things Journal",
+      "publication_number": 6488907,
+      "is_number": 6702522,
+      "publication_year": 2026,
+      "start_page": "1",
+      "end_page": "1",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260619",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Modeling",
+            "Internet of Things",
+            "Quantization (signal)",
+            "LoRa",
+            "Learning (artificial intelligence)",
+            "Memory",
+            "Hardware",
+            "Energy",
+            "Training",
+            "Tuning"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Continual Learning",
+            "Edge Intelligence",
+            "Internet of Things (IoT)",
+            "System-Hardware Co-design",
+            "Green AI"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Internet Of Things",
+            "Incremental Learning",
+            "Continuous Learning",
+            "Internet Of Things Edge",
+            "Edge Nodes",
+            "Sparse Structure",
+            "Computation Energy",
+            "Dynamic Architecture",
+            "Physical Hardware",
+            "Internet Of Things Scenarios",
+            "Memory Wall",
+            "Memory Bottleneck",
+            "Physical Limitations",
+            "Physical Restrictions",
+            "Computational Overhead",
+            "Internet Of Things Devices",
+            "IoT Devices",
+            "Spiking Neural Networks",
+            "Spiking Neurons",
+            "Edge Devices",
+            "Industrial Internet Of Things",
+            "Dynamic Allocation",
+            "Mobile Edge Computing",
+            "Multi-access Edge Computing",
+            "Digital Twin",
+            "Catastrophic Forgetting",
+            "Practical Deployment",
+            "Resource-constrained Environments",
+            "Flash Memory",
+            "Flash Storage",
+            "Internet Of Things Nodes",
+            "IoT Nodes",
+            "Dynamic Routing",
+            "Bit-width",
+            "Physical Memory",
+            "Replay Buffer",
+            "6G Networks"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ACCESS.2025.3597049",
+      "title": "Reimagining Unit Test Generation With AI: A Journey From Evolutionary Models to Transformers",
+      "publisher": "IEEE",
+      "issn": "2169-3536",
+      "rank": 9,
+      "volume": "13",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "School of Information Technology and Engineering, Addis Ababa University, Addis Ababa, Ethiopia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/263223091455394",
+            "id": 263223091455394,
+            "full_name": "Sintayehu Zekarias Esubalew",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Information Technology and Engineering, Addis Ababa University, Addis Ababa, Ethiopia"
+              ]
+            }
+          },
+          {
+            "affiliation": "School of Information Technology and Engineering, Addis Ababa University, Addis Ababa, Ethiopia",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086316978",
+            "id": 37086316978,
+            "full_name": "Beakal Gizachew Assefa",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "School of Information Technology and Engineering, Addis Ababa University, Addis Ababa, Ethiopia"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "CCBY - IEEE is not the copyright holder of this material. Please follow the instructions via https://creativecommons.org/licenses/by/4.0/ to obtain full-text articles and stipulations in the API documentation.",
+      "content_type": "Journals",
+      "abstract": "The rapid evolution of software development necessitates efficient unit testing to ensure reliability, yet manual test case generation is labor-intensive and often inadequate for agile workflows. Despite advancements, a comprehensive review of AI-driven unit test case generation, particularly for Java, is lacking, motivating this study to address this gap. The paper examines AI algorithms for unit test case generation, focusing on Java-specific challenges like class hierarchies and dependency injection. We propose a novel taxonomy categorizing methods into traditional machine learning (e.g., genetic algorithms, SVMs), deep learning (e.g., RNNs, GNNs), and transformer-based approaches (e.g., PLBART, enhanced by LoRA and QLoRA). Key contributions include: 1) a structured taxonomy for comparing AI methods based on effectiveness, usability, and maintainability; 2) a Java-specific focus addressing enterprise system complexities; and 3) identification of research gaps, such as scalability and assertion accuracy. Findings reveal that transformer-based models like A3Test and ChatUniTest achieve up to 59% test case correctness and 77% focal method coverage, outperforming traditional methods, though challenges in computational cost and assertion accuracy persist. Tools are evaluated for integration with CI/CD pipelines and advanced capabilities like parameter-efficient fine-tuning (PEFT) using LoRA and QLoRA. This review provides a roadmap for researchers and practitioners to advance automated, high-quality unit testing for Java software quality.",
+      "article_number": "11121142",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11121142",
+      "html_url": "https://ieeexplore.ieee.org/document/11121142/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11121142/",
+      "publication_title": "IEEE Access",
+      "publication_number": 6287639,
+      "is_number": 10820123,
+      "publication_year": 2025,
+      "publication_date": "2025",
+      "start_page": "154908",
+      "end_page": "154929",
+      "citing_paper_count": 3,
+      "citing_patent_count": 0,
+      "download_count": 985,
+      "insert_date": "20250808",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Artificial intelligence",
+            "Transformers",
+            "Surveys",
+            "Software",
+            "Software testing",
+            "Test pattern generators",
+            "Taxonomy",
+            "Deep learning",
+            "Software development management",
+            "Java"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Automated unit test generation",
+            "machine learning",
+            "transformer models",
+            "LoRA",
+            "QLoRA",
+            "PLBART",
+            "software testing",
+            "java software quality"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Transformer",
+            "Unit Tests",
+            "Unit Test Generation",
+            "Machine Learning",
+            "Deep Learning",
+            "Computational Cost",
+            "Support Vector Machine",
+            "Machine Learning Approaches",
+            "Recurrent Neural Network",
+            "Deep Learning Approaches",
+            "Traditional Machine Learning",
+            "Graph Neural Networks",
+            "Manual Testing",
+            "Artificial Intelligence Methods",
+            "Software Quality",
+            "Code Quality",
+            "Advanced Capabilities",
+            "Class Hierarchy",
+            "Enterprise Systems",
+            "Long Short-term Memory Network",
+            "Long Short-term Memory",
+            "LSTM",
+            "Convolutional Neural Network",
+            "Testing Coverage",
+            "Short-term Memory Network",
+            "Software Testing",
+            "Test Package",
+            "Natural Language Processing Tasks",
+            "Deep Learning Models",
+            "High Coverage",
+            "Traditional Machine Learning Techniques"
+          ]
+        }
+      },
+      "license": "CCBY"
+    },
+    {
+      "doi": "10.1109/TGRS.2024.3515171",
+      "title": "Constructing a Multi-Modal Based Underwater Acoustic Target Recognition Method With a Pre-Trained Language-Audio Model",
+      "publisher": "IEEE",
+      "issn": "1558-0644",
+      "rank": 10,
+      "volume": "63",
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37090049088",
+            "id": 37090049088,
+            "full_name": "Bowen Fu",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+                "National Engineering Laboratory for Integrated Aerospace-Ground-Ocean Big Data Application Technology, School of Computer Science, Northwestern Polytechnical University, Xi’an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37087089699",
+            "id": 37087089699,
+            "full_name": "Jiangtao Nie",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+                "National Engineering Laboratory for Integrated Aerospace-Ground-Ocean Big Data Application Technology, School of Computer Science, Northwestern Polytechnical University, Xi’an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37399951700",
+            "id": 37399951700,
+            "full_name": "Wei Wei",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+                "National Engineering Laboratory for Integrated Aerospace-Ground-Ocean Big Data Application Technology, School of Computer Science, Northwestern Polytechnical University, Xi’an, China"
+              ]
+            }
+          },
+          {
+            "affiliation": "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37858398500",
+            "id": 37858398500,
+            "full_name": "Lei Zhang",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Shaanxi Provincial Key Laboratory of Speech and Image Information Processing, Northwestern Polytechnical University, Xi’an, China",
+                "National Engineering Laboratory for Integrated Aerospace-Ground-Ocean Big Data Application Technology, School of Computer Science, Northwestern Polytechnical University, Xi’an, China"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Journals",
+      "abstract": "Underwater acoustic target recognition (UATR) aims to accurately identify radiated acoustic signals from ships in complex maritime environments. The challenges of this task lay in how to explore discriminative representation from complex and limited acoustic samples. Recently, various deep learning-based UATR methods have been proposed. However, their performance on real sonar-collected signals remains restricted. On one hand, most methods currently adopt different representation extraction strategies to extract features from acoustic signals such as time-frequency (T-F) representation, wave representation, and joint representation. However, the limited feature representation capability and simple feature fusion strategies often limit the recognition performance improvement. On the other hand, they often overlook the knowledge gains brought by pre-trained models and the extraction of multifeature semantic correlation knowledge. This leads to unsatisfactory performance and even overfitting issues. To mitigate these issues, this article proposes a multifeature UATR (MF-UATR) method. It introduces a strongly generalized multi-modal pre-trained language-audio model and contrastive learning-based feature-level fusion strategy to semantically guide and fuse multiple features. This strategy facilitates the model in learning prior knowledge and the semantic correlations between features thereby improving recognition performance. In addition, we also considered the few-shot scenarios with extremely limited data, in which a multi-modal few-shot UATR (MMFS-UATR) scheme is proposed. It efficiently completes the few-shot UATR (FS-UATR) task by combining parameter-efficient fine-tuning (PEFT) techniques, semantic supervision strategy, and pre-trained MF-UATR. Extensive experiments on two public datasets, DeepShip and ShipsEar, demonstrate that the proposed frameworks achieve optimal target recognition performance under regular and few-shot settings.",
+      "article_number": "10792979",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10792979",
+      "html_url": "https://ieeexplore.ieee.org/document/10792979/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/10792979/",
+      "publication_title": "IEEE Transactions on Geoscience and Remote Sensing",
+      "publication_number": 36,
+      "is_number": 10807682,
+      "publication_year": 2025,
+      "publication_date": "2025",
+      "start_page": "1",
+      "end_page": "14",
+      "citing_paper_count": 5,
+      "citing_patent_count": 0,
+      "download_count": 1666,
+      "insert_date": "20241211",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Target recognition",
+            "Underwater acoustics",
+            "Feature extraction",
+            "Semantics",
+            "Acoustics",
+            "Data mining",
+            "Contrastive learning",
+            "Time-frequency analysis",
+            "Long short term memory",
+            "Correlation"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Few-shot learning",
+            "language-audio models",
+            "multifeature fusion",
+            "underwater acoustic target recognition (UATR)"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Target Recognition",
+            "Recognition Methods",
+            "Underwater Acoustic",
+            "Hydroacoustic",
+            "Underwater Sound",
+            "Acoustic Surveys",
+            "Underwater Acoustic Target",
+            "Feature Representation",
+            "Recognition Performance",
+            "Feature Fusion",
+            "Acoustic Signals",
+            "Fusion Strategy",
+            "Fusion Scheme",
+            "Multimodal Strategy",
+            "Representation Capability",
+            "Multimodal Model",
+            "Feature-level Fusion",
+            "Semantic Correlation",
+            "Feature Representation Capability",
+            "Training Set",
+            "Deep Learning",
+            "Validation Set",
+            "Knowledge Transfer",
+            "Knowledge Flows",
+            "Transmission Of Knowledge",
+            "Self-supervised Learning",
+            "Contrastive Learning",
+            "Two-stage Method",
+            "Selection Equation",
+            "Semantic Features",
+            "Text Encoder",
+            "Extract Semantic Features",
+            "Alignment Space",
+            "Multi-feature Fusion",
+            "Multi-stage Feature Fusion",
+            "Joint Model",
+            "Multimodal Learning",
+            "Multimodal Deep Learning",
+            "Few-shot Learning"
+          ]
+        }
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICASSP55912.2026.11464401",
+      "title": "How Can Quantum Deep Learning Improve Large Language Models?",
+      "publisher": "IEEE",
+      "isbn": "979-8-3315-6702-6",
+      "issn": "1520-6149",
+      "rank": 11,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Korea University",
+            "authorUrl": "https://ieeexplore.ieee.org/author/299213342041850",
+            "id": 299213342041850,
+            "full_name": "Emily Jimin Roh",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea University"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea University",
+            "authorUrl": "https://ieeexplore.ieee.org/author/468320514653138",
+            "id": 468320514653138,
+            "full_name": "Hyojun Ahn",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea University"
+              ]
+            }
+          },
+          {
+            "affiliation": "Wells Fargo",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37088461366",
+            "id": 37088461366,
+            "full_name": "Samuel Yen-Chi Chen",
+            "author_order": 3,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Wells Fargo"
+              ]
+            }
+          },
+          {
+            "affiliation": "Sookmyung Women’s University",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37089982965",
+            "id": 37089982965,
+            "full_name": "Soohyun Park",
+            "author_order": 4,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Sookmyung Women’s University"
+              ]
+            }
+          },
+          {
+            "affiliation": "Korea University",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086005052",
+            "id": 37086005052,
+            "full_name": "Joongheon Kim",
+            "author_order": 5,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Korea University"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The rapid progress of large language models (LLMs) has transformed natural language processing, yet the challenge of efficient adaptation remains unresolved. Full fine-tuning achieves strong performance but imposes prohibitive computational and memory costs. Parameter-efficient fine-tuning (PEFT) strategies, such as low-rank adaptation (LoRA), Prefix tuning, and sparse low-rank adaptation (SoRA), address this issue by reducing trainable parameters while maintaining competitive accuracy. However, these methods often encounter limitations in scalability, stability, and generalization across diverse tasks. Recent advances in quantum deep learning introduce novel opportunities through quantum-inspired encoding and parameterized quantum circuits (PQCs). In particular, the quantum-amplitude embedded adaptation (QAA) framework demonstrates expressive model updates with minimal overhead. This paper presents a systematic survey and comparative analysis of conventional PEFT methods and QAA. The analysis demonstrates trade-offs in convergence, efficiency, and representational capacity, while providing insight into the potential of quantum approaches for future LLM adaptation.",
+      "article_number": "11464401",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11464401",
+      "html_url": "https://ieeexplore.ieee.org/document/11464401/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11464401/",
+      "publication_title": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "conference_location": "Barcelona, Spain",
+      "conference_dates": "3-8 May 2026",
+      "publication_number": 11460365,
+      "is_number": 11460314,
+      "publication_year": 2026,
+      "publication_date": "3-8 May 2026",
+      "start_page": "22412",
+      "end_page": "22416",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 22,
+      "insert_date": "20260421",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Circuits",
+            "Quantum circuit",
+            "Feedback",
+            "Circuits and systems",
+            "Communications technology",
+            "Information and communication technology",
+            "LoRa",
+            "Quantum communication",
+            "Quantum circuit",
+            "Protocols"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Quantum Deep Learning",
+            "Quantum-Amplitude Embedded Adaptation",
+            "Parameter-Efficient Fine-Tuning",
+            "Large Language Model"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Large Language Models",
+            "Trainable Parameters",
+            "Transition Amplitude",
+            "Probability Amplitude",
+            "Quantum Circuit",
+            "Limited Scalability",
+            "Fine-tuning Strategy",
+            "Transformer",
+            "Parameter Space",
+            "Hilbert Space",
+            "Hidden State",
+            "Quantum State",
+            "Entangled State",
+            "Quantum Entanglement",
+            "Entangled Photons",
+            "Linear Projection",
+            "Hidden Vector"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3315-6702-6",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3315-6701-9",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    },
+    {
+      "doi": "10.1109/ICIPRoB69625.2026.11497870",
+      "title": "Parameter-Efficient Fine-Tuning for Vision-Language Models: The Post-Transformer Evolution",
+      "publisher": "IEEE",
+      "isbn": "979-8-3195-4221-2",
+      "rank": 12,
+      "authors": {
+        "authors": [
+          {
+            "affiliation": "Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka",
+            "authorUrl": "https://ieeexplore.ieee.org/author/555694012123253",
+            "id": 555694012123253,
+            "full_name": "Patalee Narasinghe",
+            "author_order": 1,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka"
+              ]
+            }
+          },
+          {
+            "affiliation": "Department of Information Technology, University of Moratuwa, Sri Lanka",
+            "authorUrl": "https://ieeexplore.ieee.org/author/37086028146",
+            "id": 37086028146,
+            "full_name": "B.H. Sudantha",
+            "author_order": 2,
+            "authorAffiliations": {
+              "authorAffiliation": [
+                "Department of Information Technology, University of Moratuwa, Sri Lanka"
+              ]
+            }
+          }
+        ]
+      },
+      "access_type": "LOCKED",
+      "content_type": "Conferences",
+      "abstract": "The rapid proliferation of large-scale Vision-Language Models (VLMs) has revolutionized multimodal artificial intelligence, enabling unprecedented capabilities in cross-modal understanding and generation. However, the substantial computational and memory requirements for fine-tuning these billion-parameter models present significant deployment challenges, particularly for resource constrained environments like mobile robots and edge devices. This survey provides a comprehensive analysis of Parameter-Efficient Fine-Tuning (PEFT) techniques tailored for VLMs in the post-Transformer era (2021-2025). PEFT methods are systematically categorized into three mechanistic paradigms: input-level adaptation (prompting), feature-level adaptation (adapters), and weight-level adaptation (reparameterization). Representative techniques, including CoOp, CoCoOp, MaPLe, CLIP-Adapter, Tip-Adapter, LoRA, DoRA, and PiSSA, are analyzed. These methods are critically evaluated regarding parameter efficiency, convergence, latency, catastrophic forgetting, and alignment preservation. Comparative benchmarking on ImageNet, VQAv2, and MMBench is used to isolate optimal strategies for distinct application needs. This analysis extends into specialized fields, critically examining adaptations for medical imaging, remote sensing, and video understanding, alongside privacy preserving federated learning. It is concluded that while competitive performance is offered by methods like DoRA and Tip-Adapter-F, the optimal strategy is critically dependent on the specific architecture, task complexity, and deployment constraints.",
+      "article_number": "11497870",
+      "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11497870",
+      "html_url": "https://ieeexplore.ieee.org/document/11497870/",
+      "abstract_url": "https://ieeexplore.ieee.org/document/11497870/",
+      "publication_title": "2026 International Conference on Image Processing and Robotics (ICIPRoB)",
+      "conference_location": "Mount-Lavinia, Sri Lanka",
+      "conference_dates": "7-8 March 2026",
+      "publication_number": 11496635,
+      "is_number": 11497781,
+      "publication_year": 2026,
+      "publication_date": "7-8 March 2026",
+      "start_page": "1",
+      "end_page": "6",
+      "citing_paper_count": 0,
+      "citing_patent_count": 0,
+      "download_count": 0,
+      "insert_date": "20260505",
+      "index_terms": {
+        "ieee_terms": {
+          "terms": [
+            "Feeds",
+            "LoRa",
+            "Videos",
+            "Optical projectors",
+            "Video equipment",
+            "Routing",
+            "Communication systems",
+            "Protocols",
+            "Data communication",
+            "HTTP"
+          ]
+        },
+        "author_terms": {
+          "terms": [
+            "Vision-Language Models",
+            "Parameter-Efficient Fine-Tuning",
+            "Edge AI",
+            "Multimodal Learning",
+            "Low-Rank Adaptation",
+            "Prompt Tuning"
+          ]
+        },
+        "dynamic_index_terms": {
+          "terms": [
+            "Vision-language Models",
+            "ImageNet",
+            "Remote Sensing",
+            "Critical Evaluation",
+            "Critical Rate",
+            "Large-scale Models",
+            "Federated Learning",
+            "Edge Devices",
+            "Multimodal Interaction",
+            "Multimodal Interface",
+            "Video Understanding",
+            "Catastrophic Forgetting",
+            "Semantic",
+            "Recent Analysis",
+            "Feature Space",
+            "Visual Features",
+            "Visual Characteristics",
+            "Projector",
+            "Domain Shift",
+            "Shift In Distribution",
+            "Latent Space",
+            "Embedding Space",
+            "Multimodal Learning",
+            "Multimodal Deep Learning",
+            "Foundation Model",
+            "Vision Transformer",
+            "Original Feature Space",
+            "Maximum Mutual Information",
+            "Visual Question Answering"
+          ]
+        }
+      },
+      "isbn_formats": {
+        "isbns": [
+          {
+            "format": "Print on Demand(PoD) ISBN",
+            "value": "979-8-3195-4221-2",
+            "isbnType": "New-2005"
+          },
+          {
+            "format": "Electronic ISBN",
+            "value": "979-8-3195-4220-5",
+            "isbnType": "New-2005"
+          }
+        ]
+      },
+      "license": "IEEE"
+    }
+  ],
+  "raw_meta": {
+    "total_records": 12,
+    "total_searched": 7355163
+  }
+}

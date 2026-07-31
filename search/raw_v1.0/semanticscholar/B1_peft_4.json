@@ -1,0 +1,830 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "\"prompt tuning\" OR \"prefix tuning\" OR \"BitFit\"",
+  "year": "2019-2026",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-21T20:03:22Z",
+  "total_results_reported": 19,
+  "returned": 19,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "1be761bd0dba412077a1d0ba8cc1bdddefaea2b2",
+      "externalIds": {
+        "DBLP": "conf/naacl/CaoPH22",
+        "DOI": "10.18653/v1/2022.findings-naacl.64",
+        "CorpusId": 249456083
+      },
+      "title": "Attention Fusion: a light yet efficient late fusion mechanism for task adaptation in NLU",
+      "venue": "NAACL-HLT",
+      "year": 2022,
+      "citationCount": 15,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.18653/v1/2022.findings-naacl.64",
+        "status": "CLOSED",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2022.findings-naacl.64?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2022.findings-naacl.64, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109908684",
+          "name": "Jin Cao"
+        },
+        {
+          "authorId": "1588348842",
+          "name": "C. Prakash"
+        },
+        {
+          "authorId": "1836135",
+          "name": "Wael Hamza"
+        }
+      ],
+      "abstract": "Fine-tuning a pre-trained language model us-ing annotated data has become the de-facto standard for adapting general-purpose pre-trained models like BERT to downstream tasks. However, given the trend of larger pre-trained models, ﬁne-tuning these models for each downstream task is parameter-inefﬁcient and computationally-expensive deeming this approach sub-optimal for adoption by NLU systems. In recent years, various approaches have been proposed for parameter efﬁcient task adaptation such as Adaptor, Bitﬁt, Prompt tuning, Preﬁx tuning etc. However, most of these efforts propose to insert task spe-ciﬁc parameters in-between or inside intermediate layers of the pre-trained encoder resulting in higher computational cost due to back-propagation of errors to all layers. To mitigate this issue, we propose a light but efﬁcient, attention based fusion module which computes task-attuned token representations by aggregating intermediate layer representations from a pre-trained network. Our proposed fusion module trains only 0.0009% of total parameters and achieves competitive performance to the standard ﬁne-tuning approach on various tasks. It is also decoupled from the pre-trained network making it efﬁcient during computation and scalable during deployment. Last but not the least, we demonstrate that our proposed attention-fusion mechanism can transfer effectively to different languages for further re-use and expansion."
+    },
+    {
+      "paperId": "12538a7d210b4ed2a31499f3e0e8f6b2ad4d401d",
+      "externalIds": {
+        "ArXiv": "2410.01731",
+        "DBLP": "journals/corr/abs-2410-01731",
+        "DOI": "10.48550/arXiv.2410.01731",
+        "CorpusId": 273025687
+      },
+      "title": "ComfyGen: Prompt-Adaptive Workflows for Text-to-Image Generation",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.01731, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "134639223",
+          "name": "Rinon Gal"
+        },
+        {
+          "authorId": "2293393933",
+          "name": "Adi Haviv"
+        },
+        {
+          "authorId": "1850630812",
+          "name": "Yuval Alaluf"
+        },
+        {
+          "authorId": "2254256512",
+          "name": "A. Bermano"
+        },
+        {
+          "authorId": "2186405166",
+          "name": "Daniel Cohen-Or"
+        },
+        {
+          "authorId": "2065001062",
+          "name": "Gal Chechik"
+        }
+      ],
+      "abstract": "The practical use of text-to-image generation has evolved from simple, monolithic models to complex workflows that combine multiple specialized components. While workflow-based approaches can lead to improved image quality, crafting effective workflows requires significant expertise, owing to the large number of available components, their complex inter-dependence, and their dependence on the generation prompt. Here, we introduce the novel task of prompt-adaptive workflow generation, where the goal is to automatically tailor a workflow to each user prompt. We propose two LLM-based approaches to tackle this task: a tuning-based method that learns from user-preference data, and a training-free method that uses the LLM to select existing flows. Both approaches lead to improved image quality when compared to monolithic models or generic, prompt-independent workflows. Our work shows that prompt-dependent flow prediction offers a new pathway to improving text-to-image generation quality, complementing existing research directions in the field."
+    },
+    {
+      "paperId": "e2a41ff7eae472616272f39566e86d24a37f05e8",
+      "externalIds": {
+        "ArXiv": "2601.07833",
+        "DBLP": "journals/corr/abs-2601-07833",
+        "DOI": "10.48550/arXiv.2601.07833",
+        "CorpusId": 284648031
+      },
+      "title": "Tuning-free Visual Effect Transfer across Videos",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.07833, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2299364591",
+          "name": "Maxwell Jones"
+        },
+        {
+          "authorId": "94395014",
+          "name": "Rameen Abdal"
+        },
+        {
+          "authorId": "2346323732",
+          "name": "Or Patashnik"
+        },
+        {
+          "authorId": "2257253563",
+          "name": "R. Salakhutdinov"
+        },
+        {
+          "authorId": "2292401534",
+          "name": "Sergey Tulyakov"
+        },
+        {
+          "authorId": "2398866806",
+          "name": "Jun-Yan Zhu"
+        },
+        {
+          "authorId": "2335658936",
+          "name": "K. Wang"
+        }
+      ],
+      "abstract": "We present RefVFX, a new framework that transfers complex temporal effects from a reference video onto a target video or image in a feed-forward manner. While existing methods excel at prompt-based or keyframe-conditioned editing, they struggle with dynamic temporal effects such as dynamic lighting changes or character transformations, which are difficult to describe via text or static conditions. Transferring a video effect is challenging, as the model must integrate the new temporal dynamics with the input video's existing motion and appearance. % To address this, we introduce a large-scale dataset of triplets, where each triplet consists of a reference effect video, an input image or video, and a corresponding output video depicting the transferred effect. Creating this data is non-trivial, especially the video-to-video effect triplets, which do not exist naturally. To generate these, we propose a scalable automated pipeline that creates high-quality paired videos designed to preserve the input's motion and structure while transforming it based on some fixed, repeatable effect. We then augment this data with image-to-video effects derived from LoRA adapters and code-based temporal effects generated through programmatic composition. Building on our new dataset, we train our reference-conditioned model using recent text-to-video backbones. Experimental results demonstrate that RefVFX produces visually consistent and temporally coherent edits, generalizes across unseen effect categories, and outperforms prompt-only baselines in both quantitative metrics and human preference. See our website at https://snap-research.github.io/RefVFX/"
+    },
+    {
+      "paperId": "574ff035441d51e59d2e4f9aafba8b79bc9896ae",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2605-15307",
+        "ArXiv": "2605.15307",
+        "DOI": "10.48550/arXiv.2605.15307",
+        "CorpusId": 288392998
+      },
+      "title": "Sound Sparks Motion: Audio and Text Tuning for Video Editing",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2605.15307, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2331858265",
+          "name": "AmirHossein Naghi Razlighi"
+        },
+        {
+          "authorId": "2212030651",
+          "name": "Aryan Mikaeili"
+        },
+        {
+          "authorId": "1399132068",
+          "name": "Ali Mahdavi-Amiri"
+        },
+        {
+          "authorId": "2283483104",
+          "name": "Daniel Cohen-Or"
+        },
+        {
+          "authorId": "2299230499",
+          "name": "Y. Chrysanthou"
+        }
+      ],
+      "abstract": "Motion-centric video editing remains difficult for large generative video models, which often respond well to appearance changes but struggle to produce specific, localized actions or state transitions in an existing clip. We introduce Sound Sparks Motion, a training-free framework that enables motion editing in an audio-visual video generation model by tuning its internal multimodal conditioning signals at test time. Rather than modifying model weights, our method tunes only two lightweight variables: an audio latent derived from the source video and a residual perturbation in the text-conditioning. We find that this combination can encourage motion edits that the underlying model often struggles to realize under prompt-only control. Since there is no direct way to evaluate temporal alignment between text and motion, we guide the tuning process using a vision-language model that provides feedback indicating whether the intended motion appears in the generated video. This simple supervision yields an effective semantic objective for motion editing, while regularization and perceptual-temporal constraints help preserve content and visual quality. Beyond per-video tuning, we show that the learned latent controls are transferable across videos, suggesting that they capture reusable motion-edit directions rather than overfitting to a single example. Our results highlight multimodal conditioning tuning, particularly through the audio pathway, as a promising direction for motion-aware video editing, and suggest that test-time tuning can serve as a lightweight probing mechanism that helps reveal latent motion controls embedded in the model's multimodal conditioning. Code and data are available via our project page: https://amirhossein-razlighi.github.io/Sound_Sparks_Motion/"
+    },
+    {
+      "paperId": "35df2a7d78a8b7057d40d73bbb9a61f4643f92c4",
+      "externalIds": {
+        "ArXiv": "2302.12228",
+        "DBLP": "journals/tog/GalAABCC23",
+        "DOI": "10.1145/3592133",
+        "CorpusId": 257364757
+      },
+      "title": "Encoder-based Domain Tuning for Fast Personalization of Text-to-Image Models",
+      "venue": "ACM Transactions on Graphics",
+      "year": 2023,
+      "citationCount": 259,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2302.12228",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.12228, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "134639223",
+          "name": "Rinon Gal"
+        },
+        {
+          "authorId": "34905004",
+          "name": "Moab Arar"
+        },
+        {
+          "authorId": "34815079",
+          "name": "Y. Atzmon"
+        },
+        {
+          "authorId": "1755628",
+          "name": "Amit H. Bermano"
+        },
+        {
+          "authorId": "2065001062",
+          "name": "Gal Chechik"
+        },
+        {
+          "authorId": "1388323541",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": "Text-to-image personalization aims to teach a pre-trained diffusion model to reason about novel, user provided concepts, embedding them into new scenes guided by natural language prompts. However, current personalization approaches struggle with lengthy training times, high storage requirements or loss of identity. To overcome these limitations, we propose an encoder-based domain-tuning approach. Our key insight is that by underfitting on a large set of concepts from a given domain, we can improve generalization and create a model that is more amenable to quickly adding novel concepts from the same domain. Specifically, we employ two components: First, an encoder that takes as an input a single image of a target concept from a given domain, e.g. a specific face, and learns to map it into a word-embedding representing the concept. Second, a set of regularized weight-offsets for the text-to-image model that learn how to effectively injest additional concepts. Together, these components are used to guide the learning of unseen concepts, allowing us to personalize a model using only a single image and as few as 5 training steps --- accelerating personalization from dozens of minutes to seconds, while preserving quality. Code and trained encoders will be available at our project page."
+    },
+    {
+      "paperId": "6f4cc536f9ed83d0dbf7e919dc609be12aa0848a",
+      "externalIds": {
+        "ACL": "2023.acl-long.806",
+        "ArXiv": "2212.09689",
+        "DBLP": "conf/acl/HonovichSLS23",
+        "DOI": "10.48550/arXiv.2212.09689",
+        "CorpusId": 254853659
+      },
+      "title": "Unnatural Instructions: Tuning Language Models with (Almost) No Human Labor",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2022,
+      "citationCount": 487,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2212.09689",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.09689, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1754700648",
+          "name": "Or Honovich"
+        },
+        {
+          "authorId": "2073456043",
+          "name": "Thomas Scialom"
+        },
+        {
+          "authorId": "39455775",
+          "name": "Omer Levy"
+        },
+        {
+          "authorId": "32246932",
+          "name": "Timo Schick"
+        }
+      ],
+      "abstract": "Instruction tuning enables pretrained language models to perform new tasks from inference-time natural language descriptions. These approaches rely on vast amounts of human supervision in the form of crowdsourced datasets or user interactions. In this work, we introduce Unnatural Instructions: a large dataset of creative and diverse instructions, collected with virtually no human labor. We collect 64,000 examples by prompting a language model with three seed examples of instructions and eliciting a fourth. This set is then expanded by prompting the model to rephrase each instruction, creating a total of approximately 240,000 examples of instructions, inputs, and outputs. Experiments show that despite containing a fair amount of noise, training on Unnatural Instructions rivals the effectiveness of training on open-source manually-curated datasets, surpassing the performance of models such as T0++ and Tk-Instruct across various benchmarks. These results demonstrate the potential of model-generated data as a cost-effective alternative to crowdsourcing for dataset expansion and diversification."
+    },
+    {
+      "paperId": "bd5c066a63ae6a5fcf99e53551161446baf54a27",
+      "externalIds": {
+        "DBLP": "conf/siggrapha/ArarGACCSB23",
+        "ArXiv": "2307.06925",
+        "DOI": "10.1145/3610548.3618173",
+        "CorpusId": 259847716
+      },
+      "title": "Domain-Agnostic Tuning-Encoder for Fast Personalization of Text-To-Image Models",
+      "venue": "ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia",
+      "year": 2023,
+      "citationCount": 106,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2307.06925",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.06925, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "34905004",
+          "name": "Moab Arar"
+        },
+        {
+          "authorId": "134639223",
+          "name": "Rinon Gal"
+        },
+        {
+          "authorId": "34815079",
+          "name": "Y. Atzmon"
+        },
+        {
+          "authorId": "2065001062",
+          "name": "Gal Chechik"
+        },
+        {
+          "authorId": "1388323541",
+          "name": "D. Cohen-Or"
+        },
+        {
+          "authorId": "2947946",
+          "name": "Ariel Shamir"
+        },
+        {
+          "authorId": "1755628",
+          "name": "Amit H. Bermano"
+        }
+      ],
+      "abstract": "Text-to-image (T2I) personalization allows users to guide the creative image generation process by combining their own visual concepts in natural language prompts. Recently, encoder-based techniques have emerged as a new effective approach for T2I personalization, reducing the need for multiple images and long training times. However, most existing encoders are limited to a single-class domain, which hinders their ability to handle diverse concepts. In this work, we propose a domain-agnostic method that does not require any specialized dataset or prior information about the personalized concepts. We introduce a novel contrastive-based regularization technique to maintain high fidelity to the target concept characteristics while keeping the predicted embeddings close to editable regions of the latent space, by pushing the predicted tokens toward their nearest existing CLIP tokens. Our experimental results demonstrate the effectiveness of our approach and show how the learned tokens are more semantic than tokens predicted by unregularized models. This leads to a better representation that achieves state-of-the-art performance while being more flexible than previous methods."
+    },
+    {
+      "paperId": "544f01263571d95a3eeb214bfb58771b698681b5",
+      "externalIds": {
+        "ArXiv": "2404.03620",
+        "DBLP": "conf/eccv/GalLRPBCC24",
+        "DOI": "10.48550/arXiv.2404.03620",
+        "CorpusId": 268889405
+      },
+      "title": "LCM-Lookahead for Encoder-based Text-to-Image Personalization",
+      "venue": "European Conference on Computer Vision",
+      "year": 2024,
+      "citationCount": 54,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.03620, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "134639223",
+          "name": "Rinon Gal"
+        },
+        {
+          "authorId": "2294872828",
+          "name": "Or Lichter"
+        },
+        {
+          "authorId": "2511847",
+          "name": "Elad Richardson"
+        },
+        {
+          "authorId": "2819477",
+          "name": "Or Patashnik"
+        },
+        {
+          "authorId": "2254256512",
+          "name": "A. Bermano"
+        },
+        {
+          "authorId": "2065001062",
+          "name": "Gal Chechik"
+        },
+        {
+          "authorId": "2283483104",
+          "name": "Daniel Cohen-Or"
+        }
+      ],
+      "abstract": "Recent advancements in diffusion models have introduced fast sampling methods that can effectively produce high-quality images in just one or a few denoising steps. Interestingly, when these are distilled from existing diffusion models, they often maintain alignment with the original model, retaining similar outputs for similar prompts and seeds. These properties present opportunities to leverage fast sampling methods as a shortcut-mechanism, using them to create a preview of denoised outputs through which we can backpropagate image-space losses. In this work, we explore the potential of using such shortcut-mechanisms to guide the personalization of text-to-image models to specific facial identities. We focus on encoder-based personalization approaches, and demonstrate that by tuning them with a lookahead identity loss, we can achieve higher identity fidelity, without sacrificing layout diversity or prompt alignment. We further explore the use of attention sharing mechanisms and consistent data generation for the task of personalization, and find that encoder training can benefit from both."
+    },
+    {
+      "paperId": "be1b3bf46665be497c65cdb0a2d9d5b32fc802d5",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2511-08633",
+        "ArXiv": "2511.08633",
+        "DOI": "10.48550/arXiv.2511.08633",
+        "CorpusId": 282940079
+      },
+      "title": "Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "citationCount": 10,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.08633, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "150923745",
+          "name": "Assaf Singer"
+        },
+        {
+          "authorId": "2131137588",
+          "name": "Noam Rotstein"
+        },
+        {
+          "authorId": "144463171",
+          "name": "A. Mann"
+        },
+        {
+          "authorId": "2307102090",
+          "name": "Ron Kimmel"
+        },
+        {
+          "authorId": "2528439",
+          "name": "O. Litany"
+        }
+      ],
+      "abstract": "Diffusion-based video generation can create realistic videos, yet existing image- and text-based conditioning fails to offer precise motion control. Prior methods for motion-conditioned synthesis typically require model-specific fine-tuning, which is computationally expensive and restrictive. We introduce Time-to-Move (TTM), a training-free, plug-and-play framework for motion- and appearance-controlled video generation with image-to-video (I2V) diffusion models. Our key insight is to use crude reference animations obtained through user-friendly manipulations such as cut-and-drag or depth-based reprojection. Motivated by SDEdit's use of coarse layout cues for image editing, we treat the crude animations as coarse motion cues and adapt the mechanism to the video domain. We preserve appearance with image conditioning and introduce dual-clock denoising, a region-dependent strategy that enforces strong alignment in motion-specified regions while allowing flexibility elsewhere, balancing fidelity to user intent with natural dynamics. This lightweight modification of the sampling process incurs no additional training or runtime cost and is compatible with any backbone. Extensive experiments on object and camera motion benchmarks show that TTM matches or exceeds existing training-based baselines in realism and motion control. Beyond this, TTM introduces a unique capability: precise appearance control through pixel-level conditioning, exceeding the limits of text-only prompting. Visit our project page for video examples and code: https://time-to-move.github.io/."
+    },
+    {
+      "paperId": "0635948e928702098e2517c27562a93898ac8fe1",
+      "externalIds": {
+        "ArXiv": "2507.17963",
+        "DBLP": "journals/corr/abs-2507-17963",
+        "DOI": "10.1145/3757377.3763987",
+        "CorpusId": 280017492
+      },
+      "title": "Zero-Shot Dynamic Concept Personalization with Grid-Based LoRA",
+      "venue": "ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia",
+      "year": 2025,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.17963, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "94395014",
+          "name": "Rameen Abdal"
+        },
+        {
+          "authorId": "2346323732",
+          "name": "Or Patashnik"
+        },
+        {
+          "authorId": "2284986967",
+          "name": "Ekaterina Deyneka"
+        },
+        {
+          "authorId": "2372448571",
+          "name": "Hao Chen"
+        },
+        {
+          "authorId": "10753214",
+          "name": "Aliaksandr Siarohin"
+        },
+        {
+          "authorId": "2292401534",
+          "name": "Sergey Tulyakov"
+        },
+        {
+          "authorId": "2283483104",
+          "name": "Daniel Cohen-Or"
+        },
+        {
+          "authorId": "3451442",
+          "name": "Kfir Aberman"
+        }
+      ],
+      "abstract": "Recent advances in text-to-video generation have enabled high-quality synthesis from text and image prompts. While the personalization of dynamic concepts, which capture subject-specific appearance and motion from a single video, is now feasible, most existing methods require per-instance fine-tuning, limiting scalability. We introduce a fully zero-shot framework for dynamic concept personalization in text-to-video models. Our method leverages structured 2×2 video grids that spatially organize input and output pairs, enabling the training of lightweight Grid-LoRA adapters for editing and composition within these grids. At inference, a dedicated Grid Fill module completes partially observed layouts, producing temporally coherent and identity preserving outputs. Once trained, the entire system operates in a single forward pass, generalizing to previously unseen dynamic concepts without any test-time optimization. Extensive experiments demonstrate high-quality and consistent results across a wide range of subjects beyond trained concepts and editing scenarios."
+    },
+    {
+      "paperId": "c2b25f8f54f20693cd3c2280cadea774765b5135",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2510-10715",
+        "ArXiv": "2510.10715",
+        "DOI": "10.48550/arXiv.2510.10715",
+        "CorpusId": 282056964
+      },
+      "title": "VLM-Guided Adaptive Negative Prompting for Creative Generation",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.10715, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2303396444",
+          "name": "Shelly Golan"
+        },
+        {
+          "authorId": "1702992975",
+          "name": "Yotam Nitzan"
+        },
+        {
+          "authorId": "2385497714",
+          "name": "Zongze Wu"
+        },
+        {
+          "authorId": "2819477",
+          "name": "Or Patashnik"
+        }
+      ],
+      "abstract": "Creative generation is the synthesis of new, surprising, and valuable samples that reflect user intent yet cannot be envisioned in advance. This task aims to extend human imagination, enabling the discovery of visual concepts that exist in the unexplored spaces between familiar domains. While text-to-image diffusion models excel at rendering photorealistic scenes that faithfully match user prompts, they still struggle to generate genuinely novel content. Existing approaches to enhance generative creativity either rely on interpolation of image features, which restricts exploration to predefined categories, or require time-intensive procedures such as embedding optimization or model fine-tuning. We propose VLM-Guided Adaptive Negative-Prompting, a training-free, inference-time method that promotes creative image generation while preserving the validity of the generated object. Our approach utilizes a vision-language model (VLM) that analyzes intermediate outputs of the generation process and adaptively steers it away from conventional visual concepts, encouraging the emergence of novel and surprising outputs. We evaluate creativity through both novelty and validity, using statistical metrics in the CLIP embedding space. Through extensive experiments, we show consistent gains in creative novelty with negligible computational overhead. Moreover, unlike existing methods that primarily generate single objects, our approach extends to complex scenarios, such as generating coherent sets of creative objects and preserving creativity within elaborate compositional prompts. Our method integrates seamlessly into existing diffusion pipelines, offering a practical route to producing creative outputs that venture beyond the constraints of textual descriptions."
+    },
+    {
+      "paperId": "f76de27dc79b3eb351cb5bb4880b663276227b99",
+      "externalIds": {
+        "DBLP": "journals/peerj-cs/AlkudahIASA26",
+        "DOI": "10.7717/peerj-cs.3654",
+        "CorpusId": 286314409
+      },
+      "title": "FakeNews-TransAug: an enhanced AraBERT-Based deep learning model with data augmentation for addressing class imbalance in Arabic fake news detection",
+      "venue": "PeerJ Computer Science",
+      "year": 2026,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.7717/peerj-cs.3654",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.7717/peerj-cs.3654?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7717/peerj-cs.3654, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2386329611",
+          "name": "Noor M. Alkudah"
+        },
+        {
+          "authorId": "2343737873",
+          "name": "N. Idris"
+        },
+        {
+          "authorId": "2285440308",
+          "name": "M. Abushariah"
+        },
+        {
+          "authorId": "2053171518",
+          "name": "A. Q. M. Sabri"
+        },
+        {
+          "authorId": "2047943294",
+          "name": "Mohannad Alkhalili"
+        }
+      ],
+      "abstract": "\n The rapid proliferation of fake news and fake news in digital media, particularly in the Arabic language, poses serious threats to public trust and societal stability. This article introduces FakeNews-TransAug, a novel deep learning model designed to enhance Arabic fake news detection through advanced language modelling and data augmentation. The model integrates Arabic Bidirectional Encoder Representations from Transformers (AraBERT), a transformer-based language model, fine-tuned with domain-specific features and augmented with synthetic samples generated\n via\n tailored prompt engineering. By addressing class imbalance and capturing the linguistic and contextual complexities of Arabic, the model accuracy is 86.5%, precision is 74%, recall is 62%, F1-score is 68%, and Area under the Receiver Operating Characteristic Curve (AUC-ROC) is 90%. Tests using the JoFakeNews dataset show that the suggested approach works, especially when it comes to finding categories that are not well represented. These results show that FakeNews-TransAug is a strong and flexible standard for finding fake news in Arabic, offering a practical solution for combating fake news in the evolving digital media landscape and demonstrating strong performance in imbalanced data scenarios. This is the first Arabic fake-news detection framework that integrates AraBERT with prompt-engineered data augmentation and parameter-efficient fine-tuning (Quantized Low-Rank Adaptation (QLoRA), BitFit, Prefix-Tuning) to directly mitigate class imbalance while maintaining scalability and high discriminative performance.\n"
+    },
+    {
+      "paperId": "2d6b53d487f9175e6057288e5dc1f6b76272b8d0",
+      "externalIds": {
+        "ArXiv": "2606.23682",
+        "CorpusId": 289631303
+      },
+      "title": "Keep The Essentials: Efficient Reference Conditioned Generation via Token Dropping",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2606.23682, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1669572692",
+          "name": "Rishubh Parihar"
+        },
+        {
+          "authorId": "2403982580",
+          "name": "Ayush Raina"
+        },
+        {
+          "authorId": "2289958204",
+          "name": "R. V. Babu"
+        },
+        {
+          "authorId": "2819477",
+          "name": "Or Patashnik"
+        }
+      ],
+      "abstract": "Reference-based diffusion models enable highly controllable image generation by leveraging elements from input images to guide prompt-driven synthesis. However, these models are computationally expensive in runtime, and their cost scales severely with the number of input references. While the efficiency of diffusion models has been extensively studied in the context of prompt-driven generation, it remains largely under-explored in the realm of reference-based models. This setting presents unique challenges not addressed by methods focusing solely on generation. In particular, the wasteful representation of references as dense token grids offers significant opportunities for improvement. In this work, we present Sparse Context, a method for constructing sparse reference representations by retaining only a reduced subset of reference tokens. We observe that even without modifying the model, dropping a significant portion of reference tokens at inference time largely preserves its generation capabilities. To fully realize this potential, we fine-tune the model with random token dropping at varying ratios, encouraging robustness to partial reference representations. Crucially, this training strategy decouples the model from any specific token selection rule, allowing flexible control at inference time. At inference time, instead of random dropping, we apply task-aware token selection strategies that prioritize the most informative regions of the reference images, adapting the token budget to the input and task requirements. Extensive experiments show our method achieves a 4x increase in inference speed for multi-reference generation and an 2x for single reference generation. Importantly, this efficiency is achieved without compromising visual quality across both spatially-aligned editing and subject-driven generation."
+    },
+    {
+      "paperId": "90428f3a8caa5082f825ebf3138514ddf273dae3",
+      "externalIds": {
+        "ArXiv": "2211.09794",
+        "DBLP": "conf/cvpr/MokadyHAPC23",
+        "DOI": "10.1109/CVPR52729.2023.00585",
+        "CorpusId": 253581838
+      },
+      "title": "Null-text Inversion for Editing Real Images using Guided Diffusion Models",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2022,
+      "citationCount": 1404,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2211.09794",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.09794, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "147940380",
+          "name": "Ron Mokady"
+        },
+        {
+          "authorId": "51437320",
+          "name": "Amir Hertz"
+        },
+        {
+          "authorId": "3451442",
+          "name": "Kfir Aberman"
+        },
+        {
+          "authorId": "1782328",
+          "name": "Y. Pritch"
+        },
+        {
+          "authorId": "1388323541",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": "Recent large-scale text-guided diffusion models provide powerful image generation capabilities. Currently, a massive effort is given to enable the modification of these images using text only as means to offer intuitive and versatile editing tools. To edit a real image using these state-of-the-art tools, one must first invert the image with a meaningful text prompt into the pretrained model's domain. In this paper, we introduce an accurate inversion technique and thus facilitate an intuitive text-based modification of the image. Our proposed inversion consists of two key novel components: (i) Pivotal inversion for diffusion models. While current methods aim at mapping random noise samples to a single input image, we use a single pivotal noise vector for each timestamp and optimize around it. We demonstrate that a direct DDIM inversion is inadequate on its own, but does provide a rather good anchor for our optimization. (ii) Null-text optimization, where we only modify the unconditional textual embedding that is used for classifier-free guidance, rather than the input text embedding. This allows for keeping both the model weights and the conditional embedding intact and hence enables applying prompt-based editing while avoiding the cumbersome tuning of the model's weights. Our null-text inversion, based on the publicly available Stable Diffusion model, is extensively evaluated on a variety of images and various prompt editing, showing high-fidelity editing of real images."
+    },
+    {
+      "paperId": "c320eb9255940cec341af7aef9c8c38a7a167d6a",
+      "externalIds": {
+        "DBLP": "conf/cvpr/HertzVFC24",
+        "ArXiv": "2312.02133",
+        "DOI": "10.1109/CVPR52733.2024.00457",
+        "CorpusId": 265608730
+      },
+      "title": "Style Aligned Image Generation via Shared Attention",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2023,
+      "citationCount": 268,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2312.02133",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2312.02133, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51437320",
+          "name": "Amir Hertz"
+        },
+        {
+          "authorId": "2268674522",
+          "name": "Andrey Voynov"
+        },
+        {
+          "authorId": "2266840927",
+          "name": "Shlomi Fruchter"
+        },
+        {
+          "authorId": "2257215972",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": "Large-scale Text-to-Image (T2I) models have rapidly gained prominence across creative fields, generating visu- ally compelling outputs from textual prompts. However, controlling these models to ensure consistent style remains challenging, with existing methods necessitating fine-tuning and manual intervention to disentangle content and style. In this paper, we introduce StyleAligned, a novel technique de- signed to establish style alignment among a series of gener- ated images. By employing minimal ‘attention sharing’ during the diffusion process, our method maintains style con- sistency across images within T2I models. This approach allows for the creation of style-consistent images using a reference style through a straightforward inversion operation. Our method's evaluation across diverse styles and text prompts demonstrates high-quality synthesis and fidelity, underscoring its efficacy in achieving consistent style across various inputs."
+    },
+    {
+      "paperId": "2871341240e3f814df0209225da8bbfd85cc1def",
+      "externalIds": {
+        "ArXiv": "2402.11764",
+        "DBLP": "journals/corr/abs-2402-11764",
+        "ACL": "2024.ltedi-1.8",
+        "DOI": "10.48550/arXiv.2402.11764",
+        "CorpusId": 267751471
+      },
+      "title": "ChatGPT Based Data Augmentation for Improved Parameter-Efficient Debiasing of LLMs",
+      "venue": "LTEDI",
+      "year": 2024,
+      "citationCount": 18,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.11764, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2125166410",
+          "name": "P. Han"
+        },
+        {
+          "authorId": "3299344",
+          "name": "Rafal Kocielnik"
+        },
+        {
+          "authorId": "2275055974",
+          "name": "Adhithya Saravanan"
+        },
+        {
+          "authorId": "2234038085",
+          "name": "Roy Jiang"
+        },
+        {
+          "authorId": "2257263499",
+          "name": "Or Sharir"
+        },
+        {
+          "authorId": "2257161858",
+          "name": "Anima Anandkumar"
+        }
+      ],
+      "abstract": "Large Language models (LLMs), while powerful, exhibit harmful social biases. Debiasing is often challenging due to computational costs, data constraints, and potential degradation of multi-task language capabilities. This work introduces a novel approach utilizing ChatGPT to generate synthetic training data, aiming to enhance the debiasing of LLMs. We propose two strategies: Targeted Prompting, which provides effective debiasing for known biases but necessitates prior specification of bias in question; and General Prompting, which, while slightly less effective, offers debiasing across various categories. We leverage resource-efficient LLM debiasing using adapter tuning and compare the effectiveness of our synthetic data to existing debiasing datasets. Our results reveal that: (1) ChatGPT can efficiently produce high-quality training data for debiasing other LLMs; (2) data produced via our approach surpasses existing datasets in debiasing performance while also preserving internal knowledge of a pre-trained LLM; and (3) synthetic data exhibits generalizability across categories, effectively mitigating various biases, including intersectional ones. These findings underscore the potential of synthetic data in advancing the fairness of LLMs with minimal retraining cost."
+    },
+    {
+      "paperId": "76deae79c597c9f32a4c4a292b3c5de4f9bad2ea",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2302-12228",
+        "DOI": "10.48550/arXiv.2302.12228",
+        "CorpusId": 257102411
+      },
+      "title": "Designing an Encoder for Fast Personalization of Text-to-Image Models",
+      "venue": "arXiv.org",
+      "year": 2023,
+      "citationCount": 84,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2302.12228",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2302.12228?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2302.12228, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "134639223",
+          "name": "Rinon Gal"
+        },
+        {
+          "authorId": "34905004",
+          "name": "Moab Arar"
+        },
+        {
+          "authorId": "34815079",
+          "name": "Y. Atzmon"
+        },
+        {
+          "authorId": "1755628",
+          "name": "Amit H. Bermano"
+        },
+        {
+          "authorId": "2065001062",
+          "name": "Gal Chechik"
+        },
+        {
+          "authorId": "1388323541",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0af0b5c9d13cec89db528896ac6c2caf6766c4a4",
+      "externalIds": {
+        "ArXiv": "2503.10365",
+        "DBLP": "journals/corr/abs-2503-10365",
+        "DOI": "10.48550/arXiv.2503.10365",
+        "CorpusId": 276961283
+      },
+      "title": "Piece it Together: Part-Based Concepting with IP-Priors",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.10365, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2511847",
+          "name": "Elad Richardson"
+        },
+        {
+          "authorId": "2032216482",
+          "name": "Kfir Goldberg"
+        },
+        {
+          "authorId": "1850630812",
+          "name": "Yuval Alaluf"
+        },
+        {
+          "authorId": "2257215972",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": "Advanced generative models excel at synthesizing images but often rely on text-based conditioning. Visual designers, however, often work beyond language, directly drawing inspiration from existing visual elements. In many cases, these elements represent only fragments of a potential concept-such as an uniquely structured wing, or a specific hairstyle-serving as inspiration for the artist to explore how they can come together creatively into a coherent whole. Recognizing this need, we introduce a generative framework that seamlessly integrates a partial set of user-provided visual components into a coherent composition while simultaneously sampling the missing parts needed to generate a plausible and complete concept. Our approach builds on a strong and underexplored representation space, extracted from IP-Adapter+, on which we train IP-Prior, a lightweight flow-matching model that synthesizes coherent compositions based on domain-specific priors, enabling diverse and context-aware generations. Additionally, we present a LoRA-based fine-tuning strategy that significantly improves prompt adherence in IP-Adapter+ for a given task, addressing its common trade-off between reconstruction quality and prompt adherence."
+    },
+    {
+      "paperId": "5bfa8bd2645a87093684bb9538b38455bee2d596",
+      "externalIds": {
+        "DBLP": "journals/tog/AlalufRMC23",
+        "ArXiv": "2305.15391",
+        "DOI": "10.1145/3618322",
+        "CorpusId": 258866047
+      },
+      "title": "A Neural Space-Time Representation for Text-to-Image Personalization",
+      "venue": "ACM Transactions on Graphics",
+      "year": 2023,
+      "citationCount": 153,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2305.15391",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.15391, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1850630812",
+          "name": "Yuval Alaluf"
+        },
+        {
+          "authorId": "2511847",
+          "name": "Elad Richardson"
+        },
+        {
+          "authorId": "1713805437",
+          "name": "G. Metzer"
+        },
+        {
+          "authorId": "1388323541",
+          "name": "D. Cohen-Or"
+        }
+      ],
+      "abstract": "A key aspect of text-to-image personalization methods is the manner in which the target concept is represented within the generative process. This choice greatly affects the visual fidelity, downstream editability, and disk space needed to store the learned concept. In this paper, we explore a new text-conditioning space that is dependent on both the denoising process timestep (time) and the denoising U-Net layers (space) and showcase its compelling properties. A single concept in the space-time representation is composed of hundreds of vectors, one for each combination of time and space, making this space challenging to optimize directly. Instead, we propose to implicitly represent a concept in this space by optimizing a small neural mapper that receives the current time and space parameters and outputs the matching token embedding. In doing so, the entire personalized concept is represented by the parameters of the learned mapper, resulting in a compact, yet expressive, representation. Similarly to other personalization methods, the output of our neural mapper resides in the input space of the text encoder. We observe that one can significantly improve the convergence and visual fidelity of the concept by introducing a textual bypass, where our neural mapper additionally outputs a residual that is added to the output of the text encoder. Finally, we show how one can impose an importance-based ordering over our implicit representation, providing users control over the reconstruction and editability of the learned concept using a single trained model. We demonstrate the effectiveness of our approach over a range of concepts and prompts, showing our method's ability to generate high-quality and controllable compositions without fine-tuning any parameters of the generative model itself."
+    }
+  ],
+  "protocol_query": "\"prompt tuning\" OR \"prefix tuning\" OR \"BitFit\""
+}

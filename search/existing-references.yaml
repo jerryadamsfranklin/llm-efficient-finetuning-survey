@@ -1,0 +1,619 @@
+source: Jerry_Manuscript_P1_Integrated.docx REFERENCES
+n_references: 42
+notes: Generated for Protocol v1.1 venue-check. priority HIGH = cited as arXiv preprint in manuscript.
+references:
+- key: abadi2016
+  authors: Abadi, M., Chu, A., Goodfellow, I., McMahan, H. B., Mironov, I., Talwar, K., & Zhang, L.
+  year: 2016
+  title: Deep learning with differential privacy
+  arxiv_id: null
+  doi: 10.1145/2976749.2978318
+  venue_current: Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security
+    (CCS), 308-318. https://doi.org/10.1145/2976749.2978318
+  verified_venue: Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security
+    / 2016 / proceedings-article
+  verified_doi: 10.1145/2976749.2978318
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Abadi, M., Chu, A., Goodfellow, I., McMahan, H. B., Mironov, I., Talwar,
+    K., & Zhang, L. (2016). Deep learning with differential privacy. Proceedings of the 2016 ACM SIGSAC
+    Conference on Computer and Communications Security (CCS), 308-318. https://doi.org/10.1145/2976749.2978318
+- key: bayati2023
+  authors: Bayati, B., Lin, B., Zeng, H., & Yin, M.
+  year: 2023
+  title: 'FlexLoRA: Flexible low rank adaptation for large language models'
+  arxiv_id: '2310.08151'
+  doi: null
+  venue_current: arXiv preprint arXiv:2310.08151
+  verified_venue: arXiv preprint arXiv:2310.08151
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Bayati, B., Lin, B., Zeng, H., & Yin, M. (2023). FlexLoRA: Flexible low
+    rank adaptation for large language models. arXiv preprint arXiv:2310.08151.'
+  closure_note: REJECTED ARR upgrade; keep as preprint (Phase 2 closure corrections)
+- key: chen2016
+  authors: Chen, T., Xu, B., Zhang, C., & Guestrin, C.
+  year: 2016
+  title: Training deep nets with sublinear memory cost
+  arxiv_id: '1604.06174'
+  doi: null
+  venue_current: arXiv preprint arXiv:1604.06174
+  verified_venue: arXiv preprint arXiv:1604.06174
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: Chen, T., Xu, B., Zhang, C., & Guestrin, C. (2016). Training deep nets with
+    sublinear memory cost. arXiv preprint arXiv:1604.06174.
+- key: dao2023
+  authors: Dao, T.
+  year: 2023
+  title: 'FlashAttention-2: Faster attention with better parallelism and work partitioning'
+  arxiv_id: '2307.08691'
+  doi: null
+  venue_current: arXiv preprint arXiv:2307.08691
+  verified_venue: ICLR 2024 poster
+  verified_doi: null
+  status: UPGRADED
+  priority: HIGH
+  citation_as_in_manuscript: 'Dao, T. (2023). FlashAttention-2: Faster attention with better parallelism
+    and work partitioning. arXiv preprint arXiv:2307.08691.'
+- key: dao2022
+  authors: Dao, T., Fu, D. Y., Ermon, S., Rudra, A., & Ré, C.
+  year: 2022
+  title: 'FlashAttention: Fast and memory-efficient exact attention with IO-awareness'
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 35, 16344-16359
+  verified_venue: Advances in Neural Information Processing Systems 35 / 2022 / proceedings-article
+  verified_doi: 10.52202/068431-1189
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Dao, T., Fu, D. Y., Ermon, S., Rudra, A., & Ré, C. (2022). FlashAttention:
+    Fast and memory-efficient exact attention with IO-awareness. Advances in Neural Information Processing
+    Systems (NeurIPS), 35, 16344-16359.'
+- key: dettmers2023
+  authors: Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L.
+  year: 2023
+  title: 'QLoRA: Efficient finetuning of quantized LLMs'
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 36
+  verified_venue: Advances in Neural Information Processing Systems 36 / 2023 / proceedings-article
+  verified_doi: 10.52202/075280-0441
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2023). QLoRA:
+    Efficient finetuning of quantized LLMs. Advances in Neural Information Processing Systems (NeurIPS),
+    36.'
+- key: frantar2023
+  authors: Frantar, E., Ashkboos, S., Hoefler, T., & Alistarh, D.
+  year: 2023
+  title: 'GPTQ: Accurate post-training quantization for generative pre-trained transformers'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Frantar, E., Ashkboos, S., Hoefler, T., & Alistarh, D. (2023). GPTQ: Accurate
+    post-training quantization for generative pre-trained transformers. Proceedings of the International
+    Conference on Learning Representations (ICLR).'
+- key: gong2024
+  authors: Gong, R., Ding, Y., Wang, Z., Lv, C., Zheng, X., Du, J., Qin, H., Guo, J., Magno, M., & Liu,
+    X.
+  year: 2024
+  title: 'A survey of low-bit large language models: Basics, systems, and algorithms'
+  arxiv_id: '2409.16694'
+  doi: null
+  venue_current: arXiv preprint arXiv:2409.16694
+  verified_venue: arXiv preprint arXiv:2409.16694
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Gong, R., Ding, Y., Wang, Z., Lv, C., Zheng, X., Du, J., Qin, H., Guo, J.,
+    Magno, M., & Liu, X. (2024). A survey of low-bit large language models: Basics, systems, and algorithms.
+    arXiv preprint arXiv:2409.16694.'
+- key: hayou2024
+  authors: Hayou, S., Ghosh, N., & Yu, B.
+  year: 2024
+  title: 'LoRA+: Efficient low rank adaptation of large models'
+  arxiv_id: '2402.12354'
+  doi: null
+  venue_current: arXiv preprint arXiv:2402.12354
+  verified_venue: arXiv preprint arXiv:2402.12354
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Hayou, S., Ghosh, N., & Yu, B. (2024). LoRA+: Efficient low rank adaptation
+    of large models. arXiv preprint arXiv:2402.12354.'
+- key: he2022
+  authors: He, J., Zhou, C., Ma, X., Berg-Kirkpatrick, T., & Neubig, G.
+  year: 2022
+  title: Towards a unified view of parameter-efficient transfer learning
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: He, J., Zhou, C., Ma, X., Berg-Kirkpatrick, T., & Neubig, G. (2022). Towards
+    a unified view of parameter-efficient transfer learning. Proceedings of the International Conference
+    on Learning Representations (ICLR).
+- key: houlsby2019
+  authors: Houlsby, N., Giurgiu, A., Jastrzebski, S., Morrone, B., De Laroussilhe, Q., Gesmundo, A., Attariyan,
+    M., & Gelly, S.
+  year: 2019
+  title: Parameter-efficient transfer learning for NLP
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 36th International Conference on Machine Learning (ICML), 2790-2799
+  verified_venue: Proceedings of the 36th International Conference on Machine Learning (ICML), 2790-2799
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Houlsby, N., Giurgiu, A., Jastrzebski, S., Morrone, B., De Laroussilhe, Q.,
+    Gesmundo, A., Attariyan, M., & Gelly, S. (2019). Parameter-efficient transfer learning for NLP. Proceedings
+    of the 36th International Conference on Machine Learning (ICML), 2790-2799.
+- key: hu2021
+  authors: Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W.
+  year: 2021
+  title: 'LoRA: Low-rank adaptation of large language models'
+  arxiv_id: '2106.09685'
+  doi: null
+  venue_current: arXiv preprint arXiv:2106.09685
+  verified_venue: arXiv preprint arXiv:2106.09685
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang,
+    L., & Chen, W. (2021). LoRA: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685.'
+- key: huang2019
+  authors: Huang, Y., Cheng, Y., Bapna, A., Firat, O., Chen, D., Chen, M., Lee, H., Ngiam, J., Le, Q.
+    V., Wu, Y., & Chen, Z.
+  year: 2019
+  title: 'GPipe: Efficient training of giant neural networks using pipeline parallelism'
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112
+  verified_venue: Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Huang, Y., Cheng, Y., Bapna, A., Firat, O., Chen, D., Chen, M., Lee, H.,
+    Ngiam, J., Le, Q. V., Wu, Y., & Chen, Z. (2019). GPipe: Efficient training of giant neural networks
+    using pipeline parallelism. Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112.'
+- key: jacob2018
+  authors: Jacob, B., Kligys, S., Chen, B., Zhu, M., Tang, M., Howard, A., Adam, H., & Kalenichenko, D.
+  year: 2018
+  title: Quantization and training of neural networks for efficient integer-arithmetic-only inference
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
+    2704-2713
+  verified_venue: 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition / 2018 / proceedings-article
+  verified_doi: 10.1109/cvpr.2018.00286
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Jacob, B., Kligys, S., Chen, B., Zhu, M., Tang, M., Howard, A., Adam, H.,
+    & Kalenichenko, D. (2018). Quantization and training of neural networks for efficient integer-arithmetic-only
+    inference. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2704-2713.
+- key: jin2024
+  authors: Jin, R., Du, J., Huang, W., Liu, W., Luan, J., Wang, B., & Xiong, D.
+  year: 2024
+  title: A comprehensive evaluation of quantization strategies for large language models
+  arxiv_id: null
+  doi: null
+  venue_current: 'Findings of the Association for Computational Linguistics: ACL 2024, 12186-12215'
+  verified_venue: Findings of the Association for Computational Linguistics ACL 2024 / 2024 / proceedings-article
+  verified_doi: 10.18653/v1/2024.findings-acl.726
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Jin, R., Du, J., Huang, W., Liu, W., Luan, J., Wang, B., & Xiong, D. (2024).
+    A comprehensive evaluation of quantization strategies for large language models. Findings of the Association
+    for Computational Linguistics: ACL 2024, 12186-12215.'
+- key: kirkpatrick2017
+  authors: Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G., Rusu, A. A., Milan,
+    K., Quan, J., Ramalho, T., Grabska-Barwinska, A., Hassabis, D., Clopath, C., Kumaran, D., & Hadsell,
+    R.
+  year: 2017
+  title: Overcoming catastrophic forgetting in neural networks
+  arxiv_id: null
+  doi: 10.1073/pnas.1611835114
+  venue_current: Proceedings of the National Academy of Sciences, 114(13), 3521-3526. https://doi.org/10.1073/pnas.1611835114
+  verified_venue: Proceedings of the National Academy of Sciences / 2017 / journal-article
+  verified_doi: 10.1073/pnas.1611835114
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G.,
+    Rusu, A. A., Milan, K., Quan, J., Ramalho, T., Grabska-Barwinska, A., Hassabis, D., Clopath, C., Kumaran,
+    D., & Hadsell, R. (2017). Overcoming catastrophic forgetting in neural networks. Proceedings of the
+    National Academy of Sciences, 114(13), 3521-3526. https://doi.org/10.1073/pnas.1611835114
+- key: kopiczko2024
+  authors: Kopiczko, D. J., Blankevoort, T., & Asano, Y. M.
+  year: 2024
+  title: 'VeRA: Vector-based random matrix adaptation'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Kopiczko, D. J., Blankevoort, T., & Asano, Y. M. (2024). VeRA: Vector-based
+    random matrix adaptation. Proceedings of the International Conference on Learning Representations
+    (ICLR).'
+- key: lester2021
+  authors: Lester, B., Al-Rfou, R., & Constant, N.
+  year: 2021
+  title: The power of scale for parameter-efficient prompt tuning
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing
+    (EMNLP), 3045-3059
+  verified_venue: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing
+    / 2021 / proceedings-article
+  verified_doi: 10.18653/v1/2021.emnlp-main.243
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Lester, B., Al-Rfou, R., & Constant, N. (2021). The power of scale for parameter-efficient
+    prompt tuning. Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing
+    (EMNLP), 3045-3059.
+- key: li2021
+  authors: Li, X. L., & Liang, P.
+  year: 2021
+  title: 'Prefix-tuning: Optimizing continuous prompts for generation'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+    (ACL), 4582-4597
+  verified_venue: 'Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+    and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)
+    / 2021 / proceedings-article'
+  verified_doi: 10.18653/v1/2021.acl-long.353
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Li, X. L., & Liang, P. (2021). Prefix-tuning: Optimizing continuous prompts
+    for generation. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+    (ACL), 4582-4597.'
+- key: li2025
+  authors: Li, Z., Su, Y., Yang, R., Xie, C., Wang, Z., Xie, Z., Wong, N., & Yang, H.
+  year: 2025
+  title: 'Quantization meets reasoning: Exploring LLM low-bit quantization degradation for mathematical
+    reasoning'
+  arxiv_id: '2501.03035'
+  doi: null
+  venue_current: arXiv preprint arXiv:2501.03035
+  verified_venue: arXiv preprint arXiv:2501.03035
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Li, Z., Su, Y., Yang, R., Xie, C., Wang, Z., Xie, Z., Wong, N., & Yang,
+    H. (2025). Quantization meets reasoning: Exploring LLM low-bit quantization degradation for mathematical
+    reasoning. arXiv preprint arXiv:2501.03035.'
+- key: lin2024
+  authors: Lin, J., Tang, J., Tang, H., Yang, S., Dang, X., & Han, S.
+  year: 2024
+  title: 'AWQ: Activation-aware weight quantization for LLM compression and acceleration'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of Machine Learning and Systems (MLSys)
+  verified_venue: Proceedings of Machine Learning and Systems (MLSys)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Lin, J., Tang, J., Tang, H., Yang, S., Dang, X., & Han, S. (2024). AWQ:
+    Activation-aware weight quantization for LLM compression and acceleration. Proceedings of Machine
+    Learning and Systems (MLSys).'
+  closure_note: REJECTED GetMobile replacement; keep MLSys 2024 (Phase 2 closure corrections)
+- key: liu2022
+  authors: Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., & Raffel, C.
+  year: 2022
+  title: Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 35, 1950-1965
+  verified_venue: Advances in Neural Information Processing Systems 35 / 2022 / proceedings-article
+  verified_doi: 10.52202/068431-0142
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., & Raffel,
+    C. (2022). Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning.
+    Advances in Neural Information Processing Systems (NeurIPS), 35, 1950-1965.
+- key: liu2024
+  authors: Liu, S.-Y., Wang, C.-Y., Yin, H., Molchanov, P., Wang, Y.-C. F., Cheng, K.-T., & Chen, M.-H.
+  year: 2024
+  title: 'DoRA: Weight-decomposed low-rank adaptation'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 41st International Conference on Machine Learning (ICML), PMLR 235,
+    32100-32121
+  verified_venue: Proceedings of the 41st International Conference on Machine Learning (ICML), PMLR 235,
+    32100-32121
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Liu, S.-Y., Wang, C.-Y., Yin, H., Molchanov, P., Wang, Y.-C. F., Cheng,
+    K.-T., & Chen, M.-H. (2024). DoRA: Weight-decomposed low-rank adaptation. Proceedings of the 41st
+    International Conference on Machine Learning (ICML), PMLR 235, 32100-32121.'
+- key: loshchilov2019
+  authors: Loshchilov, I., & Hutter, F.
+  year: 2019
+  title: Decoupled weight decay regularization
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Loshchilov, I., & Hutter, F. (2019). Decoupled weight decay regularization.
+    Proceedings of the International Conference on Learning Representations (ICLR).
+- key: mahabadi2021
+  authors: Mahabadi, R. K., Ruder, S., Dehghani, M., & Henderson, J.
+  year: 2021
+  title: Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+    (ACL), 565-576
+  verified_venue: 'Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+    and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)
+    / 2021 / proceedings-article'
+  verified_doi: 10.18653/v1/2021.acl-long.47
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Mahabadi, R. K., Ruder, S., Dehghani, M., & Henderson, J. (2021). Parameter-efficient
+    multi-task fine-tuning for transformers via shared hypernetworks. Proceedings of the 59th Annual Meeting
+    of the Association for Computational Linguistics (ACL), 565-576.
+- key: mcmahan2017
+  authors: McMahan, B., Moore, E., Ramage, D., Hampson, S., & y Arcas, B. A.
+  year: 2017
+  title: Communication-efficient learning of deep networks from decentralized data
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics
+    (AISTATS), 1273-1282
+  verified_venue: Proceedings of the 20th International Conference on Artificial Intelligence and Statistics
+    (AISTATS), 1273-1282
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: McMahan, B., Moore, E., Ramage, D., Hampson, S., & y Arcas, B. A. (2017).
+    Communication-efficient learning of deep networks from decentralized data. Proceedings of the 20th
+    International Conference on Artificial Intelligence and Statistics (AISTATS), 1273-1282.
+- key: micikevicius2018
+  authors: Micikevicius, P., Narang, S., Alben, J., Diamos, G., Elsen, E., Garcia, D., Ginsburg, B., Houston,
+    M., Kuchaiev, O., Venkatesh, G., & Wu, H.
+  year: 2018
+  title: Mixed precision training
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Micikevicius, P., Narang, S., Alben, J., Diamos, G., Elsen, E., Garcia, D.,
+    Ginsburg, B., Houston, M., Kuchaiev, O., Venkatesh, G., & Wu, H. (2018). Mixed precision training.
+    Proceedings of the International Conference on Learning Representations (ICLR).
+- key: pfeiffer2020
+  authors: Pfeiffer, J., Kamath, A., Rücklé, A., Cho, K., & Gurevych, I.
+  year: 2020
+  title: 'AdapterFusion: Non-destructive task composition for transfer learning'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 16th Conference of the European Chapter of the Association for Computational
+    Linguistics (EACL), 487-503
+  verified_venue: 'Proceedings of the 16th Conference of the European Chapter of the Association for Computational
+    Linguistics: Main Volume / 2021 / proceedings-article'
+  verified_doi: 10.18653/v1/2021.eacl-main.39
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Pfeiffer, J., Kamath, A., Rücklé, A., Cho, K., & Gurevych, I. (2020). AdapterFusion:
+    Non-destructive task composition for transfer learning. Proceedings of the 16th Conference of the
+    European Chapter of the Association for Computational Linguistics (EACL), 487-503.'
+- key: rafailov2023
+  authors: Rafailov, R., Sharma, A., Mitchell, E., Ermon, S., Manning, C. D., & Finn, C.
+  year: 2023
+  title: 'Direct preference optimization: Your language model is secretly a reward model'
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 36
+  verified_venue: Advances in Neural Information Processing Systems 36 / 2023 / proceedings-article
+  verified_doi: 10.52202/075280-2338
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Rafailov, R., Sharma, A., Mitchell, E., Ermon, S., Manning, C. D., & Finn,
+    C. (2023). Direct preference optimization: Your language model is secretly a reward model. Advances
+    in Neural Information Processing Systems (NeurIPS), 36.'
+- key: rajbhandari2020
+  authors: Rajbhandari, S., Rasley, J., Ruwase, O., & He, Y.
+  year: 2020
+  title: 'ZeRO: Memory optimizations toward training trillion parameter models'
+  arxiv_id: null
+  doi: 10.5555/3433701.3433727
+  venue_current: Proceedings of the International Conference for High Performance Computing, Networking,
+    Storage and Analysis (SC '20). https://doi.org/10.5555/3433701.3433727
+  verified_venue: 'SC20: International Conference for High Performance Computing, Networking, Storage
+    and Analysis / 2020 / proceedings-article'
+  verified_doi: 10.1109/sc41405.2020.00024
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Rajbhandari, S., Rasley, J., Ruwase, O., & He, Y. (2020). ZeRO: Memory optimizations
+    toward training trillion parameter models. Proceedings of the International Conference for High Performance
+    Computing, Networking, Storage and Analysis (SC ''20). https://doi.org/10.5555/3433701.3433727'
+- key: ren2021
+  authors: Ren, J., Rajbhandari, S., Aminabadi, R. Y., Ruwase, O., Yang, S., Zhang, M., Li, D., & He,
+    Y.
+  year: 2021
+  title: 'ZeRO-Offload: Democratizing billion-scale model training'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 2021 USENIX Annual Technical Conference (USENIX ATC), 551-564
+  verified_venue: Proceedings of the 2021 USENIX Annual Technical Conference (USENIX ATC), 551-564
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Ren, J., Rajbhandari, S., Aminabadi, R. Y., Ruwase, O., Yang, S., Zhang,
+    M., Li, D., & He, Y. (2021). ZeRO-Offload: Democratizing billion-scale model training. Proceedings
+    of the 2021 USENIX Annual Technical Conference (USENIX ATC), 551-564.'
+- key: rolnick2019
+  authors: Rolnick, D., Ahuja, A., Schwarz, J., Lillicrap, T., & Wayne, G.
+  year: 2019
+  title: Experience replay for continual learning
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360
+  verified_venue: Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Rolnick, D., Ahuja, A., Schwarz, J., Lillicrap, T., & Wayne, G. (2019). Experience
+    replay for continual learning. Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360.
+- key: shoeybi2019
+  authors: Shoeybi, M., Patwary, M., Puri, R., LeGresley, P., Casper, J., & Catanzaro, B.
+  year: 2019
+  title: 'Megatron-LM: Training multi-billion parameter language models using model parallelism'
+  arxiv_id: '1909.08053'
+  doi: null
+  venue_current: arXiv preprint arXiv:1909.08053
+  verified_venue: arXiv preprint arXiv:1909.08053
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Shoeybi, M., Patwary, M., Puri, R., LeGresley, P., Casper, J., & Catanzaro,
+    B. (2019). Megatron-LM: Training multi-billion parameter language models using model parallelism.
+    arXiv preprint arXiv:1909.08053.'
+- key: sun2022
+  authors: Sun, W., Khan, H., Guenon des Mesnards, N., Rubino, M., & Arkoudas, K.
+  year: 2022
+  title: 'Unfreeze with care: Space-efficient fine-tuning of semantic parsing models'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the ACM Web Conference (WWW 2022), 1-9
+  verified_venue: Proceedings of the ACM Web Conference 2022 / 2022 / proceedings-article
+  verified_doi: 10.1145/3485447.3511942
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Sun, W., Khan, H., Guenon des Mesnards, N., Rubino, M., & Arkoudas, K. (2022).
+    Unfreeze with care: Space-efficient fine-tuning of semantic parsing models. Proceedings of the ACM
+    Web Conference (WWW 2022), 1-9.'
+- key: vaswani2017
+  authors: Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., &
+    Polosukhin, I.
+  year: 2017
+  title: Attention is all you need
+  arxiv_id: null
+  doi: null
+  venue_current: Advances in Neural Information Processing Systems (NeurIPS), 30, 5998-6008
+  verified_venue: Advances in Neural Information Processing Systems (NeurIPS), 30, 5998-6008
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.
+    N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information
+    Processing Systems (NeurIPS), 30, 5998-6008.
+- key: wang2024
+  authors: Wang, L., Chen, S., Jiang, L., Pan, S., Cai, R., Yang, S., & Yang, F.
+  year: 2024
+  title: 'Parameter-efficient fine-tuning in large models: A survey of methodologies'
+  arxiv_id: '2410.19878'
+  doi: null
+  venue_current: arXiv preprint arXiv:2410.19878
+  verified_venue: Artificial Intelligence Review / 2025 / journal-article
+  verified_doi: 10.1007/s10462-025-11236-4
+  status: UPGRADED
+  priority: HIGH
+  citation_as_in_manuscript: 'Wang, L., Chen, S., Jiang, L., Pan, S., Cai, R., Yang, S., & Yang, F. (2024).
+    Parameter-efficient fine-tuning in large models: A survey of methodologies. arXiv preprint arXiv:2410.19878.'
+- key: xiao2023
+  authors: Xiao, G., Lin, J., Seznec, M., Wu, H., Deoras, J., & Song, H.
+  year: 2023
+  title: 'SmoothQuant: Accurate and efficient post-training quantization for large language models'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 40th International Conference on Machine Learning (ICML), 38416-38438
+  verified_venue: Proceedings of the 40th International Conference on Machine Learning (ICML), 38416-38438
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Xiao, G., Lin, J., Seznec, M., Wu, H., Deoras, J., & Song, H. (2023). SmoothQuant:
+    Accurate and efficient post-training quantization for large language models. Proceedings of the 40th
+    International Conference on Machine Learning (ICML), 38416-38438.'
+- key: xu2023
+  authors: Xu, L., Xie, H., Qin, S.-Z. J., Tao, X., & Wang, F. L.
+  year: 2023
+  title: 'Parameter-efficient fine-tuning methods for pretrained language models: A critical review and
+    assessment'
+  arxiv_id: '2312.12148'
+  doi: null
+  venue_current: arXiv preprint arXiv:2312.12148
+  verified_venue: arXiv preprint arXiv:2312.12148
+  verified_doi: null
+  status: confirmed_preprint
+  priority: HIGH
+  citation_as_in_manuscript: 'Xu, L., Xie, H., Qin, S.-Z. J., Tao, X., & Wang, F. L. (2023). Parameter-efficient
+    fine-tuning methods for pretrained language models: A critical review and assessment. arXiv preprint
+    arXiv:2312.12148.'
+- key: yang2025
+  authors: Yang, Y., Long, G., Lu, Q., Zhu, L., Jiang, J., & Zhang, C.
+  year: 2025
+  title: 'Federated low-rank adaptation for foundation models: A survey'
+  arxiv_id: '2505.13502'
+  doi: null
+  venue_current: arXiv preprint arXiv:2505.13502
+  verified_venue: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence
+    / 2024 / proceedings-article
+  verified_doi: 10.24963/ijcai.2024/1196
+  status: UPGRADED
+  priority: HIGH
+  citation_as_in_manuscript: 'Yang, Y., Long, G., Lu, Q., Zhu, L., Jiang, J., & Zhang, C. (2025). Federated
+    low-rank adaptation for foundation models: A survey. arXiv preprint arXiv:2505.13502.'
+- key: zaken2022
+  authors: Zaken, E. B., Ravfogel, S., & Goldberg, Y.
+  year: 2022
+  title: 'BitFit: Simple parameter-efficient fine-tuning for transformer-based masked language-models'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics
+    (ACL), 1-9
+  verified_venue: 'Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics
+    (Volume 2: Short Papers) / 2022 / proceedings-article'
+  verified_doi: 10.18653/v1/2022.acl-short.1
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Zaken, E. B., Ravfogel, S., & Goldberg, Y. (2022). BitFit: Simple parameter-efficient
+    fine-tuning for transformer-based masked language-models. Proceedings of the 60th Annual Meeting of
+    the Association for Computational Linguistics (ACL), 1-9.'
+- key: zhang2024
+  authors: Zhang, J., Chen, C., Li, B., Ding, L., Xu, J., & Tao, D.
+  year: 2024
+  title: 'FLoRA: Federated fine-tuning large language models with heterogeneous low-rank adaptations'
+  arxiv_id: '2409.05976'
+  doi: null
+  venue_current: arXiv preprint arXiv:2409.05976
+  verified_venue: NeurIPS 2024
+  verified_doi: null
+  status: UPGRADED
+  priority: HIGH
+  citation_as_in_manuscript: 'Zhang, J., Chen, C., Li, B., Ding, L., Xu, J., & Tao, D. (2024). FLoRA:
+    Federated fine-tuning large language models with heterogeneous low-rank adaptations. arXiv preprint
+    arXiv:2409.05976.'
+- key: zhang2023
+  authors: Zhang, Q., Chen, M., Bukharin, A., He, P., Cheng, Y., Chen, W., & Zhao, T.
+  year: 2023
+  title: 'AdaLoRA: Adaptive budget allocation for parameter-efficient fine-tuning'
+  arxiv_id: null
+  doi: null
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_venue: Proceedings of the International Conference on Learning Representations (ICLR)
+  verified_doi: null
+  status: confirmed_published
+  priority: normal
+  citation_as_in_manuscript: 'Zhang, Q., Chen, M., Bukharin, A., He, P., Cheng, Y., Chen, W., & Zhao,
+    T. (2023). AdaLoRA: Adaptive budget allocation for parameter-efficient fine-tuning. Proceedings of
+    the International Conference on Learning Representations (ICLR).'
+venue_check_at: '2026-07-21T21:48:22Z'
