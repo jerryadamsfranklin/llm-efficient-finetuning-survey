@@ -18,8 +18,8 @@ PeerJ Computer Science).
 | Phase | Status |
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
-| **2 — Execute searches** | In progress on `phase-2-search`. Protocol **v1.2** source substitution (IEEE API / OpenAlex for ACM). Google Scholar still manual. |
-| **3+** | Not started. |
+| **2 — Execute searches** | **Complete on `phase-2-search`.** Protocol v1.2 sources run; candidate pool deduplicated. |
+| **3+** | Not started (Stage 1 screening). |
 
 ### Protocol versions
 
@@ -40,8 +40,8 @@ PeerJ Computer Science).
 - [x] IEEE metadata API: 18 queries, 50-cap (`search/raw/ieee/`)
 - [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
-- [x] Manual Google Scholar: 18 protocol queries as 34 runs; 527 candidates logged (`search/raw/google_scholar/`)
-- [ ] Deduplicated candidate pool counted
+- [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
+- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,334** unique; **10,313** for screening)
 
 ## Reproducing the search
 
@@ -57,6 +57,9 @@ python search/scripts/search_ieee.py          # requires IEEE_API_KEY
 python search/scripts/search_openalex.py      # general index
 python search/scripts/search_openalex.py --acm
 python search/scripts/search_dblp.py
+
+# Deduplicate all sources → search/candidate-pool.csv
+python search/scripts/dedupe.py
 
 # Venue-upgrade check for the existing ~42 manuscript references
 python search/scripts/search_openreview.py --check-existing
