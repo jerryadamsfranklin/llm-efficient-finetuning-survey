@@ -1,5 +1,94 @@
 # Protocol Changelog
 
+## v1.3 — 2026-07-31
+
+Triggered by a confirmation-pass diagnostic run at Phase 3 entry, which tested whether
+the Phase 2 search actually retrieved the 42 references the manuscript already cites.
+Full evidence: `search/coverage-diagnostic.md`.
+
+### Finding: the confirmation pass verified 24 of 29 in-window references, not all
+
+Of 42 manuscript references, 29 are in the deduplicated pool. Seven of the 13 absent
+predate the coverage window (correctly excluded by criterion 5) and one (`bayati2023`)
+was already rejected at venue check. Five are in-window and were retrieved by no query
+on any of the seven sources.
+
+Four of the five — GPipe, Megatron-LM, AdamW, experience replay — are cited as
+foundational systems/optimization background on topics no query block covers (pipeline
+parallelism, tensor parallelism, optimizers, continual-learning replay). Their absence
+is a documented boundary condition of the query design, not an execution failure.
+
+**AdapterFusion (`pfeiffer2020`) is a genuine recall defect**: adapters are the core
+subject of block B1. Two structural causes were identified.
+
+### Defect 1: relevance-ranked retrieval saturated on recent work
+
+v1.2 capped Semantic Scholar at 200 records **per query with no date slicing**, while
+v1.1 already required date-slicing for arXiv. **17 of 18 Semantic Scholar queries hit
+the cap**, and only 121 of 3,500 returned records (3.5%) predate 2022. `B1_peft_1`
+returned zero pre-2022 records. The source whose relevance ranking would have surfaced a
+seminal adapter paper never reached back far enough to do so.
+
+Fix: **date-sliced Semantic Scholar backfill for 2019, 2020, 2021** — all 18 `s2_queries`
+re-run per year slice at the 200-record cap, into `search/raw/semanticscholar_backfill/`.
+This applies the v1.1 arXiv rule to Semantic Scholar; no query string changes.
+
+### Defect 2: over-restrictive conjunction in B1_peft_3
+
+The boolean form `"adapter" AND "transformer" AND "fine-tuning" AND efficient` requires
+all four terms. The arXiv 2020 slice for this query returned **8 records and did not
+reach the cap**, so truncation is excluded as an explanation — the conjunction itself is
+the cause.
+
+**Not fixed by rewriting the query.** Altering query strings after seeing results would
+make the search unreproducible against its own log. The limitation is documented and
+reported instead, and the affected band is remediated by retrieval (defect 1) rather than
+by redefining the query.
+
+### Change: targeted supplementary retrieval of known-corpus misses
+
+In-window references from `search/existing-references.yaml` absent from the pool are
+retrieved directly by title/DOI into `search/raw/supplementary/`. This is verification of
+an already-cited corpus, **not discovery**, is logged separately as such, and must not be
+described as extending the search's reach. Recovered records are screened against the
+same criteria as any other candidate.
+
+### Change: screening procedure specified and disclosed
+
+New document: `protocol/screening-procedure.md`.
+
+- Stage 1 is **LLM-assisted under author supervision**. Every inclusion is
+  author-verified; every low-confidence decision is author-reviewed; a stratified random
+  sample of **≥ 250 exclusions** is audited with a recorded seed, and the disagreement
+  rate is reported. A disagreement rate above **5%** requires re-screening the affected
+  stratum rather than patching it. Threshold fixed in advance.
+- **Scope bound:** full Stage 1 screen of the 7,779 records from 2024-01-01 onward;
+  the 2,513 records from 2019–2023 receive a targeted confirmation pass keyed to the
+  existing corpus, ≥ 50 citations, core-method terms, or survey status. Records not
+  examined under the bound are reported as `not_screened_confirmation_band`, a distinct
+  PRISMA line — **not** as exclusions.
+- **A keyword pre-filter was tested and rejected.** Built from the protocol's own
+  vocabulary, it removed only 37% of the pool while dropping LoRA+, VeRA, ZeRO-Offload,
+  and FlashAttention-2 — four references the manuscript cites. 86% recall against
+  known-relevant work is not an acceptable basis for exclusion. No keyword filter
+  excludes any record.
+- Required disclosure wording for the methodology and Section 10.4 is fixed verbatim in
+  `screening-procedure.md` §8.
+
+### Unchanged from v1.2
+
+Coverage window, all 18 query strings, inclusion/exclusion criteria, extraction schema,
+retrieval caps for arXiv / IEEE / OpenAlex / DBLP, the prohibition on scraping Google
+Scholar, and the single-author non-PRISMA framing. v1.3 retrieval is strictly additive:
+no v1.2 result is removed or altered.
+
+### Sequencing
+
+v1.3 must be committed **before** the backfill, the supplementary retrieval, and the
+first recorded Stage 1 decision.
+
+---
+
 ## Phase 3 entry — 2026-07-31 (artifact regeneration, no protocol change)
 
 The search protocol, queries, coverage window, and inclusion/exclusion criteria are

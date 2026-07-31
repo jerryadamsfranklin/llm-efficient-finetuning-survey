@@ -27,6 +27,7 @@ PeerJ Computer Science).
 - **v1.0** — initial queries; raw results preserved in `search/raw_v1.0/`
 - **v1.1** — corrections after v1.0 execution evidence (`protocol/CHANGELOG.md`): fixed `B3_memory_3` parentheses, added Semantic Scholar `s2_queries`, date-slicing / stopping-rule text
 - **v1.2** — source substitution: IEEE metadata API + OpenAlex (ACM coverage); 50-cap per query; Google Scholar remains manual
+- **v1.3** — confirmation-band amendment after a coverage diagnostic (`search/coverage-diagnostic.md`): date-sliced Semantic Scholar backfill for 2019–2021, targeted supplementary retrieval of known-corpus misses, and the screening procedure with its LLM-assistance disclosure (`protocol/screening-procedure.md`). Query strings unchanged.
 
 ### Phase 2 checklist
 
@@ -55,6 +56,10 @@ planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 - [x] `screening/screening-log.csv` initialised — one row per unique candidate (10,333)
 - [x] Metadata-decidable exclusions applied with the numbered criterion recorded (23 rows)
 - [x] Known metadata defects documented (`screening/metadata-anomalies.md`)
+- [x] Confirmation-pass diagnostic: 24 of 29 in-window manuscript references verified in the pool (`search/coverage-diagnostic.md`)
+- [x] Protocol v1.3 committed before the runs and screening decisions it authorises
+- [ ] Semantic Scholar 2019–2021 date-sliced backfill (v1.3)
+- [ ] Targeted supplementary retrieval of the five known-corpus misses (v1.3)
 - [ ] Stage 1 title/abstract screen (10,310 pending; criteria 1, 4, 5 and obvious 1–3, 6)
 - [ ] Stage 2 full-text screen (criteria 2, 3; adoption bar verified against a second source)
 - [ ] Stage 3 synthesis — category / subcategory assignment

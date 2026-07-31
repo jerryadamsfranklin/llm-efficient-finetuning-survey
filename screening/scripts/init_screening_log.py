@@ -44,6 +44,10 @@ CANONICAL_FIELDS = [
 ]
 SUPPORT_FIELDS = [
     "subcategory",
+    # Decision provenance, required by protocol/screening-procedure.md §3 and §6.
+    "screener",  # metadata | llm_assisted | author
+    "screener_original",  # preserves the machine decision when the author overturns it
+    "confidence",  # high | low  (low => mandatory author review)
     "doi",
     "arxiv_id",
     "citations",
@@ -125,6 +129,9 @@ def build_row(cand: dict[str, str]) -> dict[str, str]:
         "category": "",
         "notes": notes,
         "subcategory": "",
+        "screener": "metadata" if decision else "",
+        "screener_original": "",
+        "confidence": "high" if decision else "",
         "doi": cand.get("doi", ""),
         "arxiv_id": cand.get("arxiv_id", ""),
         "citations": cand.get("citations", ""),
@@ -164,7 +171,8 @@ def main() -> int:
         prior = existing.get(row["id"])
         # A human (or later stage) decision always wins over the mechanical default.
         if prior and (prior.get("decision") or "").strip():
-            for key in ("stage_reached", "decision", "exclusion_reason", "category", "subcategory", "notes"):
+            for key in ("stage_reached", "decision", "exclusion_reason", "category", "subcategory",
+                        "notes", "screener", "screener_original", "confidence"):
                 if (prior.get(key) or "").strip():
                     row[key] = prior[key]
             preserved += 1
