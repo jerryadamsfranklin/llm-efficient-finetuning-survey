@@ -1764,17 +1764,17 @@ and in Section 10.4 (Limitations).
 - **Notes:** protocol=1.2; boolean query; max_records=50 requested (cap at request time); API totalReported=50; sort_field=relevance requested; HIT_CAP=50
 
 ### dedupe — Phase 2 candidate pool
-- **Date run:** 2026-07-31T16:49:33Z
-- **Raw records loaded:** 18343
-- **Unique candidates:** 10333
-- **Multi-source merges:** 1537
-- **With DOI / arXiv:** 3995 / 7974
-- **With abstract:** 9899
-- **With citation count / ≥ 50 citations:** 3586 / 854
+- **Date run:** 2026-07-31T18:00:04Z
+- **Raw records loaded:** 25123
+- **Unique candidates:** 15518
+- **Multi-source merges:** 1701
+- **With DOI / arXiv:** 7930 / 9992
+- **With abstract:** 14295
+- **With citation count / ≥ 50 citations:** 8428 / 2447
 - **Out-of-protocol (Scholar):** 21
-- **Match events:** {'arxiv': 6487, 'title_exact': 7965, 'doi': 1520, 'title_fuzzy': 11}
-- **Raw by source:** {'arxiv': 11841, 'semanticscholar': 3500, 'openalex': 900, 'openalex_acm': 636, 'ieee': 705, 'dblp': 164, 'google_scholar': 597}
-- **Canonical-source mix:** {'google_scholar': 338, 'openalex_acm': 377, 'arxiv': 5788, 'openalex': 500, 'semanticscholar': 2807, 'ieee': 495, 'dblp': 28}
+- **Match events:** {'arxiv': 7368, 'title_exact': 9544, 'doi': 2589, 'title_fuzzy': 20}
+- **Raw by source:** {'arxiv': 11841, 'semanticscholar': 3500, 'semanticscholar_backfill': 6775, 'openalex': 900, 'openalex_acm': 636, 'ieee': 705, 'dblp': 164, 'google_scholar': 597, 'supplementary': 5}
+- **Canonical-source mix:** {'google_scholar': 334, 'openalex_acm': 374, 'semanticscholar_backfill': 5261, 'arxiv': 5753, 'openalex': 464, 'semanticscholar': 2807, 'supplementary': 4, 'ieee': 493, 'dblp': 28}
 - **Outputs:** `search/candidate-pool.csv`, `search/dedupe-summary.json`
 - **Notes:** Match priority DOI → arXiv ID → normalized title (exact then fuzzy ≥ 0.95). Published/DOI records preferred over arXiv-only when merged. Scholar NOISE_UI and DUPLICATE rows excluded from load.
 
@@ -1918,3 +1918,276 @@ and in Section 10.4 (Limitations).
 - **Results returned:** 200
 - **Slice:** 2019
 - **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=1263; HIT_CAP=200
+
+### semanticscholar_backfill — B2_quantization — query 1 — slice 2020
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-31T17:34:16Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=1889; HIT_CAP=200
+
+### semanticscholar_backfill — B2_quantization — query 1 — slice 2021
+- **Query:** quantization large language model fine-tuning
+- **Date run:** 2026-07-31T17:34:29Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=2755; HIT_CAP=200
+
+### semanticscholar_backfill — B2_quantization — query 2 — slice 2019
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-31T17:35:49Z
+- **Results returned:** 0
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=0
+
+### semanticscholar_backfill — B2_quantization — query 2 — slice 2020
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-31T17:35:53Z
+- **Results returned:** 0
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=0
+
+### semanticscholar_backfill — B2_quantization — query 2 — slice 2021
+- **Query:** post-training quantization LLM GPTQ AWQ
+- **Date run:** 2026-07-31T17:36:02Z
+- **Results returned:** 0
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=0
+
+### semanticscholar_backfill — B2_quantization — query 3 — slice 2019
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-31T17:36:11Z
+- **Results returned:** 1
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=1
+
+### semanticscholar_backfill — B2_quantization — query 3 — slice 2020
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-31T17:36:20Z
+- **Results returned:** 0
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=0
+
+### semanticscholar_backfill — B2_quantization — query 3 — slice 2021
+- **Query:** QLoRA quantized low-rank adaptation
+- **Date run:** 2026-07-31T17:36:24Z
+- **Results returned:** 0
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=0
+
+### semanticscholar_backfill — B2_quantization — query 4 — slice 2019
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-31T17:36:44Z
+- **Results returned:** 46
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=46
+
+### semanticscholar_backfill — B2_quantization — query 4 — slice 2020
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-31T17:36:53Z
+- **Results returned:** 112
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=112
+
+### semanticscholar_backfill — B2_quantization — query 4 — slice 2021
+- **Query:** quantization-aware training transformer
+- **Date run:** 2026-07-31T17:37:17Z
+- **Results returned:** 196
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=196
+
+### semanticscholar_backfill — B2_quantization — query 5 — slice 2019
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-31T17:37:37Z
+- **Results returned:** 85
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=85
+
+### semanticscholar_backfill — B2_quantization — query 5 — slice 2020
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-31T17:37:41Z
+- **Results returned:** 76
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=76
+
+### semanticscholar_backfill — B2_quantization — query 5 — slice 2021
+- **Query:** low-bit quantization large language models survey
+- **Date run:** 2026-07-31T17:37:50Z
+- **Results returned:** 75
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=75
+
+### semanticscholar_backfill — B3_memory — query 1 — slice 2019
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-31T17:38:00Z
+- **Results returned:** 31
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=31
+
+### semanticscholar_backfill — B3_memory — query 1 — slice 2020
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-31T17:38:04Z
+- **Results returned:** 29
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=29
+
+### semanticscholar_backfill — B3_memory — query 1 — slice 2021
+- **Query:** gradient checkpointing activation memory training
+- **Date run:** 2026-07-31T17:38:08Z
+- **Results returned:** 41
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=41
+
+### semanticscholar_backfill — B3_memory — query 2 — slice 2019
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-31T17:38:42Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=339; HIT_CAP=200
+
+### semanticscholar_backfill — B3_memory — query 2 — slice 2020
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-31T17:39:15Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=455; HIT_CAP=200
+
+### semanticscholar_backfill — B3_memory — query 2 — slice 2021
+- **Query:** FlashAttention memory efficient attention
+- **Date run:** 2026-07-31T17:40:43Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=585; HIT_CAP=200
+
+### semanticscholar_backfill — B3_memory — query 3 — slice 2019
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-31T17:40:52Z
+- **Results returned:** 4
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=4
+
+### semanticscholar_backfill — B3_memory — query 3 — slice 2020
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-31T17:41:02Z
+- **Results returned:** 6
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=6
+
+### semanticscholar_backfill — B3_memory — query 3 — slice 2021
+- **Query:** ZeRO DeepSpeed offloading distributed training memory
+- **Date run:** 2026-07-31T17:41:05Z
+- **Results returned:** 13
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=13
+
+### semanticscholar_backfill — B3_memory — query 4 — slice 2019
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-31T17:41:24Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=3432; HIT_CAP=200
+
+### semanticscholar_backfill — B3_memory — query 4 — slice 2020
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-31T17:41:42Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=4128; HIT_CAP=200
+
+### semanticscholar_backfill — B3_memory — query 4 — slice 2021
+- **Query:** memory optimization large language model training
+- **Date run:** 2026-07-31T17:42:01Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=5142; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 1 — slice 2019
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-31T17:43:30Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=1380; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 1 — slice 2020
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-31T17:43:48Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=1660; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 1 — slice 2021
+- **Query:** federated learning large language models
+- **Date run:** 2026-07-31T17:44:06Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=2332; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 2 — slice 2019
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-31T17:44:26Z
+- **Results returned:** 193
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=193
+
+### semanticscholar_backfill — B4_federated — query 2 — slice 2020
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-31T17:44:43Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=258; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 2 — slice 2021
+- **Query:** federated LoRA parameter efficient fine-tuning
+- **Date run:** 2026-07-31T17:45:01Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=320; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 3 — slice 2019
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-31T17:46:35Z
+- **Results returned:** 200
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=1880; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 3 — slice 2020
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-31T17:47:00Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=2291; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 3 — slice 2021
+- **Query:** communication efficient distributed language model training
+- **Date run:** 2026-07-31T17:47:18Z
+- **Results returned:** 200
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=2755; HIT_CAP=200
+
+### semanticscholar_backfill — B4_federated — query 4 — slice 2019
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-31T17:47:38Z
+- **Results returned:** 6
+- **Slice:** 2019
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2019; API totalReported=6
+
+### semanticscholar_backfill — B4_federated — query 4 — slice 2020
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-31T17:47:42Z
+- **Results returned:** 32
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=32
+
+### semanticscholar_backfill — B4_federated — query 4 — slice 2021
+- **Query:** federated fine-tuning data heterogeneity non-IID
+- **Date run:** 2026-07-31T17:48:02Z
+- **Results returned:** 69
+- **Slice:** 2021
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2021; API totalReported=69
+
+### semanticscholar_backfill — B1_peft — query 1 — slice 2020
+- **Query:** parameter-efficient fine-tuning large language models
+- **Date run:** 2026-07-31T17:55:41Z
+- **Results returned:** 200
+- **Slice:** 2020
+- **Notes:** protocol=1.3 confirmation-band backfill; s2_keyword_variant; year slice 2020; API totalReported=1005; HIT_CAP=200

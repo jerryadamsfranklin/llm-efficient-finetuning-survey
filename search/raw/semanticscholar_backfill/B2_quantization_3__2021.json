@@ -1,0 +1,18 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "QLoRA quantized low-rank adaptation",
+  "year": "2021-2021",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:36:24Z",
+  "total_results_reported": 0,
+  "returned": 0,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [],
+  "protocol_version": "1.3",
+  "protocol_query": "QLoRA quantized low-rank adaptation",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2021"
+}

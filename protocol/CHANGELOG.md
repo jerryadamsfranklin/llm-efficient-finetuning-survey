@@ -87,6 +87,44 @@ no v1.2 result is removed or altered.
 v1.3 must be committed **before** the backfill, the supplementary retrieval, and the
 first recorded Stage 1 decision.
 
+### Execution outcome (2026-07-31, after this amendment was committed)
+
+**Backfill:** 54 of 54 slices run; 6,775 records retrieved; 5,185 new unique candidates,
+all 2019–2021. Pre-2022 share of the pool moved from 4.3% to **36.4%**; pool size
+10,333 → **15,518**. The decisive single-query comparison: `B1_peft_1` returned 0
+pre-2022 records unsliced and 200 of 722 available for 2019 alone once sliced, confirming
+cap saturation rather than absent literature. 26 slices still reached the cap, so the band
+is improved but not exhaustive, and is not claimed to be.
+
+**Supplementary retrieval:** all 6 lookups resolved. Five are counted as recovered
+(AdapterFusion, Megatron-LM, GPipe, AdamW, experience replay); in-window references now
+represented is **34 of 34**. `bayati2023` matched *Flexora* (2024, arXiv 2408.10774), a
+different paper, and is **not** counted as recovered — this corroborates the Phase 2 venue
+check that rejected it. `dedupe.py` refuses any supplementary match whose title is not
+identical to the cited title.
+
+**Two defects found and fixed during execution, both affecting data integrity:**
+
+1. Neither `search_semanticscholar.py` nor `search_supplementary.py` loaded `local.env`, so
+   both ran unauthenticated and were heavily throttled. The first supplementary run recorded
+   GPipe as "NOT FOUND" purely from rate limiting; it matches at title ratio 1.0 once
+   authenticated. Lookups now distinguish `no_match` from `unresolved` so throttling can
+   never be recorded as evidence of absence.
+2. `candidate_id` was positional (`C00001` by sort order), so regenerating the pool
+   renumbered every record and would have silently reassigned screening decisions. Ids are
+   now derived from DOI, arXiv ID, or normalized title.
+
+**One metadata correction:** Semantic Scholar reports preprint posting years, which dated
+GPipe to 2018, experience replay to 2018, and AdamW to 2017 — outside the coverage window —
+even though all three were published in 2019 (NeurIPS, NeurIPS, ICLR). Criterion 5 reads
+"published (**or** first posted, for preprints)", so the verified publication year governs
+for these records. Without the fix, the mechanical date rule would have excluded the very
+references the supplementary retrieval was run to recover.
+
+**Scope bound applied:** of 7,699 confirmation-band records, 3,142 meet a §4 trigger and are
+screened; 4,557 are recorded `stage_1_not_screened` with empty decisions. Total receiving a
+Stage 1 judgement: **10,938**.
+
 ---
 
 ## Phase 3 entry — 2026-07-31 (artifact regeneration, no protocol change)

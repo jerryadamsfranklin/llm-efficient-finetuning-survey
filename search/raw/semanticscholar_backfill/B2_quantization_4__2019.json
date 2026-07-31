@@ -1,0 +1,1786 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "quantization-aware training transformer",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:36:44Z",
+  "total_results_reported": 46,
+  "returned": 46,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "ce106590145e89ea4b621c99665862967ccf5dac",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1910-06188",
+        "ArXiv": "1910.06188",
+        "MAG": "2979314664",
+        "DOI": "10.1109/EMC2-NIPS53020.2019.00016",
+        "CorpusId": 204509218
+      },
+      "title": "Q8BERT: Quantized 8Bit BERT",
+      "venue": "2019 Fifth Workshop on Energy Efficient Machine Learning and Cognitive Computing - NeurIPS Edition (EMC2-NIPS)",
+      "year": 2019,
+      "citationCount": 585,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1910.06188",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1910.06188, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1387202086",
+          "name": "Ofir Zafrir"
+        },
+        {
+          "authorId": "3150063",
+          "name": "Guy Boudoukh"
+        },
+        {
+          "authorId": "2477428",
+          "name": "Peter Izsak"
+        },
+        {
+          "authorId": "2134755",
+          "name": "Moshe Wasserblat"
+        }
+      ],
+      "abstract": "Recently, pre-trained Transformer [1] based language models such as BERT [2] and GPT [3], have shown great improvement in many Natural Language Processing (NLP) tasks. However, these models contain a large amount of parameters. The emergence of even larger and more accurate models such as GPT2 [4] and Megatron11https://github.com/NVIDIA/Megatron-LM, suggest a trend of large pre-trained Transformer models. However, using these large models in production environments is a complex task requiring a large amount of compute, memory and power resources. In this work we show how to perform quantization-aware training during the fine-tuning phase of BERT in order to compress BERT by 4x with minimal accuracy loss. Furthermore, the produced quantized model can accelerate inference speed if it is optimized for 8bit Integer supporting hardware."
+    },
+    {
+      "paperId": "18b7c2bc5877485b23b50e58bc771b74f6823e30",
+      "externalIds": {
+        "CorpusId": 204797285
+      },
+      "title": "C L ] 1 4 O ct 2 01 9 Q 8 BERT : Quantized 8 Bit BERT",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://export.arxiv.org/pdf/1910.06188, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1387202086",
+          "name": "Ofir Zafrir"
+        },
+        {
+          "authorId": "3150063",
+          "name": "Guy Boudoukh"
+        },
+        {
+          "authorId": null,
+          "name": "Peter Izsak"
+        },
+        {
+          "authorId": "2134755",
+          "name": "Moshe Wasserblat"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "faa4166e81889b4a4090d1679501fd95378bf2e9",
+      "externalIds": {
+        "MAG": "2928062709",
+        "DBLP": "conf/icmla/MishchenkoGSBMR19",
+        "DOI": "10.1109/ICMLA.2019.00127",
+        "CorpusId": 53393239
+      },
+      "title": "Low-Bit Quantization and Quantization-Aware Training for Small-Footprint Keyword Spotting",
+      "venue": "International Conference on Machine Learning and Applications",
+      "year": 2019,
+      "citationCount": 30,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICMLA.2019.00127?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICMLA.2019.00127, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2071643271",
+          "name": "Yuriy Mishchenko"
+        },
+        {
+          "authorId": "52158257",
+          "name": "Yusuf Goren"
+        },
+        {
+          "authorId": "145739665",
+          "name": "Ming Sun"
+        },
+        {
+          "authorId": "41053147",
+          "name": "Chris Beauchene"
+        },
+        {
+          "authorId": "145819149",
+          "name": "Spyros Matsoukas"
+        },
+        {
+          "authorId": "145573927",
+          "name": "Oleg Rybakov"
+        },
+        {
+          "authorId": "3306372",
+          "name": "S. Vitaladevuni"
+        }
+      ],
+      "abstract": "In this paper, we investigate novel quantization approaches to reduce memory and computational footprint of deep neural network (DNN) based keyword spotters (KWS). We propose a new method for KWS offline and online quantization, which we call dynamic quantization, where we quantize DNN weight matrices column-wise, using each column's exact individual min-max range, and the DNN layers' inputs and outputs are quantized for every input audio frame individually, using the exact min-max range of each input and output vector. We further apply a new quantization-aware training approach that allows us to incorporate quantization errors into KWS model during training. Together, these approaches allow us to significantly improve the performance of KWS in 4-bit and 8-bit quantized precision, achieving the end-to-end accuracy close to that of full precision models while reducing the models' on-device memory footprint by up to 80%."
+    },
+    {
+      "paperId": "42a7b7031ffa6a5d2e40ba4009b27862188e54f0",
+      "externalIds": {
+        "ArXiv": "1911.07190",
+        "DBLP": "journals/corr/abs-1911-07190",
+        "MAG": "2985339713",
+        "DOI": "10.1007/s10994-021-06053-z",
+        "CorpusId": 208139197
+      },
+      "title": "Loss aware post-training quantization",
+      "venue": "Machine-mediated learning",
+      "year": 2019,
+      "citationCount": 207,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10994-021-06053-z.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1911.07190, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51498210",
+          "name": "Yury Nahshan"
+        },
+        {
+          "authorId": "104387774",
+          "name": "Brian Chmiel"
+        },
+        {
+          "authorId": "46906102",
+          "name": "Chaim Baskin"
+        },
+        {
+          "authorId": "23913513",
+          "name": "Evgenii Zheltonozhskii"
+        },
+        {
+          "authorId": "2607278",
+          "name": "Ron Banner"
+        },
+        {
+          "authorId": "49791556",
+          "name": "A. Bronstein"
+        },
+        {
+          "authorId": "144188849",
+          "name": "A. Mendelson"
+        }
+      ],
+      "abstract": "Neural network quantization enables the deployment of large models on resource-constrained devices. Current post-training quantization methods fall short in terms of accuracy for INT4 (or lower) but provide reasonable accuracy for INT8 (or above). In this work, we study the effect of quantization on the structure of the loss landscape. We show that the structure is flat and separable for mild quantization, enabling straightforward post-training quantization methods to achieve good results. We show that with more aggressive quantization, the loss landscape becomes highly non-separable with steep curvature, making the selection of quantization parameters more challenging. Armed with this understanding, we design a method that quantizes the layer parameters jointly, enabling significant accuracy improvement over current post-training quantization methods. Reference implementation is available at https://github.com/ynahshan/nn-quantization-pytorch/tree/master/lapq."
+    },
+    {
+      "paperId": "41a3eee922c90ecb221c1665490b0eaca4c683d5",
+      "externalIds": {
+        "MAG": "2976783886",
+        "DBLP": "journals/jmlr/BaskinCZBBM21",
+        "ArXiv": "1909.11481",
+        "CorpusId": 202750269
+      },
+      "title": "CAT: Compression-Aware Training for bandwidth reduction",
+      "venue": "Journal of machine learning research",
+      "year": 2019,
+      "citationCount": 14,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.11481, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46906102",
+          "name": "Chaim Baskin"
+        },
+        {
+          "authorId": "104387774",
+          "name": "Brian Chmiel"
+        },
+        {
+          "authorId": "23913513",
+          "name": "Evgenii Zheltonozhskii"
+        },
+        {
+          "authorId": "2607278",
+          "name": "Ron Banner"
+        },
+        {
+          "authorId": "49791556",
+          "name": "A. Bronstein"
+        },
+        {
+          "authorId": "144188849",
+          "name": "A. Mendelson"
+        }
+      ],
+      "abstract": "Convolutional neural networks (CNNs) have become the dominant neural network architecture for solving visual processing tasks. One of the major obstacles hindering the ubiquitous use of CNNs for inference is their relatively high memory bandwidth requirements, which can be a main energy consumer and throughput bottleneck in hardware accelerators. Accordingly, an efficient feature map compression method can result in substantial performance gains. Inspired by quantization-aware training approaches, we propose a compression-aware training (CAT) method that involves training the model in a way that allows better compression of feature maps during inference. Our method trains the model to achieve low-entropy feature maps, which enables efficient compression at inference time using classical transform coding methods. CAT significantly improves the state-of-the-art results reported for quantization. For example, on ResNet-34 we achieve 73.1% accuracy (0.2% degradation from the baseline) with an average representation of only 1.79 bits per value. Reference implementation accompanies the paper at this https URL"
+    },
+    {
+      "paperId": "e781226e4abc23bf600f74376669ef698bf68a9e",
+      "externalIds": {
+        "DBLP": "conf/asru/FanLZX19",
+        "MAG": "2997163791",
+        "ArXiv": "2001.01557",
+        "DOI": "10.1109/ASRU46091.2019.9003844",
+        "CorpusId": 209862771
+      },
+      "title": "Speaker-Aware Speech-Transformer",
+      "venue": "Automatic Speech Recognition & Understanding",
+      "year": 2019,
+      "citationCount": 25,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2001.01557",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2001.01557, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "14624477",
+          "name": "Zhiyun Fan"
+        },
+        {
+          "authorId": "2155871822",
+          "name": "Jie Li"
+        },
+        {
+          "authorId": "1661008937",
+          "name": "Shiyu Zhou"
+        },
+        {
+          "authorId": "2109511511",
+          "name": "Bo Xu"
+        }
+      ],
+      "abstract": "Recently, end-to-end (E2E) models become a competitive alternative to the conventional hybrid automatic speech recognition (ASR) systems. However, they still suffer from speaker mismatch in training and testing condition. In this paper, we use Speech-Transformer (ST) as the study platform to investigate speaker aware training of E2E models. We propose a model called Speaker-Aware Speech-Transformer (SAST), which is a standard ST equipped with a speaker attention module (SAM). The SAM has a static speaker knowledge block (SKB) that is made of i-vectors. At each time step, the encoder output attends to the i-vectors in the block, and generates a weighted combined speaker embedding vector, which helps the model to normalize the speaker variations. The SAST model trained in this way becomes independent of specific training speakers and thus generalizes better to unseen testing speakers. We investigate different factors of SAM. Experimental results on the AISHELL-1 task show that SAST achieves a relative 6.5% CER reduction (CERR) over the speaker-independent (SI) baseline. Moreover, we demonstrate that SAST still works quite well even if the i-vectors in SKB all come from a different data source other than the acoustic training set."
+    },
+    {
+      "paperId": "d6b0138c42c2736a33a6caaee41a3bebfb0cd6a8",
+      "externalIds": {
+        "MAG": "3088493063",
+        "ArXiv": "1910.02974",
+        "DBLP": "journals/corr/abs-1910-02974",
+        "DOI": "10.1109/ICRA40945.2020.9196653",
+        "CorpusId": 203902736
+      },
+      "title": "SMArT: Training Shallow Memory-aware Transformers for Robotic Explainability",
+      "venue": "IEEE International Conference on Robotics and Automation",
+      "year": 2019,
+      "citationCount": 29,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1910.02974",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1910.02974, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3468983",
+          "name": "Marcella Cornia"
+        },
+        {
+          "authorId": "1843795",
+          "name": "L. Baraldi"
+        },
+        {
+          "authorId": "1741922",
+          "name": "R. Cucchiara"
+        }
+      ],
+      "abstract": "The ability to generate natural language explanations conditioned on the visual perception is a crucial step towards autonomous agents which can explain themselves and communicate with humans. While the research efforts in image and video captioning are giving promising results, this is often done at the expense of the computational requirements of the approaches, limiting their applicability to real contexts. In this paper, we propose a fully-attentive captioning algorithm which can provide state-of-the-art performances on language generation while restricting its computational demands. Our model is inspired by the Transformer model and employs only two Transformer layers in the encoding and decoding stages. Further, it incorporates a novel memory-aware encoding of image regions. Experiments demonstrate that our approach achieves competitive results in terms of caption quality while featuring reduced computational demands. Further, to evaluate its applicability on autonomous agents, we conduct experiments on simulated scenes taken from the perspective of domestic robots."
+    },
+    {
+      "paperId": "3d12d54f6b57a58dad01072d640b3cbacc1979e0",
+      "externalIds": {
+        "MAG": "2995260016",
+        "DBLP": "conf/iecon/KwasniewskaSOWD19",
+        "DOI": "10.1109/IECON.2019.8927153",
+        "CorpusId": 209323286
+      },
+      "title": "Deep Learning Optimization for Edge Devices: Analysis of Training Quantization Parameters",
+      "venue": "Annual Conference of the IEEE Industrial Electronics Society",
+      "year": 2019,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IECON.2019.8927153?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IECON.2019.8927153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "41051656",
+          "name": "A. Kwaśniewska"
+        },
+        {
+          "authorId": "51187873",
+          "name": "Maciej Szankin"
+        },
+        {
+          "authorId": "1456142202",
+          "name": "Mateusz Ozga"
+        },
+        {
+          "authorId": "38760084",
+          "name": "J. Wolfe"
+        },
+        {
+          "authorId": "152781458",
+          "name": "Arun Das"
+        },
+        {
+          "authorId": "2064054424",
+          "name": "Adam Zając"
+        },
+        {
+          "authorId": "46231702",
+          "name": "J. Rumiński"
+        },
+        {
+          "authorId": "144095563",
+          "name": "P. Rad"
+        }
+      ],
+      "abstract": "This paper focuses on convolution neural network quantization problem. The quantization has a distinct stage of data conversion from floating-point into integer-point numbers. In general, the process of quantization is associated with the reduction of the matrix dimension via limited precision of the numbers. However, the training and inference stages of deep learning neural network are limited by the space of the memory and a variety of factors including programming complexity and even reliability of the system. On the whole the process of quantization becomes more and more popular due to significant impact on performance and minimal accuracy loss. Various techniques for networks quantization have been already proposed, including quantization aware training and integer arithmetic-only inference. Yet, a detailed comparison of various quantization configurations, combining all proposed methods haven't been presented yet. This comparison is important to understand selection of quantization hyperparameters during training to optimize networks for inference while preserving their robustness. In this work, we perform in-depth analysis of parameters in the quantization aware training, the process of simulating precision loss in the forward pass by quantizing and dequantizing tensors. Specifically, we modify rounding modes, input preprocessing, output data signedness, bitwidth of the quantization and locations of precision loss simulation to evaluate how they affect accuracy of deep neural network aimed at performing efficient calculations on resource-constrained devices."
+    },
+    {
+      "paperId": "8595c3cf02e8530be0ad2537f55210518676dd64",
+      "externalIds": {
+        "MAG": "2971830287",
+        "ArXiv": "1909.02273",
+        "DBLP": "journals/corr/abs-1909-02273",
+        "CorpusId": 202540909
+      },
+      "title": "Source Dependency-Aware Transformer with Supervised Self-Attention",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.02273, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8206308",
+          "name": "Chengyi Wang"
+        },
+        {
+          "authorId": "2362902",
+          "name": "Shuangzhi Wu"
+        },
+        {
+          "authorId": "1803054",
+          "name": "Shujie Liu"
+        }
+      ],
+      "abstract": "Recently, Transformer has achieved the state-of-the-art performance on many machine translation tasks. However, without syntax knowledge explicitly considered in the encoder, incorrect context information that violates the syntax structure may be integrated into source hidden states, leading to erroneous translations. In this paper, we propose a novel method to incorporate source dependencies into the Transformer. Specifically, we adopt the source dependency tree and define two matrices to represent the dependency relations. Based on the matrices, two heads in the multi-head self-attention module are trained in a supervised manner and two extra cross entropy losses are introduced into the training objective function. Under this training objective, the model is trained to learn the source dependency relations directly. Without requiring pre-parsed input during inference, our model can generate better translations with the dependency-aware context information. Experiments on bi-directional Chinese-to-English, English-to-Japanese and English-to-German translation tasks show that our proposed method can significantly improve the Transformer baseline."
+    },
+    {
+      "paperId": "5dba1e9e4874e2da2e42949ac3b982bb61f4bb7d",
+      "externalIds": {
+        "ArXiv": "1912.10087",
+        "MAG": "3018217454",
+        "DBLP": "conf/aicas/GrimaldiPC20",
+        "DOI": "10.1109/AICAS48895.2020.9073979",
+        "CorpusId": 209445003
+      },
+      "title": "EAST: Encoding-Aware Sparse Training for Deep Memory Compression of ConvNets",
+      "venue": "International Conference on Artificial Intelligence Circuits and Systems",
+      "year": 2019,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1912.10087",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1912.10087, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1389401736",
+          "name": "Matteo Grimaldi"
+        },
+        {
+          "authorId": "8466968",
+          "name": "Valentino Peluso"
+        },
+        {
+          "authorId": "1680014",
+          "name": "A. Calimera"
+        }
+      ],
+      "abstract": "The implementation of Deep Convolutional Neural Networks (ConvNets) on tiny end-nodes with limited non-volatile memory space calls for smart compression strategies capable of shrinking the footprint yet preserving predictive accuracy. There exist a number of strategies for this purpose, from those that play with the topology of the model or the arithmetic precision, e.g. pruning and quantization, to those that operate a model agnostic compression, e.g. weight encoding. The tighter the memory constraint, the higher the probability that these techniques alone cannot meet the requirement, hence more awareness and cooperation across different optimizations become mandatory. This work addresses the issue by introducing EAST, Encoding-Aware Sparse Training, a novel memory-constrained training procedure that leads quantized ConvNets towards deep memory compression. EAST implements an adaptive group pruning designed to maximize the compression rate of the weight encoding scheme (the LZ4 algorithm in this work). If compared to existing methods, EAST meets the memory constraint with lower sparsity, hence ensuring higher accuracy. Results conducted on a state-of-the-art ConvNet (ResNet-9) deployed on a low-power microcontroller (ARM Cortex-M4) validate the proposal."
+    },
+    {
+      "paperId": "3888e365da82a2d60a29993f35eac25324aebe51",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1904-12604",
+        "MAG": "2941565043",
+        "ArXiv": "1904.12604",
+        "CorpusId": 139102578
+      },
+      "title": "Pre-training of Context-aware Item Representation for Next Basket Recommendation",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 10,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.12604, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2121285355",
+          "name": "Jingxuan Yang"
+        },
+        {
+          "authorId": "2150636233",
+          "name": "Jun Xu"
+        },
+        {
+          "authorId": "47109079",
+          "name": "Jianzhuo Tong"
+        },
+        {
+          "authorId": "144636492",
+          "name": "Sheng Gao"
+        },
+        {
+          "authorId": "2140051783",
+          "name": "Jun Guo"
+        },
+        {
+          "authorId": "2113341834",
+          "name": "Jirong Wen"
+        }
+      ],
+      "abstract": "Next basket recommendation, which aims to predict the next a few items that a user most probably purchases given his historical transactions, plays a vital role in market basket analysis. From the viewpoint of item, an item could be purchased by different users together with different items, for different reasons. Therefore, an ideal recommender system should represent an item considering its transaction contexts. Existing state-of-the-art deep learning methods usually adopt the static item representations, which are invariant among all of the transactions and thus cannot achieve the full potentials of deep learning. Inspired by the pre-trained representations of BERT in natural language processing, we propose to conduct context-aware item representation for next basket recommendation, called Item Encoder Representations from Transformers (IERT). In the offline phase, IERT pre-trains deep item representations conditioning on their transaction contexts. In the online recommendation phase, the pre-trained model is further fine-tuned with an additional output layer. The output contextualized item embeddings are used to capture users' sequential behaviors and general tastes to conduct recommendation. Experimental results on the Ta-Feng data set show that IERT outperforms the state-of-the-art baseline methods, which demonstrated the effectiveness of IERT in next basket representation."
+    },
+    {
+      "paperId": "2bc1c8bd00bbf7401afcb5460277840fd8bab029",
+      "externalIds": {
+        "ArXiv": "1908.06066",
+        "DBLP": "journals/corr/abs-1908-06066",
+        "MAG": "2998356391",
+        "DOI": "10.1609/AAAI.V34I07.6795",
+        "CorpusId": 201058752
+      },
+      "title": "Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "year": 2019,
+      "citationCount": 975,
+      "openAccessPdf": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/6795/6649",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1908.06066, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108548771",
+          "name": "Gen Li"
+        },
+        {
+          "authorId": "46429989",
+          "name": "Nan Duan"
+        },
+        {
+          "authorId": "2181664",
+          "name": "Yuejian Fang"
+        },
+        {
+          "authorId": "71790825",
+          "name": "Daxin Jiang"
+        },
+        {
+          "authorId": "92660691",
+          "name": "Ming Zhou"
+        }
+      ],
+      "abstract": "We propose Unicoder-VL, a universal encoder that aims to learn joint representations of vision and language in a pre-training manner. Borrow ideas from cross-lingual pre-trained models, such as XLM (Lample and Conneau 2019) and Unicoder (Huang et al. 2019), both visual and linguistic contents are fed into a multi-layer Transformer (Vaswani et al. 2017) for the cross-modal pre-training, where three pre-trained tasks are employed, including Masked Language Modeling(MLM), Masked Object Classification(MOC) and Visual-linguistic Matching(VLM). The first two tasks learn context-aware representations for input tokens based on linguistic and visual contents jointly. The last task tries to predict whether an image and a text describe each other. After pretraining on large-scale image-caption pairs, we transfer Unicoder-VL to caption-based image-text retrieval and visual commonsense reasoning, with just one additional output layer. We achieve state-of-the-art or comparable results on both two tasks and show the powerful ability of the cross-modal pre-training."
+    },
+    {
+      "paperId": "594ad264d6b92afb9d13cb56ad8ffadba94a9f7a",
+      "externalIds": {
+        "MAG": "2952728748",
+        "ACL": "P19-1564",
+        "DBLP": "conf/acl/LeSCH19",
+        "ArXiv": "1907.01166",
+        "DOI": "10.18653/v1/P19-1564",
+        "CorpusId": 195776147
+      },
+      "title": "Multimodal Transformer Networks for End-to-End Video-Grounded Dialogue Systems",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2019,
+      "citationCount": 123,
+      "openAccessPdf": {
+        "url": "https://www.aclweb.org/anthology/P19-1564.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.01166, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2064728738",
+          "name": "Hung Le"
+        },
+        {
+          "authorId": "36187119",
+          "name": "Doyen Sahoo"
+        },
+        {
+          "authorId": "2185019",
+          "name": "Nancy F. Chen"
+        },
+        {
+          "authorId": "1741126",
+          "name": "S. Hoi"
+        }
+      ],
+      "abstract": "Developing Video-Grounded Dialogue Systems (VGDS), where a dialogue is conducted based on visual and audio aspects of a given video, is significantly more challenging than traditional image or text-grounded dialogue systems because (1) feature space of videos span across multiple picture frames, making it difficult to obtain semantic information; and (2) a dialogue agent must perceive and process information from different modalities (audio, video, caption, etc.) to obtain a comprehensive understanding. Most existing work is based on RNNs and sequence-to-sequence architectures, which are not very effective for capturing complex long-term dependencies (like in videos). To overcome this, we propose Multimodal Transformer Networks (MTN) to encode videos and incorporate information from different modalities. We also propose query-aware attention through an auto-encoder to extract query-aware features from non-text modalities. We develop a training procedure to simulate token-level decoding to improve the quality of generated responses during inference. We get state of the art performance on Dialogue System Technology Challenge 7 (DSTC7). Our model also generalizes to another multimodal visual-grounded dialogue task, and obtains promising performance."
+    },
+    {
+      "paperId": "9e07cd0cd38ea291359bbd6b72abde716530fd46",
+      "externalIds": {
+        "MAG": "2935705121",
+        "DBLP": "conf/icassp/LamHL19",
+        "ArXiv": "2412.19209",
+        "DOI": "10.1109/ICASSP.2019.8683027",
+        "CorpusId": 145833193
+      },
+      "title": "Context-aware Deep Learning for Multi-modal Depression Detection",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2019,
+      "citationCount": 111,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2412.19209",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2412.19209, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "137591656",
+          "name": "Genevieve Lam"
+        },
+        {
+          "authorId": "49329558",
+          "name": "Dongyan Huang"
+        },
+        {
+          "authorId": "144968898",
+          "name": "Weisi Lin"
+        }
+      ],
+      "abstract": "In this study, we focus on automated approaches to detect depression from clinical interviews using machine learning approached, which the models are trained on multi-modal data. Differentiating from successful machine learning approaches such as context-aware analysis through feature engineering and end-to-end deep neural networks to depression detection utilizing the Distress Analysis Interview Corpus, we propose a novel method that incorporates a data augmentation procedure based on topic modelling using transformer and deep 1D convolutional neural network (CNN) for acoustic feature modeling. The simulation results demonstrate the effectiveness of the proposed method for training multi-modal deep learning models. Our deep 1D CNN and transformer models achieve the state-of-the-art performance for the audio and text modalities respectively, while our multi-modal results are comparable with the state-of-the-art depression detection systems."
+    },
+    {
+      "paperId": "745e4b36a1759177871288cae51fbae0b873b5e5",
+      "externalIds": {
+        "MAG": "2973061659",
+        "DBLP": "conf/aaai/ShenDYMYGMK20",
+        "ArXiv": "1909.05840",
+        "DOI": "10.1609/AAAI.V34I05.6409",
+        "CorpusId": 202565587
+      },
+      "title": "Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "year": 2019,
+      "citationCount": 677,
+      "openAccessPdf": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/6409/6265",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.05840, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2191455",
+          "name": "Sheng Shen"
+        },
+        {
+          "authorId": "143879884",
+          "name": "Zhen Dong"
+        },
+        {
+          "authorId": "119870944",
+          "name": "Jiayu Ye"
+        },
+        {
+          "authorId": "2115503326",
+          "name": "Linjian Ma"
+        },
+        {
+          "authorId": "9088433",
+          "name": "Z. Yao"
+        },
+        {
+          "authorId": "10419477",
+          "name": "A. Gholami"
+        },
+        {
+          "authorId": "143884206",
+          "name": "Michael W. Mahoney"
+        },
+        {
+          "authorId": "1732330",
+          "name": "K. Keutzer"
+        }
+      ],
+      "abstract": "Transformer based architectures have become de-facto models used for a range of Natural Language Processing tasks. In particular, the BERT based models achieved significant accuracy gain for GLUE tasks, CoNLL-03 and SQuAD. However, BERT based models have a prohibitive memory footprint and latency. As a result, deploying BERT based models in resource constrained environments has become a challenging task. In this work, we perform an extensive analysis of fine-tuned BERT models using second order Hessian information, and we use our results to propose a novel method for quantizing BERT models to ultra low precision. In particular, we propose a new group-wise quantization scheme, and we use Hessian-based mix-precision method to compress the model further. We extensively test our proposed method on BERT downstream tasks of SST-2, MNLI, CoNLL-03, and SQuAD. We can achieve comparable performance to baseline with at most 2.3% performance degradation, even with ultra-low precision quantization down to 2 bits, corresponding up to 13× compression of the model parameters, and up to 4× compression of the embedding table as well as activations. Among all tasks, we observed the highest performance loss for BERT fine-tuned on SQuAD. By probing into the Hessian based analysis as well as visualization, we show that this is related to the fact that current training/fine-tuning strategy of BERT does not converge for SQuAD."
+    },
+    {
+      "paperId": "be15556f57a283de15b1f2c30095ba34c70349de",
+      "externalIds": {
+        "MAG": "2948695999",
+        "DBLP": "journals/corr/abs-1906-03193",
+        "ArXiv": "1906.03193",
+        "CorpusId": 174801144
+      },
+      "title": "Fighting Quantization Bias With Bias",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 63,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1906.03193, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2061428451",
+          "name": "Alexander Finkelstein"
+        },
+        {
+          "authorId": "68978387",
+          "name": "Uri Almog"
+        },
+        {
+          "authorId": "49055663",
+          "name": "Mark Grobman"
+        }
+      ],
+      "abstract": "Low-precision representation of deep neural networks (DNNs) is critical for efficient deployment of deep learning application on embedded platforms, however, converting the network to low precision degrades its performance. Crucially, networks that are designed for embedded applications usually suffer from increased degradation since they have less redundancy. This is most evident for the ubiquitous MobileNet architecture which requires a costly quantization-aware training cycle to achieve acceptable performance when quantized to 8-bits. In this paper, we trace the source of the degradation in MobileNets to a shift in the mean activation value. This shift is caused by an inherent bias in the quantization process which builds up across layers, shifting all network statistics away from the learned distribution. We show that this phenomenon happens in other architectures as well. We propose a simple remedy - compensating for the quantization induced shift by adding a constant to the additive bias term of each channel. We develop two simple methods for estimating the correction constants - one using iterative evaluation of the quantized network and one where the constants are set using a short training phase. Both methods are fast and require only a small amount of unlabeled data, making them appealing for rapid deployment of neural networks. Using the above methods we are able to match the performance of training-based quantization of MobileNets at a fraction of the cost."
+    },
+    {
+      "paperId": "0ab0fda8774c303be8f8f8c8f684a890dcf5d455",
+      "externalIds": {
+        "MAG": "2950037171",
+        "ArXiv": "1906.01282",
+        "DBLP": "journals/corr/abs-1906-01282",
+        "ACL": "P19-1298",
+        "DOI": "10.18653/v1/P19-1298",
+        "CorpusId": 174798165
+      },
+      "title": "Lattice-Based Transformer Encoder for Neural Machine Translation",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2019,
+      "citationCount": 45,
+      "openAccessPdf": {
+        "url": "https://www.aclweb.org/anthology/P19-1298.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1906.01282, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1381943831",
+          "name": "Fengshun Xiao"
+        },
+        {
+          "authorId": "46172737",
+          "name": "Jiangtong Li"
+        },
+        {
+          "authorId": "36225434",
+          "name": "Zhao Hai"
+        },
+        {
+          "authorId": "108085542",
+          "name": "Rui Wang"
+        },
+        {
+          "authorId": "2849740",
+          "name": "Kehai Chen"
+        }
+      ],
+      "abstract": "Neural machine translation (NMT) takes deterministic sequences for source representations. However, either word-level or subword-level segmentations have multiple choices to split a source sequence with different word segmentors or different subword vocabulary sizes. We hypothesize that the diversity in segmentations may affect the NMT performance. To integrate different segmentations with the state-of-the-art NMT model, Transformer, we propose lattice-based encoders to explore effective word or subword representation in an automatic way during training. We propose two methods: 1) lattice positional encoding and 2) lattice-aware self-attention. These two methods can be used together and show complementary to each other to further improve translation performance. Experiment results show superiorities of lattice-based encoders in word-level and subword-level representations over conventional Transformer encoder."
+    },
+    {
+      "paperId": "b946ce2c3405969bf615bedc623845b0d3d9b010",
+      "externalIds": {
+        "MAG": "2981696585",
+        "ArXiv": "1910.11871",
+        "DBLP": "journals/corr/abs-1910-11871",
+        "CorpusId": 204907222
+      },
+      "title": "Towards Online End-to-end Transformer Automatic Speech Recognition",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 33,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1910.11871, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2779505",
+          "name": "E. Tsunoo"
+        },
+        {
+          "authorId": "3165422",
+          "name": "Yosuke Kashiwagi"
+        },
+        {
+          "authorId": "120306588",
+          "name": "Toshiyuki Kumakura"
+        },
+        {
+          "authorId": "1746678",
+          "name": "Shinji Watanabe"
+        }
+      ],
+      "abstract": "The Transformer self-attention network has recently shown promising performance as an alternative to recurrent neural networks in end-to-end (E2E) automatic speech recognition (ASR) systems. However, Transformer has a drawback in that the entire input sequence is required to compute self-attention. We have proposed a block processing method for the Transformer encoder by introducing a context-aware inheritance mechanism. An additional context embedding vector handed over from the previously processed block helps to encode not only local acoustic information but also global linguistic, channel, and speaker attributes. In this paper, we extend it towards an entire online E2E ASR system by introducing an online decoding process inspired by monotonic chunkwise attention (MoChA) into the Transformer decoder. Our novel MoChA training and inference algorithms exploit the unique properties of Transformer, whose attentions are not always monotonic or peaky, and have multiple heads and residual connections of the decoder layers. Evaluations of the Wall Street Journal (WSJ) and AISHELL-1 show that our proposed online Transformer decoder outperforms conventional chunkwise approaches."
+    },
+    {
+      "paperId": "fc4272fe7c24746532a7b13674f6dd9b7380cc6d",
+      "externalIds": {
+        "ArXiv": "1907.00457",
+        "DBLP": "conf/odyssey/LingSLK20",
+        "MAG": "3024182269",
+        "DOI": "10.21437/Odyssey.2020-2",
+        "CorpusId": 219518010
+      },
+      "title": "BERTphone: Phonetically-aware Encoder Representations for Utterance-level Speaker and Language Recognition",
+      "venue": "The Speaker and Language Recognition Workshop",
+      "year": 2019,
+      "citationCount": 28,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1907.00457",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.00457, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31627331",
+          "name": "Shaoshi Ling"
+        },
+        {
+          "authorId": "143733211",
+          "name": "Julian Salazar"
+        },
+        {
+          "authorId": "2108218661",
+          "name": "Yuzong Liu"
+        },
+        {
+          "authorId": "1783839",
+          "name": "K. Kirchhoff"
+        }
+      ],
+      "abstract": "We introduce BERTphone, a Transformer encoder trained on large speech corpora that outputs phonetically-aware contextual representation vectors that can be used for both speaker and language recognition. This is accomplished by training on two objectives: the first, inspired by adapting BERT to the continuous domain, involves masking spans of input frames and reconstructing the whole sequence for acoustic representation learning; the second, inspired by the success of bottleneck features from ASR, is a sequence-level CTC loss applied to phoneme labels for phonetic representation learning. We pretrain two BERTphone models (one on Fisher and one on TED-LIUM) and use them as feature extractors into x-vector-style DNNs for both tasks. We attain a state-of-the-art $C_{\\text{avg}}$ of 6.16 on the challenging LRE07 3sec closed-set language recognition task. On Fisher and VoxCeleb speaker recognition tasks, we see an 18% relative reduction in speaker EER when training on BERTphone vectors instead of MFCCs. In general, BERTphone outperforms previous phonetic pretraining approaches on the same data. We release our code and models at https://github.com/awslabs/speech-representations."
+    },
+    {
+      "paperId": "2704b207c7b8f6fc32bd3d04690b2f4f745c460f",
+      "externalIds": {
+        "ArXiv": "1907.01256",
+        "ACL": "W19-4423",
+        "DBLP": "journals/corr/abs-1907-01256",
+        "MAG": "2970076840",
+        "DOI": "10.18653/v1/W19-4423",
+        "CorpusId": 195776229
+      },
+      "title": "A Neural Grammatical Error Correction System Built On Better Pre-training and Sequential Transfer Learning",
+      "venue": "BEA@ACL",
+      "year": 2019,
+      "citationCount": 89,
+      "openAccessPdf": {
+        "url": "https://www.aclweb.org/anthology/W19-4423.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.01256, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40964839",
+          "name": "Yo Joong Choe"
+        },
+        {
+          "authorId": "48691049",
+          "name": "Jiyeon Ham"
+        },
+        {
+          "authorId": "51268566",
+          "name": "Kyubyong Park"
+        },
+        {
+          "authorId": "152222465",
+          "name": "Yeoil Yoon"
+        }
+      ],
+      "abstract": "Grammatical error correction can be viewed as a low-resource sequence-to-sequence task, because publicly available parallel corpora are limited.To tackle this challenge, we first generate erroneous versions of large unannotated corpora using a realistic noising function. The resulting parallel corpora are sub-sequently used to pre-train Transformer models. Then, by sequentially applying transfer learning, we adapt these models to the domain and style of the test set. Combined with a context-aware neural spellchecker, our system achieves competitive results in both restricted and low resource tracks in ACL 2019 BEAShared Task. We release all of our code and materials for reproducibility."
+    },
+    {
+      "paperId": "edaeaeb3b6960c6841909a0f8000c25adcc1de52",
+      "externalIds": {
+        "MAG": "2990322914",
+        "DOI": "10.3390/electronics8121423",
+        "CorpusId": 210987137
+      },
+      "title": "Performance Profiling of Embedded ConvNets under Thermal-Aware DVFS",
+      "venue": "Electronics",
+      "year": 2019,
+      "citationCount": 13,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2079-9292/8/12/1423/pdf?version=1575018561",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/electronics8121423?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/electronics8121423, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8466968",
+          "name": "Valentino Peluso"
+        },
+        {
+          "authorId": "50780466",
+          "name": "R. G. Rizzo"
+        },
+        {
+          "authorId": "1680014",
+          "name": "A. Calimera"
+        }
+      ],
+      "abstract": "Convolutional Neural Networks (ConvNets) can be shrunk to fit embedded CPUs adopted on mobile end-nodes, like smartphones or drones. The deployment onto such devices encompasses several algorithmic level optimizations, e.g., topology restructuring, pruning, and quantization, that reduce the complexity of the network, ensuring less resource usage and hence higher speed. Several studies revealed remarkable performance, paving the way towards real-time inference on low power cores. However, continuous execution at maximum speed is quite unrealistic due to a fast increase of the on-chip temperature. Indeed, proper thermal management is paramount to guarantee silicon reliability and a safe user experience. Power management schemes, like voltage lowering and frequency scaling, are common knobs to control the thermal stability. Obviously, this implies a performance degradation, often not considered during the training and optimization stages. The objective of this work is to present the performance assessment of embedded ConvNets under thermal management. Our study covers the behavior of two control policies, namely reactive and proactive, implemented through the Dynamic Voltage-Frequency Scaling (DVFS) mechanism available on commercial embedded CPUs. As benchmarks, we used four state-of-the-art ConvNets for computer vision flashed into the ARM Cortex-A15 CPU. With the collected results, we aim to show the existing temperature-performance trade-off and give a more realistic analysis of the maximum performance achievable. Moreover, we empirically demonstrate the strict relationship between the on-chip thermal behavior and the hyper-parameters of the ConvNet, revealing optimization margins for a thermal-aware design of neural network layers."
+    },
+    {
+      "paperId": "2c2f84c89afd363202438f8b8c31317246335fd4",
+      "externalIds": {
+        "MAG": "3013100902",
+        "DOI": "10.1109/Ubi-Media.2019.00021",
+        "CorpusId": 214762546
+      },
+      "title": "Stairs Descent Identification for Smart Wheelchair by Using GLCM and Learning Vector Quantization",
+      "venue": "2019 Twelfth International Conference on Ubi-Media Computing (Ubi-Media)",
+      "year": 2019,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/Ubi-Media.2019.00021?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/Ubi-Media.2019.00021, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1606011019",
+          "name": "Ahmad Wali Satria Bahari Johan Satria"
+        },
+        {
+          "authorId": "2083534057",
+          "name": "Fitri Fitri"
+        },
+        {
+          "authorId": "69516346",
+          "name": "Timothy Timothy"
+        }
+      ],
+      "abstract": "The smart wheelchair helps the activities of someone who has a physical disability. The smart wheelchair has several capabilities, one of these capabilities is detecting obstacles in the form of stairs descent. Where if they are not aware of the stairs descent, they can fall, it will be an effect injuring. Therefore this study aims to create a system that is able to detect stairs descent based on digital image and provide notifications. The system was built using the Gray Level Co-occurrence Matrix method as feature extraction and Learning Vector Quantization to classify the stairs descent based on the digital image. From the results of the tests that have been carried out using 200 training data and 40 test data obtained an accuracy rate of 92.5 The faster average computation time is 0.02779 (s) for detecting the stairs descent."
+    },
+    {
+      "paperId": "7f71d1c67bb1288ec4e9e3cc4ca2a926dfde2fae",
+      "externalIds": {
+        "MAG": "3007885288",
+        "DBLP": "conf/asru/ChenZWX19",
+        "ArXiv": "2003.01305",
+        "DOI": "10.1109/ASRU46091.2019.9003902",
+        "CorpusId": 211242618
+      },
+      "title": "Transfer Learning for Context-Aware Spoken Language Understanding",
+      "venue": "Automatic Speech Recognition & Understanding",
+      "year": 2019,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2003.01305",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.01305, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47261124",
+          "name": "Qian Chen"
+        },
+        {
+          "authorId": "1500648476",
+          "name": "Zhu Zhuo"
+        },
+        {
+          "authorId": "2117827836",
+          "name": "Wen Wang"
+        },
+        {
+          "authorId": "47515059",
+          "name": "Qiuyun Xu"
+        }
+      ],
+      "abstract": "Spoken language understanding (SLU) is a key component of task-oriented dialogue systems. SLU parses natural language user utterances into semantic frames. Previous work has shown that incorporating context information significantly improves SLU performance for multi-turn dialogues. However, collecting a large-scale human-labeled multi-turn dialogue corpus for the target domains is complex and costly. To reduce dependency on the collection and annotation effort, we propose a Context Encoding Language Transformer (CELT) model facilitating exploiting various context information for SLU. We explore different transfer learning approaches to reduce dependency on data collection and annotation. In addition to unsupervised pre-training using large-scale general purpose unlabeled corpora, such as Wikipedia, we explore unsupervised and supervised adaptive training approaches for transfer learning to benefit from other in-domain and out-of-domain dialogue corpora. Experimental results demonstrate that the proposed model with the proposed transfer learning approaches achieves significant improvement on the SLU performance over state-of-the-art models on two large-scale single-turn dialogue benchmarks and one large-scale multi-turn dialogue benchmark."
+    },
+    {
+      "paperId": "61b56f29e4e5123f6d4b510cb85c00b63a6ee470",
+      "externalIds": {
+        "CorpusId": 204790435
+      },
+      "title": "Quantized Transformer",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://web.stanford.edu/class/cs224n/reports/custom/15848474.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1381809149",
+          "name": "Andrew P. Tierno"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "e6cc6a7bd4db3e7604bae6a654ec29aa8542dafc",
+      "externalIds": {
+        "MAG": "2970821029",
+        "DBLP": "conf/nips/SunCCWVSCZG19",
+        "CorpusId": 202779157
+      },
+      "title": "Hybrid 8-bit Floating Point (HFP8) Training and Inference for Deep Neural Networks",
+      "venue": "Neural Information Processing Systems",
+      "year": 2019,
+      "citationCount": 256,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2112349504",
+          "name": "Xiao Sun"
+        },
+        {
+          "authorId": "2506452",
+          "name": "Jungwook Choi"
+        },
+        {
+          "authorId": "48240124",
+          "name": "Chia-Yu Chen"
+        },
+        {
+          "authorId": "2156503174",
+          "name": "Naigang Wang"
+        },
+        {
+          "authorId": "1778215",
+          "name": "Swagath Venkataramani"
+        },
+        {
+          "authorId": "145941003",
+          "name": "Vijayalakshmi Srinivasan"
+        },
+        {
+          "authorId": "2357983",
+          "name": "Xiaodong Cui"
+        },
+        {
+          "authorId": "31765881",
+          "name": "Wei Zhang"
+        },
+        {
+          "authorId": "33678523",
+          "name": "K. Gopalakrishnan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b306b5aca3fb84d1a912d3a90ff82b8e616ef449",
+      "externalIds": {
+        "MAG": "2989935501",
+        "DBLP": "journals/corr/abs-2002-10636",
+        "ArXiv": "2002.10636",
+        "DOI": "10.1109/ICRC.2019.8914713",
+        "CorpusId": 208631617
+      },
+      "title": "Non-Volatile Memory Array Based Quantization- and Noise-Resilient LSTM Neural Networks",
+      "venue": "International Conference on Rebooting Computing",
+      "year": 2019,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2002.10636",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.10636, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2111664507",
+          "name": "Wen Ma"
+        },
+        {
+          "authorId": "39698408",
+          "name": "P. Chiu"
+        },
+        {
+          "authorId": "2115121992",
+          "name": "Won Ho Choi"
+        },
+        {
+          "authorId": "39449475",
+          "name": "Minghai Qin"
+        },
+        {
+          "authorId": "3212424",
+          "name": "D. Bedau"
+        },
+        {
+          "authorId": "1414790486",
+          "name": "Martin Lueker-Boden"
+        }
+      ],
+      "abstract": "In cloud and edge computing models, it is important that compute devices at the edge be as power efficient as possible. Long short-term memory (LSTM) neural networks have been widely used for natural language processing, time series prediction and many other sequential data tasks. Thus, for these applications there is increasing need for low-power accelerators for LSTM model inference at the edge. In order to reduce power dissipation due to data transfers within inference devices, there has been significant interest in accelerating vector-matrix multiplication (VMM) operations using non-volatile memory (NVM) weight arrays. In NVM array-based hardware, reduced bit-widths also significantly increases the power efficiency. In this paper, we focus on the application of quantization-aware training algorithm to LSTM models, and the benefits these models bring in terms of resilience against both quantization error and analog device noise. We have shown that only 4-bit NVM weights and 4-bit ADC/DACs are needed to produce equivalent LSTM network performance as floating-point baseline. Reasonable levels of ADC quantization noise and weight noise can be naturally tolerated within our NVM-based quantized LSTM network. Benchmark analysis of our proposed LSTM accelerator for inference has shown at least 2.4× better computing efficiency and 40× higher area efficiency than traditional digital approaches (GPU, FPGA, and ASIC). Some other novel approaches based on NVM promise to deliver higher computing efficiency (up to ×4.7) but require larger arrays with potential higher error rates."
+    },
+    {
+      "paperId": "f1eb63d416d057e25ab0579ea8aeaebdf3b17bf4",
+      "externalIds": {
+        "DBLP": "conf/wmt/CarrinoRCF19",
+        "ACL": "W19-5418",
+        "MAG": "2970750538",
+        "DOI": "10.18653/v1/W19-5418",
+        "CorpusId": 201741042
+      },
+      "title": "Terminology-Aware Segmentation and Domain Feature for the WMT19 Biomedical Translation Task",
+      "venue": "Conference on Machine Translation",
+      "year": 2019,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://www.aclweb.org/anthology/W19-5418.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/W19-5418, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1416319999",
+          "name": "C. Carrino"
+        },
+        {
+          "authorId": "1419097897",
+          "name": "Bardia Rafieian"
+        },
+        {
+          "authorId": "1398996347",
+          "name": "M. Costa-jussà"
+        },
+        {
+          "authorId": "1779548",
+          "name": "José A. R. Fonollosa"
+        }
+      ],
+      "abstract": "In this work, we give a description of the TALP-UPC systems submitted for the WMT19 Biomedical Translation Task. Our proposed strategy is NMT model-independent and relies only on one ingredient, a biomedical terminology list. We first extracted such a terminology list by labelling biomedical words in our training dataset using the BabelNet API. Then, we designed a data preparation strategy to insert the terms information at a token level. Finally, we trained the Transformer model with this terms-informed data. Our best-submitted system ranked 2nd and 3rd for Spanish-English and English-Spanish translation directions, respectively."
+    },
+    {
+      "paperId": "826fde31cfd8cebf081e79f6def9bf2a909ea4bf",
+      "externalIds": {
+        "MAG": "2973533735",
+        "DBLP": "journals/access/HuangTLD19",
+        "DOI": "10.1109/ACCESS.2019.2942182",
+        "CorpusId": 203708212
+      },
+      "title": "Geometry-Aware GAN for Face Attribute Transfer",
+      "venue": "IEEE Access",
+      "year": 2019,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/8600701/08843985.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2019.2942182?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2019.2942182, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "10422782",
+          "name": "Danlan Huang"
+        },
+        {
+          "authorId": "144978572",
+          "name": "Xiaoming Tao"
+        },
+        {
+          "authorId": "1694070",
+          "name": "Jianhua Lu"
+        },
+        {
+          "authorId": "1834451",
+          "name": "M. Do"
+        }
+      ],
+      "abstract": "In this paper, the geometry-aware GAN, referred to as GAGAN, is proposed to address the issue of face attribute transfer with unpaired data. The source and target images are not aligned and come from different individuals. The key idea is to deform the source image according to the geometry features and generate a high-resolution image with the desired attribute. To address the problem of the unpaired training samples, the CycleGAN architecture is applied to form an attribute adding and removing cycle, where the bilateral mappings between the source and target domains are learned. The geometry flow and occlusion mask are learned by the warping sub-network to capture the geometric variation between the two domains. In the attribute adding process, the spatial transformer network (STN) warps the source face into the desired pose and shape according to the flow, and the transfer sub-network hallucinates new components on the warped image. In the attribute removing process, the recover sub-network and the STN reverts the sample back to the source domain. Experiments on the benchmarks CELEBA and CELEBA-HQ datasets demonstrate the advantages of our method compared to the baselines, in terms of both quantitative and qualitative evaluation."
+    },
+    {
+      "paperId": "d9d4fe669565912f8f3e74359d7e4b721982e275",
+      "externalIds": {
+        "MAG": "2946953220",
+        "DBLP": "journals/corr/abs-1905-11478",
+        "ArXiv": "1905.11478",
+        "CorpusId": 167217416
+      },
+      "title": "Learning In Practice: Reasoning About Quantization",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1905.11478, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "122425641",
+          "name": "Annie Cherkaev"
+        },
+        {
+          "authorId": "39410895",
+          "name": "W. Tai"
+        },
+        {
+          "authorId": "47657325",
+          "name": "Jeff Phillips"
+        },
+        {
+          "authorId": "3052879",
+          "name": "Vivek Srikumar"
+        }
+      ],
+      "abstract": "There is a mismatch between the standard theoretical analyses of statistical machine learning and how learning is used in practice. The foundational assumption supporting the theory is that we can represent features and models using real-valued parameters. In practice, however, we do not use real numbers at any point during training or deployment. Instead, we rely on discrete and finite quantizations of the reals, typically floating points. In this paper, we propose a framework for reasoning about learning under arbitrary quantizations. Using this formalization, we prove the convergence of quantization-aware versions of the Perceptron and Frank-Wolfe algorithms. Finally, we report the results of an extensive empirical study of the impact of quantization using a broad spectrum of datasets."
+    },
+    {
+      "paperId": "7da843389b95ae2782ac8acd0eb7267b9734dcd6",
+      "externalIds": {
+        "MAG": "2946955515",
+        "ArXiv": "1905.12334",
+        "DBLP": "journals/corr/abs-1905-12334",
+        "CorpusId": 168170068
+      },
+      "title": "Mixed Precision Training With 8-bit Floating Point",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 80,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1905.12334, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8792111",
+          "name": "Naveen Mellempudi"
+        },
+        {
+          "authorId": "51009233",
+          "name": "S. Srinivasan"
+        },
+        {
+          "authorId": "2352983",
+          "name": "Dipankar Das"
+        },
+        {
+          "authorId": "40279588",
+          "name": "Bharat Kaul"
+        }
+      ],
+      "abstract": "Reduced precision computation for deep neural networks is one of the key areas addressing the widening compute gap driven by an exponential growth in model size. In recent years, deep learning training has largely migrated to 16-bit precision, with significant gains in performance and energy efficiency. However, attempts to train DNNs at 8-bit precision have met with significant challenges because of the higher precision and dynamic range requirements of back-propagation. In this paper, we propose a method to train deep neural networks using 8-bit floating point representation for weights, activations, errors, and gradients. In addition to reducing compute precision, we also reduced the precision requirements for the master copy of weights from 32-bit to 16-bit. We demonstrate state-of-the-art accuracy across multiple data sets (imagenet-1K, WMT16) and a broader set of workloads (Resnet-18/34/50, GNMT, Transformer) than previously reported. We propose an enhanced loss scaling method to augment the reduced subnormal range of 8-bit floating point for improved error propagation. We also examine the impact of quantization noise on generalization and propose a stochastic rounding technique to address gradient noise. As a result of applying all these techniques, we report slightly higher validation accuracy compared to full precision baseline."
+    },
+    {
+      "paperId": "61467ac34903ba161c48ef8200993a32b9f2bb3e",
+      "externalIds": {
+        "CorpusId": 204873671
+      },
+      "title": "Quantized Transformer",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://web.stanford.edu/class/cs224n/reports/custom/15742249.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "12618003",
+          "name": "Chaofei Fan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c54c607a6190740770c7bb16ebb2d172f0cf2864",
+      "externalIds": {
+        "MAG": "2973622361",
+        "DBLP": "conf/isvlsi/XiongTYW19",
+        "DOI": "10.1109/ISVLSI.2019.00020",
+        "CorpusId": 202699275
+      },
+      "title": "Towards Efficient Compact Network Training on Edge-Devices",
+      "venue": "IEEE Computer Society Annual Symposium on VLSI",
+      "year": 2019,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISVLSI.2019.00020?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISVLSI.2019.00020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2068170336",
+          "name": "Feng Xiong"
+        },
+        {
+          "authorId": "1910352",
+          "name": "Fengbin Tu"
+        },
+        {
+          "authorId": "145746022",
+          "name": "Shouyi Yin"
+        },
+        {
+          "authorId": "1803672",
+          "name": "Shaojun Wei"
+        }
+      ],
+      "abstract": "Currently, there is a trend to deploy training on edge devices, which is crucial to future AI applications in various scenarios with transfer and online learning demands. Specifically, there may be a severe degradation of accuracy when directly deploying the trained models on edge devices, because the local environment forms an edge local dataset that is often different from the generic dataset. However, training on edge devices with limited computing and memory capability is a challenge problem. In this paper, we propose a novel quantization training framework for efficient compact network training on edge devices. Firstly, training-aware symmetric quantization is introduced to quantize all of the data types in the training process. Then, channel-wise quantization method is adopted for comapact network quantization, which has significantly high tolerance to quantization errors and can make the training process more stable. For further efficient training, we build a hardware evaluation platform to evaluate different settings of the network, so as to achieve a better trade-off among accuracy, energy and latency. Finally, we evaluate two widely used compact networks on a domain adaptation dataset for image classification, and the results demonstrate that the proposed methods can allow us achieve an improvement of 8.4 × -17.2× in energy reduction and 11.9 × -16.3× in latency reduction compared with 32-bit implementations, while maintaining the classification accuracy."
+    },
+    {
+      "paperId": "90b3695169b034eb4e8b024fafb70fef838af729",
+      "externalIds": {
+        "MAG": "3007345183",
+        "DBLP": "conf/bigdataconf/YamakoshiKOT19",
+        "DOI": "10.1109/BigData47090.2019.9006511",
+        "CorpusId": 211297302
+      },
+      "title": "Japanese Mistakable Legal Term Correction using Infrequency-aware BERT Classifier",
+      "venue": "2019 IEEE International Conference on Big Data (Big Data)",
+      "year": 2019,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1527/tjsai.e-k25",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData47090.2019.9006511?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData47090.2019.9006511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "52135562",
+          "name": "T. Yamakoshi"
+        },
+        {
+          "authorId": "2347604408",
+          "name": "Takahiro Komamizu"
+        },
+        {
+          "authorId": "2068200229",
+          "name": "Yasuhiro Ogawa"
+        },
+        {
+          "authorId": "2342895",
+          "name": "K. Toyama"
+        }
+      ],
+      "abstract": "We propose a method that assists legislative drafters in locating inappropriate legal terms in Japanese statutory sentences and suggests corrections. We focus on sets of mistakable legal terms whose usages are defined in legislation drafting rules. Our method predicts suitable legal terms using a classifier based on a BERT (Bidirectional Encoder Representations from Transformers) model. We apply three techniques in training the BERT classifier, specifically, preliminary domain adaptation, repetitive soft undersampling, and classifier unification. These techniques cope with two levels of infrequency: legal term-level infrequency that causes class imbalance and legal term set-level infrequency that causes underfitting. Concretely, preliminary domain adaptation improves overall performance by providing prior knowledge of statutory sentences, repetitive soft undersampling improves performance on infrequent legal terms without sacrificing performance on frequent legal terms, and classifier unification improves performance on infrequent legal term sets by sharing common knowledge among legal term sets. Our experiments show that our classifier outperforms conventional classifiers using Random Forest or a language model, and that all three training techniques contribute to performance improvement."
+    },
+    {
+      "paperId": "c3cb27f9ef7176658f37b607e75cc2c37f5e0ea8",
+      "externalIds": {
+        "DBLP": "conf/mlsys/ChoiVSGWC19",
+        "CorpusId": 96438794
+      },
+      "title": "Accurate and Efficient 2-bit Quantized Neural Networks",
+      "venue": "USENIX workshop on Tackling computer systems problems with machine learning techniques",
+      "year": 2019,
+      "citationCount": 172,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.sysml.cc/doc/2019/168.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2506452",
+          "name": "Jungwook Choi"
+        },
+        {
+          "authorId": "1778215",
+          "name": "Swagath Venkataramani"
+        },
+        {
+          "authorId": "145941003",
+          "name": "Vijayalakshmi Srinivasan"
+        },
+        {
+          "authorId": "33678523",
+          "name": "K. Gopalakrishnan"
+        },
+        {
+          "authorId": "2108370425",
+          "name": "Zhuo Wang"
+        },
+        {
+          "authorId": "40060585",
+          "name": "P. Chuang"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "a471a235c38c04a0fc2f51c903a755e77095cd9a",
+      "externalIds": {
+        "MAG": "2938616020",
+        "ArXiv": "1904.08513",
+        "DBLP": "journals/corr/abs-1904-08513",
+        "DOI": "10.1109/TBCAS.2019.2928793",
+        "CorpusId": 196831801
+      },
+      "title": "MorphIC: A 65-nm 738k-Synapse/mm$^2$ Quad-Core Binary-Weight Digital Neuromorphic Processor With Stochastic Spike-Driven Online Learning",
+      "venue": "IEEE Transactions on Biomedical Circuits and Systems",
+      "year": 2019,
+      "citationCount": 152,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1904.08513",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.08513, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "38613620",
+          "name": "Charlotte Frenkel"
+        },
+        {
+          "authorId": "1750449",
+          "name": "J. Legat"
+        },
+        {
+          "authorId": "3272827",
+          "name": "D. Bol"
+        }
+      ],
+      "abstract": "Recent trends in the field of neural network accelerators investigate weight quantization as a means to increase the resource- and power-efficiency of hardware devices. As full on-chip weight storage is necessary to avoid the high energy cost of off-chip memory accesses, memory reduction requirements for weight storage pushed toward the use of binary weights, which were demonstrated to have a limited accuracy reduction on many applications when quantization-aware training techniques are used. In parallel, spiking neural network (SNN) architectures are explored to further reduce power when processing sparse event-based data streams, while on-chip spike-based online learning appears as a key feature for applications constrained in power and resources during the training phase. However, designing power- and area-efficient SNNs still requires the development of specific techniques in order to leverage on-chip online learning on binary weights without compromising the synapse density. In this paper, we demonstrate MorphIC, a quad-core binary-weight digital neuromorphic processor embedding a stochastic version of the spike-driven synaptic plasticity (S-SDSP) learning rule and a hierarchical routing fabric for large-scale chip interconnection. The MorphIC SNN processor embeds a total of 2k leaky integrate-and-fire (LIF) neurons and more than two million plastic synapses for an active silicon area of 2.86 mm$^2$ in 65-nm CMOS, achieving a high density of 738k synapses/mm$^2$. MorphIC demonstrates an order-of-magnitude improvement in the area-accuracy tradeoff on the MNIST classification task compared to previously-proposed SNNs, while having no penalty in the energy-accuracy tradeoff."
+    },
+    {
+      "paperId": "43e43ecf4eb66fe0bf781ed0bd0abd0eaa31d134",
+      "externalIds": {
+        "PubMedCentral": "7339957",
+        "ArXiv": "1912.01268",
+        "DBLP": "journals/corr/abs-1912-01268",
+        "MAG": "2993491976",
+        "DOI": "10.3389/fnins.2020.00662",
+        "CorpusId": 208547817,
+        "PubMed": "32694978"
+      },
+      "title": "Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2019,
+      "citationCount": 93,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fnins.2020.00662",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1912.01268, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "9608285",
+          "name": "M. Sorbaro"
+        },
+        {
+          "authorId": "47968272",
+          "name": "Li-Yu Daisy Liu"
+        },
+        {
+          "authorId": "1441096440",
+          "name": "Massimo Bortone"
+        },
+        {
+          "authorId": "145570357",
+          "name": "Sadique Sheik"
+        }
+      ],
+      "abstract": "In the last few years, spiking neural networks (SNNs) have been demonstrated to perform on par with regular convolutional neural networks. Several works have proposed methods to convert a pre-trained CNN to a Spiking CNN without a significant sacrifice of performance. We demonstrate first that quantization-aware training of CNNs leads to better accuracy in SNNs. One of the benefits of converting CNNs to spiking CNNs is to leverage the sparse computation of SNNs and consequently perform equivalent computation at a lower energy consumption. Here we propose an optimization strategy to train efficient spiking networks with lower energy consumption, while maintaining similar accuracy levels. We demonstrate results on the MNIST-DVS and CIFAR-10 datasets."
+    },
+    {
+      "paperId": "89efc1022a5700ddfc6bc6e7d4e03fd84312fb24",
+      "externalIds": {
+        "ArXiv": "1901.09491",
+        "MAG": "2914704901",
+        "DBLP": "journals/corr/abs-1901-09491",
+        "CorpusId": 59316979
+      },
+      "title": "Stiffness: A New Perspective on Generalization in Neural Networks",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 109,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1901.09491, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30176974",
+          "name": "Stanislav Fort"
+        },
+        {
+          "authorId": "5274550",
+          "name": "Pawel Krzysztof Nowak"
+        },
+        {
+          "authorId": "40569328",
+          "name": "Stanislaw Jastrzebski"
+        },
+        {
+          "authorId": "153450083",
+          "name": "S. Narayanan"
+        }
+      ],
+      "abstract": "In this paper we develop a new perspective on generalization of neural networks by proposing and investigating the concept of a neural network stiffness. We measure how stiff a network is by looking at how a small gradient step in the network's parameters on one example affects the loss on another example. Higher stiffness suggests that a network is learning features that generalize. In particular, we study how stiffness depends on 1) class membership, 2) distance between data points in the input space, 3) training iteration, and 4) learning rate. We present experiments on MNIST, FASHION MNIST, and CIFAR-10/100 using fully-connected and convolutional neural networks, as well as on a transformer-based NLP model. We demonstrate the connection between stiffness and generalization, and observe its dependence on learning rate. When training on CIFAR-100, the stiffness matrix exhibits a coarse-grained behavior indicative of the model's awareness of super-class membership. In addition, we measure how stiffness between two data points depends on their mutual input-space distance, and establish the concept of a dynamical critical length -- a distance below which a parameter update based on a data point influences its neighbors."
+    },
+    {
+      "paperId": "1e73f2194e387d779b9fbcbb95b95a18a76facd7",
+      "externalIds": {
+        "MAG": "2977925801",
+        "DBLP": "journals/corr/abs-1910-01055",
+        "CorpusId": 203626860
+      },
+      "title": "Quantized Reinforcement Learning (QUARL)",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 24,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://scholar.harvard.edu/files/zishenwan/files/quarl.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2808839",
+          "name": "Srivatsan Krishnan"
+        },
+        {
+          "authorId": "1389561411",
+          "name": "Sharad Chitlangia"
+        },
+        {
+          "authorId": "2347284",
+          "name": "Maximilian Lam"
+        },
+        {
+          "authorId": "148439143",
+          "name": "Zishen Wan"
+        },
+        {
+          "authorId": "145520045",
+          "name": "Aleksandra Faust"
+        },
+        {
+          "authorId": "1805668",
+          "name": "V. Reddi"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c3dccc86ebc6eb883ed21801c87d6239bf409a95",
+      "externalIds": {
+        "MAG": "2974827766",
+        "DBLP": "journals/access/ZebinSPCO19",
+        "DOI": "10.1109/ACCESS.2019.2941836",
+        "CorpusId": 203566540
+      },
+      "title": "Design and Implementation of a Convolutional Neural Network on an Edge Computing Smartphone for Human Activity Recognition",
+      "venue": "IEEE Access",
+      "year": 2019,
+      "citationCount": 83,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/8600701/08839782.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2019.2941836?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2019.2941836, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2195385",
+          "name": "Tahmina Zebin"
+        },
+        {
+          "authorId": "144509516",
+          "name": "Patricia Jane Scully"
+        },
+        {
+          "authorId": "2065712154",
+          "name": "Niels Peek"
+        },
+        {
+          "authorId": "1807736",
+          "name": "A. Casson"
+        },
+        {
+          "authorId": "35038420",
+          "name": "K. Ozanyan"
+        }
+      ],
+      "abstract": "Edge computing aims to integrate computing into everyday settings, enabling the system to be context-aware and private to the user. With the increasing success and popularity of deep learning methods, there is an increased demand to leverage these techniques in mobile and wearable computing scenarios. In this paper, we present an assessment of a deep human activity recognition system’s memory and execution time requirements, when implemented on a mid-range smartphone class hardware and the memory implications for embedded hardware. This paper presents the design of a convolutional neural network (CNN) in the context of human activity recognition scenario. Here, layers of CNN automate the feature learning and the influence of various hyper-parameters such as the number of filters and filter size on the performance of CNN. The proposed CNN showed increased robustness with better capability of detecting activities with temporal dependence compared to models using statistical machine learning techniques. The model obtained an accuracy of 96.4% in a five-class static and dynamic activity recognition scenario. We calculated the proposed model memory consumption and execution time requirements needed for using it on a mid-range smartphone. Per-channel quantization of weights and per-layer quantization of activation to 8-bits of precision post-training produces classification accuracy within 2% of floating-point networks for dense, convolutional neural network architecture. Almost all the size and execution time reduction in the optimized model was achieved due to weight quantization. We achieved more than four times reduction in model size when optimized to 8-bit, which ensured a feasible model capable of fast on-device inference."
+    },
+    {
+      "paperId": "f9080882ae966ac043d794cda02129f50356cf46",
+      "externalIds": {
+        "MAG": "2985076717",
+        "ACL": "D19-5014",
+        "DOI": "10.18653/v1/D19-5014",
+        "CorpusId": 209064083
+      },
+      "title": "Divisive Language and Propaganda Detection using Multi-head Attention Transformers with Deep Learning BERT-based Language Models for Binary Classification",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2019,
+      "citationCount": 18,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.18653/v1/d19-5014",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/D19-5014, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "66886387",
+          "name": "N. Mapes"
+        },
+        {
+          "authorId": "145240144",
+          "name": "A. White"
+        },
+        {
+          "authorId": "2501704",
+          "name": "Radhika Medury"
+        },
+        {
+          "authorId": "145201255",
+          "name": "S. Dua"
+        }
+      ],
+      "abstract": "On the NLP4IF 2019 sentence level propaganda classification task, we used a BERT language model that was pre-trained on Wikipedia and BookCorpus as team ltuorp ranking #1 of 26. It uses deep learning in the form of an attention transformer. We substituted the final layer of the neural network to a linear real valued output neuron from a layer of softmaxes. The backpropagation trained the entire neural network and not just the last layer. Training took 3 epochs and on our computation resources this took approximately one day. The pre-trained model consisted of uncased words and there were 12-layers, 768-hidden neurons with 12-heads for a total of 110 million parameters. The articles used in the training data promote divisive language similar to state-actor-funded influence operations on social media. Twitter shows state-sponsored examples designed to maximize division occurring across political lines, ranging from “Obama calls me a clinger, Hillary calls me deplorable, ... and Trump calls me an American” oriented to the political right, to Russian propaganda featuring “Black Lives Matter” material with suggestions of institutional racism in US police forces oriented to the political left. We hope that raising awareness through our work will reduce the polarizing dialogue for the betterment of nations."
+    },
+    {
+      "paperId": "12e76067d6ce451c361f12b420ebf4f7924ad6bb",
+      "externalIds": {
+        "CorpusId": 210905098
+      },
+      "title": "X X Table 1 : Comparisons of architecture search approaches for efficient models ( ProxylessNAS",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=Bkgr2kHKDH, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "18f1a1bf7f4aecb4339d81a50e415130077bb6de",
+      "externalIds": {
+        "DOI": "10.1201/9781315214030-6",
+        "CorpusId": 276739034
+      },
+      "title": "Graphical Models",
+      "venue": "Control System Fundamentals",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1201/9781315214030-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1201/9781315214030-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46521115",
+          "name": "D. Frederick"
+        },
+        {
+          "authorId": "103071067",
+          "name": "C. Close"
+        },
+        {
+          "authorId": "98820243",
+          "name": "N. Nise"
+        }
+      ],
+      "abstract": "We propose Dual-Branch Network (DBNet), a novel deepfake detection framework that addresses key limitations of existing works by jointly modeling 3D-temporal and fine-grained texture representations. Specifically, we aim to investigate how to (1) capture dynamic properties and spatial details in a unified model and (2) identify subtle inconsistencies beyond localized artifacts through temporally consistent modeling. To this end, DBNet extracts 3D landmarks from videos to construct temporal sequences for an RNN branch, while a Vision Transformer analyzes local patches. A Temporal Consistency-aware Loss is introduced to explicitly supervise the RNN. Additionally, a 3D generative model augments training data. Extensive experiments demonstrate our method achieves state-of-the-art performance on benchmarks, and ablation studies validate its effectiveness in generalizing to unseen data under various manipulations and compression."
+    },
+    {
+      "paperId": "b893086a41be6fbe191cc04540a7c6c17bc80b71",
+      "externalIds": {
+        "MAG": "2979580619",
+        "DOI": "10.1109/ICAMechS.2019.8861660",
+        "CorpusId": 204247951
+      },
+      "title": "Efficient Nucleus Detection in Digital Pathology Images using Multi-task and Multi-scale Instance Segmentation Network",
+      "venue": "International Conference on Advanced Mechatronic Systems",
+      "year": 2019,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICAMechS.2019.8861660?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICAMechS.2019.8861660, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "38722063",
+          "name": "Muyi Sun"
+        },
+        {
+          "authorId": "1836136",
+          "name": "Hao Dang"
+        },
+        {
+          "authorId": "9070401",
+          "name": "Guanhong Zhang"
+        },
+        {
+          "authorId": "65798739",
+          "name": "Zeyi Yao"
+        },
+        {
+          "authorId": "2109105017",
+          "name": "Xiaoguang Zhou"
+        },
+        {
+          "authorId": "2058629312",
+          "name": "Chang Qing"
+        }
+      ],
+      "abstract": "Automatic cell spotting is a challenging problem in biomedical image analysis. Efficient detection of the nuclei in these cells is important for both clinicians and researchers. Technically, this problem suffers from background clutters of the pathological tissue and has difficulty in tiny objects recognition. To solve these, we tend to apply deep learning based method and treat this as a nucleus instance segmentation task. Structurally, we modify the widely used Mask R-CNN structure in region proposal networks with multi-scale, resulting in the aware of tiny objects. And for adapting to our specific task, we take advantage of the “anchor” mechanism. Compared with traditional detection methods, the learned features are more robust to massive tissue backgrounds. Moreover, our model can simultaneously detect and segment the nucleus through an end to end training strategy, which of great application values. To our best knowledge, this work is the first time to the nucleus detection task. Experimentally, we test our method on the dataset of 2018 Data Science Bowl. As a result, both visualization and quantization indicators show the effectiveness of our method."
+    },
+    {
+      "paperId": "9107d7d0c7ca85c9efa64c7e9e56dff2beb5f9f1",
+      "externalIds": {
+        "CorpusId": 204805415
+      },
+      "title": "GOTEN: GPU-OUTSOURCING TRUSTED EXECUTION",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=S1xRnxSYwS, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "7f760300d840804fe41706f7358f2f3b11c89b6e",
+      "externalIds": {
+        "MAG": "2951726354",
+        "CorpusId": 196206976
+      },
+      "title": "Worldwide Weather Forecasting by Deep Learning",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "150266445",
+          "name": "P. Trempe"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9fc614d6eb14dca9bc744959331e723cfac7ea25",
+      "externalIds": {
+        "MAG": "2971414543",
+        "CorpusId": 202545065
+      },
+      "title": "Principles and Methods of Determining Practical Teaching Performance Evaluation Index in Higher Vocational Colleges",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.webofproceedings.org/proceedings_series/ESSP/ICETEM%202019/ICETEM289.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1396317571",
+          "name": "Yan Gong-xing"
+        },
+        {
+          "authorId": "9441386",
+          "name": "Tang Xian-zhi"
+        },
+        {
+          "authorId": "2066367198",
+          "name": "Yang Qing"
+        }
+      ],
+      "abstract": null
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "quantization-aware training transformer",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

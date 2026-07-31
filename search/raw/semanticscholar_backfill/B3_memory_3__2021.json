@@ -1,0 +1,585 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "ZeRO DeepSpeed offloading distributed training memory",
+  "year": "2021-2021",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:41:05Z",
+  "total_results_reported": 13,
+  "returned": 13,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "12b71736392209b4292471b7da0aed71ba2aa545",
+      "externalIds": {
+        "DBLP": "conf/usenix/0015RARYZ0H21",
+        "MAG": "3121562065",
+        "ArXiv": "2101.06840",
+        "CorpusId": 231632857
+      },
+      "title": "ZeRO-Offload: Democratizing Billion-Scale Model Training",
+      "venue": "USENIX Annual Technical Conference",
+      "year": 2021,
+      "citationCount": 624,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2101.06840, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153487250",
+          "name": "Jie Ren"
+        },
+        {
+          "authorId": "32817044",
+          "name": "Samyam Rajbhandari"
+        },
+        {
+          "authorId": "3394222",
+          "name": "Reza Yazdani Aminabadi"
+        },
+        {
+          "authorId": "2537545",
+          "name": "Olatunji Ruwase"
+        },
+        {
+          "authorId": "2380545",
+          "name": "Shuangyang Yang"
+        },
+        {
+          "authorId": "67016465",
+          "name": "Minjia Zhang"
+        },
+        {
+          "authorId": null,
+          "name": "Dong Li"
+        },
+        {
+          "authorId": "2300208615",
+          "name": "Yuxiong He"
+        }
+      ],
+      "abstract": "Large-scale model training has been a playing ground for a limited few requiring complex model refactoring and access to prohibitively expensive GPU clusters. ZeRO-Offload changes the large model training landscape by making large model training accessible to nearly everyone. It can train models with over 13 billion parameters on a single GPU, a 10x increase in size compared to popular framework such as PyTorch, and it does so without requiring any model change from the data scientists or sacrificing computational efficiency. ZeRO-Offload enables large model training by offloading data and compute to CPU. To preserve compute efficiency, it is designed to minimize the data movement to/from GPU, and reduce CPU compute time while maximizing memory savings on GPU. As a result, ZeRO-Offload can achieve 40 TFlops/GPU on a single NVIDIA V100 GPU for 10B parameter model compared to 30TF using PyTorch alone for a 1.4B parameter model, the largest that can be trained without running out of memory. ZeRO-Offload is also designed to scale on multiple-GPUs when available, offering near linear speedup on up to 128 GPUs. Additionally, it can work together with model parallelism to train models with over 70 billion parameters on a single DGX-2 box, a 4.5x increase in model size compared to using model parallelism alone. By combining compute and memory efficiency with ease-of-use, ZeRO-Offload democratizes large-scale model training making it accessible to even data scientists with access to just a single GPU."
+    },
+    {
+      "paperId": "10c0a1d3519dcc7b876d21d614f49d82467c9dc3",
+      "externalIds": {
+        "DBLP": "journals/tpds/FangZLSYZY23",
+        "ArXiv": "2108.05818",
+        "DOI": "10.1109/TPDS.2022.3219819",
+        "CorpusId": 236986955
+      },
+      "title": "Parallel Training of Pre-Trained Models via Chunk-Based Dynamic Memory Management",
+      "venue": "IEEE Transactions on Parallel and Distributed Systems",
+      "year": 2021,
+      "citationCount": 48,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2108.05818",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2108.05818, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30760010",
+          "name": "Jiarui Fang"
+        },
+        {
+          "authorId": "2152849222",
+          "name": "Yang Yu"
+        },
+        {
+          "authorId": "153060928",
+          "name": "Shenggui Li"
+        },
+        {
+          "authorId": "144259229",
+          "name": "Yang You"
+        },
+        {
+          "authorId": "2141009410",
+          "name": "Jie Zhou"
+        }
+      ],
+      "abstract": "The pre-trained model (PTM) is revolutionizing Artificial Intelligence (AI) technology. However, the hardware requirement of PTM training is prohibitively high, making it a game for a small proportion of people. Therefore, we proposed PatrickStar system to lower the hardware requirements of PTMs and make them accessible to everyone. PatrickStar uses the CPU-GPU heterogeneous memory space to store the model data. Different from existing works, we organize the model data in memory chunks and dynamically distribute them in the heterogeneous memory. Guided by the runtime memory statistics collected in a warm-up iteration, chunks are orchestrated efficiently in heterogeneous memory and generate lower CPU-GPU data transmission volume and higher bandwidth utilization. Symbiosis with the Zero Redundancy Optimizer, PatrickStar scales to multiple GPUs on multiple nodes. The system can train tasks on bigger models and larger batch sizes, which cannot be accomplished by existing works. Experimental results show that PatrickStar extends model scales 2.27 and 2.5 times of DeepSpeed, and exhibits significantly higher execution speed. PatricStar also successfully runs the 175B GPT3 training task on a 32 GPU cluster. Our code is available at https://github.com/Tencent/PatrickStar."
+    },
+    {
+      "paperId": "72dd63d67588a42fc817bbb8d655b397f67425df",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2104-07857",
+        "ArXiv": "2104.07857",
+        "DOI": "10.1145/3458817.3476205",
+        "CorpusId": 233289729
+      },
+      "title": "ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep learning",
+      "venue": "International Conference for High Performance Computing, Networking, Storage and Analysis",
+      "year": 2021,
+      "citationCount": 550,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.07857, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32817044",
+          "name": "Samyam Rajbhandari"
+        },
+        {
+          "authorId": "2537545",
+          "name": "Olatunji Ruwase"
+        },
+        {
+          "authorId": "3299496",
+          "name": "Jeff Rasley"
+        },
+        {
+          "authorId": "2110486618",
+          "name": "Shaden Smith"
+        },
+        {
+          "authorId": "2300208615",
+          "name": "Yuxiong He"
+        }
+      ],
+      "abstract": "In the last three years, the largest dense deep learning models have grown over 1000x to reach hundreds of billions of parameters, while the GPU memory has only grown by 5x (16 GB to 80 GB). Therefore, the growth in model scale has been supported primarily though system innovations that allow large models to fit in the aggregate GPU memory of multiple GPUs. However, we are getting close to the GPU memory wall. It requires 800 NVIDIA V100 GPUs just to fit a trillion parameter model for training, and such clusters are simply out of reach for most data scientists. In addition, training models at that scale requires complex combinations of parallelism techniques that puts a big burden on the data scientists to refactor their model. In this paper we present ZeRO-Infinity, a novel heterogeneous system technology that leverages GPU, CPU, and NVMe memory to allow for unprecedented model scale on limited resources without requiring model code refactoring. At the same time it achieves excellent training throughput and scalability, unencumbered by the limited CPU or NVMe bandwidth. ZeRO-Infinity can fit models with tens and even hundreds of trillions of parameters for training on current generation GPU clusters. It can be used to fine-tune trillion parameter models on a single NVIDIA DGX-2 node, making large models more accessible. In terms of training throughput and scalability, it sustains over 25 petaflops on 512 NVIDIA V100 GPUs (40% of peak), while also demonstrating super linear scalability. An open source implementation of ZeRO-Infinity is available through DeepSpeed 11DeepSpeed (https://www.deepspeed.ai/) is a deep learning optimization library designed to make distributed training easy, efficient, and effective. DeepSpeed has been extensively adopted by the DL community.."
+    },
+    {
+      "paperId": "7039f7f662a55b49288a7db11e07a9cf4e465a8b",
+      "externalIds": {
+        "CorpusId": 260430653
+      },
+      "title": "PatrickStar: Parallel Training of Pre-trained Models via Chunk-based Memory Management",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "30760010",
+          "name": "Jiarui Fang"
+        },
+        {
+          "authorId": "2152849222",
+          "name": "Yang Yu"
+        },
+        {
+          "authorId": "2373433533",
+          "name": "Zilin Zhu"
+        },
+        {
+          "authorId": "2153703322",
+          "name": "Shenggui Li"
+        },
+        {
+          "authorId": "2344561035",
+          "name": "Yang You"
+        },
+        {
+          "authorId": "2141009410",
+          "name": "Jie Zhou"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ee8984a6712791d4e0f2c776dad8119a3b893dd9",
+      "externalIds": {
+        "ArXiv": "2110.14883",
+        "DBLP": "conf/icpp/LiLBFHLW023",
+        "DOI": "10.1145/3605573.3605613",
+        "CorpusId": 240070340
+      },
+      "title": "Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training",
+      "venue": "International Conference on Parallel Processing",
+      "year": 2021,
+      "citationCount": 223,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2110.14883",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.14883, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2153703322",
+          "name": "Shenggui Li"
+        },
+        {
+          "authorId": "1996240097",
+          "name": "Zhengda Bian"
+        },
+        {
+          "authorId": "2110176595",
+          "name": "Hongxin Liu"
+        },
+        {
+          "authorId": "49292014",
+          "name": "Boxiang Wang"
+        },
+        {
+          "authorId": "2146286212",
+          "name": "Haichen Huang"
+        },
+        {
+          "authorId": "2180329661",
+          "name": "Yongbin Li"
+        },
+        {
+          "authorId": "2118397214",
+          "name": "Chuan-Qing Wang"
+        },
+        {
+          "authorId": "2211340476",
+          "name": "Fan Cui"
+        },
+        {
+          "authorId": "144259229",
+          "name": "Yang You"
+        }
+      ],
+      "abstract": "The success of Transformer models has pushed the deep learning model scale to billions of parameters, but the memory limitation of a single GPU has led to an urgent need for training on multi-GPU clusters. However, the best practice for choosing the optimal parallel strategy is still lacking, as it requires domain expertise in both deep learning and parallel computing. The Colossal-AI system addressed the above challenge by introducing a unified interface to scale your sequential code of model training to distributed environments. It supports parallel training methods such as data, pipeline, tensor, and sequence parallelism and is integrated with heterogeneous training and zero redundancy optimizer. Compared to the baseline system, Colossal-AI can achieve up to 2.76 times training speedup on large-scale models."
+    },
+    {
+      "paperId": "053c168f94acd75880acdacb846bc3f416e5c07c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2108-05818",
+        "CorpusId": 254824785
+      },
+      "title": "PatrickStar: Parallel Training of Pre-trained Models via a Chunk-based Memory Management",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 9,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://arxiv-export-lb.library.cornell.edu/pdf/2108.05818, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30760010",
+          "name": "Jiarui Fang"
+        },
+        {
+          "authorId": "2152849222",
+          "name": "Yang Yu"
+        },
+        {
+          "authorId": "2197210179",
+          "name": "Shenggui Li"
+        },
+        {
+          "authorId": "144259229",
+          "name": "Yang You"
+        },
+        {
+          "authorId": "2141009410",
+          "name": "Jie Zhou"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "95776fd3256d877793b2038cd387f88361bc0437",
+      "externalIds": {
+        "MAG": "3185153723",
+        "DBLP": "journals/iotj/PopoolaAAGHJ22",
+        "DOI": "10.1109/jiot.2021.3100755",
+        "CorpusId": 237724759
+      },
+      "title": "Federated Deep Learning for Zero-Day Botnet Attack Detection in IoT-Edge Devices",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2021,
+      "citationCount": 291,
+      "openAccessPdf": {
+        "url": "https://e-space.mmu.ac.uk/628278/7/FDL_for_Botnet_Attack_Detection_in_IoT_Edge_Devices%20e.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/jiot.2021.3100755?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/jiot.2021.3100755, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "20422801",
+          "name": "S. Popoola"
+        },
+        {
+          "authorId": "51226021",
+          "name": "Ruth Ande"
+        },
+        {
+          "authorId": "3274012",
+          "name": "B. Adebisi"
+        },
+        {
+          "authorId": "152593447",
+          "name": "Guan Gui"
+        },
+        {
+          "authorId": "153375057",
+          "name": "M. Hammoudeh"
+        },
+        {
+          "authorId": "25135861",
+          "name": "Olamide Jogunola"
+        }
+      ],
+      "abstract": "Deep learning (DL) has been widely proposed for botnet attack detection in Internet of Things (IoT) networks. However, the traditional centralized DL (CDL) method cannot be used to detect the previously unknown (zero-day) botnet attack without breaching the data privacy rights of the users. In this article, we propose the federated DL (FDL) method for zero-day botnet attack detection to avoid data privacy leakage in IoT-edge devices. In this method, an optimal deep neural network (DNN) architecture is employed for network traffic classification. A model parameter server remotely coordinates the independent training of the DNN models in multiple IoT-edge devices, while the federated averaging (FedAvg) algorithm is used to aggregate local model updates. A global DNN model is produced after a number of communication rounds between the model parameter server and the IoT-edge devices. The zero-day botnet attack scenarios in IoT-edge devices is simulated with the Bot-IoT and N-BaIoT data sets. Experiment results show that the FDL model: 1) detects zero-day botnet attacks with high classification performance; 2) guarantees data privacy and security; 3) has low communication overhead; 4) requires low-memory space for the storage of training data; and 5) has low network latency. Therefore, the FDL method outperformed CDL, localized DL, and distributed DL methods in this application scenario."
+    },
+    {
+      "paperId": "3127973b8ca73c67c3ba207c4a2b59dba8e5d258",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2106-02679",
+        "ArXiv": "2106.02679",
+        "CorpusId": 235358637
+      },
+      "title": "Layered gradient accumulation and modular pipeline parallelism: fast and efficient training of large language models",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 13,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.02679, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1404999623",
+          "name": "J. Lamy-Poirier"
+        }
+      ],
+      "abstract": "The advent of the transformer has sparked a quick growth in the size of language models, far outpacing hardware improvements. (Dense) transformers are expected to reach the trillion-parameter scale in the near future, for which training requires thousands or even tens of thousands of GPUs. We investigate the challenges of training at this scale and beyond on commercially available hardware. In particular, we analyse the shortest possible training time for different configurations of distributed training, leveraging empirical scaling laws for language models to estimate the optimal (critical) batch size. Contrary to popular belief, we find no evidence for a memory wall, and instead argue that the real limitation -- other than the cost -- lies in the training duration. In addition to this analysis, we introduce two new methods, \\textit{layered gradient accumulation} and \\textit{modular pipeline parallelism}, which together cut the shortest training time by half. The methods also reduce data movement, lowering the network requirement to a point where a fast InfiniBand connection is not necessary. This increased network efficiency also improve on the methods introduced with the ZeRO optimizer, reducing the memory usage to a tiny fraction of the available GPU memory."
+    },
+    {
+      "paperId": "cca92f73d1b4e63b86ccdaf0b01b8f345a2fe93c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2110-12876",
+        "ArXiv": "2110.12876",
+        "DOI": "10.1109/TVT.2021.3098170",
+        "CorpusId": 237597656
+      },
+      "title": "FedParking: A Federated Learning Based Parking Space Estimation With Parked Vehicle Assisted Edge Computing",
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "year": 2021,
+      "citationCount": 99,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2110.12876",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.12876, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3116552",
+          "name": "Xumin Huang"
+        },
+        {
+          "authorId": "47471151",
+          "name": "Peichun Li"
+        },
+        {
+          "authorId": "2087062968",
+          "name": "Rong Yu"
+        },
+        {
+          "authorId": "2108185380",
+          "name": "Yuan Wu"
+        },
+        {
+          "authorId": "145134165",
+          "name": "Kan Xie"
+        },
+        {
+          "authorId": "145382103",
+          "name": "Shengli Xie"
+        }
+      ],
+      "abstract": "As a distributed learning approach, federated learning trains a shared learning model over distributed datasets while preserving the training data privacy. We extend the application of federated learning to parking management and introduce FedParking in which Parking Lot Operators (PLOs) collaborate to train a long short-term memory model for parking space estimation without exchanging the raw data. Furthermore, we investigate the management of Parked Vehicle assisted Edge Computing (PVEC) by FedParking. In PVEC, different PLOs recruit PVs as edge computing nodes for offloading services through an incentive mechanism, which is designed according to the computation demand and parking capacity constraints derived from FedParking. We formulate the interactions among the PLOs and vehicles as a multi-lead multi-follower Stackelberg game. Considering the dynamic arrivals of the vehicles and time-varying parking capacity constraints, we present a multi-agent deep reinforcement learning approach to gradually reach the Stackelberg equilibrium in a distributed yet privacy-preserving manner. Finally, numerical results are provided to demonstrate the effectiveness and efficiency of our scheme."
+    },
+    {
+      "paperId": "24e775b20adf21e9b5b95c6a9b7a5c164d055849",
+      "externalIds": {
+        "ArXiv": "2110.03888",
+        "DBLP": "journals/corr/abs-2110-03888",
+        "CorpusId": 238531482
+      },
+      "title": "M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 47,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.03888, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35996608",
+          "name": "Junyang Lin"
+        },
+        {
+          "authorId": "143936592",
+          "name": "An Yang"
+        },
+        {
+          "authorId": "41211611",
+          "name": "Jinze Bai"
+        },
+        {
+          "authorId": "144161025",
+          "name": "Chang Zhou"
+        },
+        {
+          "authorId": "1485086888",
+          "name": "Le Jiang"
+        },
+        {
+          "authorId": "3440541",
+          "name": "Xianyan Jia"
+        },
+        {
+          "authorId": "153294981",
+          "name": "Ang Wang"
+        },
+        {
+          "authorId": "40539618",
+          "name": "J. Zhang"
+        },
+        {
+          "authorId": "1962987077",
+          "name": "Yong Li"
+        },
+        {
+          "authorId": "71666838",
+          "name": "Wei Lin"
+        },
+        {
+          "authorId": "1709595",
+          "name": "Jingren Zhou"
+        },
+        {
+          "authorId": "38385080",
+          "name": "Hongxia Yang"
+        }
+      ],
+      "abstract": "Recent expeditious developments in deep learning algorithms, distributed training, and even hardware design for large models have enabled training extreme-scale models, say GPT-3 and Switch Transformer possessing hundreds of billions or even trillions of parameters. However, under limited resources, extreme-scale model training that requires enormous amounts of computes and memory footprint suffers from frustratingly low efficiency in model convergence. In this paper, we propose a simple training strategy called\"Pseudo-to-Real\"for high-memory-footprint-required large models. Pseudo-to-Real is compatible with large models with architecture of sequential layers. We demonstrate a practice of pretraining unprecedented 10-trillion-parameter model, an order of magnitude larger than the state-of-the-art, on solely 512 GPUs within 10 days. Besides demonstrating the application of Pseudo-to-Real, we also provide a technique, Granular CPU offloading, to manage CPU memory for training large model and maintain high GPU utilities. Fast training of extreme-scale models on a decent amount of resources can bring much smaller carbon footprint and contribute to greener AI."
+    },
+    {
+      "paperId": "ebac90585e83bcc4c1a45c268b63b59d6ab10d03",
+      "externalIds": {
+        "DBLP": "conf/iccd/ZouZCK21",
+        "DOI": "10.1109/iccd53106.2021.00080",
+        "CorpusId": 245388561
+      },
+      "title": "PSACS: Highly-Parallel Shuffle Accelerator on Computational Storage",
+      "venue": "ICCD",
+      "year": 2021,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/iccd53106.2021.00080?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/iccd53106.2021.00080, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2056651789",
+          "name": "Chen Zou"
+        },
+        {
+          "authorId": "2153729729",
+          "name": "Hui Zhang"
+        },
+        {
+          "authorId": "1695232",
+          "name": "A. Chien"
+        },
+        {
+          "authorId": "72322106",
+          "name": "Y. Ki"
+        }
+      ],
+      "abstract": "Shuffle is an indispensable process in distributed online analytical processing systems to enable task-level parallelism exploitation via multiple nodes. As a data-intensive data reorganization process, shuffle implemented on general-purpose CPUs not only incurs data traffic back and forth between the computing and storage resources, but also pollutes the cache hierarchy with almost zero data reuse. As a result, shuffle can easily become the bottleneck of distributed analysis pipelines.Our PSACS approach attacks these bottlenecks with the rising computational storage paradigm. Shuffle is offloaded to the storage-side PSACS accelerator to avoid polluting computing node memory hierarchy and enjoy the latency, bandwidth and energy benefits of near-data computing. Further, the microarchitecture of PSACS exploits data-, subtask-, and task-level parallelism for high performance and a customized scratchpad for fast on-chip random access.PSACS achieves 4.6x—5.7x shuffle throughput at kernel-level and up to 1.3x overall shuffle throughput with only a twentieth of CPU utilization comparing to software baselines. These mount up to 23% end-to-end OLAP query speedup on average."
+    },
+    {
+      "paperId": "36e696827d2d8d2a07bea711b3e1fda9ee1c426f",
+      "externalIds": {
+        "ArXiv": "2110.08633",
+        "DBLP": "journals/corr/abs-2110-08633",
+        "CorpusId": 239017028
+      },
+      "title": "Hydra: A System for Large Multi-Model Deep Learning",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.08633, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2003802919",
+          "name": "Kabir Nagrecha"
+        },
+        {
+          "authorId": "2119303314",
+          "name": "Arun Kumar"
+        }
+      ],
+      "abstract": "Scaling up model depth and size is now a common approach to raise accuracy in many deep learning (DL) applications, as evidenced by the widespread success of multi-billion or even trillion parameter models in natural language processing (NLP) research. Despite success in DL research and at major technology companies, broader practical adoption of such large models among domain scientists and businesses is still bottlenecked by GPU memory limits, high training costs, and low GPU availability, even on public clouds. Model selection needs further compound these resource challenges: users often need to compare dozens of models with different hyper-parameters or neural architectures to suit their specific task and dataset. In this paper, we present Hydra, a system designed to tackle such challenges by enabling out-of-the-box scaling for multi-large-model DL workloads on even commodity GPUs in a resource-efficient manner. Hydra is the first approach to holistically optimize the execution of multi-model workloads for large DL models. We do this by adapting prior\"model-parallel\"execution schemes to work with scalable parameter offloading across the memory hierarchy and further hybridizing this approach with task-parallel job scheduling techniques. Hydra decouples scalability of model parameters from parallelism of execution, thus enabling DL users to train even a 6-billion parameter model on a single commodity GPU. It also fully exploits the speedup potential of task parallelism in multi-GPU setups, yielding near-linear strong scaling and making rigorous model selection perhaps more practical for such models. We evaluate end-to-end performance by fine-tuning GPT-2 for language modeling. We find that Hydra offers between 50% and 100% higher training throughput than even the best settings of state-of-the-art industrial frameworks such as DeepSpeed and GPipe for multi-large-model training."
+    },
+    {
+      "paperId": "1835e5cecf6cf10ddc68a39fa64758b118117216",
+      "externalIds": {
+        "DOI": "10.21009/jpud.152.01",
+        "CorpusId": 245496570
+      },
+      "title": "The Effect of Edutainment Learning Model on Early Childhood Socio-emotional Development",
+      "venue": "JPUD - Jurnal Pendidikan Usia Dini",
+      "year": 2021,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.21009/jpud.152.01",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21009/jpud.152.01?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21009/jpud.152.01, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2378291563",
+          "name": "Khadijah"
+        },
+        {
+          "authorId": "2381495016",
+          "name": "Arlina"
+        },
+        {
+          "authorId": "2147268663",
+          "name": "Miftahul Jannah Addaudy"
+        },
+        {
+          "authorId": "2325052439",
+          "name": "Maisarah"
+        }
+      ],
+      "abstract": "The idea of edutainment began to become the interest of early childhood educators to make the learning process more holistic, including knowledge about how the brain works, memory, motivation, self-image, emotions, learning styles, and other learning strategies. This study aims to analyse and compare the effect of edutainment and group learning on the socio-emotional development of early childhood. This research method uses a quasi-experimental design with data collection techniques derived from the results of the pre-test and post-test on 20 children. The results of this study indicate that there are differences in the influence of edutainment learning with the control group on the social-emotional development of early childhood. Although both groups affect the socio-emotional development, edutainment learning has a better effect than the control group. For further research, it is recommended to create various types of edutainments learning to improve various aspects of children development. \nKeywords: Early Childhood, Edutainment Learning Model, Socio-emotional Development \nReferences: \nAfrianti, N. (2018). Permainan Tradisional, Alternatif Media Pengembangan Kompetensi Sosial-Emosi Anak Usia Dini [Traditional Games, Alternative Media for Early Childhood Social-Emotional Competence Development]. Cakrawala Dini: Jurnal Pendidikan Anak Usia Dini, 5(1). https://doi.org/10.17509/cd.v5i1.10405 \nAlwaely, S. A., Yousif, N. B. A., & Mikhaylov, A. (2021). Emotional development in preschoolers and socialization. Early Child Development and Care, 191(16), 2484–2493. https://doi.org/10.1080/03004430.2020.1717480 \nAndri Oza, & Zaman, B. (2016). Edutainment dalam Mata Pelajaran Pendidikan Agama Islam. Mudarrisa: Jurnal Kajian Pendidikan Islam, 8(1). https://doi.org/10.18326/mdr.v8i1.117-144 \nAubert, A., Molina, S., Schubert, T., & Vidu, A. (2017). Learning and inclusivity via Interactive Groups in early childhood education and care in the Hope school, Spain. Learning, Culture and Social Interaction, 13, 90–103. https://doi.org/10.1016/j.lcsi.2017.03.002 \nBreaux, R. P., Harvey, E. A., & Lugo-Candelas, C. I. (2016). The Role of Parent Psychopathology in Emotion Socialization. Journal of Abnormal Child Psychology, 44(4), 731–743. PubMed. https://doi.org/10.1007/s10802-015-0062-3 \nCapurso, M., & Ragni, B. (2016). Bridge Over Troubled Water: Perspective Connections between Coping and Play in Children. Frontiers in Psychology, 7, 1953. https://doi.org/10.3389/fpsyg.2016.01953 \nCheng, Y.-J., & Ray, D. C. (2016). Child-Centered Group Play Therapy: Impact on Social-Emotional Assets of Kindergarten Children. The Journal for Specialists in Group Work, 41(3), 209–237. https://doi.org/10.1080/01933922.2016.1197350 \nChilingaryan, K., & Zvereva, E. (2020). Edutainment As a New Tool for Development. JAEDU- International E-Journal of Advances in Education, 16, 9. \nChiu, M. M., & Chow, B. W. Y. (2011). Classroom Discipline Across Forty-One Countries: School, Economic, and Cultural Differences. Journal of Cross-Cultural Psychology, 42(3), 516–533. https://doi.org/10.1177/0022022110381115 \nChung, K. K. H., Lam, C. B., & Liew, J. (2020). Studying Children’s Social-Emotional Development in School and at Home through a Cultural Lens. Early Education and Development, 31(6), 927–929. https://doi.org/10.1080/10409289.2020.1782860 \nCrescenzi-Lanna, L., & Grané-Oró, M. (2016). An Analysis of the Interaction Design of the Best Educational Apps for Children Aged Zero to Eight = Análisis del diseño interactivo de las mejores apps educativas para niños de ceroa ocho años. \nCreswell, J. W. (2015). Educational research: Planning, conducting, and evaluating quantitative and qualitative research (Fifth edition). Pearson. \nDandashi, A., Karkar, A. G., Saad, S., Barhoumi, Z., Al-Jaam, J., & El Saddik, A. (2015). Enhancing the Cognitive and Learning Skills of Children with Intellectual Disability through Physical Activity and Edutainment Games. International Journal of Distributed Sensor Networks, 11(6), 165165. https://doi.org/10.1155/2015/165165 \nDenham, S. A. (2006). Social-Emotional Competence as Support for School Readiness: What Is It and How Do We Assess It? Early Education and Development, 17(1), 57–89. https://doi.org/10.1207/s15566935eed1701_4 \nEurenius, E., Richter Sundberg, L., Vaezghasemi, M., Silfverdal, S.-A., Ivarsson, A., & Lindkvist, M. (2019). Social-emotional problems among three-year-olds differ based on the child’s gender and custody arrangement. Acta Paediatrica (Oslo, Norway: 1992), 108(6), 1087–1095. PubMed. https://doi.org/10.1111/apa.14668 \nGoldschmidt, T., & Pedro, A. (2019). Early childhood socio-emotional development indicators: Pre-school teachers’ perceptions. Journal of Psychology in Africa, 29(5), 474–479. https://doi.org/10.1080/14330237.2019.1665887 \nGuran, A.-M., Cojocar, G. S., & Dioşan, L. S. (2020). Developing smart edutainment for preschoolers: A multidisciplinary approach. Proceedings of the 2nd ACM SIGSOFT International Workshop on Education through Advanced Software Engineering and Artificial Intelligence, 20–26. https://doi.org/10.1145/3412453.3423197 \nHalle, T. G., & Darling-Churchill, K. E. (2016). Review of measures of social and emotional development. Measuring Social and Emotional Development in Early Childhood, 45, 8–18. https://doi.org/10.1016/j.appdev.2016.02.003 \nHamada, M., & Tsubaki, M. (2021). Relationship Analysis between Children Interests and Their Positive Emotions for Mobile Libraries’ Community Development in a Tsunami Area. Qualitative and Quantitative Methods in Libraries, 31. \nHeller, S. S., Rice, J., Boothe, A., Sidell, M., Vaughn, K., Keyes, A., & Nagle, G. (2012). Social-Emotional Development, School Readiness, Teacher–Child Interactions, and Classroom Environment. Early Education & Development, 23(6), 919–944. https://doi.org/10.1080/10409289.2011.626387 \nHirsh-Pasek, K., Zosh, J. M., Golinkoff, R. M., Gray, J. H., Robb, M. B., & Kaufman, J. (2015). Putting Education in “Educational” Apps: Lessons from the Science of Learning. Psychological Science in the Public Interest, 16(1), 3–34. https://doi.org/10.1177/1529100615569721 \nHurlock, E. B. (2001). Developmental Psychology. McGraw-Hill Education. https://books.google.co.id/books?id=DiovBU8zMA4C \nMaitner, A. T., Mackie, D. M., Pauketat, J. V. T., & Smith, E. R. (2017). The Impact of Culture and Identity on Emotional Reactions to Insults. Journal of Cross-Cultural Psychology, 48(6), 892–913. https://doi.org/10.1177/0022022117701194 \nMarcelo, A. K., & Yates, T. M. (2014). Prospective relations among pre-schoolers’ play, coping, and adjustment as moderated by stressful events. Journal of Applied Developmental Psychology, 35(3), 223–233. https://doi.org/10.1016/j.appdev.2014.01.001 \nMcClelland, M. M., & Cameron, C. E. (2011). Self-regulation and academic achievement in elementary school children. New Directions for Child and Adolescent Development, 2011(133), 29–44. https://doi.org/10.1002/cd.302 \nMohd Yusof, A., Daniel, E. G. S., Low, W. Y., & Ab. Aziz, K. (2014). Teachers’ perception of mobile edutainment for special needs learners: The Malaysian case. International Journal of Inclusive Education, 18(12), 1237–1246. https://doi.org/10.1080/13603116.2014.885595 \nMok, M. M. C. (2019). Social and emotional learning. Educational Psychology, 39(9), 1115–1118. https://doi.org/10.1080/01443410.2019.1654195 \nMunirah. (2018). Urgensi Pengembangan Sosial dan Emosional Anak Usia Dini. Irfani, 14(1), 19–27. \nNasser, I., Miller-Idriss, C., & Alwani, A. (2019). Reconceptualizing Education Transformation in Muslim Societies: The Human Development Approach. The Journal of Education in Muslim Societies, 1(1), 3–25. JSTOR. \nNikolayev, M., Reich, S. M., Muskat, T., Tadjbakhsh, N., & Callaghan, M. N. (2021). Review of feedback in edutainment games for preschoolers in the USA. Journal of Children and Media, 15(3), 358–375. https://doi.org/10.1080/17482798.2020.1815227 \nNurmalitasari, F. (2015). Perkembangan Sosial Emosi Pada Anak Usia Prasekolah. Psikologi UGM, 23(2). https://doi.org/10.22146/bpsi.10567 \nOkan, Z. (2003). Edutainment: Is learning at risk? Br. J. Educ. Technol., 34, 255–264. \nPojani, D., & Rocco, R. (2020). Edutainment: Role-Playing versus Serious Gaming in Planning Education. Journal of Planning Education and Research, 0739456X2090225. https://doi.org/10.1177/0739456X20902251 \nProtassova, E. (2021). Emotional development in the educational preschool programs of Soviet and Post-Soviet Times. Russian Journal of Communication, 13(1), 97–109. https://doi.org/10.1080/19409419.2021.1884338 \nPurwanto, S. (2019). Unsur Pembelajaran Edutainment dalam Quantum Learning. Al-Fikri: Jurnal Studi Dan Penelitian Pendidikan Islam, 2(2). https://doi.org/10.30659/jspi.v2i2.5149 \nRen, L., Knoche, L. L., & Edwards, C. P. (2016). The Relation between Chinese Preschoolers’ Social-Emotional Competence and Preacademic Skills. Early Education and Development, 27(7), 875–895. https://doi.org/10.1080/10409289.2016.1151719 \nRose-Krasnor, L. (1997). The Nature of Social Competence: A Theoretical Review. Social Development, 6, 111–135. \nRusydi, N. A. (2018). Pengaruh Penerapan Metode Edutainment Dalam Pembelajaran Terhadap Hasil Belajar IPS Murid SD Kartika XX-1. Dikdas Matappa: Jurnal Ilmu Pendidikan Dasar, 1(2). https://doi.org/10.31100/dikdas.v1i2.281 \nShodiqin, R. (2016). Pembelajaran Berbasis Edutainment [Edutainment-Based Learning]. Jurnal Al-Maqayis, 4(1). https://doi.org/doi:http://dx.doi.org/10.18592/jams.v4i1.792 \nSprung, M., Münch, H. M., Harris, P. L., Ebesutani, C., & Hofmann, S. G. (2015). Children’s emotion understanding: A meta-analysis of training studies. Developmental Review, 37, 41–65. https://doi.org/10.1016/j.dr.2015.05.001 \nSutherland, S., Stuhr, P. T., Ressler, J., Smith, C., & Wiggin, A. (2019). A Model for Group Processing in Cooperative Learning. Journal of Physical Education, Recreation & Dance, 90(3), 22–26. https://doi.org/10.1080/07303084.2019.1559"
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "ZeRO DeepSpeed offloading distributed training memory",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2021"
+}

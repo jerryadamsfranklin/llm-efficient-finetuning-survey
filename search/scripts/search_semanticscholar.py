@@ -113,7 +113,14 @@ def fetch_s2(
     }
 
 
-def run_backfill(data: dict[str, Any], session: requests.Session, *, force: bool) -> int:
+def run_backfill(
+    data: dict[str, Any],
+    session: requests.Session,
+    *,
+    force: bool,
+    only_block: str | None = None,
+    only_slice: str | None = None,
+) -> int:
     """Protocol v1.3: date-sliced re-run of every s2_query for the confirmation band.
 
     v1.2 queried Semantic Scholar once per query with a 200-record cap and no slicing;
@@ -130,7 +137,11 @@ def run_backfill(data: dict[str, Any], session: requests.Session, *, force: bool
     print(f"v1.3 backfill: slices={slices}, cap={max_results}/query/slice -> {out_root}\n", flush=True)
 
     for block_id, _name, q_idx, query in iter_s2_queries(data):
+        if only_block and block_id != only_block:
+            continue
         for year in slices:
+            if only_slice and year != only_slice:
+                continue
             out = raw_path("semanticscholar_backfill", block_id, q_idx, slice_id=year, root=RAW_ROOT)
             if out.exists() and not force:
                 print(f"skip existing {out.name}")
@@ -190,6 +201,7 @@ def main() -> int:
         action="store_true",
         help="Protocol v1.3: date-sliced re-run for the 2019-2021 confirmation band.",
     )
+    parser.add_argument("--slice", help="With --backfill: only this year slice.")
     args = parser.parse_args()
 
     data = load_queries()
@@ -210,7 +222,9 @@ def main() -> int:
     session.headers.update(headers)
 
     if args.backfill:
-        return run_backfill(data, session, force=args.force)
+        return run_backfill(
+            data, session, force=args.force, only_block=args.block, only_slice=args.slice
+        )
 
     for block_id, _name, q_idx, query in iter_s2_queries(data):
         if args.block and block_id != args.block:

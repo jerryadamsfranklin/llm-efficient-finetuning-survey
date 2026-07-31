@@ -384,13 +384,18 @@ def load_supplementary() -> list[Record]:
             continue
         ext = rec.get("externalIds") or {}
         authors = rec.get("authors")
+        # Criterion 5 reads "published (or first posted, for preprints)". For these records
+        # the manuscript's verified publication year governs: Semantic Scholar reports the
+        # preprint posting year (GPipe 2018, AdamW 2017), which would otherwise date a paper
+        # published at NeurIPS/ICLR 2019 to outside the coverage window.
+        year = str(item.get("reference_year") or rec.get("year") or "")
         out.append(
             Record(
                 source="supplementary",
                 source_query=f"known_corpus:{item.get('reference_key')}",
                 title=rec.get("title") or "",
                 authors=authors_to_str(authors),
-                year=str(rec.get("year") or item.get("reference_year") or ""),
+                year=year,
                 venue=rec.get("venue") or item.get("reference_venue") or "",
                 doi=ext.get("DOI") or rec.get("doi"),
                 arxiv_id=ext.get("ArXiv"),

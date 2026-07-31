@@ -1,0 +1,190 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "ZeRO DeepSpeed offloading distributed training memory",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:40:52Z",
+  "total_results_reported": 4,
+  "returned": 4,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "91aff160bbbe5a3a9116225b7ebc5a60179290fa",
+      "externalIds": {
+        "ArXiv": "1911.13173",
+        "DBLP": "journals/corr/abs-1911-13173",
+        "MAG": "2989623127",
+        "CorpusId": 208513353
+      },
+      "title": "Mean Shift Rejection: Training Deep Neural Networks Without Minibatch Statistics or Normalization",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1911.13173, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "27482581",
+          "name": "B. Ruff"
+        },
+        {
+          "authorId": "2298883676",
+          "name": "Taylor Beck"
+        },
+        {
+          "authorId": "145606164",
+          "name": "Joscha Bach"
+        }
+      ],
+      "abstract": "Deep convolutional neural networks are known to be unstable during training at high learning rate unless normalization techniques are employed. Normalizing weights or activations allows the use of higher learning rates, resulting in faster convergence and higher test accuracy. Batch normalization requires minibatch statistics that approximate the dataset statistics but this incurs additional compute and memory costs and causes a communication bottleneck for distributed training. Weight normalization and initialization-only schemes do not achieve comparable test accuracy. \nWe introduce a new understanding of the cause of training instability and provide a technique that is independent of normalization and minibatch statistics. Our approach treats training instability as a spatial common mode signal which is suppressed by placing the model on a channel-wise zero-mean isocline that is maintained throughout training. Firstly, we apply channel-wise zero-mean initialization of filter kernels with overall unity kernel magnitude. At each training step we modify the gradients of spatial kernels so that their weighted channel-wise mean is subtracted in order to maintain the common mode rejection condition. This prevents the onset of mean shift. This new technique allows direct training of the test graph so that training and test models are identical. We also demonstrate that injecting random noise throughout the network during training improves generalization. This is based on the idea that, as a side effect, batch normalization performs deep data augmentation by injecting minibatch noise due to the weakness of the dataset approximation. \nOur technique achieves higher accuracy compared to batch normalization and for the first time shows that minibatches and normalization are unnecessary for state-of-the-art training."
+    },
+    {
+      "paperId": "7545f31a9d1566abad66dd8f46b3fc32a68f99ea",
+      "externalIds": {
+        "CorpusId": 195889780
+      },
+      "title": "IP1 Interactive Presentations",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "24626316",
+          "name": "Houxiang Ji"
+        },
+        {
+          "authorId": "2719313",
+          "name": "Linghao Song"
+        },
+        {
+          "authorId": "143918570",
+          "name": "Li Jiang"
+        },
+        {
+          "authorId": "51208601",
+          "name": "H. Li"
+        },
+        {
+          "authorId": "5442167",
+          "name": "Yiran Chen"
+        },
+        {
+          "authorId": "38791934",
+          "name": "Jacob R. Stevens"
+        },
+        {
+          "authorId": "2111744599",
+          "name": "Yue Du"
+        },
+        {
+          "authorId": "8235785",
+          "name": "V. Kozhikkottu"
+        },
+        {
+          "authorId": "145291370",
+          "name": "A. Raghunathan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8776f4776c6c13f06bff5f1c6494987fc8550b3b",
+      "externalIds": {
+        "CorpusId": 199534028
+      },
+      "title": "January 03 , 2019 AUTOMATED FAILURE PREDICTION AND SELF-HEALING OF EDGE DEVICES IN INTERNET OF THINGS INFRASTRUCTURE",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www.tdcommons.org/cgi/viewcontent.cgi?article=2916&context=dpubs_series, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2144593789",
+          "name": "Lalit Jain"
+        },
+        {
+          "authorId": "2103436568",
+          "name": "N. Pothireddy"
+        },
+        {
+          "authorId": "2337404152",
+          "name": "Sai Kiran Reddy Malikireddy"
+        },
+        {
+          "authorId": "51238910",
+          "name": "V. Parekh"
+        },
+        {
+          "authorId": "1395044821",
+          "name": "Bipin Algubelli"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "592f56913579f887147484b2b6b36570ddab4e0a",
+      "externalIds": {
+        "MAG": "2989605686",
+        "CorpusId": 214144303
+      },
+      "title": "Functional Neuroimages Analyzed by means of Artificial Neural Networks Can Help Psychiatrists to Diagnose Schizophrenia",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://www.remedypublications.com/open-access/functional-neuroimages-analyzed-by-means-of-artificial-neural-networks-can-help-psychiatrists-to-diagnose-schizophrenia-299.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143749397",
+          "name": "M. Molina"
+        },
+        {
+          "authorId": "1814011878",
+          "name": "M. Carlos"
+        },
+        {
+          "authorId": "1582362273",
+          "name": "Cornejo Luciana"
+        },
+        {
+          "authorId": "1582341494",
+          "name": "Kotlik Silvina"
+        },
+        {
+          "authorId": "1582360224",
+          "name": "D. Inés"
+        },
+        {
+          "authorId": "1582357472",
+          "name": "Manzano Julieta"
+        }
+      ],
+      "abstract": null
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "ZeRO DeepSpeed offloading distributed training memory",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

@@ -172,3 +172,33 @@ than preprint submission date.
 3. Claims about the *recent* literature (2022 onward) are unaffected. The under-retrieval is
    confined to the confirmation band, which exists to verify already-cited foundational work rather
    than to discover new work.
+
+---
+
+## Backfill outcome (protocol v1.3)
+
+Run 2026-07-31. All 18 `s2_queries` re-run for each of 2019, 2020, 2021 — 54 slices, 200-record
+cap per slice. Raw output in `search/raw/semanticscholar_backfill/`.
+
+| Measure | Result |
+|---|---|
+| Slices run | 54 of 54 |
+| Records retrieved | 6,775 |
+| Slices reaching the 200 cap | 26 |
+| New unique candidates added | 5,185 (all 2019–2021) |
+| Pre-2022 share of the pool | 4.3% → **36.4%** |
+| Pool size | 10,333 → **15,518** |
+
+Per-year retrieval moved from 82 / 136 / 230 candidates (2019 / 2020 / 2021) to
+1,731 / 1,867 / 2,049. The single-query comparison is the clearest evidence that the cause was
+cap saturation rather than absence of literature: `B1_peft_1` returned **0** pre-2022 records
+unsliced, and **200 of 722 available** for 2019 alone once sliced.
+
+### Residual limit
+
+26 of 54 slices still reached the cap, so the confirmation band is improved but **not
+exhaustive**. Recursive sub-slicing (half-year / quarter) was not performed for this band: its
+purpose is to verify already-cited work and surface high-adoption papers, not to enumerate the
+period. Combined with the arXiv submission-date boundary effect above, no claim of complete
+2019–2021 coverage is made.
+

@@ -4,16 +4,20 @@
 **Status:** Locked — committed before Stage 1 screening begins  
 **Related:** [`inclusion-exclusion.md`](inclusion-exclusion.md), [`search-protocol.md`](search-protocol.md), [`CHANGELOG.md`](CHANGELOG.md)
 
-This document specifies **how** the criteria in `inclusion-exclusion.md` are applied to the 10,333
-unique candidates, who applies them, and what is verified by the author. It exists because the
+This document specifies **how** the criteria in `inclusion-exclusion.md` are applied to the
+candidate pool, who applies them, and what is verified by the author. It exists because the
 procedure involves large language model assistance, and that must be stated plainly rather than
 left implicit.
+
+**Counts below reflect the post-v1.3 pool of 15,518 unique candidates**, after the confirmation-band
+Semantic Scholar backfill added 5,185 previously unretrieved 2019–2021 records. The rules in this
+document were committed before that retrieval ran and are unchanged by it; only the counts moved.
 
 ---
 
 ## 1. Why this procedure
 
-Stage 1 requires a title/abstract judgement on 10,310 candidates (23 were excluded on metadata
+Stage 1 requires a title/abstract judgement on 15,495 candidates (23 were excluded on metadata
 alone; see §5). Three approaches were considered and two were rejected on evidence:
 
 - **Keyword pre-filtering was tested and rejected.** A filter built from the protocol's own query
@@ -21,7 +25,7 @@ alone; see §5). Three approaches were considered and two were rejected on evide
   cites (LoRA+, VeRA, ZeRO-Offload, FlashAttention-2) — 86% recall against known-relevant work.
   Excluding papers the survey itself cites is not defensible, so no keyword filter is used to
   exclude any record.
-- **Exhaustive manual screening of all 10,310** by a single author inside the revision window is
+- **Exhaustive manual screening of all 15,495** by a single author inside the revision window is
   not achievable without compromising either the deadline or the rigour of the judgements.
 - **Adopted:** LLM-assisted screening under author supervision, bounded in scope, with mandatory
   author verification of every inclusion.
@@ -37,9 +41,13 @@ Screening effort is allocated accordingly.
 
 | Band | Date range | Candidates | Treatment |
 |---|---|---|---|
-| **New-work band** | 2024-01-01 – 2026-06-30 | 7,779 | **Full Stage 1 screen** of every record |
-| **Confirmation band** | 2019-01-01 – 2023-12-31 | 2,513 | **Targeted confirmation pass** (§4), not a full screen |
+| **New-work band** | 2024-01-01 – 2026-06-30 | 7,778 | **Full Stage 1 screen** of every record |
+| **Confirmation band** | 2019-01-01 – 2023-12-31 | 7,699 | **Targeted confirmation pass** (§4), not a full screen |
 | Year missing | — | 18 | Full screen; date verified individually against criterion 5 |
+
+Applying the §4 triggers selects **3,142** of the 7,699 confirmation-band records for screening and
+records the remaining **4,557** as `stage_1_not_screened`. Total records receiving a Stage 1
+judgement: **10,938**.
 
 Both bands can yield inclusions. The band determines review *depth*, not eligibility: nothing is
 excluded for being in the confirmation band, and any confirmation-band record that surfaces as
@@ -52,7 +60,7 @@ manuscript. It is **not** described as exhaustive coverage of 2019–2023.
 
 ## 3. Stage 1 — new-work band (full screen)
 
-Applied to all 7,779 records from 2024-01-01 onward.
+Applied to all 7,778 records from 2024-01-01 onward.
 
 **Criteria applied:** inclusion 1, 4, 5; exclusions 1–3 and 6 where obvious from title/abstract
 (per the stage mapping in `inclusion-exclusion.md`).
@@ -77,7 +85,7 @@ wrongly excluding one is a missing reference that a reviewer may notice.
 
 ## 4. Stage 1 — confirmation band (targeted pass)
 
-Applied to the 2,513 records from 2019–2023. This band is not fully screened. Records enter review
+Applied to the 7,699 records from 2019–2023. This band is not fully screened. Records enter review
 if **any** of the following holds:
 
 1. The record matches a reference already cited in the manuscript
