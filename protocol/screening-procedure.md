@@ -211,9 +211,12 @@ The remaining 7,628 new-work records were screened in a **single automated pass*
 (`screener: automated`) rather than in 375-record human-verified blocks. The encoded v1.3
 rule was applied by `screening/scripts/auto_stage1.py`. Author verification for this pass is
 the ranked shortlist of 30 includes in `screening/reviews/reference-shortlist.md`, not
-100% of includes in the band. This is a stated departure from the §6 table's "every include"
-requirement for this band, recorded here and in `CHANGELOG.md`. The confirmation band is
-unchanged.
+100% of includes in the band. Author review of that shortlist (2026-08-17): 4 already-cited
+duplicates dropped from the insertion set only; 6 domain/inference includes overturned to
+exclude; 20 remain in-scope; 13 selected for primary-source verification
+(`screening/reviews/shortlist-13-verification.md`). This is a stated departure from the
+§6 table's "every include" requirement for this band, recorded here and in `CHANGELOG.md`.
+The confirmation band is unchanged.
 
 ---
 

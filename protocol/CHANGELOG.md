@@ -187,6 +187,18 @@ full pool. Confirmation-band records were not part of this pass.
 Outcome: **2,982 include / 4,646 exclude** on the 7,628. Combined with batch 001, the
 new-work band is **3,016 include / 4,782 exclude**. Ranking used all 3,016 includes.
 
+### Author review of the ranked shortlist (2026-08-17)
+
+Human verification was applied to the 30-paper shortlist, not the full pool. Four
+title-duplicates of the existing 42 were dropped from the insertion set but left as
+Stage 1 includes. Six domain/inference papers the ranker had warned about were
+author-excluded (criterion 2 / inclusion 1 / exclusion 2). PiSSA was re-sectioned to
+B1. LoRA-XS (`C-2237f357ff`) was overturned from Exclusion 6 to include (ECAI PEFT
+paper tagged `book-chapter` by OpenAlex). After those log edits the new-work band is
+**3,011 include / 4,787 exclude**. Thirteen in-scope non-duplicates were selected for
+primary-source verification before any manuscript insertion
+(`screening/reviews/shortlist-13-verification.md`).
+
 ---
 
 ## Phase 3 entry — 2026-07-31 (artifact regeneration, no protocol change)

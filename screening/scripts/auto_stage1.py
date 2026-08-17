@@ -144,7 +144,9 @@ def classify(row: dict[str, str], cand: dict[str, str]) -> dict[str, Any]:
     base = {"id": cid}
 
     if work_type.lower() in {"books", "book", "book-chapter"} or BOOK_RE.search(title):
-        if "proceeding" not in venue.lower():
+        venue_l = venue.lower()
+        # OpenAlex tags some conference proceedings (e.g. ECAI) as book-chapter.
+        if "proceeding" not in venue_l and "conference" not in venue_l:
             return {**base, "decision": "exclude", "exclusion_reason": "Exclusion 6",
                     "confidence": "high",
                     "notes": "[automated_pass] Textbook/tutorial chapter (exclusion 6)."}
