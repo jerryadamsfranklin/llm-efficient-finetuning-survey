@@ -149,6 +149,11 @@ def main() -> int:
                 "year": r.get("year", ""),
                 "venue": r.get("venue", ""),
                 "citations": r.get("citations", ""),
+                # Only ~11% of the pool carries a record type; venue and the arXiv
+                # flag carry the archival signal for exclusion 6 when it is absent.
+                "record_type": (cand.get("work_type") or "").strip(),
+                "arxiv_only": bool((cand.get("arxiv_id") or "").strip())
+                and not (cand.get("doi") or "").strip(),
                 "abstract": abstract[:ABSTRACT_CHARS] if abstract else "",
                 "has_abstract": bool(abstract),
             }

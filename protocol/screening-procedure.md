@@ -56,14 +56,38 @@ relevant is screened on the same criteria as the new-work band.
 This bound is a stated limitation, reported in `screening/prisma-counts.md` and disclosed in the
 manuscript. It is **not** described as exhaustive coverage of 2019–2023.
 
+### 2.1 Scope clarifications (v1.3 — clarification, not change)
+
+Two-part scope plus book-chapter form were written into `inclusion-exclusion.md` during author
+calibration of batch 001. The criteria text is unchanged; the readings are now explicit. **Both
+apply from new-work batch 002 onward** (and to all subsequent confirmation-band screening). Batch
+001 log rows were rewritten after author confirmation of
+`screening/reviews/new-work-batch-001-reconciliation.md` (20 author excludes).
+
+| Clarification | Criterion | Rule |
+|---|---|---|
+| **Method, not application** | 1 | Research-question test: in scope if the question is about the fine-tuning-efficiency method (performance, applicability, improvement), including comparative evaluations of the method on a task used as a testbed. Out of scope if the question is about a task or system and the method is only the tool used to build it. |
+| **LLM-only boundary** | 2 | Include only if the model is an LLM, or the paper is a survey of efficiency methods for language models (including SLM efficiency surveys). Vision, speech, graph, audio, multimodal, and general-ML papers fail unless the method is general **and demonstrated on an LLM**. |
+| **Book chapters** | 6 | Textbook, tutorial, and pedagogical book chapters are non-archival secondary material. Peer-reviewed conference/journal papers and papers in edited scholarly proceedings remain eligible. |
+
+**Immediate log updates from these rules (author-directed):**
+
+- Held record `C-34a4a73f19` (Large Language Models (LLMs): Quantization) → **exclude** under
+  exclusion 6 (De Gruyter book-chapter neighbours).
+- Held record `C-3187c706f6` (AttentionletIs All You Need!) → **remains held** (unidentifiable).
+
+Batch 001 record `C-352115b844` (Springer PEFT textbook chapter) is an exclusion 6 case under the
+book-chapter rule; the author verifies the batch-001 packet against that reading.
+
 ---
 
 ## 3. Stage 1 — new-work band (full screen)
 
 Applied to all 7,778 records from 2024-01-01 onward.
 
-**Criteria applied:** inclusion 1, 4, 5; exclusions 1–3 and 6 where obvious from title/abstract
-(per the stage mapping in `inclusion-exclusion.md`).
+**Criteria applied:** inclusion 1, 4, 5; exclusions 1–3 and 6 where obvious from title/abstract;
+criterion 2 LLM boundary when the non-language domain is clear (§2.1); book-chapter form under
+exclusion 6 when obvious (§2.1).
 
 **Procedure.** Records are presented to the LLM screener in batches with title, abstract, year,
 venue, and citation count. For each record the screener records:
@@ -138,6 +162,58 @@ result.
 Author verification is recorded per row: `screener` changes to `author` and `notes` records the
 overturn where the author disagrees. The original machine decision is preserved in
 `screener_original` so the audit trail survives.
+
+### 6.1 Verification cadence
+
+Verification runs **per block of 375 records** in the new-work band (~2.5 batches at size 150),
+roughly **29 rounds** for the full new-work band. Block size was reduced from 750 after batch 001
+calibration produced a 35% low-confidence rate; at that rate a 750-record block would generate
+~260 review items and is not reviewable within the project window.
+
+Each block emits a packet to `screening/reviews/` containing every include, every low-confidence
+decision, and a sample of confident excludes; screening of the next block does not begin until the
+packet returns. Blocks are deliberately sized by record count rather than by include volume, because
+the errors under audit are false excludes as much as false includes and an include-triggered packet
+would surface only the latter. Block size may be widened once the disagreement rate is demonstrably
+low, and is tightened if it is not.
+
+**Planning note:** with ~10,770 records remaining at Stage 1 entry, the realistic submission target
+for this revision is **2026-08-20**, not 2026-08-01–05.
+
+### 6.2 What `confidence` means
+
+Confidence reports **certainty in the screening decision**, not the strength of the record or
+enthusiasm for it. The two move independently: a record can be advanced under bias-to-inclusion
+while the screener remains unsure it belongs. A bare title with no abstract rarely supports high
+confidence. Records whose title cannot distinguish training-time from inference-time methods are
+low confidence even when advanced.
+
+Under the strict LLM-only boundary (§2.1), vision, speech, and multimodal domain papers where
+PEFT or quantization is applied as task machinery — not as a generalizable LLM efficiency method —
+are **excluded under criterion 2 at Stage 1** when the domain is clear, not advanced at low
+confidence. This matters because confidence drives audit intensity: high-confidence rows are
+sampled less. **Bias the decision toward inclusion only where the domain boundary is genuinely
+unclear; keep confidence honest about how little the metadata supports the call.**
+
+### 6.3 Records that cannot be identified
+
+A record whose identity cannot be established — garbled title, no authors, venue, year, or
+citation data, and no match in Semantic Scholar, Crossref, or OpenAlex — is **not** advanced as an
+include. Advancing an unidentifiable record is deferring an unmade decision, not making one.
+Metadata recovery is attempted first against those three indexes; if it fails, the record is
+recorded `decision: hold`, `stage_reached: stage_1_held`, with a note stating what was attempted.
+Held records are neither included nor excluded and **must be resolved before the PRISMA counts are
+final**.
+
+### 6.4 Automated pass of the new-work band (2026-08-17)
+
+The remaining 7,628 new-work records were screened in a **single automated pass**
+(`screener: automated`) rather than in 375-record human-verified blocks. The encoded v1.3
+rule was applied by `screening/scripts/auto_stage1.py`. Author verification for this pass is
+the ranked shortlist of 30 includes in `screening/reviews/reference-shortlist.md`, not
+100% of includes in the band. This is a stated departure from the §6 table's "every include"
+requirement for this band, recorded here and in `CHANGELOG.md`. The confirmation band is
+unchanged.
 
 ---
 

@@ -16,6 +16,13 @@ Author decisions (`--screener author`) may overwrite an existing llm_assisted de
 the machine decision is preserved in `screener_original`. This is how §6 verification and
 audit overturns are recorded.
 
+Two decisions are not include/exclude:
+  hold      the record cannot be identified well enough to judge; it is parked at
+            `stage_1_held` and must be resolved before the PRISMA counts are final.
+  {"recalibration": true}
+            revisits confidence or notes on a row already decided, without changing the
+            decision. Used when an author review resets the confidence standard.
+
 Usage:
   python3 screening/scripts/apply_decisions.py --dry-run
   python3 screening/scripts/apply_decisions.py
@@ -38,9 +45,12 @@ DECISION_DIR = REPO_ROOT / "screening" / "decisions"
 
 csv.field_size_limit(10**9)
 
-VALID_DECISIONS = {"include", "exclude"}
+# "hold" is not a screening outcome: it parks a record that cannot be identified well
+# enough to judge, so an unmade decision is never advanced to Stage 2 as an include.
+# Held records must be resolved before the PRISMA counts are final.
+VALID_DECISIONS = {"include", "exclude", "hold"}
 VALID_CONFIDENCE = {"high", "low"}
-VALID_SCREENERS = {"llm_assisted", "author"}
+VALID_SCREENERS = {"llm_assisted", "author", "automated"}
 # Stage 1 applies inclusion 1, 4, 5 and exclusions 1-3, 6 (inclusion-exclusion.md §mapping).
 VALID_CRITERIA = {
     "Inclusion 1", "Inclusion 2", "Inclusion 3", "Inclusion 4", "Inclusion 5",
@@ -76,6 +86,7 @@ def validate(payload: dict[str, Any], log: dict[str, dict[str, str]], screener: 
         if confidence and confidence not in VALID_CONFIDENCE:
             errors.append(f"{where}: confidence must be high/low, got {confidence!r}")
             continue
+        notes = str(d.get("notes") or "").strip()
         if decision == "exclude":
             if not reason:
                 errors.append(f"{where}: exclusion requires a numbered criterion")
@@ -84,12 +95,28 @@ def validate(payload: dict[str, Any], log: dict[str, dict[str, str]], screener: 
                 errors.append(f"{where}: unknown criterion {reason!r}")
                 continue
         elif reason:
-            errors.append(f"{where}: inclusion must not carry an exclusion_reason")
+            errors.append(f"{where}: only an exclusion may carry an exclusion_reason")
+            continue
+        if decision == "hold" and not notes:
+            errors.append(f"{where}: hold requires a note stating what is unresolved")
             continue
 
         existing = (log[cid].get("decision") or "").strip()
         prior_screener = (log[cid].get("screener") or "").strip()
-        if existing and screener != "author":
+        # A recalibration revisits confidence or notes on a decision already recorded;
+        # it may not change the decision itself, which still needs author sign-off.
+        recalibration = bool(d.get("recalibration"))
+        if recalibration:
+            if not existing:
+                errors.append(f"{where}: {cid} has no decision to recalibrate")
+                continue
+            if existing != decision:
+                errors.append(
+                    f"{where}: recalibration cannot change {existing!r} to {decision!r}; "
+                    "use --screener author to overturn"
+                )
+                continue
+        elif existing and screener != "author":
             errors.append(
                 f"{where}: {cid} already decided by {prior_screener or 'unknown'}; "
                 "only --screener author may overwrite"
@@ -100,7 +127,8 @@ def validate(payload: dict[str, Any], log: dict[str, dict[str, str]], screener: 
             "decision": decision,
             "exclusion_reason": reason,
             "confidence": confidence or "high",
-            "notes": str(d.get("notes") or "").strip(),
+            "notes": notes,
+            "recalibration": recalibration,
         })
     return ok, errors
 
@@ -155,12 +183,24 @@ def main() -> int:
         print("\nnothing to apply")
         return 1 if all_errors else 0
 
+    STAGE_BY_DECISION = {
+        "include": "stage_2_pending",
+        "exclude": "stage_1",
+        "hold": "stage_1_held",
+    }
     overturns = 0
+    recalibrated = 0
     for r in applied:
         row = log[r["id"]]
         prior_decision = (row.get("decision") or "").strip()
         prior_screener = (row.get("screener") or "").strip()
-        if prior_decision and r["_screener"] == "author":
+        prior_confidence = (row.get("confidence") or "").strip()
+        if r["recalibration"]:
+            if prior_confidence and prior_confidence != r["confidence"]:
+                recalibrated += 1
+            if not (row.get("screener_original") or "").strip():
+                row["screener_original"] = f"{prior_screener}:{prior_decision}:{prior_confidence}"
+        elif prior_decision and r["_screener"] == "author":
             if not (row.get("screener_original") or "").strip():
                 row["screener_original"] = f"{prior_screener}:{prior_decision}"
             if prior_decision != r["decision"]:
@@ -168,15 +208,19 @@ def main() -> int:
         row["decision"] = r["decision"]
         row["exclusion_reason"] = r["exclusion_reason"]
         row["confidence"] = r["confidence"]
-        row["screener"] = r["_screener"]
-        row["stage_reached"] = "stage_2_pending" if r["decision"] == "include" else "stage_1"
+        if not r["recalibration"]:
+            row["screener"] = r["_screener"]
+        row["stage_reached"] = STAGE_BY_DECISION[r["decision"]]
         if r["notes"]:
             row["notes"] = r["notes"]
 
     counts = Counter(r["decision"] for r in applied)
-    print(f"\napplying {len(applied)}: include={counts['include']} exclude={counts['exclude']}")
+    print(f"\napplying {len(applied)}: include={counts['include']} "
+          f"exclude={counts['exclude']} hold={counts['hold']}")
     if overturns:
         print(f"author overturned {overturns} prior machine decision(s)")
+    if recalibrated:
+        print(f"confidence recalibrated on {recalibrated} row(s)")
     low = sum(1 for r in applied if r["confidence"] == "low")
     print(f"low-confidence (require author review): {low}")
 

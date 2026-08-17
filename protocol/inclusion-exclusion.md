@@ -1,6 +1,6 @@
 # Inclusion and Exclusion Criteria
 
-**Protocol version:** 1.0  
+**Protocol version:** 1.0 (criteria unchanged; criteria 1, 2, 5, and 6 clarified under v1.3 — see notes below)  
 **Status:** Locked for Phase 1 — committed before search execution  
 **Coverage window:** 2019-01-01 through 2026-06-30  
 **Related:** [`search-protocol.md`](search-protocol.md), [`extraction-schema.md`](extraction-schema.md)
@@ -22,6 +22,40 @@ A paper is **INCLUDED** if **all** of the following hold:
 4. **Language.** Written in English.
 5. **Date.** Published (or first posted, for preprints) between **2019-01-01** and **2026-06-30**.
 
+### Note on criterion 1 (clarified under v1.3 — clarification, not change)
+
+A paper is in scope only if its **contribution is the fine-tuning-efficiency method itself** — a
+new method, a comparative evaluation of methods, or a survey of methods. A domain task that
+**applies an existing method** (LoRA, QLoRA, adapters, prompt/prefix tuning, quantization) as
+machinery to build a system or to improve a downstream application is **excluded under inclusion
+criterion 1**, even when the model is an LLM.
+
+**Distinguishing test (research question):** a paper is in scope if its research question is about
+the fine-tuning-efficiency method itself — how it performs, when it works, how to improve it —
+including comparative evaluations of the method on a downstream task used as a testbed. It is out
+of scope if its research question is about a task or system and the efficiency method is only the
+tool used to build it.
+
+### Note on criterion 2 (clarified under v1.3 — clarification, not change)
+
+A paper is in scope only if **(a) the model under study is a large language model** (or it is a
+survey of efficiency methods for language models, including small LMs treated as the adjacent
+efficiency literature) **and** **(b) the research-question test in the criterion 1 note holds**.
+Vision, speech, graph, audio, and multimodal models are **excluded under criterion 2** unless the
+method is **general and demonstrated on an LLM**. PEFT, quantization, or memory-optimization
+techniques applied as machinery for a non-language domain task fail here when the model is not an
+LLM. A general-ML survey or method not demonstrated on an LLM also fails criterion 2.
+
+At Stage 1 this boundary is applied when the non-language domain is clear from the title or
+abstract (SAM, ViT, ASR, graph transformers, audio transformers, diffusion). When the domain is
+ambiguous, the record may advance under bias-to-inclusion for Stage 2 to confirm.
+
+### Note on criterion 5 (clarified under v1.3 — clarification, not change)
+
+A work that appeared first as a preprint and was later published in a peer-reviewed venue is dated by its **publication date**. The parenthetical "first posted" governs only items that remain unpublished at screening time. A 2018 preprint published at a 2019 venue is therefore in window.
+
+This is the reading the criterion already carried; it is written out because it decides a small number of records at the window boundary — BERT (posted 2018, NAACL 2019) and Experience Replay for Continual Learning among them — and an unstated interpretation is weaker than a recorded one. The alternative reading, dating every work by its earliest public appearance, would exclude those records and is not the convention this review follows.
+
 ### Note on criterion 3
 
 The community-adoption threshold is stated explicitly so it can be applied consistently and defended in the manuscript. An arbitrary-looking cutoff invites challenge; a stated, applied-consistently cutoff does not. Citation counts are recorded at the time of screening and noted in the screening log when criterion 3 is the deciding factor.
@@ -39,14 +73,25 @@ A paper is **EXCLUDED** if **any** of the following hold:
 5. It reports **only qualitative claims** with no extractable efficiency or quality measures.
 6. It is a **blog post, vendor documentation, or non-archival white paper** (these may be consulted as background but are **not** counted in the corpus).
 
+### Note on criterion 6 (clarified under v1.3 — clarification, not change)
+
+**Textbook chapters, tutorial chapters, and pedagogical book chapters** are excluded as non-archival
+secondary material under exclusion 6. Peer-reviewed archival papers and conference/journal
+publications are retained. Peer-reviewed papers in edited scholarly proceedings remain eligible;
+textbook and tutorial chapters do not.
+
+At Stage 1, this applies when the record type, venue, or title indicates book-chapter form (e.g.
+"Chapter N: …" in a publisher book series). When form is uncertain, the record may be held or
+advanced at low confidence for author review.
+
 ---
 
 ## Screening stage mapping
 
 | Stage | Criteria applied | Notes |
 |---|---|---|
-| Stage 1 — Title/abstract | Inclusion 1, 4, 5; Exclusion 1–3, 6 when obvious from title/abstract | Fast pass |
-| Stage 2 — Full text | Inclusion 2, 3; Exclusion 4, 5; confirm Stage 1 | Methods and results required |
+| Stage 1 — Title/abstract | Inclusion 1, 4, 5; Exclusion 1–3, 6 when obvious from title/abstract; criterion 2 LLM boundary when domain is clear | Fast pass |
+| Stage 2 — Full text | Inclusion 2 (remaining), 3; Exclusion 4, 5; confirm Stage 1 | Methods and results required |
 | Stage 3 — Synthesis | Category / subcategory; supersession and coverage duplicates | Assign taxonomy labels |
 
 For every exclusion, record which numbered criterion triggered it.

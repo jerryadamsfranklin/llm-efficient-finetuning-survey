@@ -67,8 +67,11 @@ that period.
 | — new-work band, 2024-01 onward (full screen) | 7,778 |
 | — confirmation band, 2019–2023, meeting a §4 trigger | 3,142 |
 | — year missing (date verified individually) | 18 |
+| **Within Stage 1 scope in total** (10,938 + 23) | **10,961** |
 | Not screened — confirmation band, no §4 trigger met | 4,557 |
-| Title/abstract screened (Stage 1) | in progress |
+| Title/abstract screened (Stage 1) | new-work band complete (automated pass); confirmation band pending |
+| — new-work includes (Stage 2 pending) | 3,016 |
+| — new-work excludes | 4,782 |
 | Full text assessed (Stage 2) | TBD |
 | Included in synthesis | TBD |
 

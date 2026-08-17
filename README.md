@@ -19,7 +19,7 @@ PeerJ Computer Science).
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
 | **2 — Execute searches** | **Closed 2026-07-31**, merged to `main`. All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
-| **3 — Screening** | **In progress** on `phase-3-screening`. Protocol v1.3 backfill grew the pool to 15,518 unique candidates; 10,938 receive a Stage 1 judgement, 4,557 are out of the stated scope bound, 23 excluded on metadata alone. |
+| **3 — Screening** | **In progress** on `phase-3-screening`. Protocol v1.3 backfill grew the pool to 15,518 unique candidates; 10,938 receive a Stage 1 judgement, 4,557 are out of the stated scope bound, 23 excluded on metadata alone. **Submission target: 2026-08-20.** |
 | **4+** | Not started (extraction against `protocol/extraction-schema.md`). |
 
 ### Protocol versions
@@ -61,7 +61,7 @@ planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 - [x] Semantic Scholar 2019–2021 date-sliced backfill (54/54 slices; +5,185 unique candidates; pre-2022 share 4.3% → 36.4%)
 - [x] Targeted supplementary retrieval — all five known-corpus misses recovered; `bayati2023` confirmed a different work
 - [x] Scope bound applied: 4,557 confirmation-band records recorded as not screened, with empty decisions rather than exclusions
-- [ ] Stage 1 title/abstract screen (10,938 to judge; criteria 1, 4, 5 and obvious 1–3, 6)
+- [ ] Stage 1 title/abstract screen (10,938 to judge; criteria 1, 4, 5; exclusions 1–3, 6; criterion 2 LLM boundary and book-chapter rule from batch 002 — see `screening-procedure.md` §2.1)
 - [ ] Stage 2 full-text screen (criteria 2, 3; adoption bar verified against a second source)
 - [ ] Stage 3 synthesis — category / subcategory assignment
 - [ ] `screening/prisma-counts.md` completed with final stage counts

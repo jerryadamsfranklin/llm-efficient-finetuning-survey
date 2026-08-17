@@ -123,7 +123,69 @@ references the supplementary retrieval was run to recover.
 
 **Scope bound applied:** of 7,699 confirmation-band records, 3,142 meet a §4 trigger and are
 screened; 4,557 are recorded `stage_1_not_screened` with empty decisions. Total receiving a
-Stage 1 judgement: **10,938**.
+Stage 1 judgement: **10,961** (10,938 pending plus 23 already excluded mechanically under
+exclusion 6).
+
+### Criterion 5 clarified, not changed
+
+The preprint-year correction above rested on an unstated reading of criterion 5, so the
+reading is now written into `inclusion-exclusion.md`: **peer-reviewed works are dated by
+publication date; "first posted" governs unpublished items only.** The criterion's text and
+window are untouched and no decision changes — this records an interpretation that was
+already being applied, rather than rewriting criteria after screening began. It affects
+three boundary records, BERT among them.
+
+### Batch payload and screening calibration
+
+Batch files gained `record_type` and `arxiv_only` after an author spot-check found record
+type absent from the payload. Record type is present for only 1,671 of 15,518 pool records
+(11%), so venue and the arXiv-only flag carry exclusion 6 where it is missing.
+
+Author review of the pilot block set a confidence rule now recorded in
+`screening-procedure.md`: confidence reports certainty in the decision, not enthusiasm for
+the record, and a bare title with no abstract rarely supports high confidence. Bias the
+decision toward inclusion; keep the confidence honest. Records that cannot be identified at
+all are held for metadata recovery rather than advanced.
+
+### Criteria 1, 2 and 6 clarified, not changed (author calibration, batch 001)
+
+Two scope boundaries were written out during author review of the batch-001 calibration
+packet. Criteria text unchanged; readings now explicit in `inclusion-exclusion.md` and
+`screening-procedure.md` §2.1. **Applied from new-work batch 002 onward**; batch 001 stands
+as screened and is verified by the author against these rules.
+
+**Criterion 2 clarified, not changed — two-part LLM-only rule plus research-question test:**
+a paper is in scope only if **(a) the model is an LLM** (or it is a survey of efficiency methods
+for language models) and **(b) the research question is about the fine-tuning-efficiency method
+itself** (performance, applicability, or improvement), including comparative evaluations of the
+method. It is out of scope if the research question is about a task or system and the efficiency
+method is only the tool used to build it. Vision, speech, graph, audio, multimodal, and
+general-ML papers fail criterion 2 unless the method is general and demonstrated on an LLM.
+Domain applications on LLMs fail **inclusion criterion 1**. Author calibration of batch 001
+applied this test; see `screening/reviews/new-work-batch-001-reconciliation.md`.
+
+**Criterion 6 — book chapters:** textbook, tutorial, and pedagogical book chapters are excluded
+as non-archival secondary material. Peer-reviewed conference/journal papers and papers in
+edited scholarly proceedings remain eligible.
+
+**Log updates:** held record `C-34a4a73f19` reclassified to exclude (exclusion 6); held record
+`C-3187c706f6` remains held.
+
+**Verification block size** reduced from 750 to **375 records** after batch 001 showed a 35%
+low-confidence rate (~260 review items per 750-record block). Realistic submission target noted
+as **2026-08-20**.
+
+### New-work band screened in a single automated pass (2026-08-17)
+
+The remaining **7,628** new-work records were screened in one automated Stage 1 pass
+(`screener: automated`, `screening/scripts/auto_stage1.py`) under the encoded v1.3 rule.
+This is **not** per-block human verification. The classifier was calibrated to 150/150
+agreement against author-resolved batch 001, then applied uniformly. Human verification
+is applied to the ranked shortlist (`screening/reviews/reference-shortlist.md`), not the
+full pool. Confirmation-band records were not part of this pass.
+
+Outcome: **2,982 include / 4,646 exclude** on the 7,628. Combined with batch 001, the
+new-work band is **3,016 include / 4,782 exclude**. Ranking used all 3,016 includes.
 
 ---
 

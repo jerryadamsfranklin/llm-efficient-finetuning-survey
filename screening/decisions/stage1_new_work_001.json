@@ -1,0 +1,1005 @@
+{
+  "batch": 1,
+  "band": "new_work",
+  "screener": "llm_assisted",
+  "criteria_reference": "protocol/inclusion-exclusion.md",
+  "note": "Second calibration sample. Stage 1 applies inclusion 1, 4, 5 and exclusions 1-3, 6; scale (inclusion 2) and the adoption bar (inclusion 3) are deferred to Stage 2. Decisions bias toward inclusion; confidence reports certainty in the decision.",
+  "decisions": [
+    {
+      "id": "C-833ce0254a",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Automatic short-answer grading; LLM application, no efficiency method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-09349fa197",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Spoken NER data generation; no fine-tuning efficiency component.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-164c0c506b",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Zero-shot decision tree induction; LLM application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-d3ba14dd77",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Matryoshka embedding training for IR. Targets representation efficiency, not LLM fine-tuning or adaptation cost; boundary call.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-751a7e23e7",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Oesophageal adenocarcinoma immunology; off-topic retrieval artefact.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-c1457619b4",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "5W1H extraction via prompting; explicitly fine-tuning-free application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-352115b844",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "'6 LLM Fine-Tuning: Instruction and PEFT' in 'Generative AI and LLMs', record type Books. On-topic but appears to be a textbook chapter rather than primary research. Excluded under exclusion 6 with low confidence; flag if book chapters are to count as archival.",
+      "exclusion_reason": "Exclusion 6"
+    },
+    {
+      "id": "C-cc47b7ec15",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Moxin-LLM open-source 7B release covering pretraining through GRPO. Model release, not an efficiency method; engages exclusion 1 in part.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-c60f725c38",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "GPS trajectory re-identification; off-topic.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-4a74c99c49",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Causal interpretation of GPT attention; interpretability.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-3fef54df25",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Instruction fine-tuning of 7-8B LLMs for financial classification. Domain application; efficiency framing is model-size choice rather than a fine-tuning efficiency method. Advanced under bias-to-inclusion for Stage 2 to resolve."
+    },
+    {
+      "id": "C-7bcd1b0367",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Compares QLoRA, RAFT and RLHF as fine-tuning methods; QLoRA comparison is squarely block B1/B2."
+    },
+    {
+      "id": "C-203fc69734",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "ABSA evaluation that explicitly compares ICL against PEFT. Evaluation of PEFT is in scope, but the paper's subject is the task, not the method."
+    },
+    {
+      "id": "C-8d3cbd2352",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Evaluation of LLMs on mental health tasks; no efficiency component.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-bd76aae186",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "'A Comprehensive Evaluation of Parameter-Efficient Fine-Tuning on Automated Program Repair'. No abstract, but the title states a PEFT evaluation unambiguously."
+    },
+    {
+      "id": "C-568fced344",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "PEFT evaluation for code smell detection; explicit PEFT adaptation of LLMs."
+    },
+    {
+      "id": "C-976e1ca49b",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Quantization strategies for LLMs including effects on instruction-tuned models. Risk of being inference-only PTQ (exclusion 2); the instruction-tuning angle keeps it in for Stage 2."
+    },
+    {
+      "id": "C-a5d3dcd65c",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Explainable AI guide; XAI, not efficiency. Also book-form.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-bed03b2915",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Survey of small language models covering compression and fine-tuning cost. Survey route of criterion 2 applies, but the SLM focus may fall outside the LLM boundary at Stage 2."
+    },
+    {
+      "id": "C-26adf1d942",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Zero-shot link prediction on knowledge graphs; LLM application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-db2bb6e246",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "FISTAPruner post-training pruning without retraining; compression for deployment rather than fine-tuning. Boundary against the quantization block.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-1daa2c3803",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "FPGA CNN-transformer hybrid with Neural ODE; hardware design, not LLM adaptation.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-5526d8c5e1",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Diagnostic captioning decoding mechanism; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-6fa2217aab",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Lock-free memory reclamation; systems work unrelated to LLMs.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-14495abbe7",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Secure distributed LLM fine-tuning placing LoRA / P-tuning v2 structures in a TEE. Federated fine-tuning is in scope; the contribution is primarily a security architecture."
+    },
+    {
+      "id": "C-eabd183905",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Federated PEFT of SAM for 3D segmentation. PEFT plus federated is in scope, but SAM is a vision model and may fail criterion 2."
+    },
+    {
+      "id": "C-be8796dd0e",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "CGC-LoRA multi-task fine-tuning framework for LLMs; core LoRA method work."
+    },
+    {
+      "id": "C-b9202c01b6",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "MediNotes clinical note generation using LLMs and RAG; application, no stated efficiency method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-e870e12e58",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Multilingual generative AI for SMEs with limited hardware. Resource framing is deployment context, not a fine-tuning efficiency contribution.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-7c5e6a61c5",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Hopfieldian interpretation of chain-of-thought; interpretability.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-27ff150f57",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Knowledge plug-and-play dialogue test bed; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-0597a44052",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "LLM-based ranking for counter-narrative evaluation; evaluation method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-4bfcecceaf",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Ontology concept placement; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-3a78bca898",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Glucose-monitoring sensor foundation model; pretraining in a non-language domain.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-1f69bb5c6f",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Med-VTAB visual task adaptation benchmark using learnable layers and tokens, i.e. PEFT for ViTs. Vision domain-boundary case against the LLM scope."
+    },
+    {
+      "id": "C-00cf8c0975",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "TSMamba time-series model built on Mamba; non-transformer architecture.",
+      "exclusion_reason": "Exclusion 3"
+    },
+    {
+      "id": "C-9f505da695",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Zero-shot weight transfer to cut pre-training cost; pre-training efficiency only.",
+      "exclusion_reason": "Exclusion 1"
+    },
+    {
+      "id": "C-34803a25a4",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Memory-guided transformer for time-series forecasting; 'memory' is architectural, not resource use.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-a1a0a94875",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Multi-LLM debiasing framework; fairness, not efficiency.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-6a3f08595b",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Hallucination detection method; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-b825a93e20",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Non-uniform 2-bit quantization for LLMs, referencing use in both compression and fine-tuning. Likely inference-side (exclusion 2); the fine-tuning reference keeps it in for Stage 2."
+    },
+    {
+      "id": "C-7c8ca1dc78",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Data-free knowledge distillation for non-IID federated learning; generic FL, no LLM.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-5b5e0cfe55",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "'A Note on LoRA' extending the original LoRA paper with deployment-at-scale insights; core PEFT."
+    },
+    {
+      "id": "C-24ca97e02f",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Vietnamese vision-language model; general-purpose model, no efficiency method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-73feb84f4d",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Deep graph prompt tuning that cuts training storage. Prompt tuning is in the PEFT family, but graph transformers are outside the language-model boundary."
+    },
+    {
+      "id": "C-75da2d81fe",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Verbalizer construction for prompt tuning. Prompt tuning is a PEFT family member, though the contribution is closer to prompt design than efficiency."
+    },
+    {
+      "id": "C-25311a78f8",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "LLM-driven robot behaviours; application with explicitly zero tuning.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-90fc511d61",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Parameter-efficient multi-step fine-tuning for Japanese dialect ASR. PEFT method, speech domain-boundary."
+    },
+    {
+      "id": "C-27a90d06c5",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Parameter-efficient language extension for multilingual ASR. PEFT method, speech domain-boundary."
+    },
+    {
+      "id": "C-8809dbafb6",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "LLM time-series reasoning via visualization; benchmark.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-2395aed41c",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Evaluation of AI-generated text detectors; no efficiency component.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-30e876bb19",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Quantization plus a PEFT library to shrink Llama-2-7B, GPT-J and LLaMA; combines both core blocks."
+    },
+    {
+      "id": "C-ecc52149e2",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "RAG for competency question generation in ontology engineering; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-d388191457",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Review of LLMs in radiology; domain review, not efficiency.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-dad7bdb5b0",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "General LLM review covering architectures and applications. Broad surveys touch efficiency, but efficiency is not the subject.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-d5a6bb33a0",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Federated learning for IoT attack robustness; security, no LLM.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ea24cc2dbc",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "KV cache compression via L2 norm; inference-time memory only.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-188b1505a7",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Structured output for information extraction; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-1b86167855",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Analysis of LoRA's low-rank matrices and their relation to pretrained weights; core PEFT theory."
+    },
+    {
+      "id": "C-f9ded0ae15",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Spark parameter tuning; unrelated to LLMs.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-d148ca2031",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Accuracy comparison of first-generation transformers against open LLMs; no efficiency contribution.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-5ddc66b3d8",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "'A Study of Optimizations for Fine-tuning Large Language Models' addressing fine-tuning memory and resource budget; directly in scope."
+    },
+    {
+      "id": "C-7975fb9289",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Text classification study built on quantization, prefix tuning, LoRA and prompting as customization techniques."
+    },
+    {
+      "id": "C-8081e358c7",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Hypernetwork plus LoRA for text-to-image diffusion. LoRA method work in a diffusion/vision setting; criterion 2 risk."
+    },
+    {
+      "id": "C-3b13960aa9",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Multi-view clustering survey; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-b1814df98d",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of LLMs in biomedicine; domain survey.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ac4974e674",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "AI-driven mock interview system using RAG and QLoRA. Uses an efficiency method but the subject is the application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-58f5462027",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of event causality identification; task survey.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-c301cc14c3",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of LLM hallucination; not efficiency.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-7a503157be",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Survey of low-bit LLMs covering basics, systems and algorithms; quantization survey in block B2."
+    },
+    {
+      "id": "C-499e2b6b05",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Survey of backdoor attacks and defenses. Notes PEFT and outsourced training as context, but the subject is security.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-efc12cfe27",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "'A Survey of Resource-efficient LLM and Multimodal Foundation Models' spanning training to deployment; squarely in scope."
+    },
+    {
+      "id": "C-e481e9267b",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of figurative language generation; task survey.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-b1adacbef7",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Survey of efficient federated learning for foundation model training; federated fine-tuning block."
+    },
+    {
+      "id": "C-52aa7988dd",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of efficient inference for LLMs; inference-only by its own framing.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-97483d7353",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Survey of efficient vision transformers. Efficiency-focused but non-language; fails the LLM boundary in criterion 2.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-f2a722984e",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Survey of in-context learning, a fine-tuning-free adaptation paradigm. In scope only if adaptation without training counts under criterion 1; flagged for that judgement."
+    },
+    {
+      "id": "C-7423c9c736",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of KV cache management for LLM acceleration; inference-time.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-aa56837c29",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of LLMs for code generation; task survey.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-371c347d8b",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of LLMs for network and service management; domain survey.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-4248f625bf",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of point-of-interest recommendation; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-9d0f344a78",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of privacy in B5G/6G networks; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-e1a17f1d5a",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of securing image-centric edge intelligence; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ed3cbdf93d",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of agent memory mechanisms; 'memory' is agent state, not resource consumption.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-1b6cc852c6",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Hierarchically pruned attention for model serving; inference-time, explicitly training-free.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-481197185d",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Dialogue state tracking evaluation with GPT-4; evaluation method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ff56bfc9fe",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Zero-shot dialogue understanding pipeline; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-6d4690a604",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Review of model compression techniques. Compression overlaps block B2, but the scope is general ML rather than LLM fine-tuning."
+    },
+    {
+      "id": "C-16946e7c21",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "'A comprehensive study on quantization techniques for large language models', 146 citations, no abstract available. Title cannot separate training-time from inference-only quantization, so confidence stays low."
+    },
+    {
+      "id": "C-da8bbdbd48",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Theory of robustness for Bregman divergence losses; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-f267e4b7cc",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Fine-tuning-enhanced RAG system built on LoRA and QLoRA; core methods."
+    },
+    {
+      "id": "C-fc2b996b81",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Adapter-based transfer learning for HVAC fault detection. Adapters are in scope as a method, but the models are small and non-language."
+    },
+    {
+      "id": "C-1d53c81900",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Review of non-IID techniques in federated learning; generic FL without an LLM component.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-f57c9cbca5",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Prompt templates for zero-shot audio classification; prompt design, not tuning.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-47883c11f5",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of LLM safety and trustworthiness; not efficiency.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-64babd74d3",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "'A survey on LoRA of large language models'; the core PEFT survey for block B1."
+    },
+    {
+      "id": "C-bb63b7c562",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of multilingual LLMs; corpora, alignment and bias.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-cbf7b213ba",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Synthetic data for NLI domain generalization; data method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-c42763ebe1",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Survey of AI robustness; unrelated.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-8f2ee64cc1",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "AAT adapts audio transformers with adapters instead of full fine-tuning. PEFT method, audio domain-boundary."
+    },
+    {
+      "id": "C-d8dac2fe98",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "ABQ-LLM arbitrary-bit quantized inference acceleration; inference-only by title and abstract.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-6c1eb0b78f",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Legal document summarization with T5 and QLoRA; application. Record type is a conference abstract, which may also engage exclusion 6.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-689d3572bc",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Adaptive compression for on-device CNN training; convolutional networks only.",
+      "exclusion_reason": "Exclusion 3"
+    },
+    {
+      "id": "C-844988640c",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "ACCEPT adaptive codebook for composite prompt tuning; explicit PEFT method."
+    },
+    {
+      "id": "C-54f4f9aa57",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "ACCO overlaps communication with computation for sharded LLM training and optimizer state; training-time memory and communication, block B3."
+    },
+    {
+      "id": "C-f203bcc7e7",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Auto-constriction turning for multilingual MT. Prompt-tuning is used as machinery for a translation contribution.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-aee0177f1e",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Anomaly detection benchmark for LLMs; benchmark.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-67fa715de7",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "ADAPT robustifies prompt tuning for vision transformers and cites per-task storage of billion-parameter models. PEFT method, vision domain-boundary."
+    },
+    {
+      "id": "C-c173e827d9",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Ambiguity-aware emotion recognition with LLMs; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ac10d326c1",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "AFLoRA adaptively freezes low-rank adaptation paths; core PEFT method."
+    },
+    {
+      "id": "C-844921a68e",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "AFPQ asymmetric floating-point quantization to save memory and accelerate inference. Inference-side, but quantization of LLMs sits close to block B2.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-5e62c547ae",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Fine-tuned Llama3 for Palestinian legal understanding; domain application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-8199b26603",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "ALLoRA addresses LoRA's dropout, initialization and learning-rate flaws; core PEFT method."
+    },
+    {
+      "id": "C-1f05dce50e",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "ALPS one-shot pruning for LLMs without retraining; compression for deployment.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-d743abf753",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "ALoRA allocates LoRA rank adaptively for downstream tasks; core PEFT method."
+    },
+    {
+      "id": "C-7c56357288",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "AM-SAM automated prompting and mask calibration for SAM; vision segmentation quality, not adaptation cost.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-8a1c42b9b1",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Malicious model detection in IoT federated learning; security, no LLM.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-ca29f36fd0",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "AMAGO-2 meta-reinforcement learning with transformers; multi-task RL, not adaptation efficiency.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-bd3e4af6ee",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "APEER automatic prompt engineering for reranking; prompt engineering rather than parameter-efficient tuning.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-d95b4fa30f",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "APT-Pipe prompt-tuning tool for ChatGPT annotation. 'Prompt tuning' here means prompt design, not a PEFT method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-495e9e0319",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "APT adaptive prefix-tuning for code intelligence; explicit PEFT method addressing full-parameter cost."
+    },
+    {
+      "id": "C-6f497e04f2",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "APT combines adaptive pruning and tuning of pretrained LMs for efficient training and inference; training-time efficiency is central."
+    },
+    {
+      "id": "C-795ba75953",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Architectural planning for Minecraft agents; application sharing the APT acronym.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-1e3dec9414",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "APTQ post-training mixed-precision quantization for edge deployment; inference-side quantization.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-68c85fdb46",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "APrompt4EM augmented prompt tuning for entity matching. Prompt tuning of PLMs is in the PEFT family; the subject is the data-management task."
+    },
+    {
+      "id": "C-c25ad5bd63",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "AQLoRA adaptive quantization-based efficient fine-tuning for LLMs. No abstract, but the title names quantized efficient fine-tuning directly."
+    },
+    {
+      "id": "C-2722016ce8",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "ARB-LLM binarization for LLM compression and deployment; inference-side compression.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-5aab14a9a0",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "ARL2 aligns retrievers for black-box LLMs; retrieval method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-0826b1abbb",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "ASLoRA shares low-rank matrices across layers to cut tunable parameters further; core PEFT method."
+    },
+    {
+      "id": "C-c27216e0a9",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "ASR error correction with LLMs, explicitly without access to weights; application.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-437e4fc9a8",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Domain-Prompts trains a small set of pluggable domain embeddings for ASR adaptation with low memory overhead. PEFT method, speech domain-boundary."
+    },
+    {
+      "id": "C-597c522f72",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Chinese ASR error correction benchmark; benchmark.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-1a0ec2ecf9",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "ATFLRec uses LoRA on an instruction-tuned LLM for multimodal recommendation. LoRA is machinery for a recommender contribution."
+    },
+    {
+      "id": "C-0f3972344a",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "AV-PEA parameter-efficient adapter for audio-visual learning, motivated by trainable-parameter and storage cost. PEFT method, multimodal domain-boundary."
+    },
+    {
+      "id": "C-e9c3aff669",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "AXOLOTL post-processing self-debiasing; fairness, not adaptation cost.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-35b1dc81d6",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Compares DPO against SFT for long-context capability. Fine-tuning methods compared for capability, not for resource cost.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-84a30630d1",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Abstractive summarization from audio transcription, explicitly motivated by LoRA and quantization to avoid large compute. Efficiency methods are applied rather than advanced."
+    },
+    {
+      "id": "C-92ac912ead",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Communication-efficient federated multi-task learning; efficiency is real but the setting is generic FL, not LLM adaptation.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-9909075796",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "Closed-form classifiers to accelerate heterogeneous federated learning; no LLM component.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-cd2460dae2",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "4D parallelism with a memory consumption estimator for LLM training; training-time memory, block B3."
+    },
+    {
+      "id": "C-895f48dad7",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Hybrid GPU-based compression to accelerate LLM training across DP, TP and PP; training-time efficiency."
+    },
+    {
+      "id": "C-f1e87ba0bf",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Activation rematerialization and hybrid parallelism for LLM training. No abstract, but the title names training-time activation memory directly."
+    },
+    {
+      "id": "C-68bbd2c920",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "3D stacked capacitorless DRAM accelerator for LLMs; hardware memory technology rather than a training method.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-5e80ec2790",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Accumulator-aware post-training quantization for LLMs; inference platforms by its own framing.",
+      "exclusion_reason": "Exclusion 2"
+    },
+    {
+      "id": "C-5bf1b2e9b4",
+      "decision": "exclude",
+      "confidence": "high",
+      "notes": "LLM accuracy on the registered dietitian exam; domain evaluation.",
+      "exclusion_reason": "Inclusion 1"
+    },
+    {
+      "id": "C-392a797fca",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "IR-QLoRA improves LoRA-finetuning quantization of LLMs through information retention; core B1/B2 intersection."
+    },
+    {
+      "id": "C-b63b6fb06a",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Fine-tuning of quantized LLMs balancing quantization against LoRA degradation; core B1/B2 intersection."
+    },
+    {
+      "id": "C-d45c0544b4",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Dimension-free federated communication via zeroth-order optimization, framed for large-model scenarios. Memory-efficient optimization is in scope; the LLM tie is indirect."
+    },
+    {
+      "id": "C-1f38e19249",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "'Achieving peak performance for large language models: A systematic review', 58 citations, no abstract available. A systematic review of LLM performance plausibly covers efficiency, but the title cannot confirm the subject."
+    },
+    {
+      "id": "C-8c94f2c7a6",
+      "decision": "exclude",
+      "confidence": "low",
+      "notes": "Activation sparsity to compress LLMs for edge deployment; inference-side compression.",
+      "exclusion_reason": "Exclusion 2"
+    }
+  ]
+}
