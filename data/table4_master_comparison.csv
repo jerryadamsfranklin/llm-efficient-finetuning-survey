@@ -1,1 +1,2 @@
+# Status: Placeholder — populate in Phase 4/5 to match manuscript Table 4. Full fine-tuning memory must be 112 GB (Rajbhandari et al., 2020), not 132 GB; accuracy bands are task-dependent.
 configuration,memory,relative_speed,cost_estimate,quality_tradeoff,source_type,notes

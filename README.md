@@ -9,9 +9,9 @@ PeerJ Computer Science).
 - `protocol/` — search protocol, inclusion criteria, extraction schema, changelog
 - `search/` — query definitions, search log, raw API responses, search scripts
 - `screening/` — screening decisions for every candidate, PRISMA-style counts
-- `data/` — final corpus, table data as CSV, BibTeX references
+- `data/` — extraction schema targets: table templates, corpus CSV, and BibTeX stub (Phase 4 placeholders; extraction not started)
 - `figures/` — figure generation scripts and outputs
-- `docs/` — Table 4 provenance and reference-correction notes
+- `docs/` — Table 4 provenance template (Phase 5) and reference-correction notes
 
 ## Status
 
@@ -20,7 +20,8 @@ PeerJ Computer Science).
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
 | **2 — Execute searches** | **Closed 2026-07-31**, merged to `main`. All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
 | **3 — Screening** | **In progress** on `phase-3-screening`. Protocol v1.3 backfill grew the pool to 15,518 unique candidates; 10,938 receive a Stage 1 judgement, 4,557 are out of the stated scope bound, 23 excluded on metadata alone. **Submission target: 2026-08-20.** |
-| **4+** | Not started (extraction against `protocol/extraction-schema.md`). |
+| **4 — Extraction** | Not started. `data/included-papers.csv`, `data/table*.csv`, and `data/references.bib` are header-only Phase 4 templates. |
+| **5 — Table provenance** | Not started. `docs/table4-sourcing.md` is a Phase 5 template with disclosure language only. |
 
 ### Protocol versions
 
