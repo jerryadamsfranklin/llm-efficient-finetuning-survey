@@ -10,10 +10,11 @@ type: software
 license: CC-BY-4.0
 repository-code: "https://github.com/jerryadamsfranklin/llm-efficient-finetuning-survey"
 abstract: >-
-  Companion repository documenting the structured literature search,
-  screening decisions, extracted corpus, and table/figure artifacts for
-  the PeerJ Computer Science survey on efficient LLM fine-tuning in
-  resource-constrained environments.
+  Companion repository for the PeerJ Computer Science survey "Fine-Tuning Large
+  Language Models in Resource-Constrained Environments: Methods and Trade-offs"
+  (under review). Documents the structured literature search, screening
+  decisions, and reproducibility artifacts. Extraction and table population
+  (Phases 4–5) are not yet complete.
 keywords:
   - large language models
   - parameter-efficient fine-tuning

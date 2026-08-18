@@ -13,6 +13,25 @@ PeerJ Computer Science).
 - `figures/` — figure generation scripts and outputs
 - `docs/` — Table 4 provenance template (Phase 5) and reference-correction notes
 
+## Reproduce the search
+
+```bash
+pip install -r search/scripts/requirements.txt
+
+# Optional: create local.env with API keys (never commit; see .gitignore)
+# SEMANTIC_SCHOLAR_API_KEY, IEEE_API_KEY
+
+# Example: re-run arXiv discovery for protocol v1.1 capped queries
+python search/scripts/search_arxiv.py --v11-rerun
+
+# Example: deduplicate all raw sources → search/candidate-pool.csv
+python search/scripts/dedupe.py
+```
+
+Full pipeline (all sources, screening init, venue checks): see [Full reproduction pipeline](#full-reproduction-pipeline) below. Query strings live in `search/queries.yaml`; counts in `screening/prisma-counts.md`.
+
+Repository: https://github.com/jerryadamsfranklin/llm-efficient-finetuning-survey
+
 ## Status
 
 | Phase | Status |
@@ -67,7 +86,7 @@ planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 - [ ] Stage 3 synthesis — category / subcategory assignment
 - [ ] `screening/prisma-counts.md` completed with final stage counts
 
-## Reproducing the search
+## Full reproduction pipeline
 
 ```bash
 pip install -r search/scripts/requirements.txt
@@ -98,8 +117,10 @@ Each run updates `search/search-log.md` and writes `search/raw/<source>/...`.
 
 ## Data provenance
 
-Table 4 combines values from primary sources with author estimates. See
-`docs/table4-sourcing.md` for per-column provenance.
+Table 4 combines values from primary sources with author estimates. Per-column attribution is
+a **Phase 5** task; `docs/table4-sourcing.md` is a template with disclosure language only
+(not yet populated). When `data/table4_master_comparison.csv` is filled (Phase 4), full
+fine-tuning memory must be **112 GB** (Rajbhandari et al., 2020), not 132 GB.
 
 ## Citation
 
