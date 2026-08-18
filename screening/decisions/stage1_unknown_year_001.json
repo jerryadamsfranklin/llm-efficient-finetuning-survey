@@ -1,0 +1,120 @@
+{
+  "batch": 1,
+  "band": "unknown_year",
+  "stage": "stage_1",
+  "screener": "llm_assisted",
+  "criteria_reference": "protocol/inclusion-exclusion.md",
+  "note": "No year, venue, or abstract for any record in this batch. Criterion 5 cannot be applied and is deferred to Stage 2; exclusions here rest only on criteria 1-3, which do not depend on the date. Every inclusion carries a date-verification note.",
+  "decisions": [
+    {
+      "id": "C-4f1f38f8b0",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "SmoothQuant analysis; may be inference-only PTQ (exclusion 2). Uncertain from title alone. Date unverified - criterion 5 pending at Stage 2."
+    },
+    {
+      "id": "C-4082772124",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "MoE training under memory offloading - training-time memory optimisation (block B3). Date unverified - criterion 5 pending at Stage 2."
+    },
+    {
+      "id": "C-3187c706f6",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Title 'AttentionletIs All You Need!' is garbled and no other metadata exists; possibly a corrupt record. Cannot judge on merits - author review required."
+    },
+    {
+      "id": "C-eb0ebb204a",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Post-training quantization comparison; 'small language models' may fail the 1B-parameter bar (criterion 2) at Stage 2. Date unverified."
+    },
+    {
+      "id": "C-79bd4583b8",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "PEFT survey across language, vision, multimodal - squarely in scope as a survey (criterion 2). Date unverified - criterion 5 pending."
+    },
+    {
+      "id": "C-7f8add152d",
+      "decision": "exclude",
+      "exclusion_reason": "Exclusion 2",
+      "confidence": "high",
+      "notes": "Survey of transformer inference optimisation; no training or fine-tuning component."
+    },
+    {
+      "id": "C-e6480b533a",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Fine-tuning of quantized LLMs - core subject of the survey. Date unverified - criterion 5 pending."
+    },
+    {
+      "id": "C-05630c4c46",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "LLM memory optimisation, but long-context framing may indicate inference rather than training. Date unverified."
+    },
+    {
+      "id": "C-34a4a73f19",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Generic title suggests a tutorial or book chapter, which would engage exclusion 6. Needs source check. Date unverified."
+    },
+    {
+      "id": "C-cb45b784e5",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Activation offloading for low-VRAM transformer training - training-time memory (block B3). Date unverified."
+    },
+    {
+      "id": "C-ef908e7d28",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Automatic memory management for LLM training (block B3). Date unverified - criterion 5 pending."
+    },
+    {
+      "id": "C-fc3d26ca9b",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Quantization of a vision geometry transformer; relevance to LLM fine-tuning unclear from title. Date unverified."
+    },
+    {
+      "id": "C-7a1ca34a27",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Fast adaptation plus quantization for a speech LM - adaptation efficiency in scope. Date unverified."
+    },
+    {
+      "id": "C-3e0d9bf5ed",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "LLM quantization (block B2). Date unverified - criterion 5 pending at Stage 2."
+    },
+    {
+      "id": "C-671c501faf",
+      "decision": "exclude",
+      "exclusion_reason": "Exclusion 3",
+      "confidence": "high",
+      "notes": "Spiking neural networks - non-transformer architecture only."
+    },
+    {
+      "id": "C-66949a65ca",
+      "decision": "include",
+      "confidence": "low",
+      "notes": "Quantization reparameterization; model scale and domain not determinable from title. Date unverified."
+    },
+    {
+      "id": "C-a713fd1c5b",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Theory of low-rank adaptation dynamics - core PEFT subject (block B1). Date unverified."
+    },
+    {
+      "id": "C-870364d9f9",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Universal low-rank adaptation across architectures (block B1). Date unverified - criterion 5 pending."
+    }
+  ]
+}

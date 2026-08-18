@@ -1,9 +1,9 @@
 # Reference Corrections
 
 **Generated:** 2026-07-21T21:48:22Z  
-**Updated:** 2026-07-22 (Phase 2 closure corrections)  
+**Updated:** 2026-08-17 (manuscript upgrades applied; yang2025 is IJCAI **2025**)  
 **Protocol:** v1.1 venue check (OpenReview + Crossref + arXiv)  
-**Corpus size:** 42
+**Corpus size:** 42 originally; cited corpus is **55** after the 2026-08-17 insertion
 
 Statuses: `UPGRADED` (preprint → published), `confirmed_preprint`, `confirmed_published`, `corrected` (metadata fix), plus reviewed-and-rejected candidates.
 
@@ -22,29 +22,28 @@ Statuses: `UPGRADED` (preprint → published), `confirmed_preprint`, `confirmed_
 
 ### dao2023
 - **Title:** FlashAttention-2: Faster attention with better parallelism and work partitioning
-- **Manuscript venue:** arXiv preprint arXiv:2307.08691
+- **Manuscript venue (now):** Proceedings of the International Conference on Learning Representations (ICLR), 2024
 - **Verified venue:** ICLR 2024 poster
 - **Verified DOI:** None
 - **Notes:** OpenReview venue: ICLR 2024 poster
-- **Status:** UPGRADED (apply in Phase 6)
+- **Status:** UPGRADED (applied 2026-08-17; in-text year 2024)
 
 ### wang2024
 - **Title:** Parameter-efficient fine-tuning in large models: A survey of methodologies
-- **Manuscript venue:** arXiv preprint arXiv:2410.19878
+- **Manuscript venue (now):** Artificial Intelligence Review, 58, 227 (2025)
 - **Verified venue:** Artificial Intelligence Review / 2025 / journal-article
 - **Verified DOI:** 10.1007/s10462-025-11236-4
 - **Notes:** Crossref published match: Artificial Intelligence Review / 2025 / journal-article
 - **Crossref authors:** Wang, Luping; Chen, Sheng; Jiang, Linnan; Pan, Shu; Cai, Runze; Yang, Sen; Yang, Fei
-- **Status:** UPGRADED (apply in Phase 6)
+- **Status:** UPGRADED (applied 2026-08-17; in-text year 2025; published title adds “language”)
 
 ### yang2025
 - **Title:** Federated low-rank adaptation for foundation models: A survey
-- **Manuscript venue:** arXiv preprint arXiv:2505.13502
-- **Verified venue:** Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence / 2024 / proceedings-article
-- **Verified DOI:** 10.24963/ijcai.2024/1196
-- **Notes:** Crossref published match: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence / 2024 / proceedings-article
-- **Crossref authors:** Yang, Yiyuan; Long, Guodong; Lu, Qinghua; Zhu, Liming; Jiang, Jing; Zhang, Chengqi
-- **Status:** UPGRADED (apply in Phase 6)
+- **Manuscript venue (now):** IJCAI 2025, 10779–10787, DOI 10.24963/ijcai.2025/1196
+- **Verified venue:** Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence (IJCAI 2025)
+- **Verified DOI:** 10.24963/ijcai.2025/1196
+- **Notes:** Primary source is IJCAI **2025** (Montreal; pages 10779–10787). The earlier Crossref hit on `ijcai.2024/1196` was a year-path collision and must not be used.
+- **Status:** UPGRADED (applied 2026-08-17; venue year is 2025, not 2024)
 
 ## Reviewed and REJECTED
 
@@ -101,7 +100,7 @@ Statuses: `UPGRADED` (preprint → published), `confirmed_preprint`, `confirmed_
 - `shoeybi2019` — **confirmed_preprint** — arXiv preprint arXiv:1909.08053
 - `wang2024` — **UPGRADED** — Artificial Intelligence Review / 2025 / journal-article
 - `xu2023` — **confirmed_preprint** — arXiv preprint arXiv:2312.12148
-- `yang2025` — **UPGRADED** — Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence / 2024 / proceedings-article
+- `yang2025` — **UPGRADED** — IJCAI 2025 (DOI 10.24963/ijcai.2025/1196; the 2024 DOI was a false match)
 - `zhang2024` — **OpenReview candidate (not applied)** — NeurIPS 2024
 
 ## Full table
@@ -146,7 +145,7 @@ Statuses: `UPGRADED` (preprint → published), `confirmed_preprint`, `confirmed_
 | wang2024 | UPGRADED | arXiv preprint arXiv:2410.19878 | Artificial Intelligence Review / 2025 /  | 10.1007/s10462-025-11236-4 |
 | xiao2023 | confirmed_published | Proceedings of the 40th International Co | Proceedings of the 40th International Co |  |
 | xu2023 | confirmed_preprint | arXiv preprint arXiv:2312.12148 | arXiv preprint arXiv:2312.12148 |  |
-| yang2025 | UPGRADED | arXiv preprint arXiv:2505.13502 | Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence | 10.24963/ijcai.2024/1196 |
+| yang2025 | UPGRADED | arXiv preprint arXiv:2505.13502 | IJCAI 2025 (not 2024) | 10.24963/ijcai.2025/1196 |
 | zaken2022 | confirmed_published | Proceedings of the 60th Annual Meeting o | Proceedings of the 60th Annual Meeting o | 10.18653/v1/2022.acl-short.1 |
 | zhang2024 | confirmed_preprint | arXiv preprint arXiv:2409.05976 | arXiv preprint arXiv:2409.05976 |  |
 | zhang2023 | confirmed_published | Proceedings of the International Confere | Proceedings of the International Confere |  |

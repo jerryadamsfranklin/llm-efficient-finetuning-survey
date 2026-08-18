@@ -1,0 +1,15 @@
+{
+  "batch": "pilot",
+  "band": "unknown_year",
+  "screener": "author",
+  "note": "Author direction at scope clarification (v1.3): textbook/tutorial book chapters excluded under exclusion 6. Crossref neighbours for this title are De Gruyter book chapters (Large Language Models for Developers). Record 3 (unidentifiable) remains held.",
+  "decisions": [
+    {
+      "id": "C-34a4a73f19",
+      "decision": "exclude",
+      "exclusion_reason": "Exclusion 6",
+      "confidence": "low",
+      "notes": "Large Language Models (LLMs): Quantization — Google Scholar capture (GS0251) with title only. Metadata recovery found no match as a research paper; nearest Crossref hits are De Gruyter 2024 book chapters ('Chapter 9/10: LLMs and Quantization'). Excluded under exclusion 6 per v1.3 book-chapter clarification (criteria clarified, not changed)."
+    }
+  ]
+}

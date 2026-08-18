@@ -1,0 +1,20 @@
+{
+  "batch": "pilot",
+  "band": "unknown_year",
+  "screener": "author",
+  "note": "Author direction at review of pilot block 1: a record that cannot be identified must not advance to Stage 2 as an include. Both records had metadata recovery attempted first, as directed. Neither resolved.",
+  "decisions": [
+    {
+      "id": "C-3187c706f6",
+      "decision": "hold",
+      "confidence": "low",
+      "notes": "UNRESOLVED. Title 'AttentionletIs All You Need!' is garbled and the Google Scholar capture (GS0550, query B3_memory_2) carries no authors, venue, year or citation count. Metadata recovery attempted 2026-07-31 against Semantic Scholar, Crossref and OpenAlex on three title variants; no index returned a plausible match. Held rather than advanced: the record cannot be identified, so there is no decision on the merits to record. Lookup failure is uninformative here because the title itself is corrupt."
+    },
+    {
+      "id": "C-34a4a73f19",
+      "decision": "hold",
+      "confidence": "low",
+      "notes": "UNRESOLVED. Google Scholar capture (GS0251, query B2_quantization_1) carries title only, no authors, venue or year. Metadata recovery attempted 2026-07-31 against Semantic Scholar, Crossref and OpenAlex; no index returns this as a research paper. Crossref's nearest neighbours are book chapters ('Chapter 9/10: LLMs and Quantization', Large Language Models for Developers, De Gruyter 2024), consistent with a tutorial or book chapter under exclusion 6, but the match is not exact enough to exclude on. Held for author direction."
+    }
+  ]
+}

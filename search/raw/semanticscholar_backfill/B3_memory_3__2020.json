@@ -1,0 +1,265 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "ZeRO DeepSpeed offloading distributed training memory",
+  "year": "2020-2020",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:41:02Z",
+  "total_results_reported": 6,
+  "returned": 6,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "725264948d7b6946259af5b8d966e996b9570f99",
+      "externalIds": {
+        "MAG": "3081168214",
+        "DBLP": "conf/kdd/RasleyRRH20",
+        "DOI": "10.1145/3394486.3406703",
+        "CorpusId": 221191193
+      },
+      "title": "DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters",
+      "venue": "Knowledge Discovery and Data Mining",
+      "year": 2020,
+      "citationCount": 2173,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3394486.3406703?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3394486.3406703, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3299496",
+          "name": "Jeff Rasley"
+        },
+        {
+          "authorId": "32817044",
+          "name": "Samyam Rajbhandari"
+        },
+        {
+          "authorId": "2537545",
+          "name": "Olatunji Ruwase"
+        },
+        {
+          "authorId": "2300208615",
+          "name": "Yuxiong He"
+        }
+      ],
+      "abstract": "Explore new techniques in Microsoft's open source library called DeepSpeed, which advances large model training by improving scale, speed, cost, and usability, unlocking the ability to train 100-billion-parameter models. DeepSpeed is compatible with PyTorch. One piece of our library, called ZeRO, is a new parallelized optimizer that greatly reduces the resources needed for model and data parallelism while massively increasing the number of parameters that can be trained. Researchers have used these breakthroughs to create Turing Natural Language Generation (Turing-NLG), which at the time of its release was the largest publicly known language model at 17 billion parameters. In addition we will also go over our latest transformer kernel advancements that led the DeepSpeed team to achieve the world fastest BERT pretraining record. The Zero Redundancy Optimizer (ZeRO) is a novel memory optimization technology for large-scale distributed deep learning. ZeRO can train deep learning models with over 100 billion parameters on the current generation of GPU clusters at three to five times the throughput of the current best system. It also presents a clear path to training models with trillions of parameters, demonstrating an unprecedented leap in deep learning system technology. DeepSpeed brings state-of-the-art training techniques, such as ZeRO, optimized kernels, distributed training, mixed precision, and checkpointing, through lightweight APIs compatible with PyTorch. With just a few lines of code changes to your PyTorch model, you can leverage DeepSpeed to address underlying performance challenges and boost the speed and scale of your training."
+    },
+    {
+      "paperId": "04bde4bf428f9194f0eabdb6b03c5739c9de582d",
+      "externalIds": {
+        "MAG": "3094793624",
+        "DBLP": "journals/corr/abs-2005-10406",
+        "ArXiv": "2005.10406",
+        "DOI": "10.21437/interspeech.2020-3023",
+        "CorpusId": 218763327
+      },
+      "title": "Training Keyword Spotting Models on Non-IID Data with Federated Learning",
+      "venue": "Interspeech",
+      "year": 2020,
+      "citationCount": 74,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2005.10406",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.10406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2063986787",
+          "name": "Andrew Straiton Hard"
+        },
+        {
+          "authorId": "145271096",
+          "name": "K. Partridge"
+        },
+        {
+          "authorId": "2188346866",
+          "name": "Cam-Tu Nguyen"
+        },
+        {
+          "authorId": "3304654",
+          "name": "Niranjan A. Subrahmanya"
+        },
+        {
+          "authorId": "1707024245",
+          "name": "Aishanee Shah"
+        },
+        {
+          "authorId": "2055691863",
+          "name": "Pai Zhu"
+        },
+        {
+          "authorId": "1387449884",
+          "name": "I. López-Moreno"
+        },
+        {
+          "authorId": "144068963",
+          "name": "Rajiv Mathews"
+        }
+      ],
+      "abstract": "We demonstrate that a production-quality keyword-spotting model can be trained on-device using federated learning and achieve comparable false accept and false reject rates to a centrally-trained model. To overcome the algorithmic constraints associated with fitting on-device data (which are inherently non-independent and identically distributed), we conduct thorough empirical studies of optimization algorithms and hyperparameter configurations using large-scale federated simulations. To overcome resource constraints, we replace memory intensive MTR data augmentation with SpecAugment, which reduces the false reject rate by 56%. Finally, to label examples (given the zero visibility into on-device data), we explore teacher-student training."
+    },
+    {
+      "paperId": "450a82762e731dd6fd0ba52836f586625f31dcce",
+      "externalIds": {
+        "DBLP": "conf/hoti/TanakaAIMNMTTS20",
+        "MAG": "3083843829",
+        "DOI": "10.1109/HOTI51249.2020.00021",
+        "CorpusId": 221590628
+      },
+      "title": "Communication-Efficient Distributed Deep Learning with GPU-FPGA Heterogeneous Computing",
+      "venue": "IEEE Symposium on High-Performance Interconnects",
+      "year": 2020,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/HOTI51249.2020.00021?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/HOTI51249.2020.00021, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2151490238",
+          "name": "Kenji Tanaka"
+        },
+        {
+          "authorId": "2219040",
+          "name": "Y. Arikawa"
+        },
+        {
+          "authorId": "2115909800",
+          "name": "T. Ito"
+        },
+        {
+          "authorId": "1935549804",
+          "name": "Kazutaka Morita"
+        },
+        {
+          "authorId": "2053602792",
+          "name": "Naru Nemoto"
+        },
+        {
+          "authorId": "2065055090",
+          "name": "Fumiaki Miura"
+        },
+        {
+          "authorId": "2065224262",
+          "name": "Kazuhiko Terada"
+        },
+        {
+          "authorId": "49757714",
+          "name": "Junji Teramoto"
+        },
+        {
+          "authorId": "152567177",
+          "name": "T. Sakamoto"
+        }
+      ],
+      "abstract": "Distributed deep learning has an inevitable bottleneck in communication between GPUs. This bottleneck is due to the difference in the data transfer latency of internode and intra-node communication. Here, we propose a GPU-FPGA (field programmable gate array) heterogeneous computing system and a hardware-specific communication module with parameter-based computation/communication overlap. In our system, we configure a network interface card (NIC) with a data aggregation function. To reduce the load on CPUs, we developed a device driver for remote direct memory access between GPUs and FPGAs. The hardware and software can be run with TensorFlow and Horovod. For comparison, we compared our system with the conventional GPUDirect RDMA system. Results of the measurement show Allreduce latency is reduced to 1/4 by offloading Allreduce to FPGA NICs. Our hardware/software co-design can also conceal about 90% of the communication overhead and improve scalability by 20%. The end-to-end time consumed for training in distributed deep learning with ResNet-50 and ImageNet is reduced to 87.3% without any degradation in validation accuracy."
+    },
+    {
+      "paperId": "c529bd9a8f69e6066ef6a2c0ea2906c701597ac8",
+      "externalIds": {
+        "MAG": "3049157033",
+        "DBLP": "conf/netsoft/SaccoEM20",
+        "DOI": "10.1109/NetSoft48620.2020.9165506",
+        "CorpusId": 221120511
+      },
+      "title": "A Federated Learning Approach to Routing in Challenged SDN-Enabled Edge Networks",
+      "venue": "IEEE Conference on Network Softwarization",
+      "year": 2020,
+      "citationCount": 43,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NetSoft48620.2020.9165506?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NetSoft48620.2020.9165506, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "152212777",
+          "name": "Alessio Sacco"
+        },
+        {
+          "authorId": "2240316027",
+          "name": "Flavio Esposito"
+        },
+        {
+          "authorId": "2329382391",
+          "name": "Guido Marchetto"
+        }
+      ],
+      "abstract": "The edge computing paradigm allows computationally intensive tasks to be offloaded from small devices to nearby (more) powerful servers, via an edge network. The intersection between such edge computing paradigm and Machine Learning (ML), in general, and deep learning in particular, has brought to light several advantages for network operators: from automating management tasks, to gain additional insights on their networks. Most of the existing approaches that use ML to drive routing and traffic control decisions are valuable but rarely focus on challenged networks, that are characterized by continually varying network conditions and the high volume of traffic generated by edge devices. In particular, recently proposed distributed ML-based architectures require either a long synchronization phase or a training phase that is unsustainable for challenged networks. In this paper, we fill this knowledge gap with Blaster, a federated architecture for routing packets within a distributed edge network, to improve the application's performance and allow scalability of data-intensive applications. We also propose a novel path selection model that uses Long Short Term Memory (LSTM) to predict the optimal route. Finally, we present some initial results obtained by testing our approach via simulations and with a prototype deployed over the GENI testbed. By leveraging a Federated Learning (FL) model, our approach shows that we can optimize the communication between SDN controllers, preserving bandwidth for the data traffic."
+    },
+    {
+      "paperId": "d7cc8603b7bdb2f8cb2c86778da3c803e308d7f9",
+      "externalIds": {
+        "DBLP": "conf/ispass/MannanSK20",
+        "ArXiv": "2008.11881",
+        "MAG": "3080303811",
+        "DOI": "10.1109/ISPASS48437.2020.00019",
+        "CorpusId": 219178211
+      },
+      "title": "CLAN: Continuous Learning using Asynchronous Neuroevolution on Commodity Edge Devices",
+      "venue": "IEEE International Symposium on Performance Analysis of Systems and Software",
+      "year": 2020,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2008.11881",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2008.11881, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35511017",
+          "name": "Parth Mannan"
+        },
+        {
+          "authorId": "41330218",
+          "name": "A. Samajdar"
+        },
+        {
+          "authorId": "145984583",
+          "name": "T. Krishna"
+        }
+      ],
+      "abstract": "Recent advancements in machine learning algorithms, especially the development of Deep Neural Networks (DNNs) have transformed the landscape of Artificial Intelligence (AI). With every passing day, deep learning based methods are applied to solve new problems with exceptional results. The portal to the real world is the edge. The true impact of AI can only be fully realized if we can have AI agents continuously interacting with the real world and solving everyday problems. Unfortunately, high compute and memory requirements of DNNs acts a huge barrier towards this vision. Today we circumvent this problem by deploying special purpose inference hardware on the edge while procuring trained models from the cloud. This approach, however, relies on constant interaction with the cloud for transmitting all the data, training on massive GPU clusters, and downloading updated models. This is challenging for bandwidth, privacy, and constant connectivity concerns that autonomous agents may exhibit. In this paper we evaluate techniques for enabling adaptive intelligence on edge devices with zero interaction with any high-end cloud/server. We build a prototype distributed system of Raspberry Pis communicating via WiFi running NeuroEvolutionary (NE) learning and inference. We evaluate the performance of such a collaborative system and detail the compute/communication characteristics of different arrangements of the system that trade-off parallelism versus communication. Using insights from our analysis, we also propose algorithmic modifications to reduce communication by up to 3.6x during the learning phase to enhance scalability even further and match performance of higher end computing devices at scale. We believe that these insights will enable algorithm-hardware co-design efforts for enabling continuous learning on the edge."
+    },
+    {
+      "paperId": "bbcbfd13b9c19e11f0946f3966ca2f7cdc8cbdb8",
+      "externalIds": {
+        "CorpusId": 213267762
+      },
+      "title": "Prospective rewards enhance motor skill performance and skill coding in LPFC 15",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "91090758",
+          "name": "Tyler J. Adkins"
+        },
+        {
+          "authorId": "2225343",
+          "name": "Taraz G. Lee"
+        }
+      ],
+      "abstract": null
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "ZeRO DeepSpeed offloading distributed training memory",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2020"
+}

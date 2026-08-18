@@ -1,0 +1,2329 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "adapter modules transformer parameter efficient",
+  "year": "2021-2021",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:30:24Z",
+  "total_results_reported": 52,
+  "returned": 52,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "bb3425318de7eed5641cda147d61c9a057b9d054",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2106-04489",
+        "ArXiv": "2106.04489",
+        "ACL": "2021.acl-long.47",
+        "DOI": "10.18653/v1/2021.acl-long.47",
+        "CorpusId": 235309789
+      },
+      "title": "Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 382,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.acl-long.47.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.04489, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2363901",
+          "name": "Rabeeh Karimi Mahabadi"
+        },
+        {
+          "authorId": "2884561",
+          "name": "Sebastian Ruder"
+        },
+        {
+          "authorId": "3226635",
+          "name": "Mostafa Dehghani"
+        },
+        {
+          "authorId": "144915758",
+          "name": "James Henderson"
+        }
+      ],
+      "abstract": "State-of-the-art parameter-efficient fine-tuning methods rely on introducing adapter modules between the layers of a pretrained language model. However, such modules are trained separately for each task and thus do not enable sharing information across tasks. In this paper, we show that we can learn adapter parameters for all layers and tasks by generating them using shared hypernetworks, which condition on task, adapter position, and layer id in a transformer model. This parameter-efficient multi-task learning framework allows us to achieve the best of both worlds by sharing knowledge across tasks via hypernetworks while enabling the model to adapt to each individual task through task-specific adapters. Experiments on the well-known GLUE benchmark show improved performance in multi-task learning while adding only 0.29% parameters per task. We additionally demonstrate substantial performance improvements in few-shot domain generalization across a variety of tasks. Our code is publicly available in https://github.com/rabeehk/hyperformer."
+    },
+    {
+      "paperId": "e4d6e27daf9a0dc45a07f9afa01fefbd19eccc8d",
+      "externalIds": {
+        "CorpusId": 252587296
+      },
+      "title": "Parameter-Efficient Abstractive Question Answering over Tables and over Text",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=Qj5PZOZgPRS, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35065356",
+          "name": "A. Carnegie"
+        },
+        {
+          "authorId": "2287344452",
+          "name": "Alice H. Oh. 2000"
+        },
+        {
+          "authorId": "2250161836",
+          "name": "Stochastic"
+        },
+        {
+          "authorId": "2107970655",
+          "name": "Sanyuan Chen"
+        },
+        {
+          "authorId": "8471176",
+          "name": "Yutai Hou"
+        },
+        {
+          "authorId": "2287101832",
+          "name": "Yiming Cui"
+        },
+        {
+          "authorId": "2286647653",
+          "name": "Wanxiang Che"
+        },
+        {
+          "authorId": "13838086",
+          "name": "Junliang Guo"
+        },
+        {
+          "authorId": "2335720996",
+          "name": "Zhirui Zhang"
+        },
+        {
+          "authorId": "2286185156",
+          "name": "Linli Xu"
+        },
+        {
+          "authorId": "2286832803",
+          "name": "Hao-Ran Wei"
+        },
+        {
+          "authorId": "2287294287",
+          "name": "Pawel Jonathan Herzig"
+        },
+        {
+          "authorId": "2287189883",
+          "name": "Krzysztof Nowak"
+        },
+        {
+          "authorId": "2285478353",
+          "name": "Thomas Müller"
+        },
+        {
+          "authorId": "2261956317",
+          "name": "F. Piccinno"
+        },
+        {
+          "authorId": "2221122676",
+          "name": "J. Eisenschlos"
+        },
+        {
+          "authorId": "2815290",
+          "name": "N. Houlsby"
+        },
+        {
+          "authorId": "1911881",
+          "name": "A. Giurgiu"
+        },
+        {
+          "authorId": "38060141",
+          "name": "Stanislaw K. Jastrzebski"
+        },
+        {
+          "authorId": "2256152032",
+          "name": "Siva Reddy"
+        },
+        {
+          "authorId": "2255489905",
+          "name": "Danqi Chen"
+        },
+        {
+          "authorId": "2275365960",
+          "name": "Christopher D. Manning"
+        },
+        {
+          "authorId": "2287301006",
+          "name": "Andreas Rucklé"
+        },
+        {
+          "authorId": "2281824646",
+          "name": "Gregor Geigle"
+        },
+        {
+          "authorId": null,
+          "name": "Max Glockner"
+        },
+        {
+          "authorId": "2286823245",
+          "name": "S. Vakulenko"
+        },
+        {
+          "authorId": "2154763823",
+          "name": "Kate Revoredo"
+        },
+        {
+          "authorId": "3027667",
+          "name": "Claudio Di Ciccio"
+        },
+        {
+          "authorId": "2266842044",
+          "name": "Tsung-Hsien Wen"
+        },
+        {
+          "authorId": "2303891004",
+          "name": "M. C."
+        },
+        {
+          "authorId": "2286790837",
+          "name": "N. c"
+        },
+        {
+          "authorId": "2347612950",
+          "name": "Peijun Hao"
+        },
+        {
+          "authorId": "92480907",
+          "name": "David Vandyke"
+        },
+        {
+          "authorId": "2382593286",
+          "name": "Shuo Zhang"
+        },
+        {
+          "authorId": "2287053658",
+          "name": "Zhuyun Dai"
+        },
+        {
+          "authorId": "1680484",
+          "name": "K. Balog"
+        },
+        {
+          "authorId": "31734386",
+          "name": "Fengbin Zhu"
+        },
+        {
+          "authorId": "2287107801",
+          "name": "Wenqiang Lei"
+        },
+        {
+          "authorId": "2156083891",
+          "name": "Youcheng Huang"
+        },
+        {
+          "authorId": "2287278736",
+          "name": "Chao"
+        },
+        {
+          "authorId": "2285167435",
+          "name": "Shuohang Wang"
+        },
+        {
+          "authorId": "2347551251",
+          "name": "Jiancheng Zhang"
+        },
+        {
+          "authorId": "2287049889",
+          "name": "Fuli Lv"
+        },
+        {
+          "authorId": "2287300983",
+          "name": "Feng Tat-804"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "445e4dbc3f1a9162aef283e9b48b808696131eaa",
+      "externalIds": {
+        "CorpusId": 252547568
+      },
+      "title": "AdapterBias: Parameter-efﬁcient Token-dependent Embedding Shift for Adapters in NLP Tasks",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=VZ2oO6KYbBB, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "12295226",
+          "name": "Ankur Bapna"
+        },
+        {
+          "authorId": "2275430116",
+          "name": "N. Arivazhagan"
+        },
+        {
+          "authorId": "2273534960",
+          "name": "Orhan Firat"
+        },
+        {
+          "authorId": "2486762",
+          "name": "L. Bentivogli"
+        },
+        {
+          "authorId": "2287538484",
+          "name": "Peter Clark"
+        },
+        {
+          "authorId": "7465342",
+          "name": "Ido Dagan"
+        },
+        {
+          "authorId": "2266238595",
+          "name": "Daniel Cer"
+        },
+        {
+          "authorId": "2286906583",
+          "name": "Mona Diab"
+        },
+        {
+          "authorId": "2257267295",
+          "name": "E. Agirre"
+        },
+        {
+          "authorId": "2288895771",
+          "name": "Inigo Lopez-531"
+        },
+        {
+          "authorId": "2288154316",
+          "name": "Alexis Conneau"
+        },
+        {
+          "authorId": "2067996",
+          "name": "Germán Kruszewski"
+        },
+        {
+          "authorId": "2288915827",
+          "name": "Guillaume Lam-536"
+        },
+        {
+          "authorId": "2934336",
+          "name": "Loïc Barrault"
+        },
+        {
+          "authorId": "2287149092",
+          "name": "Marco Baroni. 2018"
+        },
+        {
+          "authorId": "2287119150",
+          "name": "What"
+        },
+        {
+          "authorId": "2261961752",
+          "name": "J. Devlin"
+        },
+        {
+          "authorId": "2262085555",
+          "name": "Ming-Wei Chang"
+        },
+        {
+          "authorId": "2262196473",
+          "name": "Kenton Lee"
+        },
+        {
+          "authorId": "2380885",
+          "name": "Danilo Giampiccolo"
+        },
+        {
+          "authorId": "2238231938",
+          "name": "Bernardo Magnini"
+        },
+        {
+          "authorId": "2287917430",
+          "name": "Demi Guo"
+        },
+        {
+          "authorId": "2286310430",
+          "name": "Alexander M. Rush"
+        },
+        {
+          "authorId": "2286733945",
+          "name": "Yoon Kim"
+        },
+        {
+          "authorId": "2815290",
+          "name": "N. Houlsby"
+        },
+        {
+          "authorId": "1911881",
+          "name": "A. Giurgiu"
+        },
+        {
+          "authorId": "38060141",
+          "name": "Stanislaw K. Jastrzebski"
+        },
+        {
+          "authorId": "68973833",
+          "name": "Bruna Morrone"
+        },
+        {
+          "authorId": "51985388",
+          "name": "Quentin de Laroussilhe"
+        },
+        {
+          "authorId": "2285134411",
+          "name": "Mona Gesmundo"
+        },
+        {
+          "authorId": "2285135510",
+          "name": "Attariyan Sylvain"
+        },
+        {
+          "authorId": "2271919120",
+          "name": "Gelly"
+        },
+        {
+          "authorId": "152176221",
+          "name": "Olga Kovaleva"
+        },
+        {
+          "authorId": "2286434825",
+          "name": "A. Romanov"
+        },
+        {
+          "authorId": "2260577092",
+          "name": "Anna Rogers"
+        },
+        {
+          "authorId": "22240011",
+          "name": "Andreas Rücklé"
+        },
+        {
+          "authorId": "2281824646",
+          "name": "Gregor Geigle"
+        },
+        {
+          "authorId": null,
+          "name": "Max Glockner"
+        },
+        {
+          "authorId": "2286962698",
+          "name": "Richard Socher"
+        },
+        {
+          "authorId": "24590005",
+          "name": "Alex Perelygin"
+        },
+        {
+          "authorId": "2286277232",
+          "name": "Jean Wu"
+        },
+        {
+          "authorId": "2257173288",
+          "name": "Jason Chuang"
+        },
+        {
+          "authorId": "2275365960",
+          "name": "Christopher D. Manning"
+        },
+        {
+          "authorId": "2286228976",
+          "name": "Andrew Y Ng"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6adc9c231d874ea358554b8680a6aaba4bd6c963",
+      "externalIds": {
+        "DBLP": "conf/emnlp/AnsellPPRGVK21",
+        "DOI": "10.18653/v1/2021.findings-emnlp.410",
+        "CorpusId": 244119179
+      },
+      "title": "MAD-G: Multilingual Adapter Generation for Efficient Cross-Lingual Transfer",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 99,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.findings-emnlp.410.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2021.findings-emnlp.410?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2021.findings-emnlp.410, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "107745709",
+          "name": "Alan Ansell"
+        },
+        {
+          "authorId": "3381663",
+          "name": "E. Ponti"
+        },
+        {
+          "authorId": "153733568",
+          "name": "Jonas Pfeiffer"
+        },
+        {
+          "authorId": "2884561",
+          "name": "Sebastian Ruder"
+        },
+        {
+          "authorId": "2472657",
+          "name": "Goran Glavas"
+        },
+        {
+          "authorId": "1747849",
+          "name": "Ivan Vulic"
+        },
+        {
+          "authorId": "145762466",
+          "name": "A. Korhonen"
+        }
+      ],
+      "abstract": "Adapter modules have emerged as a general parameter-efﬁcient means to specialize a pre-trained encoder to new domains. Massively multilingual transformers (MMTs) have particularly beneﬁted from additional training of language-speciﬁc adapters. However, this approach is not viable for the vast majority of languages, due to limitations in their corpus size or compute budgets. In this work, we propose MAD-G ( M ultilingual AD apter G eneration), which contextually generates language adapters from language representations based on typological features. In contrast to prior work, our time-and space-efﬁcient MAD-G approach enables (1) sharing of linguistic knowledge across languages and (2) zero-shot inference by generating language adapters for unseen languages. We thoroughly evaluate MAD-G in zero-shot cross-lingual transfer on part-of-speech tagging, dependency parsing, and named entity recognition. While offering (1) improved ﬁne-tuning efﬁciency (by a factor of around 50 in our experiments), (2) a smaller parameter budget, and (3) increased language coverage, MAD-G remains competitive with more expensive methods for language-speciﬁc adapter training across the board. Moreover, it offers substantial beneﬁts for low-resource languages, particularly on the NER task in low-resource African languages. Finally, we demonstrate that MAD-G’s transfer performance can be further improved via: (i) multi-source training , i.e., by generating and combining adapters of multiple languages with available task-speciﬁc training data; and (ii) by further ﬁne-tuning generated MAD-G adapters for languages with monolingual data."
+    },
+    {
+      "paperId": "7b5b15279e5a52439614f886b79fa33f4b88bfb2",
+      "externalIds": {
+        "DBLP": "conf/emnlp/WangTRN21",
+        "ArXiv": "2109.04877",
+        "DOI": "10.18653/v1/2021.findings-emnlp.63",
+        "CorpusId": 237485466
+      },
+      "title": "Efficient Test Time Adapter Ensembling for Low-resource Language Varieties",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 40,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.findings-emnlp.63.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.04877, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Xinyi Wang"
+        },
+        {
+          "authorId": "145317727",
+          "name": "Yulia Tsvetkov"
+        },
+        {
+          "authorId": "2884561",
+          "name": "Sebastian Ruder"
+        },
+        {
+          "authorId": "1700325",
+          "name": "Graham Neubig"
+        }
+      ],
+      "abstract": "Adapters are light-weight modules that allow parameter-efficient fine-tuning of pretrained models. Specialized language and task adapters have recently been proposed to facilitate cross-lingual transfer of multilingual pretrained models (Pfeiffer et al., 2020b). However, this approach requires training a separate language adapter for every language one wishes to support, which can be impractical for languages with limited data. An intuitive solution is to use a related language adapter for the new language variety, but we observe that this solution can lead to sub-optimal performance. In this paper, we aim to improve the robustness of language adapters to uncovered languages without training new adapters. We find that ensembling multiple existing language adapters makes the fine-tuned model significantly more robust to other language varieties not included in these adapters. Building upon this observation, we propose Entropy Minimized Ensemble of Adapters (EMEA), a method that optimizes the ensemble weights of the pretrained language adapters for each test sentence by minimizing the entropy of its predictions. Experiments on three diverse groups of language varieties show that our method leads to significant improvements on both named entity recognition and part-of-speech tagging across all languages."
+    },
+    {
+      "paperId": "fb3dc58cb17c54b997e6301cbde7773f77427833",
+      "externalIds": {
+        "DBLP": "conf/emnlp/LuDN21",
+        "DOI": "10.18653/v1/2021.findings-emnlp.325",
+        "CorpusId": 244119753
+      },
+      "title": "Parameter-Efficient Domain Knowledge Integration from Multiple Sources for Biomedical Pre-trained Language Models",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 28,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.findings-emnlp.325.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2021.findings-emnlp.325?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2021.findings-emnlp.325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35539899",
+          "name": "Qiuhao Lu"
+        },
+        {
+          "authorId": "1721158",
+          "name": "D. Dou"
+        },
+        {
+          "authorId": "1811211",
+          "name": "Thien Huu Nguyen"
+        }
+      ],
+      "abstract": "Domain-speciﬁc pre-trained language models (PLMs) have achieved great success over various downstream tasks in different domains. However, existing domain-speciﬁc PLMs mostly rely on self-supervised learning over large amounts of domain text, without explicitly integrating domain-speciﬁc knowledge, which can be essential in many domains. Moreover, in knowledge-sensitive ar-eas such as the biomedical domain, knowledge is stored in multiple sources and formats, and existing biomedical PLMs either neglect them or utilize them in a limited manner. In this work, we introduce an architecture to integrate domain knowledge from diverse sources into PLMs in a parameter-efﬁcient way. More speciﬁcally, we propose to encode domain knowledge via adapters , which are small bottleneck feed-forward networks inserted between intermediate transformer layers in PLMs. These knowledge adapters are pre-trained for individual domain knowledge sources and integrated via an attention-based knowledge controller to enrich PLMs. Taking the biomedical domain as a case study, we explore three knowledge-speciﬁc adapters for PLMs based on the UMLS Metathesaurus graph, the Wikipedia articles for diseases, and the semantic grouping information for biomedical concepts. Extensive experiments on different biomedical NLP tasks and datasets demonstrate the beneﬁts of the proposed architecture and the knowledge-speciﬁc adapters across multiple PLMs."
+    },
+    {
+      "paperId": "85a17e45022d4c74b1497820a20cdf64ebae092a",
+      "externalIds": {
+        "DBLP": "conf/icassp/HouWGS21",
+        "DOI": "10.1109/ICASSP39728.2021.9414959",
+        "CorpusId": 235780558
+      },
+      "title": "Meta-Adapter: Efficient Cross-Lingual Adaptation With Meta-Learning",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2021,
+      "citationCount": 34,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASSP39728.2021.9414959?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASSP39728.2021.9414959, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32216189",
+          "name": "Wenxin Hou"
+        },
+        {
+          "authorId": "2108024279",
+          "name": "Yidong Wang"
+        },
+        {
+          "authorId": "1657484873",
+          "name": "Shengzhou Gao"
+        },
+        {
+          "authorId": "1732454",
+          "name": "T. Shinozaki"
+        }
+      ],
+      "abstract": "Transfer learning from a multilingual model has shown favorable results on low-resource automatic speech recognition (ASR). However, full-model fine-tuning generates a separate model for every target language and is not suitable for deploying and maintaining in production. The key challenge lies in how to efficiently extend the pre-trained model with fewer parameters. In this paper, we propose to combine the adapter module with meta-learning algorithms to achieve high recognition performance under low-resource settings and improve the parameter-efficiency of the model. Extensive experiments show that our methods can achieve comparable or even superior recognition rates than the state-of-the-art baselines on low-resource languages, especially under very-low-resource conditions, with a significantly smaller model profile."
+    },
+    {
+      "paperId": "b56e05c989f564cf65e25c66afbce8ecf0920a04",
+      "externalIds": {
+        "ArXiv": "2110.03252",
+        "DBLP": "journals/corr/abs-2110-03252",
+        "DOI": "10.1109/ISOCC53507.2021.9613933",
+        "CorpusId": 238419078
+      },
+      "title": "Layer-wise Pruning of Transformer Attention Heads for Efficient Language Modeling",
+      "venue": "International SoC Design Conference",
+      "year": 2021,
+      "citationCount": 24,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2110.03252",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.03252, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "29932533",
+          "name": "Kyuhong Shim"
+        },
+        {
+          "authorId": "153004852",
+          "name": "Iksoo Choi"
+        },
+        {
+          "authorId": "66936521",
+          "name": "Wonyong Sung"
+        },
+        {
+          "authorId": "2506452",
+          "name": "Jungwook Choi"
+        }
+      ],
+      "abstract": "Recently, the necessity of multiple attention heads in transformer architecture has been questioned [1]. Removing less important heads from a large network is a promising strategy to reduce computation cost and parameters. However, pruning out attention heads in multihead attention does not evenly reduce the overall load, because feedforward modules are not affected. In this study, we apply attention head pruning on All-attention [2] transformer, where savings in the computation are proportional to the number of pruned heads. This improved computing efficiency comes at the cost of pruning sensitivity, which we stabilize with three training techniques. Our attention head pruning enables a considerably fewer number of parameters with a comparable perplexity for transformer-based language modeling."
+    },
+    {
+      "paperId": "448af0627240e46df757e7b9c640ee30507c18e9",
+      "externalIds": {
+        "DBLP": "conf/acl/HeLYTDCLBS20",
+        "ArXiv": "2106.03164",
+        "ACL": "2021.acl-long.172",
+        "DOI": "10.18653/v1/2021.acl-long.172",
+        "CorpusId": 235359141
+      },
+      "title": "On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 255,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.acl-long.172.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.03164, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "22272507",
+          "name": "Ruidan He"
+        },
+        {
+          "authorId": "2145314839",
+          "name": "Linlin Liu"
+        },
+        {
+          "authorId": "144079478",
+          "name": "Hai Ye"
+        },
+        {
+          "authorId": "118358816",
+          "name": "Qingyu Tan"
+        },
+        {
+          "authorId": "2064493724",
+          "name": "Bosheng Ding"
+        },
+        {
+          "authorId": "123962152",
+          "name": "Liying Cheng"
+        },
+        {
+          "authorId": "49767096",
+          "name": "Jia-Wei Low"
+        },
+        {
+          "authorId": "1996394",
+          "name": "Lidong Bing"
+        },
+        {
+          "authorId": "2059080424",
+          "name": "Luo Si"
+        }
+      ],
+      "abstract": "Adapter-based tuning has recently arisen as an alternative to fine-tuning. It works by adding light-weight adapter modules to a pretrained language model (PrLM) and only updating the parameters of adapter modules when learning on a downstream task. As such, it adds only a few trainable parameters per new task, allowing a high degree of parameter sharing. Prior studies have shown that adapter-based tuning often achieves comparable results to fine-tuning. However, existing work only focuses on the parameter-efficient aspect of adapter-based tuning while lacking further investigation on its effectiveness. In this paper, we study the latter. We first show that adapter-based tuning better mitigates forgetting issues than fine-tuning since it yields representations with less deviation from those generated by the initial PrLM. We then empirically compare the two tuning methods on several downstream NLP tasks and settings. We demonstrate that 1) adapter-based tuning outperforms fine-tuning on low-resource and cross-lingual tasks; 2) it is more robust to overfitting and less sensitive to changes in learning rates."
+    },
+    {
+      "paperId": "9f9e6b4731d3cf467bf2bfab4ce42bbc6d4afd73",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2106-05822",
+        "ArXiv": "2106.05822",
+        "CorpusId": 235390408
+      },
+      "title": "GroupBERT: Enhanced Transformer Architecture with Efficient Grouped Structures",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.05822, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "66190473",
+          "name": "Ivan Chelombiev"
+        },
+        {
+          "authorId": "39145648",
+          "name": "Daniel Justus"
+        },
+        {
+          "authorId": "145474032",
+          "name": "Douglas Orr"
+        },
+        {
+          "authorId": "2057429281",
+          "name": "A. Dietrich"
+        },
+        {
+          "authorId": "10682156",
+          "name": "Frithjof Gressmann"
+        },
+        {
+          "authorId": "2097479",
+          "name": "A. Koliousis"
+        },
+        {
+          "authorId": "49147045",
+          "name": "C. Luschi"
+        }
+      ],
+      "abstract": "Attention based language models have become a critical component in state-of-the-art natural language processing systems. However, these models have significant computational requirements, due to long training times, dense operations and large parameter count. In this work we demonstrate a set of modifications to the structure of a Transformer layer, producing a more efficient architecture. First, we add a convolutional module to complement the self-attention module, decoupling the learning of local and global interactions. Secondly, we rely on grouped transformations to reduce the computational cost of dense feed-forward layers and convolutions, while preserving the expressivity of the model. We apply the resulting architecture to language representation learning and demonstrate its superior performance compared to BERT models of different scales. We further highlight its improved efficiency, both in terms of floating-point operations (FLOPs) and time-to-train."
+    },
+    {
+      "paperId": "eacb5dc57a167aeda3b23c28abfc2b51095f1b7c",
+      "externalIds": {
+        "ArXiv": "2106.01463",
+        "ACL": "2021.acl-short.103",
+        "DBLP": "journals/corr/abs-2106-01463",
+        "DOI": "10.18653/v1/2021.acl-short.103",
+        "CorpusId": 235313889
+      },
+      "title": "Lightweight Adapter Tuning for Multilingual Speech Translation",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 98,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.acl-short.103.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.01463, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "91955511",
+          "name": "Hang Le"
+        },
+        {
+          "authorId": "145503806",
+          "name": "J. Pino"
+        },
+        {
+          "authorId": "20132361",
+          "name": "Changhan Wang"
+        },
+        {
+          "authorId": "3016273",
+          "name": "Jiatao Gu"
+        },
+        {
+          "authorId": "2504683",
+          "name": "Didier Schwab"
+        },
+        {
+          "authorId": "143823463",
+          "name": "L. Besacier"
+        }
+      ],
+      "abstract": "Adapter modules were recently introduced as an efficient alternative to fine-tuning in NLP. Adapter tuning consists in freezing pre-trained parameters of a model and injecting lightweight modules between layers, resulting in the addition of only a small number of task-specific trainable parameters. While adapter tuning was investigated for multilingual neural machine translation, this paper proposes a comprehensive analysis of adapters for multilingual speech translation (ST). Starting from different pre-trained models (a multilingual ST trained on parallel data or a multilingual BART (mBART) trained on non parallel multilingual data), we show that adapters can be used to: (a) efficiently specialize ST to specific language pairs with a low extra cost in terms of parameters, and (b) transfer from an automatic speech recognition (ASR) task and an mBART pre-trained model to a multilingual ST task. Experiments show that adapter tuning offer competitive results to full fine-tuning, while being much more parameter-efficient."
+    },
+    {
+      "paperId": "56c91b7f799008fe2de37cd572439c1814f4a1aa",
+      "externalIds": {
+        "ArXiv": "2106.06778",
+        "DBLP": "conf/iccai/Ye22",
+        "DOI": "10.1145/3532213.3532222",
+        "CorpusId": 235421768
+      },
+      "title": "Dynamic Clone Transformer for Efficient Convolutional Neural Netwoks",
+      "venue": "International Conference on Computing and Artificial Intelligence",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2106.06778",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.06778, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2118287669",
+          "name": "Longqing Ye"
+        }
+      ],
+      "abstract": "Convolutional networks (ConvNets) have shown impressive capability to solve various vision tasks. Nevertheless, the trade-off between performance and efficiency is still a challenge for a feasible model deployment on resource-constrained platforms. In this paper, we introduce a dual-branch module named dynamic clone transformer (DCT) where one branch generates multiple replicas from inputs and another branch reforms those clones through a series of difference vectors conditional on inputs itself to produce more variants. This operation allows the self-expansion of channel-wise information in a data-driven way with little computational cost while providing sufficient learning capacity, which is a potential unit to replace computationally expensive pointwise convolution as an expansion layer in the bottleneck structure. We exploit DCT module to build lightweight models named DyClotNets, showing better performance and efficiency trade-off compared to other classic models (ResNet and MobileNetV2). Evaluated on the CIFAR-10 and CIFAR-100 datasets, DyClotNet 2.0 × is 0.9% and 0.3%, respectively, more accurate than MobileNetV2 1.0 × with 2.9 times less computational overhead and 1.4 times fewer parameters."
+    },
+    {
+      "paperId": "8144ca1f78c045cb001815090bcf8a726e37e0ad",
+      "externalIds": {
+        "ArXiv": "2111.15667",
+        "DBLP": "conf/eccv/FayyazKJSJSPG22",
+        "DOI": "10.1007/978-3-031-20083-0_24",
+        "CorpusId": 251067151
+      },
+      "title": "Adaptive Token Sampling for Efficient Vision Transformers",
+      "venue": "European Conference on Computer Vision",
+      "year": 2021,
+      "citationCount": 270,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2111.15667, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Mohsen Fayyaz"
+        },
+        {
+          "authorId": "2004045536",
+          "name": "Soroush Abbasi Koohpayegani"
+        },
+        {
+          "authorId": "67218340",
+          "name": "F. Jafari"
+        },
+        {
+          "authorId": "35127175",
+          "name": "Sunando Sengupta"
+        },
+        {
+          "authorId": "3227254",
+          "name": "Hamid Reza Vaezi Joze"
+        },
+        {
+          "authorId": "1741116",
+          "name": "Eric Sommerlade"
+        },
+        {
+          "authorId": "2367683",
+          "name": "H. Pirsiavash"
+        },
+        {
+          "authorId": "145689714",
+          "name": "Juergen Gall"
+        }
+      ],
+      "abstract": "While state-of-the-art vision transformer models achieve promising results in image classification, they are computationally expensive and require many GFLOPs. Although the GFLOPs of a vision transformer can be decreased by reducing the number of tokens in the network, there is no setting that is optimal for all input images. In this work, we therefore introduce a differentiable parameter-free Adaptive Token Sampler (ATS) module, which can be plugged into any existing vision transformer architecture. ATS empowers vision transformers by scoring and adaptively sampling significant tokens. As a result, the number of tokens is not constant anymore and varies for each input image. By integrating ATS as an additional layer within the current transformer blocks, we can convert them into much more efficient vision transformers with an adaptive number of tokens. Since ATS is a parameter-free module, it can be added to the off-the-shelf pre-trained vision transformers as a plug and play module, thus reducing their GFLOPs without any additional training. Moreover, due to its differentiable design, one can also train a vision transformer equipped with ATS. We evaluate the efficiency of our module in both image and video classification tasks by adding it to multiple SOTA vision transformers. Our proposed module improves the SOTA by reducing their computational costs (GFLOPs) by 2X, while preserving their accuracy on the ImageNet, Kinetics-400, and Kinetics-600 datasets."
+    },
+    {
+      "paperId": "8d916d0639dc27184253db2c50dd240ee3700c46",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2201-00016",
+        "ArXiv": "2201.00016",
+        "CorpusId": 245650210
+      },
+      "title": "TransLog: A Unified Transformer-based Framework for Log Anomaly Detection",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 31,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.00016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2234806",
+          "name": "Hongcheng Guo"
+        },
+        {
+          "authorId": "1780629824",
+          "name": "Xin-Xue Lin"
+        },
+        {
+          "authorId": null,
+          "name": "Jian Yang"
+        },
+        {
+          "authorId": "37081450",
+          "name": "Jian Yang"
+        },
+        {
+          "authorId": "2056432671",
+          "name": "Yi Zhuang"
+        },
+        {
+          "authorId": "2107018151",
+          "name": "Jiaqi Bai"
+        },
+        {
+          "authorId": "2152309872",
+          "name": "Tieqiao Zheng"
+        },
+        {
+          "authorId": null,
+          "name": "Bo Zhang"
+        },
+        {
+          "authorId": "2144279674",
+          "name": "Zhoujun Li"
+        }
+      ],
+      "abstract": "Log anomaly detection is a key component in the field of artificial intelligence for IT operations (AIOps). Considering log data of variant domains, retraining the whole network for unknown domains is inefficient in real industrial scenarios especially for low-resource domains. However, previous deep models merely focused on extracting the semantics of log sequence in the same domain, leading to poor generalization on multi-domain logs. Therefore, we propose a unified Transformer-based framework for log anomaly detection (\\ourmethod{}), which is comprised of the pretraining and adapter-based tuning stage. Our model is first pretrained on the source domain to obtain shared semantic knowledge of log data. Then, we transfer the pretrained model to the target domain via the adapter-based tuning. The proposed method is evaluated on three public datasets including one source domain and two target domains. The experimental results demonstrate that our simple yet efficient approach, with fewer trainable parameters and lower training costs in the target domain, achieves state-of-the-art performance on three benchmarks."
+    },
+    {
+      "paperId": "f715d91fc59131eb4236ad8630a761d669a0e2ba",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2111-15667",
+        "CorpusId": 244729446
+      },
+      "title": "ATS: Adaptive Token Sampling For Efficient Vision Transformers",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 44,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://arxiv.org/abs/2111.15667, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Mohsen Fayyaz"
+        },
+        {
+          "authorId": "2142555584",
+          "name": "Soroush Abbasi Kouhpayegani"
+        },
+        {
+          "authorId": "67218340",
+          "name": "F. Jafari"
+        },
+        {
+          "authorId": "1741116",
+          "name": "Eric Sommerlade"
+        },
+        {
+          "authorId": "3227254",
+          "name": "Hamid Reza Vaezi Joze"
+        },
+        {
+          "authorId": "2367683",
+          "name": "H. Pirsiavash"
+        },
+        {
+          "authorId": "145689714",
+          "name": "Juergen Gall"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "0eff37167876356da2163b2e396df2719adf7de9",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2103-14899",
+        "ArXiv": "2103.14899",
+        "DOI": "10.1109/ICCV48922.2021.00041",
+        "CorpusId": 232404237
+      },
+      "title": "CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification",
+      "venue": "IEEE International Conference on Computer Vision",
+      "year": 2021,
+      "citationCount": 2190,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2103.14899",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2103.14899, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48239920",
+          "name": "Chun-Fu Chen"
+        },
+        {
+          "authorId": "33421444",
+          "name": "Quanfu Fan"
+        },
+        {
+          "authorId": "1819152",
+          "name": "Rameswar Panda"
+        }
+      ],
+      "abstract": "The recently developed vision transformer (ViT) has achieved promising results on image classification compared to convolutional neural networks. Inspired by this, in this paper, we study how to learn multi-scale feature representations in transformer models for image classification. To this end, we propose a dual-branch transformer to com-bine image patches (i.e., tokens in a transformer) of different sizes to produce stronger image features. Our approach processes small-patch and large-patch tokens with two separate branches of different computational complexity and these tokens are then fused purely by attention multiple times to complement each other. Furthermore, to reduce computation, we develop a simple yet effective token fusion module based on cross attention, which uses a single token for each branch as a query to exchange information with other branches. Our proposed cross-attention only requires linear time for both computational and memory complexity instead of quadratic time otherwise. Extensive experiments demonstrate that our approach performs better than or on par with several concurrent works on vision transformer, in addition to efficient CNN models. For example, on the ImageNet1K dataset, with some architectural changes, our approach outperforms the recent DeiT by a large margin of 2% with a small to moderate increase in FLOPs and model parameters. Our source codes and models are available at https://github.com/IBM/CrossViT."
+    },
+    {
+      "paperId": "3cadeded3b1d4ec5f3146064c596c95a822e7e0f",
+      "externalIds": {
+        "DBLP": "journals/taslp/GuoZXCC21",
+        "DOI": "10.1109/TASLP.2021.3076863",
+        "CorpusId": 235307852
+      },
+      "title": "Adaptive Adapters: An Efficient Way to Incorporate BERT Into Neural Machine Translation",
+      "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+      "year": 2021,
+      "citationCount": 26,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TASLP.2021.3076863?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TASLP.2021.3076863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "13838086",
+          "name": "Junliang Guo"
+        },
+        {
+          "authorId": "4947404",
+          "name": "Zhirui Zhang"
+        },
+        {
+          "authorId": "2230211",
+          "name": "Linli Xu"
+        },
+        {
+          "authorId": "2152687324",
+          "name": "Boxing Chen"
+        },
+        {
+          "authorId": "2227868312",
+          "name": "Enhong Chen"
+        }
+      ],
+      "abstract": "Large-scale pre-trained language models (e.g., BERT) have attracted great attention in recent years. It is straightforward to fine-tune them on natural language understanding tasks such as text classification, however, effectively and efficiently incorporating them into natural language generation tasks such as neural machine translation remains a challenging problem. In this paper, we integrate two pre-trained BERT models from the source and target language domains into a sequence-to-sequence model by introducing light-weight adapter modules. The adapters are inserted between BERT layers and tuned on downstream tasks, while the parameters of BERT models are fixed during fine-tuning. As pre-trained language models are usually very deep, inserting adapters into all layers will result in a considerable scale of new parameters. To deal with this problem, we introduce latent variables to decide whether using adapters or not in each layer, which are learned during fine-tuning. In this way, the model is able to automatically determine which adapters to use, therefore hugely promoting the parameter efficiency and decoding speed. We evaluate the proposed framework on various neural machine translation tasks. Equipped with parallel sequence decoding, our model consistently outperforms autoregressive baselines while reducing the inference latency by half. With automatic adapter selection, the proposed model further achieves 20% speedup while still outperforming autoregressive baselines. When applied to autoregressive decoding, the proposed model can also achieve comparable performance with the state-of-the-art baseline models."
+    },
+    {
+      "paperId": "35c3d1ccdb4c2014a00ce9d9a96cdbb93516d2ba",
+      "externalIds": {
+        "ArXiv": "2103.04032",
+        "DBLP": "conf/nips/VarshneyVSCR21",
+        "CorpusId": 236635024
+      },
+      "title": "CAM-GAN: Continual Adaptation Modules for Generative Adversarial Networks",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 25,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2103.04032, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "81390224",
+          "name": "Sakshi Varshney"
+        },
+        {
+          "authorId": "153610266",
+          "name": "V. Verma"
+        },
+        {
+          "authorId": "151433408",
+          "name": "K. SrijithP."
+        },
+        {
+          "authorId": "145006560",
+          "name": "L. Carin"
+        },
+        {
+          "authorId": "145593549",
+          "name": "Piyush Rai"
+        }
+      ],
+      "abstract": "We present a continual learning approach for generative adversarial networks (GANs), by designing and leveraging parameter-efficient feature map transformations. Our approach is based on learning a set of global and task-specific parameters. The global parameters are fixed across tasks whereas the task-specific parameters act as local adapters for each task, and help in efficiently obtaining task-specific feature maps. Moreover, we propose an element-wise addition of residual bias in the transformed feature space, which further helps stabilize GAN training in such settings. Our approach also leverages task similarity information based on the Fisher information matrix. Leveraging this knowledge from previous tasks significantly improves the model performance. In addition, the similarity measure also helps reduce the parameter growth in continual adaptation and helps to learn a compact model. In contrast to the recent approaches for continually-learned GANs, the proposed approach provides a memory-efficient way to perform effective continual data generation. Through extensive experiments on challenging and diverse datasets, we show that the feature-map-transformation approach outperforms state-of-the-art methods for continually-learned GANs, with substantially fewer parameters. The proposed method generates high-quality samples that can also improve the generative-replay-based continual learning for discriminative tasks."
+    },
+    {
+      "paperId": "b35dd2a3850667b6b7a0e8dfb3ef03ca463bcd18",
+      "externalIds": {
+        "ArXiv": "2112.15299",
+        "DBLP": "journals/tip/YeNW00K23",
+        "DOI": "10.1109/TIP.2023.3274988",
+        "CorpusId": 245634934,
+        "PubMed": "37186533"
+      },
+      "title": "CSformer: Bridging Convolution and Transformer for Compressive Sensing",
+      "venue": "IEEE Transactions on Image Processing",
+      "year": 2021,
+      "citationCount": 107,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2112.15299",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.15299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32198004",
+          "name": "Dongjie Ye"
+        },
+        {
+          "authorId": "38748686",
+          "name": "Zhangkai Ni"
+        },
+        {
+          "authorId": "2774427",
+          "name": "Hanli Wang"
+        },
+        {
+          "authorId": "2151812345",
+          "name": "Jian Zhang"
+        },
+        {
+          "authorId": "2108622163",
+          "name": "Shiqi Wang"
+        },
+        {
+          "authorId": "1687386",
+          "name": "S. Kwong"
+        }
+      ],
+      "abstract": "Convolutional Neural Networks (CNNs) dominate image processing but suffer from local inductive bias, which is addressed by the transformer framework with its inherent ability to capture global context through self-attention mechanisms. However, how to inherit and integrate their advantages to improve compressed sensing is still an open issue. This paper proposes CSformer, a hybrid framework to explore the representation capacity of local and global features. The proposed approach is well-designed for end-to-end compressive image sensing, composed of adaptive sampling and recovery. In the sampling module, images are measured block-by-block by the learned sampling matrix. In the reconstruction stage, the measurements are projected into an initialization stem, a CNN stem, and a transformer stem. The initialization stem mimics the traditional reconstruction of compressive sensing but generates the initial reconstruction in a learnable and efficient manner. The CNN stem and transformer stem are concurrent, simultaneously calculating fine-grained and long-range features and efficiently aggregating them. Furthermore, we explore a progressive strategy and window-based transformer block to reduce the parameters and computational complexity. The experimental results demonstrate the effectiveness of the dedicated transformer-based architecture for compressive sensing, which achieves superior performance compared to state-of-the-art methods on different datasets. Our codes is available at: https://github.com/Lineves7/CSformer."
+    },
+    {
+      "paperId": "bc9af6054d978a429201568a3b5dfdcd93148721",
+      "externalIds": {
+        "MAG": "3182590780",
+        "DOI": "10.1109/jestpe.2021.3094278",
+        "CorpusId": 237763012
+      },
+      "title": "Accelerated Electromagnetic Transient (EMT) Equivalent Model of Solid-State Transformer",
+      "venue": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+      "year": 2021,
+      "citationCount": 16,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/jestpe.2021.3094278?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/jestpe.2021.3094278, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1698907672",
+          "name": "Chenxiang Gao"
+        },
+        {
+          "authorId": "145612956",
+          "name": "M. Feng"
+        },
+        {
+          "authorId": "153467643",
+          "name": "Jiangping Ding"
+        },
+        {
+          "authorId": "2146205511",
+          "name": "Hang Zhang"
+        },
+        {
+          "authorId": "49394624",
+          "name": "Jianzhong Xu"
+        },
+        {
+          "authorId": "2161430",
+          "name": "Chengyong Zhao"
+        },
+        {
+          "authorId": "2430952936",
+          "name": "Zixin Li"
+        },
+        {
+          "authorId": "145251463",
+          "name": "Gen Li"
+        }
+      ],
+      "abstract": "Accurate and efficient electromagnetic transient (EMT) simulation of various types of solid-state transformers (SSTs) is extremely time-consuming due to the complex module structure, flexible topology connections, large number of electrical nodes, and simulation time steps limited in the range of microseconds. Therefore, it is urgent to develop the EMT equivalent modeling and fast simulation of SSTs for system-level studies. Taking the modular multilevel converter (MMC)-based SST as an example, this article proposes an accelerated EMT model, which focuses on the equivalence of the dual-active-bridge (DAB)-based high-frequency link (HFL) in the SST. Compared with the existing algorithms, two critical factors of the proposed method that contribute the most to the efficiency improvement are the preprocessing of the nodal admittance equation and the conversion of the short-circuit admittance parameters. The proposed model is verified in PSCAD/EMTDC by comparing it with the detailed EMT model. The results show that the accelerated model is one-to-two orders of magnitude faster than the detailed model without sacrificing accuracy. The experiment validation also confirms the validity of the proposed model."
+    },
+    {
+      "paperId": "c12105f503e690006264ef44b4282595f2f78cb9",
+      "externalIds": {
+        "ArXiv": "2111.07602",
+        "DBLP": "journals/corr/abs-2111-07602",
+        "CorpusId": 244117497
+      },
+      "title": "Spectral Transform Forms Scalable Transformer",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 8,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2111.07602, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "65772187",
+          "name": "Bingxin Zhou"
+        },
+        {
+          "authorId": "2109354058",
+          "name": "Xinliang Liu"
+        },
+        {
+          "authorId": "2119034743",
+          "name": "Yuehua Liu"
+        },
+        {
+          "authorId": "46843875",
+          "name": "Yunyin Huang"
+        },
+        {
+          "authorId": "2266237603",
+          "name": "Pietro Liò"
+        },
+        {
+          "authorId": "2115752692",
+          "name": "Yuguang Wang"
+        }
+      ],
+      "abstract": "Many real-world relational systems, such as social networks and biological systems, contain dynamic interactions. When learning dynamic graph representation, it is essential to employ sequential temporal information and geometric structure. Mainstream work achieves topological embedding via message passing networks (e.g., GCN, GAT). The temporal evolution, on the other hand, is conventionally expressed via memory units (e.g., LSTM or GRU) that possess convenient information filtration in a gate mechanism. Though, such a design prevents large-scale input sequence due to the over-complicated encoding. This work learns from the philosophy of self-attention and proposes an efficient spectral-based neural unit that employs informative long-range temporal interaction. The developed spectral window unit (SWINIT) model predicts scalable dynamic graphs with assured efficiency. The architecture is assembled with a few simple effective computational blocks that constitute randomized SVD, MLP, and graph Framelet convolution. The SVD plus MLP module encodes the long-short-term feature evolution of the dynamic graph events. A fast framelet graph transform in the framelet convolution embeds the structural dynamics. Both strategies enhance the model's ability on scalable analysis. In particular, the iterative SVD approximation shrinks the computational complexity of attention to O(Nd\\log(d)) for the dynamic graph with N edges and d edge features, and the multiscale transform of framelet convolution allows sufficient scalability in the network training. Our SWINIT achieves state-of-the-art performance on a variety of online continuous-time dynamic graph learning tasks, while compared to baseline methods, the number of its learnable parameters reduces by up to seven times."
+    },
+    {
+      "paperId": "48f5d744dfe96c64891a4b3cb396f8b957c93fc3",
+      "externalIds": {
+        "ArXiv": "2105.11905",
+        "DBLP": "journals/taslp/HouZWWQXS22",
+        "DOI": "10.1109/taslp.2021.3138674",
+        "CorpusId": 235187234
+      },
+      "title": "Exploiting Adapters for Cross-Lingual Low-Resource Speech Recognition",
+      "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+      "year": 2021,
+      "citationCount": 78,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2105.11905",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2105.11905, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32216189",
+          "name": "Wenxin Hou"
+        },
+        {
+          "authorId": "104170463",
+          "name": "Hanlin Zhu"
+        },
+        {
+          "authorId": "2108024279",
+          "name": "Yidong Wang"
+        },
+        {
+          "authorId": "1519290245",
+          "name": "Jindong Wang"
+        },
+        {
+          "authorId": "143826491",
+          "name": "Tao Qin"
+        },
+        {
+          "authorId": "2105167673",
+          "name": "Renjun Xu"
+        },
+        {
+          "authorId": "1732454",
+          "name": "T. Shinozaki"
+        }
+      ],
+      "abstract": "Cross-lingual speech adaptation aims to solve the problem of leveraging multiple rich-resource languages to build models for a low-resource target language. Since the low-resource language has limited training data, speech recognition models can easily overfit. Adapter is a versatile module that can be plugged into Transformer for parameter-efficient learning. In this paper, we propose to use adapters for parameter-efficient cross-lingual speech adaptation. Based on our previous MetaAdapter that implicitly leverages adapters, we propose a novel algorithm called SimAdapter for explicitly learning knowledge from adapters. Our algorithms can be easily integrated into the Transformer structure. MetaAdapter leverages meta-learning to transfer the general knowledge from training data to the test language. SimAdapter aims to learn the similarities between the source and target languages during fine-tuning using the adapters. We conduct extensive experiments on five-low-resource languages in the Common Voice dataset. Results demonstrate that MetaAdapter and SimAdapter can reduce WER by 2.98% and 2.55% with only 2.5% and 15.5% of trainable parameters compared to the strong full-model fine-tuning baseline. Moreover, we show that these two novel algorithms can be integrated for better performance with up to 3.55% relative WER reduction."
+    },
+    {
+      "paperId": "51d62830c1112ea7443398990b850a988ed7c86c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2110-09574",
+        "ArXiv": "2110.09574",
+        "ACL": "2021.wmt-1.64",
+        "CorpusId": 239024385
+      },
+      "title": "Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters",
+      "venue": "Conference on Machine Translation",
+      "year": 2021,
+      "citationCount": 34,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.09574, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "68974453",
+          "name": "Asa Cooper Stickland"
+        },
+        {
+          "authorId": "3449364",
+          "name": "Alexandre Berard"
+        },
+        {
+          "authorId": "2841761",
+          "name": "Vassilina Nikoulina"
+        }
+      ],
+      "abstract": "Adapter layers are lightweight, learnable units inserted between transformer layers. Recent work explores using such layers for neural machine translation (NMT), to adapt pre-trained models to new domains or language pairs, training only a small set of parameters for each new setting (language pair or domain). In this work we study the compositionality of language and domain adapters in the context of Machine Translation. We aim to study, 1) parameter-efficient adaptation to multiple domains and languages simultaneously (full-resource scenario) and 2) cross-lingual transfer in domains where parallel data is unavailable for certain language pairs (partial-resource scenario). We find that in the partial resource scenario a naive combination of domain-specific and language-specific adapters often results in ‘catastrophic forgetting’ of the missing languages. We study other ways to combine the adapters to alleviate this issue and maximize cross-lingual transfer. With our best adapter combinations, we obtain improvements of 3-4 BLEU on average for source languages that do not have in-domain data. For target languages without in-domain data, we achieve a similar improvement by combining adapters with back-translation. Supplementary material is available at https://tinyurl.com/r66stbxj."
+    },
+    {
+      "paperId": "8cae854332b11d5cfca1a2c8d91fbc38ab4bf892",
+      "externalIds": {
+        "MAG": "3172505268",
+        "DBLP": "journals/ijig/VaidyaP22",
+        "DOI": "10.1142/S0219467822500176",
+        "CorpusId": 236277136
+      },
+      "title": "Hardware Efficient Modified CNN Architecture for Traffic Sign Detection and Recognition",
+      "venue": "International Journal of Image and Graphics",
+      "year": 2021,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1142/S0219467822500176?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1142/S0219467822500176, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "32587340",
+          "name": "Bhaumik Vaidya"
+        },
+        {
+          "authorId": "2672536",
+          "name": "C. Paunwala"
+        }
+      ],
+      "abstract": "Traffic sign recognition is a vital part for any driver assistance system which can help in making complex driving decision based on the detected traffic signs. Traffic sign detection (TSD) is essential in adverse weather conditions or when the vehicle is being driven on the hilly roads. Traffic sign recognition is a complex computer vision problem as generally the signs occupy a very small portion of the entire image. A lot of research is going on to solve this issue accurately but still it has not been solved till the satisfactory performance. The goal of this paper is to propose a deep learning architecture which can be deployed on embedded platforms for driver assistant system with limited memory and computing resources without sacrificing on detection accuracy. The architecture uses various architectural modification to the well-known Convolutional Neural Network (CNN) architecture for object detection. It uses a trainable Color Transformer Network (CTN) with the existing CNN architecture for making the system invariant to illumination and light changes. The architecture uses feature fusion module for detecting small traffic signs accurately. In the proposed work, receptive field calculation is used for choosing the number of convolutional layer for prediction and the right scales for default bounding boxes. The architecture is deployed on Jetson Nano GPU Embedded development board for performance evaluation at the edge and it has been tested on well-known German Traffic Sign Detection Benchmark (GTSDB) and Tsinghua-Tencent 100k dataset. The architecture only requires 11 MB for storage which is almost ten times better than the previous architectures. The architecture has one sixth parameters than the best performing architecture and 50 times less floating point operations per second (FLOPs). The architecture achieves running time of 220[Formula: see text]ms on desktop GPU and 578 ms on Jetson Nano which is also better compared to other similar implementation. It also achieves comparable accuracy in terms of mean average precision (mAP) for both the datasets."
+    },
+    {
+      "paperId": "d0a4be545a95379a748da1ab801368c26b8b93fe",
+      "externalIds": {
+        "ArXiv": "2112.00965",
+        "DBLP": "journals/corr/abs-2112-00965",
+        "CorpusId": 244798667
+      },
+      "title": "Vision Pair Learning: An Efficient Training Framework for Image Classification",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.00965, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2052236540",
+          "name": "Bei Tong"
+        },
+        {
+          "authorId": "2139780768",
+          "name": "Xiaoyuan Yu"
+        }
+      ],
+      "abstract": "Transformer is a potentially powerful architecture for vision tasks. Although equipped with more parameters and attention mechanism, its performance is not as dominant as CNN currently. CNN is usually computationally cheaper and still the leading competitor in various vision tasks. One research direction is to adopt the successful ideas of CNN and improve transformer, but it often relies on elaborated and heuristic network design. Observing that transformer and CNN are complementary in representation learning and convergence speed, we propose an efficient training framework called Vision Pair Learning (VPL) for image classification task. VPL builds up a network composed of a transformer branch, a CNN branch and pair learning module. With multi-stage training strategy, VPL enables the branches to learn from their partners during the appropriate stage of the training process, and makes them both achieve better performance with less time cost. Without external data, VPL promotes the top-1 accuracy of ViT-Base and ResNet-50 on the ImageNet-1k validation set to 83.47% and 79.61% respectively. Experiments on other datasets of various domains prove the efficacy of VPL and suggest that transformer performs better when paired with the differently structured CNN in VPL. we also analyze the importance of components through ablation study."
+    },
+    {
+      "paperId": "6981d253026f2161c3a22d9594c55208301b9ebd",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2109-07953",
+        "ArXiv": "2109.07953",
+        "CorpusId": 237532422
+      },
+      "title": "Efficient Attribute Injection for Pretrained Language Models",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.07953, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "23181472",
+          "name": "Reinald Kim Amplayo"
+        },
+        {
+          "authorId": "31760501",
+          "name": "Kang Min Yoo"
+        },
+        {
+          "authorId": "3226948",
+          "name": "Sang-Woo Lee"
+        }
+      ],
+      "abstract": "Metadata attributes (e.g., user and product IDs from reviews) can be incorporated as additional inputs to neural-based NLP models, by modifying the architecture of the models, in order to improve their performance. Recent models however rely on pretrained language models (PLMs), where previously used techniques for attribute injection are either nontrivial or ineffective. In this paper, we propose a lightweight and memory-efficient method to inject attributes to PLMs. We extend adapters, i.e. tiny plug-in feed-forward modules, to include attributes both independently of or jointly with the text. To limit the increase of parameters especially when the attribute vocabulary is large, we use low-rank approximations and hypercomplex multiplications, significantly decreasing the total parameters. We also introduce training mechanisms to handle domains in which attributes can be multi-labeled or sparse. Extensive experiments and analyses on eight datasets from different domains show that our method outperforms previous attribute injection methods and achieves state-of-the-art performance on various datasets."
+    },
+    {
+      "paperId": "67dc4ba4542d5895862c8b5af5023f659c14542c",
+      "externalIds": {
+        "DBLP": "conf/emnlp/FriedmanDC21",
+        "ACL": "2021.emnlp-main.495",
+        "ArXiv": "2109.13880",
+        "DOI": "10.18653/v1/2021.emnlp-main.495",
+        "CorpusId": 238198206
+      },
+      "title": "Single-dataset Experts for Multi-dataset Question Answering",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "year": 2021,
+      "citationCount": 26,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.emnlp-main.495.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.13880, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40297692",
+          "name": "Dan Friedman"
+        },
+        {
+          "authorId": "2129992453",
+          "name": "Ben Dodge"
+        },
+        {
+          "authorId": "50536468",
+          "name": "Danqi Chen"
+        }
+      ],
+      "abstract": "Many datasets have been created for training reading comprehension models, and a natural question is whether we can combine them to build models that (1) perform better on all of the training datasets and (2) generalize and transfer better to new datasets. Prior work has addressed this goal by training one network simultaneously on multiple datasets, which works well on average but is prone to over- or under-fitting different sub- distributions and might transfer worse compared to source models with more overlap with the target dataset. Our approach is to model multi-dataset question answering with an ensemble of single-dataset experts, by training a collection of lightweight, dataset-specific adapter modules (Houlsby et al., 2019) that share an underlying Transformer model. We find that these Multi-Adapter Dataset Experts (MADE) outperform all our baselines in terms of in-distribution accuracy, and simple methods based on parameter-averaging lead to better zero-shot generalization and few-shot transfer performance, offering a strong and versatile starting point for building new reading comprehension systems."
+    },
+    {
+      "paperId": "280e53932d71a85fc1c3e7b1da7aa3474676a289",
+      "externalIds": {
+        "DOI": "10.1109/RDCAPE52977.2021.9633619",
+        "CorpusId": 245016672
+      },
+      "title": "IOT Based Health Monitoring of Transformer Using Data Logger",
+      "venue": "2021 4th International Conference on Recent Developments in Control, Automation & Power Engineering (RDCAPE)",
+      "year": 2021,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/RDCAPE52977.2021.9633619?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/RDCAPE52977.2021.9633619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2144279152",
+          "name": "Insha Zehra"
+        },
+        {
+          "authorId": "143876939",
+          "name": "M. A. Ansari"
+        }
+      ],
+      "abstract": "The internet of things, or IoT, is a system of interconnected devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers (UIDs) and the abillty to transfer data over a network without requiring human-to-human or human-to-computer interaction. Our work is related to the design and development of a real time data logger that monitors the health of a transformer on load. It does so hy regularly observing some of the important parameters that reflect the working of a transformer. These parameters include Voltage on Load, Working Temperature of Transformer, Vibrations present in transformer, quantity of oil present in the tank of transformer and burning sensation in case of heavy load in a transformer. All these parameters are recorded by the sensors and up dated on the website so that the owner can remotely check its condition over the internet using the concept of lOT. This system can help the owner to get the deteriorating condition of a transformer well in advance and hence specific step be taken without causing any damage to the entire system. Authors are using Ardulno Microcontroller, DHT11 sensor. Voltage Sensor, ESP8266 WIFI Module, Accelerometer and Ultrasonic sensor for this purpose. The system proves to be cost efficient and highly reliable."
+    },
+    {
+      "paperId": "e3b100e5a8847c150985af5ccc838220b2d30e35",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2108-08103",
+        "ArXiv": "2108.08103",
+        "ACL": "2022.acl-demo.6",
+        "DOI": "10.18653/v1/2022.acl-demo.6",
+        "CorpusId": 237194902
+      },
+      "title": "AdapterHub Playground: Simple and Flexible Few-Shot Learning with Adapters",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 18,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2022.acl-demo.6.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2108.08103, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153371561",
+          "name": "Tilman Beck"
+        },
+        {
+          "authorId": "2123595595",
+          "name": "Bela Bohlender"
+        },
+        {
+          "authorId": "2081471193",
+          "name": "Christina Viehmann"
+        },
+        {
+          "authorId": "2123595456",
+          "name": "Vincent Hane"
+        },
+        {
+          "authorId": "2123597342",
+          "name": "Yanik Adamson"
+        },
+        {
+          "authorId": "2123595695",
+          "name": "Jaber Khuri"
+        },
+        {
+          "authorId": "2123597373",
+          "name": "Jonas Brossmann"
+        },
+        {
+          "authorId": "153733568",
+          "name": "Jonas Pfeiffer"
+        },
+        {
+          "authorId": "1730400",
+          "name": "Iryna Gurevych"
+        }
+      ],
+      "abstract": "The open-access dissemination of pretrained language models through online repositories has led to a democratization of state-of-the-art natural language processing (NLP) research.This also allows people outside of NLP to use such models and adapt them to specific use-cases.However, a certain amount of technical proficiency is still required which is an entry barrier for users who want to apply these models to a certain task but lack the necessary knowledge or resources.In this work, we aim to overcome this gap by providing a tool which allows researchers to leverage pretrained models without writing a single line of code.Built upon the parameter-efficient adapter modules for transfer learning, our AdapterHub Playground provides an intuitive interface, allowing the usage of adapters for prediction, training and analysis of textual data for a variety of NLP tasks.We present the tool’s architecture and demonstrate its advantages with prototypical use-cases, where we show that predictive performance can easily be increased in a few-shot learning scenario.Finally, we evaluate its usability in a user study.We provide the code and a live interface at https://adapter-hub.github.io/playground."
+    },
+    {
+      "paperId": "717cbfbcddb3ce5aa99ce59e67c05a45b4e82313",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2112-07791",
+        "ArXiv": "2112.07791",
+        "DOI": "10.1007/978-3-031-47715-7_49",
+        "CorpusId": 245144490
+      },
+      "title": "A Simple But Powerful Graph Encoder for Temporal Knowledge Graph Completion",
+      "venue": "Intelligent Systems with Applications",
+      "year": 2021,
+      "citationCount": 33,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.07791, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2046761003",
+          "name": "Zifeng Ding"
+        },
+        {
+          "authorId": "10684484",
+          "name": "Yunpu Ma"
+        },
+        {
+          "authorId": "2147293727",
+          "name": "Bailan He"
+        },
+        {
+          "authorId": "1742501819",
+          "name": "Volker Tresp"
+        }
+      ],
+      "abstract": "Knowledge graphs contain rich knowledge about various entities and the relational information among them, while temporal knowledge graphs (TKGs) describe and model the interactions of the entities over time. In this context, automatic temporal knowledge graph completion (TKGC) has gained great interest. Recent TKGC methods integrate advanced deep learning techniques, e.g., Transformers, and achieve superior model performance. However, this also introduces a large number of excessive parameters, which brings a heavier burden for parameter optimization. In this paper, we propose a simple but powerful graph encoder for TKGC, called TARGCN. TARGCN is parameter-efficient, and it extensively explores every entity's temporal context for learning contextualized representations. We find that instead of adopting various kinds of complex modules, it is more beneficial to efficiently capture the temporal contexts of entities. We experiment TARGCN on three benchmark datasets. Our model can achieve a more than 46% relative improvement on the GDELT dataset compared with state-of-the-art TKGC models. Meanwhile, it outperforms the strongest baseline on the ICEWS05-15 dataset with around 18% fewer parameters."
+    },
+    {
+      "paperId": "5e5e6c3317814423158054285b81c911a8382b88",
+      "externalIds": {
+        "MAG": "3175181074",
+        "DBLP": "conf/iwslt/GallegoTEFC21",
+        "ArXiv": "2105.04512",
+        "ACL": "2021.iwslt-1.11",
+        "DOI": "10.18653/v1/2021.iwslt-1.11",
+        "CorpusId": 235659103
+      },
+      "title": "End-to-End Speech Translation with Pre-trained Models and Adapters: UPC at IWSLT 2021",
+      "venue": "International Workshop on Spoken Language Translation",
+      "year": 2021,
+      "citationCount": 35,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.iwslt-1.11.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2105.04512, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2003752849",
+          "name": "Gerard I. Gállego"
+        },
+        {
+          "authorId": "122891770",
+          "name": "Yiannis (Ioannis) Tsiamas"
+        },
+        {
+          "authorId": "144483761",
+          "name": "Carlos Escolano"
+        },
+        {
+          "authorId": "1779548",
+          "name": "José A. R. Fonollosa"
+        },
+        {
+          "authorId": "1398996347",
+          "name": "M. Costa-jussà"
+        }
+      ],
+      "abstract": "This paper describes the submission to the IWSLT 2021 offline speech translation task by the UPC Machine Translation group. The task consists of building a system capable of translating English audio recordings extracted from TED talks into German text. Submitted systems can be either cascade or end-to-end and use a custom or given segmentation. Our submission is an end-to-end speech translation system, which combines pre-trained models (Wav2Vec 2.0 and mBART) with coupling modules between the encoder and decoder, and uses an efficient fine-tuning technique, which trains only 20% of its total parameters. We show that adding an Adapter to the system and pre-training it, can increase the convergence speed and the final result, with which we achieve a BLEU score of 27.3 on the MuST-C test set. Our final model is an ensemble that obtains 28.22 BLEU score on the same set. Our submission also uses a custom segmentation algorithm that employs pre-trained Wav2Vec 2.0 for identifying periods of untranscribable text and can bring improvements of 2.5 to 3 BLEU score on the IWSLT 2019 test set, as compared to the result with the given segmentation."
+    },
+    {
+      "paperId": "d7cec63baf11028a2ececb094cf2660f426c0e9d",
+      "externalIds": {
+        "ACL": "2021.repl4nlp-1.11",
+        "DBLP": "conf/rep4nlp/KimSSH21",
+        "DOI": "10.18653/v1/2021.repl4nlp-1.11",
+        "CorpusId": 236486069
+      },
+      "title": "Revisiting Pretraining with Adapters",
+      "venue": "Workshop on Representation Learning for NLP",
+      "year": 2021,
+      "citationCount": 14,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.repl4nlp-1.11.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/2021.repl4nlp-1.11, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2146049872",
+          "name": "Seungwon Kim"
+        },
+        {
+          "authorId": "3323768",
+          "name": "Alex Shum"
+        },
+        {
+          "authorId": "2121373132",
+          "name": "Nathan Susanj"
+        },
+        {
+          "authorId": "113393333",
+          "name": "J. Hilgart"
+        }
+      ],
+      "abstract": "Pretrained language models have served as the backbone for many state-of-the-art NLP results. These models are large and expensive to train. Recent work suggests that continued pretraining on task-specific data is worth the effort as pretraining leads to improved performance on downstream tasks. We explore alternatives to full-scale task-specific pretraining of language models through the use of adapter modules, a parameter-efficient approach to transfer learning. We find that adapter-based pretraining is able to achieve comparable results to task-specific pretraining while using a fraction of the overall trainable parameters. We further explore direct use of adapters without pretraining and find that the direct fine-tuning performs mostly on par with pretrained adapter models, contradicting previously proposed benefits of continual pretraining in full pretraining fine-tuning strategies. Lastly, we perform an ablation study on task-adaptive pretraining to investigate how different hyperparameter settings can change the effectiveness of the pretraining."
+    },
+    {
+      "paperId": "13fb4621e463b66914ec04881ce5844fcb554d47",
+      "externalIds": {
+        "ACL": "2021.wmt-1.62",
+        "ArXiv": "2110.10478",
+        "DBLP": "conf/wmt/Berard21",
+        "CorpusId": 239049989
+      },
+      "title": "Continual Learning in Multilingual NMT via Language-Specific Embeddings",
+      "venue": "Conference on Machine Translation",
+      "year": 2021,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.10478, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2063940463",
+          "name": "Alexandre Bérard"
+        }
+      ],
+      "abstract": "This paper proposes a technique for adding a new source or target language to an existing multilingual NMT model without re-training it on the initial set of languages. It consists in replacing the shared vocabulary with a small language-specific vocabulary and fine-tuning the new embeddings on the new language’s parallel data. Some additional language-specific components may be trained to improve performance (e.g., Transformer layers or adapter modules). Because the parameters of the original model are not modified, its performance on the initial languages does not degrade. We show on two sets of experiments (small-scale on TED Talks, and large-scale on ParaCrawl) that this approach performs as well or better as the more costly alternatives; and that it has excellent zero-shot performance: training on English-centric data is enough to translate between the new language and any of the initial languages."
+    },
+    {
+      "paperId": "ca083ae5c46a6d5fe79f18bd455d59d1e2825908",
+      "externalIds": {
+        "DBLP": "journals/tches/NatarajanD21",
+        "DOI": "10.46586/tches.v2021.i3.756-779",
+        "CorpusId": 235813349
+      },
+      "title": "SEAL-Embedded: A Homomorphic Encryption Library for the Internet of Things",
+      "venue": "IACR Trans. Cryptogr. Hardw. Embed. Syst.",
+      "year": 2021,
+      "citationCount": 40,
+      "openAccessPdf": {
+        "url": "https://tches.iacr.org/index.php/TCHES/article/download/8991/8568",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.46586/tches.v2021.i3.756-779?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.46586/tches.v2021.i3.756-779, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50286833",
+          "name": "Deepika Natarajan"
+        },
+        {
+          "authorId": "2054962154",
+          "name": "Wei Dai"
+        }
+      ],
+      "abstract": "The growth of the Internet of Things (IoT) has led to concerns over the lack of security and privacy guarantees afforded by IoT systems. Homomorphic encryption (HE) is a promising privacy-preserving solution to allow devices to securely share data with a cloud backend; however, its high memory consumption and computational overhead have limited its use on resource-constrained embedded devices. To address this problem, we present SEAL-Embedded, the first HE library targeted for embedded devices, featuring the CKKS approximate homomorphic encryption scheme. SEAL-Embedded employs several computational and algorithmic optimizations along with a detailed memory re-use scheme to achieve memory efficient, high performance CKKS encoding and encryption on embedded devices without any sacrifice of security. We additionally provide an “adapter” server module to convert data encrypted by SEAL-Embedded to be compatible with the Microsoft SEAL library for homomorphic encryption, enabling an end-to-end solution for building privacy-preserving applications. For a polynomial ring degree of 4096, using RNS primes of 30 or fewer bits, our library can be configured to use between 64–137 KB of RAM and 1–264 KB of flash data, depending on developer-selected configurations and tradeoffs. Using these parameters, we evaluate SEAL-Embedded on two different IoT platforms with high performance, memory efficient, and balanced configurations of the library for asymmetric and symmetric encryption. With 136 KB of RAM, SEAL-Embedded can perform asymmetric encryption of 2048 single-precision numbers in 77 ms on the Azure Sphere Cortex-A7 and 737 ms on the Nordic nRF52840 Cortex-M4."
+    },
+    {
+      "paperId": "8ccaf0c0fbd5e4079f36fa720cf23890be10dd66",
+      "externalIds": {
+        "ArXiv": "2110.06399",
+        "DBLP": "conf/nips/RahamanGJGBLS21",
+        "CorpusId": 238743991
+      },
+      "title": "Dynamic Inference with Neural Interpreters",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 35,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.06399, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40050919",
+          "name": "Nasim Rahaman"
+        },
+        {
+          "authorId": "51214165",
+          "name": "Muhammad Waleed Gondal"
+        },
+        {
+          "authorId": "2114034081",
+          "name": "S. Joshi"
+        },
+        {
+          "authorId": "2871555",
+          "name": "Peter Gehler"
+        },
+        {
+          "authorId": "1751762",
+          "name": "Yoshua Bengio"
+        },
+        {
+          "authorId": "9557137",
+          "name": "Francesco Locatello"
+        },
+        {
+          "authorId": "1707625",
+          "name": "B. Scholkopf"
+        }
+      ],
+      "abstract": "Modern neural network architectures can leverage large amounts of data to generalize well within the training distribution. However, they are less capable of systematic generalization to data drawn from unseen but related distributions, a feat that is hypothesized to require compositional reasoning and reuse of knowledge. In this work, we present Neural Interpreters, an architecture that factorizes inference in a self-attention network as a system of modules, which we call \\emph{functions}. Inputs to the model are routed through a sequence of functions in a way that is end-to-end learned. The proposed architecture can flexibly compose computation along width and depth, and lends itself well to capacity extension after training. To demonstrate the versatility of Neural Interpreters, we evaluate it in two distinct settings: image classification and visual abstract reasoning on Raven Progressive Matrices. In the former, we show that Neural Interpreters perform on par with the vision transformer using fewer parameters, while being transferrable to a new task in a sample efficient manner. In the latter, we find that Neural Interpreters are competitive with respect to the state-of-the-art in terms of systematic generalization"
+    },
+    {
+      "paperId": "90fd2506e5b7f51f7ffb4c0d90371555a0d66e11",
+      "externalIds": {
+        "DBLP": "conf/aaai/Chen0L21a",
+        "DOI": "10.1609/aaai.v35i14.17496",
+        "CorpusId": 235349236
+      },
+      "title": "Lexically Constrained Neural Machine Translation with Explicit Alignment Guidance",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "year": 2021,
+      "citationCount": 31,
+      "openAccessPdf": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/17496/17303",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1609/aaai.v35i14.17496?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1609/aaai.v35i14.17496, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1455940157",
+          "name": "Guanhua Chen"
+        },
+        {
+          "authorId": "2144861469",
+          "name": "Yun Chen"
+        },
+        {
+          "authorId": "2052674293",
+          "name": "V. Li"
+        }
+      ],
+      "abstract": "Lexically constrained neural machine translation (NMT), which leverages pre-specified translation to constrain NMT, has practical significance in interactive translation and NMT domain adaption. Previous work either modify the decoding algorithm or train the model on augmented dataset. These methods suffer from either high computational overheads or low copying success rates. In this paper, we investigate Att-Input and Att-Output, two alignment-based constrained decoding methods. These two methods revise the target tokens during decoding based on word alignments derived from encoder-decoder attention weights. Our study shows that Att-Input translates better while Att-Output is more computationally efficient. Capitalizing on both strengths, we further propose EAM-Output by introducing an explicit alignment module (EAM) to a pretrained Transformer. It decodes similarly as EAM-Output, except using alignments derived from the EAM. We leverage the word alignments induced from Att-Input as labels and train the EAM while keeping the parameters of the Transformer frozen. Experiments on WMT16 De-En and WMT16 Ro-En show the effectiveness of our approaches on constrained NMT. In particular, the proposed EAM-Output method consistently outperforms previous approaches in translation quality, with light computational overheads over unconstrained baseline."
+    },
+    {
+      "paperId": "ee732f7ec260d1efa3c77e8938a9d38f76342652",
+      "externalIds": {
+        "ArXiv": "2109.02008",
+        "CorpusId": 245986760
+      },
+      "title": "Cross-token Modeling with Conditional Computation",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 29,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.02008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2053694448",
+          "name": "Yuxuan Lou"
+        },
+        {
+          "authorId": "2144332771",
+          "name": "Fuzhao Xue"
+        },
+        {
+          "authorId": "2109654065",
+          "name": "Zangwei Zheng"
+        },
+        {
+          "authorId": "2054451943",
+          "name": "Yang You"
+        }
+      ],
+      "abstract": "Mixture-of-Experts (MoE), a conditional computation architecture, achieved promising performance by scaling local module (i.e. feed-forward network) of transformer. However, scaling the cross-token module (i.e. self-attention) is challenging due to the unstable training. This work proposes Sparse-MLP, an all-MLP model which applies sparsely-activated MLPs to cross-token modeling. Specifically, in each Sparse block of our all-MLP model, we apply two stages of MoE layers: one with MLP experts mixing information within channels along image patch dimension, the other with MLP experts mixing information within patches along the channel dimension. In addition, by proposing importance-score routing strategy for MoE and redesigning the image representation shape, we further improve our model's computational efficiency. Experimentally, we are more computation-efficient than Vision Transformers with comparable accuracy. Also, our models can outperform MLP-Mixer by 2.5\\% on ImageNet Top-1 accuracy with fewer parameters and computational cost. On downstream tasks, i.e. Cifar10 and Cifar100, our models can still achieve better performance than baselines."
+    },
+    {
+      "paperId": "348af8247f81d56cae1d9b00a69e242056b171e9",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2107-09622",
+        "ArXiv": "2107.09622",
+        "ACL": "2021.findings-acl.9",
+        "DOI": "10.18653/v1/2021.findings-acl.9",
+        "CorpusId": 236134371
+      },
+      "title": "More Parameters? No Thanks!",
+      "venue": "Findings",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2021.findings-acl.9.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2107.09622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153177135",
+          "name": "Zeeshan Khan"
+        },
+        {
+          "authorId": "2034181156",
+          "name": "Kartheek Akella"
+        },
+        {
+          "authorId": "145460361",
+          "name": "Vinay P. Namboodiri"
+        },
+        {
+          "authorId": "1694502",
+          "name": "C. V. Jawahar"
+        }
+      ],
+      "abstract": "This work studies the long-standing problems of model capacity and negative interference in multilingual neural machine translation MNMT. We use network pruning techniques and observe that pruning 50-70% of the parameters from a trained MNMT model results only in a 0.29-1.98 drop in the BLEU score. Suggesting that there exist large redundancies even in MNMT models. These observations motivate us to use the redundant parameters and counter the interference problem efficiently. We propose a novel adaptation strategy, where we iteratively prune and retrain the redundant parameters of an MNMT to improve bilingual representations while retaining the multilinguality. Negative interference severely affects high resource languages, and our method alleviates it without any additional adapter modules. Hence, we call it parameter-free adaptation strategy, paving way for the efficient adaptation of MNMT. We demonstrate the effectiveness of our method on a 9 language MNMT trained on TED talks, and report an average improvement of +1.36 BLEU on high resource pairs. Code will be released here."
+    },
+    {
+      "paperId": "6c1bb8b017c469208bd7e3a80639bdb5f1726e2c",
+      "externalIds": {
+        "ArXiv": "2104.00563",
+        "DBLP": "conf/iclr/GirgisGCWDKHP22",
+        "CorpusId": 246824069
+      },
+      "title": "Latent Variable Sequential Set Transformers for Joint Multi-Agent Motion Prediction",
+      "venue": "International Conference on Learning Representations",
+      "year": 2021,
+      "citationCount": 216,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.00563, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31773740",
+          "name": "Roger Girgis"
+        },
+        {
+          "authorId": "2066832277",
+          "name": "Florian Golemo"
+        },
+        {
+          "authorId": "2962623",
+          "name": "Felipe Codevilla"
+        },
+        {
+          "authorId": "144069571",
+          "name": "Martin Weiss"
+        },
+        {
+          "authorId": "2061747430",
+          "name": "Jim Aldon D’Souza"
+        },
+        {
+          "authorId": "3127597",
+          "name": "Samira Ebrahimi Kahou"
+        },
+        {
+          "authorId": "49857575",
+          "name": "Felix Heide"
+        },
+        {
+          "authorId": "1972076",
+          "name": "C. Pal"
+        }
+      ],
+      "abstract": "Robust multi-agent trajectory prediction is essential for the safe control of robotic systems. A major challenge is to efficiently learn a representation that approximates the true joint distribution of contextual, social, and temporal information to enable planning. We propose Latent Variable Sequential Set Transformers which are encoder-decoder architectures that generate scene-consistent multi-agent trajectories. We refer to these architectures as\"AutoBots\". The encoder is a stack of interleaved temporal and social multi-head self-attention (MHSA) modules which alternately perform equivariant processing across the temporal and social dimensions. The decoder employs learnable seed parameters in combination with temporal and social MHSA modules allowing it to perform inference over the entire future scene in a single forward pass efficiently. AutoBots can produce either the trajectory of one ego-agent or a distribution over the future trajectories for all agents in the scene. For the single-agent prediction case, our model achieves top results on the global nuScenes vehicle motion prediction leaderboard, and produces strong results on the Argoverse vehicle prediction challenge. In the multi-agent setting, we evaluate on the synthetic partition of TrajNet++ dataset to showcase the model's socially-consistent predictions. We also demonstrate our model on general sequences of sets and provide illustrative experiments modelling the sequential structure of the multiple strokes that make up symbols in the Omniglot data. A distinguishing feature of AutoBots is that all models are trainable on a single desktop GPU (1080 Ti) in under 48h."
+    },
+    {
+      "paperId": "ff11e77619b24a4b42a4d7c24b7d19719564ee8f",
+      "externalIds": {
+        "MAG": "3196018841",
+        "DOI": "10.1007/s42835-021-00869-4",
+        "CorpusId": 238727930
+      },
+      "title": "Power Quality Improvement in Distribution System Based on Dynamic Voltage Restorer Using Rational Energy Transformative Optimization Algorithm",
+      "venue": "Journal of Electrical Engineering and Technology",
+      "year": 2021,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s42835-021-00869-4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s42835-021-00869-4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "113785078",
+          "name": "L. Nagarajan"
+        },
+        {
+          "authorId": "49126521",
+          "name": "M. Senthilkumar"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "980dd86026eba0fd645978666bffafca571a1094",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2105-04512",
+        "CorpusId": 263880512
+      },
+      "title": "UPC's Speech Translation System for IWSLT 2021",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://arxiv.org/abs/2105.04512, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2288547162",
+          "name": "Gerard I. Gállego"
+        },
+        {
+          "authorId": "122891770",
+          "name": "Yiannis (Ioannis) Tsiamas"
+        },
+        {
+          "authorId": "38650481",
+          "name": "C. Escolano"
+        },
+        {
+          "authorId": "2256612671",
+          "name": "José A. R. Fonollosa"
+        },
+        {
+          "authorId": "1398996347",
+          "name": "M. Costa-jussà"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "89ac506373bee41d32d47d3bfedb41df804e6924",
+      "externalIds": {
+        "CorpusId": 251538503
+      },
+      "title": "MS-CLIP: M ODALITY -S HARED C ONTRASTIVE L ANGUAGE -I MAGE P RE - TRAINING",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=ROteIE-4A6W, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "5304392b888f93c4f1730b7d65e66f6a103b3518",
+      "externalIds": {
+        "DBLP": "conf/acl/DabreKSS23",
+        "ACL": "2023.acl-demo.24",
+        "ArXiv": "2108.11126",
+        "DOI": "10.18653/v1/2023.acl-demo.24",
+        "CorpusId": 237291793
+      },
+      "title": "YANMTT: Yet Another Neural Machine Translation Toolkit",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "year": 2021,
+      "citationCount": 14,
+      "openAccessPdf": {
+        "url": "https://aclanthology.org/2023.acl-demo.24.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2108.11126, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3209719",
+          "name": "Raj Dabre"
+        },
+        {
+          "authorId": "1698363",
+          "name": "E. Sumita"
+        }
+      ],
+      "abstract": "In this paper, we present our open-source neural machine translation (NMT) toolkit called “Yet Another Neural Machine Translation Toolkit” abbreviated as YANMTT - https://github.com/prajdabre/yanmtt, which is built on top of the HuggingFace Transformers library. YANMTT focuses on transfer learning and enables easy pre-training and fine-tuning of sequence-to-sequence models at scale. It can be used for training parameter-heavy models with minimal parameter sharing and efficient, lightweight models via heavy parameter sharing. Additionally, it supports parameter-efficient fine-tuning (PEFT) through adapters and prompts. Our toolkit also comes with a user interface that can be used to demonstrate these models and visualize various parts of the model. Apart from these core features, our toolkit also provides other advanced functionalities such as but not limited to document/multi-source NMT, simultaneous NMT, mixtures-of-experts, model compression and continual learning."
+    },
+    {
+      "paperId": "aa322774c7ead8dc76de490f2ca9887a900eb95b",
+      "externalIds": {
+        "MAG": "3149344359",
+        "DOI": "10.37394/232017.2021.12.4",
+        "CorpusId": 233611097
+      },
+      "title": "Frequency Converter for Induction Heating Oil in Oil Pipelines",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.37394/232017.2021.12.4",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.37394/232017.2021.12.4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.37394/232017.2021.12.4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3051207",
+          "name": "N. Isembergenov"
+        },
+        {
+          "authorId": "115955542",
+          "name": "A. Sagyndikova"
+        },
+        {
+          "authorId": "2087479346",
+          "name": "M. Konyrova"
+        }
+      ],
+      "abstract": "Heating oil in oil pipelines to the required temperature, with the most efficient use of electrical energy,is possible with using of the induction heating method. The most important parameter of induction heating settings is frequency. For each process, there is an optimal frequency range that provides the best technological and economic results. Induction heating of the oil pipeline occurs as follows, if alternating high-frequency current is passed through the windings of the oil pipeline inductor (Fig. 1), an alternating magnetic field is formed, which intersects the metal walls of the oil pipeline and induces eddy currents in them. These currents heat the metal walls of the pipeline to the desired temperature and, accordingly, the oil. MITSUBISHI's VIPM Series Intelligent Power Transistor Modules (IPM), which is a functionally complete product, are currently developed and marketed. These transistor modules are designed for high voltages, currents and power. A frequency converter made on these transistor modules allows to heat large diameter oil pipelines. A prototype IGBT transformer was designed and manufactured. Figure 2 shows a prototype of a frequency converter with a power of 6 kW at frequencies from 2 to 20 kHz. Induction heating of metal was used as a load for the frequency converter"
+    },
+    {
+      "paperId": "b31d9744e6e74346e29bf1b873e7ee63f09679f1",
+      "externalIds": {
+        "DOI": "10.1109/EI252483.2021.9713612",
+        "CorpusId": 247110301
+      },
+      "title": "Design and Implementation of FPGA Based Boost Half Bridge DC-DC Multiphase Converter",
+      "venue": "2021 IEEE 5th Conference on Energy Internet and Energy System Integration (EI2)",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EI252483.2021.9713612?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EI252483.2021.9713612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2143688527",
+          "name": "Yi Yang"
+        }
+      ],
+      "abstract": "Recently, fuel cells as a highly efficient, clean energy conversion device with multiple applications have received particular attention. DC-DC module is an important component of fuel cell energy conversion device. Based on this, this paper studies a new type of DC-DC converter which is used in high power applications. The structure of the multiphase converter are introduced, for the interleaved control strategy and its implementation for multiphase converter is proposed in this paper is described in detail, analyzes the working principle of the system and the zero voltage switching condition, gives the system in a complete working mode switch period, expounds the concrete the steps of control system and the main circuit parameter design, based on high frequency transformer in the same ratio and different conditions were analyzed by MATLAB simulation and experimental verification."
+    },
+    {
+      "paperId": "069efb273be7a81cecb2eb4af372519d2afec38c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2104-05575",
+        "ArXiv": "2104.05575",
+        "DOI": "10.1007/978-3-030-86362-3_23",
+        "CorpusId": 233210057
+      },
+      "title": "GAttANet: Global attention agreement for convolutional neural networks",
+      "venue": "International Conference on Artificial Neural Networks",
+      "year": 2021,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.05575, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7674447",
+          "name": "R. V. Rullen"
+        },
+        {
+          "authorId": "3432960",
+          "name": "A. Alamia"
+        }
+      ],
+      "abstract": "Transformer attention architectures, similar to those developed for natural language processing, have recently proved efficient also in vision, either in conjunction with or as a replacement for convolutional layers. Typically, visual attention is inserted in the network architecture as a (series of) feedforward self-attention module(s), with mutual key-query agreement as the main selection and routing operation. However efficient, this strategy is only vaguely compatible with the way that attention is implemented in biological brains: as a separate and unified network of attentional selection regions, receiving inputs from and exerting modulatory influence on the entire hierarchy of visual regions. Here, we report experiments with a simple such attention system that can improve the performance of standard convolutional networks, with relatively few additional parameters. Each spatial position in each layer of the network produces a key-query vector pair; all queries are then pooled into a global attention query. On the next iteration, the match between each key and the global attention query modulates the network's activations -- emphasizing or silencing the locations that agree or disagree (respectively) with the global attention system. We demonstrate the usefulness of this brain-inspired Global Attention Agreement network (GAttANet) for various convolutional backbones (from a simple 5-layer toy model to a standard ResNet50 architecture) and datasets (CIFAR10, CIFAR100, Imagenet-1k). Each time, our global attention system improves accuracy over the corresponding baseline."
+    },
+    {
+      "paperId": "16d99be29ae49377d5590cc5d76e08a5b8d964f2",
+      "externalIds": {
+        "DBLP": "journals/jifs/RaiSA21",
+        "DOI": "10.3233/JIFS-210441",
+        "CorpusId": 240266191
+      },
+      "title": "Framed Recurrent Neural Network with Mutated Dragonfly Search Optimization (FRNN-MDSO) for hyperspectral image based face recognition in real time door locking applications",
+      "venue": "Journal of Intelligent & Fuzzy Systems",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3233/JIFS-210441?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3233/JIFS-210441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2075395261",
+          "name": "Ashok Kumar Rai"
+        },
+        {
+          "authorId": "145862298",
+          "name": "R. Senthilkumar"
+        },
+        {
+          "authorId": "3461687",
+          "name": "Kannan Arputharaj"
+        }
+      ],
+      "abstract": "Face recognition is one of the best applications of computer recognition and recent smart house applications. Therefore, it draws considerable attention from researchers. Several face recognition algorithms have been proposed in the last decade, but these methods did not give the efficient outcome. Therefore, this work introduces a novel constructive training algorithm for smart face recognition in door locking applications. The proposed Framed Recurrent Neural Network with Mutated Dragonfly Search Optimization (FRNN-MDSO) Strategy is applied to face recognition application. The steady preparing system has been utilized where the training designs are adapted steadily and are divided into completely different modules. The facial feature process works on global and local features. After the feature extraction and selection process, employ the improved classifier followed by the Framed Recurrent Neural Network classification technique. Finally, the face image based on the feature library can be identified. The proposed Framed Recurrent Neural Network with Mutated Dragonfly Search Optimization starts with a single training pattern using Bidirectional Encoder Representations from Transformers (BERT) model. During network training, the Training Data (TD) decrease the Mean Square Error (MSE) while the matching process increases the algorithms generated which are trapped at the local minimum. The training data have been trained to increase the number of input forms (one after the other) until all the forms are selected and trained. An FRNN-MDSO based face recognition system is built, and face recognition is tested using hyperspectral Database parameters. The simulation results indicate that the proposed method acquires the associate grade optimum design of FRNN with MDSO methodology using the present constructive algorithm and prove the proposed FRNN-MDSO method’s effectiveness compared to the conventional architecture methods."
+    },
+    {
+      "paperId": "2a0a1e730df5850ef5ae20718b2602df86c18e02",
+      "externalIds": {
+        "DOI": "10.31548/energiya2021.02.039",
+        "CorpusId": 239212624
+      },
+      "title": "The energy efficiency concept and implementation prospects of the jet thermocompression principle in small heat energy",
+      "venue": "Energy and automation",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "http://journals.nubip.edu.ua/index.php/Energiya/article/download/energiya2021.02.039/13637",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.31548/energiya2021.02.039?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.31548/energiya2021.02.039, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "115410025",
+          "name": "M. Prokopov"
+        },
+        {
+          "authorId": "41022331",
+          "name": "S. Sharapov"
+        },
+        {
+          "authorId": "98197456",
+          "name": "Yu. I. Merzlyakov"
+        },
+        {
+          "authorId": "98849439",
+          "name": "D. Gusev"
+        }
+      ],
+      "abstract": "The expediency of the implementation of the principle of steam thermal compression to improve the energy efficiency of sources of electricity and heat supply of small heat power engineering is substantiated. The results of thermodynamic analysis and numerical optimization of the parameters of the compressor steam-turbine cycle of a small cogeneration power plant are presented. A jet step-down thermotransformer has been tested - as an alternative to traditional boiler heating. On the basis of the conducted thermodynamic analysis, a new combined cycle of a step-down thermotransformer has been developed, which ensures efficient conversion of the supplied energy (mainly in the form of fuel heat) into the heat carrier flow of the heat supply system with the required temperature level 50 ... 90 °C). The fundamental difference between the considered thermal transformer and steam compressor heat pumps is the replacement of a mechanical compressor with a steam thermocompressor module (STC-unit). The working process in the STK-module is realized by using the liquid phase of the refrigerant, which boils up during expiration, subcooled to saturation, as an active medium of a jet compressor. Injection of steam from the evaporator is provided due to the fine-dispersed vapor-droplet structure formed in the outlet section of the active flow nozzle. A program for the numerical study of the working process of a step-down thermal transformer was prepared and tested, on the basis of which multivariate calculations were carried out. On the basis of computational studies, the area of achievable indicators of the proposed heat supply system has been established; the area of initial operating parameters corresponding to the maximum values of the conversion coefficient and exergy efficiency was determined; comparative indicators of the main parameters of the investigated thermal transformer on various working substances in the range of operating modes as a heat pump or a refrigerating machine were obtained. Key words: workflow, steam thermocompressor, step-down thermotransformer, energy efficiency, heat pump mode"
+    },
+    {
+      "paperId": "9db15c5b1cc45aa524bf14a717bfd251ba273a34",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2107-03474",
+        "ArXiv": "2107.03474",
+        "CorpusId": 235765422
+      },
+      "title": "Differentiable Random Access Memory using Lattices",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2107.03474, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1964382",
+          "name": "Adam P. Goucher"
+        },
+        {
+          "authorId": "2304955112",
+          "name": "Rajan Troll"
+        }
+      ],
+      "abstract": "We introduce a differentiable random access memory module with $O(1)$ performance regardless of size, scaling to billions of entries. The design stores entries on points of a chosen lattice to calculate nearest neighbours of arbitrary points efficiently by exploiting symmetries. Augmenting a standard neural network architecture with a single memory layer based on this, we can scale the parameter count up to memory limits with negligible computational overhead, giving better accuracy at similar cost. On large language modelling tasks, these enhanced models with larger capacity significantly outperform the unmodified transformer baseline. We found continued scaling with memory size up to the limits tested."
+    },
+    {
+      "paperId": "81508bfd2495867be3463df17e25f364d3554297",
+      "externalIds": {
+        "DBLP": "conf/colins/LutskivL21",
+        "CorpusId": 235271313
+      },
+      "title": "Corpus-Based Translation Automation of Adaptable Corpus Translation Module",
+      "venue": "International Conference on Computational Linguistics and Intelligent Systems",
+      "year": 2021,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://ceur-ws.org/Vol-2870/paper38.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2079053061",
+          "name": "A. Lutskiv"
+        },
+        {
+          "authorId": "2106529832",
+          "name": "Roman Lutsyshyn"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "6a083f1679e4984f82adceb8c3cbba6d878f0da5",
+      "externalIds": {
+        "DBLP": "conf/ijcnn/LiNEW21",
+        "DOI": "10.1109/IJCNN52387.2021.9534214",
+        "CorpusId": 237597324
+      },
+      "title": "Multiple Self-attention Network for Intracranial Vessel Segmentation",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2021,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IJCNN52387.2021.9534214?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IJCNN52387.2021.9534214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2154898661",
+          "name": "Yang Li"
+        },
+        {
+          "authorId": "2054555974",
+          "name": "Jiajia Ni"
+        },
+        {
+          "authorId": "6127333",
+          "name": "A. Elazab"
+        },
+        {
+          "authorId": "1788923",
+          "name": "Jianhuang Wu"
+        }
+      ],
+      "abstract": "The capture of long-distance dependencies presents an efficient approach for feature learning and extraction. Especially the Transformers models that explore the dependencies within a long sequence, have swept the fields of natural language processing with their powerful performance. However, Transformers require extremely high computing power due to the huge amount of parameters, and it cannot achieve parallelism since it outputs tokens one by one. In this work, inspired by Transformers, we propose a self-attention encoder module (SAEM) that focuses on learning the connections between each position and all other positions in the image, which preserves the efficiency of Transformers but with less calculation and faster inference speed. In our SAEM, different group of internal feature maps within images captured by multiple scaled self-attentions are cascaded to generate global context information. Based on our SAEM, a lightweight and parallel network is designed for segmentation of intracranial blood vessels. Moreover, a data augmentation method is proposed, called sliced mosaic permutation, which makes the original image features richer and alleviates the problem of category imbalance, via cutting the original images with different scales and recombining randomly. We apply SAEM and sliced mosaic permutation to the task of intracranial blood vessel segmentation, the result shows that our method outperforms competitive methods in both visualization results and quantitative evaluation."
+    },
+    {
+      "paperId": "eb20e67ee20cd4122f3812b695b79a3220f2fe4a",
+      "externalIds": {
+        "DBLP": "conf/miccai/ZhangLH21",
+        "ArXiv": "2102.08005",
+        "DOI": "10.1007/978-3-030-87193-2_2",
+        "CorpusId": 231933932
+      },
+      "title": "TransFuse: Fusing Transformers and CNNs for Medical Image Segmentation",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": 2021,
+      "citationCount": 1464,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.08005, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49890233",
+          "name": "Yundong Zhang"
+        },
+        {
+          "authorId": "30949464",
+          "name": "Huiye Liu"
+        },
+        {
+          "authorId": "152280946",
+          "name": "Qiang Hu"
+        }
+      ],
+      "abstract": "Medical image segmentation - the prerequisite of numerous clinical needs - has been significantly prospered by recent advances in convolutional neural networks (CNNs). However, it exhibits general limitations on modeling explicit long-range relation, and existing cures, resorting to building deep encoders along with aggressive downsampling operations, leads to redundant deepened networks and loss of localized details. Hence, the segmentation task awaits a better solution to improve the efficiency of modeling global contexts while maintaining a strong grasp of low-level details. In this paper, we propose a novel parallel-in-branch architecture, TransFuse, to address this challenge. TransFuse combines Transformers and CNNs in a parallel style, where both global dependency and low-level spatial details can be efficiently captured in a much shallower manner. Besides, a novel fusion technique - BiFusion module is created to efficiently fuse the multi-level features from both branches. Extensive experiments demonstrate that TransFuse achieves the newest state-of-the-art results on both 2D and 3D medical image sets including polyp, skin lesion, hip, and prostate segmentation, with significant parameter decrease and inference speed improvement."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "adapter modules transformer parameter efficient",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2021"
+}

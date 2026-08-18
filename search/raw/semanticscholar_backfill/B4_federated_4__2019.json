@@ -1,0 +1,260 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "federated fine-tuning data heterogeneity non-IID",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:47:38Z",
+  "total_results_reported": 6,
+  "returned": 6,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "c802ceb7a9ff904220c48ee44ae9b671be6d6379",
+      "externalIds": {
+        "DBLP": "conf/iclr/LiHYWZ20",
+        "MAG": "2955213239",
+        "ArXiv": "1907.02189",
+        "CorpusId": 195798643
+      },
+      "title": "On the Convergence of FedAvg on Non-IID Data",
+      "venue": "International Conference on Learning Representations",
+      "year": 2019,
+      "citationCount": 3055,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.02189, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2144441175",
+          "name": "Xiang Li"
+        },
+        {
+          "authorId": "2112769495",
+          "name": "Kaixuan Huang"
+        },
+        {
+          "authorId": "2120825632",
+          "name": "Wenhao Yang"
+        },
+        {
+          "authorId": "145940973",
+          "name": "Shusen Wang"
+        },
+        {
+          "authorId": "47294286",
+          "name": "Zhihua Zhang"
+        }
+      ],
+      "abstract": "Federated learning enables a large amount of edge computing devices to jointly learn a model without data sharing. As a leading algorithm in this setting, Federated Averaging (\\texttt{FedAvg}) runs Stochastic Gradient Descent (SGD) in parallel on a small subset of the total devices and averages the sequences only once in a while. Despite its simplicity, it lacks theoretical guarantees under realistic settings. In this paper, we analyze the convergence of \\texttt{FedAvg} on non-iid data and establish a convergence rate of $\\mathcal{O}(\\frac{1}{T})$ for strongly convex and smooth problems, where $T$ is the number of SGDs. Importantly, our bound demonstrates a trade-off between communication-efficiency and convergence rate. As user devices may be disconnected from the server, we relax the assumption of full device participation to partial device participation and study different averaging schemes; low device participation rate can be achieved without severely slowing down the learning. Our results indicate that heterogeneity of data slows down the convergence, which matches empirical observations. Furthermore, we provide a necessary condition for \\texttt{FedAvg} on non-iid data: the learning rate $\\eta$ must decay, even if full-gradient is used; otherwise, the solution will be $\\Omega (\\eta)$ away from the optimal."
+    },
+    {
+      "paperId": "d1a7d35ac84502c14737567b72249e952e824d72",
+      "externalIds": {
+        "MAG": "3093742719",
+        "DBLP": "conf/bigdataconf/ChenNSR20",
+        "DOI": "10.1109/BigData50022.2020.9378161",
+        "CorpusId": 224896087
+      },
+      "title": "Asynchronous Online Federated Learning for Edge Devices with Non-IID Data",
+      "venue": "2020 IEEE International Conference on Big Data (Big Data)",
+      "year": 2019,
+      "citationCount": 483,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData50022.2020.9378161?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData50022.2020.9378161, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1519030098",
+          "name": "Yujing Chen"
+        },
+        {
+          "authorId": "26426534",
+          "name": "Yue Ning"
+        },
+        {
+          "authorId": "8144056",
+          "name": "M. Slawski"
+        },
+        {
+          "authorId": "145344187",
+          "name": "H. Rangwala"
+        }
+      ],
+      "abstract": "Federated learning (FL) is a machine learning paradigm where a shared central model is learned across distributed devices while the training data remains on these devices. Federated Averaging (FedAvg) is the leading optimization method for training non-convex models in this setting with a synchronized protocol. However, the assumptions made by FedAvg are not realistic given the heterogeneity of devices. First, the volume and distribution of collected data vary in the training process due to different sampling rates of edge devices. Second, the edge devices themselves also vary in latency and system configurations, such as memory, processor speed, and power requirements. This leads to vastly different computation times. Third, availability issues at edge devices can lead to a lack of contribution from specific edge devices to the federated model. In this paper, we present an Asynchronous Online Federated Learning (ASO-Fed) framework, where the edge devices perform online learning with continuous streaming local data and a central server aggregates model parameters from clients. Our framework updates the central model in an asynchronous manner to tackle the challenges associated with both varying computational loads at heterogeneous edge devices and edge devices that lag behind or dropout. We perform extensive experiments on a benchmark image dataset and three real-world datasets with non-IID streaming data. The results demonstrate ASO-Fed converging fast and maintaining good prediction performance."
+    },
+    {
+      "paperId": "fc7b1823bd8b59a590d0bc33bd7a145518fd71c5",
+      "externalIds": {
+        "MAG": "3006555759",
+        "DBLP": "conf/icml/KarimireddyKMRS20",
+        "CorpusId": 214069261
+      },
+      "title": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+      "venue": "International Conference on Machine Learning",
+      "year": 2019,
+      "citationCount": 4237,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://proceedings.mlr.press/v119/karimireddy20a/karimireddy20a-supp.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40911632",
+          "name": "Sai Praneeth Karimireddy"
+        },
+        {
+          "authorId": "144055676",
+          "name": "Satyen Kale"
+        },
+        {
+          "authorId": "81080659",
+          "name": "M. Mohri"
+        },
+        {
+          "authorId": "1981186",
+          "name": "Sashank J. Reddi"
+        },
+        {
+          "authorId": "2127057",
+          "name": "Sebastian U. Stich"
+        },
+        {
+          "authorId": "9486035",
+          "name": "A. Suresh"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "743bb270d501bb4c4c2760ee68f8864344c83114",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1909-12488",
+        "ArXiv": "1909.12488",
+        "MAG": "2976335444",
+        "CorpusId": 203591432
+      },
+      "title": "Improving Federated Learning Personalization via Model Agnostic Meta Learning",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 689,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.12488, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "9808549",
+          "name": "Yihan Jiang"
+        },
+        {
+          "authorId": "32139366",
+          "name": "Jakub Konecný"
+        },
+        {
+          "authorId": "1387453057",
+          "name": "Keith Rush"
+        },
+        {
+          "authorId": "2404352759",
+          "name": "Sreeram Kannan"
+        }
+      ],
+      "abstract": "Federated Learning (FL) refers to learning a high quality global model based on decentralized data storage, without ever copying the raw data. A natural scenario arises with data created on mobile phones by the activity of their users. Given the typical data heterogeneity in such situations, it is natural to ask how can the global model be personalized for every such device, individually. In this work, we point out that the setting of Model Agnostic Meta Learning (MAML), where one optimizes for a fast, gradient-based, few-shot adaptation to a heterogeneous distribution of tasks, has a number of similarities with the objective of personalization for FL. We present FL as a natural source of practical applications for MAML algorithms, and make the following observations. 1) The popular FL algorithm, Federated Averaging, can be interpreted as a meta learning algorithm. 2) Careful fine-tuning can yield a global model with higher accuracy, which is at the same time easier to personalize. However, solely optimizing for the global model accuracy yields a weaker personalization result. 3) A model trained using a standard datacenter optimization method is much harder to personalize, compared to one trained using Federated Averaging, supporting the first claim. These results raise new questions for FL, MAML, and broader ML research."
+    },
+    {
+      "paperId": "39237346bc8111f80379ed96a68f903e431d756d",
+      "externalIds": {
+        "MAG": "2970741653",
+        "PubMedCentral": "6768098",
+        "DOI": "10.3389/fimmu.2019.02145",
+        "CorpusId": 202728302,
+        "PubMed": "31608049"
+      },
+      "title": "MicroRNAs: Fine Tuners of Monocyte Heterogeneity",
+      "venue": "Frontiers in Immunology",
+      "year": 2019,
+      "citationCount": 25,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2019.02145/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6768098, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1399020638",
+          "name": "I. Duroux-Richard"
+        },
+        {
+          "authorId": "1403369933",
+          "name": "M. Robin"
+        },
+        {
+          "authorId": "1418676220",
+          "name": "Cindy Peillex"
+        },
+        {
+          "authorId": "3796931",
+          "name": "F. Apparailly"
+        }
+      ],
+      "abstract": "Small non-coding microRNAs (miRNAs) have been found to play critical roles in many biological processes by controlling gene expression at the post-transcriptional level. They appear to fine-tune the immune response by targeting key regulatory molecules, and their abnormal expression is associated with immune-mediated inflammatory disorders. Monocytes actively contribute to tissue homeostasis by triggering acute inflammatory reactions as well as the resolution of inflammation and tissue regeneration, in case of injury or pathogen invasion. Their contribution to tissue homeostasis can have many aspects because they are able to differentiate into different cell types including macrophages, dendritic cells, and osteoclasts, which fulfill functions as different as bone remodeling and immune response. Monocytes consist of different subsets with subset-specific expression of miRNAs linked to distinct biological processes dedicated to specific roles. Therefore, understanding the role of miRNAs in the context of monocyte heterogeneity may provide clues as to which subset gives rise to which cell type in tissues. In addition, because monocytes are involved in the pathogenesis of chronic inflammation, associated with loss of tissue homeostasis and function, identifying subset-specific miRNAs might help in developing therapeutic strategies that target one subset while sparing the others. Here, we give an overview of the state-of-the-art research regarding miRNAs that are differentially expressed between monocyte subsets and how they influence monocyte functional heterogeneity in health and disease, with descriptions of specific miRNAs. We also revisit the existing miRNome data to propose a canonical signature for each subset."
+    },
+    {
+      "paperId": "ebfb2ac1127a6360e34ed0e8cbff00625227ce35",
+      "externalIds": {
+        "CorpusId": 221335255
+      },
+      "title": "EAGeocellular Model for Tertiary Reservoirs in Manhera Tibba Gas Field, Jaisalmer Basin, Rajasthan, India*",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://www.searchanddiscovery.com/documents/2019/20456pandey/ndx_pandey.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50844123",
+          "name": "R. Pandey"
+        },
+        {
+          "authorId": "2080406379",
+          "name": "B. P. Nonia"
+        },
+        {
+          "authorId": "108660573",
+          "name": "S. Mahanti"
+        },
+        {
+          "authorId": "100749536",
+          "name": "U. Pradhan"
+        },
+        {
+          "authorId": "1646874489",
+          "name": "A. Maurya"
+        }
+      ],
+      "abstract": null
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "federated fine-tuning data heterogeneity non-IID",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

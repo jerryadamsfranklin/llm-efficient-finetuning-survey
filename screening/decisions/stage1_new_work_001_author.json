@@ -1,0 +1,148 @@
+{
+  "batch": 1,
+  "band": "new_work",
+  "screener": "author",
+  "note": "Author calibration of new-work batch 001 against the encoded two-part rule plus research-question test. Original 13 disagreements plus 7 further reclassifications surfaced by reconciliation. A.4, A.28, A.29, A.35 remain include (method evaluations / SLM survey).",
+  "decisions": [
+    {
+      "id": "C-eabd183905",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: federated PEFT of SAM for 3D segmentation. Vision model, not demonstrated on an LLM. Criterion 2."
+    },
+    {
+      "id": "C-1f69bb5c6f",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: Med-VTAB visual task adaptation of ViTs. Vision, not demonstrated on an LLM. Criterion 2."
+    },
+    {
+      "id": "C-73feb84f4d",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: prompt tuning for graph transformers. Graph, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-90fc511d61",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: PEFT for Japanese dialect ASR. Speech model, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-27a90d06c5",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: PEFT language extension for multilingual ASR. Speech, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-8081e358c7",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: hypernetwork + LoRA for text-to-image diffusion. Vision/diffusion, not demonstrated on an LLM. Criterion 2."
+    },
+    {
+      "id": "C-fc2b996b81",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: adapter-based transfer for HVAC fault detection. Non-language models. Criterion 2."
+    },
+    {
+      "id": "C-8f2ee64cc1",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: adapting audio transformers with adapters. Audio, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-68c85fdb46",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: APrompt4EM entity matching. Research question is the data-management task; prompt tuning is the tool. Inclusion 1."
+    },
+    {
+      "id": "C-437e4fc9a8",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: domain prompt tuning for ASR. Speech, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-1a0ec2ecf9",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: ATFLRec multimodal recommender using LoRA on an instruction-tuned LLM. Research question is the recommender; LoRA is machinery. Inclusion 1."
+    },
+    {
+      "id": "C-0f3972344a",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: AV-PEA audio-visual adapter. Multimodal, not an LLM. Criterion 2."
+    },
+    {
+      "id": "C-84a30630d1",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: abstractive summarization from audio using LoRA/quantization. Research question is the summarization system; methods are tools. Inclusion 1."
+    },
+    {
+      "id": "C-67fa715de7",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: ADAPT robustifies prompt tuning for Vision Transformers. Same class as Med-VTAB; not demonstrated on an LLM. Criterion 2. Overturn of calibration agree."
+    },
+    {
+      "id": "C-3fef54df25",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: instruction fine-tuning for financial text classification. Research question is the finance classifier; method is not the contribution. Inclusion 1. Overturn of calibration agree."
+    },
+    {
+      "id": "C-203fc69734",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: LLM evaluation on aspect-based sentiment analysis; PEFT is a baseline. Research question is the ABSA task. Inclusion 1. Overturn of calibration agree."
+    },
+    {
+      "id": "C-f267e4b7cc",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: fine-tuning-enhanced RAG system using LoRA/QLoRA. Research question is building a better RAG system; QLoRA is machinery. Inclusion 1."
+    },
+    {
+      "id": "C-14495abbe7",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author: secure distributed LLM training via TEE. Contribution is a security architecture; LoRA/P-tuning are incidental. Inclusion 1."
+    },
+    {
+      "id": "C-6d4690a604",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: general-ML model compression survey, not LLM-specific. Criterion 2."
+    },
+    {
+      "id": "C-d45c0544b4",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author: federated zeroth-order optimization for communication efficiency. Method not demonstrated on an LLM; generic FL. Criterion 2."
+    }
+  ]
+}

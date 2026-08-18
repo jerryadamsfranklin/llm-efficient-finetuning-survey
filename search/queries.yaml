@@ -1,14 +1,17 @@
 # Search queries for LLM efficient fine-tuning survey
 # Date range: 2019-01-01 to 2026-06-30
-# Protocol version: 1.2
-# Status: Locked — Protocol v1.2 source-substitution amendment
-# See protocol/CHANGELOG.md. Do not alter without a further version bump.
+# Protocol version: 1.3
+# Status: Locked — Protocol v1.3 confirmation-band amendment
+# NOTE: v1.3 changes retrieval slicing only. All 18 query strings below are
+# byte-identical to v1.2; they were deliberately NOT rewritten after seeing
+# results. See protocol/CHANGELOG.md (v1.3) and search/coverage-diagnostic.md.
+# Do not alter without a further version bump.
 
-protocol_version: "1.2"
+protocol_version: "1.3"
 
 meta:
-  protocol_version: "1.2"
-  supersedes: "1.1"
+  protocol_version: "1.3"
+  supersedes: "1.2"
   date_start: "2019-01-01"
   date_end: "2026-06-30"
   arxiv_categories:
@@ -33,6 +36,14 @@ meta:
     - "2024"
     - "2025"
     - "2026-H1"
+  # v1.3: Semantic Scholar was capped per query without date slicing in v1.2, so
+  # relevance ranking returned only 3.5% pre-2022 records (17/18 queries hit the
+  # 200 cap). These slices re-run all s2_queries per year to backfill the
+  # confirmation band. Output: search/raw/semanticscholar_backfill/
+  s2_backfill_slices:
+    - "2019"
+    - "2020"
+    - "2021"
   notes: >-
     Boolean `queries` are for arXiv, IEEE Xplore metadata API, and Google Scholar.
     `s2_queries` are keyword formulations for Semantic Scholar, OpenAlex, and DBLP.

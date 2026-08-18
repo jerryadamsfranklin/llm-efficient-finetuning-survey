@@ -1,0 +1,1575 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "gradient checkpointing activation memory training",
+  "year": "2021-2021",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:38:08Z",
+  "total_results_reported": 41,
+  "returned": 41,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "51dd7535ff171a0ded4771be9df0fde422a12ad7",
+      "externalIds": {
+        "DBLP": "conf/icml/ChenZYWSM021",
+        "ArXiv": "2104.14129",
+        "CorpusId": 233444054
+      },
+      "title": "ActNN: Reducing Training Memory Footprint via 2-Bit Activation Compressed Training",
+      "venue": "International Conference on Machine Learning",
+      "year": 2021,
+      "citationCount": 98,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.14129, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2276707",
+          "name": "Jianfei Chen"
+        },
+        {
+          "authorId": "2149970173",
+          "name": "Lianmin Zheng"
+        },
+        {
+          "authorId": "9088433",
+          "name": "Z. Yao"
+        },
+        {
+          "authorId": "2118962158",
+          "name": "Dequan Wang"
+        },
+        {
+          "authorId": "2055174324",
+          "name": "Ion Stoica"
+        },
+        {
+          "authorId": "1717098",
+          "name": "Michael W. Mahoney"
+        },
+        {
+          "authorId": "49988044",
+          "name": "Joseph E. Gonzalez"
+        }
+      ],
+      "abstract": "The increasing size of neural network models has been critical for improvements in their accuracy, but device memory is not growing at the same rate. This creates fundamental challenges for training neural networks within limited memory environments. In this work, we propose ActNN, a memory-efficient training framework that stores randomly quantized activations for back propagation. We prove the convergence of ActNN for general network architectures, and we characterize the impact of quantization on the convergence via an exact expression for the gradient variance. Using our theory, we propose novel mixed-precision quantization strategies that exploit the activation's heterogeneity across feature dimensions, samples, and layers. These techniques can be readily applied to existing dynamic graph frameworks, such as PyTorch, simply by substituting the layers. We evaluate ActNN on mainstream computer vision models for classification, detection, and segmentation tasks. On all these tasks, ActNN compresses the activation to 2 bits on average, with negligible accuracy loss. ActNN reduces the memory footprint of the activation by 12x, and it enables training with a 6.6x to 14x larger batch size."
+    },
+    {
+      "paperId": "383a0750e45343c1fc0be627bbfaf3158eddbd9d",
+      "externalIds": {
+        "CorpusId": 260507829
+      },
+      "title": "ActNN: Reducing Training Memory Footprint via 2-Bit Activation Compressed Training",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://proceedings.mlr.press/v139/chen21z/chen21z-supp.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "a9e3e7f9d8809edd88799f5b41c94520d18bee25",
+      "externalIds": {
+        "ArXiv": "2111.11124",
+        "DBLP": "journals/corr/abs-2111-11124",
+        "CorpusId": 244478147
+      },
+      "title": "Mesa: A Memory-saving Training Framework for Transformers",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 26,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2111.11124, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1840579673",
+          "name": "Zizheng Pan"
+        },
+        {
+          "authorId": "2158171227",
+          "name": "Peng Chen"
+        },
+        {
+          "authorId": null,
+          "name": "Haoyu He"
+        },
+        {
+          "authorId": "49270464",
+          "name": "Jing Liu"
+        },
+        {
+          "authorId": "2115671281",
+          "name": "Jianfei Cai"
+        },
+        {
+          "authorId": "3194022",
+          "name": "Bohan Zhuang"
+        }
+      ],
+      "abstract": "There has been an explosion of interest in designing high-performance Transformers. While Transformers have delivered significant performance improvements, training such networks is extremely memory intensive owing to storing all intermediate activations that are needed for gradient computation during backpropagation, especially for long sequences. To this end, we present Mesa, a memory-saving training framework for Transformers. Specifically, Mesa uses exact activations during forward pass while storing a low-precision version of activations to reduce memory consumption during training. The low-precision activations are then dequantized during back-propagation to compute gradients. Besides, to address the heterogeneous activation distributions in the multi-head self-attention layers, we propose a head-wise activation quantization strategy, which quantizes activations based on the statistics of each head to minimize the approximation error. To further boost training efficiency, we learn quantization parameters by running estimates. More importantly, by re-investing the saved memory in employing a larger batch size or scaling up model size, we may further improve the performance under constrained computational resources. Extensive experiments on ImageNet, CIFAR-100 and ADE20K demonstrate that Mesa can achieve flexible memory-savings (up to 50%) during training while achieving comparable or even better performance. Code is available at https://github.com/ziplab/Mesa."
+    },
+    {
+      "paperId": "509357d5dae2b4c84d76b0370e263d688d95cda1",
+      "externalIds": {
+        "CorpusId": 238743970
+      },
+      "title": "LOW-MEMORY END-TO-END TRAINING FOR ITERATIVE JOINT SPEECH DEREVERBERATION AND SEPARATION WITH A NEURAL SOURCE MODEL",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null
+      },
+      "authors": [
+        {
+          "authorId": "2125487354",
+          "name": "Kohei Saijo"
+        },
+        {
+          "authorId": "1762888",
+          "name": "Robin Scheibler"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "74aa9782d36760180087c6773d1f77816836f00a",
+      "externalIds": {
+        "DBLP": "journals/pvldb/JinZJFGLST21",
+        "ArXiv": "2111.09562",
+        "CorpusId": 244346778
+      },
+      "title": "COMET: A Novel Memory-Efficient Deep Learning Training Framework by Using Error-Bounded Lossy Compression",
+      "venue": "Proceedings of the VLDB Endowment",
+      "year": 2021,
+      "citationCount": 40,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2111.09562, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3393245",
+          "name": "Sian Jin"
+        },
+        {
+          "authorId": "2155988523",
+          "name": "Chengming Zhang"
+        },
+        {
+          "authorId": "2144794025",
+          "name": "Xintong Jiang"
+        },
+        {
+          "authorId": "2150671441",
+          "name": "Yunhe Feng"
+        },
+        {
+          "authorId": "2055337890",
+          "name": "Hui Guan"
+        },
+        {
+          "authorId": "14818316",
+          "name": "Guanpeng Li"
+        },
+        {
+          "authorId": "1798309",
+          "name": "S. Song"
+        },
+        {
+          "authorId": "3058378",
+          "name": "Dingwen Tao"
+        }
+      ],
+      "abstract": "Training wide and deep neural networks (DNNs) require large amounts of storage resources such as memory because the intermediate activation data must be saved in the memory during forward propagation and then restored for backward propagation. However, state-of-the-art accelerators such as GPUs are only equipped with very limited memory capacities due to hardware design constraints, which significantly limits the maximum batch size and hence performance speedup when training large-scale DNNs. Traditional memory saving techniques either suffer from performance overhead or are constrained by limited interconnect bandwidth or specific interconnect technology. In this paper, we propose a novel memory-efficient CNN training framework (called COMET) that leverages error-bounded lossy compression to significantly reduce the memory requirement for training, to allow training larger models or to accelerate training. Different from the state-of-the-art solutions that adopt image-based lossy compressors (such as JPEG) to compress the activation data, our framework purposely adopts error-bounded lossy compression with a strict error-controlling mechanism. Specifically, we perform a theoretical analysis on the compression error propagation from the altered activation data to the gradients, and empirically investigate the impact of altered gradients over the training process. Based on these analyses, we optimize the error-bounded lossy compression and propose an adaptive error-bound control scheme for activation data compression. We evaluate our design against state-of-the-art solutions with five widely-adopted CNNs and ImageNet dataset. Experiments demonstrate that our proposed framework can significantly reduce the training memory consumption by up to 13.5X over the baseline training and 1.8X over another state-of-the-art compression-based framework, respectively, with little or no accuracy loss."
+    },
+    {
+      "paperId": "9ecc20161939a71f8fe3c28899a75db171cec72a",
+      "externalIds": {
+        "CorpusId": 236923683
+      },
+      "title": "Memory-Efficient Pipeline-Parallel DNN Training",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://proceedings.mlr.press/v139/narayanan21a/narayanan21a-supp.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "88335939",
+          "name": "A. Planner"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d47be387d3076735cd3e43b3c4d03ceb90fc666a",
+      "externalIds": {
+        "MAG": "3152970886",
+        "DBLP": "journals/asc/SharmaGTDM21",
+        "DOI": "10.1016/J.ASOC.2021.107371",
+        "CorpusId": 234874087
+      },
+      "title": "FAF-DRVFL: Fuzzy activation function based deep random vector functional links network for early diagnosis of Alzheimer disease",
+      "venue": "Applied Soft Computing",
+      "year": 2021,
+      "citationCount": 59,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.ASOC.2021.107371?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.ASOC.2021.107371, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2111337062",
+          "name": "Rahul Sharma"
+        },
+        {
+          "authorId": "40580215",
+          "name": "Tripti Goel"
+        },
+        {
+          "authorId": "2280588260",
+          "name": "M. Tanveer"
+        },
+        {
+          "authorId": "2100428649",
+          "name": "Shubham Dwivedi"
+        },
+        {
+          "authorId": "145698440",
+          "name": "R. Murugan"
+        }
+      ],
+      "abstract": "Abstract Alzheimer’s disease (AD) is a degenerative neural condition marked by gradual memory loss and cognitive impairment. It is irreversible in nature and leads to progressive cerebral cortex atrophy. Therefore, structural Magnetic Resonance Imaging (sMRI) is an important tool that can be used for early-stage prediction of AD. Currently, deep learning networks are used for the diagnosis of AD, but it suffers from the limitations of gradient descent training of deep networks like local minima, slow learning speed, and overfitting. Also, there is a need to select hyperparameters like learning rate, momentum, number of epochs, and regularization coefficient. This paper proposes a deep non-iterative random vector functional link (RVFL) neural network. First, the MRI images’ features are extracted using transfer learning, and the classification of the extracted features is done using a non-iterative random vector initialized RVFL network. At the hidden layer of the RVFL classifier, the fuzzy activation function (FAF), is used to calculate the hidden layer’s output. The proposed algorithm has been evaluated and compared with the state-of-the-art methods on the ADNI dataset consisting of Cognitive Normal (CN), AD, converter Mild Cognitive Impairment (cMCI) and non-converter Mild Cognitive Impairment (ncMCI) MRI images. The performance achieved for CN vs AD diagnosis includes accuracy (86.67%), sensitivity (83.33%), specificity (88.89%), precision (83.33%), recall (83.33%) and F-score(86.07%) as well as Receiver Operating Characteristics shows that proposed method outperforms over several compared methods."
+    },
+    {
+      "paperId": "502667269ea02bd3c35c47ad7c8674c9d8b8b5b0",
+      "externalIds": {
+        "DBLP": "conf/nips/EvansA21",
+        "CorpusId": 245019600
+      },
+      "title": "AC-GC: Lossy Activation Compression with Guaranteed Convergence",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 37,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=MwFdqFRxIF0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2115604091",
+          "name": "R. Evans"
+        },
+        {
+          "authorId": "1742561",
+          "name": "T. Aamodt"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3d80a7efada9346873c80e62e919c07f8afafc92",
+      "externalIds": {
+        "MAG": "3133511849",
+        "DOI": "10.5772/INTECHOPEN.96180",
+        "CorpusId": 233926200
+      },
+      "title": "Deep Learning for Subtyping and Prediction of Diseases: Long-Short Term Memory",
+      "venue": "Deep Learning Applications",
+      "year": 2021,
+      "citationCount": 28,
+      "openAccessPdf": {
+        "url": "https://www.intechopen.com/citation-pdf-url/75265",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5772/INTECHOPEN.96180?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5772/INTECHOPEN.96180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4253785",
+          "name": "H. Okut"
+        }
+      ],
+      "abstract": "The long short-term memory neural network (LSTM) is a type of recurrent neural network (RNN). During the training of RNN architecture, sequential information is used and travels through the neural network from input vector to the output neurons, while the error is calculated and propagated back through the network to update the network parameters. Information in these networks incorporates loops into the hidden layer. Loops allow information to flow multi-directionally so that the hidden state signifies past information held at a given time step. Consequently, the output is dependent on the previous predictions which are already known. However, RNNs have limited capacity to bridge more than a certain number of steps. Mainly this is due to the vanishing of gradients which causes the predictions to capture the short-term dependencies as information from earlier steps decays. As more layers in RNN containing activation functions are added, the gradient of the loss function approaches zero. The LSTM neural networks (LSTM-ANNs) enable learning long-term dependencies. LSTM introduces a memory unit and gate mechanism to enable capture of the long dependencies in a sequence. Therefore, LSTM networks can selectively remember or forget information and are capable of learn thousands timesteps by structures called cell states and three gates."
+    },
+    {
+      "paperId": "57afbedf7e3f51f952ce28f92dccf8349133a523",
+      "externalIds": {
+        "DBLP": "conf/iclr/ZhuangDTD21",
+        "ArXiv": "2102.04668",
+        "CorpusId": 231855774
+      },
+      "title": "MALI: A memory efficient and reverse accurate integrator for Neural ODEs",
+      "venue": "International Conference on Learning Representations",
+      "year": 2021,
+      "citationCount": 64,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.04668, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46251934",
+          "name": "Juntang Zhuang"
+        },
+        {
+          "authorId": "5507046",
+          "name": "N. Dvornek"
+        },
+        {
+          "authorId": "1688323",
+          "name": "S. Tatikonda"
+        },
+        {
+          "authorId": "145947161",
+          "name": "J. Duncan"
+        }
+      ],
+      "abstract": "Neural ordinary differential equations (Neural ODEs) are a new family of deep-learning models with continuous depth. However, the numerical estimation of the gradient in the continuous case is not well solved: existing implementations of the adjoint method suffer from inaccuracy in reverse-time trajectory, while the naive method and the adaptive checkpoint adjoint method (ACA) have a memory cost that grows with integration time. In this project, based on the asynchronous leapfrog (ALF) solver, we propose the Memory-efficient ALF Integrator (MALI), which has a constant memory cost \\textit{w.r.t} number of solver steps in integration similar to the adjoint method, and guarantees accuracy in reverse-time trajectory (hence accuracy in gradient estimation). We validate MALI in various tasks: on image recognition tasks, to our knowledge, MALI is the first to enable feasible training of a Neural ODE on ImageNet and outperform a well-tuned ResNet, while existing methods fail due to either heavy memory burden or inaccuracy; for time series modeling, MALI significantly outperforms the adjoint method; and for continuous generative models, MALI achieves new state-of-the-art performance. We provide a pypi package at \\url{https://jzkay12.github.io/TorchDiffEqPack/}"
+    },
+    {
+      "paperId": "32a81aef8063274b1d8cc770a7f6dcfd8efe5336",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2101-10832",
+        "ArXiv": "2101.10832",
+        "CorpusId": 231709464
+      },
+      "title": "Revisiting Locally Supervised Learning: an Alternative to End-to-end Training",
+      "venue": "International Conference on Learning Representations",
+      "year": 2021,
+      "citationCount": 101,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2101.10832, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "39041697",
+          "name": "Yulin Wang"
+        },
+        {
+          "authorId": "1749325163",
+          "name": "Zanlin Ni"
+        },
+        {
+          "authorId": "1760750",
+          "name": "Shiji Song"
+        },
+        {
+          "authorId": "2118929751",
+          "name": "Le Yang"
+        },
+        {
+          "authorId": "143983679",
+          "name": "Gao Huang"
+        }
+      ],
+      "abstract": "Due to the need to store the intermediate activations for back-propagation, end-to-end (E2E) training of deep networks usually suffers from high GPUs memory footprint. This paper aims to address this problem by revisiting the locally supervised learning, where a network is split into gradient-isolated modules and trained with local supervision. We experimentally show that simply training local modules with E2E loss tends to collapse task-relevant information at early layers, and hence hurts the performance of the full model. To avoid this issue, we propose an information propagation (InfoPro) loss, which encourages local modules to preserve as much useful information as possible, while progressively discard task-irrelevant information. As InfoPro loss is difficult to compute in its original form, we derive a feasible upper bound as a surrogate optimization objective, yielding a simple but effective algorithm. In fact, we show that the proposed method boils down to minimizing the combination of a reconstruction loss and a normal cross-entropy/contrastive term. Extensive empirical results on five datasets (i.e., CIFAR, SVHN, STL-10, ImageNet and Cityscapes) validate that InfoPro is capable of achieving competitive performance with less than 40% memory footprint compared to E2E training, while allowing using training data with higher-resolution or larger batch sizes under the same GPU memory constraint. Our method also enables training local modules asynchronously for potential training acceleration. Code is available at: https://github.com/blackfeather-wang/InfoPro-Pytorch."
+    },
+    {
+      "paperId": "a13aee9cb41a687bf3253058d7b5b5152ef62ec5",
+      "externalIds": {
+        "ArXiv": "2106.06998",
+        "CorpusId": 235422599
+      },
+      "title": "XConv: Low-memory stochastic backpropagation for convolutional layers",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.06998, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3451726",
+          "name": "M. Louboutin"
+        },
+        {
+          "authorId": "2827860",
+          "name": "Ali Siahkoohi"
+        },
+        {
+          "authorId": "48397491",
+          "name": "Rongrong Wang"
+        },
+        {
+          "authorId": "3191410",
+          "name": "F. Herrmann"
+        }
+      ],
+      "abstract": "Training convolutional neural networks at scale demands substantial memory, largely because intermediate activations must be stored for backpropagation. Existing remedies (checkpointing, invertible architectures, or gradient-approximation methods such as randomized automatic differentiation) either add significant computation, impose architectural constraints, or require non-trivial code changes. We propose XConv, a near-drop-in replacement for standard 2D and 3D convolutional layers that addresses all three: it preserves standard backpropagation, imposes no architectural constraints, and integrates into existing codebases with minimal changes. XConv exploits the algebraic structure of convolutional weight gradients, storing highly compressed projections of the activations rather than the full tensors and approximating the gradients via multi-channel randomized trace estimation. The number of probing vectors sets a memory-accuracy tradeoff and recovers the exact gradient in the limit. We establish convergence guarantees and error bounds for the estimator, showing that its gradient-error variance is comparable to that of stochastic gradient descent. Empirically, XConv matches exact-gradient methods across classification, generative modeling, super-resolution, inpainting, and segmentation, with gaps that narrow as the number of probing vectors grows, while reducing activation memory by a factor of two or more when convolutional activations dominate, and remaining computationally competitive with optimized convolution kernels at larger batch sizes. At half precision the gradient-approximation error falls to the rounding floor, so XConv adds essentially no error beyond that of low-precision arithmetic. The savings matter most where activation memory rather than compute is the binding constraint, such as high-resolution and volumetric training and on-device finetuning."
+    },
+    {
+      "paperId": "c6bca30a6a83a3a26bc1916ae1effa997386a24b",
+      "externalIds": {
+        "MAG": "3168739063",
+        "DOI": "10.1109/JSEN.2021.3085360",
+        "CorpusId": 236716048
+      },
+      "title": "Block-Wise Training Residual Networks on Multi-Channel Time Series for Human Activity Recognition",
+      "venue": "IEEE Sensors Journal",
+      "year": 2021,
+      "citationCount": 17,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2021.3085360?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2021.3085360, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "52492311",
+          "name": "Qi Teng"
+        },
+        {
+          "authorId": "2152834535",
+          "name": "Lei Zhang"
+        },
+        {
+          "authorId": "2115420932",
+          "name": "Yin Tang"
+        },
+        {
+          "authorId": "2292717980",
+          "name": "Shuai Song"
+        },
+        {
+          "authorId": "2144803456",
+          "name": "Xing Wang"
+        },
+        {
+          "authorId": "2109931599",
+          "name": "Jun He"
+        }
+      ],
+      "abstract": "Recently, human activity recognition (HAR) has become an active research area in wearable computing scenario. On the other hand, residual nets have continued to push the state-of-the-art of computer vision and natural language processing. However, residual nets have rarely been considered in the HAR field. As residual nets grow deeper, memory footprint limit its wide use for a variety of HAR tasks. In this paper, we present a novel block-wise training residual nets that use local loss functions for HAR applications. Instead of global backprop, the local cross-entropy loss together with a supervised local similarity matching loss is utilized to train each residual block independently, in which gradient need not to be propagated down the network. As a result, the gradient and activations do not have to be kept in memory any more, which alleviates the memory requirements and is more beneficial for wearable HAR computing. We demonstrate the effectiveness of block-wise training residual nets on OPPORTUNITY, WISDM, UNIMIB SHAR and PAMAP2 datasets, which establishes obvious better classification accuracy compared to equally-sized residual nets, even though memory requirement is much smaller."
+    },
+    {
+      "paperId": "6cb58950fca187aafae989e9643bbae646111174",
+      "externalIds": {
+        "MAG": "3153334171",
+        "DBLP": "journals/ijon/CartaSB21",
+        "DOI": "10.1016/J.NEUCOM.2021.04.051",
+        "CorpusId": 234810100
+      },
+      "title": "Encoding-based memory for recurrent neural networks",
+      "venue": "Neurocomputing",
+      "year": 2021,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.NEUCOM.2021.04.051?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.NEUCOM.2021.04.051, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144689520",
+          "name": "Antonio Carta"
+        },
+        {
+          "authorId": "1749815",
+          "name": "A. Sperduti"
+        },
+        {
+          "authorId": "3224102",
+          "name": "D. Bacciu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ca97230115c6f1cedba4c8699962f2b2c2e8e9bb",
+      "externalIds": {
+        "DBLP": "conf/cvpr/FournarakisN21",
+        "ArXiv": "2105.04246",
+        "DOI": "10.1109/CVPRW53098.2021.00341",
+        "CorpusId": 234341665
+      },
+      "title": "In-Hindsight Quantization Range Estimation for Quantized Training",
+      "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "year": 2021,
+      "citationCount": 12,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2105.04246",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2105.04246, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2090358941",
+          "name": "Marios Fournarakis"
+        },
+        {
+          "authorId": "41229153",
+          "name": "Markus Nagel"
+        }
+      ],
+      "abstract": "Quantization techniques applied to the inference of deep neural networks have enabled fast and efficient execution on resource-constraint devices. The success of quantization during inference has motivated the academic community to explore fully quantized training, i.e. quantizing back-propagation as well. However, effective gradient quantization is still an open problem. Gradients are unbounded and their distribution changes significantly during training, which leads to the need for dynamic quantization. As we show, dynamic quantization can lead to significant memory overhead and additional data traffic slowing down training. We propose a simple alternative to dynamic quantization, in-hindsight range estimation, that uses the quantization ranges estimated on previous iterations to quantize the present. Our approach enables fast static quantization of gradients and activations while requiring only minimal hardware support from the neural network accelerator to keep track of output statistics in an online fashion. It is in-tended as a drop-in replacement for estimating quantization ranges and can be used in conjunction with other advances in quantized training. We compare our method to existing methods for range estimation from the quantized training literature and demonstrate its effectiveness with a range of architectures, including MobileNetV2, on image classification benchmarks (Tiny ImageNet & ImageNet)."
+    },
+    {
+      "paperId": "2ded9340bf432a5a323286a700dc30d8c89e482e",
+      "externalIds": {
+        "DBLP": "conf/nips/SarmaSJZKD21",
+        "ArXiv": "2106.12089",
+        "CorpusId": 235606338
+      },
+      "title": "Structured in Space, Randomized in Time: Leveraging Dropout in RNNs for Efficient Training",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2106.12089, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50214893",
+          "name": "Anup Sarma"
+        },
+        {
+          "authorId": "2116110185",
+          "name": "Sonali Singh"
+        },
+        {
+          "authorId": "2127651",
+          "name": "Huaipan Jiang"
+        },
+        {
+          "authorId": "144142360",
+          "name": "Rui Zhang"
+        },
+        {
+          "authorId": "2065377015",
+          "name": "M. Kandemir"
+        },
+        {
+          "authorId": "8948708",
+          "name": "C. Das"
+        }
+      ],
+      "abstract": "Recurrent Neural Networks (RNNs), more specifically their Long Short-Term Memory (LSTM) variants, have been widely used as a deep learning tool for tackling sequence-based learning tasks in text and speech. Training of such LSTM applications is computationally intensive due to the recurrent nature of hidden state computation that repeats for each time step. While sparsity in Deep Neural Nets has been widely seen as an opportunity for reducing computation time in both training and inference phases, the usage of non-ReLU activation in LSTM RNNs renders the opportunities for such dynamic sparsity associated with neuron activation and gradient values to be limited or non-existent. In this work, we identify dropout induced sparsity for LSTMs as a suitable mode of computation reduction. Dropout is a widely used regularization mechanism, which randomly drops computed neuron values during each iteration of training. We propose to structure dropout patterns, by dropping out the same set of physical neurons within a batch, resulting in column (row) level hidden state sparsity, which are well amenable to computation reduction at run-time in general-purpose SIMD hardware as well as systolic arrays. We conduct our experiments for three representative NLP tasks: language modelling on the PTB dataset, OpenNMT based machine translation using the IWSLT De-En and En-Vi datasets, and named entity recognition sequence labelling using the CoNLL-2003 shared task. We demonstrate that our proposed approach can be used to translate dropout-based computation reduction into reduced training time, with improvement ranging from 1.23x to 1.64x, without sacrificing the target metric."
+    },
+    {
+      "paperId": "9a4c991c2f9b654bf9d10a92d03a3064f7856676",
+      "externalIds": {
+        "DBLP": "conf/ijcnn/LiWQX21",
+        "DOI": "10.1109/IJCNN52387.2021.9534356",
+        "CorpusId": 237619575
+      },
+      "title": "Communication-Memory-Efficient Decentralized Learning For Audio Representation",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2021,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IJCNN52387.2021.9534356?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IJCNN52387.2021.9534356, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2151534426",
+          "name": "LeiLai Li"
+        },
+        {
+          "authorId": "66063851",
+          "name": "Jianzong Wang"
+        },
+        {
+          "authorId": "2624637",
+          "name": "Xiaoyang Qu"
+        },
+        {
+          "authorId": "91353860",
+          "name": "Jing Xiao"
+        }
+      ],
+      "abstract": "Smartphones and wearable devices produce a wealth of audio data, which cannot be accumulated in a centralized repository for learning supervised models due to privacy and bandwidth limitation. Federated learning provides a solution for learning model from decentralized data. But conventionally, it assumes the availability of labeled samples, whereas on-device data are generally unlabeled. For solving these issues, in this paper we propose the self-supervised learning approach in a federated manner without moving the unlabeled audio data. We try the audio albert as the self-supervised model, which achieves comparable performance to other pre-trained model but with smaller model size. The federated self-supervised framework has tremendous communication cost during training, and the transformer architecture utilized in audio albert has the problem of memory footprint, which are practical in loT devices. To address the first issue, we propose the Gradient Compression and CSR Encoding (GCE) to reduce communication requires each round. Furthermore, we apply the reversible idea to the transformer, which does not need to store the activation in each layer thus reduce the memory footprint. Moreover, we evaluate the quality of the self-supervised pre-training model under the federated setting, and the model achieves considerable performance in the downstream tasks by fine-tuning."
+    },
+    {
+      "paperId": "5e08865db294133e2ff6c79a5c4f48cf32c05e22",
+      "externalIds": {
+        "ArXiv": "2105.01957",
+        "DBLP": "journals/corr/abs-2105-01957",
+        "CorpusId": 233740144
+      },
+      "title": "Perceptual Gradient Networks",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2105.01957, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "40104742",
+          "name": "Dmitry Nikulin"
+        },
+        {
+          "authorId": "2066195453",
+          "name": "Roman Suvorov"
+        },
+        {
+          "authorId": "117502209",
+          "name": "Aleksei Ivakhnenko"
+        },
+        {
+          "authorId": "1740145",
+          "name": "V. Lempitsky"
+        }
+      ],
+      "abstract": "Many applications of deep learning for image generation use perceptual losses for either training or fine-tuning of the generator networks. The use of perceptual loss however incurs repeated forward-backward passes in a large image classification network as well as a considerable memory overhead required to store the activations of this network. It is therefore desirable or sometimes even critical to get rid of these overheads. In this work, we propose a way to train generator networks using approximations of perceptual loss that are computed without forward-backward passes. Instead, we use a simpler perceptual gradient network that directly synthesizes the gradient field of a perceptual loss. We introduce the concept of proxy targets, which stabilize the predicted gradient, meaning that learning with it does not lead to divergence or oscillations. In addition, our method allows interpretation of the predicted gradient, providing insight into the internals of perceptual loss and suggesting potential ways to improve it in future work."
+    },
+    {
+      "paperId": "b92bc711b40f8f65cbf035c1634038424c6e8493",
+      "externalIds": {
+        "ArXiv": "2109.03220",
+        "DBLP": "journals/corr/abs-2109-03220",
+        "CorpusId": 237431319
+      },
+      "title": "Revisiting Recursive Least Squares for Training Deep Neural Networks",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.03220, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2124626707",
+          "name": "Chunyuan Zhang"
+        },
+        {
+          "authorId": "2153746301",
+          "name": "Qi Song"
+        },
+        {
+          "authorId": "2146382998",
+          "name": "Hui Zhou"
+        },
+        {
+          "authorId": "2855852",
+          "name": "Yi-gui Ou"
+        },
+        {
+          "authorId": "2093503763",
+          "name": "Hongyao Deng"
+        },
+        {
+          "authorId": "2120372209",
+          "name": "Laurence Yang"
+        }
+      ],
+      "abstract": "Recursive least squares (RLS) algorithms were once widely used for training small-scale neural networks, due to their fast convergence. However, previous RLS algorithms are unsuitable for training deep neural networks (DNNs), since they have high computational complexity and too many preconditions. In this paper, to overcome these drawbacks, we propose three novel RLS optimization algorithms for training feedforward neural networks, convolutional neural networks and recurrent neural networks (including long short-term memory networks), by using the error backpropagation and our average-approximation RLS method, together with the equivalent gradients of the linear least squares loss function with respect to the linear outputs of hidden layers. Compared with previous RLS optimization algorithms, our algorithms are simple and elegant. They can be viewed as an improved stochastic gradient descent (SGD) algorithm, which uses the inverse autocorrelation matrix of each layer as the adaptive learning rate. Their time and space complexities are only several times those of SGD. They only require the loss function to be the mean squared error and the activation function of the output layer to be invertible. In fact, our algorithms can be also used in combination with other first-order optimization algorithms without requiring these two preconditions. In addition, we present two improved methods for our algorithms. Finally, we demonstrate their effectiveness compared to the Adam algorithm on MNIST, CIFAR-10 and IMDB datasets, and investigate the influences of their hyperparameters experimentally."
+    },
+    {
+      "paperId": "ae1b3e219de31380ed57a62147f0cc6a8e1b0530",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2105-13493",
+        "ArXiv": "2105.13493",
+        "CorpusId": 235248400
+      },
+      "title": "Efficient and Accurate Gradients for Neural SDEs",
+      "venue": "Neural Information Processing Systems",
+      "year": 2021,
+      "citationCount": 102,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2105.13493, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "120149052",
+          "name": "Patrick Kidger"
+        },
+        {
+          "authorId": "39671663",
+          "name": "James Foster"
+        },
+        {
+          "authorId": "2145429039",
+          "name": "Xuechen Li"
+        },
+        {
+          "authorId": "144749402",
+          "name": "Terry Lyons"
+        }
+      ],
+      "abstract": "Neural SDEs combine many of the best qualities of both RNNs and SDEs: memory efficient training, high-capacity function approximation, and strong priors on model space. This makes them a natural choice for modelling many types of temporal dynamics. Training a Neural SDE (either as a VAE or as a GAN) requires backpropagating through an SDE solve. This may be done by solving a backwards-in-time SDE whose solution is the desired parameter gradients. However, this has previously suffered from severe speed and accuracy issues, due to high computational cost and numerical truncation errors. Here, we overcome these issues through several technical innovations. First, we introduce the \\textit{reversible Heun method}. This is a new SDE solver that is \\textit{algebraically reversible}: eliminating numerical gradient errors, and the first such solver of which we are aware. Moreover it requires half as many function evaluations as comparable solvers, giving up to a $1.98\\times$ speedup. Second, we introduce the \\textit{Brownian Interval}: a new, fast, memory efficient, and exact way of sampling \\textit{and reconstructing} Brownian motion. With this we obtain up to a $10.6\\times$ speed improvement over previous techniques, which in contrast are both approximate and relatively slow. Third, when specifically training Neural SDEs as GANs (Kidger et al. 2021), we demonstrate how SDE-GANs may be trained through careful weight clipping and choice of activation function. This reduces computational cost (giving up to a $1.87\\times$ speedup) and removes the numerical truncation errors associated with gradient penalty. Altogether, we outperform the state-of-the-art by substantial margins, with respect to training speed, and with respect to classification, prediction, and MMD test metrics. We have contributed implementations of all of our techniques to the torchsde library to help facilitate their adoption."
+    },
+    {
+      "paperId": "6f94fa69362ed697d6998bf1e7242c59076d2b62",
+      "externalIds": {
+        "PubMedCentral": "8586528",
+        "DOI": "10.3389/fnins.2021.603433",
+        "CorpusId": 240244548,
+        "PubMed": "34776834"
+      },
+      "title": "BlocTrain: Block-Wise Conditional Training and Inference for Efficient Spike-Based Deep Learning",
+      "venue": "Frontiers in Neuroscience",
+      "year": 2021,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3389/fnins.2021.603433",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8586528, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153181248",
+          "name": "Gopalakrishnan Srinivasan"
+        },
+        {
+          "authorId": "144245858",
+          "name": "Kaushik Roy"
+        }
+      ],
+      "abstract": "Spiking neural networks (SNNs), with their inherent capability to learn sparse spike-based input representations over time, offer a promising solution for enabling the next generation of intelligent autonomous systems. Nevertheless, end-to-end training of deep SNNs is both compute- and memory-intensive because of the need to backpropagate error gradients through time. We propose BlocTrain, which is a scalable and complexity-aware incremental algorithm for memory-efficient training of deep SNNs. We divide a deep SNN into blocks, where each block consists of few convolutional layers followed by a classifier. We train the blocks sequentially using local errors from the classifier. Once a given block is trained, our algorithm dynamically figures out easy vs. hard classes using the class-wise accuracy, and trains the deeper block only on the hard class inputs. In addition, we also incorporate a hard class detector (HCD) per block that is used during inference to exit early for the easy class inputs and activate the deeper blocks only for the hard class inputs. We trained ResNet-9 SNN divided into three blocks, using BlocTrain, on CIFAR-10 and obtained 86.4% accuracy, which is achieved with up to 2.95× lower memory requirement during the course of training, and 1.89× compute efficiency per inference (due to early exit strategy) with 1.45× memory overhead (primarily due to classifier weights) compared to end-to-end network. We also trained ResNet-11, divided into four blocks, on CIFAR-100 and obtained 58.21% accuracy, which is one of the first reported accuracy for SNN trained entirely with spike-based backpropagation on CIFAR-100."
+    },
+    {
+      "paperId": "4863fc0c1abfae773ea0a12b71dd9211bae7b204",
+      "externalIds": {
+        "ArXiv": "2110.01229",
+        "DBLP": "journals/popets/NiuAA22",
+        "DOI": "10.56553/popets-2022-0105",
+        "CorpusId": 249848292
+      },
+      "title": "3LegRace: Privacy-Preserving DNN Training over TEEs and GPUs",
+      "venue": "Proceedings on Privacy Enhancing Technologies",
+      "year": 2021,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.56553/popets-2022-0105",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2110.01229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144829346",
+          "name": "Yue Niu"
+        },
+        {
+          "authorId": "2083487",
+          "name": "Ramy E. Ali"
+        },
+        {
+          "authorId": "121011351",
+          "name": "S. Avestimehr"
+        }
+      ],
+      "abstract": "Leveraging parallel hardware (e.g. GPUs) for deep neural network (DNN) training brings high computing performance. However, it raises data privacy concerns as GPUs lack a trusted environment to protect the data. Trusted execution environments (TEEs) have emerged as a promising solution to achieve privacypreserving learning. Unfortunately, TEEs’ limited computing power renders them not comparable to GPUs in performance. To improve the trade-off among privacy, computing performance, and model accuracy, we propose an asymmetric model decomposition framework, AsymML, to (1) accelerate training using parallel hardware; and (2) achieve a strong privacy guarantee using TEEs and differential privacy (DP) with much less accuracy compromised compared to DP-only methods. By exploiting the low-rank characteristics in training data and intermediate features, AsymML asymmetrically decomposes inputs and intermediate activations into low-rank and residual parts. With the decomposed data, the target DNN model is accordingly split into a trusted and an untrusted part. The trusted part performs computations on low-rank data, with low compute and memory costs. The untrusted part is fed with residuals perturbed by very small noise. Privacy, computing performance, and model accuracy are well managed by respectively delegating the trusted and the untrusted part to TEEs and GPUs. We provide a formal DP guarantee that demonstrates that, for the same privacy guarantee, combining asymmetric data decomposition and DP requires much smaller noise compared to solely using DP without decomposition. This improves the privacy-utility trade-off significantly compared to using only DP methods without decomposition. Furthermore, we present a rank bound analysis showing that the low-rank structure is preserved after each layer across the entire model. Our extensive evaluations on DNN models show that AsymML delivers 7.6× speedup in training compared to the TEE-only executions while ensuring privacy. We also demonstrate that AsymML is effective in protecting data under common attacks such as model inversion and gradient attacks."
+    },
+    {
+      "paperId": "8b3d4ae4ccaee748372e2519fae4250b15febf9b",
+      "externalIds": {
+        "DBLP": "journals/access/PaulAMBVA21",
+        "DOI": "10.1109/ACCESS.2021.3114581",
+        "CorpusId": 238243218
+      },
+      "title": "Privacy-Preserving Collective Learning With Homomorphic Encryption",
+      "venue": "IEEE Access",
+      "year": 2021,
+      "citationCount": 31,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09543673.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2021.3114581?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2021.3114581, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2072790832",
+          "name": "Jestine Paul"
+        },
+        {
+          "authorId": "2130334228",
+          "name": "Meenatchi Sundaram Muthu Selva Annamalai"
+        },
+        {
+          "authorId": "2131194188",
+          "name": "William Ming"
+        },
+        {
+          "authorId": "2083244",
+          "name": "Ahmad Al Badawi"
+        },
+        {
+          "authorId": "2097860",
+          "name": "B. Veeravalli"
+        },
+        {
+          "authorId": "1685959",
+          "name": "Khin Mi Mi Aung"
+        }
+      ],
+      "abstract": "Deep learning models such as long short-term memory (LSTM) are valuable classifiers for time series data like hourly clinical statistics. However, access to health data is challenging due to privacy and legal issues. Homomorphic encryption (HE) offers a potential solution by encrypting confidential data. However, the computational complexity of encrypted operations makes it infeasible for training with gradient descent. Prior works only deal with encrypted procedures during the inference phase of the network. To this end, we design Collective Learning protocol, a secure protocol for sharing classified time-series data within entities to train parameters of the binary classifier model partially. The protocol encrypts each data’s feature activations using HE and trains the last layers using encrypted logistic regression. We evaluate our protocol on a benchmark LSTM network trained on the Medical Information Mart for Intensive Care (MIMIC-III) dataset. We selected the Cheon-Kim-Kim-Song (CKKS) encryption scheme because of its ability to work with real numbers using approximate arithmetic. Our protocol improved the area under the precision-recall curve (AUPRC) score of the in-hospital mortality prediction model. The same protocol was reimplemented using secure multi-party computation (MPC) and compared."
+    },
+    {
+      "paperId": "5a8ec02fde7ea246473e15b53ee0b5ef3ae9312e",
+      "externalIds": {
+        "DBLP": "conf/qrs/ZhangLCCY21",
+        "DOI": "10.1109/QRS-C55045.2021.00166",
+        "CorpusId": 247858275
+      },
+      "title": "Stock Prediction with Stacked-LSTM Neural Networks",
+      "venue": "IEEE International Conference on Software Quality, Reliability and Security Companion",
+      "year": 2021,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/QRS-C55045.2021.00166?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/QRS-C55045.2021.00166, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2161320704",
+          "name": "Xiaochun Zhang"
+        },
+        {
+          "authorId": "2116520439",
+          "name": "Chen Li"
+        },
+        {
+          "authorId": "2110721911",
+          "name": "Kuan-Lin Chen"
+        },
+        {
+          "authorId": "1933813",
+          "name": "Dimitrios Chrysostomou"
+        },
+        {
+          "authorId": "2041672955",
+          "name": "Hongji Yang"
+        }
+      ],
+      "abstract": "This paper explores a stacked long-term and short-term memory (LSTM) model for non-stationary financial time series in stock price prediction. The proposed LSTM is designed to overcome gradient explosion, gradient vanishing, and save long-term memory. Firstly, build time series with different days for network input, and then add early-stopping, rectified linear units (Relu) activation function to avoid over-fitting during the training stage. Finally, save trained parameters state and new batch size for testing. The results suggest that the developed stacked LSTM produces better predictive power and generalization."
+    },
+    {
+      "paperId": "84523995c27d28119c7e42426e5cded0a7a0dabb",
+      "externalIds": {
+        "MAG": "3155286948",
+        "DOI": "10.1088/1742-6596/1856/1/012056",
+        "CorpusId": 234891090
+      },
+      "title": "Network security situation prediction method based on strengthened LSTM neural network",
+      "venue": "Journal of Physics, Conference Series",
+      "year": 2021,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1088/1742-6596/1856/1/012056",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1742-6596/1856/1/012056?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1742-6596/1856/1/012056, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2114027778",
+          "name": "Zhaowei Dong"
+        },
+        {
+          "authorId": "2100813308",
+          "name": "Xiaoyu Su"
+        },
+        {
+          "authorId": "2110695758",
+          "name": "Lihui Sun"
+        },
+        {
+          "authorId": "2113452060",
+          "name": "Kuikui Xu"
+        }
+      ],
+      "abstract": "As an important part of network security situation awareness, network security situation prediction describes the dynamic changes of security situation over time, and predicts future situation values based on historical situation values. In order to improve the accuracy of network security situation prediction, a long- and short-term memory network security situation prediction model based on the Sigmoid weighted reinforcement mechanism is proposed. Firstly, LSTM neural network is used to mine the temporal correlation of network security situation data. Sigmoid weighted linear element is introduced to deal with the gradient problem in the back propagation, and the input value is multiplied by Sigmoid activation function, so as to strengthen the structure of LSTM neural network and improve the accuracy of prediction.Then, the cuckoo search algorithm was used to optimize the super parameters to improve the training time. Finally, the public data set CICIDS2017 was used to verify the model. The simulation experiment results show that the model has a faster convergence rate and smaller errors."
+    },
+    {
+      "paperId": "ab59a21ac14f60ab667174ddc54dc2e7aa7f14ee",
+      "externalIds": {
+        "MAG": "3132714340",
+        "DOI": "10.11648/J.AJNNA.20210701.12",
+        "CorpusId": 233956687
+      },
+      "title": "Chaotic Recurrent Neural Networks for Financial Forecast",
+      "venue": "American Journal of Neural Networks and Applications",
+      "year": 2021,
+      "citationCount": 10,
+      "openAccessPdf": {
+        "url": "http://article.sciencepublishinggroup.com/pdf/10.11648.j.ajnna.20210701.12.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.11648/J.AJNNA.20210701.12?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.11648/J.AJNNA.20210701.12, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2145978591",
+          "name": "Jeff Wang"
+        },
+        {
+          "authorId": "145219330",
+          "name": "Raymond S. T. Lee"
+        }
+      ],
+      "abstract": "In the past few decades, with the development of artificial intelligence and computer hardware, machine learning has been widely used in various applications including industrial, healthcare, education, finance, etc. Predicting financial time series sequences with effective AI tools for more accurate results has always been one of the hottest topics in finance and AI community. In this paper, the author introduces a new type of recurrent neural network algorithm, called Chaotic Recurrent Neural Network (CRNN), which is based on Dr. Raymond’s original research on Lee-Oscillator and Recurrent Neural Network (RNN) for worldwide financial prediction. We replaced the traditional activation function with a Lee Oscillator Neural Network, which not only can solve the vanishing gradient problem of traditional recurring neural networks during algorithm training, but can also provide an excellent memory correlation mechanism during long-term time series processing. The Experimental results reveal that CRNN outperforms than some popular neural network which widely applied to predict financial data, such as FFBPN, RNN, LSTM, in terms of forecast accuracy in certain cases. The experimental environment is based on Pytorch and Python 3.8, using 10 years (2010-2020) major financial index data, including DJI, HSI, IXIC, SPX, SSE, SZSE, APPL, to forecast 31th day closing price with previous 30 days closing price. Besides financial forecasting, our CRNN algorithm also has many potential applications, such as Natural Language Processing, weather forecasting, etc."
+    },
+    {
+      "paperId": "2bba34b2b7faff666c9cf65d33a2c825081982ee",
+      "externalIds": {
+        "DOI": "10.1182/blood-2021-151542",
+        "CorpusId": 244560355
+      },
+      "title": "Large-Scale Mass Cytometry Reveals Significant Activation of Innate and Adaptive Immunity in Bone Marrow Tumor Microenvironment of Iberdomide-Treated Myeloma Patients",
+      "venue": "Blood",
+      "year": 2021,
+      "citationCount": 9,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1182/blood-2021-151542",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1182/blood-2021-151542?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1182/blood-2021-151542, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1753709869",
+          "name": "O. Van Oekelen"
+        },
+        {
+          "authorId": "4635050",
+          "name": "M. Amatangelo"
+        },
+        {
+          "authorId": "2804686",
+          "name": "Manman Guo"
+        },
+        {
+          "authorId": "1836379467",
+          "name": "B. Upadhyaya"
+        },
+        {
+          "authorId": "113165830",
+          "name": "G. Kelly"
+        },
+        {
+          "authorId": "49045188",
+          "name": "Manishkumar Patel"
+        },
+        {
+          "authorId": "1398109049",
+          "name": "S. Kim-Schulze"
+        },
+        {
+          "authorId": "35382555",
+          "name": "A. Laganà"
+        },
+        {
+          "authorId": "1882384",
+          "name": "S. Gooding"
+        },
+        {
+          "authorId": "4206199",
+          "name": "S. Jagannath"
+        },
+        {
+          "authorId": "6382926",
+          "name": "W. Pierceall"
+        },
+        {
+          "authorId": "3234269",
+          "name": "U. Oppermann"
+        },
+        {
+          "authorId": "5065324",
+          "name": "S. Parekh"
+        },
+        {
+          "authorId": "152612100",
+          "name": "A. Thakurta"
+        }
+      ],
+      "abstract": "\n Background: Iberdomide (IBER) is a potent cereblon E3 ligase modulator (CELMoD agent) with direct anti-tumor and immunomodulatory activities in multiple myeloma (MM). An ongoing phase 1b/2a multicenter, open-label, dose-escalation study has reported favorable efficacy and safety of IBER plus low-dose dexamethasone (DEX) in heavily pretreated patients with relapsed/refractory MM (RRMM). While previous studies focused on IMiD/CELMoD agent immune effects in peripheral blood (Amatangelo, ASH 2019), a large-scale characterization of pharmacodynamics in the bone marrow (BM) tumor microenvironment (TME) has not been reported. Here, we present data on BM aspirates (BMAs) of 99 individuals pre-/post-treatment with IBER in the largest study of TME immune dynamics of RRMM patients to date.\n Methods: A mass cytometry (CyTOF) panel was designed/validated to capture deep and comprehensive immunophenotyping of T, B, and NK cell subpopulations. In all, staining with 37 metal-tagged Abs characterized 110 supervised cell phenotypes. Paired longitudinal assessment was conducted for viably preserved BMAs of IBER±DEX treated patients in dose-escalation of the CC220-MM-001 Ph 1b/2a study pre (SCREEN) and post treatment (cycle 2 day 15, C2D15). For a subset of patients (n=12), samples were available at disease progression (PD) . A training set analysis (n=64, data reported here) collected in North America, was validated against an independent test set (n=35) recruited in Europe. An R-based computational workflow and manual hierarchical gating identified subpopulations of B, T, NK and myeloid cells. In total, more than 5M immune cells were captured (approx. 40K per specimen). Cell populations are expressed as percentage of non-tumor bone marrow mononuclear cells (BMMC, i.e. CD45+CD66b-). P values are by Mann-Whitney U test for unpaired and Wilcoxon test for paired analyses.\n Results: IBER treatment resulted in profound immune shifts in the TME. B cells decreased (median SCREEN 3.3% vs C2D15 0.7%, p=0.001), with significant reduction of naïve (p=0.001) and regulatory B cells (p<0.001). Decrease occurred in CD4+ T cells (median 15.3% vs 8.9%, p<0.001), whereas CD8+ T cells increased (median 14.9% vs 17.4%). T cell subtypes showed a shift towards cytotoxic effector-memory phenotype (CCR7-CD45RA) (median 67.6% vs 80.9% of CD4+ T cells, p<0.001 and median 78.2% vs 89.2% of CD8+ T cells, p<0.001) with concurrent reduction of naive (CD45RA+CCR7+), central-memory (CD45RA-CCR7+) and EMRA (CD45RA+CCR7-) T cells. The shift towards a cytotoxic TME is confirmed by significant increases of GZMB+, HLA-DR+, ICOS+, Ki-67+, CXCR3+ and CD38+ activated CD8+ T cells (p≤0.001, paired). Conversely, CD8+ T cells expressing inhibitory checkpoints TIGIT and KLRG1 decreased significantly (p≤0.001, paired). Similar changes (with minor deviations) were noted in the CD4+ T cell compartment.\n NK cells increased (median 4.2% vs 8.7%, p=0.003), with increase of both CD56hi cytokine-producing (median 1.9% vs 4.5%, p<0.001) and CD16+ cytolytic (median 1.8% vs 2.6%, p=0.06) subsets. NKG2A+ and NKG2D+ subsets were increased (p<0.001, paired), as well as subsets expressing markers of activation: GZMB, ICOS, CD38 and PD-1 (p<0.05, paired). TIGIT+ NK cells decreased significantly. NKT cells were also significantly increased (median 1.4% vs 2.2%, p<0.001). Increase of NK and NKT cells expressing the activating receptor NKG2D was limited to patients achieving best response of PR or better. Additional analyses correlating immune phenotypes at baseline/post-treatment with outcomes are ongoing and will be reported at the meeting, as will data on how prior treatment (e.g. with CD38-mAb) shapes the TME at baseline and affects response.\n Conclusion: Our analysis on a large cohort of RRMM patients provides unique insights into the heterogeneity of the immune TME of heavily pretreated MM patients and how it changes upon treatment with IBER±DEX. We found significant increases of effector T and NK cells in paired analysis, demonstrating innate and adaptive immune enhancement in the MM bone marrow niche as an important mechanism of action. Importantly, these changes were observed throughout dose escalation and in patients previously refractory to lenalidomide/pomalidomide. The presented platform of large-scale immune profiling demonstrates a strategy to design and study rational combinations with (other) immune-enhancing therapies in MM.\n Figure 1 Figure 1.\n \n \n \n Amatangelo: Bristol Myers Squibb: Current Employment, Current equity holder in publicly-traded company. Gooding: Bristol Myers Squibb: Research Funding. Jagannath: Legend Biotech: Consultancy; Bristol Myers Squibb: Consultancy; Karyopharm Therapeutics: Consultancy; Janssen Pharmaceuticals: Consultancy; Takeda: Consultancy; Sanofi: Consultancy. Pierceall: BMS: Current Employment, Current equity holder in publicly-traded company. Parekh: Foundation Medicine Inc: Consultancy; Amgen: Research Funding; PFIZER: Research Funding; CELGENE: Research Funding; Karyopharm Inv: Research Funding. Thakurta: Bristol Myers Squibb: Current Employment, Current equity holder in publicly-traded company.\n"
+    },
+    {
+      "paperId": "3d2bd9d758962913eaf73c893067fcc18b297c03",
+      "externalIds": {
+        "DOI": "10.1109/ICSP51882.2021.9408972",
+        "CorpusId": 233434418
+      },
+      "title": "MicroNet: Realizing Micro Neural Network via Binarizing GhostNet",
+      "venue": "International Conference on the Software Process",
+      "year": 2021,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSP51882.2021.9408972?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSP51882.2021.9408972, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2155802771",
+          "name": "Shuai Zhang"
+        },
+        {
+          "authorId": "2109054962",
+          "name": "Xichuan Zhou"
+        }
+      ],
+      "abstract": "Binary Neural Networks (BNNs) are regarded as very effective approaches to reduce the high computational and memory cost of deep convolutional neural networks; however, most of the previous works only focus on the binarization of traditional large-scale networks. In this paper, to further decrease the computational and memory complexity, we propose to binarize the lightweight network: GhostNet, which can generate feature maps with fewer operations. We first modify the ghost block for reducing the information loss caused by the binarization. Moreover, to enhance the performance of binarized GhostNet, some training schemes are introduced including gradient approximation and new activation layers. Various experiments on CIFAR10 dataset show that, compared with other methods, the MicroNet can achieve better performance with fewer computational and memory cost."
+    },
+    {
+      "paperId": "2bf3605bec90963e934eec2fcb109924ef276198",
+      "externalIds": {
+        "DOI": "10.18201/ijisae.2021473642",
+        "CorpusId": 245497839
+      },
+      "title": "Identification of Breast Tumor Using Hybrid Approach of Independent Component Analysis and Deep Neural Network",
+      "venue": "International Journal of Intelligent Systems and Applications in Engineering",
+      "year": 2021,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://ijisae.org/index.php/IJISAE/article/download/1315/666/5419",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18201/ijisae.2021473642?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18201/ijisae.2021473642, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2105650107",
+          "name": "Pooja J. Shah"
+        },
+        {
+          "authorId": "2053684218",
+          "name": "Trupti Shah"
+        }
+      ],
+      "abstract": ": Among the most prevalent and serious diseases that affect women is breast cancer. A large number of women succumb to breast cancer each year. Breast cancer must be detected in its early stage. To deal with this challenge, Deep Neural Network (DNN) is used to achieve the success. In medical science, DNN has played a vital role in the diagnosis of a wide range of illnesses. In this study, we investigate the use of Regularized Deep Neural Network (R-DNN) for the prediction of breast cancer. A variety of optimization techniques, such as Limited-memory Broyden Fletcher Goldfarb Shanno (L-BFGS), Stochastic Gradient Descant (SGD), Adaptive Moment Estimation (Adam), and activation functions like as Tanh, Sigmoid, and Rectified Linear Unit (ReLu) are used in the simulation of R-DNN. The Independent Component Analysis (ICA) approach is used to identify the most effective features to be used in the study. To measure the efficacy of the model, training and testing of the proposed network is carried out using the Wisconsin Breast Cancer (WBC) (Original) dataset from the University of California at Irvine (UCI) Machine Learning repository. The detailed analysis of the accuracy is carried out and compared to the accuracy of other author’s model. We find that the proposed network attains the highest accuracy."
+    },
+    {
+      "paperId": "d8d7d377da85240515dbc96afed6929c7a580ce8",
+      "externalIds": {
+        "DBLP": "conf/isocc/YooHL21",
+        "DOI": "10.1109/ISOCC53507.2021.9613942",
+        "CorpusId": 244662275
+      },
+      "title": "Low-Complexity On-Device ECG Classifier using Binarized Neural Network",
+      "venue": "International SoC Design Conference",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISOCC53507.2021.9613942?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISOCC53507.2021.9613942, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "101369373",
+          "name": "S. Yoo"
+        },
+        {
+          "authorId": "2111502826",
+          "name": "Seungwoo Hong"
+        },
+        {
+          "authorId": "2145439575",
+          "name": "Youngjoo Lee"
+        }
+      ],
+      "abstract": "Targeting the real-time arrhythmia diagnosis on resource-limited devices, in this paper, we present a cost-effective heartbeat classifier that uses a binarized neural network (BNN). Based on the previous CNN-based approaches, several optimization schemes are applied for error-resilient binarization. With the full-precision gradient descent, the proposed model reduces the variance during the training. The learnable activation function additionally compensates binarization errors by adjusting information shifts. Targeting the MIT-BIH arrhythmia database, allowing less than 1% accuracy drop, the proposed BNN model reduces the energy consumption and the memory usage by 94.63% and 84.62%, respectively, compared to the full-precision CNN-based model."
+    },
+    {
+      "paperId": "a162439f70b52876d640dd29c7319d4557fe9610",
+      "externalIds": {
+        "PubMedCentral": "8484522",
+        "DOI": "10.3389/fimmu.2021.719175",
+        "CorpusId": 237538961,
+        "PubMed": "34603293"
+      },
+      "title": "Construction of a Ferroptosis-Related Nine-lncRNA Signature for Predicting Prognosis and Immune Response in Hepatocellular Carcinoma",
+      "venue": "Frontiers in Immunology",
+      "year": 2021,
+      "citationCount": 163,
+      "openAccessPdf": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.719175/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8484522, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "143955402",
+          "name": "Zhijie Xu"
+        },
+        {
+          "authorId": "145175373",
+          "name": "Bi Peng"
+        },
+        {
+          "authorId": "9487310",
+          "name": "Qiu-Chun Liang"
+        },
+        {
+          "authorId": "2145307686",
+          "name": "Xi Chen"
+        },
+        {
+          "authorId": "2111259873",
+          "name": "Yuan Cai"
+        },
+        {
+          "authorId": "4175995",
+          "name": "Shuangshuang Zeng"
+        },
+        {
+          "authorId": "40691865",
+          "name": "Kewa Gao"
+        },
+        {
+          "authorId": "2144796817",
+          "name": "Xiang Wang"
+        },
+        {
+          "authorId": "22522518",
+          "name": "Qiao-Yan Yi"
+        },
+        {
+          "authorId": "49909738",
+          "name": "Z. Gong"
+        },
+        {
+          "authorId": "3761622",
+          "name": "Yuanliang Yan"
+        }
+      ],
+      "abstract": "Ferroptosis is an iron-dependent cell death process that plays important regulatory roles in the occurrence and development of cancers, including hepatocellular carcinoma (HCC). Moreover, the molecular events surrounding aberrantly expressed long non-coding RNAs (lncRNAs) that drive HCC initiation and progression have attracted increasing attention. However, research on ferroptosis-related lncRNA prognostic signature in patients with HCC is still lacking. In this study, the association between differentially expressed lncRNAs and ferroptosis-related genes, in 374 HCC and 50 normal hepatic samples obtained from The Cancer Genome Atlas (TCGA), was evaluated using Pearson’s test, thereby identifying 24 ferroptosis-related differentially expressed lncRNAs. The least absolute shrinkage and selection operator (LASSO) algorithm and Cox regression model were used to construct and validate a prognostic risk score model from both TCGA training dataset and GEO testing dataset (GSE40144). A nine-lncRNA-based signature (CTD-2033A16.3, CTD-2116N20.1, CTD-2510F5.4, DDX11-AS1, LINC00942, LINC01224, LINC01231, LINC01508, and ZFPM2-AS1) was identified as the ferroptosis-related prognostic model for HCC, independent of multiple clinicopathological parameters. In addition, the HCC patients were divided into high-risk and low-risk groups according to the nine-lncRNA prognostic signature. The gene set enrichment analysis enrichment analysis revealed that the lncRNA-based signature might regulate the HCC immune microenvironment by interfering with tumor necrosis factor α/nuclear factor kappa-B, interleukin 2/signal transducers and activators of transcription 5, and cytokine/cytokine receptor signaling pathways. The infiltrating immune cell subtypes, such as resting memory CD4(+) T cells, follicular helper T cells, regulatory T cells, and M0 macrophages, were all significantly different between the high-risk group and the low-risk group as indicated in Spearman’s correlation analysis. Moreover, a substantial increase in the expression of B7H3 immune checkpoint molecule was found in the high-risk group. Our findings provided a promising insight into ferroptosis-related lncRNAs in HCC and a personalized prediction tool for prognosis and immune responses in patients."
+    },
+    {
+      "paperId": "07b15a5f8c3447dc42518281ecfa068047951481",
+      "externalIds": {
+        "DOI": "10.5327/1516-3180.342",
+        "CorpusId": 245079928
+      },
+      "title": "Neuralmed trIA: Automated Screening of Urgent Findings on Head CT Scans",
+      "venue": "São Paulo Medical Journal",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.5327/1516-3180.342",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5327/1516-3180.342?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5327/1516-3180.342, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2643413",
+          "name": "A. Castilla"
+        },
+        {
+          "authorId": "2058677939",
+          "name": "Priscilla Koch Wagner"
+        },
+        {
+          "authorId": "2111342182",
+          "name": "Jéssica dos Santos de Oliveira"
+        },
+        {
+          "authorId": "3328984",
+          "name": "Maria Fernanda B. Wanderley"
+        },
+        {
+          "authorId": "2144860682",
+          "name": "Anthony Moreno Eigier"
+        }
+      ],
+      "abstract": "Background:NeuralMed is a startup specialized in the development of artificial intelligence applications in medicine. Objectives: We developed a screening system for head computed tomography scans (HCT) that prioritizes patients with urgent pathologies. This study describes the development of the algorithm for detection and localization of intracranial hemorrhage. Design and setting: This is an observational study on HCT performed at hospitals in State of São Paulo. Methodology: The algorithm was built from 8432 HCT. We used unenhanced axial images after post-processing and normalization. The set is split into 80% for training, 10% for validation and 10% for testing. We used a MobileNet network pre-trained with ImageNet weights combined with a long short-term memory with categorical cross-entropy as loss function. The model’s outputs are hemorrhage, no findings, and other pathologies. A gradient class activation map was applied to identify and localize the hemorrhages. Results: Internal validation showed an area under the ROC curve (AUROC) of 96%, sensitivity of 87% and positive predictive value (PPV) of 96%. External validation was performed on 125 exams collected in a period after the training group obtaining an AUROC of 86%, sensitivity of 78% and PPV of 81%. Conclusion: After detecting an identifying the bleedings it is possible to order the patient queue prioritizing those most likely to have abnormalities and life-threatening situations. The algorithm also indicates the lesion location by showing the regions of the images that most activated the neural network."
+    },
+    {
+      "paperId": "b2ae1379ff5623cc27c8a39859590933d5b55ba5",
+      "externalIds": {
+        "CorpusId": 247549714
+      },
+      "title": "Greedy Learning for Large-Scale Neural MRI Reconstruction",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=tKeEIFvmENy, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2027017491",
+          "name": "Batu Mehmet Ozturkler"
+        },
+        {
+          "authorId": "2742407",
+          "name": "Arda Sahiner"
+        },
+        {
+          "authorId": "19278348",
+          "name": "Tolga Ergen"
+        },
+        {
+          "authorId": "150898486",
+          "name": "Arjun D Desai"
+        },
+        {
+          "authorId": "143651272",
+          "name": "S. Vasanawala"
+        },
+        {
+          "authorId": "145854819",
+          "name": "J. Pauly"
+        },
+        {
+          "authorId": "33002157",
+          "name": "M. Mardani"
+        },
+        {
+          "authorId": "3173667",
+          "name": "Mert Pilanci"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b1b43e13c2cac70ed2537a8b8c30505e0495883d",
+      "externalIds": {
+        "DBLP": "journals/jstsp/RockRTMP21",
+        "ArXiv": "2201.10360",
+        "MAG": "3135557895",
+        "DOI": "10.1109/JSTSP.2021.3062452",
+        "CorpusId": 233951938
+      },
+      "title": "Resource-Efficient Deep Neural Networks for Automotive Radar Interference Mitigation",
+      "venue": "IEEE Journal on Selected Topics in Signal Processing",
+      "year": 2021,
+      "citationCount": 50,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2201.10360",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.10360, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "147143597",
+          "name": "J. Rock"
+        },
+        {
+          "authorId": "2058326745",
+          "name": "Wolfgang Roth"
+        },
+        {
+          "authorId": "153470798",
+          "name": "Máté Tóth"
+        },
+        {
+          "authorId": "31147402",
+          "name": "P. Meissner"
+        },
+        {
+          "authorId": "1691836",
+          "name": "F. Pernkopf"
+        }
+      ],
+      "abstract": "Radar sensors are crucial for environment perception of driver assistance systems as well as autonomous vehicles. With a rising number of radar sensors and the so far unregulated automotive radar frequency band, mutual interference is inevitable and must be dealt with. Algorithms and models operating on radar data are required to run the early processing steps on specialized radar sensor hardware. This specialized hardware typically has strict resource-constraints, i.e. a low memory capacity and low computational power. Convolutional Neural Network (CNN)-based approaches for denoising and interference mitigation yield promising results for radar processing in terms of performance. Regarding resource-constraints, however, CNNs typically exceed the hardware's capacities by far. In this paper we investigate quantization techniques for CNN-based denoising and interference mitigation of radar signals. We analyze the quantization of (i) weights and (ii) activations of different CNN-based model architectures. This quantization results in reduced memory requirements for model storage and during inference. We compare models with fixed and learned bit-widths and contrast two different methodologies for training quantized CNNs, i.e. the straight-through gradient estimator and training distributions over discrete weights. We illustrate the importance of structurally small real-valued base models for quantization and show that learned bit-widths yield the smallest models. We achieve a memory reduction of around 80% compared to the real-valued baseline. Due to practical reasons, however, we recommend the use of 8 bits for weights and activations, which results in models that require only 0.2 megabytes of memory."
+    },
+    {
+      "paperId": "9bda6b7fde666f1b7779229395cd40220313d22c",
+      "externalIds": {
+        "MAG": "3150053915",
+        "DBLP": "journals/pvldb/Yin00PZ21",
+        "DOI": "10.14778/3447689.3447692",
+        "CorpusId": 232328414
+      },
+      "title": "ParaX: Boosting Deep Learning for Big Data Analytics on Many-Core CPUs",
+      "venue": "Proceedings of the VLDB Endowment",
+      "year": 2021,
+      "citationCount": 9,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.14778/3447689.3447692?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.14778/3447689.3447692, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51291705",
+          "name": "Lujia Yin"
+        },
+        {
+          "authorId": "2108440688",
+          "name": "Yiming Zhang"
+        },
+        {
+          "authorId": "2362362",
+          "name": "Zhaoning Zhang"
+        },
+        {
+          "authorId": "2653582",
+          "name": "Yuxing Peng"
+        },
+        {
+          "authorId": "1384721292",
+          "name": "Peng Zhao"
+        }
+      ],
+      "abstract": "Despite the fact that GPUs and accelerators are more efficient in deep learning (DL), commercial clouds like Facebook and Amazon now heavily use CPUs in DL computation because there are large numbers of CPUs which would otherwise sit idle during off-peak periods. Following the trend, CPU vendors have not only released high-performance many-core CPUs but also developed efficient math kernel libraries. However, current DL platforms cannot scale well to a large number of CPU cores, making many-core CPUs inefficient in DL computation. We analyze the memory access patterns of various layers and identify the root cause of the low scalability, i.e., the per-layer barriers that are implicitly imposed by current platforms which assign one single instance (i.e., one batch of input data) to a CPU. The barriers cause severe memory bandwidth contention and CPU starvation in the access-intensive layers (like activation and BN).\n This paper presents a novel approach called ParaX, which boosts the performance of DL on many-core CPUs by effectively alleviating bandwidth contention and CPU starvation. Our key idea is to assign one instance to each CPU core instead of to the entire CPU, so as to remove the per-layer barriers on the executions of the many cores. ParaX designs an ultralight scheduling policy which sufficiently overlaps the access-intensive layers with the compute-intensive ones to avoid contention, and proposes a NUMA-aware gradient server mechanism for training which leverages shared memory to substantially reduce the overhead of per-iteration parameter synchronization. We have implemented ParaX on MXNet. Extensive evaluation on a two-NUMA Intel 8280 CPU shows that ParaX significantly improves the training/inference throughput for all tested models (for image recognition and natural language processing) by 1.73X ~ 2.93X."
+    },
+    {
+      "paperId": "58299d56d59080aa3108f4683ec2dd87f81310f2",
+      "externalIds": {
+        "DOI": "10.1515/cdbme-2021-2201",
+        "CorpusId": 245007861
+      },
+      "title": "Fixed Point Analysis Workflow for efficient Design of Convolutional Neural Networks in Hearing Aids",
+      "venue": "Current Directions in Biomedical Engineering",
+      "year": 2021,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1515/cdbme-2021-2201",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1515/cdbme-2021-2201?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1515/cdbme-2021-2201, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2056541712",
+          "name": "Simon C. Klein"
+        },
+        {
+          "authorId": "2144020907",
+          "name": "Jonas Kantic"
+        },
+        {
+          "authorId": "143819419",
+          "name": "H. Blume"
+        }
+      ],
+      "abstract": "Abstract Neural networks (NN) are a powerful tool to tackle complex problems in hearing aid research, but their use on hearing aid hardware is currently limited by memory and processing power. To enable the training with these constrains, a fixed point analysis and a memory friendly power of two quantization (replacing multiplications with shift operations) scheme has been implemented extending TensorFlow, a standard framework for training neural networks, and the Qkeras package [1, 2]. The implemented fixed point analysis detects quantization issues like overflows, underflows, precision problems and zero gradients. The analysis is done for each layer in every epoch for weights, biases and activations respectively. With this information the quantization can be optimized, e.g. by modifying the bit width, number of integer bits or the quantization scheme to a power of two quantization. To demonstrate the applicability of this method a case study has been conducted. Therefore a CNN has been trained to predict the Ideal Ratio Mask (IRM) for noise reduction in audio signals. The dataset consists of speech samples from the TIMIT dataset mixed with noise from the Urban Sound 8kand VAD-dataset at 0 dB SNR. The CNN was trained in floating point, fixed point and a power of two quantization. The CNN architecture consists of six convolutional layers followed by three dense layers. From initially 1.9 MB memory footprint for 468k float32 weights, the power of two quantized network is reduced to 236 kB, while the Short Term Objective Intelligibility (STOI) Improvement drops only from 0.074 to 0.067. Despite the quantization only a minimal drop in performance was observed, while saving up to 87.5 % of memory, thus being suited for employment in a hearing aid"
+    },
+    {
+      "paperId": "12fd9cbdd4fa51e5c4fcd83a83c758bf2439c78d",
+      "externalIds": {
+        "ArXiv": "2109.09060",
+        "DBLP": "journals/tvlsi/TaoRCR22",
+        "DOI": "10.1109/TVLSI.2022.3193312",
+        "CorpusId": 237571531
+      },
+      "title": "On Noise Stability and Robustness of Adversarially Trained Networks on NVM Crossbars",
+      "venue": "IEEE Transactions on Very Large Scale Integration (vlsi) Systems",
+      "year": 2021,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2109.09060",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2109.09060, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47404993",
+          "name": "Deboleena Roy"
+        },
+        {
+          "authorId": "2140434326",
+          "name": "Chun Tao"
+        },
+        {
+          "authorId": "1832280",
+          "name": "I. Chakraborty"
+        },
+        {
+          "authorId": "2091913080",
+          "name": "Kaushik Roy"
+        }
+      ],
+      "abstract": "Applications based on deep neural networks (DNNs) have grown exponentially in the past decade. To match their increasing computational needs, several nonvolatile memory (NVM) crossbar-based accelerators have been proposed. Recently, researchers have shown that apart from improved energy efficiency and performance, such approximate hardware also possess intrinsic robustness for defense against adversarial attacks. Prior works have focused on quantifying this intrinsic robustness for vanilla networks, that is DNNs trained on unperturbed inputs. However, adversarial training of DNNs, i.e., training with adversarially perturbed images, is the benchmark technique for robustness, and sole reliance on intrinsic robustness of the hardware may not be sufficient. In this work, we explore the design of robust DNNs through the amalgamation of adversarial training and the intrinsic robustness offered by NVM crossbar-based analog hardware. First, we study the noise stability of such networks on unperturbed inputs and observe that internal activations of adversarially trained networks have lower signal-to-noise ratio (SNR), and are sensitive to noise compared to vanilla networks. As a result, they suffer significantly higher performance degradation due to the approximate computations on analog hardware; on an average <inline-formula> <tex-math notation=\"LaTeX\">$2\\times $ </tex-math></inline-formula> accuracy drop. Noise stability analyses clearly show the instability of adversarially trained DNNs. On the other hand, for adversarial images generated using Square Black Box attacks, ResNet-10/20 adversarially trained on CIFAR-10/100 display a robustness improvement of 20%–30% under high <inline-formula> <tex-math notation=\"LaTeX\">$\\epsilon _{\\mathrm{ attack}}$ </tex-math></inline-formula> (degree of input perturbation). For adversarial images generated using projected-gradient-descent (PGD) White-Box attacks, the adversarially trained DNNs present a 5%–10% gain in robust accuracy due to the underlying NVM crossbar when <inline-formula> <tex-math notation=\"LaTeX\">$\\epsilon _{\\mathrm{ attack}}$ </tex-math></inline-formula> is greater than the <italic>epsilon</italic> of the adversarial training (<inline-formula> <tex-math notation=\"LaTeX\">$\\epsilon _{\\mathrm{ train}}$ </tex-math></inline-formula>). Our results indicate that implementing adversarially trained networks on analog hardware requires careful calibration between hardware nonidealities and <inline-formula> <tex-math notation=\"LaTeX\">$\\epsilon _{\\mathrm{ train}}$ </tex-math></inline-formula> to achieve optimum robustness and performance."
+    },
+    {
+      "paperId": "133040cd39c2df7e55a183b1c842f7194bf2c6a6",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2109-09060",
+        "CorpusId": 260426233
+      },
+      "title": "On the Noise Stability and Robustness of Adversarially Trained Networks on NVM Crossbars",
+      "venue": "arXiv.org",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://arxiv.org/abs/2109.09060, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47404993",
+          "name": "Deboleena Roy"
+        },
+        {
+          "authorId": "2140434326",
+          "name": "Chun Tao"
+        },
+        {
+          "authorId": "1832280",
+          "name": "I. Chakraborty"
+        },
+        {
+          "authorId": "2091913080",
+          "name": "Kaushik Roy"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9997930332c2f9b3c87c2dcffe002815f43356fe",
+      "externalIds": {
+        "DOI": "10.32393/csme.2021.135",
+        "CorpusId": 239413219
+      },
+      "title": "Reduced-Order Neural Network Plant Models For Proton Exchange Membrane Fuel Cells Using Principal Component Analysis",
+      "venue": "Progress in Canadian Mechanical Engineering. Volume 4",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.32393/csme.2021.135",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.32393/csme.2021.135?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.32393/csme.2021.135, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2133926899",
+          "name": "Chris Shum"
+        },
+        {
+          "authorId": "144304939",
+          "name": "J. McPhee"
+        }
+      ],
+      "abstract": "High-fidelity physics-based models can represent complex systems with high accuracy but, due to high computational cost, are often ill-suited for real-time applications. Data-driven models such as neural networks can yield competitive accuracy with reduced computation cost, may capture system-specific phenomena not accounted for in physics-based models, and can be further accelerated using parallel computing. For resource-constrained applications such as embedded controllers for automotive platforms, data-driven approaches can enable use of model predictive control where an analytical physics-based model would be computationally prohibitive. A disadvantage can be the memory (static ROM and dynamic RAM) required to store the model parameters which is a key metric for feasibility of use in embedded control systems. Model complexity reduction is therefore highly desirable. In this work, an ensemble of feedforward neural networks is used to approximate the input-output mapping for a hydrogen proton exchange membrane fuel cell of a typical design used in production light-duty fuel cell vehicles. The baseline models are fully-connected multilayer perceptron networks using rectified linear unit activation functions, trained using scaled conjugate gradient backpropagation. These models achieve mean relative error of <6.6% versus ground truth data over 52 predicted output features. The models are further optimized by pre-conditioning the neural network training data using principal component analysis (PCA) to project the input features onto an orthogonal basis, maximizing the variance per input feature and allowing for reduction of the input dimension by discarding negligible components. The PCA-reduced models achieve an overall reduction of 6-45% in neuron count compared to the baseline models, corresponding to memory reductions of 6-45% in calibration ROM and 8-40% in stack RAM. Aggregate execution time of the ensemble was measured at 146 μs and 107 μs on representative automotive controller hardware for the baseline and PCA-reduced models, respectively, representing a 26.7% reduction. For this improvement in performance (reduction in model size), the"
+    },
+    {
+      "paperId": "13c9f89b5f22bcb54d7ead397538fa556a0c45d3",
+      "externalIds": {
+        "MAG": "3189972411",
+        "DOI": "10.25394/PGS.15050121.V1",
+        "CorpusId": 238803111
+      },
+      "title": "Exploring Methods for Efficient Learning in Neural Networks",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.25394/PGS.15050121.V1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.25394/PGS.15050121.V1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47404993",
+          "name": "Deboleena Roy"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c3215540fa8a36c0bdf133c8d49d0ea437999f1b",
+      "externalIds": {
+        "MAG": "3171057905",
+        "DOI": "10.1200/JCO.2021.39.15_SUPPL.E14530",
+        "CorpusId": 236351838
+      },
+      "title": "Modelling treatment benefit for bexmarilimab (an anti-Clever-1 antibody and a novel macrophage checkpoint inhibitor) using phase I first-in-man trial data.",
+      "venue": "",
+      "year": 2021,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1200/JCO.2021.39.15_SUPPL.E14530?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1200/JCO.2021.39.15_SUPPL.E14530, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49796744",
+          "name": "P. Bono"
+        },
+        {
+          "authorId": "46926058",
+          "name": "Jussi Ekström"
+        },
+        {
+          "authorId": "40281464",
+          "name": "M. Karvonen"
+        },
+        {
+          "authorId": "4093777",
+          "name": "J. Mandelin"
+        },
+        {
+          "authorId": "2522933",
+          "name": "J. Koivunen"
+        }
+      ],
+      "abstract": "e14530 Background: Bexmarilimab, an investigational immunotherapeutic antibody targeting Clever-1, is currently investigated in phase I/II MATINS study (NCT03733990) for advanced solid tumors. Machine learning (ML) based models combining extensive data could be generated to predict treatment responses to this first-in-class macrophage checkpoint inhibitor. Methods: 58 baseline features from 30 patients included in the part 1 of phase I/II MATINS trial were included in ML modelling. Seven patients were classified as benefitting from the therapy by RECIST 1.1 (PR or SD response in target or non-target lesions). Initial feature selection was done using a combination of domain knowledge and removal of features with several missing values resulting in 20 clinically relevant features from 25 patients. The remaining data was standardized and feature selection using variance analysis (ANOVA) based on F-values between response and features was performed. With this approach, the number of features could be further reduced as the prediction performance increased until the most important features were included in the model. Several prediction models were trained, and prediction performance evaluated using leave-one-out cross-validation (LOOCV), with and without SMOTE oversampling of the positive class of the training data inside each LOOCV fold. In LOOCV the prediction model was trained 25 times. Stacked meta classifier with SMOTE oversampling combining three classifiers: elastic-net logistic regression, random forest and extreme gradient boosting was chosen as the best performing prediction model. Results: Seven baseline features were associated with bexmarilimab treatment benefit. Increasing bexmarilimab dose and high tumor FoxP3 cells showed positive benefit. On contrary, high baseline blood neutrophils, CD4, T-cells, B-cells, and CXCL10 indicated negative relationship to the treatment benefit. The ML model trained with these seven features performed well in LOOCV as 6/7 benefitting and 16/18 non-benefitting were classified correctly, and all considered classification performance metrics were good. In feature importance analysis, low baseline CXCL10 and neutrophils were characterized as the most important predictors for treatment benefit with values of 0.19 and 0.16. Conclusions: This study highlights possibility of using ML models in predicting treatment benefit for novel cancer drugs such as bexmarilimab and boost the clinical development. These findings are in line of expected immune activation of bexmarilimab treatment. The generated ML models should be further validated in a larger patient cohort. Clinical trial information: NCT03733990."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "gradient checkpointing activation memory training",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2021"
+}

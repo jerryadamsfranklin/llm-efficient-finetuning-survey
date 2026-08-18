@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -74,6 +75,28 @@ def norm_title(value: Any) -> str:
     return s
 
 
+def invert_abstract(index: Any) -> str:
+    """Rebuild plain text from an OpenAlex abstract_inverted_index."""
+    if not isinstance(index, dict) or not index:
+        return ""
+    positions: list[tuple[int, str]] = []
+    for word, locs in index.items():
+        if not isinstance(locs, list):
+            continue
+        for loc in locs:
+            if isinstance(loc, int):
+                positions.append((loc, word))
+    positions.sort()
+    return " ".join(word for _, word in positions)
+
+
+def to_int(value: Any) -> int:
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return 0
+
+
 def authors_to_str(authors: Any) -> str:
     if authors is None:
         return ""
@@ -109,6 +132,9 @@ class Record:
     is_published: bool = False  # has DOI / non-preprint venue signal
     title_norm: str = ""
     parent_query: str = ""
+    citations: int = 0  # inclusion criterion 3 (adoption bar)
+    language: str = ""  # inclusion criterion 4
+    work_type: str = ""  # exclusion criterion 6 (non-archival material)
 
     def __post_init__(self) -> None:
         self.title_norm = norm_title(self.title)
@@ -165,16 +191,19 @@ def load_arxiv() -> list[Record]:
     return out
 
 
-def load_semanticscholar() -> list[Record]:
+def load_semanticscholar(source_dir: str = "semanticscholar") -> list[Record]:
     out: list[Record] = []
-    for path in sorted((RAW_ROOT / "semanticscholar").glob("*.json")):
+    root = RAW_ROOT / source_dir
+    if not root.exists():
+        return out
+    for path in sorted(root.glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         q = data.get("protocol_query") or data.get("query") or path.stem
         for p in data.get("papers") or []:
             ext = p.get("externalIds") or {}
             out.append(
                 Record(
-                    source="semanticscholar",
+                    source=source_dir,
                     source_query=str(q),
                     title=p.get("title") or "",
                     authors=authors_to_str(p.get("authors")),
@@ -185,6 +214,7 @@ def load_semanticscholar() -> list[Record]:
                     abstract=p.get("abstract") or "",
                     extra_id=p.get("paperId") or "",
                     is_published=bool(ext.get("DOI")),
+                    citations=to_int(p.get("citationCount")),
                 )
             )
     return out
@@ -205,16 +235,21 @@ def load_openalex(source_dir: str) -> list[Record]:
             venue = ""
             if isinstance(src, dict):
                 venue = src.get("display_name") or ""
-            # OpenAlex ids.arxiv sometimes present
             arxiv = None
-            for loc_item in w.get("locations") or []:
-                # occasionally host landing pages include arxiv
-                pass
-            openalex_id = w.get("id") or ""
-            # try extract arxiv from ids
             for k, v in ids.items():
                 if "arxiv" in k.lower():
                     arxiv = v
+            if not arxiv:
+                # arXiv landing pages appear as alternate locations, not always in ids
+                for loc_item in w.get("locations") or []:
+                    if not isinstance(loc_item, dict):
+                        continue
+                    src_name = ((loc_item.get("source") or {}) or {}).get("display_name") or ""
+                    url = loc_item.get("landing_page_url") or ""
+                    if "arxiv" in src_name.lower() or "arxiv.org" in url.lower():
+                        arxiv = url or src_name
+                        break
+            openalex_id = w.get("id") or ""
             out.append(
                 Record(
                     source=source_dir,
@@ -230,9 +265,12 @@ def load_openalex(source_dir: str) -> list[Record]:
                     venue=venue,
                     doi=w.get("doi") or ids.get("doi"),
                     arxiv_id=arxiv,
-                    abstract="",
+                    abstract=invert_abstract(w.get("abstract_inverted_index")),
                     extra_id=openalex_id,
                     is_published=bool(w.get("doi") or ids.get("doi")),
+                    citations=to_int(w.get("cited_by_count")),
+                    language=str(w.get("language") or ""),
+                    work_type=str(w.get("type") or ""),
                 )
             )
     return out
@@ -257,6 +295,8 @@ def load_ieee() -> list[Record]:
                     abstract=a.get("abstract") or "",
                     extra_id=str(a.get("article_number") or ""),
                     is_published=True,
+                    citations=to_int(a.get("citing_paper_count")),
+                    work_type=str(a.get("content_type") or ""),
                 )
             )
     return out
@@ -312,8 +352,60 @@ def load_google_scholar() -> list[Record]:
                     extra_id=row.get("id") or "",
                     is_published=False,
                     parent_query=pq,
+                    citations=to_int(row.get("cited_by")),
                 )
             )
+    return out
+
+
+def load_supplementary() -> list[Record]:
+    """Protocol v1.3 known-corpus verification lookups (search/raw/supplementary/).
+
+    These are references the manuscript already cites that Phase 2 did not retrieve. They
+    enter the pool so they can be screened on the same criteria as every other candidate.
+    A lookup whose matched title is not identical to the cited title is NOT loaded: it may
+    be a different work, and admitting it would silently substitute one paper for another.
+    """
+    path = RAW_ROOT / "supplementary" / "known_corpus_misses.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    out: list[Record] = []
+    for item in data.get("results") or []:
+        rec = item.get("record")
+        if not rec or item.get("lookup_status") != "matched":
+            continue
+        if norm_title(rec.get("title")) != norm_title(item.get("reference_title")):
+            print(
+                f"  supplementary: SKIP {item.get('reference_key')} — matched title differs "
+                f"from cited title (possible different work)",
+                flush=True,
+            )
+            continue
+        ext = rec.get("externalIds") or {}
+        authors = rec.get("authors")
+        # Criterion 5 reads "published (or first posted, for preprints)". For these records
+        # the manuscript's verified publication year governs: Semantic Scholar reports the
+        # preprint posting year (GPipe 2018, AdamW 2017), which would otherwise date a paper
+        # published at NeurIPS/ICLR 2019 to outside the coverage window.
+        year = str(item.get("reference_year") or rec.get("year") or "")
+        out.append(
+            Record(
+                source="supplementary",
+                source_query=f"known_corpus:{item.get('reference_key')}",
+                title=rec.get("title") or "",
+                authors=authors_to_str(authors),
+                year=year,
+                venue=rec.get("venue") or item.get("reference_venue") or "",
+                doi=ext.get("DOI") or rec.get("doi"),
+                arxiv_id=ext.get("ArXiv"),
+                abstract=rec.get("abstract") or "",
+                extra_id=str(rec.get("paperId") or ""),
+                is_published=bool(ext.get("DOI") or rec.get("doi")),
+                citations=to_int(rec.get("citationCount")),
+                parent_query=f"known_corpus:{item.get('reference_key')}",
+            )
+        )
     return out
 
 
@@ -344,14 +436,25 @@ def merge_cluster(recs: list[Record]) -> dict[str, Any]:
     superseded = [a for a in arxivs if a != canon.arxiv_id]
     scholar_only = sources == ["google_scholar"]
     oop = scholar_only and canon.parent_query == "OUT_OF_PROTOCOL"
+    # Screening needs the richest metadata in the cluster, not only the canonical
+    # record's: the preferred (published) record often lacks an abstract that the
+    # merged preprint carries, and citation counts differ per source.
+    best_abstract = max((r.abstract or "" for r in recs), key=len)
+    cited = max(recs, key=lambda r: r.citations)
+    language = next((r.language for r in recs if r.language), "")
+    work_type = next((r.work_type for r in recs if r.work_type), "")
     return {
         "title": canon.title,
         "authors": canon.authors,
-        "year": canon.year,
-        "venue": canon.venue,
+        "year": canon.year or next((r.year for r in recs if r.year), ""),
+        "venue": canon.venue or next((r.venue for r in recs if r.venue), ""),
         "doi": canon.doi or (dois[0] if dois else ""),
         "arxiv_id": canon.arxiv_id or (arxivs[0] if arxivs else ""),
-        "abstract": (canon.abstract or "")[:2000],
+        "abstract": best_abstract[:2000],
+        "citations": cited.citations,
+        "citations_source": cited.source if cited.citations else "",
+        "language": language,
+        "work_type": work_type,
         "canonical_source": canon.source,
         "sources": "|".join(sources),
         "n_sources": len(sources),
@@ -457,9 +560,25 @@ def dedupe(records: list[Record], fuzzy: bool = True) -> tuple[list[dict[str, An
         "multi_source_candidates": sum(1 for r in pool if r["n_sources"] > 1),
         "with_doi": sum(1 for r in pool if r.get("doi")),
         "with_arxiv": sum(1 for r in pool if r.get("arxiv_id")),
+        "with_abstract": sum(1 for r in pool if (r.get("abstract") or "").strip()),
+        "with_citation_data": sum(1 for r in pool if r.get("citations")),
+        "at_or_above_50_citations": sum(1 for r in pool if (r.get("citations") or 0) >= 50),
         "out_of_protocol": sum(1 for r in pool if r.get("out_of_protocol")),
     }
     return pool, summary
+
+
+def candidate_id(row: dict[str, Any]) -> str:
+    """Content-derived, stable candidate id.
+
+    Positional ids (C00001 by sort order) shift whenever the pool is regenerated, which
+    would silently reassign screening decisions recorded against them. Deriving the id from
+    the strongest available identifier keeps it stable across re-runs, so the pool can be
+    refreshed mid-screening without corrupting `screening/screening-log.csv`.
+    """
+    key = row.get("doi") or row.get("arxiv_id") or norm_title(row.get("title"))
+    digest = hashlib.sha1(str(key).encode("utf-8")).hexdigest()[:10]
+    return f"C-{digest}"
 
 
 def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
@@ -476,6 +595,10 @@ def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
         "n_sources",
         "n_records_merged",
         "is_published",
+        "citations",
+        "citations_source",
+        "language",
+        "work_type",
         "out_of_protocol",
         "superseded_arxiv_ids",
         "parent_query",
@@ -483,12 +606,21 @@ def write_pool(pool: list[dict[str, Any]], path: Path = POOL_PATH) -> None:
         "abstract",
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
+    seen: dict[str, int] = {}
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
-        for i, row in enumerate(pool, start=1):
+        for row in pool:
             out = {k: row.get(k, "") for k in fields}
-            out["candidate_id"] = f"C{i:05d}"
+            cid = candidate_id(row)
+            # Disambiguate the rare hash collision deterministically rather than silently
+            # merging two distinct candidates under one id.
+            if cid in seen:
+                seen[cid] += 1
+                cid = f"{cid}-{seen[cid]}"
+            else:
+                seen[cid] = 0
+            out["candidate_id"] = cid
             out["is_published"] = "yes" if row.get("is_published") else "no"
             out["out_of_protocol"] = "yes" if row.get("out_of_protocol") else "no"
             w.writerow(out)
@@ -502,6 +634,9 @@ def append_log(summary: dict[str, Any], by_source_raw: dict[str, int]) -> None:
         f"- **Unique candidates:** {summary['unique_candidates']}",
         f"- **Multi-source merges:** {summary['multi_source_candidates']}",
         f"- **With DOI / arXiv:** {summary['with_doi']} / {summary['with_arxiv']}",
+        f"- **With abstract:** {summary['with_abstract']}",
+        f"- **With citation count / ≥ 50 citations:** "
+        f"{summary['with_citation_data']} / {summary['at_or_above_50_citations']}",
         f"- **Out-of-protocol (Scholar):** {summary['out_of_protocol']}",
         f"- **Match events:** {summary['match_events']}",
         f"- **Raw by source:** {by_source_raw}",
@@ -532,11 +667,14 @@ def main() -> int:
     loaders = [
         ("arxiv", load_arxiv),
         ("semanticscholar", load_semanticscholar),
+        # v1.3 additions: date-sliced confirmation-band backfill and known-corpus lookups.
+        ("semanticscholar_backfill", lambda: load_semanticscholar("semanticscholar_backfill")),
         ("openalex", lambda: load_openalex("openalex")),
         ("openalex_acm", lambda: load_openalex("openalex_acm")),
         ("ieee", load_ieee),
         ("dblp", load_dblp),
         ("google_scholar", load_google_scholar),
+        ("supplementary", load_supplementary),
     ]
     records: list[Record] = []
     by_source_raw: dict[str, int] = {}

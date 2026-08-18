@@ -1,0 +1,1251 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "gradient checkpointing activation memory training",
+  "year": "2020-2020",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:38:04Z",
+  "total_results_reported": 29,
+  "returned": 29,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "eb27f938ec634b18dddb42ed3f1458fc0df3bb73",
+      "externalIds": {
+        "ArXiv": "2002.06517",
+        "DBLP": "conf/iclr/KimK0K20",
+        "MAG": "2996184188",
+        "CorpusId": 209483461
+      },
+      "title": "BinaryDuo: Reducing Gradient Mismatch in Binary Activation Network by Coupling Binary Activations",
+      "venue": "International Conference on Learning Representations",
+      "year": 2020,
+      "citationCount": 53,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.06517, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48206597",
+          "name": "Hyungjun Kim"
+        },
+        {
+          "authorId": "2109327630",
+          "name": "Kyungsu Kim"
+        },
+        {
+          "authorId": "2117157673",
+          "name": "Jinseok Kim"
+        },
+        {
+          "authorId": "2145449463",
+          "name": "Jae-Joon Kim"
+        }
+      ],
+      "abstract": "Binary Neural Networks (BNNs) have been garnering interest thanks to their compute cost reduction and memory savings. However, BNNs suffer from performance degradation mainly due to the gradient mismatch caused by binarizing activations. Previous works tried to address the gradient mismatch problem by reducing the discrepancy between activation functions used at forward pass and its differentiable approximation used at backward pass, which is an indirect measure. In this work, we use the gradient of smoothed loss function to better estimate the gradient mismatch in quantized neural network. Analysis using the gradient mismatch estimator indicates that using higher precision for activation is more effective than modifying the differentiable approximation of activation function. Based on the observation, we propose a new training scheme for binary activation networks called BinaryDuo in which two binary activations are coupled into a ternary activation during training. Experimental results show that BinaryDuo outperforms state-of-the-art BNNs on various benchmarks with the same amount of parameters and computing cost."
+    },
+    {
+      "paperId": "32f01b6cceb485937a87799383cd1d80aee8219f",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2008-08636",
+        "MAG": "3064585691",
+        "ArXiv": "2008.08636",
+        "DOI": "10.1016/j.parco.2021.102792",
+        "CorpusId": 221186735
+      },
+      "title": "A Computational-Graph Partitioning Method for Training Memory-Constrained DNNs",
+      "venue": "Parallel Computing",
+      "year": 2020,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2008.08636",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2008.08636, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "66106908",
+          "name": "Fareed Qararyah"
+        },
+        {
+          "authorId": "2400424896",
+          "name": "M. Wahib"
+        },
+        {
+          "authorId": "1897261177",
+          "name": "D. Dikbayir"
+        },
+        {
+          "authorId": "26913214",
+          "name": "M. E. Belviranli"
+        },
+        {
+          "authorId": "2749676",
+          "name": "D. Unat"
+        }
+      ],
+      "abstract": "We propose ParDNN, an automatic, generic, and non-intrusive partitioning strategy for large DNN models that do not fit into single device memory.ParDNN decides a placement of DNN's underlying computational graph operations across multiple devices so that the devices' memory constraints are met and the training time is minimized.ParDNN is completely independent of the deep learning aspects of a DNN and requires no modification neither at the model nor at the systems level implementation of operation kernels. It partitions DNNs having billions of parameters and hundreds of thousands of operations in seconds to a few minutes. Our experiments with TensorFlow on 16 GPUs demonstrate efficient training of 5 very large models while achieving super-linear scaling for both the batch size and training throughput. In comparison to related work (Mesh-TensorFlow and gradient Checkpointing), ParDNN either outperforms or qualitatively improves upon them."
+    },
+    {
+      "paperId": "ac04ed0f3ae0f5b269c9b3e0d1232007d60dbf7e",
+      "externalIds": {
+        "ArXiv": "2006.09503",
+        "MAG": "3036879053",
+        "DBLP": "journals/corr/abs-2006-09503",
+        "CorpusId": 219720945
+      },
+      "title": "Memory-Efficient Pipeline-Parallel DNN Training",
+      "venue": "International Conference on Machine Learning",
+      "year": 2020,
+      "citationCount": 301,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.09503, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "22252150",
+          "name": "D. Narayanan"
+        },
+        {
+          "authorId": "3078275",
+          "name": "Amar Phanishayee"
+        },
+        {
+          "authorId": "51261135",
+          "name": "Kaiyu Shi"
+        },
+        {
+          "authorId": "2190801121",
+          "name": "Xie Chen"
+        },
+        {
+          "authorId": "143834867",
+          "name": "M. Zaharia"
+        }
+      ],
+      "abstract": "Many state-of-the-art results in domains such as NLP and computer vision have been obtained by scaling up the number of parameters in existing models. However, the weight parameters and intermediate outputs of these large models often do not fit in the main memory of a single accelerator device; this means that it is necessary to use multiple accelerators to train large models, which is challenging to do in a time-efficient way. In this work, we propose PipeDream-2BW, a system that performs memory-efficient pipeline parallelism, a hybrid form of parallelism that combines data and model parallelism with input pipelining. Our system uses a novel pipelining and weight gradient coalescing strategy, combined with the double buffering of weights, to ensure high throughput, low memory footprint, and weight update semantics similar to data parallelism. In addition, PipeDream-2BW automatically partitions the model over the available hardware resources, while being cognizant of constraints such as compute capabilities, memory capacities, and interconnect topologies, and determines when to employ existing memory-savings techniques, such as activation recomputation, that trade off extra computation for lower memory footprint. PipeDream-2BW is able to accelerate the training of large language models with up to 2.5 billion parameters by up to 6.9x compared to optimized baselines."
+    },
+    {
+      "paperId": "4fef409cd55d11b50bf6323fb9b710f4dfdf07d6",
+      "externalIds": {
+        "ArXiv": "2002.05529",
+        "MAG": "3089534387",
+        "DBLP": "conf/iscas/UnnikrishnanP20",
+        "DOI": "10.1109/ISCAS45731.2020.9181242",
+        "CorpusId": 211096968
+      },
+      "title": "A Gradient-Interleaved Scheduler for Energy-Efficient Backpropagation for Training Neural Networks",
+      "venue": "International Symposium on Circuits and Systems",
+      "year": 2020,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2002.05529",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.05529, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2065974440",
+          "name": "Nanda K. Unnikrishnan"
+        },
+        {
+          "authorId": "144062727",
+          "name": "Keshab K. Parhi"
+        }
+      ],
+      "abstract": "This paper addresses design of accelerators using systolic architectures for training of neural networks using a novel gradient interleaving approach. Training the neural network involves backpropagation of error and computation of gradients with respect to the activation functions and weights. It is shown that the gradient with respect to the activation function can be computed using a weight-stationary systolic array while the gradient with respect to the weights can be computed using an output-stationary systolic array. The novelty of the proposed approach lies in interleaving the computations of these two gradients to the same configurable systolic array. This results in reuse of the variables from one computation to the other and eliminates unnecessary memory accesses. The proposed approach leads to 1.4–2.2× savings in terms of number of cycles and 1.9× savings in terms of memory accesses. Thus, the proposed accelerator reduces latency and energy consumption."
+    },
+    {
+      "paperId": "ec529ea0e729f13b165379f42a3442097ae589d9",
+      "externalIds": {
+        "DBLP": "journals/jssc/ChoiSKCKK20",
+        "MAG": "3040850704",
+        "DOI": "10.1109/JSSC.2020.3005786",
+        "CorpusId": 221913015
+      },
+      "title": "An Energy-Efficient Deep Convolutional Neural Network Training Accelerator for In Situ Personalization on Smart Devices",
+      "venue": "IEEE Journal of Solid-State Circuits",
+      "year": 2020,
+      "citationCount": 36,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSSC.2020.3005786?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSSC.2020.3005786, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2283568",
+          "name": "Seungkyu Choi"
+        },
+        {
+          "authorId": "2263510832",
+          "name": "Jaehyeong Sim"
+        },
+        {
+          "authorId": "41184118",
+          "name": "Myeonggu Kang"
+        },
+        {
+          "authorId": "3389760",
+          "name": "Yeongjae Choi"
+        },
+        {
+          "authorId": "21100706",
+          "name": "Hyeonuk Kim"
+        },
+        {
+          "authorId": "144843517",
+          "name": "L. Kim"
+        }
+      ],
+      "abstract": "A scalable deep-learning accelerator supporting the training process is implemented for device personalization of deep convolutional neural networks (CNNs). It consists of three processor cores operating with distinct energy-efficient dataflow for different types of computation in CNN training. Unlike the previous works where they implement design techniques to exploit the same characteristics from the inference, we analyze major issues that occurred from training in a resource-constrained system to resolve the bottlenecks. A masking scheme in the propagation core reduces a massive amount of intermediate activation data storage. It eliminates frequent off-chip memory accesses for holding the generated activation data until the backward path. A disparate dataflow architecture is implemented for the weight gradient computation to enhance PE utilization while maximally reuse the input data. Furthermore, the modified weight update system enables an 8-bit fixed-point computing datapath. The processor is implemented in 65-nm CMOS technology and occupies 10.24 mm2 of the core area. It operates with the supply voltage from 0.63 to 1.0 V, and the computing engine runs in near-threshold voltage of 0.5 V. The chip consumes 40.7 mW at 50 MHz with the highest efficiency and achieves 47.4 $\\mu \\text{J}$ /epoch of training efficiency for the customized CNN model."
+    },
+    {
+      "paperId": "f8ed135451d1f61c2e248067c4a94f8d03c3344c",
+      "externalIds": {
+        "MAG": "3044520610",
+        "DBLP": "journals/corr/abs-2007-10909",
+        "ArXiv": "2007.10909",
+        "CorpusId": 220665858
+      },
+      "title": "SliceOut: Training Transformers and CNNs faster while using less memory",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2007.10909, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1825748945",
+          "name": "Pascal Notin"
+        },
+        {
+          "authorId": "19177000",
+          "name": "Aidan N. Gomez"
+        },
+        {
+          "authorId": "1825690220",
+          "name": "Joanna Yoo"
+        },
+        {
+          "authorId": "2681954",
+          "name": "Y. Gal"
+        }
+      ],
+      "abstract": "We demonstrate 10-40% speedups and memory reduction with Wide ResNets, EfficientNets, and Transformer models, with minimal to no loss in accuracy, using SliceOut---a new dropout scheme designed to take advantage of GPU memory layout. By dropping contiguous sets of units at random, our method preserves the regularization properties of dropout while allowing for more efficient low-level implementation, resulting in training speedups through (1) fast memory access and matrix multiplication of smaller tensors, and (2) memory savings by avoiding allocating memory to zero units in weight gradients and activations. Despite its simplicity, our method is highly effective. We demonstrate its efficacy at scale with Wide ResNets & EfficientNets on CIFAR10/100 and ImageNet, as well as Transformers on the LM1B dataset. These speedups and memory savings in training can lead to $CO_2$ emissions reduction of up to 40% for training large models."
+    },
+    {
+      "paperId": "5909e4ff9c7d9db3e2bff8c4da25d0c3b883e54d",
+      "externalIds": {
+        "DBLP": "journals/pami/LiXFDXL22",
+        "DOI": "10.1109/TPAMI.2020.3048430",
+        "CorpusId": 229941142,
+        "PubMed": "33382647"
+      },
+      "title": "Training Neural Networks by Lifted Proximal Operator Machines",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "year": 2020,
+      "citationCount": 21,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TPAMI.2020.3048430?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TPAMI.2020.3048430, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2118372725",
+          "name": "Jia Li"
+        },
+        {
+          "authorId": "145974462",
+          "name": "M. Xiao"
+        },
+        {
+          "authorId": "47967033",
+          "name": "Cong Fang"
+        },
+        {
+          "authorId": "2116916354",
+          "name": "Yue Dai"
+        },
+        {
+          "authorId": "31796215",
+          "name": "Chao Xu"
+        },
+        {
+          "authorId": "33383055",
+          "name": "Zhouchen Lin"
+        }
+      ],
+      "abstract": "We present the lifted proximal operator machine (LPOM) to train fully-connected feed-forward neural networks. LPOM represents the activation function as an equivalent proximal operator and adds the proximal operators to the objective function of a network as penalties. LPOM is block multi-convex in all layer-wise weights and activations. This allows us to develop a new block coordinate descent (BCD) method with convergence guarantee to solve it. Due to the novel formulation and solving method, LPOM only uses the activation function itself and does not require any gradient steps. Thus it avoids the gradient vanishing or exploding issues, which are often blamed in gradient-based methods. Also, it can handle various non-decreasing Lipschitz continuous activation functions. Additionally, LPOM is almost as memory-efficient as stochastic gradient descent and its parameter tuning is relatively easy. We further implement and analyze the parallel solution of LPOM. We first propose a general asynchronous-parallel BCD method with convergence guarantee. Then we use it to solve LPOM, resulting in asynchronous-parallel LPOM. For faster speed, we develop the synchronous-parallel LPOM. We validate the advantages of LPOM on various network architectures and datasets. We also apply synchronous-parallel LPOM to autoencoder training and demonstrate its fast convergence and superior performance."
+    },
+    {
+      "paperId": "9df893d2b8ac20271c0317a72e97cc9720954f0b",
+      "externalIds": {
+        "DBLP": "conf/iclr/ChmielBSHBS21",
+        "MAG": "3092052590",
+        "CorpusId": 222295655
+      },
+      "title": "Neural gradients are near-lognormal: improved quantized and sparse training",
+      "venue": "International Conference on Learning Representations",
+      "year": 2020,
+      "citationCount": 66,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/forum?id=EoFNy62JGd, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "104387774",
+          "name": "Brian Chmiel"
+        },
+        {
+          "authorId": "1749762168",
+          "name": "Liad Ben-Uri"
+        },
+        {
+          "authorId": "2065832429",
+          "name": "Moran Shkolnik"
+        },
+        {
+          "authorId": "40555034",
+          "name": "Elad Hoffer"
+        },
+        {
+          "authorId": "2607278",
+          "name": "Ron Banner"
+        },
+        {
+          "authorId": "1912398",
+          "name": "Daniel Soudry"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "d491b204c0f7b9dadce9b6f29cb8e407dd107dff",
+      "externalIds": {
+        "MAG": "2981237538",
+        "DBLP": "conf/europar/BeaumontES20",
+        "DOI": "10.1007/978-3-030-57675-2_10",
+        "CorpusId": 208114202
+      },
+      "title": "Optimal GPU-CPU Offloading Strategies for Deep Neural Network Training",
+      "venue": "European Conference on Parallel Processing",
+      "year": 2020,
+      "citationCount": 35,
+      "openAccessPdf": {
+        "url": "https://hal.inria.fr/hal-02316266v3/file/report.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-030-57675-2_10?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-030-57675-2_10, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1731715",
+          "name": "Olivier Beaumont"
+        },
+        {
+          "authorId": "1395576412",
+          "name": "Lionel Eyraud-Dubois"
+        },
+        {
+          "authorId": "80222318",
+          "name": "Alena Shilova"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b11c87681ee46ab8c82bf96d97f958bd95b8f0a8",
+      "externalIds": {
+        "MAG": "3012514909",
+        "DBLP": "conf/asplos/PengSD0MXYQ20",
+        "DOI": "10.1145/3373376.3378505",
+        "CorpusId": 212688369
+      },
+      "title": "Capuchin: Tensor-based GPU Memory Management for Deep Learning",
+      "venue": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "year": 2020,
+      "citationCount": 206,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3373376.3378505?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3373376.3378505, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1405878917",
+          "name": "Xuan Peng"
+        },
+        {
+          "authorId": "1678835",
+          "name": "Xuanhua Shi"
+        },
+        {
+          "authorId": "1503578591",
+          "name": "Hulin Dai"
+        },
+        {
+          "authorId": "145914256",
+          "name": "Hai Jin"
+        },
+        {
+          "authorId": "13867706",
+          "name": "Weiliang Ma"
+        },
+        {
+          "authorId": "2071148676",
+          "name": "Qian Xiong"
+        },
+        {
+          "authorId": "145338263",
+          "name": "Fan Yang"
+        },
+        {
+          "authorId": "2288203548",
+          "name": "Xuehai Qian"
+        }
+      ],
+      "abstract": "In recent years, deep learning has gained unprecedented success in various domains, the key of the success is the larger and deeper deep neural networks (DNNs) that achieved very high accuracy. On the other side, since GPU global memory is a scarce resource, large models also pose a significant challenge due to memory requirement in the training process. This restriction limits the DNN architecture exploration flexibility. In this paper, we propose Capuchin, a tensor-based GPU memory management module that reduces the memory footprint via tensor eviction/prefetching and recomputation. The key feature of Capuchin is that it makes memory management decisions based on dynamic tensor access pattern tracked at runtime. This design is motivated by the observation that the access pattern to tensors is regular during training iterations. Based on the identified patterns, one can exploit the total memory optimization space and offer the fine-grain and flexible control of when and how to perform memory optimization techniques. We deploy Capuchin in a widely-used deep learning framework, Tensorflow, and show that Capuchin can reduce the memory footprint by up to 85% among 6 state-of-the-art DNNs compared to the original Tensorflow. Especially, for the NLP task BERT, the maximum batch size that Capuchin can outperforms Tensorflow and gradient-checkpointing by 7x and 2.1x, respectively. We also show that Capuchin outperforms vDNN and gradient-checkpointing by up to 286% and 55% under the same memory oversubscription."
+    },
+    {
+      "paperId": "036251ce21ef0750898bc4ddab42cb9f5d7bdded",
+      "externalIds": {
+        "MAG": "2994926586",
+        "ArXiv": "2002.07520",
+        "DBLP": "conf/iclr/AlizadehBBLBW20",
+        "CorpusId": 211146200
+      },
+      "title": "Gradient $\\ell_1$ Regularization for Quantization Robustness",
+      "venue": "International Conference on Learning Representations",
+      "year": 2020,
+      "citationCount": 8,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.07520, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2522169",
+          "name": "Milad Alizadeh"
+        },
+        {
+          "authorId": "1723534",
+          "name": "A. Behboodi"
+        },
+        {
+          "authorId": "147409784",
+          "name": "M. V. Baalen"
+        },
+        {
+          "authorId": "2075783",
+          "name": "Christos Louizos"
+        },
+        {
+          "authorId": "83133279",
+          "name": "Tijmen Blankevoort"
+        },
+        {
+          "authorId": "1678311",
+          "name": "M. Welling"
+        }
+      ],
+      "abstract": "We analyze the effect of quantizing weights and activations of neural networks on their loss and derive a simple regularization scheme that improves robustness against post-training quantization. By training quantization-ready networks, our approach enables storing a single set of weights that can be quantized on-demand to different bit-widths as energy and memory requirements of the application change. Unlike quantization-aware training using the straight-through estimator that only targets a specific bit-width and requires access to training data and pipeline, our regularization-based method paves the way for \"on the fly'' post-training quantization to various bit-widths. We show that by modeling quantization as a $\\ell_\\infty$-bounded perturbation, the first-order term in the loss expansion can be regularized using the $\\ell_1$-norm of gradients. We experimentally validate the effectiveness of our regularization scheme on different architectures on CIFAR-10 and ImageNet datasets."
+    },
+    {
+      "paperId": "b3f100a22dab09ee212225ac23ee404c7bbab20d",
+      "externalIds": {
+        "DBLP": "journals/ijon/LerouxVVSD20",
+        "MAG": "2940669070",
+        "DOI": "10.1016/J.NEUCOM.2018.09.103",
+        "CorpusId": 149834243
+      },
+      "title": "Training binary neural networks with knowledge transfer",
+      "venue": "Neurocomputing",
+      "year": 2020,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "https://biblio.ugent.be/publication/8665516/file/8665518.pdf",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.NEUCOM.2018.09.103?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.NEUCOM.2018.09.103, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3162144",
+          "name": "Sam Leroux"
+        },
+        {
+          "authorId": "3182505",
+          "name": "B. Vankeirsbilck"
+        },
+        {
+          "authorId": "2413244",
+          "name": "Tim Verbelen"
+        },
+        {
+          "authorId": "34209448",
+          "name": "P. Simoens"
+        },
+        {
+          "authorId": "1733741",
+          "name": "B. Dhoedt"
+        }
+      ],
+      "abstract": "Abstract Binary Neural Networks (BNNs) use binary values for both weights and activations instead of 32 bit floating point numbers typically used in deep neural networks. This reduces the memory footprint by a factor of 32 and allows a very efficient implementation in hardware. BNNs are trained using regular gradient descent but are harder to optimise, take longer to train and generally require a more careful tuning of hyperparameters such as the learning rate decay schedule than floating point versions. We propose to use Knowledge Transfer techniques to make it easier to train BNNs. Knowledge transfer is a general technique that tries to transfer the knowledge stored in a large network (the teacher) to a smaller (student) network. In our case the teacher is a network trained with floating point weights and activations while the student is a BNN. We apply different Knowledge Transfer techniques to the task of training a BNN. We introduce a novel similarity based Knowledge Transfer algorithm and show that this technique results in a higher test accuracy on different benchmark datasets compared to training the BNN from scratch."
+    },
+    {
+      "paperId": "0d01c5aede9c34879583523cb6fb4f37f0b87df4",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2009-09675",
+        "ArXiv": "2009.09675",
+        "MAG": "3087727322",
+        "DOI": "10.1007/978-3-030-68238-5_11",
+        "CorpusId": 221818760
+      },
+      "title": "Feed-Forward On-Edge Fine-tuning Using Static Synthetic Gradient Modules",
+      "venue": "ECCV Workshops",
+      "year": 2020,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "https://lirias.kuleuven.be/handle/123456789/670344",
+        "status": "GREEN",
+        "license": "other-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2009.09675, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1389392380",
+          "name": "R. Neven"
+        },
+        {
+          "authorId": "3277060",
+          "name": "M. Verhelst"
+        },
+        {
+          "authorId": "1704728",
+          "name": "T. Tuytelaars"
+        },
+        {
+          "authorId": "2067324659",
+          "name": "Toon Goedem'e"
+        }
+      ],
+      "abstract": "Training deep learning models on embedded devices is typically avoided since this requires more memory, computation and power over inference. In this work, we focus on lowering the amount of memory needed for storing all activations, which are required during the backward pass to compute the gradients. Instead, during the forward pass, static Synthetic Gradient Modules (SGMs) predict gradients for each layer. This allows training the model in a feed-forward manner without having to store all activations. We tested our method on a robot grasping scenario where a robot needs to learn to grasp new objects given only a single demonstration. By first training the SGMs in a meta-learning manner on a set of common objects, during fine-tuning, the SGMs provided the model with accurate gradients to successfully learn to grasp new objects. We have shown that our method has comparable results to using standard backpropagation."
+    },
+    {
+      "paperId": "a863da4da5b8ed6bbc01b6a31b3f2a420f63392c",
+      "externalIds": {
+        "ArXiv": "2006.08173",
+        "DBLP": "journals/corr/abs-2006-08173",
+        "MAG": "3034808851",
+        "CorpusId": 219687933
+      },
+      "title": "Neural gradients are lognormally distributed: understanding sparse and quantized training",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 5,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.08173, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "104387774",
+          "name": "Brian Chmiel"
+        },
+        {
+          "authorId": "1749762168",
+          "name": "Liad Ben-Uri"
+        },
+        {
+          "authorId": "2065832429",
+          "name": "Moran Shkolnik"
+        },
+        {
+          "authorId": "40555034",
+          "name": "Elad Hoffer"
+        },
+        {
+          "authorId": "2607278",
+          "name": "Ron Banner"
+        },
+        {
+          "authorId": "1912398",
+          "name": "Daniel Soudry"
+        }
+      ],
+      "abstract": "Neural gradient compression remains a main bottleneck in improving training efficiency, as most existing neural network compression methods (e.g., pruning or quantization) focus on weights, activations, and weight gradients. However, these methods are not suitable for compressing neural gradients, which have a very different distribution. Specifically, we find that the neural gradients follow a lognormal distribution. Taking this into account, we suggest two methods to reduce the computational and memory burdens of neural gradients. The first one is stochastic gradient pruning, which can accurately set the sparsity level -- up to 85% gradient sparsity without hurting validation accuracy (ResNet18 on ImageNet). The second method determines the floating-point format for low numerical precision gradients (e.g., FP8). Our results shed light on previous findings related to local scaling, the optimal bit-allocation for the mantissa and exponent, and challenging workloads for which low-precision floating-point arithmetic has reported to fail. Reference implementation accompanies the paper."
+    },
+    {
+      "paperId": "3c55dd7b8da5c7b47e91b2e749c264f50d007cd4",
+      "externalIds": {
+        "DBLP": "conf/iclr/KirisameLHBHRCT21",
+        "ArXiv": "2006.09616",
+        "MAG": "3036438999",
+        "CorpusId": 219721506
+      },
+      "title": "Dynamic Tensor Rematerialization",
+      "venue": "International Conference on Learning Representations",
+      "year": 2020,
+      "citationCount": 119,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.09616, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46233632",
+          "name": "Marisa Kirisame"
+        },
+        {
+          "authorId": "24650215",
+          "name": "Steven Lyubomirsky"
+        },
+        {
+          "authorId": "1751623947",
+          "name": "A. Haan"
+        },
+        {
+          "authorId": "2055200107",
+          "name": "Jennifer Brennan"
+        },
+        {
+          "authorId": "2087338083",
+          "name": "Mike He"
+        },
+        {
+          "authorId": "24961975",
+          "name": "Jared Roesch"
+        },
+        {
+          "authorId": "1913774",
+          "name": "Tianqi Chen"
+        },
+        {
+          "authorId": "2272813",
+          "name": "Zachary Tatlock"
+        }
+      ],
+      "abstract": "Checkpointing enables training larger models by freeing intermediate activations and recomputing them on demand. Previous checkpointing techniques are difficult to generalize to dynamic models because they statically plan recomputations offline. We present Dynamic Tensor Rematerialization (DTR), a greedy online algorithm for heuristically checkpointing arbitrary models. DTR is extensible and general: it is parameterized by an eviction policy and only collects lightweight metadata on tensors and operators. Though DTR has no advance knowledge of the model or training task, we prove it can train an $N$-layer feedforward network on an $\\Omega(\\sqrt{N})$ memory budget with only $\\mathcal{O}(N)$ tensor operations. Moreover, we identify a general eviction heuristic and show how it allows DTR to automatically provide favorable checkpointing performance across a variety of models and memory budgets."
+    },
+    {
+      "paperId": "491c103730e55459d42ab245627a24f39cfd5ff5",
+      "externalIds": {
+        "MAG": "3037598878",
+        "ArXiv": "2006.14395",
+        "DBLP": "journals/corr/abs-2006-14395",
+        "DOI": "10.1109/TUFFC.2020.3010186",
+        "CorpusId": 220055785,
+        "PubMed": "32746211"
+      },
+      "title": "Training Variational Networks With Multidomain Simulations: Speed-of-Sound Image Reconstruction",
+      "venue": "IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control",
+      "year": 2020,
+      "citationCount": 28,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2006.14395",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.14395, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2068727983",
+          "name": "Mélanie Bernhardt"
+        },
+        {
+          "authorId": "51490537",
+          "name": "V. Vishnevskiy"
+        },
+        {
+          "authorId": "37783618",
+          "name": "R. Rau"
+        },
+        {
+          "authorId": "2985413",
+          "name": "O. Goksel"
+        }
+      ],
+      "abstract": "Speed-of-sound (SoS) has been shown as a potential biomarker for breast cancer imaging, successfully differentiating malignant tumors from benign ones. SoS images can be reconstructed from time-of-flight measurements from ultrasound images acquired using conventional handheld ultrasound transducers. Variational networks (VNs) have recently been shown to be a potential learning-based approach for optimizing inverse problems in image reconstruction. Despite earlier promising results, these methods, however, do not generalize well from simulated to acquired data, due to the domain shift. In this work, we present for the first time a VN solution for a pulse-echo SoS image reconstruction problem using diverging waves with conventional transducers and single-sided tissue access. This is made possible by incorporating simulations with varying complexity into training. We use loop unrolling of gradient descent with momentum, with an exponentially weighted loss of outputs at each unrolled iteration in order to regularize the training. We learn norms as activation functions regularized to have smooth forms for robustness to input distribution variations. We evaluate reconstruction quality on the ray-based and full-wave simulations as well as on the tissue-mimicking phantom data, in comparison with a classical iterative [limited-memory Broyden–Fletcher–Goldfarb–Shanno (L-BFGS)] optimization of this image reconstruction problem. We show that the proposed regularization techniques combined with multisource domain training yield substantial improvements in the domain adaptation capabilities of VN, reducing the median root mean squared error (RMSE) by 54% on a wave-based simulation data set compared to the baseline VN. We also show that on data acquired from a tissue-mimicking breast phantom, the proposed VN provides improved reconstruction in 12 ms."
+    },
+    {
+      "paperId": "fbea164f7d62fba98709bf52bbb3b7fc9d1356aa",
+      "externalIds": {
+        "DBLP": "journals/tnn/HeMY22",
+        "DOI": "10.1109/TNNLS.2020.3043752",
+        "CorpusId": 229723302,
+        "PubMed": "33373305"
+      },
+      "title": "Subtraction Gates: Another Way to Learn Long-Term Dependencies in Recurrent Neural Networks",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "year": 2020,
+      "citationCount": 30,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TNNLS.2020.3043752?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TNNLS.2020.3043752, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2055131785",
+          "name": "Tao He"
+        },
+        {
+          "authorId": "2053590480",
+          "name": "Hua Mao"
+        },
+        {
+          "authorId": "40943004",
+          "name": "Zhang Yi"
+        }
+      ],
+      "abstract": "Recurrent neural networks (RNNs) can remember temporal contextual information over various time steps. The well-known gradient vanishing/explosion problem restricts the ability of RNNs to learn long-term dependencies. The gate mechanism is a well-developed method for learning long-term dependencies in long short-term memory (LSTM) models and their variants. These models usually take the multiplication terms as gates to control the input and output of RNNs during forwarding computation and to ensure a constant error flow during training. In this article, we propose the use of subtraction terms as another type of gates to learn long-term dependencies. Specifically, the multiplication gates are replaced by subtraction gates, and the activations of RNNs input and output are directly controlled by subtracting the subtrahend terms. The error flows remain constant, as the linear identity connection is retained during training. The proposed subtraction gates have more flexible options of internal activation functions than the multiplication gates of LSTM. The experimental results using the proposed Subtraction RNN (SRNN) indicate comparable performances to LSTM and gated recurrent unit in the Embedded Reber Grammar, Penn Tree Bank, and Pixel-by-Pixel MNIST experiments. To achieve these results, the SRNN requires approximate three-quarters of the parameters used by LSTM. We also show that a hybrid model combining multiplication forget gates and subtraction gates could achieve good performance."
+    },
+    {
+      "paperId": "dac34cb4bee434cb60bde91450efee2e1526aece",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2002-03090",
+        "MAG": "3004905356",
+        "ArXiv": "2002.03090",
+        "DOI": "10.1109/ISCAS58744.2024.10558100",
+        "CorpusId": 211068799
+      },
+      "title": "BitPruning: Learning Bitlengths for Aggressive and Accurate Quantization",
+      "venue": "International Symposium on Circuits and Systems",
+      "year": 2020,
+      "citationCount": 26,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2002.03090",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.03090, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1491747931",
+          "name": "Milovs Nikoli'c"
+        },
+        {
+          "authorId": "25161413",
+          "name": "G. B. Hacene"
+        },
+        {
+          "authorId": "1491747972",
+          "name": "Ciaran Bannon"
+        },
+        {
+          "authorId": "19217864",
+          "name": "Alberto Delmas Lascorz"
+        },
+        {
+          "authorId": "2388466",
+          "name": "Matthieu Courbariaux"
+        },
+        {
+          "authorId": "1751762",
+          "name": "Yoshua Bengio"
+        },
+        {
+          "authorId": "144916029",
+          "name": "Vincent Gripon"
+        },
+        {
+          "authorId": "150023334",
+          "name": "A. Moshovos"
+        }
+      ],
+      "abstract": "BitPruning is a training method for minimizing inference bitlengths at any granularity while maintaining accuracy. BitPruning extends the meaning of fixed-point bitlenghts into the continuous domain by interpolating between the nearest two integers, enabling gradient descent to learn bitlengths together with other parameters. A novel regularizer penalizes large bitlength representations and can be modified to minimize other quantifiable criteria, such as number of operations or memory footprint. BitPruning learns thrifty representations while maintaining accuracy: With ImageNet, it produces an average per layer bitlength of 3.76 and 4.36 bits on ResNet18 and MobileNet V2 respectively, remaining within 0.5% of the base TOP-1 accuracy. Simple modifications of the BitPruning regularizer can be used to further reduce compute workload by up to 24%, as well as memory footprint in activation or weight-heavy tasks by up to 14% and 8% respectively."
+    },
+    {
+      "paperId": "472c534764a18332b72425666adde9f307013aa2",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2001-08450",
+        "MAG": "3002289868",
+        "ArXiv": "2001.08450",
+        "CorpusId": 210860752
+      },
+      "title": "Low-Complexity LSTM Training and Inference with FloatSD8 Weight Representation",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2001.08450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108093233",
+          "name": "Yu-Tung Liu"
+        },
+        {
+          "authorId": "2588396",
+          "name": "T. Chiueh"
+        }
+      ],
+      "abstract": "The FloatSD technology has been shown to have excellent performance on low-complexity convolutional neural networks (CNNs) training and inference. In this paper, we applied FloatSD to recurrent neural networks (RNNs), specifically long short-term memory (LSTM). In addition to FloatSD weight representation, we quantized the gradients and activations in model training to 8 bits. Moreover, the arithmetic precision for accumulations and the master copy of weights were reduced from 32 bits to 16 bits. We demonstrated that the proposed training scheme can successfully train several LSTM models from scratch, while fully preserving model accuracy. Finally, to verify the proposed method's advantage in implementation, we designed an LSTM neuron circuit and showed that it achieved significantly reduced die area and power consumption."
+    },
+    {
+      "paperId": "cb86d6febbd90ebc8aa52add7483e4e66452360f",
+      "externalIds": {
+        "MAG": "3013134448",
+        "DOI": "10.1184/R1/11933406.V1",
+        "CorpusId": 216253798
+      },
+      "title": "Improving Efficiency and Accuracy for Training and Inference of Hardware-aware Machine Learning Systems",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1184/R1/11933406.V1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1184/R1/11933406.V1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3306838",
+          "name": "Ruizhou Ding"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c33bad0377add1d6f8d583f004e1a5f1d0e9a65b",
+      "externalIds": {
+        "MAG": "3012493694",
+        "DBLP": "conf/ispd/JamesTGK20",
+        "DOI": "10.1145/3372780.3380846",
+        "CorpusId": 214590590
+      },
+      "title": "ISPD 2020 Physical Mapping of Neural Networks on a Wafer-Scale Deep Learning Accelerator",
+      "venue": "ACM International Symposium on Physical Design",
+      "year": 2020,
+      "citationCount": 28,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3372780.3380846?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3372780.3380846, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2053882642",
+          "name": "Michael James"
+        },
+        {
+          "authorId": "36339016",
+          "name": "Marvin Tom"
+        },
+        {
+          "authorId": "46549651",
+          "name": "P. Groeneveld"
+        },
+        {
+          "authorId": "69881260",
+          "name": "V. Kibardin"
+        }
+      ],
+      "abstract": "This paper introduces a special case of the floorplanning problem for optimizing neural networks to run on a wafer-scale computing engine. From a compute perspective, neural networks can be represented by a deeply layered structure of compute kernels. During the training of a neural network, gradient descent is used to determine the weight factors. Each layer then uses a local weight tensor to transform \"activations\" and \"gradients\" that are shared among connected kernels according to the topology of the network. This process is computationally intensive and requires high memory and communication bandwidth. Cerebras has developed a novel computer system designed for this work that is powered by a 21.5cm by 21.5cm wafer-scale processor with 400,000 programmable compute cores. It is structured as a regular array of 633 by 633 processing elements, each with its own local high bandwidth SRAM memory and direct high bandwidth connection to its neighboring cores. In addition to supporting traditional execution models for neural network training and inference, this engine has a unique capability to compile and compute every layer of a complete neural network simultaneously. Mapping a neural network in this fashion onto Cerebras' Wafer-Scale Engine (WSE) is reminiscent of the traditional floorplanning problem in physical design. A kernel ends up as a rectangle of x by y compute elements. These are the flexible blocks that need to be placed to optimize performance. This paper describes an ISPD 2020 challenge to develop algorithms and heuristics that produce compiled neural networks that achieve the highest possible performance on the Cerebras WSE."
+    },
+    {
+      "paperId": "51edb12a7d5fce2d5349fe821590197f462a2a76",
+      "externalIds": {
+        "ArXiv": "2012.10495",
+        "DBLP": "conf/wacv/KuppaJLLM21",
+        "DOI": "10.1109/WACVW52041.2021.00025",
+        "CorpusId": 229339693
+      },
+      "title": "ShineOn: Illuminating Design Choices for Practical Video-based Virtual Clothing Try-on",
+      "venue": "2021 IEEE Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+      "year": 2020,
+      "citationCount": 24,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2012.10495",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2012.10495, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1419504252",
+          "name": "Gaurav Kuppa"
+        },
+        {
+          "authorId": "38387027",
+          "name": "Andrew Jong"
+        },
+        {
+          "authorId": "2059936779",
+          "name": "Vera Liu"
+        },
+        {
+          "authorId": "2117940996",
+          "name": "Ziwei Liu"
+        },
+        {
+          "authorId": "145584585",
+          "name": "Teng-Sheng Moh"
+        }
+      ],
+      "abstract": "Virtual try-on has garnered interest as a neural rendering benchmark task to evaluate complex object transfer and scene composition. Recent works in virtual clothing try-on feature a plethora of possible architectural and data representation choices. However, they present little clarity on quantifying the isolated visual effect of each choice, nor do they specify the hyperparameter details that are key to experimental reproduction. Our work, ShineOn, approaches the try-on task from a bottom-up approach and aims to shine light on the visual and quantitative effects of each experiment. We build a series of scientific experiments to isolate effective design choices in video synthesis for virtual clothing try-on. Specifically, we investigate the effect of different pose annotations, self-attention layer placement, and activation functions on the quantitative and qualitative performance of video virtual try-on. We find that Dense-Pose annotations not only enhance face details but also decrease memory usage and training time. Next, we find that attention layers improve face and neck quality. Finally, we show that GELU and ReLU activation functions are the most effective in our experiments despite the appeal of newer activations such as Swish and Sine. We will release a well-organized code base, hyperparameters, and model checkpoints to support the reproducibility of our results. We expect our extensive experiments and code to greatly inform future design choices in video virtual try-on. Our code may be accessed at https://github.com/andrewjong/ShineOn-Virtual-Tryon."
+    },
+    {
+      "paperId": "727ad31abdaeeb84193c8474a9d961467b30b0cf",
+      "externalIds": {
+        "DBLP": "conf/icml/FuHHJSZ020",
+        "MAG": "3034608272",
+        "CorpusId": 221081807
+      },
+      "title": "Don't Waste Your Bits! Squeeze Activations and Gradients for Deep Neural Networks via TinyScript",
+      "venue": "International Conference on Machine Learning",
+      "year": 2020,
+      "citationCount": 74,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://proceedings.icml.cc/static/paper_files/icml/2020/6210-Paper.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46182701",
+          "name": "Fangcheng Fu"
+        },
+        {
+          "authorId": "2317078449",
+          "name": "Yuzheng Hu"
+        },
+        {
+          "authorId": "2118917731",
+          "name": "Yihan He"
+        },
+        {
+          "authorId": "3452475",
+          "name": "Jiawei Jiang"
+        },
+        {
+          "authorId": "2237813",
+          "name": "Yingxia Shao"
+        },
+        {
+          "authorId": "1776014",
+          "name": "Ce Zhang"
+        },
+        {
+          "authorId": "144585959",
+          "name": "B. Cui"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "2f59a271c284bdbef7470e569c18ec2e7b09218a",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2003-11256",
+        "MAG": "3013655532",
+        "ArXiv": "2003.11256",
+        "DOI": "10.1109/ISCAS45731.2020.9180872",
+        "CorpusId": 214641405
+      },
+      "title": "ESSOP: Efficient and Scalable Stochastic Outer Product Architecture for Deep Learning",
+      "venue": "International Symposium on Circuits and Systems",
+      "year": 2020,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2003.11256",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.11256, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "151366891",
+          "name": "V. Joshi"
+        },
+        {
+          "authorId": "3034373",
+          "name": "G. Karunaratne"
+        },
+        {
+          "authorId": "23984290",
+          "name": "M. L. Gallo"
+        },
+        {
+          "authorId": "2911515",
+          "name": "I. Boybat"
+        },
+        {
+          "authorId": "95881421",
+          "name": "C. Piveteau"
+        },
+        {
+          "authorId": "145428675",
+          "name": "A. Sebastian"
+        },
+        {
+          "authorId": "9214677",
+          "name": "B. Rajendran"
+        },
+        {
+          "authorId": "2977652",
+          "name": "E. Eleftheriou"
+        }
+      ],
+      "abstract": "Deep neural networks (DNNs) have surpassed human-level accuracy in a variety of cognitive tasks but at the cost of significant memory/time requirements in DNN training. This limits their deployment in energy and memory limited applications that require real-time learning. Matrix-vector multiplications (MVM) and vector-vector outer product (VVOP) are the two most expensive operations associated with training of DNNs. Strategies to improve the efficiency of MVM computation in hardware have been demonstrated with minimal impact on training accuracy. However, the VVOP computation remains a relatively less explored bottleneck even with the aforementioned strategies. Stochastic computing (SC) has been proposed to improve the efficiency of VVOP computation but on relatively shallow networks with bounded activation functions and floatingpoint (FP) scaling of activation gradients. In this paper, we propose ESSOP, an efficient and scalable stochastic outer product architecture based on the SC paradigm. We introduce efficient techniques to generalize SC for weight update computation in DNNs with the unbounded activation functions (e.g., ReLU), required by many state-of-the-art networks. Our architecture reduces the computational cost by re-using random numbers and replacing certain FP multiplication operations by bit shift scaling. We show that the ResNet-32 network with 33 convolution layers and a fully-connected layer can be trained with ESSOP on the CIFAR-10 dataset to achieve baseline comparable accuracy. Hardware design of ESSOP at 14nm technology node shows that, compared to a highly pipelined FP16 multiplier design, ESSOP is 82.2% and 93.7% better in energy and area efficiency respectively for outer product computation."
+    },
+    {
+      "paperId": "d3d52fd7093f7d938e89994f7e6cba90fe7c2817",
+      "externalIds": {
+        "MAG": "3094679970",
+        "DOI": "10.1182/BLOOD-2020-137650",
+        "CorpusId": 228851128
+      },
+      "title": "Cite-Seq Profiling of T Cells in Multiple Myeloma Patients Undergoing BCMA Targeting CAR-T or Bites Immunotherapy",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 58,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1182/blood-2020-137650",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1182/BLOOD-2020-137650?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1182/BLOOD-2020-137650, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "4082566",
+          "name": "Noémie Leblay"
+        },
+        {
+          "authorId": "49158790",
+          "name": "Ranjan Maity"
+        },
+        {
+          "authorId": "39088603",
+          "name": "E. Barakat"
+        },
+        {
+          "authorId": "77287600",
+          "name": "Sylvia McCulloch"
+        },
+        {
+          "authorId": "11027111",
+          "name": "P. Duggan"
+        },
+        {
+          "authorId": "1397922278",
+          "name": "V. Jimenez-Zepeda"
+        },
+        {
+          "authorId": "6189625",
+          "name": "N. Bahlis"
+        },
+        {
+          "authorId": "48285509",
+          "name": "P. Neri"
+        }
+      ],
+      "abstract": "Adaptive T cell therapy using chimeric antigen receptor (CAR) T cells and bispecific T cell engagers (BiTEs) have demonstrated encouraging responses in heavily pre-treated multiple myeloma (MM) patients. However, the cellular and molecular predictors of clinical response are not fully understood as well as the mediators of acquired resistance remain elusive. Local immune suppression and T cell exhaustion are important mediators of responses therefore, it is plausible to speculate that a tolerant tumor microenvironment and the expansion of specific T cell populations may dictate clinical responses.\n In this study, we performed at the single cell level a broad immunophenotypic and transcriptomic characterization of the blood and bone marrow (BM) T cells of sensitive and resistant MM patients treated with adaptive T cell therapies. Using cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) we measured the expansion of variable T cell subsets, T cell specific activation and inhibitor markers and their functional states in order to identify cellular mediators of resistance to these adoptive immune therapies.\n Serial blood samples and BM aspirates (n=12) were collected from patients treated with anti-BCMA CAR-T or BCMA-CD3 BiTEs at variable time points, prior and post initiation of therapy and at relapse. Bone marrow mononuclear fractions were isolated through ficoll density gradients coupled with magnetic sorting of CD3pos T cells. Unbiased mRNA profiling coupled with feature barcoding technology for cell surface protein (TotalSeq-B) of BM CD3pos T cells was then performed by using the chromium single cell (10x Genomics). Paired-end sequencing was performed on Illumina platform. Cell Ranger and Seurat pipeline were used for sample de-multiplexing, barcode processing, single-cell 3′ gene counting, cell surface protein expression and data analysis. CAR-T cells were identified by the expression of the chimeric CAR-T cell transcript.\n The parallel measurement of transcripts and cell surface protein phenotypes of CD3pos T cells using a panel of 19 immune surface markers underlined the T cell repertoire diversity and identified different T cell subsets among the CD8pos and CD4pos T cells. Notably, the cell surface protein information overlaid on the transcript-generated UMA allowed accurate identification of all main immune clusters, in particular for the CD45RA and CD45RO positive cells. Comparison of CITE-Seq features revealed that the T cells composition of the blood and BM niches differed significantly between sensitive and resistant patients. As such an enrichment of CD4pos T cells with a higher CD4:CD8 ratio was noted in responding patients. Phenotypic (CD45RA, CD45RO, CD95, CCR7, CD62L, CD28, CD27) and transcriptional signatures (TCF7, LEF1, GATA3, EOMES, TBX21, PRDM1) also identified a higher proportion of memory like T cells (Tscm, Tcm) in responding patients. In contrast, T cells of resistant patients were enriched with terminally exhausted (Tex) and senescent cells with loss of CD28, high GMZHand GMZB, CD57pos, CD69pos and CD160pos as well as upregulation of TBX21. Expression of T cell checkpoint inhibitors such as LAG3, TIGIT and PD1 was high in these Tex cells as well as in some Tem. Of note, ex vivo T cell activation studies with TIGIT blockade demonstrated T cell activation in an autologous MM and T cell co-culture system with enhanced MM cells death. An expanded cluster of regulatory T cells (Treg) FOXP3pos,CD25pos was also observed in two resistant patients. Of note, no loss of BCMA transcript or surface expression was noted in MM cells at the time of acquired resistance. Single cell transcriptome of primary MM cells and chromatin accessibility (ATAC-seq) analyses of T cells of these patients are ongoing to investigate the transcriptional programs and epigenetic factors underlying the immune escape.\n Combined single cell features profiling of the transcriptome and surface protein expression of T cells from MM patients receiving BCMA targeted CAR-T or BiTEs therapies revealed potential mediators of resistance. In particular, T cells composition (low CD4:CD8 ratio and reduced population of Tscm, Tcm) along with an enrichment of terminally exhausted T cells are the main features observed in resistant patients. Delineating these mechanisms will guide future T cells engineering studies to enhance the efficacy and response durability of adoptive immunotherapy in MM.\n \n \n McCulloch: Amgen: Honoraria; Sanofi: Honoraria; Celgene: Honoraria; Janssen: Honoraria. Duggan:Jannsen: Consultancy; Amgen: Consultancy; Novartis: Honoraria; Celgene: Consultancy; Astra Zeneca: Consultancy. Jimenez-Zepeda:Janssen, Celgene, Amgen, Takeda: Honoraria. Bahlis:AbbVie: Consultancy, Honoraria; Takeda: Consultancy, Honoraria; Amgen: Consultancy, Honoraria; GSK: Consultancy, Honoraria; Genentech: Consultancy, Honoraria; BMS/Celgene and Janssen: Consultancy, Honoraria, Other: Travel, Accomodations, Research Funding; Karyopharm Therapeutics: Consultancy, Honoraria; Sanofi: Consultancy, Honoraria. Neri:Celgene/BMS: Consultancy, Honoraria; Janssen: Consultancy, Honoraria; Amgen: Consultancy, Honoraria.\n"
+    },
+    {
+      "paperId": "7e7998695b5f391a80335bf537d9cb9ac48bcb99",
+      "externalIds": {
+        "ArXiv": "2006.12139",
+        "MAG": "3036110365",
+        "DBLP": "journals/corr/abs-2006-12139",
+        "CorpusId": 219965958
+      },
+      "title": "Rapid Structural Pruning of Neural Networks with Set-based Task-Adaptive Meta-Pruning",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.12139, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2110310498",
+          "name": "M. Song"
+        },
+        {
+          "authorId": "13563486",
+          "name": "Jaehong Yoon"
+        },
+        {
+          "authorId": "1720494",
+          "name": "Eunho Yang"
+        },
+        {
+          "authorId": "35788904",
+          "name": "Sung Ju Hwang"
+        }
+      ],
+      "abstract": "As deep neural networks are growing in size and being increasingly deployed to more resource-limited devices, there has been a recent surge of interest in network pruning methods, which aim to remove less important weights or activations of a given network. A common limitation of most existing pruning techniques, is that they require pre-training of the network at least once before pruning, and thus we can benefit from reduction in memory and computation only at the inference time. However, reducing the training cost of neural networks with rapid structural pruning may be beneficial either to minimize monetary cost with cloud computing or to enable on-device learning on a resource-limited device. Recently introduced random-weight pruning approaches can eliminate the needs of pretraining, but they often obtain suboptimal performance over conventional pruning techniques and also does not allow for faster training since they perform unstructured pruning. To overcome their limitations, we propose Set-based Task-Adaptive Meta Pruning (STAMP), which task-adaptively prunes a network pretrained on a large reference dataset by generating a pruning mask on it as a function of the target dataset. To ensure maximum performance improvements on the target task, we meta-learn the mask generator over different subsets of the reference dataset, such that it can generalize well to any unseen datasets within a few gradient steps of training. We validate STAMP against recent advanced pruning methods on benchmark datasets, on which it not only obtains significantly improved compression rates over the baselines at similar accuracy, but also orders of magnitude faster training speed."
+    },
+    {
+      "paperId": "464b36cc5eacc093708aeedc626fb00abdf1341a",
+      "externalIds": {
+        "MAG": "3091847389",
+        "DOI": "10.1016/j.intimp.2020.107074",
+        "CorpusId": 222351787,
+        "PubMed": "33049494"
+      },
+      "title": "Comprehensive analysis of a 14 immune-related gene pair signature to predict the prognosis and immune features of gastric cancer.",
+      "venue": "International Immunopharmacology",
+      "year": 2020,
+      "citationCount": 13,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.intimp.2020.107074?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.intimp.2020.107074, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153903956",
+          "name": "Chuan Liu"
+        },
+        {
+          "authorId": "2152688075",
+          "name": "Bo Chen"
+        },
+        {
+          "authorId": "1692459862",
+          "name": "Zhangheng Huang"
+        },
+        {
+          "authorId": "114172602",
+          "name": "Chuan Hu"
+        },
+        {
+          "authorId": "1995486233",
+          "name": "Liqing Jiang"
+        },
+        {
+          "authorId": "46993315",
+          "name": "Chengliang Zhao"
+        }
+      ],
+      "abstract": "BACKGROUND\nAs a new method for predicting tumor prognosis, the predictive effect of immune-related gene pairs (IRGPs) has been confirmed in several cancers, but there is no comprehensive analysis of the clinical significance of IRGPs in gastric cancer (GC).\n\n\nMETHOD\nClinical and gene expression profile data of GC patients were obtained from the GEO database. Based on the ImmPort database, differentially expressed immune-related gene (DEIRG) events were determined by a comparison of GC samples and adjacent normal samples. Cox proportional regression was used to construct an IRGP signature, and its availability was validated using three external validation datasets. In addition, we explored the association between clinical data and immune features and established a nomogram to predict outcomes in GC patients.\n\n\nRESULT\nA total of 88 DEIRGs were identified in GC from the training set, which formed 3828 IRGPs. Fourteen overall survival (OS)-related IRGPs were used to construct the prognostic signature. As a result, patients in the high-risk group exhibited poorer OS compared to those in the low-risk group. In addition, the fraction of CD8+ T cells, plasma cells, CD4 memory activated T cells, and M1 macrophages was higher in the high-risk group. Expression of two immune checkpoints, CD276 and VTCN1, was significantly higher in the high-risk group as well. Based on the independent prognostic factors, a nomogram was established and showed excellent performance.\n\n\nCONCLUSION\nThe 14 OS-related IRGP signature was associated with OS, immune cells, and immune checkpoints in GC patients, and it could provide the basis for related immunotherapy."
+    },
+    {
+      "paperId": "2d89cfa5bf8b572aebc4385b61a0d1ed0a6e807b",
+      "externalIds": {
+        "MAG": "3159994610",
+        "DOI": "10.21203/rs.3.rs-60067/v1",
+        "CorpusId": 236786032
+      },
+      "title": "Comprehensive Analysis of a 14 Immune-related Gene Pairs Signature to Predict the Prognosis of Gastric Cancer and Immune Features",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://www.researchsquare.com/article/rs-60067/v1.pdf?c=1631867054000",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21203/rs.3.rs-60067/v1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21203/rs.3.rs-60067/v1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153903956",
+          "name": "Chuan Liu"
+        },
+        {
+          "authorId": "2152688075",
+          "name": "Bo Chen"
+        },
+        {
+          "authorId": "1692459862",
+          "name": "Zhangheng Huang"
+        },
+        {
+          "authorId": "144879962",
+          "name": "Chuan Hu"
+        },
+        {
+          "authorId": "1995486233",
+          "name": "Liqing Jiang"
+        },
+        {
+          "authorId": "46993315",
+          "name": "Chengliang Zhao"
+        }
+      ],
+      "abstract": "\n Background: As a new method for predicting tumor prognosis, the predictive effect of immune-related gene pairs (IRGPs) has been confirmed in several cancers, but there is no comprehensive analysis of the clinical significance of IRGPs in gastric cancer (GC).Methods: The clinical and gene expression profile data GC patients were obtained from the GEO database. Based on the ImmPort database, differently expressed immune-related genes (DEIRGs) events were determined by a comparison of GC samples and adjacent normal samples. Cox proportional regression was used to construct an IRGPs signature, and its availability was validated with three external validation sets. In addition, we explored the association between clinical data and immune features and established a nomogram to predict outcomes of GC patients. Result: A total of 88 DEIRGs were found in GC from the training set, which formed 3828 IRGPs. 14 overall survival (OS)-related IRGPs were used to construct the prognostic signature. As a result, the patients in the high- risk group have a poorer OS compared with the low-risk group. In addition, the fraction of CD8+ T cells, plasma cells, T cells CD4 memory activated, and macrophages M1 were higher in the high-risk group. The expression of two immune checkpoints, CD276 and VTCN1, was significantly higher in the high-risk group. Based on the independent prognostic factors, a nomogram was established and showed excellent performance.Conclusion: The 14 OS-related IRGPs signature was associated with the OS, immune cells, and immune checkpoints of GC patients, which can provide the basis of related immunotherapy."
+    },
+    {
+      "paperId": "0422221d4a1d5c4652bd4b6764ed10b3bf1096ac",
+      "externalIds": {
+        "MAG": "3014224673",
+        "DOI": "10.2174/1386207323666200407075004",
+        "CorpusId": 215405655,
+        "PubMed": "32264809"
+      },
+      "title": "Comprehensive bioinformatics analysis identifies tumor microenvironment and immune-related genes in small cell lung cancer.",
+      "venue": "Combinatorial chemistry & high throughput screening",
+      "year": 2020,
+      "citationCount": 13,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.2174/1386207323666200407075004?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.2174/1386207323666200407075004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "70369611",
+          "name": "Yongchun Song"
+        },
+        {
+          "authorId": "152354821",
+          "name": "Yanqin Sun"
+        },
+        {
+          "authorId": "1618255846",
+          "name": "Tuanhe Sun"
+        },
+        {
+          "authorId": "1400654485",
+          "name": "Ruixiang Tang"
+        }
+      ],
+      "abstract": "BACKGROUND\nTumor microenvironment (TME) cells play important roles in tumor progression. Accumulating evidence show that they can be exploited to predict the clinical outcomes and therapeutic responses of tumor. However, the role of immune genes of TME in small cell lung cancer (SCLC) is currently unknown.\n\n\nOBJECTIVE\nTo determine the role of immune genes in SCLC.\n\n\nMETHODS\nWe downloaded the expression profile and clinical follow-up data of SCLC patients from Gene Expression Omnibus (GEO), and TME infiltration profile data of 158 patients using CIBERSORT. The correlation between TME phenotypes, genomic features, and clinicopathological features of SCLC was examined. A gene signature was constructed based on TME genes to further evaluate the relationship between molecular subtypes of SCLC with the prognosis and clinical features.\n\n\nRESULTS\nWe identified a group of genes that are highly associated with TME. Several immune cells in TME cells were significantly correlated with SCLC prognosis (p<0.0001). These immune cells displayed diverse immune patterns. Three molecular subtypes of SCLC (TMEC1-3) were identified on the basis of enrichment of immune cell components, and these subtypes showed dissimilar prognosis profiles (p=0.03). The subtype with the best prognosis, TMEC3, was enriched with immune activation factors such as oncogene M0, oncogene M2, T cells follicular helper, and T cells CD8 (p<0.001). The TMEC1 subtype with the worst prognosis was enriched with T cells CD4 naive, B cells memory and Dendritic cells activated cells (p<0.001). Further analysis showed that the TME was significantly enriched with immune checkpoint genes, immune genes, and immune pathway genes (p<0.01). From the gene expression data, we identified four TME-related genes, GZMB, HAVCR2, PRF1 and TBX2, which were significantly associated with poor prognosis in both the training set and the validation set (p<0.05). These genes may serve as markers for monitoring tumor responses to immune checkpoint inhibitors.\n\n\nCONCLUSION\nThis study shows that TME features may serve as markers for evaluating response of SCLC cells to immunotherapy."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "gradient checkpointing activation memory training",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2020"
+}

@@ -9,23 +9,45 @@ PeerJ Computer Science).
 - `protocol/` — search protocol, inclusion criteria, extraction schema, changelog
 - `search/` — query definitions, search log, raw API responses, search scripts
 - `screening/` — screening decisions for every candidate, PRISMA-style counts
-- `data/` — final corpus, table data as CSV, BibTeX references
+- `data/` — extraction schema targets: table templates, corpus CSV, and BibTeX stub (Phase 4 placeholders; extraction not started)
 - `figures/` — figure generation scripts and outputs
-- `docs/` — Table 4 provenance and reference-correction notes
+- `docs/` — Table 4 provenance template (Phase 5) and reference-correction notes
+
+## Reproduce the search
+
+```bash
+pip install -r search/scripts/requirements.txt
+
+# Optional: create local.env with API keys (never commit; see .gitignore)
+# SEMANTIC_SCHOLAR_API_KEY, IEEE_API_KEY
+
+# Example: re-run arXiv discovery for protocol v1.1 capped queries
+python search/scripts/search_arxiv.py --v11-rerun
+
+# Example: deduplicate all raw sources → search/candidate-pool.csv
+python search/scripts/dedupe.py
+```
+
+Full pipeline (all sources, screening init, venue checks): see [Full reproduction pipeline](#full-reproduction-pipeline) below. Query strings live in `search/queries.yaml`; counts in `screening/prisma-counts.md`.
+
+Repository: https://github.com/jerryadamsfranklin/llm-efficient-finetuning-survey
 
 ## Status
 
 | Phase | Status |
 |---|---|
 | **1 — Protocol design** | Complete. Protocol v1.0 locked and committed before any search. |
-| **2 — Execute searches** | **Closed 2026-07-31** on `phase-2-search` (pending merge to `main`). All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
-| **3+** | Not started (Stage 1 screening against `search/candidate-pool.csv`). |
+| **2 — Execute searches** | **Closed 2026-07-31**, merged to `main`. All seven sources run under protocol v1.2; candidate pool deduplicated and counted. |
+| **3 — Screening** | **In progress** on `phase-3-screening`. Protocol v1.3 backfill grew the pool to 15,518 unique candidates; 10,938 receive a Stage 1 judgement, 4,557 are out of the stated scope bound, 23 excluded on metadata alone. **Submission target: 2026-08-20.** |
+| **4 — Extraction** | Not started. `data/included-papers.csv`, `data/table*.csv`, and `data/references.bib` are header-only Phase 4 templates. |
+| **5 — Table provenance** | Not started. `docs/table4-sourcing.md` is a Phase 5 template with disclosure language only. |
 
 ### Protocol versions
 
 - **v1.0** — initial queries; raw results preserved in `search/raw_v1.0/`
 - **v1.1** — corrections after v1.0 execution evidence (`protocol/CHANGELOG.md`): fixed `B3_memory_3` parentheses, added Semantic Scholar `s2_queries`, date-slicing / stopping-rule text
 - **v1.2** — source substitution: IEEE metadata API + OpenAlex (ACM coverage); 50-cap per query; Google Scholar remains manual
+- **v1.3** — confirmation-band amendment after a coverage diagnostic (`search/coverage-diagnostic.md`): date-sliced Semantic Scholar backfill for 2019–2021, targeted supplementary retrieval of known-corpus misses, and the screening procedure with its LLM-assistance disclosure (`protocol/screening-procedure.md`). Query strings unchanged.
 
 ### Phase 2 checklist
 
@@ -41,14 +63,30 @@ PeerJ Computer Science).
 - [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
 - [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
-- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,334** unique; **10,313** for screening)
+- [x] Deduplicated candidate pool counted at Phase 2 close: **10,333** unique (**10,312** for screening after excluding 21 out-of-protocol Scholar captures). Protocol v1.3 confirmation-band backfill (Phase 3) grew the pool to **15,518** unique — see `screening/prisma-counts.md` § "Effect of the v1.3 backfill" and `search/dedupe-summary.json`.
 - [x] Hugging Face documentation entry resolved (reference source; not consulted in Phase 2, zero records)
 - [x] No `TBD` placeholders remaining in `search/search-log.md`
 
 Phase 2 is closed. Candidate volume came in above the v1.2 amendment's 6,000–7,000
 planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 
-## Reproducing the search
+### Phase 3 checklist
+
+- [x] Candidate pool regenerated to carry citation counts, language, record type, and OpenAlex abstracts (no source re-queried)
+- [x] `screening/screening-log.csv` initialised — one row per unique candidate (**15,518** after v1.3 pool regeneration; was 10,333 at first init)
+- [x] Metadata-decidable exclusions applied with the numbered criterion recorded (23 rows)
+- [x] Known metadata defects documented (`screening/metadata-anomalies.md`)
+- [x] Confirmation-pass diagnostic: 24 of 29 in-window manuscript references verified in the pool (`search/coverage-diagnostic.md`)
+- [x] Protocol v1.3 committed before the runs and screening decisions it authorises
+- [x] Semantic Scholar 2019–2021 date-sliced backfill (54/54 slices; +5,185 unique candidates; pre-2022 share 4.3% → 36.4%)
+- [x] Targeted supplementary retrieval — all five known-corpus misses recovered; `bayati2023` confirmed a different work
+- [x] Scope bound applied: 4,557 confirmation-band records recorded as not screened, with empty decisions rather than exclusions
+- [ ] Stage 1 title/abstract screen (10,938 to judge; criteria 1, 4, 5; exclusions 1–3, 6; criterion 2 LLM boundary and book-chapter rule from batch 002 — see `screening-procedure.md` §2.1)
+- [ ] Stage 2 full-text screen (criteria 2, 3; adoption bar verified against a second source)
+- [ ] Stage 3 synthesis — category / subcategory assignment
+- [ ] `screening/prisma-counts.md` completed with final stage counts
+
+## Full reproduction pipeline
 
 ```bash
 pip install -r search/scripts/requirements.txt
@@ -66,6 +104,9 @@ python search/scripts/search_dblp.py
 # Deduplicate all sources → search/candidate-pool.csv
 python search/scripts/dedupe.py
 
+# Initialise / refresh the screening log (never overwrites recorded decisions)
+python screening/scripts/init_screening_log.py
+
 # Venue-upgrade check for the existing ~42 manuscript references
 python search/scripts/search_openreview.py --check-existing
 ```
@@ -76,8 +117,10 @@ Each run updates `search/search-log.md` and writes `search/raw/<source>/...`.
 
 ## Data provenance
 
-Table 4 combines values from primary sources with author estimates. See
-`docs/table4-sourcing.md` for per-column provenance.
+Table 4 combines values from primary sources with author estimates. Per-column attribution is
+a **Phase 5** task; `docs/table4-sourcing.md` is a template with disclosure language only
+(not yet populated). When `data/table4_master_comparison.csv` is filled (Phase 4), full
+fine-tuning memory must be **112 GB** (Rajbhandari et al., 2020), not 132 GB.
 
 ## Citation
 

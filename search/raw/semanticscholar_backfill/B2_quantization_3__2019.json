@@ -1,0 +1,94 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "QLoRA quantized low-rank adaptation",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:36:11Z",
+  "total_results_reported": 1,
+  "returned": 1,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "9cb71ec73da028bca7f089f5d277e5594d43ee99",
+      "externalIds": {
+        "ArXiv": "2001.00577",
+        "DBLP": "conf/asru/KimJLHKLGPKJLYK19",
+        "MAG": "2996819981",
+        "DOI": "10.1109/ASRU46091.2019.9004027",
+        "CorpusId": 209832454
+      },
+      "title": "Attention Based On-Device Streaming Speech Recognition with Large Speech Corpus",
+      "venue": "Automatic Speech Recognition & Understanding",
+      "year": 2019,
+      "citationCount": 61,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2001.00577",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2001.00577, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7826646",
+          "name": "Kwangyoun Kim"
+        },
+        {
+          "authorId": "1390766947",
+          "name": "Kyungmin Lee"
+        },
+        {
+          "authorId": "2584531",
+          "name": "Dhananjaya N. Gowda"
+        },
+        {
+          "authorId": "19189238",
+          "name": "Junmo Park"
+        },
+        {
+          "authorId": "2144261474",
+          "name": "Sungsoo Kim"
+        },
+        {
+          "authorId": "2007546437",
+          "name": "Sichen Jin"
+        },
+        {
+          "authorId": "2145405002",
+          "name": "Young-Yoon Lee"
+        },
+        {
+          "authorId": "1475900428",
+          "name": "Jinsu Yeo"
+        },
+        {
+          "authorId": "2111926839",
+          "name": "Daehyun Kim"
+        },
+        {
+          "authorId": "1475902514",
+          "name": "Seokyeong Jung"
+        },
+        {
+          "authorId": "8153734",
+          "name": "Jungin Lee"
+        },
+        {
+          "authorId": "2738868",
+          "name": "Myoungji Han"
+        },
+        {
+          "authorId": "14073033",
+          "name": "Chanwoo Kim"
+        }
+      ],
+      "abstract": "In this paper, we present a new on-device automatic speech recognition (ASR) system based on monotonic chunk-wise attention (MoChA) models trained with large (> 10K hours) corpus. We attained around 90% of a word recognition rate for general domain mainly by using joint training of connectionist temporal classifier (CTC) and cross entropy (CE) losses, minimum word error rate (MWER) training, layer-wise pretraining and data augmentation methods. In addition, we compressed our models by more than 3.4 times smaller using an iterative hyper low-rank approximation (LRA) method while minimizing the degradation in recognition accuracy. The memory footprint was further reduced with 8-bit quantization to bring down the final model size to lower than 39 MB. For on-demand adaptation, we fused the MoChA models with statistical n-gram models, and we could achieve a relatively 36% improvement on average in word error rate (WER) for target domains including the general domain."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "QLoRA quantized low-rank adaptation",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

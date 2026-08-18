@@ -1,8 +1,8 @@
 # Search Protocol
 
-**Protocol version:** 1.2  
-**Status:** Locked Phase 2b source-substitution amendment — commit before IEEE / OpenAlex / DBLP runs  
-**Supersedes:** v1.1 source list for IEEE and ACM only (see `protocol/CHANGELOG.md`)  
+**Protocol version:** 1.3  
+**Status:** Locked v1.3 amendment — commit before the confirmation-band backfill and supplementary retrieval  
+**Supersedes:** v1.2 for confirmation-band retrieval and screening procedure only (see `protocol/CHANGELOG.md`)  
 **Companion paper:** Fine-Tuning Large Language Models in Resource-Constrained Environments: Methods and Trade-offs (PeerJ Computer Science, under revision)  
 **Repository:** `llm-efficient-finetuning-survey`
 
@@ -76,6 +76,12 @@ Draft for the manuscript (do not claim direct ACM DL or unqualified IEEE “webs
 
 > Searches were conducted across arXiv, Semantic Scholar, OpenReview, OpenAlex, Crossref, and the IEEE Xplore metadata API, supplemented by manual searching of Google Scholar. Content published by the ACM was retrieved through OpenAlex and Crossref rather than through the ACM Digital Library interface directly. Boolean query strings were used where the source supports Boolean evaluation (arXiv, IEEE Xplore, Google Scholar); semantically equivalent keyword formulations were used for sources performing relevance matching (Semantic Scholar, OpenAlex, DBLP). Both formulations are recorded in the companion repository.
 
+Additional v1.3 sentences on retrieval limits and the confirmation pass:
+
+> Because relevance-ranked sources saturate their retrieval caps on the recent literature, Semantic Scholar queries were additionally date-sliced by year for 2019–2021. Retrieval of the 2019–2021 period remains less complete than for 2022 onward, and this is reported rather than claimed to be exhaustive. A confirmation pass against the existing reference corpus verified 24 of the 29 in-window references already cited; the remainder were recovered by targeted supplementary lookup and are identified as such in the companion repository.
+
+Screening disclosure (LLM assistance, scope bound) is specified verbatim in [`screening-procedure.md`](screening-procedure.md) §8 and must be reproduced in the methodology and in Section 10.4.
+
 ---
 
 ## 4. Query design
@@ -106,6 +112,19 @@ When querying arXiv, restrict to `cs.LG`, `cs.CL`, `cs.AI`, and `cs.DC` where th
 - **arXiv / Semantic Scholar:** Cap automated retrieval at **200 results per query per time slice**. If an arXiv query hits the cap, **date-slice** by year (and recursively by half-year / quarter if needed). See `protocol/CHANGELOG.md` (v1.1).
 - **IEEE / OpenAlex / DBLP (v1.2):** Cap at **50 results per query** by native relevance ranking (same volume as the manual stopping rule).
 
+### Confirmation-band retrieval (v1.3)
+
+v1.2 applied the 200-record Semantic Scholar cap **per query, without date slicing**. Because Semantic Scholar ranks by relevance and the recent literature is far larger, 17 of 18 queries saturated the cap and returned only 3.5% pre-2022 records. Coverage of 2019–2021 therefore rested almost entirely on arXiv's boolean conjunctions, and the confirmation pass missed an on-topic reference the manuscript cites (AdapterFusion). Evidence: [`search/coverage-diagnostic.md`](../search/coverage-diagnostic.md).
+
+v1.3 adds two strictly additive retrieval actions. Neither removes or alters any v1.2 result.
+
+1. **Date-sliced Semantic Scholar backfill for 2019, 2020, 2021.** All 18 `s2_queries` re-run once per year slice, 200-record cap per query per slice — the same rule v1.1 already specified for arXiv, now applied to Semantic Scholar. Written to `search/raw/semanticscholar_backfill/`.
+2. **Targeted supplementary retrieval of known-corpus misses.** Direct lookup by title/DOI of in-window references from `search/existing-references.yaml` absent from the pool. This is verification of an already-cited corpus, not discovery, and is logged separately as such. Written to `search/raw/supplementary/`.
+
+Supplementary retrieval is **not** a keyword search for new material and must not be described as extending the search's discovery reach. Records it recovers are screened against the same criteria as every other candidate.
+
+**Query strings are unchanged in v1.3.** The `B1_peft_3` four-term conjunction is documented as a recall limitation rather than rewritten, because altering query strings after seeing results would make the search unreproducible against its own log. The limitation is reported instead.
+
 ---
 
 ## 5. Stopping rules
@@ -125,6 +144,7 @@ Do **not** claim exhaustive or complete coverage of the field.
 ## 6. Screening overview
 
 Full criteria: [`inclusion-exclusion.md`](inclusion-exclusion.md).  
+Procedure, scope bound, and disclosure: [`screening-procedure.md`](screening-procedure.md) (**v1.3**).  
 Extraction fields: [`extraction-schema.md`](extraction-schema.md).
 
 Three stages (detailed in Phase 3):
@@ -134,6 +154,8 @@ Three stages (detailed in Phase 3):
 3. **Synthesis/grouping** — category, subcategory, supersession / duplicate coverage  
 
 Every candidate is logged in `screening/screening-log.csv` with decision and numbered exclusion reason when excluded.
+
+**v1.3 procedure summary.** Stage 1 is conducted with LLM assistance under author supervision; every inclusion is author-verified and a stratified random sample of at least 250 exclusions is audited, with the disagreement rate reported. Screening is fully applied to records from 2024-01-01 onward; 2019–2023 records receive a targeted confirmation pass, and records not examined under that bound are reported as a separate count rather than as exclusions. A keyword pre-filter was tested and **rejected** — it dropped four references the manuscript itself cites. See `screening-procedure.md` for the full specification and the required disclosure wording.
 
 ---
 
@@ -150,7 +172,10 @@ When both preprint and published versions appear, keep the published version and
 |---|---|
 | Query definitions | `search/queries.yaml` |
 | Protocol changelog | `protocol/CHANGELOG.md` |
+| Screening procedure and disclosure | `protocol/screening-procedure.md` |
 | Per-run log | `search/search-log.md` |
+| Confirmation-pass coverage diagnostic | `search/coverage-diagnostic.md` |
+| Known metadata defects | `screening/metadata-anomalies.md` |
 | Raw API responses (current) | `search/raw/<source>/` |
 | Raw API responses (v1.0 preserved) | `search/raw_v1.0/<source>/` |
 | Existing corpus for venue check | `search/existing-references.yaml` |
@@ -165,4 +190,6 @@ When both preprint and published versions appear, keep the published version and
 ## 9. Sequencing constraint
 
 **Protocol versions must be committed before the searches that use them are run.**  
-v1.0 was committed before initial discovery. v1.1 corrects query defects and was committed before date-sliced / S2-keyword re-runs. v1.2 substitutes IEEE/ACM retrieval mechanisms and must be committed before IEEE / OpenAlex / DBLP runs.
+v1.0 was committed before initial discovery. v1.1 corrects query defects and was committed before date-sliced / S2-keyword re-runs. v1.2 substitutes IEEE/ACM retrieval mechanisms and was committed before IEEE / OpenAlex / DBLP runs. v1.3 adds the confirmation-band Semantic Scholar backfill, the targeted supplementary retrieval, and the screening procedure, and must be committed before any of the three is executed.
+
+The same constraint applies to screening: `screening-procedure.md`, including the scope bound and the 5% audit-disagreement threshold, is committed **before** Stage 1 decisions are recorded, so neither the bound nor the threshold can be adjusted to fit an outcome.

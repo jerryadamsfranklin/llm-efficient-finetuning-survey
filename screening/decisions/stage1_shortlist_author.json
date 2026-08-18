@@ -1,0 +1,56 @@
+{
+  "batch": "shortlist",
+  "band": "new_work",
+  "screener": "author",
+  "note": "Author human-verification of the ranked 30-paper shortlist (not the full 7,628). Six domain/inference includes fail the encoded v1.3 rule and are overturned to exclude. LoRA-XS (C-2237f357ff) was a false Exclusion 6 (OpenAlex work_type=book-chapter on an ECAI conference paper) and is overturned to include. Four title-duplicates of the existing 42 remain Stage 1 includes; they are dropped from the insertion shortlist only.",
+  "decisions": [
+    {
+      "id": "C-81185e06f7",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author shortlist: Bi-directional Adapter for Multimodal Tracking. Vision tracking task, not demonstrated as an LLM method. Criterion 2."
+    },
+    {
+      "id": "C-3c82c940b7",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author shortlist: QLoRA stock-prediction application. Research question is the finance task; QLoRA is machinery. Inclusion 1."
+    },
+    {
+      "id": "C-541eb63c42",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author shortlist: BioMistral medical pretrained-model release, not a fine-tuning-efficiency method. Inclusion 1."
+    },
+    {
+      "id": "C-80ade0780f",
+      "decision": "exclude",
+      "exclusion_reason": "Exclusion 2",
+      "confidence": "high",
+      "notes": "Author shortlist: Lookahead Decoding. Inference-time decoding, not training-time memory. Exclusion 2. Ranking had mis-tagged B3."
+    },
+    {
+      "id": "C-61b96120af",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 2",
+      "confidence": "high",
+      "notes": "Author shortlist: LongVILA. Visual language models for long videos; criterion 2, and the contribution is context scaling not fine-tuning efficiency."
+    },
+    {
+      "id": "C-3b4f1737c6",
+      "decision": "exclude",
+      "exclusion_reason": "Inclusion 1",
+      "confidence": "high",
+      "notes": "Author shortlist: Llama3+LoRA emotion classification application. Same Inclusion 1 class as batch 001 author excludes."
+    },
+    {
+      "id": "C-2237f357ff",
+      "decision": "include",
+      "confidence": "high",
+      "notes": "Author: LoRA-XS is an ECAI PEFT paper for LLMs (Balazy, Banaei, Aberer, Tabor), not a textbook chapter. Automated Exclusion 6 was a work_type=book-chapter metadata error on a conference paper. Overturn to include."
+    }
+  ]
+}

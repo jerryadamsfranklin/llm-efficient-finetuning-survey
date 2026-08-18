@@ -1,0 +1,1341 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "gradient checkpointing activation memory training",
+  "year": "2019-2019",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:38:00Z",
+  "total_results_reported": 31,
+  "returned": 31,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "4514109815cd2e542f8d017e3b86b9b38eb4faf7",
+      "externalIds": {
+        "MAG": "2979124240",
+        "DBLP": "conf/hpcc/EK19",
+        "DOI": "10.1109/HPCC/SmartCity/DSS.2019.00387",
+        "CorpusId": 203655675
+      },
+      "title": "Checkpointing in Practice for Memory-Efficient Training on the Edge",
+      "venue": "2019 IEEE 21st International Conference on High Performance Computing and Communications; IEEE 17th International Conference on Smart City; IEEE 5th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)",
+      "year": 2019,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/HPCC/SmartCity/DSS.2019.00387?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/HPCC/SmartCity/DSS.2019.00387, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2379707996",
+          "name": "E. Naveen"
+        },
+        {
+          "authorId": "2118920938",
+          "name": "Pratyush Kumar"
+        }
+      ],
+      "abstract": "Training deep neural networks has large memory requirements to store the activation maps for the forward pass of all layers to be able to compute the gradients during the backward pass. When training networks on the edge, large models may either not fit in the memory or may run with very small batch sizes. Checkpointing has been proposed as a solution, whereby during the forward pass the activation maps from only some of the layers are stored as checkpoints, and the rest are recomputed during the backward pass starting from the closest checkpoint. However, checkpointing in practice requires a careful choice of the set of layers to checkpoint. In this paper we empirically evaluate checkpointing for different networks. We then establish an analytical approach to estimate the memory requirement of each layer (using a linear regression model) in a network and thereby identify the layers which have to be checkpointed. Through this method we were able to reduce memory consumption of MobileNet and ResNet-18 architectures by a factor of 2.6 and 1.8 respectively. Finally, the networks are tested on a Raspberry Pi 3 Model B board. For MobileNet using our approach for checkpointing, we could increase the batch-size from 4 to 12."
+    },
+    {
+      "paperId": "c591ffe721883f0360c1611d3c8c43dfa6e96c60",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1911-13214",
+        "ArXiv": "1911.13214",
+        "MAG": "2990896553",
+        "CorpusId": 208512960
+      },
+      "title": "Optimal checkpointing for heterogeneous chains: how to train deep neural networks with limited memory",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 46,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1911.13214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1731715",
+          "name": "Olivier Beaumont"
+        },
+        {
+          "authorId": "1395576412",
+          "name": "Lionel Eyraud-Dubois"
+        },
+        {
+          "authorId": "33561372",
+          "name": "J. Herrmann"
+        },
+        {
+          "authorId": "144406930",
+          "name": "A. Joly"
+        },
+        {
+          "authorId": "80222318",
+          "name": "Alena Shilova"
+        }
+      ],
+      "abstract": "This paper introduces a new activation checkpointing method which allows to significantly decrease memory usage when training Deep Neural Networks with the back-propagation algorithm. Similarly to checkpoint-ing techniques coming from the literature on Automatic Differentiation, it consists in dynamically selecting the forward activations that are saved during the training phase, and then automatically recomputing missing activations from those previously recorded. We propose an original computation model that combines two types of activation savings: either only storing the layer inputs, or recording the complete history of operations that produced the outputs (this uses more memory, but requires fewer recomputations in the backward phase), and we provide an algorithm to compute the optimal computation sequence for this model. This paper also describes a PyTorch implementation that processes the entire chain, dealing with any sequential DNN whose internal layers may be arbitrarily complex and automatically executing it according to the optimal checkpointing strategy computed given a memory limit. Through extensive experiments, we show that our implementation consistently outperforms existing checkpoint-ing approaches for a large class of networks, image sizes and batch sizes."
+    },
+    {
+      "paperId": "0b5d7a79205b44952e24025ce5d46e9f3aa401a1",
+      "externalIds": {
+        "ArXiv": "1904.10631",
+        "MAG": "2941620283",
+        "DBLP": "journals/corr/abs-1904-10631",
+        "CorpusId": 129945164
+      },
+      "title": "Low-Memory Neural Network Training: A Technical Report",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 114,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.10631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145193121",
+          "name": "N. Sohoni"
+        },
+        {
+          "authorId": "145284500",
+          "name": "Christopher R. Aberger"
+        },
+        {
+          "authorId": "37866790",
+          "name": "M. Leszczynski"
+        },
+        {
+          "authorId": "1679327",
+          "name": "Jian Zhang"
+        },
+        {
+          "authorId": "2114485554",
+          "name": "C. Ré"
+        }
+      ],
+      "abstract": "Memory is increasingly often the bottleneck when training neural network models. Despite this, techniques to lower the overall memory requirements of training have been less widely studied compared to the extensive literature on reducing the memory requirements of inference. In this paper we study a fundamental question: How much memory is actually needed to train a neural network? To answer this question, we profile the overall memory usage of training on two representative deep learning benchmarks -- the WideResNet model for image classification and the DynamicConv Transformer model for machine translation -- and comprehensively evaluate four standard techniques for reducing the training memory requirements: (1) imposing sparsity on the model, (2) using low precision, (3) microbatching, and (4) gradient checkpointing. We explore how each of these techniques in isolation affects both the peak memory usage of training and the quality of the end model, and explore the memory, accuracy, and computation tradeoffs incurred when combining these techniques. Using appropriate combinations of these techniques, we show that it is possible to the reduce the memory required to train a WideResNet-28-2 on CIFAR-10 by up to 60.7x with a 0.4% loss in accuracy, and reduce the memory required to train a DynamicConv model on IWSLT'14 German to English translation by up to 8.7x with a BLEU score drop of 0.15."
+    },
+    {
+      "paperId": "0cdef47d342cae516f67efd6e4991f4825043b70",
+      "externalIds": {
+        "MAG": "2934918255",
+        "DBLP": "conf/cvpr/DingCLM19",
+        "ArXiv": "1904.02823",
+        "DOI": "10.1109/CVPR.2019.01167",
+        "CorpusId": 102352789
+      },
+      "title": "Regularizing Activation Distribution for Training Binarized Deep Networks",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2019,
+      "citationCount": 158,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/1904.02823",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.02823, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3306838",
+          "name": "Ruizhou Ding"
+        },
+        {
+          "authorId": "144774026",
+          "name": "Ting-Wu Chin"
+        },
+        {
+          "authorId": "2152269",
+          "name": "Z. Liu"
+        },
+        {
+          "authorId": "1704073",
+          "name": "Diana Marculescu"
+        }
+      ],
+      "abstract": "Binarized Neural Networks (BNNs) can significantly reduce the inference latency and energy consumption in resource-constrained devices due to their pure-logical computation and fewer memory accesses. However, training BNNs is difficult since the activation flow encounters degeneration, saturation, and gradient mismatch problems. Prior work alleviates these issues by increasing activation bits and adding floating-point scaling factors, thereby sacrificing BNN's energy efficiency. In this paper, we propose to use distribution loss to explicitly regularize the activation flow, and develop a framework to systematically formulate the loss. Our experiments show that the distribution loss can consistently improve the accuracy of BNNs without losing their energy benefits. Moreover, equipped with the proposed regularization, BNN training is shown to be robust to the selection of hyper-parameters including optimizer and learning rate."
+    },
+    {
+      "paperId": "b402a76d631d2d836db253e68b442a301c0a6e5e",
+      "externalIds": {
+        "MAG": "2982185430",
+        "DBLP": "journals/ejivp/HascoetFZAT23",
+        "ArXiv": "1910.11127",
+        "DOI": "10.1186/s13640-022-00601-w",
+        "CorpusId": 204852381
+      },
+      "title": "Reversible designs for extreme memory cost reduction of CNN training",
+      "venue": "EURASIP Journal on Image and Video Processing",
+      "year": 2019,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "https://jivp-eurasipjournals.springeropen.com/counter/pdf/10.1186/s13640-022-00601-w",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1910.11127, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "73659073",
+          "name": "T. Hascoet"
+        },
+        {
+          "authorId": "1382652263",
+          "name": "Q. Febvre"
+        },
+        {
+          "authorId": "80888646",
+          "name": "Weihao Zhuang"
+        },
+        {
+          "authorId": "1678564",
+          "name": "Y. Ariki"
+        },
+        {
+          "authorId": "1744026",
+          "name": "T. Takiguchi"
+        }
+      ],
+      "abstract": "Training Convolutional Neural Networks (CNN) is a resource-intensive task that requires specialized hardware for efficient computation. One of the most limiting bottlenecks of CNN training is the memory cost associated with storing the activation values of hidden layers. These values are needed for the computation of the weights’ gradient during the backward pass of the backpropagation algorithm. Recently, reversible architectures have been proposed to reduce the memory cost of training large CNN by reconstructing the input activation values of hidden layers from their output during the backward pass, circumventing the need to accumulate these activations in memory during the forward pass. In this paper, we push this idea to the extreme and analyze reversible network designs yielding minimal training memory footprint. We investigate the propagation of numerical errors in long chains of invertible operations and analyze their effect on training. We introduce the notion of pixel-wise memory cost to characterize the memory footprint of model training, and propose a new model architecture able to efficiently train arbitrarily deep neural networks with a minimum memory cost of 352 bytes per input pixel. This new kind of architecture enables training large neural networks on very limited memory, opening the door for neural network training on embedded devices or non-specialized hardware. For instance, we demonstrate training of our model to 93.3% accuracy on the CIFAR10 dataset within 67 minutes on a low-end Nvidia GTX750 GPU with only 1GB of memory."
+    },
+    {
+      "paperId": "4825c3b3deff44b3d4179b142a2abf96576350e1",
+      "externalIds": {
+        "MAG": "2969868335",
+        "DOI": "10.4236/JSEA.2019.128019",
+        "CorpusId": 201873884
+      },
+      "title": "Reducing the Memory Cost of Training Convolutional Neural Networks by CPU Offloading",
+      "venue": "Journal of Software Engineering and Applications",
+      "year": 2019,
+      "citationCount": 8,
+      "openAccessPdf": {
+        "url": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=94510",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.4236/JSEA.2019.128019?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.4236/JSEA.2019.128019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "73659073",
+          "name": "T. Hascoet"
+        },
+        {
+          "authorId": "80888646",
+          "name": "Weihao Zhuang"
+        },
+        {
+          "authorId": "1382652263",
+          "name": "Q. Febvre"
+        },
+        {
+          "authorId": "1678564",
+          "name": "Y. Ariki"
+        },
+        {
+          "authorId": "1744026",
+          "name": "T. Takiguchi"
+        }
+      ],
+      "abstract": "In recent years, Convolutional Neural Networks (CNNs) have enabled unprecedented progress on a wide range of computer vision tasks. However, training large CNNs is a resource-intensive task that requires specialized Graphical Processing Units (GPU) and highly optimized implementations to get optimal performance from the hardware. GPU memory is a major bottleneck of the CNN training procedure, limiting the size of both inputs and model architectures. In this paper, we propose to alleviate this memory bottleneck by leveraging an under-utilized resource of modern systems: the device to host bandwidth. Our method, termed CPU offloading, works by transferring hidden activations to the CPU upon computation, in order to free GPU memory for upstream layer computations during the forward pass. These activations are then transferred back to the GPU as needed by the gradient computations of the backward pass. The key challenge to our method is to efficiently overlap data transfers and computations in order to minimize wall time overheads induced by the additional data transfers. On a typical work station with a Nvidia Titan X GPU, we show that our method compares favorably to gradient checkpointing as we are able to reduce the memory consumption of training a VGG19 model by 35% with a minimal additional wall time overhead of 21%. Further experiments detail the impact of the different optimization tricks we propose. Our method is orthogonal to other techniques for memory reduction such as quantization and sparsification so that they can easily be combined for further optimizations."
+    },
+    {
+      "paperId": "051e4bd56359b1ccd1b3997a3f9c0e675237a8fe",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1905-07473",
+        "ArXiv": "1905.07473",
+        "MAG": "2965674270",
+        "CorpusId": 159040787
+      },
+      "title": "Adaptively Truncating Backpropagation Through Time to Control Gradient Bias",
+      "venue": "Conference on Uncertainty in Artificial Intelligence",
+      "year": 2019,
+      "citationCount": 41,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1905.07473, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2127534",
+          "name": "Christopher Aicher"
+        },
+        {
+          "authorId": "40135449",
+          "name": "N. Foti"
+        },
+        {
+          "authorId": "2394622",
+          "name": "E. Fox"
+        }
+      ],
+      "abstract": "Truncated backpropagation through time (TBPTT) is a popular method for learning in recurrent neural networks (RNNs) that saves computation and memory at the cost of bias by truncating backpropagation after a fixed number of lags. In practice, choosing the optimal truncation length is difficult: TBPTT will not converge if the truncation length is too small, or will converge slowly if it is too large. We propose an adaptive TBPTT scheme that converts the problem from choosing a temporal lag to one of choosing a tolerable amount of gradient bias. For many realistic RNNs, the TBPTT gradients decay geometrically in expectation for large lags; under this condition, we can control the bias by varying the truncation length adaptively. For RNNs with smooth activation functions, we prove that this bias controls the convergence rate of SGD with biased gradients for our non-convex loss. Using this theory, we develop a practical method for adaptively estimating the truncation length during training. We evaluate our adaptive TBPTT method on synthetic data and language modeling tasks and find that our adaptive TBPTT ameliorates the computational pitfalls of fixed TBPTT."
+    },
+    {
+      "paperId": "146c95362597f956de9fbab4d3598266f11d6d35",
+      "externalIds": {
+        "MAG": "2971667683",
+        "DBLP": "journals/nn/YangDWYXL20",
+        "ArXiv": "1909.02384",
+        "DOI": "10.1016/j.neunet.2019.12.027",
+        "CorpusId": 202540941,
+        "PubMed": "32070857"
+      },
+      "title": "Training High-Performance and Large-Scale Deep Neural Networks with Full 8-bit Integers",
+      "venue": "Neural Networks",
+      "year": 2019,
+      "citationCount": 129,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1909.02384",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.02384, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108581965",
+          "name": "Yukuan Yang"
+        },
+        {
+          "authorId": "101473711",
+          "name": "Shuang Wu"
+        },
+        {
+          "authorId": "143895326",
+          "name": "Lei Deng"
+        },
+        {
+          "authorId": "2059616244",
+          "name": "Tianyi Yan"
+        },
+        {
+          "authorId": "1410066063",
+          "name": "Yuan Xie"
+        },
+        {
+          "authorId": "1730243",
+          "name": "Guoqi Li"
+        }
+      ],
+      "abstract": "Deep neural network (DNN) quantization converting floating-point (FP) data in the network to integers (INT) is an effective way to shrink the model size for memory saving and simplify the operations for compute acceleration. Recently, researches on DNN quantization develop from inference to training, laying a foundation for the online training on accelerators. However, existing schemes leaving batch normalization (BN) untouched during training are mostly incomplete quantization that still adopts high precision FP in some parts of the data paths. Currently, there is no solution that can use only low bit-width INT data during the whole training process of large-scale DNNs with acceptable accuracy. In this work, through decomposing all the computation steps in DNNs and fusing three special quantization functions to satisfy the different precision requirements, we propose a unified complete quantization framework termed as \"WAGEUBN\" to quantize DNNs involving all data paths including W (Weights), A (Activation), G (Gradient), E (Error), U (Update), and BN. Moreover, the Momentum optimizer is also quantized to realize a completely quantized framework. Experiments on ResNet18/34/50 models demonstrate that WAGEUBN can achieve competitive accuracy on the ImageNet dataset. For the first time, the study of quantization in large-scale DNNs is advanced to the full 8-bit INT level. In this way, all the operations in the training and inference can be bit-wise operations, pushing towards faster processing speed, decreased memory cost, and higher energy efficiency. Our throughout quantization framework has great potential for future efficient portable devices with online learning ability."
+    },
+    {
+      "paperId": "8cc20e88e7da6a1055ab9c617e495efcabb1628a",
+      "externalIds": {
+        "DBLP": "conf/ijcai/GholaminejadKB19",
+        "MAG": "2930930439",
+        "ArXiv": "1902.10298",
+        "DOI": "10.24963/ijcai.2019/103",
+        "CorpusId": 67856049
+      },
+      "title": "ANODE: Unconditionally Accurate Memory-Efficient Gradients for Neural ODEs",
+      "venue": "International Joint Conference on Artificial Intelligence",
+      "year": 2019,
+      "citationCount": 202,
+      "openAccessPdf": {
+        "url": "https://www.ijcai.org/proceedings/2019/0103.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1902.10298, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "10419477",
+          "name": "A. Gholami"
+        },
+        {
+          "authorId": "1732330",
+          "name": "K. Keutzer"
+        },
+        {
+          "authorId": "2395747",
+          "name": "G. Biros"
+        }
+      ],
+      "abstract": "Residual neural networks can be viewed as the forward Euler discretization of an Ordinary Differential Equation (ODE) with a unit time step. This has recently motivated researchers to explore other discretization approaches and train ODE based networks. However, an important challenge of neural ODEs is their prohibitive memory cost during gradient backpropogation. Recently a method proposed in arXiv:1806.07366, claimed that this memory overhead can be reduced from LNt, where Nt is the number of time steps, down to O(L) by solving forward ODE backwards in time, where L is the depth of the network. However, we will show that this approach may lead to several problems: (i) it may be numerically unstable for ReLU/non-ReLU activations and general convolution operators, and (ii) the proposed optimize-then-discretize approach may lead to divergent training due to inconsistent gradients for small time step sizes. We discuss the underlying problems, and to address them we propose ANODE, a neural ODE framework which avoids the numerical instability related problems noted above. ANODE has a memory footprint of O(L) + O(Nt), with the same computational cost as reversing ODE solve. We furthermore, discuss a memory efficient algorithm which can further reduce this footprint with a tradeoff of additional computational cost. We show results on Cifar-10/100 datasets using ResNet and SqueezeNext neural networks."
+    },
+    {
+      "paperId": "b9aecad9e5dd0ed2023e9f82b3d7fee935ef3536",
+      "externalIds": {
+        "MAG": "2970911383",
+        "ArXiv": "1905.05894",
+        "DBLP": "conf/nips/ChileySKKRFSJ19",
+        "CorpusId": 155091449
+      },
+      "title": "Online Normalization for Training Neural Networks",
+      "venue": "Neural Information Processing Systems",
+      "year": 2019,
+      "citationCount": 60,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1905.05894, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "120486138",
+          "name": "Vitaliy Chiley"
+        },
+        {
+          "authorId": "143627441",
+          "name": "I. Sharapov"
+        },
+        {
+          "authorId": "122055646",
+          "name": "Atli Kosson"
+        },
+        {
+          "authorId": "49627521",
+          "name": "Urs Köster"
+        },
+        {
+          "authorId": "51129171",
+          "name": "R. Reece"
+        },
+        {
+          "authorId": "3685866",
+          "name": "S. D. L. Fuente"
+        },
+        {
+          "authorId": "51296441",
+          "name": "Vishal Subbiah"
+        },
+        {
+          "authorId": "2053882642",
+          "name": "Michael James"
+        }
+      ],
+      "abstract": "Online Normalization is a new technique for normalizing the hidden activations of a neural network. Like Batch Normalization, it normalizes the sample dimension. While Online Normalization does not use batches, it is as accurate as Batch Normalization. We resolve a theoretical limitation of Batch Normalization by introducing an unbiased technique for computing the gradient of normalized activations. Online Normalization works with automatic differentiation by adding statistical normalization as a primitive. This technique can be used in cases not covered by some other normalizers, such as recurrent networks, fully connected networks, and networks with activation memory requirements prohibitive for batching. We show its applications to image classification, image segmentation, and language modeling. We present formal proofs and experimental results on ImageNet, CIFAR, and PTB datasets."
+    },
+    {
+      "paperId": "4983c27a904e5b56719d96f7500bad4f601d8fc0",
+      "externalIds": {
+        "MAG": "2909136751",
+        "DBLP": "journals/corr/abs-1901-05894",
+        "ArXiv": "1901.05894",
+        "DOI": "10.1007/978-3-031-31407-0_35",
+        "CorpusId": 58014196
+      },
+      "title": "LiSHT: Non-Parametric Linearly Scaled Hyperbolic Tangent Activation Function for Neural Networks",
+      "venue": "International Conference on Computer Vision and Image Processing",
+      "year": 2019,
+      "citationCount": 55,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1901.05894, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1842981",
+          "name": "S. K. Roy"
+        },
+        {
+          "authorId": "35416798",
+          "name": "Suvojit Manna"
+        },
+        {
+          "authorId": "34992579",
+          "name": "S. Dubey"
+        },
+        {
+          "authorId": "1759420",
+          "name": "B. Chaudhuri"
+        }
+      ],
+      "abstract": "The activation function in neural network is one of the important aspects which facilitates the deep training by introducing the non-linearity into the learning process. However, because of zero-hard rectification, some of the existing activation functions such as ReLU and Swish miss to utilize the large negative input values and may suffer from the dying gradient problem. Thus, it is important to look for a better activation function which is free from such problems. As a remedy, this paper proposes a new non-parametric function, called Linearly Scaled Hyperbolic Tangent (LiSHT) for Neural Networks (NNs). The proposed LiSHT activation function is an attempt to scale the non-linear Hyperbolic Tangent (Tanh) function by a linear function and tackle the dying gradient problem. The training and classification experiments are performed over benchmark Iris, MNIST, CIFAR10, CIFAR100 and twitter140 datasets to show that the proposed activation achieves faster convergence and higher performance. A very promising performance improvement is observed on three different type of neural networks including Multi-layer Perceptron (MLP), Convolutional Neural Network (CNN) and Recurrent neural network like Long-short term memory (LSTM). The advantages of proposed activation function are also visualized in terms of the feature activation maps, weight distribution and loss landscape. The code is available at this https URL."
+    },
+    {
+      "paperId": "95195349568d079f1841e6647923328efeea6d27",
+      "externalIds": {
+        "DBLP": "journals/pr/ChenH19",
+        "MAG": "2958433635",
+        "DOI": "10.1016/J.PATCOG.2019.07.006",
+        "CorpusId": 199135284
+      },
+      "title": "Global-connected network with generalized ReLU activation",
+      "venue": "Pattern Recognition",
+      "year": 2019,
+      "citationCount": 37,
+      "openAccessPdf": {
+        "url": "https://uwspace.uwaterloo.ca/bitstream/10012/15277/1/zhi_chen.pdf",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.PATCOG.2019.07.006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.PATCOG.2019.07.006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2117100836",
+          "name": "Zhi Chen"
+        },
+        {
+          "authorId": "1708800",
+          "name": "P. Ho"
+        }
+      ],
+      "abstract": "Abstract Recent Progress has shown that exploitation of hidden layer neurons in convolutional neural networks (CNN) incorporating with a carefully designed activation function can yield better classification results in the field of computer vision. The paper firstly introduces a novel deep learning (DL) architecture aiming to mitigate the gradient-vanishing problem, in which the earlier hidden layer neurons could be directly connected with the last hidden layer and fed into the softmax layer for classification. We then design a generalized linear rectifier function as the activation function that can approximate arbitrary complex functions via training of the parameters. We will show that our design can achieve similar performance in a number of object recognition and video action benchmark tasks, such as MNIST, CIFAR-10/100, SVHN, Fashion-MNIST, STL-10, and UCF YoutTube Action Video datasets, under significantly less number of parameters and shallower network infrastructure, which is not only promising in training in terms of computation burden and memory usage, but is also applicable to low-computation, low-memory mobile scenarios for inference."
+    },
+    {
+      "paperId": "ef2b790aae2c1e1c7eb8a8777515266b5094de88",
+      "externalIds": {
+        "ArXiv": "1906.02735",
+        "DBLP": "journals/corr/abs-1906-02735",
+        "MAG": "2970641149",
+        "CorpusId": 174801267
+      },
+      "title": "Residual Flows for Invertible Generative Modeling",
+      "venue": "Neural Information Processing Systems",
+      "year": 2019,
+      "citationCount": 452,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1906.02735, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51466615",
+          "name": "Ricky T. Q. Chen"
+        },
+        {
+          "authorId": "39423405",
+          "name": "Jens Behrmann"
+        },
+        {
+          "authorId": "1704657",
+          "name": "D. Duvenaud"
+        },
+        {
+          "authorId": "51919565",
+          "name": "J. Jacobsen"
+        }
+      ],
+      "abstract": "Flow-based generative models parameterize probability distributions through an invertible transformation and can be trained by maximum likelihood. Invertible residual networks provide a flexible family of transformations where only Lipschitz conditions rather than strict architectural constraints are needed for enforcing invertibility. However, prior work trained invertible residual networks for density estimation by relying on biased log-density estimates whose bias increased with the network's expressiveness. We give a tractable unbiased estimate of the log density using a \"Russian roulette\" estimator, and reduce the memory required during training by using an alternative infinite series for the gradient. Furthermore, we improve invertible residual blocks by proposing the use of activation functions that avoid derivative saturation and generalizing the Lipschitz condition to induced mixed norms. The resulting approach, called Residual Flows, achieves state-of-the-art performance on density estimation amongst flow-based models, and outperforms networks that use coupling blocks at joint generative and discriminative modeling."
+    },
+    {
+      "paperId": "01a824dbd00c86493be17dbbc399e24f1da11e91",
+      "externalIds": {
+        "DBLP": "conf/pkdd/RothSFP19",
+        "MAG": "3022571137",
+        "DOI": "10.1007/978-3-030-46147-8_23",
+        "CorpusId": 218489962
+      },
+      "title": "Training Discrete-Valued Neural Networks with Sign Activations Using Weight Distributions",
+      "venue": "ECML/PKDD",
+      "year": 2019,
+      "citationCount": 16,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-030-46147-8_23?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-030-46147-8_23, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2058326745",
+          "name": "Wolfgang Roth"
+        },
+        {
+          "authorId": "35654027",
+          "name": "Günther Schindler"
+        },
+        {
+          "authorId": "1731123",
+          "name": "H. Fröning"
+        },
+        {
+          "authorId": "1691836",
+          "name": "F. Pernkopf"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "86284d298539db8dc499a99dcd2b633b035dc713",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1911-09464",
+        "MAG": "2999803881",
+        "ArXiv": "1911.09464",
+        "DOI": "10.1109/CVPR.2019.00748",
+        "CorpusId": 198903430
+      },
+      "title": "Quantization Networks",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2019,
+      "citationCount": 426,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1911.09464, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2109744512",
+          "name": "Jiwei Yang"
+        },
+        {
+          "authorId": "47435551",
+          "name": "Xu Shen"
+        },
+        {
+          "authorId": "2067804584",
+          "name": "Jun Xing"
+        },
+        {
+          "authorId": "40434674",
+          "name": "Xinmei Tian"
+        },
+        {
+          "authorId": "2108508109",
+          "name": "Houqiang Li"
+        },
+        {
+          "authorId": "1738364",
+          "name": "Bing Deng"
+        },
+        {
+          "authorId": "50535545",
+          "name": "Jianqiang Huang"
+        },
+        {
+          "authorId": "143863244",
+          "name": "Xiansheng Hua"
+        }
+      ],
+      "abstract": "Although deep neural networks are highly effective, their high computational and memory costs severely hinder their applications to portable devices. As a consequence, lowbit quantization, which converts a full-precision neural network into a low-bitwidth integer version, has been an active and promising research topic. Existing methods formulate the low-bit quantization of networks as an approximation or optimization problem. Approximation-based methods confront the gradient mismatch problem, while optimizationbased methods are only suitable for quantizing weights and can introduce high computational cost during the training stage. In this paper, we provide a simple and uniform way for weights and activations quantization by formulating it as a differentiable non-linear function. The quantization function is represented as a linear combination of several Sigmoid functions with learnable biases and scales that could be learned in a lossless and end-to-end manner via continuous relaxation of the steepness of Sigmoid functions. Extensive experiments on image classification and object detection tasks show that our quantization networks outperform state-of-the-art methods. We believe that the proposed method will shed new lights on the interpretation of neural network quantization."
+    },
+    {
+      "paperId": "efa0048d1f326a369df9c704118a54e062dab337",
+      "externalIds": {
+        "MAG": "2903282641",
+        "DOI": "10.1016/J.RSE.2018.11.032",
+        "CorpusId": 135122712
+      },
+      "title": "Deep learning based multi-temporal crop classification",
+      "venue": "Remote Sensing of Environment",
+      "year": 2019,
+      "citationCount": 897,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.RSE.2018.11.032?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.RSE.2018.11.032, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2271408",
+          "name": "Liheng Zhong"
+        },
+        {
+          "authorId": "94362994",
+          "name": "Lina Hu"
+        },
+        {
+          "authorId": "49566001",
+          "name": "Hang Zhou"
+        }
+      ],
+      "abstract": "Abstract This study aims to develop a deep learning based classification framework for remotely sensed time series. The experiment was carried out in Yolo County, California, which has a very diverse irrigated agricultural system dominated by economic crops. For the challenging task of classifying summer crops using Landsat Enhanced Vegetation Index (EVI) time series, two types of deep learning models were designed: one is based on Long Short-Term Memory (LSTM), and the other is based on one-dimensional convolutional (Conv1D) layers. Three widely-used classifiers were also tested for comparison, including a gradient boosting machine called XGBoost, Random Forest, and Support Vector Machine. Although LSTM is widely used for sequential data representation, in this study its accuracy (82.41%) and F1 score (0.67) were the lowest among all the classifiers. Among non-deep-learning classifiers, XGBoost achieved the best result with 84.17% accuracy and an F1 score of 0.69. The highest accuracy (85.54%) and F1 score (0.73) were achieved by the Conv1D-based model, which mainly consists of a stack of Conv1D layers and an inception module. The behavior of the Conv1D-based model was inspected by visualizing the activation on different layers. The model employs EVI time series by examining shapes at various scales in a hierarchical manner. Lower Conv1D layers of the optimized model capture small scale temporal variations, while upper layers focus on overall seasonal patterns. Conv1D layers were used as an embedded multi-level feature extractor in the classification model which automatically extracts features from input time series during training. The automated feature extraction reduces the dependency on manual feature engineering and pre-defined equations of crop growing cycles. This study shows that the Conv1D-based deep learning framework provides an effective and efficient method of time series representation in multi-temporal classification tasks."
+    },
+    {
+      "paperId": "1781dd49c2e935dc441634d0df322a6174c6ec17",
+      "externalIds": {
+        "ArXiv": "1910.06251",
+        "DBLP": "journals/corr/abs-1910-06251",
+        "MAG": "2979434318",
+        "CorpusId": 204512317
+      },
+      "title": "Deep Independently Recurrent Neural Network (IndRNN)",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 55,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1910.06251, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2133435913",
+          "name": "Shuai Li"
+        },
+        {
+          "authorId": "15585183",
+          "name": "Wanqing Li"
+        },
+        {
+          "authorId": "2055845956",
+          "name": "Chris Cook"
+        },
+        {
+          "authorId": "2044320063",
+          "name": "Yanbo Gao"
+        },
+        {
+          "authorId": "143754862",
+          "name": "Ce Zhu"
+        }
+      ],
+      "abstract": "Recurrent neural networks (RNNs) are known to be difficult to train due to the gradient vanishing and exploding problems and thus difficult to learn long-term patterns. Long short-term memory (LSTM) was developed to address these problems, but the use of hyperbolic tangent and the sigmoid activation functions results in gradient decay over layers. Consequently, construction of an efficiently trainable deep RNN is challenging. Moreover, training of LSTM is very compute-intensive as the recurrent connection using matrix product is conducted at every time step. To address these problems, this paper proposes a new type of RNNs with the recurrent connection formulated as Hadamard product, referred to as independently recurrent neural network (IndRNN), where neurons in the same layer are independent of each other and connected across layers. The gradient vanishing and exploding problems are solved in IndRNN by simply regulating the recurrent weights, and thus long-term dependencies can be learned. Moreover, an IndRNN can work with non-saturated activation functions such as ReLU and be still trained robustly. Different deeper IndRNN architectures, including the basic stacked IndRNN, residual IndRNN and densely connected IndRNN, have been investigated, all of which can be much deeper than the existing RNNs. Furthermore, IndRNN reduces the computation at each time step and can be over 10 times faster than the LSTM. The code is made publicly available at this https URL. Experimental results have shown that the proposed IndRNN is able to process very long sequences (over 5000 time steps), can be used to construct very deep networks (the 21 layers residual IndRNN and deep densely connected IndRNN used in the experiment for example). Better performances have been achieved on various tasks with IndRNNs compared with the traditional RNN and LSTM."
+    },
+    {
+      "paperId": "f15bf09ab9de83abd1a34d494077cc0c834459e3",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1903-08552",
+        "MAG": "2924131876",
+        "CorpusId": 84187305
+      },
+      "title": "Visual interpretation of the robustness of Non-Negative Associative Gradient Projection Points over function minimizers in mini-batch sampled loss functions",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://arxiv.org/abs/1903.08552, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "87362390",
+          "name": "D. Kafka"
+        },
+        {
+          "authorId": "3030105",
+          "name": "D. Wilke"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "5e99842246430850ba22ed36bd32d076ceacd686",
+      "externalIds": {
+        "DBLP": "journals/vc/AnL20",
+        "MAG": "2912179662",
+        "DOI": "10.1007/s00371-019-01635-4",
+        "CorpusId": 59525796
+      },
+      "title": "Facial expression recognition algorithm based on parameter adaptive initialization of CNN and LSTM",
+      "venue": "The Visual Computer",
+      "year": 2019,
+      "citationCount": 70,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s00371-019-01635-4.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00371-019-01635-4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00371-019-01635-4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "8897402",
+          "name": "Fengping An"
+        },
+        {
+          "authorId": "2135157957",
+          "name": "Zhi-Wen Liu"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "2b5f65d3e6245cf0efe9971b06bfa4f98d5ca227",
+      "externalIds": {
+        "MAG": "2904535507",
+        "DBLP": "journals/corr/abs-1902-06704",
+        "ArXiv": "1902.06704",
+        "DOI": "10.1609/AAAI.V33I01.33013280",
+        "CorpusId": 62841455
+      },
+      "title": "Towards Non-saturating Recurrent Units for Modelling Long-term Dependencies",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "year": 2019,
+      "citationCount": 65,
+      "openAccessPdf": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/4200/4078",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1902.06704, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "144631588",
+          "name": "A. Chandar"
+        },
+        {
+          "authorId": "21669342",
+          "name": "Chinnadhurai Sankar"
+        },
+        {
+          "authorId": "37627814",
+          "name": "Eugene Vorontsov"
+        },
+        {
+          "authorId": "3127597",
+          "name": "Samira Ebrahimi Kahou"
+        },
+        {
+          "authorId": "1751762",
+          "name": "Yoshua Bengio"
+        }
+      ],
+      "abstract": "Modelling long-term dependencies is a challenge for recurrent neural networks. This is primarily due to the fact that gradients vanish during training, as the sequence length increases. Gradients can be attenuated by transition operators and are attenuated or dropped by activation functions. Canonical architectures like LSTM alleviate this issue by skipping information through a memory mechanism. We propose a new recurrent architecture (Non-saturating Recurrent Unit; NRU) that relies on a memory mechanism but forgoes both saturating activation functions and saturating gates, in order to further alleviate vanishing gradients. In a series of synthetic and real world tasks, we demonstrate that the proposed model is the only model that performs among the top 2 models across all tasks with and without long-term dependencies, when compared against a range of other architectures."
+    },
+    {
+      "paperId": "91aff160bbbe5a3a9116225b7ebc5a60179290fa",
+      "externalIds": {
+        "ArXiv": "1911.13173",
+        "DBLP": "journals/corr/abs-1911-13173",
+        "MAG": "2989623127",
+        "CorpusId": 208513353
+      },
+      "title": "Mean Shift Rejection: Training Deep Neural Networks Without Minibatch Statistics or Normalization",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 3,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1911.13173, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "27482581",
+          "name": "B. Ruff"
+        },
+        {
+          "authorId": "2298883676",
+          "name": "Taylor Beck"
+        },
+        {
+          "authorId": "145606164",
+          "name": "Joscha Bach"
+        }
+      ],
+      "abstract": "Deep convolutional neural networks are known to be unstable during training at high learning rate unless normalization techniques are employed. Normalizing weights or activations allows the use of higher learning rates, resulting in faster convergence and higher test accuracy. Batch normalization requires minibatch statistics that approximate the dataset statistics but this incurs additional compute and memory costs and causes a communication bottleneck for distributed training. Weight normalization and initialization-only schemes do not achieve comparable test accuracy. \nWe introduce a new understanding of the cause of training instability and provide a technique that is independent of normalization and minibatch statistics. Our approach treats training instability as a spatial common mode signal which is suppressed by placing the model on a channel-wise zero-mean isocline that is maintained throughout training. Firstly, we apply channel-wise zero-mean initialization of filter kernels with overall unity kernel magnitude. At each training step we modify the gradients of spatial kernels so that their weighted channel-wise mean is subtracted in order to maintain the common mode rejection condition. This prevents the onset of mean shift. This new technique allows direct training of the test graph so that training and test models are identical. We also demonstrate that injecting random noise throughout the network during training improves generalization. This is based on the idea that, as a side effect, batch normalization performs deep data augmentation by injecting minibatch noise due to the weakness of the dataset approximation. \nOur technique achieves higher accuracy compared to batch normalization and for the first time shows that minibatches and normalization are unnecessary for state-of-the-art training."
+    },
+    {
+      "paperId": "274811963302a099e4cabd7b6e567f263680c106",
+      "externalIds": {
+        "MAG": "2975736685",
+        "PubMedCentral": "7286441",
+        "DOI": "10.1038/s41577-019-0221-9",
+        "CorpusId": 203592995,
+        "PubMed": "31570879"
+      },
+      "title": "Defining ‘T cell exhaustion’",
+      "venue": "Nature reviews. Immunology",
+      "year": 2019,
+      "citationCount": 1303,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7286441",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7286441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310758315",
+          "name": "Christian U. Blank"
+        },
+        {
+          "authorId": "144414260",
+          "name": "W. Haining"
+        },
+        {
+          "authorId": "2241359878",
+          "name": "Werner Held"
+        },
+        {
+          "authorId": "2267061890",
+          "name": "Patrick G. Hogan"
+        },
+        {
+          "authorId": "2264847846",
+          "name": "Axel Kallies"
+        },
+        {
+          "authorId": "2256845861",
+          "name": "E. Lugli"
+        },
+        {
+          "authorId": "34662552",
+          "name": "Rachel C. Lynn"
+        },
+        {
+          "authorId": "2258925216",
+          "name": "M. Philip"
+        },
+        {
+          "authorId": "2237969795",
+          "name": "Anjana Rao"
+        },
+        {
+          "authorId": "1925918",
+          "name": "N. Restifo"
+        },
+        {
+          "authorId": "3714345",
+          "name": "A. Schietinger"
+        },
+        {
+          "authorId": "2137420755",
+          "name": "T. Schumacher"
+        },
+        {
+          "authorId": "2268458518",
+          "name": "Pamela L. Schwartzberg"
+        },
+        {
+          "authorId": "2315243514",
+          "name": "Arlene H. Sharpe"
+        },
+        {
+          "authorId": "2241334003",
+          "name": "Daniel E. Speiser"
+        },
+        {
+          "authorId": "2343419105",
+          "name": "E. Wherry"
+        },
+        {
+          "authorId": "2354310419",
+          "name": "Benjamin A. Youngblood"
+        },
+        {
+          "authorId": "3649551",
+          "name": "D. Zehn"
+        }
+      ],
+      "abstract": "‘T cell exhaustion’ is a broad term that has been used to describe the response of T cells to chronic antigen stimulation, first in the setting of chronic viral infection but more recently in response to tumours. Understanding the features of and pathways to exhaustion has crucial implications for the success of checkpoint blockade and adoptive T cell transfer therapies. In this Viewpoint article, 18 experts in the field tell us what exhaustion means to them, ranging from complete lack of effector function to altered functionality to prevent immunopathology, with potential differences between cancer and chronic infection. Their responses highlight the dichotomy between terminally differentiated exhausted T cells that are TCF1– and the self-renewing TCF1+ population from which they derive. These TCF1+ cells are considered by some to have stem cell-like properties akin to memory T cell populations, but the developmental relationships are unclear at present. Recent studies have also highlighted an important role for the transcriptional regulator TOX in driving the epigenetic enforcement of exhaustion, but key questions remain about the potential to reverse the epigenetic programme of exhaustion and how this might affect the persistence of T cell populations. In this Viewpoint article, Nature Reviews Immunology invites 18 experts to discuss the nature of T cell exhaustion. How should T cell exhaustion be defined and what are the developmental relationships between exhausted T cell subsets? The contributors share their thoughts on key recent developments in the field. Christian U. Blank is a medical oncologist and principal investigator at the Netherlands Cancer Institute. He is Professor of Haematology/Oncology at the University of Regensburg, Germany, and received an MBA degree from the University of Warwick, UK. His research interests include neoadjuvant immunotherapies, targeted and biological response modifiers, and prognostic markers for cancer immunotherapies. W. Nicholas Haining is a physician–scientist and Vice-President for Discovery Oncology and Immunology at Merck Research Laboratories. His former academic laboratory at the Dana-Farber Cancer Institute and the Broad Institute focused on understanding the transcriptional control of T cell exhaustion and on identifying regulators of the immune response to cancer in tumour and immune cells. Werner Held’s laboratory has a long-standing interest in understanding the development, differentiation and function of natural killer cells and CD8+ T cells. Current work focuses on CD8+ T cell differentiation in response to acute and chronic infections as well as cancer. Patrick G. Hogan’s research centres on mechanisms and regulation of cellular calcium signalling, the biology of the nuclear factor of activated T cells (NFAT) family of transcription factors and the transcriptional control of immune cell development and function. Axel Kallies is a professor at the University of Melbourne, Australia. His laboratory studies the molecular control of CD8+ cytotoxic T cell and regulatory T cell differentiation with a focus on populations residing in non-lymphoid tissue, including healthy tissues and tumours. The Kallies laboratory has developed and applied genetic and molecular approaches to this field, including novel gene reporters, metabolic techniques, transcriptional profiling, chromatin immunoprecipitation and accessible chromatin sequencing. Enrico Lugli’s laboratory is focused on understanding the biological mechanisms at the basis of memory T cell responses and homeostasis in humans and how this information can be exploited to favour antitumour immune responses in patients with cancer. The group is specialized in single-cell technologies, in particular high-dimensional flow cytometry. Rachel C. Lynn is an associate director of research at Lyell Immunopharma. She received her PhD degree from the the University of Pennsylvania, where she developed multiple preclinical chimeric antigen receptor (CAR) T cell therapy platforms. During her postdoctoral work with Crystal Mackall at Stanford University, she developed models to interrogate and strategies to mitigate CAR T cell exhaustion. At Lyell Immunopharma, her research group will continue to investigate optimal strategies for adoptive T cell therapy in cancer. Mary Philip is an assistant professor in the Department of Medicine, Division of Hematology and Oncology and Department of Pathology, Microbiology, and Immunology at Vanderbilt University Medical Center. She did her haematology and oncology fellowship training at the Fred Hutchinson Cancer Research Center and the University of Washington and then joined Andrea Schietinger’s group at Memorial Sloan Kettering Cancer Center investigating the epigenetic and transcriptional regulation of T cell dysfunction and reprogrammability in cancer. She is a physician–scientist with clinical expertise in haematological cancers, and her research group at Vanderbilt University Medical Center is developing innovative models to dissect the regulation of T cell dysfunction in cancer and T cell lymphomas. Anjana Rao’s laboratory studies transcriptional regulation in several cell types, including CD4+ and CD8+ T cells. One current focus is elucidation of the transcriptional and epigenetic regulatory mechanisms operating in T cells and other immune cells within the tumour microenvironment. Nicholas P. Restifo was trained at Memorial Sloan Kettering Cancer Center and was a principal investigator at the National Cancer Institute. His work has focused on the use of adoptively transferred T cells in immunotherapy for cancer for the past 31 years. He recently joined Lyell Immunopharma. Andrea Schietinger is an assistant member in the Immunology Program at Memorial Sloan Kettering Cancer Center. During her PhD studies with Hans Schreiber at the University of Chicago, she studied how aberrant glycosylation of wild-type proteins in cancer cells creates tumour-specific neoantigens. As a postdoctoral fellow in Philip Greenberg’s laboratory at the University of Washington in Seattle, she defined the transcriptional programmes associated with T cell self-tolerance and tumour-specific T cell dysfunction. Her laboratory at Memorial Sloan Kettering Cancer Center studies the regulatory molecular and epigenetic mechanisms underlying T cell differentiation and dysfunction in the context of self-tolerance, autoimmunity and tumours. Ton N. Schumacher is a principal investigator at the Netherlands Cancer Institute and Professor of Immunotechnology at Leiden University. His research focuses on the dissection of tumour-specific T cell responses in human cancer. In addition to his academic role, he is the founder of four biotech companies and a venture partner at Third Rock Ventures. Pamela L. Schwartzberg is a senior investigator at the National Institute of Allergy and Infectious Diseases. She completed her MD and PhD degrees at Columbia University and her postdoctoral studies at the National Cancer Institute. Her laboratory studies signalling pathways in T cells using genetic, cellular, biochemical and genomic approaches to understand how these affect responses to infection and immunization with a focus on molecules and pathways affected by primary immunodeficiencies. Arlene H. Sharpe is Chair of the Department of Immunology at Harvard Medical School. Her laboratory focuses on understanding the diverse roles of costimulatory and coinhibitory signals in infection, autoimmunity and cancer. Daniel E. Speiser’s team has investigated and treated cancer patients with immunotherapy for the past 30 years. The demonstration and mechanistic elucidation of graft-versus-leukaemia effects and autologous T cell reactivity have helped to pave the way for remarkable therapy innovations in oncology. E. John Wherry is the Barbara and Richard Schiffrin President’s Distinguished Professor, Chair of the Department of Systems Pharmacology and Translational Therapeutics in the Perelman School of Medicine and Director of the Penn Institute for Immunology. His research has focused on T cell exhaustion in chronic viral infections and cancer. His work has defined the developmental biology and molecular regulation of T cell exhaustion and used this information to inform immunotherapy for human cancer. Benjamin A. Youngblood is an associate member in the Department of Immunology at St Jude Children’s Research Hospital. His postdoctoral training in Rafi Ahmed’s laboratory focused on the epigenetic regulation of memory CD8+ T cell differentiation. In 2014, he joined the faculty at St Jude Children’s Research Hospital and has developed a research programme studying epigenetic mechanisms that regulate the development of functional and non-functional CD8+ T cells during viral infection, cancer and autoimmunity. Dietmar Zehn is a full professor and Chair of the Division of Animal Physiology and Immunology of the Technical University of Munich. His research focuses on understanding the molecular and cellular mechanisms that control the differentiation of T cells in acute and chronic infection, with specific interests in T cell exhaustion and T cell receptor signal strength."
+    },
+    {
+      "paperId": "caa2704320e3742bc611c30092acd7a7eb87d5d4",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1903-10520",
+        "ArXiv": "1903.10520",
+        "MAG": "2924828084",
+        "CorpusId": 85517954
+      },
+      "title": "Weight Standardization",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 148,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1903.10520, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2383133",
+          "name": "Siyuan Qiao"
+        },
+        {
+          "authorId": "46506170",
+          "name": "Huiyu Wang"
+        },
+        {
+          "authorId": "50557601",
+          "name": "Chenxi Liu"
+        },
+        {
+          "authorId": "41187410",
+          "name": "Wei Shen"
+        },
+        {
+          "authorId": "145081362",
+          "name": "A. Yuille"
+        }
+      ],
+      "abstract": "Batch Normalization (BN) has become an out-of-box technique to improve deep network training. However, its effectiveness is limited for micro-batch training, i.e., each GPU typically has only 1-2 images for training, which is inevitable for many computer vision tasks, e.g., object detection and semantic segmentation, constrained by memory consumption. To address this issue, we propose Weight Standardization (WS) and Batch-Channel Normalization (BCN) to bring two success factors of BN into micro-batch training: 1) the smoothing effects on the loss landscape and 2) the ability to avoid harmful elimination singularities along the training trajectory. WS standardizes the weights in convolutional layers to smooth the loss landscape by reducing the Lipschitz constants of the loss and the gradients; BCN combines batch and channel normalizations and leverages estimated statistics of the activations in convolutional layers to keep networks away from elimination singularities. We validate WS and BCN on comprehensive computer vision tasks, including image classification, object detection, instance segmentation, video recognition and semantic segmentation. All experimental results consistently show that WS and BCN improve micro-batch training significantly. Moreover, using WS and BCN with micro-batch training is even able to match or outperform the performances of BN with large-batch training."
+    },
+    {
+      "paperId": "253654e8565ddd5635982875dd41030543cfb4c7",
+      "externalIds": {
+        "MAG": "2924493694",
+        "DOI": "10.1088/1742-6596/1176/3/032024",
+        "CorpusId": 108376153
+      },
+      "title": "Symmetric Quantization Scheme and Approximate Batch Normalization for Quantized Neural Networks Training",
+      "venue": "Journal of Physics: Conference Series",
+      "year": 2019,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "https://iopscience.iop.org/article/10.1088/1742-6596/1176/3/032024/pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1742-6596/1176/3/032024?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1742-6596/1176/3/032024, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2141480604",
+          "name": "Xiangyu Wu"
+        },
+        {
+          "authorId": "37982743",
+          "name": "Zhisong Bie"
+        },
+        {
+          "authorId": "2975931",
+          "name": "Xuehong Lin"
+        }
+      ],
+      "abstract": "With the advancements of circuit design and manufacturing processes of hardware, Deep Neural Networks (DNN) have been developed to be deeper and larger to achieve remarkable results in many aspects. Despite this, problems such as excessive memory usage and severe resource consumption are still unavoidable. We proposed a symmetric quantization scheme, which quantizes the weights from a certain kernel to be symmetric to zero along with a scaling factor and bias term in order to make full use of the whole quantization space and reduce the multiplication operations when convolution happens. We also came up with an Approximate Batch Normalization (ABN) method, which simplifies the traditional BN to linear operations lightly. Besides, activations and gradients are quantized in our scheme with fine distinctions, so that most floating-point calculations can be converted into fixed-point calculations and bit-shift operations in both training and inference phase. Our proposed scheme greatly alleviates the problems mentioned above theoretically with fewer computations and smaller storage theoretically. We carried out various experiments to prove its feasibility."
+    },
+    {
+      "paperId": "48cdfd4ed987bf6babbdb8adae28b506d426b73b",
+      "externalIds": {
+        "MAG": "2946749059",
+        "DBLP": "journals/esticas/LinSKC19",
+        "DOI": "10.1109/JETCAS.2019.2911999",
+        "CorpusId": 181771664
+      },
+      "title": "FloatSD: A New Weight Representation and Associated Update Method for Efficient Convolutional Neural Network Training",
+      "venue": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
+      "year": 2019,
+      "citationCount": 12,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JETCAS.2019.2911999?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JETCAS.2019.2911999, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2113316090",
+          "name": "Po-Chen Lin"
+        },
+        {
+          "authorId": "152669141",
+          "name": "M. Sun"
+        },
+        {
+          "authorId": "146386787",
+          "name": "Chuking Kung"
+        },
+        {
+          "authorId": "2588396",
+          "name": "T. Chiueh"
+        }
+      ],
+      "abstract": "In this paper, we propose a floating-point signed digit (FloatSD) format for convolutional neural network (CNN) weight representation and its update method during CNN training. The number of non-zero digits in a weight can be as few as two during the forward and backward passes of the CNN training, reducing the convolution multiplication to addition of two shifted multiplicands (partial products). Furthermore, the mantissa field and the exponent field of neuron activations and gradients during training are also quantized, leading to floating-point numbers represented by eight bits. We tested the FloatSD method using three popular CNN applications, namely, MNIST, CIFAR-10, and ImageNet. These three CNNs were trained from scratch using the conventional 32-bit floating-point arithmetic and the FloatSD weight representation, 8-bit floating-point numbers for activations and gradients, and half-precision 16-bit floating-point accumulation. We obtained FloatSD accuracy results very close to or even better than those trained in 32-bit floating-point arithmetic. Finally, the proposed method not only significantly reduces the computational complexity for CNN training but also achieves memory capacity and bandwidth saving of about three quarters, demonstrating its effectiveness in the low-complexity implementation of CNN training."
+    },
+    {
+      "paperId": "0ea4cf570bc55cecd56062811e4e9b480a43128e",
+      "externalIds": {
+        "ArXiv": "1906.08637",
+        "DBLP": "journals/corr/abs-1906-08637",
+        "MAG": "2951829782",
+        "CorpusId": 195218776
+      },
+      "title": "Back to Simplicity: How to Train Accurate BNNs from Scratch?",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 61,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1906.08637, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31890223",
+          "name": "Joseph Bethge"
+        },
+        {
+          "authorId": "1688587",
+          "name": "Haojin Yang"
+        },
+        {
+          "authorId": "23208344",
+          "name": "Marvin Bornstein"
+        },
+        {
+          "authorId": "1708312",
+          "name": "C. Meinel"
+        }
+      ],
+      "abstract": "Binary Neural Networks (BNNs) show promising progress in reducing computational and memory costs but suffer from substantial accuracy degradation compared to their real-valued counterparts on large-scale datasets, e.g., ImageNet. Previous work mainly focused on reducing quantization errors of weights and activations, whereby a series of approximation methods and sophisticated training tricks have been proposed. In this work, we make several observations that challenge conventional wisdom. We revisit some commonly used techniques, such as scaling factors and custom gradients, and show that these methods are not crucial in training well-performing BNNs. On the contrary, we suggest several design principles for BNNs based on the insights learned and demonstrate that highly accurate BNNs can be trained from scratch with a simple training strategy. We propose a new BNN architecture BinaryDenseNet, which significantly surpasses all existing 1-bit CNNs on ImageNet without tricks. In our experiments, BinaryDenseNet achieves 18.6% and 7.6% relative improvement over the well-known XNOR-Network and the current state-of-the-art Bi-Real Net in terms of top-1 accuracy on ImageNet, respectively."
+    },
+    {
+      "paperId": "faea71fe48941ecc10988e44c2152b9678898f5f",
+      "externalIds": {
+        "MAG": "2954830149",
+        "DBLP": "conf/ahfe/SaadatiNA19a",
+        "DOI": "10.1007/978-3-030-20473-0_22",
+        "CorpusId": 198339842
+      },
+      "title": "Convolutional Neural Network for Hybrid fNIRS-EEG Mental Workload Classification",
+      "venue": "International Conference on Applied Human Factors and Ergonomics",
+      "year": 2019,
+      "citationCount": 59,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-030-20473-0_22?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-030-20473-0_22, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31070202",
+          "name": "M. Saadati"
+        },
+        {
+          "authorId": "145938692",
+          "name": "J. Nelson"
+        },
+        {
+          "authorId": "1831769",
+          "name": "H. Ayaz"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9f23a70efd290c18f04dfaa9210577f65c8fcf60",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-1902-00730",
+        "ArXiv": "1902.00730",
+        "MAG": "2914381000",
+        "CorpusId": 59600020
+      },
+      "title": "Self-Binarizing Networks",
+      "venue": "arXiv.org",
+      "year": 2019,
+      "citationCount": 27,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1902.00730, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7683668",
+          "name": "Fayez Lahoud"
+        },
+        {
+          "authorId": "2118589",
+          "name": "R. Achanta"
+        },
+        {
+          "authorId": "1387989563",
+          "name": "Pablo Márquez-Neila"
+        },
+        {
+          "authorId": "1735035",
+          "name": "S. Süsstrunk"
+        }
+      ],
+      "abstract": "We present a method to train self-binarizing neural networks, that is, networks that evolve their weights and activations during training to become binary. To obtain similar binary networks, existing methods rely on the sign activation function. This function, however, has no gradients for non-zero values, which makes standard backpropagation impossible. To circumvent the difficulty of training a network relying on the sign activation function, these methods alternate between floating-point and binary representations of the network during training, which is sub-optimal and inefficient. We approach the binarization task by training on a unique representation involving a smooth activation function, which is iteratively sharpened during training until it becomes a binary representation equivalent to the sign activation function. Additionally, we introduce a new technique to perform binary batch normalization that simplifies the conventional batch normalization by transforming it into a simple comparison operation. This is unlike existing methods, which are forced to the retain the conventional floating-point-based batch normalization. Our binary networks, apart from displaying advantages of lower memory and computation as compared to conventional floating-point and binary networks, also show higher classification accuracy than existing state-of-the-art methods on multiple benchmark datasets."
+    },
+    {
+      "paperId": "e9184932d02f4d07595195231f7df0f2177a2c48",
+      "externalIds": {
+        "ArXiv": "1903.08552",
+        "MAG": "3014879132",
+        "CorpusId": 214802121
+      },
+      "title": "Traversing the noise of dynamic mini-batch sub-sampled loss functions: A visual guide.",
+      "venue": "",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1903.08552, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "87362390",
+          "name": "D. Kafka"
+        },
+        {
+          "authorId": "3030105",
+          "name": "D. Wilke"
+        }
+      ],
+      "abstract": "Mini-batch sub-sampling in neural network training is unavoidable, due to growing data demands, memory-limited computational resources such as graphical processing units (GPUs), and the dynamics of on-line learning. In this study we specifically distinguish between static mini-batch sub-sampled loss functions, where mini-batches are intermittently fixed during training, resulting in smooth but biased loss functions; and the dynamic sub-sampling equivalent, where new mini-batches are sampled at every loss evaluation, trading bias for variance in sampling induced discontinuities. These render automated optimization strategies such as minimization line searches ineffective, since critical points may not exist and function minimizers find spurious, discontinuity induced minima. \nThis paper suggests recasting the optimization problem to find stochastic non-negative associated gradient projection points (SNN-GPPs). We demonstrate that the SNN-GPP optimality criterion is less susceptible to sub-sampling induced discontinuities than critical points or minimizers. We conduct a visual investigation, comparing local minimum and SNN-GPP optimality criteria in the loss functions of a simple neural network training problem for a variety of popular activation functions. Since SNN-GPPs better approximate the location of true optima, particularly when using smooth activation functions with high curvature characteristics, we postulate that line searches locating SNN-GPPs can contribute significantly to automating neural network training"
+    },
+    {
+      "paperId": "8ed2a15a0840daa04f9837912abcd555e4165eee",
+      "externalIds": {
+        "DBLP": "conf/annpr/GordonRA20",
+        "MAG": "2994590149",
+        "ArXiv": "1912.01116",
+        "DOI": "10.1007/978-3-030-58309-5_4",
+        "CorpusId": 208548740
+      },
+      "title": "Long Distance Relationships without Time Travel: Boosting the Performance of a Sparse Predictive Autoencoder in Sequence Modeling",
+      "venue": "IAPR International Workshop on Artificial Neural Networks in Pattern Recognition",
+      "year": 2019,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1912.01116",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1912.01116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2070862823",
+          "name": "J. Gordon"
+        },
+        {
+          "authorId": "144575416",
+          "name": "D. Rawlinson"
+        },
+        {
+          "authorId": "2109973472",
+          "name": "Subutai Ahmad"
+        }
+      ],
+      "abstract": "In sequence learning tasks such as language modelling, Recurrent Neural Networks must learn relationships between input features separated by time. State of the art models such as LSTM and Transformer are trained by backpropagation of losses into prior hidden states and inputs held in memory. This allows gradients to flow from present to past and effectively learn with perfect hindsight, but at a significant memory cost. In this paper we show that it is possible to train high performance recurrent networks using information that is local in time, and thereby achieve a significantly reduced memory footprint. We describe a predictive autoencoder called bRSM featuring recurrent connections, sparse activations, and a boosting rule for improved cell utilization. The architecture demonstrates near optimal performance on a non-deterministic (stochastic) partially-observable sequence learning task consisting of high-Markov-order sequences of MNIST digits. We find that this model learns these sequences faster and more completely than an LSTM, and offer several possible explanations why the LSTM architecture might struggle with the partially observable sequence structure in this task. We also apply our model to a next word prediction task on the Penn Treebank (PTB) dataset. We show that a 'flattened' RSM network, when paired with a modern semantic word embedding and the addition of boosting, achieves 103.5 PPL (a 20-point improvement over the best N-gram models), beating ordinary RNNs trained with BPTT and approaching the scores of early LSTM implementations. This work provides encouraging evidence that strong results on challenging tasks such as language modelling may be possible using less memory intensive, biologically-plausible training regimes."
+    },
+    {
+      "paperId": "60dfff874bf7d986484b895b82f742a61eab2320",
+      "externalIds": {
+        "PubMedCentral": "6699080",
+        "DOI": "10.1186/s41927-019-0078-3",
+        "CorpusId": 201058006
+      },
+      "title": "Abstracts of scientific contributions to GCOM 2019",
+      "venue": "BMC Rheumatology",
+      "year": 2019,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://bmcrheumatol.biomedcentral.com/track/pdf/10.1186/s41927-019-0078-3",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6699080, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2069447346",
+          "name": "Mark Jensen"
+        },
+        {
+          "authorId": "1401568354",
+          "name": "Y. Ghodke-Puranik"
+        },
+        {
+          "authorId": "78660235",
+          "name": "Régine"
+        },
+        {
+          "authorId": "1412464032",
+          "name": "Tipon"
+        },
+        {
+          "authorId": "2052621397",
+          "name": "C. Loomis"
+        },
+        {
+          "authorId": "2411749762",
+          "name": "V. Mezzano"
+        },
+        {
+          "authorId": "1411668527",
+          "name": "Shanmugpriya Selvaraj"
+        },
+        {
+          "authorId": "2216896",
+          "name": "T. W. Muskardin"
+        },
+        {
+          "authorId": "2430081",
+          "name": "L. Pachman"
+        },
+        {
+          "authorId": "1861753",
+          "name": "A. Reed"
+        },
+        {
+          "authorId": "2087501520",
+          "name": "Timothy"
+        },
+        {
+          "authorId": "1412457546",
+          "name": "Niewold"
+        },
+        {
+          "authorId": "3511804",
+          "name": "S. Ghimbovschi"
+        },
+        {
+          "authorId": "4624626",
+          "name": "I. Lundberg"
+        },
+        {
+          "authorId": "2084998226",
+          "name": "Hélène"
+        },
+        {
+          "authorId": "74045012",
+          "name": "Alexánderson"
+        },
+        {
+          "authorId": "47753065",
+          "name": "Q. Tang"
+        },
+        {
+          "authorId": "49469480",
+          "name": "Xingmei Zhang"
+        },
+        {
+          "authorId": "4943620",
+          "name": "E. Lindroos"
+        },
+        {
+          "authorId": "3732640",
+          "name": "H. Alexanderson"
+        },
+        {
+          "authorId": "2608786",
+          "name": "C. Wick"
+        },
+        {
+          "authorId": "49204382",
+          "name": "Mei Bruton"
+        },
+        {
+          "authorId": "144407013",
+          "name": "R. Harris"
+        },
+        {
+          "authorId": "94203135",
+          "name": "Inger"
+        },
+        {
+          "authorId": "1992553982",
+          "name": "Nennesmo"
+        }
+      ],
+      "abstract": "s of scientific contributions to GCOM 2019 Berlin, Germany. 27 30 March 2019 Published: 19 August 2019 I1 Selected highlights from the 3rd Global Conference of Myositis, Berlin Hector Chinoy, James B. Lilleker National Institute for Health Research Manchester Biomedical Research Centre, Manchester University NHS Foundation Trust, The University of Manchester (Manchester, UK); Department of Rheumatology, Salford Royal NHS Foundation Trust, Manchester Academic Health Science Centre (Salford, UK); Centre for Musculoskeletal Research, Faculty of Biology, Medicine and Health, The University of Manchester (Manchester, UK); Manchester Centre for Clinical Neurosciences, Salford Royal NHS Foundation Trust (Salford, UK) Correspondence: Hector Chinoy (hector.chinoy@manchester.ac.uk) BMC Rheumatology 2019, 3(Suppl 1):I1 March 2019 saw the 3rd Global Conference of Myositis at the historical European School of Management and Technology, Berlin, Germany, organized by Professors Werner Stenzel, Olivier Benveniste, Ichizo Nishino, and the Scientific and Organising Committee. The conference was well attended by 375 delegates from 30 different countries, including 20 invited speakers, A opportunity arose to fund a series of fellowships to junior researchers, from funds left over from the previous GCOM meeting at Potomac. There was a series of wonderful and enlightening talks from all over the world and from neighbouring disciplines. The conference started off with interesting pathology workshop detailing difficult cases. There then followed an introductory lecture by Voit on recent developments in the therapeutic approaches to neuromuscular diseases, including antisense therapy. Regulators are increasingly willing to accept ‘contemporary controls’ selected according to the same entry criteria to strengthen small placebo controls groups and improve power to detect change where short-term effect sizes are small. Discussion was also made about using myostatin, an activin 2b receptor binder, as a disease progression biomarker. Decreased levels of myostatin and downregulation of the myostatinactivin pathway are seen in neuromuscular disease, potentially also explaining the paucity of therapeutic benefits seen to date from myostatin receptor blockade. Kjaer discussed how age impairs the performance of the skeletal muscle and cardiovascular system. Three to six months of training can result in a 10-15% increase in strength/function, akin to 3-5 years of rejuvenation. Ageing can affect the transcriptional regulation of human skeletal muscle disuse atrophy, with the result that older people require four times as much time to recover from periods of immobility (1). This is associated with reduced anabolic signaling, and a decrease in number and responsiveness of satellite cells. Inclusion body myositis (IBM) was the subject of a number of talks. Wiehl discussed pathogenic mechanisms connecting inherited and acquired IBM, including disruptions in protein homeostasis and autophagy which have recently been interrogated using a targetted proteomic approach. (2). Britson described a xenograft model of sporadic IBM which shows impaired regeneration and TDP43 mislocalization. Greenberg discussed a potential therapeutic strategy of © The Author(s). 2019 Open Access This artic International License (http://creativecommons reproduction in any medium, provided you g the Creative Commons license, and indicate if (http://creativecommons.org/publicdomain/ze targeting highly differentiated T cells, particularly effector memory KLRG1+ cytotoxic T cells in IBM. There appears to be overlapping features between IBM and T cell large granular lymphocytic leukaemia, a malignancy of highly differentiated CD8 cytotoxic T cells which also exhibit upregulation of KLRG1. (3) Immune checkpoint inhibitors are increasingly being used to activate the immune system against malignant cells, particularly melanoma, but they can have autoimmune adverse effects, including myositis. Moslehi discussed his report in the Lancet where they identified 101 cases of severe myocarditis following treatment with immune checkpoint inhibitors (4). Of relevance to myologists, a substantial increase in incidence over time was noted. Klareskog gave an eloquent overview of the role of environmental factors, focusing on the lungs as a trigger of autoimmunity. He cited the analogy of rheumatoid arthritis, where a combination of genetics, epidemiological risk factors (including smoking, hormones, stress and the HPA axis), systemic immune dysregulation and disruption of mucosal biology create an at-risk population for development of autoimmunity (5). Smoking may predispose to antigenic peptide fragments being presented on the cell surface by HLA class II molecules (forming part of the common ancestral haplotype), and interact with autoaggressive CD4+ cells, for the subsequent development of anti-aminoacyl tRNA synthetase antibodies (6). The association of cancer and dermatomyositis was also a theme. Dani described register data from 2002 to 2016 in Sweden. Cancer risk in IIM patients is increased before diagnosis, reaches a peak one year prediagnosis, and continues to be significant until 10 years post-diagnosis. Site-specific cancer risk is highest for respiratory before diagnosis and the buccal cavity after. Even patients with IIM diagnoses other than DM are at risk of developing cancer. Oldroyd also described a temporal relationship with cancer and DM (7). Specifically, anti-TIF1gammapositive-associated malignancy occurs exclusively within the three year period on either side of DM onset, the risk being highest in those 39 years or younger. Within the anti-TIF1gamma-positive cohort, breast cancer was the most common malignancy (33%), followed by ovarian cancer (19%) and lymphoma (14%). Ovarian cancer constituted a significantly higher proportion of cancers in the anti-TIF1gamma-positive vs. -negative cases. It appears that possession of a specific anti-TIF1gamma IgG subtype is necessary to incur risk of cancer. A poster from Aussy (8) examined 51 antiTIF1gamma -positive patients, where 40 (78%) had cancer. Detection of antiTIF1gamma IgG2 was significantly associated with mortality (p=0.0011) and occurrence of cancer during the follow-up period, with a 100% positive predictive value of cancer when then mean fluorescence intensity of antiTIF1gamma IgG2 was >385. Patients with anti-MDA5 antibody-associated disease represent a challenging group where disease is often resistant to treatment and mortality is high. Toquet described a cohort of 121 anti-MDA5 antibodyassociated DM, where three subgroups with different outcomes were identified. Overall mortality was 27%. Cluster one had less arthralgia/ arthritis, but all had interstitial lung disease and there was a high frequency of mechanics’ hands. Cluster two, the “athro-cutaneo”-form, tended to have more arthralgia/arthritis, were less likely to be male and had a better prognosis. Cluster three, the “vasculo-cutaneo-muscular”le is distributed under the terms of the Creative Commons Attribution 4.0 .org/licenses/by/4.0/), which permits unrestricted use, distribution, and ive appropriate credit to the original author(s) and the source, provide a link to changes were made. The Creative Commons Public Domain Dedication waiver ro/1.0/) applies to the data made available in this article, unless otherwise stated. BMC Rheumatology 2019, 3(Suppl 1):31 Page 2 of 56 form, were more likely to be male, have skin vasculopathy (Raynaud’s, skin ulcers, digital necrosis, calcinosis), myositis and had an intermediate prognosis. Gono discussed an intensive treatment combination used for anti-MDA5 antibody-associated interstitial lung disease (9). This included high dose prednisolone, cyclosporine and intravenous cyclophosphamide. Peng discussed neopterin as a marker of macrophage activation. Increased neopterin levels have been noted in DM and in patients with MDA5. There was a positive correlation of neopterin with ferritin and markers of disease severity, and negative correlation with pulmonary function. Paik presented results of an open label study of the JAK inhibitor, Tofacinitib, in refractory DM, testing the hypothesis that the drug would inhibit the production or secretion of key pro-inflammatory chemokines e.g. CXCL9/10 to induce clinical remission (10). All 10 patients enrolled met the IMACS definition of improvement. Five of seven anti-TIF1gamma positive patients were moderate responders, and three of five were able to come off steroids. Generous financial support by Myositis UK formed the basis for a novel “speed-funding” event, where 17 grant applications were initially considered. Six junior researchers were then put forward to present a 15 minute funding proposal to a set of judges and the audience. Amidst a high-pressure atmosphere, the following were successful in securing funding: Kyla Britson, USA: The pathogenesis and treatment of inclusion body myositis in a xenograft model; Saskia Lassche, Netherlands; Inclusion body myositis on a chip, Erin Wilfong, USA; CD27‐CXCR4hiCD21lo cells in Jo1 positive IIM. Other highlights included a workshop for young researchers, a patient-centred workshop and further discussion about the establishment of a World Myositis Society. We now look forward now to the 4th GCOM which will provisionally be held in Prague, Czech Republic, in 2021. Sources of Funding: HC is supported by a grant from the Medical Research Council (MR/ N003322/1) and the NIHR Biomedical Research Centre Funding Scheme. The views expressed in this publication are those of the authors and not necessarily those of the NHS, the National Institute for Health Research or the Department of Health."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "gradient checkpointing activation memory training",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2019"
+}

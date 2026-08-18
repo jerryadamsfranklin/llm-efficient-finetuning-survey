@@ -23,8 +23,10 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from _common import (  # noqa: E402
+    RAW_ROOT,
     append_search_log,
     iter_s2_queries,
+    load_local_env,
     load_queries,
     raw_path,
     save_json,
@@ -111,10 +113,95 @@ def fetch_s2(
     }
 
 
+def run_backfill(
+    data: dict[str, Any],
+    session: requests.Session,
+    *,
+    force: bool,
+    only_block: str | None = None,
+    only_slice: str | None = None,
+) -> int:
+    """Protocol v1.3: date-sliced re-run of every s2_query for the confirmation band.
+
+    v1.2 queried Semantic Scholar once per query with a 200-record cap and no slicing;
+    17 of 18 queries saturated that cap and returned only 3.5% pre-2022 records. Slicing
+    by year gives each year its own cap, which is the rule v1.1 already applied to arXiv.
+    """
+    meta = data["meta"]
+    slices = [str(s) for s in meta.get("s2_backfill_slices") or []]
+    if not slices:
+        print("no s2_backfill_slices in queries.yaml (expected under protocol v1.3)", file=sys.stderr)
+        return 1
+    max_results = int(meta["max_results_per_query"])
+    out_root = RAW_ROOT / "semanticscholar_backfill"
+    print(f"v1.3 backfill: slices={slices}, cap={max_results}/query/slice -> {out_root}\n", flush=True)
+
+    for block_id, _name, q_idx, query in iter_s2_queries(data):
+        if only_block and block_id != only_block:
+            continue
+        for year in slices:
+            if only_slice and year != only_slice:
+                continue
+            out = raw_path("semanticscholar_backfill", block_id, q_idx, slice_id=year, root=RAW_ROOT)
+            if out.exists() and not force:
+                print(f"skip existing {out.name}")
+                continue
+            print(f"backfill {block_id} q{q_idx} {year}: {query}", flush=True)
+            try:
+                payload = fetch_s2(
+                    query,
+                    year_start=int(year),
+                    year_end=int(year),
+                    max_results=max_results,
+                    session=session,
+                )
+            except (requests.RequestException, RuntimeError) as exc:
+                print(f"  ERROR: {exc}", flush=True)
+                time.sleep(INTER_REQUEST_SEC)
+                continue
+            payload["protocol_version"] = "1.3"
+            payload["protocol_query"] = query
+            payload["query_form"] = "s2_keyword_variant"
+            payload["run_type"] = "confirmation_band_backfill"
+            payload["slice"] = year
+
+            notes = (
+                "protocol=1.3 confirmation-band backfill; s2_keyword_variant; "
+                f"year slice {year}; API totalReported={payload['total_results_reported']}"
+            )
+            if payload.get("hit_result_cap"):
+                notes += f"; HIT_CAP={max_results}"
+            if payload.get("warnings"):
+                notes += "; " + "; ".join(payload["warnings"])
+            if payload["returned"] == 0 and payload.get("warnings"):
+                print(f"  no usable results ({notes}); will retry later", flush=True)
+                time.sleep(120)
+                continue
+            save_json(out, payload)
+            append_search_log(
+                source="semanticscholar_backfill",
+                block_id=block_id,
+                query_index=q_idx,
+                query=query,
+                n_results=payload["returned"],
+                notes=notes,
+                slice_id=year,
+            )
+            print(f"  saved {out.name}: {payload['returned']} papers", flush=True)
+            time.sleep(INTER_REQUEST_SEC)
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run Semantic Scholar searches.")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--block", help="Only run this block id.")
+    parser.add_argument(
+        "--backfill",
+        action="store_true",
+        help="Protocol v1.3: date-sliced re-run for the 2019-2021 confirmation band.",
+    )
+    parser.add_argument("--slice", help="With --backfill: only this year slice.")
     args = parser.parse_args()
 
     data = load_queries()
@@ -123,12 +210,21 @@ def main() -> int:
     year_end = int(meta["date_end"][:4])
     max_results = int(meta["max_results_per_query"])
 
+    load_local_env()
     session = requests.Session()
     headers = {"User-Agent": "llm-efficient-finetuning-survey/0.1 (research)"}
     api_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
     if api_key:
         headers["x-api-key"] = api_key
+        print("using SEMANTIC_SCHOLAR_API_KEY from environment", flush=True)
+    else:
+        print("WARNING: no SEMANTIC_SCHOLAR_API_KEY; expect heavy 429 throttling", flush=True)
     session.headers.update(headers)
+
+    if args.backfill:
+        return run_backfill(
+            data, session, force=args.force, only_block=args.block, only_slice=args.slice
+        )
 
     for block_id, _name, q_idx, query in iter_s2_queries(data):
         if args.block and block_id != args.block:

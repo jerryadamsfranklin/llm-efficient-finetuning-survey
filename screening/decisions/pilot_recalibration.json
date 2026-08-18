@@ -1,0 +1,22 @@
+{
+  "batch": "pilot",
+  "band": "unknown_year",
+  "screener": "llm_assisted",
+  "note": "Applies the confidence rule set at author review of pilot block 1: confidence reports certainty in the decision, not enthusiasm for the record. A bare title with no abstract rarely supports high confidence. Decisions unchanged; confidence only.",
+  "decisions": [
+    {
+      "id": "C-7a1ca34a27",
+      "decision": "include",
+      "confidence": "low",
+      "recalibration": true,
+      "notes": "Fast adaptation plus quantization for a speech LM. Advanced under bias-to-inclusion, but SpeechLM is a domain-boundary case against the LLM scope in criterion 2 and likely fails at Stage 2. Confidence lowered at author review: the title cannot settle the domain question. Date unverified."
+    },
+    {
+      "id": "C-3e0d9bf5ed",
+      "decision": "include",
+      "confidence": "low",
+      "recalibration": true,
+      "notes": "LLM quantization (block B2), but the title does not distinguish training/fine-tuning-time quantization from inference-only PTQ, which would engage exclusion 2. Confidence lowered at author review for the same reason record C-4f1f38f8b0 was already low. Date unverified."
+    }
+  ]
+}

@@ -1,0 +1,1302 @@
+{
+  "source": "semanticscholar",
+  "api": "https://api.semanticscholar.org/graph/v1/paper/search",
+  "query": "federated fine-tuning data heterogeneity non-IID",
+  "year": "2020-2020",
+  "fields": "title,authors,year,venue,citationCount,externalIds,abstract,openAccessPdf",
+  "fetched_at": "2026-07-31T17:47:42Z",
+  "total_results_reported": 32,
+  "returned": 32,
+  "hit_result_cap": false,
+  "warnings": [],
+  "papers": [
+    {
+      "paperId": "10475b4d2467cfa15bb0fd149b34b295928002e4",
+      "externalIds": {
+        "MAG": "3049011669",
+        "ArXiv": "2008.06180",
+        "DBLP": "journals/tmc/ItaharaNKMY23",
+        "DOI": "10.1109/TMC.2021.3070013",
+        "CorpusId": 221135969
+      },
+      "title": "Distillation-Based Semi-Supervised Federated Learning for Communication-Efficient Collaborative Training With Non-IID Private Data",
+      "venue": "IEEE Transactions on Mobile Computing",
+      "year": 2020,
+      "citationCount": 380,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/7755/9970410/09392310.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2008.06180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1645225930",
+          "name": "Sohei Itahara"
+        },
+        {
+          "authorId": "3037568",
+          "name": "T. Nishio"
+        },
+        {
+          "authorId": "1596809965",
+          "name": "Yusuke Koda"
+        },
+        {
+          "authorId": "1731593",
+          "name": "M. Morikura"
+        },
+        {
+          "authorId": "145524496",
+          "name": "Koji Yamamoto"
+        }
+      ],
+      "abstract": "This study develops a federated learning (FL) framework overcoming largely incremental communication costs due to model sizes in typical frameworks without compromising model performance. To this end, based on the idea of leveraging an unlabeled open dataset, we propose a distillation-based semi-supervised FL (DS-FL) algorithm that exchanges the outputs of local models among mobile devices, instead of model parameter exchange employed by the typical frameworks. In DS-FL, the communication cost depends only on the output dimensions of the models and does not scale up according to the model size. The exchanged model outputs are used to label each sample of the open dataset, which creates an additionally labeled dataset. Based on the new dataset, local models are further trained, and model performance is enhanced owing to the data augmentation effect. We further highlight that in DS-FL, the heterogeneity of the devices’ dataset leads to ambiguous of each data sample and lowing of the training convergence. To prevent this, we propose entropy reduction averaging, where the aggregated model outputs are intentionally sharpened. Moreover, extensive experiments show that DS-FL reduces communication costs up to 99 percent relative to those of the FL benchmark while achieving similar or higher classification accuracy."
+    },
+    {
+      "paperId": "bc9045ee4441e0df039ad5281e7654ba39283469",
+      "externalIds": {
+        "MAG": "3091404410",
+        "DBLP": "conf/miccai/YeganehFNA20",
+        "ArXiv": "2008.07665",
+        "DOI": "10.1007/978-3-030-60548-3_15",
+        "CorpusId": 221150375
+      },
+      "title": "Inverse Distance Aggregation for Federated Learning with Non-IID Data",
+      "venue": "DART/DCL@MICCAI",
+      "year": 2020,
+      "citationCount": 107,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2008.07665, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1882505527",
+          "name": "Yousef Yeganeh"
+        },
+        {
+          "authorId": "2169482",
+          "name": "Azade Farshad"
+        },
+        {
+          "authorId": "145587209",
+          "name": "N. Navab"
+        },
+        {
+          "authorId": "3098247",
+          "name": "Shadi Albarqouni"
+        }
+      ],
+      "abstract": "Federated learning (FL) has been a promising approach in the field of medical imaging in recent years. A critical problem in FL, specifically in medical scenarios is to have a more accurate shared model which is robust to noisy and out-of distribution clients. In this work, we tackle the problem of statistical heterogeneity in data for FL which is highly plausible in medical data where for example the data comes from different sites with different scanner settings. We propose IDA (Inverse Distance Aggregation), a novel adaptive weighting approach for clients based on meta-information which handles unbalanced and non-iid data. We extensively analyze and evaluate our method against the well-known FL approach, Federated Averaging as a baseline."
+    },
+    {
+      "paperId": "11e6675cad1c82f8066b07a392396151322b9063",
+      "externalIds": {
+        "MAG": "3093034895",
+        "DBLP": "journals/corr/abs-2010-05958",
+        "CorpusId": 222310474
+      },
+      "title": "FedAT: A Communication-Efficient Federated Learning Method with Asynchronous Tiers under Non-IID Data",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 86,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://arxiv.org/abs/2010.05958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1712184172",
+          "name": "Zheng Chai"
+        },
+        {
+          "authorId": "1519030098",
+          "name": "Yujing Chen"
+        },
+        {
+          "authorId": "2130340394",
+          "name": "Liang Zhao"
+        },
+        {
+          "authorId": "47585127",
+          "name": "Yue Cheng"
+        },
+        {
+          "authorId": "145344187",
+          "name": "H. Rangwala"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c9fbdf5453a7d638622585c3f06e830ee649419a",
+      "externalIds": {
+        "MAG": "3028382483",
+        "ArXiv": "2005.11418",
+        "DBLP": "journals/corr/abs-2005-11418",
+        "DOI": "10.1109/TSP.2021.3115952",
+        "CorpusId": 218870279
+      },
+      "title": "FedPD: A Federated Learning Framework With Adaptivity to Non-IID Data",
+      "venue": "IEEE Transactions on Signal Processing",
+      "year": 2020,
+      "citationCount": 288,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2005.11418",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.11418, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46448049",
+          "name": "Xinwei Zhang"
+        },
+        {
+          "authorId": "1793717",
+          "name": "Mingyi Hong"
+        },
+        {
+          "authorId": "1742324",
+          "name": "S. Dhople"
+        },
+        {
+          "authorId": "6833606",
+          "name": "W. Yin"
+        },
+        {
+          "authorId": "1614034792",
+          "name": "Yang Liu"
+        }
+      ],
+      "abstract": "Federated Learning (FL) is popular for communication-efficient learning from distributed data. To utilize data at different clients without moving them to the cloud, algorithms such as the Federated Averaging (FedAvg) have adopted a computation then aggregation model, in which multiple local updates are performed using local data before aggregation. These algorithms fail to work when faced with practical challenges, e.g., the local data being non-identically independently distributed. In this paper, we first characterize the behavior of the FedAvg algorithm, and show that without strong and unrealistic assumptions on the problem structure, it can behave erratically. Aiming at designing FL algorithms that are provably fast and require as few assumptions as possible, we propose a new algorithm design strategy from the primal-dual optimization perspective. Our strategy yields algorithms that can deal with non-convex objective functions, achieves the best possible optimization and communication complexity (in a well-defined sense), and accommodates full-batch and mini-batch local computation models. Importantly, the proposed algorithms are communication efficient, in that the communication effort can be reduced when the level of heterogeneity among the local data also reduces. In the extreme case where the local data becomes homogeneous, only $\\mathcal {O}(1)$ communication is required among the agents. To the best of our knowledge, this is the first algorithmic framework for FL that achieves all the above properties."
+    },
+    {
+      "paperId": "8ea731f44456cd06aabd284d5b0a68941c47a76f",
+      "externalIds": {
+        "DBLP": "conf/ieeesec/WangKC20",
+        "DOI": "10.1109/SEC50012.2020.00023",
+        "CorpusId": 232063066
+      },
+      "title": "Poster: Exploiting Data Heterogeneity for Performance and Reliability in Federated Learning",
+      "venue": "IFIP International Information Security Conference",
+      "year": 2020,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SEC50012.2020.00023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SEC50012.2020.00023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2304962132",
+          "name": "Yuanli Wang"
+        },
+        {
+          "authorId": "2109402853",
+          "name": "Dhruv Kumar"
+        },
+        {
+          "authorId": "144114650",
+          "name": "A. Chandra"
+        }
+      ],
+      "abstract": "Federated Learning [1] enables distributed devices to learn a shared machine learning model together, without uploading their private training data. It has received significant attention recently and has been used in mobile applications such as search suggestion [2] and object detection [3]. Federated Learning is different from distributed machine learning due to the following reasons: 1) System heterogeneity: federated learning is usually performed on devices having highly dynamic and heterogeneous network, compute, and power availability. 2) Data heterogeneity (or statistical heterogeneity): data is produced by different users on different devices, and therefore may have different statistical distribution (non-IID)."
+    },
+    {
+      "paperId": "1fad7869d48782062ea345b47081324b21e52f5d",
+      "externalIds": {
+        "ArXiv": "2002.04758",
+        "MAG": "3006157707",
+        "DBLP": "journals/corr/abs-2002-04758",
+        "CorpusId": 211082601
+      },
+      "title": "Salvaging Federated Learning by Local Adaptation",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 316,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.04758, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2117900202",
+          "name": "Tao Yu"
+        },
+        {
+          "authorId": "36103467",
+          "name": "Eugene Bagdasarian"
+        },
+        {
+          "authorId": "1723945",
+          "name": "Vitaly Shmatikov"
+        }
+      ],
+      "abstract": "Federated learning (FL) is a heavily promoted approach for training ML models on sensitive data, e.g., text typed by users on their smartphones. FL is expressly designed for training on data that are unbalanced and non-iid across the participants. To ensure privacy and integrity of the federated model, latest FL approaches use differential privacy or robust aggregation to limit the influence of \"outlier\" participants. \nFirst, we show that on standard tasks such as next-word prediction, many participants gain no benefit from FL because the federated model is less accurate on their data than the models they can train locally on their own. Second, we show that differential privacy and robust aggregation make this problem worse by further destroying the accuracy of the federated model for many participants. \nThen, we evaluate three techniques for local adaptation of federated models: fine-tuning, multi-task learning, and knowledge distillation. We analyze where each technique is applicable and demonstrate that all participants benefit from local adaptation. Participants whose local models are poor obtain big accuracy improvements over conventional FL. Participants whose local models are better than the federated model and who have no incentive to participate in FL today improve less, but sufficiently to make the adapted federated model better than their local models."
+    },
+    {
+      "paperId": "146e1efb2c702c59e6953767ff9f84e617104dfa",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2005-12326",
+        "ArXiv": "2005.12326",
+        "MAG": "3029043224",
+        "DOI": "10.1109/TPDS.2020.3023905",
+        "CorpusId": 218889707
+      },
+      "title": "Towards Efficient Scheduling of Federated Mobile Devices Under Computational and Statistical Heterogeneity",
+      "venue": "IEEE Transactions on Parallel and Distributed Systems",
+      "year": 2020,
+      "citationCount": 87,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/tpds.2020.3023905",
+        "status": "BRONZE",
+        "license": "publisher-specific-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.12326, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2116638706",
+          "name": "Cong Wang"
+        },
+        {
+          "authorId": "46285994",
+          "name": "Yuanyuan Yang"
+        },
+        {
+          "authorId": "21130867",
+          "name": "Pengzhan Zhou"
+        }
+      ],
+      "abstract": "Originated from distributed learning, federated learning enables privacy-preserved collaboration on a new abstracted level by sharing the model parameters only. While the current research mainly focuses on optimizing learning algorithms and minimizing communication overhead left by distributed learning, there is still a considerable gap when it comes to the real implementation on mobile devices. In this article, we start with an empirical experiment to demonstrate computation heterogeneity is a more pronounced bottleneck than communication on the current generation of battery-powered mobile devices, and the existing methods are haunted by mobile stragglers. Further, non-identically distributed data across the mobile users makes the selection of participants critical to the accuracy and convergence. To tackle the computational and statistical heterogeneity, we utilize data as a tuning knob and propose two efficient polynomial-time algorithms to schedule different workloads on various mobile devices, when data is identically or non-identically distributed. For identically distributed data, we combine partitioning and linear bottleneck assignment to achieve near-optimal training time without accuracy loss. For non-identically distributed data, we convert it into an average cost minimization problem and propose a greedy algorithm to find a reasonable balance between computation time and accuracy. We also establish an offline profiler to quantify the runtime behavior of different devices, which serves as the input to the scheduling algorithms. We conduct extensive experiments on a mobile testbed with two datasets and up to 20 devices. Compared with the common benchmarks, the proposed algorithms achieve 2-100× speedup epoch-wise, 2–7 percent accuracy gain and boost the convergence rate by more than 100 percent on CIFAR10."
+    },
+    {
+      "paperId": "88bd3232cfb37928e24bc697436008a6285dd583",
+      "externalIds": {
+        "MAG": "3045889854",
+        "DBLP": "conf/icc/CaiLZY20",
+        "DOI": "10.1109/icc40277.2020.9148586",
+        "CorpusId": 220887222
+      },
+      "title": "Dynamic Sample Selection for Federated Learning with Heterogeneous Data in Fog Computing",
+      "venue": "ICC 2020 - 2020 IEEE International Conference on Communications (ICC)",
+      "year": 2020,
+      "citationCount": 38,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/icc40277.2020.9148586?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/icc40277.2020.9148586, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3560387",
+          "name": "Lingshuang Cai"
+        },
+        {
+          "authorId": "39870324",
+          "name": "Di Lin"
+        },
+        {
+          "authorId": "49050798",
+          "name": "Jiale Zhang"
+        },
+        {
+          "authorId": "144249660",
+          "name": "Shui Yu"
+        }
+      ],
+      "abstract": "Federated learning is a state-of-the-art technology used in the fog computing, which allows distributed learning to train cross-device data while achieving efficient performance. Many current works have optimized the federated learning algorithm in homogeneous networks. However, in the actual application scenario of distributed learning, data is independently generated by each device, and this non-homologous data has different distribution characteristics. Therefore, the data used by each device for local learning is unbalanced and non-IID, and the heterogeneity of data affects the performance of federated learning and slows down the convergence. In this paper, we present a dynamic sample selection optimization algorithm, FedSS, to tackle heterogeneous data in federated learning. FedSS dynamically selects the training sample size during the gradient iteration based on the locally available data size, to settle the expensive evaluations of the local objective function with a massive amount of dataset. We theoretically analyze the convergence and present the complexity estimates of our framework when learning large data from unbalanced distribution. Our experimental results show that the use of dynamic sampling methods can effectively improve the convergence speed with heterogeneous data, and keep computational costs low while achieving the desired accuracy."
+    },
+    {
+      "paperId": "5d6d8ab9b6f2d61326a1bed50b6bdb7daad22939",
+      "externalIds": {
+        "MAG": "3093423391",
+        "DBLP": "journals/corr/abs-2010-06870",
+        "CorpusId": 222341359
+      },
+      "title": "FedGroup: Ternary Cosine Similarity-based Clustered Federated Learning Framework toward High Accuracy in Heterogeneous Data",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 27,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://arxiv.org/abs/2010.06870, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51179348",
+          "name": "Moming Duan"
+        },
+        {
+          "authorId": "1684079",
+          "name": "Duo Liu"
+        },
+        {
+          "authorId": "2117710568",
+          "name": "Xinyuan Ji"
+        },
+        {
+          "authorId": "48757922",
+          "name": "Renping Liu"
+        },
+        {
+          "authorId": "2090473749",
+          "name": "Liang Liang"
+        },
+        {
+          "authorId": "97955170",
+          "name": "Xianzhang Chen"
+        },
+        {
+          "authorId": "2471766",
+          "name": "Yujuan Tan"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "3d9d556474da0ee81f3bc189c551721760ce1d68",
+      "externalIds": {
+        "ArXiv": "2108.08647",
+        "DBLP": "journals/corr/abs-2108-08647",
+        "MAG": "3023042748",
+        "DOI": "10.1007/s11280-022-01046-x",
+        "CorpusId": 218487824
+      },
+      "title": "Multi-center federated learning: clients clustering for better personalization",
+      "venue": "World wide web (Bussum)",
+      "year": 2020,
+      "citationCount": 383,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s11280-022-01046-x.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2108.08647, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": null,
+          "name": "Ming Xie"
+        },
+        {
+          "authorId": "2062835",
+          "name": "Guodong Long"
+        },
+        {
+          "authorId": "143681703",
+          "name": "Tao Shen"
+        },
+        {
+          "authorId": "1805655",
+          "name": "Tianyi Zhou"
+        },
+        {
+          "authorId": "2877263",
+          "name": "Xianzhi Wang"
+        },
+        {
+          "authorId": "1746594",
+          "name": "Jing Jiang"
+        }
+      ],
+      "abstract": "Personalized decision-making can be implemented in a Federated learning (FL) framework that can collaboratively train a decision model by extracting knowledge across intelligent clients, e.g. smartphones or enterprises. FL can mitigate the data privacy risk of collaborative training since it merely collects local gradients from users without access to their data. However, FL is fragile in the presence of statistical heterogeneity that is commonly encountered in personalized decision making, e.g., non-IID data over different clients. Existing FL approaches usually update a single global model to capture the shared knowledge of all users by aggregating their gradients, regardless of the discrepancy between their data distributions. By comparison, a mixture of multiple global models could capture the heterogeneity across various clients if assigning the client to different global models (i.e., centers) in FL. To this end, we propose a novel multi-center aggregation mechanism to cluster clients using their models’ parameters. It learns multiple global models from data as the cluster centers, and simultaneously derives the optimal matching between users and centers. We then formulate it as an optimization problem that can be efficiently solved by a stochastic expectation maximization (EM) algorithm. Experiments on multiple benchmark datasets of FL show that our method outperforms several popular baseline methods. The experimental source codes are publicly available on the Github repository (GitHub repository: https://github.com/mingxuts/multi-center-fed-learning )."
+    },
+    {
+      "paperId": "e3791c1083eea118fe68575648127f76aab9a20c",
+      "externalIds": {
+        "DBLP": "conf/hpdc/ChaiAZTABZL0C20",
+        "MAG": "3001960923",
+        "ArXiv": "2001.09249",
+        "DOI": "10.1145/3369583.3392686",
+        "CorpusId": 210920189
+      },
+      "title": "TiFL: A Tier-based Federated Learning System",
+      "venue": "IEEE International Symposium on High-Performance Parallel Distributed Computing",
+      "year": 2020,
+      "citationCount": 374,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2001.09249",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2001.09249, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1712184172",
+          "name": "Zheng Chai"
+        },
+        {
+          "authorId": "144252635",
+          "name": "Ahsan Ali"
+        },
+        {
+          "authorId": "70272436",
+          "name": "Syed Zawad"
+        },
+        {
+          "authorId": "25121568",
+          "name": "Stacey Truex"
+        },
+        {
+          "authorId": "144776491",
+          "name": "Ali Anwar"
+        },
+        {
+          "authorId": "2478882",
+          "name": "Nathalie Baracaldo"
+        },
+        {
+          "authorId": "2118764703",
+          "name": "Yi Zhou"
+        },
+        {
+          "authorId": "144854947",
+          "name": "Heiko Ludwig"
+        },
+        {
+          "authorId": "145281979",
+          "name": "Feng Yan"
+        },
+        {
+          "authorId": "47585127",
+          "name": "Yue Cheng"
+        }
+      ],
+      "abstract": "Federated Learning (FL) enables learning a shared model acrossmany clients without violating the privacy requirements. One of the key attributes in FL is the heterogeneity that exists in both resource and data due to the differences in computation and communication capacity, as well as the quantity and content of data among different clients. We conduct a case study to show that heterogeneity in resource and data has a significant impact on training time and model accuracy in conventional FL systems. To this end, we propose TiFL, a Tier-based Federated Learning System, which divides clients into tiers based on their training performance and selects clients from the same tier in each training round to mitigate the straggler problem caused by heterogeneity in resource anddata quantity. To further tame the heterogeneity caused by non-IID (Independent and Identical Distribution) data and resources, TiFL employs an adaptive tier selection approach to update the tiering on-the-fly based on the observed training performance and accuracy. We prototype TiFL in a FL testbed following Google's FL architecture and evaluate it using the state-of-the-art FL benchmarks. Experimental evaluation shows that TiFL outperforms the conventional FL in various heterogeneous conditions. With the proposed adaptive tier selection policy, we demonstrate that TiFL achieves much faster training performance while achieving the same or better test accuracy across the board."
+    },
+    {
+      "paperId": "337f8c2fc151c868ab56b6e61b8ac68340018c64",
+      "externalIds": {
+        "MAG": "3010968654",
+        "DBLP": "journals/corr/abs-2003-08673",
+        "ArXiv": "2003.08673",
+        "DOI": "10.1109/WorldS450073.2020.9210355",
+        "CorpusId": 213004721
+      },
+      "title": "Survey of Personalization Techniques for Federated Learning",
+      "venue": "2020 Fourth World Conference on Smart Trends in Systems, Security and Sustainability (WorldS4)",
+      "year": 2020,
+      "citationCount": 394,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2003.08673",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.08673, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50979486",
+          "name": "V. Kulkarni"
+        },
+        {
+          "authorId": "2053840554",
+          "name": "Milind Kulkarni"
+        },
+        {
+          "authorId": "2739178",
+          "name": "Aniruddha Pant"
+        }
+      ],
+      "abstract": "Federated learning enables machine learning models to learn from private decentralized data without compromising privacy. The standard formulation of federated learning produces one shared model for all clients. Statistical heterogeneity due to non-IID distribution of data across devices often leads to scenarios where, for some clients, the local models trained solely on their private data perform better than the global shared model thus taking away their incentive to participate in the process. Several techniques have been proposed to personalize global models to work better for individual clients. This paper highlights the need for personalization and surveys recent research on this topic."
+    },
+    {
+      "paperId": "4714dab41b4b9d4be4bada86c536f827b62c1603",
+      "externalIds": {
+        "ArXiv": "2010.06870",
+        "DBLP": "conf/ispa/DuanLJL0CT21",
+        "DOI": "10.1109/ISPA-BDCloud-SocialCom-SustainCom52081.2021.00042",
+        "CorpusId": 236456630
+      },
+      "title": "FedGroup: Efficient Federated Learning via Decomposed Similarity-Based Clustering",
+      "venue": "2021 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom)",
+      "year": 2020,
+      "citationCount": 116,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.06870, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51179348",
+          "name": "Moming Duan"
+        },
+        {
+          "authorId": "1684079",
+          "name": "Duo Liu"
+        },
+        {
+          "authorId": "2117710568",
+          "name": "Xinyuan Ji"
+        },
+        {
+          "authorId": "48757922",
+          "name": "Renping Liu"
+        },
+        {
+          "authorId": "2090473749",
+          "name": "Liang Liang"
+        },
+        {
+          "authorId": "97955170",
+          "name": "Xianzhang Chen"
+        },
+        {
+          "authorId": "2471766",
+          "name": "Yujuan Tan"
+        }
+      ],
+      "abstract": "Federated Learning (FL) enables the multiple participating devices to collaboratively contribute to a global neural network model while keeping the training data locally. Unlike the centralized training setting, the non-IID and imbalanced (statistical heterogeneity) training data of FL is distributed in the federated network, which will increase the divergences between the local models and the global model, further degrading performance. In this paper, we propose a novel clustered federated learning (CFL) framework FedGroup, in which we 1) group the training of clients based on the similarities between the clients’ optimization directions for high training performance; 2) construct a new data-driven distance measure to improve the efficiency of the client clustering procedure. 3) implement a newcomer device cold start mechanism based on the auxiliary global model for framework scalability and practicality.FedGroup can achieve improvements by dividing joint optimization into groups of sub-optimization and can be combined with FL optimizer FedProx. The convergence and complexity are analyzed to demonstrate the efficiency of our proposed framework. We also evaluate FedGroup and FedGrouProx (combined with FedProx) on several open datasets and made comparisons with related CFL frameworks. The results show that FedGroup can significantly improve absolute test accuracy by +14.1% on FEMNIST compared to FedAvg, +3.4% on Sentiment140 compared to FedProx, +6.9% on MNIST compared to FeSEM."
+    },
+    {
+      "paperId": "1d5be44f756a986193767b57d5462eb2f4ee942b",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2011-03248",
+        "ArXiv": "2011.03248",
+        "MAG": "3100628356",
+        "DOI": "10.1007/s12083-021-01074-w",
+        "CorpusId": 226278309
+      },
+      "title": "ASFGNN: Automated separated-federated graph neural network",
+      "venue": "Peer-to-Peer Networking and Applications",
+      "year": 2020,
+      "citationCount": 88,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2011.03248, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "11455278",
+          "name": "Longfei Zheng"
+        },
+        {
+          "authorId": "2151548940",
+          "name": "Jun Zhou"
+        },
+        {
+          "authorId": "2145762399",
+          "name": "Chaochao Chen"
+        },
+        {
+          "authorId": "27055880",
+          "name": "Bingzhe Wu"
+        },
+        {
+          "authorId": "50876633",
+          "name": "L. xilinx Wang"
+        },
+        {
+          "authorId": "2143372562",
+          "name": "Benyu Zhang"
+        }
+      ],
+      "abstract": "Graph Neural Networks (GNNs) have achieved remarkable performance by taking advantage of graph data. The success of GNN models always depends on rich features and adjacent relationships. However, in practice, such data are usually isolated by different data owners (clients) and thus are likely to be Non-Independent and Identically Distributed (Non-IID). Meanwhile, considering the limited network status of data owners, hyper-parameters optimization for collaborative learning approaches is time-consuming in data isolation scenarios. To address these problems, we propose an Automated Separated-Federated Graph Neural Network (ASFGNN) learning paradigm. ASFGNN consists of two main components, i.e., the training of GNN and the tuning of hyper-parameters. Specifically, to solve the data Non-IID problem, we first propose a separated-federated GNN learning model, which decouples the training of GNN into two parts: the message passing part that is done by clients separately, and the loss computing part that is learnt by clients federally. To handle the time-consuming parameter tuning problem, we leverage Bayesian optimization technique to automatically tune the hyper-parameters of all the clients. We conduct experiments on benchmark datasets and the results demonstrate that ASFGNN significantly outperforms the naive federated GNN, in terms of both accuracy and parameter-tuning efficiency."
+    },
+    {
+      "paperId": "47c528344fedb6cb67a38e43d095b41c34715330",
+      "externalIds": {
+        "DBLP": "conf/iclr/ReddiCZGRKKM21",
+        "ArXiv": "2003.00295",
+        "MAG": "3008187686",
+        "CorpusId": 211678094
+      },
+      "title": "Adaptive Federated Optimization",
+      "venue": "International Conference on Learning Representations",
+      "year": 2020,
+      "citationCount": 2058,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.00295, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1981186",
+          "name": "Sashank J. Reddi"
+        },
+        {
+          "authorId": "143676545",
+          "name": "Zachary B. Charles"
+        },
+        {
+          "authorId": "1771307",
+          "name": "M. Zaheer"
+        },
+        {
+          "authorId": "40449749",
+          "name": "Zachary Garrett"
+        },
+        {
+          "authorId": "1387453057",
+          "name": "Keith Rush"
+        },
+        {
+          "authorId": "32139366",
+          "name": "Jakub Konecný"
+        },
+        {
+          "authorId": "152663162",
+          "name": "Sanjiv Kumar"
+        },
+        {
+          "authorId": "145057514",
+          "name": "H. B. McMahan"
+        }
+      ],
+      "abstract": "Federated learning is a distributed machine learning paradigm in which a large number of clients coordinate with a central server to learn a model without sharing their own training data. Due to the heterogeneity of the client datasets, standard federated optimization methods such as Federated Averaging (FedAvg) are often difficult to tune and exhibit unfavorable convergence behavior. In non-federated settings, adaptive optimization methods have had notable success in combating such issues. In this work, we propose federated versions of adaptive optimizers, including Adagrad, Adam, and Yogi, and analyze their convergence in the presence of heterogeneous data for general nonconvex settings. Our results highlight the interplay between client heterogeneity and communication efficiency. We also perform extensive experiments on these methods and show that the use of adaptive optimizers can significantly improve the performance of federated learning."
+    },
+    {
+      "paperId": "c987aa9daec01de2a96a4ca7622d653cd0b4036c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2010-06223",
+        "MAG": "3092950962",
+        "ArXiv": "2010.06223",
+        "CorpusId": 222310168
+      },
+      "title": "Direct Federated Neural Architecture Search",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 21,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.06223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "46352550",
+          "name": "Anubhav Garg"
+        },
+        {
+          "authorId": "22229527",
+          "name": "Amit Kumar Saha"
+        },
+        {
+          "authorId": "46905001",
+          "name": "Debo Dutta"
+        }
+      ],
+      "abstract": "Neural Architecture Search (NAS) is a collection of methods to craft the way neural networks are built. We apply this idea to Federated Learning (FL), wherein predefined neural network models are trained on the client/device data. This approach is not optimal as the model developers can't observe the local data, and hence, are unable to build highly accurate and efficient models. NAS is promising for FL which can search for global and personalized models automatically for the non-IID data. Most NAS methods are computationally expensive and require fine-tuning after the search, making it a two-stage complex process with possible human intervention. Thus there is a need for end-to-end NAS which can run on the heterogeneous data and resource distribution typically seen in the FL scenario. In this paper, we present an effective approach for direct federated NAS which is hardware agnostic, computationally lightweight, and a one-stage method to search for ready-to-deploy neural network models. Our results show an order of magnitude reduction in resource consumption while edging out prior art in accuracy. This opens up a window of opportunity to create optimized and computationally efficient federated learning systems."
+    },
+    {
+      "paperId": "5d61a17dfe61baaf6b54dbe0d500e9e38d8df237",
+      "externalIds": {
+        "ArXiv": "2004.03657",
+        "DBLP": "journals/corr/abs-2004-03657",
+        "MAG": "3015802383",
+        "DOI": "10.1007/978-3-030-67661-2_21",
+        "CorpusId": 215415818
+      },
+      "title": "FedMAX: Mitigating Activation Divergence for Accurate and Communication-Efficient Federated Learning",
+      "venue": "ECML/PKDD",
+      "year": 2020,
+      "citationCount": 42,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2004.03657, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2283009",
+          "name": "Wei Chen"
+        },
+        {
+          "authorId": "38632603",
+          "name": "Kartikeya Bhardwaj"
+        },
+        {
+          "authorId": "1702532",
+          "name": "R. Marculescu"
+        }
+      ],
+      "abstract": "In this paper, we identify a new phenomenon called activation-divergence which occurs in Federated Learning (FL) due to data heterogeneity (i.e., data being non-IID) across multiple users. Specifically, we argue that the activation vectors in FL can diverge, even if subsets of users share a few common classes with data residing on different devices. To address the activation-divergence issue, we introduce a prior based on the principle of maximum entropy; this prior assumes minimal information about the per-device activation vectors and aims at making the activation vectors of same classes as similar as possible across multiple devices. Our results show that, for both IID and non-IID settings, our proposed approach results in better accuracy (due to the significantly more similar activation vectors across multiple devices), and is more communication-efficient than state-of-the-art approaches in FL. Finally, we illustrate the effectiveness of our approach on a few common benchmarks and two large medical datasets."
+    },
+    {
+      "paperId": "add96783491af94124d6da03268bc7586addf9e1",
+      "externalIds": {
+        "ArXiv": "2009.06303",
+        "DBLP": "conf/edge/KunduYWL22",
+        "DOI": "10.1109/EDGE55608.2022.00014",
+        "CorpusId": 250451655
+      },
+      "title": "Robustness and Personalization in Federated Learning: A Unified Approach via Regularization",
+      "venue": "International Conference on Edge Computing [Services Society]",
+      "year": 2020,
+      "citationCount": 23,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2009.06303",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2009.06303, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "50593995",
+          "name": "Achintya Kundu"
+        },
+        {
+          "authorId": "2695521",
+          "name": "Pengqian Yu"
+        },
+        {
+          "authorId": "1756449",
+          "name": "L. Wynter"
+        },
+        {
+          "authorId": "1794487",
+          "name": "Shiau Hong Lim"
+        }
+      ],
+      "abstract": "We present a class of methods for robust, personalized federated learning, called Fed+, that unifies many federated learning algorithms. The principal advantage of this class of methods is to better accommodate the real-world characteristics found in federated training, such as the lack of IID data across parties, the need for robustness to outliers or stragglers, and the requirement to perform well on party-specific datasets. We achieve this through a problem formulation that allows the central server to employ robust ways of aggregating the local models while keeping the structure of local computation intact. Without making any statistical assumption on the degree of heterogeneity of local data across parties, we provide convergence guarantees for Fed+ for convex and non-convex loss functions under different (robust) aggregation methods. The Fed+ theory is also equipped to handle heterogeneous computing environments including stragglers without additional assumptions; specifically, the convergence results cover the general setting where the number of local update steps across parties can vary. We demonstrate the benefits of Fed+ through extensive experiments across standard benchmark datasets."
+    },
+    {
+      "paperId": "cd15dc300a3acf6f6d42f3cb8f0247d6199df2ff",
+      "externalIds": {
+        "DBLP": "conf/aicas/ChenCW20",
+        "MAG": "3019295511",
+        "DOI": "10.1109/AICAS48895.2020.9073802",
+        "CorpusId": 216105500
+      },
+      "title": "Online Extreme Learning Machine Design for the Application of Federated Learning",
+      "venue": "International Conference on Artificial Intelligence Circuits and Systems",
+      "year": 2020,
+      "citationCount": 9,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AICAS48895.2020.9073802?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AICAS48895.2020.9073802, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "27094192",
+          "name": "Yi-Ta Chen"
+        },
+        {
+          "authorId": "1654100695",
+          "name": "Yu-Chuan Chuang"
+        },
+        {
+          "authorId": "2075411233",
+          "name": "A. Wu"
+        }
+      ],
+      "abstract": "In this paper, we propose a federated extreme learning machine system (Fed-ELMS) to meet the demand for federated learning scenarios. In the scenario of federated learning, data is kept on edge devices to preserve the privacy of data, while metadata, such as model parameters, are exchanged between a centralized cloud server and edge devices. Despite non-independent and identically distributed (non-IID) and imbalanced data across edge devices, we show that Fed-ELMS can still achieve comparable performance with only 3.3% accuracy loss compared to a centralized ELM trained with IID and balanced data. (a) Moreover, by quantizing input weights and biases, parameters of a model and transmission power consumption between cloud and edge are dramatically reduced. Compared With conventional neural networks (NNs) with the same transmission cost, the proposed Fed-ELMS outperforms FederatedAveraging NN (Fed- NN) by 2.3% accuracy and the fine-tuning process is 7%-33% less time-consuming. Therefore, the proposed Fed-ELMS is a promising system for edge devices to support the future trend of federated learning."
+    },
+    {
+      "paperId": "a9f34cb892e31900d8b99f8d7b11facfb4fe8fcd",
+      "externalIds": {
+        "MAG": "3111875140",
+        "ArXiv": "2012.02539",
+        "DBLP": "journals/corr/abs-2012-02539",
+        "CorpusId": 227305819
+      },
+      "title": "Federated Learning with Heterogeneous Labels and Models for Mobile Activity Monitoring",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 60,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2012.02539, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51914845",
+          "name": "Gautham Krishna Gudur"
+        },
+        {
+          "authorId": "31001097",
+          "name": "S. K. Perepu"
+        }
+      ],
+      "abstract": "Various health-care applications such as assisted living, fall detection, etc., require modeling of user behavior through Human Activity Recognition (HAR). Such applications demand characterization of insights from multiple resource-constrained user devices using machine learning techniques for effective personalized activity monitoring. On-device Federated Learning proves to be an effective approach for distributed and collaborative machine learning. However, there are a variety of challenges in addressing statistical (non-IID data) and model heterogeneities across users. In addition, in this paper, we explore a new challenge of interest -- to handle heterogeneities in labels (activities) across users during federated learning. To this end, we propose a framework for federated label-based aggregation, which leverages overlapping information gain across activities using Model Distillation Update. We also propose that federated transfer of model scores is sufficient rather than model weight transfer from device to server. Empirical evaluation with the Heterogeneity Human Activity Recognition (HHAR) dataset (with four activities for effective elucidation of results) on Raspberry Pi 2 indicates an average deterministic accuracy increase of at least ~11.01%, thus demonstrating the on-device capabilities of our proposed framework."
+    },
+    {
+      "paperId": "e640b23ee58836a668f1aa40fd64d1055532e915",
+      "externalIds": {
+        "DBLP": "conf/preregister/MulayBNGSSA20",
+        "DOI": "10.31219/osf.io/q3vkt",
+        "CorpusId": 236923067
+      },
+      "title": "FedPerf: A Practitioners' Guide to Performance of Federated Learning Algorithms",
+      "venue": "Preregister@NeurIPS",
+      "year": 2020,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.31219/osf.io/q3vkt",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.31219/osf.io/q3vkt?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.31219/osf.io/q3vkt, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2741210",
+          "name": "Tushar Semwal"
+        },
+        {
+          "authorId": "38629517",
+          "name": "Ajinkya Mulay"
+        },
+        {
+          "authorId": "9143208",
+          "name": "Ayush Agrawal"
+        }
+      ],
+      "abstract": "Federated Learning (FL) enables the edge devices to collaboratively train a joint model without sharing their local data. This decentralised and distributed approach improves user privacy, security, and trust. Different variants of FL algorithms have presented promising results on both IID and skewed Non-IID data. However, the performance of FL algorithms is found to be sensitive to the FL system parameters and hyperparameters of the used model. In practice, tuning the right set of parameter settings for an FL algorithm is an expensive task. In this preregister paper, we propose an empirical investigation on five prominent FL algorithms to discover the relation between the FL System Parameters (FLSPs) and their performance. The FLSPs adds extra complexity to FL algorithms over a traditional ML system. We hypothesise that choosing the best FL algorithm for the given FLSP is not a trivial problem. Further, we endeavour to formulate a single easy-to-use metric which can describe the performance of an FL algorithm, thereby making the comparison simpler."
+    },
+    {
+      "paperId": "3102cf016a2077ddb0c44db79e9a7bdff3fbb915",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2011-03206",
+        "ArXiv": "2011.03206",
+        "MAG": "3104690685",
+        "CorpusId": 226277993
+      },
+      "title": "Resource-Constrained Federated Learning with Heterogeneous Labels and Models",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 22,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2011.03206, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "51914845",
+          "name": "Gautham Krishna Gudur"
+        },
+        {
+          "authorId": "145260181",
+          "name": "B. Balaji"
+        },
+        {
+          "authorId": "31001097",
+          "name": "S. K. Perepu"
+        }
+      ],
+      "abstract": "Various IoT applications demand resource-constrained machine learning mechanisms for different applications such as pervasive healthcare, activity monitoring, speech recognition, real-time computer vision, etc. This necessitates us to leverage information from multiple devices with few communication overheads. Federated Learning proves to be an extremely viable option for distributed and collaborative machine learning. Particularly, on-device federated learning is an active area of research, however, there are a variety of challenges in addressing statistical (non-IID data) and model heterogeneities. In addition, in this paper we explore a new challenge of interest -- to handle label heterogeneities in federated learning. To this end, we propose a framework with simple $\\alpha$-weighted federated aggregation of scores which leverages overlapping information gain across labels, while saving bandwidth costs in the process. Empirical evaluation on Animals-10 dataset (with 4 labels for effective elucidation of results) indicates an average deterministic accuracy increase of at least ~16.7%. We also demonstrate the on-device capabilities of our proposed framework by experimenting with federated learning and inference across different iterations on a Raspberry Pi 2, a single-board computing platform."
+    },
+    {
+      "paperId": "5bd6d05646c5222e69984b6ef91579a8b91976a9",
+      "externalIds": {
+        "MAG": "3039612675",
+        "DBLP": "journals/corr/abs-2006-16765",
+        "ArXiv": "2006.16765",
+        "CorpusId": 220266084
+      },
+      "title": "Federated Mutual Learning",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 175,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.16765, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2057972289",
+          "name": "T. Shen"
+        },
+        {
+          "authorId": "40539618",
+          "name": "J. Zhang"
+        },
+        {
+          "authorId": "1782322107",
+          "name": "Xinkang Jia"
+        },
+        {
+          "authorId": "1452322269",
+          "name": "Fengda Zhang"
+        },
+        {
+          "authorId": "144513600",
+          "name": "Gang Huang"
+        },
+        {
+          "authorId": "2109890021",
+          "name": "Pan Zhou"
+        },
+        {
+          "authorId": "144894849",
+          "name": "Fei Wu"
+        },
+        {
+          "authorId": "2115422697",
+          "name": "Chao Wu"
+        }
+      ],
+      "abstract": "Federated learning enables collaboratively training machine learning models on decentralized data. The three types of heterogeneous natures that is data, model, and objective bring about unique challenges to the canonical federated learning algorithm (FederatedAveraging), where one shared model is produced by and for all clients. First, due to the Non-IIDness of data, the global shared model may perform worse than local models that solely trained on their private data; Second, clients may need to design their own model because of different communication and computing abilities of devices, which is also private property that should be protected; Third, the objective of achieving consensus throughout the training process will compromise the personalities of clients. In this work, we present a novel federated learning paradigm, named Federated Mutual Leaning (FML), dealing with the three heterogeneities. FML allows clients designing their customized models and training independently, thus the Non-IIDness of data is no longer a bug but a feature that clients can be personally served better. Local customized models can benefit from collaboratively training without compromising personalities. Global model does not have to be an out-of-the-box (OOTB) product but a meta-learner which requires local adaptation for new participants. The experiments show that FML can achieve better performance, robustness and communication efficiency than alternatives."
+    },
+    {
+      "paperId": "fef7f3460a2e3fa03c3c850f827679bd76c2c3c7",
+      "externalIds": {
+        "MAG": "3093495284",
+        "ArXiv": "2010.11612",
+        "DBLP": "journals/corr/abs-2010-11612",
+        "CorpusId": 225040048
+      },
+      "title": "Hierarchical Federated Learning through LAN-WAN Orchestration",
+      "venue": "arXiv.org",
+      "year": 2020,
+      "citationCount": 42,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.11612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2118572422",
+          "name": "Jinliang Yuan"
+        },
+        {
+          "authorId": "2529558",
+          "name": "Mengwei Xu"
+        },
+        {
+          "authorId": "35203306",
+          "name": "Xiao Ma"
+        },
+        {
+          "authorId": "2536849",
+          "name": "Ao Zhou"
+        },
+        {
+          "authorId": "2110773587",
+          "name": "Xuanzhe Liu"
+        },
+        {
+          "authorId": "2177451",
+          "name": "Shangguang Wang"
+        }
+      ],
+      "abstract": "Federated learning (FL) was designed to enable mobile phones to collaboratively learn a global model without uploading their private data to a cloud server. However, exiting FL protocols has a critical communication bottleneck in a federated network coupled with privacy concerns, usually powered by a wide-area network (WAN). Such a WAN-driven FL design leads to significantly high cost and much slower model convergence. In this work, we propose an efficient FL protocol, which involves a hierarchical aggregation mechanism in the local-area network (LAN) due to its abundant bandwidth and almost negligible monetary cost than WAN. Our proposed FL can accelerate the learning process and reduce the monetary cost with frequent local aggregation in the same LAN and infrequent global aggregation on a cloud across WAN. We further design a concrete FL platform, namely LanFL, that incorporates several key techniques to handle those challenges introduced by LAN: cloud-device aggregation architecture, intra-LAN peer-to-peer (p2p) topology generation, inter-LAN bandwidth capacity heterogeneity. We evaluate LanFL on 2 typical Non-IID datasets, which reveals that LanFL can significantly accelerate FL training (1.5x-6.0x), save WAN traffic (18.3x-75.6x), and reduce monetary cost (3.8x-27.2x) while preserving the model accuracy."
+    },
+    {
+      "paperId": "57d97cc687866d325855bd71b3637e534b5dae93",
+      "externalIds": {
+        "DOI": "10.37082/ijirmps.v8.i6.232816",
+        "CorpusId": 285456520
+      },
+      "title": "ATHENA: An Accountable, Trustworthy Healthcare Ecosystem for Federated AI Nursing and Analytics",
+      "venue": "International Journal of Innovative Research in Engineering &amp; Multidisciplinary Physical Sciences",
+      "year": 2020,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://www.ijirmps.org/papers/2020/6/232816.pdf",
+        "status": "HYBRID",
+        "license": "CCBYSA",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.37082/ijirmps.v8.i6.232816?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.37082/ijirmps.v8.i6.232816, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2383667092",
+          "name": "Mohan Siva Krishna Konakanchi"
+        }
+      ],
+      "abstract": "Federated Learning (FL) presents a powerful so- lution for training robust AI models on sensitive healthcare data distributed across multiple institutions, preserving patient privacy by design. However, the real-world application of FL in healthcare is challenged by significant statistical heterogeneity, disparities in data quality, and the potential for unreliable contributions from participating silos, which can compromise the integrity of the collaboratively trained model. To address these critical issues, we propose ATHENA (Accountable, Trustworthy Healthcare Ecosystem for Federated AI Nursing and Analytics), a novel framework designed to ensure accountability and ro- bustness in cross-silo healthcare collaborations. At the core of ATHENA is a multi-dimensional trust metric that dynamically assesses the reliability of each participant. This metric evaluates not only the performance of local model updates but also their consistency with the global learning objective and a novel clinical plausibility score, which serves as a privacy-preserving proxy for data quality. By leveraging this trust score, ATHENA’s aggre- gation mechanism adaptively weights contributions, effectively mitigating the impact of faulty or divergent silos. Furthermore, recognizing that clinical adoption hinges on both accuracy and physician trust, ATHENA incorporates a formal methodology for quantifying and optimizing the trade-off between a model’s predictive performance and its clinical explainability. We validate ATHENA through extensive simulations on a large-scale radio- logical dataset, demonstrating that it significantly outperforms standard federated learning approaches in realistic non-IID and noisy environments and provides a principled tool for navigating the crucial balance between performance and interpretability."
+    },
+    {
+      "paperId": "4016590bc55b4a236fe76d2ecf7a724cdd7a8252",
+      "externalIds": {
+        "MAG": "2883935556",
+        "DBLP": "journals/tcbb/FengZM20",
+        "DOI": "10.1109/TCBB.2018.2858763",
+        "CorpusId": 51715648,
+        "PubMed": "30040652"
+      },
+      "title": "Deep Manifold Preserving Autoencoder for Classifying Breast Cancer Histopathological Images",
+      "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
+      "year": 2020,
+      "citationCount": 75,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCBB.2018.2858763?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCBB.2018.2858763, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35318837",
+          "name": "Yangqin Feng"
+        },
+        {
+          "authorId": "2152834810",
+          "name": "Lei Zhang"
+        },
+        {
+          "authorId": "4785561",
+          "name": "Juan Mo"
+        }
+      ],
+      "abstract": "Classifying breast cancer histopathological images automatically is an important task in computer assisted pathology analysis. However, extracting informative and non-redundant features for histopathological image classification is challenging due to the appearance variability caused by the heterogeneity of the disease, the tissue preparation, and staining processes. In this paper, we propose a new feature extractor, called deep manifold preserving autoencoder, to learn discriminative features from unlabeled data. Then, we integrate the proposed feature extractor with a softmax classifier to classify breast cancer histopathology images. Specifically, it learns hierarchal features from unlabeled image patches by minimizing the distance between its input and output, and simultaneously preserving the geometric structure of the whole input data set. After the unsupervised training, we connect the encoder layers of the trained deep manifold preserving autoencoder with a softmax classifier to construct a cascade model and fine-tune this deep neural network with labeled training data. The proposed method learns discriminative features by preserving the structure of the input datasets from the manifold learning view and minimizing reconstruction error from the deep learning view from a large amount of unlabeled data. Extensive experiments on the public breast cancer dataset (BreaKHis) demonstrate the effectiveness of the proposed method."
+    },
+    {
+      "paperId": "d218d95a17afebb7a41d4b67f50d7f9f032ec76f",
+      "externalIds": {
+        "MAG": "3040922689",
+        "DBLP": "journals/corr/abs-2002-11045",
+        "ArXiv": "2002.11045",
+        "DOI": "10.1109/MNET.011.1900630",
+        "CorpusId": 211296496
+      },
+      "title": "Deep Learning for Ultra-Reliable and Low-Latency Communications in 6G Networks",
+      "venue": "IEEE Network",
+      "year": 2020,
+      "citationCount": 133,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2002.11045",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2002.11045, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2443063",
+          "name": "Changyang She"
+        },
+        {
+          "authorId": "152226557",
+          "name": "Rui Dong"
+        },
+        {
+          "authorId": "51061680",
+          "name": "Zhouyou Gu"
+        },
+        {
+          "authorId": "39401353",
+          "name": "Zhanwei Hou"
+        },
+        {
+          "authorId": "1527098599",
+          "name": "Yonghui Li"
+        },
+        {
+          "authorId": "1697657",
+          "name": "Wibowo Hardjawana"
+        },
+        {
+          "authorId": "9251967",
+          "name": "Chenyang Yang"
+        },
+        {
+          "authorId": "38336053",
+          "name": "Lingyang Song"
+        },
+        {
+          "authorId": "1705795",
+          "name": "B. Vucetic"
+        }
+      ],
+      "abstract": "In future 6th generation networks, URLLC will lay the foundation for emerging mission-critical applications that have stringent requirements on end-to-end delay and reliability. Existing works on URLLC are mainly based on theoretical models and assumptions. The model-based solutions provide useful insights, but cannot be directly implemented in practice. In this article, we first summarize how to apply data-driven supervised deep learning and deep reinforcement learning in URLLC, and discuss some open problems of these methods. To address these open problems, we develop a multi-level architecture that enables device intelligence, edge intelligence, and cloud intelligence for URLLC. The basic idea is to merge theoretical models and realworld data in analyzing the latency and reliability and training deep neural networks (DNNs). Deep transfer learning is adopted in the architecture to fine-tune the pre-trained DNNs in non-stationary networks. Further considering that the computing capacity at each user and each mobile edge computing server is limited, federated learning is applied to improve the learning efficiency. Finally, we provide some experimental and simulation results and discuss some future directions."
+    },
+    {
+      "paperId": "453258fe22f9c8ed033f597ad89137ae3fc2089e",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2006-04122",
+        "ArXiv": "2006.04122",
+        "MAG": "3034047496",
+        "DOI": "10.1109/IJCNN48605.2020.9206867",
+        "CorpusId": 219531879
+      },
+      "title": "Distributed Machine Learning for Predictive Analytics in Mobile Edge Computing Based IoT Environments",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2020,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2006.04122",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.04122, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1396266777",
+          "name": "Prabath Abeysekara"
+        },
+        {
+          "authorId": "152883523",
+          "name": "Hai Dong"
+        },
+        {
+          "authorId": "145587600",
+          "name": "A. K. Qin"
+        }
+      ],
+      "abstract": "Predictive analytics in Mobile Edge Computing (MEC) based Internet of Things (IoT) is becoming a high demand in many real-world applications. A prediction problem in an MEC-based IoT environment typically corresponds to a collection of tasks with each task solved in a specific MEC environment based on the data accumulated locally, which can be regarded as a Multi-task Learning (MTL) problem. However, the heterogeneity of the data (non-IIDness) accumulated across different MEC environments challenges the application of general MTL techniques in such a setting. Federated MTL (FMTL) has recently emerged as an attempt to address this issue. Besides FMTL, there exists another powerful but under-exploited distributed machine learning technique, called Network Lasso (NL), which is inherently related to FMTL but has its own unique features. In this paper, we made an in-depth evaluation and comparison of these two techniques on three distinct IoT datasets representing real-world application scenarios. Experimental results revealed that NL outperformed FMTL in MEC-based IoT environments in terms of both accuracy and computational efficiency."
+    },
+    {
+      "paperId": "44d989a65dca034b605c3ba925710ca7aa9802a5",
+      "externalIds": {
+        "ArXiv": "2010.07541",
+        "CorpusId": 252211946
+      },
+      "title": "Secure and Fault Tolerant Decentralized Learning",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.07541, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47592370",
+          "name": "Saurav Prakash"
+        },
+        {
+          "authorId": "52223945",
+          "name": "H. Hashemi"
+        },
+        {
+          "authorId": "2143454057",
+          "name": "Yongqin Wang"
+        },
+        {
+          "authorId": "145599558",
+          "name": "M. Annavaram"
+        },
+        {
+          "authorId": "121011351",
+          "name": "S. Avestimehr"
+        }
+      ],
+      "abstract": "—Federated learning (FL) has emerged as a promising paradigm for training a global model over the data distributed across multiple data owners without centralizing clients’ raw data. However, sharing of its local model update with the FL server during training can also reveal information of a client’s local dataset. As a result, trusted execution environments (TEEs) within the FL server have been recently deployed in production lines of companies like Meta for secure aggregation of local updates. However, secure aggregation can suffer from performance degradation due to error-prone local updates sent by clients that become faulty during training due to underlying software and hardware failures. Moreover, data heterogeneity across clients makes fault mitigation quite challenging, as even the updates from the normal clients are quite dissimilar. Thus, most of the prior fault tolerant methods, which treat any local update differing from the majority of other updates as faulty, perform poorly. We propose DiverseFL that makes model aggregation secure as well as robust to faults when data is heterogeneous. In DiverseFL, any client whose local model update diverges from its associated guiding update is tagged as being faulty. To implement our novel per-client criteria for fault mitigation, DiverseFL creates a TEE-based secure enclave within the FL server, which in addition to performing secure aggregation for carrying out the global model update step, securely receives a small representative sample of local data from each client only once before training, and computes guiding updates for each participating client during training. Thus, DiverseFL provides security against privacy leakage as well as robustness against faulty clients. In experiments, DiverseFL consistently achieves signiﬁcant improvements (up to ∼ 39% ) in absolute test accuracy over prior fault mitigation benchmarks. DiverseFL also performs closely to OracleSGD , where server combines updates only from the normal clients. We also analyze the convergence rate of Di- verseFL under non-IID data and standard convexity assumptions."
+    },
+    {
+      "paperId": "acd92051ec0cc7b848f01928d9ba65719aac2d9e",
+      "externalIds": {
+        "MAG": "3082656638",
+        "DBLP": "conf/jcc/LiLCZLY20",
+        "DOI": "10.1109/JCC49151.2020.00013",
+        "CorpusId": 221473154
+      },
+      "title": "Communication-Efficient Collaborative Learning of Geo-Distributed JointCloud from Heterogeneous Datasets",
+      "venue": "2020 IEEE International Conference on Joint Cloud Computing",
+      "year": 2020,
+      "citationCount": 10,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JCC49151.2020.00013?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JCC49151.2020.00013, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108674635",
+          "name": "Xiaoli Li"
+        },
+        {
+          "authorId": "2143066414",
+          "name": "Nan Liu"
+        },
+        {
+          "authorId": "50434146",
+          "name": "Chuan Chen"
+        },
+        {
+          "authorId": "144291579",
+          "name": "Zibin Zheng"
+        },
+        {
+          "authorId": "2108493800",
+          "name": "Huizhong Li"
+        },
+        {
+          "authorId": "1922405797",
+          "name": "Qiang Yan"
+        }
+      ],
+      "abstract": "With the popularity of cloud computing, the use of services provided by the cloud is increasing. Due to the high communication cost, and data privacy issues, a new crosscloud collaborative computing model is demanded instead of a single giant cloud. Coping with federated learning and Joint-Cloud, we propose a federated learning-based collaborative learning framework, in which the distributed cloud entities are able to learn the same model collaboratively. As compared to traditional cloud-centric approaches, the framework for JointCloud can reduce the network bandwidth overhead and guarantee privacy. However, there are two crucial challenges in the federated manner: heterogeneity and high communication overhead. To address the heterogeneity, we propose a Teacher-Student mechanism, the key of which is a regularization term incorporated with the objective function so as to adjust the gradients from the clients among JointCloud with different data distribution. Then, based on the Teacher-Student mechanism, we further present a communication-efficient federated optimation approach via joint Identification-Verification to reduce the communication rounds. We conduct extensive experiments on Non-IID datasets. The experimental results demonstrate that the proposed framework can significantly reduce communication costs and improve performance."
+    },
+    {
+      "paperId": "e8a89fae0fa234acd8036d3c39370c244a8094bd",
+      "externalIds": {
+        "CorpusId": 260428976
+      },
+      "title": "InstaHide: Instance-hiding Schemes for Private Distributed Learning",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 17,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://proceedings.mlr.press/v119/huang20i/huang20i-supp.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "paperId": "b6877d9ec69fd7da9ab2c0b5f6a2122731c78c23",
+      "externalIds": {
+        "MAG": "3089419870",
+        "DOI": "10.32620/REKS.2020.3.03",
+        "CorpusId": 224896311
+      },
+      "title": "ОЦІНКА ЕФЕКТИВНОСТІ ВИЯВЛЕННЯ НЕОДНОРІДНОСТЕЙ НА ЗОБРАЖЕННІ ЗА ДОПОМОГОЮ МАКСИМУМА БІАМПЛІТУДИ",
+      "venue": "",
+      "year": 2020,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "http://nti.khai.edu/ojs/index.php/reks/article/download/reks.2020.3.03/1308",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.32620/REKS.2020.3.03?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.32620/REKS.2020.3.03, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2101641643",
+          "name": "В. В. Науменко"
+        },
+        {
+          "authorId": "103985206",
+          "name": "Александр Владимирович Тоцкий"
+        },
+        {
+          "authorId": "2000727487",
+          "name": "Б. В. Коваленко"
+        },
+        {
+          "authorId": "2000697196",
+          "name": "Евгений Николаевич Анисин"
+        }
+      ],
+      "abstract": "The subject of the article is to analyze the effectiveness of a new method for detecting heterogeneities in a digital image by estimating the bimagnitude maximum of the pixel intensities. The aim is to evaluate the effectiveness of the new method of detecting heterogeneities in the image using the maximum of the bimagnitude compared to the known method based on the estimation of the local root mean square deviation (LRMSD) of pixel intensity values. The objectives of the paper are the following: to formalize the procedure for computing the bimagnitude maximum of the pixels in the local segment; create a test image with different contrast values on the borders; to develop a mathematical model for calculating in the Matlab system the efficiency of detecting heterogeneities in the image in the presence of additive Gaussian noise with different values of noise RMS; provide for analysis and comparison of the graphs the receiver operating characteristic (ROC) contained the number of correctly classified non-homogeneous areas versus the number of incorrectly classified areas. The used methods are the following: bispectral data analysis method; methods of probability theory and mathematical statistics; methods of digital image processing. The following results were obtained. A boundary map for the test image without distortion and the presence of additive Gaussian noise with a variance equal to 0.2 is constructed for two types of detectors: the first one is based on the maximum amplitude and the second one is based on the estimation of the local RMS. The results of computer simulations show that both detectors fine-tune the boundary for the images in the absence of noise. But in the presence of additive noise, the detector based on the biamplitude maximum provides a significant advantage. Graphs of the dependence of the number of correctly classified inhomogeneous sections on the number of incorrectly classified areas for the proposed and known reference detection methods are represented. The area under the curve (AUC) values that characterize the efficiency of detecting heterogeneities in the image are calculated. The scientific novelty of the obtained results is the following: a new approach of detecting inhomogeneities in the image is proposed with the help of a new informative feature estimated in the form of the local biamplitude maximum. To analyze the effectiveness of the proposed method, a test image was formed with different border contrast values. Using the proposed technique and the known method, boundary maps were constructed for the test image without distortion and in the presence of additive Gaussian noise. To evaluate the effectiveness of two methods, the graphs were plotted against the number of correctly classified inhomogeneous sites by the number of incorrectly classified (ROC) for both proposed and known detection methods. A detector based on the local RMS value is more effective at small Gaussian noise variance values, but as the noise variance increases, detector based on the biamplitude maximum estimation is more effective. The calculated AUC values for studied methods based on local RMS estimation and maximum biamplitude estimation are equal to 0. 678 and 0. 8468, respectively. Even though the proposed method loses efficiency, the bispectrum-based method is more effective at large values of noise variance, in particular, when the noise RMS is 0.6, AUC = 0.8748."
+    }
+  ],
+  "protocol_version": "1.3",
+  "protocol_query": "federated fine-tuning data heterogeneity non-IID",
+  "query_form": "s2_keyword_variant",
+  "run_type": "confirmation_band_backfill",
+  "slice": "2020"
+}

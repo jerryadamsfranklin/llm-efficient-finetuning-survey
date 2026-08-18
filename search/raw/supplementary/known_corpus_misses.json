@@ -1,0 +1,349 @@
+{
+  "source": "supplementary",
+  "run_type": "known_corpus_verification",
+  "protocol_version": "1.3",
+  "purpose": "Retrieve in-window references already cited in the manuscript that the Phase 2 queries did not return. Verification of a known corpus, not discovery. See search/coverage-diagnostic.md.",
+  "fetched_at": "2026-07-31T17:19:41Z",
+  "selection_rule": "In-window (2019-2026) reference in search/existing-references.yaml with no DOI / arXiv ID / normalized-title match in search/candidate-pool.csv.",
+  "title_match_min_ratio": 0.9,
+  "reference_stats": {
+    "total": 42,
+    "in_pool": 29,
+    "out_of_window": 7,
+    "missing": 6
+  },
+  "n_requested": 6,
+  "n_found": 6,
+  "n_no_match": 0,
+  "n_unresolved": 0,
+  "results": [
+    {
+      "reference_key": "bayati2023",
+      "reference_title": "FlexLoRA: Flexible low rank adaptation for large language models",
+      "reference_year": 2023,
+      "reference_venue": "arXiv preprint arXiv:2310.08151",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "b1ad00819ccaf4e61b0d488ba3d3b54f7ddfef74",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2408-10774",
+          "ArXiv": "2408.10774",
+          "DOI": "10.48550/arXiv.2408.10774",
+          "CorpusId": 271909136
+        },
+        "title": "Flexora: Flexible Low Rank Adaptation for Large Language Models",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 16,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2408.10774, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle",
+          "Conference"
+        ],
+        "authors": [
+          {
+            "authorId": "2316584951",
+            "name": "Chenxing Wei"
+          },
+          {
+            "authorId": "2066475740",
+            "name": "Yao Shu"
+          },
+          {
+            "authorId": "2310377314",
+            "name": "Ying He"
+          },
+          {
+            "authorId": "2284777312",
+            "name": "Fei Yu"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) are driving advancements in artificial intelligence by increasing the scale of model parameters, which has significantly enhanced generalization ability and unlocked new capabilities in practice. However, their performance in specific downstream tasks is usually hindered by their knowledge boundaries on these tasks. Thus, fine-tuning techniques, especially the widely used Low-Rank Adaptation (LoRA) method, have been introduced to expand the boundaries on these tasks, whereas LoRA would underperform on certain tasks owing to its potential overfitting on these tasks. To overcome this overfitting and improve the performance of LoRA, we propose the flexible low rank adaptation (Flexora) method to automatically and flexibly select the most important layers needing to be fine-tuned to achieve the best performance on different downstream tasks. Specifically, Flexora firstly frames this layer selection problem as a well-defined hyperparameter optimization (HPO) problem, then addresses it using the unrolled differentiation (UD) method, and finally selects the most useful layers based on the optimized hyperparameters. Our extensive experiments on many pretrained models and natural language tasks show that Flexora is able to consistently improve over the existing baselines, indicating the effectiveness of our Flexora in practice. We additionally provide insightful theoretical results and many ablation studies to deliver a comprehensive understanding of our Flexora.",
+        "_title_match_ratio": 0.992
+      }
+    },
+    {
+      "reference_key": "huang2019",
+      "reference_title": "GPipe: Efficient training of giant neural networks using pipeline parallelism",
+      "reference_year": 2019,
+      "reference_venue": "Advances in Neural Information Processing Systems (NeurIPS), 32, 103-112",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "d79a26226393f687ddbc375e32055b40b8ad8d38",
+        "externalIds": {
+          "MAG": "2991040477",
+          "DBLP": "conf/nips/HuangCBFCCLNLWC19",
+          "CorpusId": 53670168
+        },
+        "title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism",
+        "venue": "Neural Information Processing Systems",
+        "year": 2018,
+        "citationCount": 2208,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://papers.nips.cc/paper/8305-gpipe-efficient-training-of-giant-neural-networks-using-pipeline-parallelism.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle"
+        ],
+        "authors": [
+          {
+            "authorId": "2145438541",
+            "name": "Yanping Huang"
+          },
+          {
+            "authorId": "50607661",
+            "name": "Yonglong Cheng"
+          },
+          {
+            "authorId": "7167328",
+            "name": "Dehao Chen"
+          },
+          {
+            "authorId": "34946720",
+            "name": "HyoukJoong Lee"
+          },
+          {
+            "authorId": "2020608",
+            "name": "Jiquan Ngiam"
+          },
+          {
+            "authorId": "2827616",
+            "name": "Quoc V. Le"
+          },
+          {
+            "authorId": "2545358",
+            "name": "Z. Chen"
+          }
+        ],
+        "abstract": null,
+        "_title_match_ratio": 1.0
+      }
+    },
+    {
+      "reference_key": "loshchilov2019",
+      "reference_title": "Decoupled weight decay regularization",
+      "reference_year": 2019,
+      "reference_venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "d07284a6811f1b2745d91bdb06b040b57f226882",
+        "externalIds": {
+          "MAG": "2950541952",
+          "DBLP": "conf/iclr/LoshchilovH19",
+          "CorpusId": 53592270
+        },
+        "title": "Decoupled Weight Decay Regularization",
+        "venue": "International Conference on Learning Representations",
+        "year": 2017,
+        "citationCount": 36964,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=Bkg6RiCqY7, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle"
+        ],
+        "authors": [
+          {
+            "authorId": "1678656",
+            "name": "I. Loshchilov"
+          },
+          {
+            "authorId": "144661829",
+            "name": "Frank Hutter"
+          }
+        ],
+        "abstract": null,
+        "_title_match_ratio": 1.0
+      }
+    },
+    {
+      "reference_key": "pfeiffer2020",
+      "reference_title": "AdapterFusion: Non-destructive task composition for transfer learning",
+      "reference_year": 2020,
+      "reference_venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume / 2021 / proceedings-article",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "98ef0db84e62aef969629264c9de1f4d0013f3b9",
+        "externalIds": {
+          "ArXiv": "2005.00247",
+          "ACL": "2021.eacl-main.39",
+          "DBLP": "journals/corr/abs-2005-00247",
+          "MAG": "3023528699",
+          "DOI": "10.18653/v1/2021.eacl-main.39",
+          "CorpusId": 218470208
+        },
+        "title": "AdapterFusion: Non-Destructive Task Composition for Transfer Learning",
+        "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+        "year": 2020,
+        "citationCount": 1217,
+        "openAccessPdf": {
+          "url": "https://aclanthology.org/2021.eacl-main.39.pdf",
+          "status": "HYBRID",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.00247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle",
+          "Conference"
+        ],
+        "authors": [
+          {
+            "authorId": "153733568",
+            "name": "Jonas Pfeiffer"
+          },
+          {
+            "authorId": "46174952",
+            "name": "Aishwarya Kamath"
+          },
+          {
+            "authorId": "22240011",
+            "name": "Andreas Rücklé"
+          },
+          {
+            "authorId": "1979489",
+            "name": "Kyunghyun Cho"
+          },
+          {
+            "authorId": "1730400",
+            "name": "Iryna Gurevych"
+          }
+        ],
+        "abstract": "Sequential fine-tuning and multi-task learning are methods aiming to incorporate knowledge from multiple tasks; however, they suffer from catastrophic forgetting and difficulties in dataset balancing. To address these shortcomings, we propose AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks. First, in the knowledge extraction stage we learn task specific parameters called adapters, that encapsulate the task-specific information. We then combine the adapters in a separate knowledge composition step. We show that by separating the two stages, i.e., knowledge extraction and knowledge composition, the classifier can effectively exploit the representations learned from multiple tasks in a non-destructive manner. We empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it effectively combines various types of knowledge at different layers of the model. We show that our approach outperforms traditional strategies such as full fine-tuning as well as multi-task learning. Our code and adapters are available at AdapterHub.ml.",
+        "_title_match_ratio": 1.0
+      }
+    },
+    {
+      "reference_key": "rolnick2019",
+      "reference_title": "Experience replay for continual learning",
+      "reference_year": 2019,
+      "reference_venue": "Advances in Neural Information Processing Systems (NeurIPS), 32, 350-360",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "d9ff7a9344dd5d6653bd7a02bfd704422bb29951",
+        "externalIds": {
+          "MAG": "2970586779",
+          "DBLP": "conf/nips/RolnickASLW19",
+          "ArXiv": "1811.11682",
+          "CorpusId": 53860287
+        },
+        "title": "Experience Replay for Continual Learning",
+        "venue": "Neural Information Processing Systems",
+        "year": 2018,
+        "citationCount": 1742,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1811.11682, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle"
+        ],
+        "authors": [
+          {
+            "authorId": "2346588790",
+            "name": "David Rolnick"
+          },
+          {
+            "authorId": "37968006",
+            "name": "Arun Ahuja"
+          },
+          {
+            "authorId": "144735987",
+            "name": "Jonathan Schwarz"
+          },
+          {
+            "authorId": "2542999",
+            "name": "T. Lillicrap"
+          },
+          {
+            "authorId": "89504302",
+            "name": "Greg Wayne"
+          }
+        ],
+        "abstract": "Continual learning is the problem of learning new tasks or knowledge while protecting old knowledge and ideally generalizing from old experience to learn new tasks faster. Neural networks trained by stochastic gradient descent often degrade on old tasks when trained successively on new tasks with different data distributions. This phenomenon, referred to as catastrophic forgetting, is considered a major hurdle to learning with non-stationary data or sequences of new tasks, and prevents networks from continually accumulating knowledge and skills. We examine this issue in the context of reinforcement learning, in a setting where an agent is exposed to tasks in a sequence. Unlike most other work, we do not provide an explicit indication to the model of task boundaries, which is the most general circumstance for a learning agent exposed to continuous experience. While various methods to counteract catastrophic forgetting have recently been proposed, we explore a straightforward, general, and seemingly overlooked solution - that of using experience replay buffers for all past events - with a mixture of on- and off-policy learning, leveraging behavioral cloning. We show that this strategy can still learn new tasks quickly yet can substantially reduce catastrophic forgetting in both Atari and DMLab domains, even matching the performance of methods that require task identities. When buffer storage is constrained, we confirm that a simple mechanism for randomly discarding data allows a limited size buffer to perform almost as well as an unbounded one.",
+        "_title_match_ratio": 1.0
+      }
+    },
+    {
+      "reference_key": "shoeybi2019",
+      "reference_title": "Megatron-LM: Training multi-billion parameter language models using model parallelism",
+      "reference_year": 2019,
+      "reference_venue": "arXiv preprint arXiv:1909.08053",
+      "lookup_origin": "semanticscholar",
+      "lookup_status": "matched",
+      "found": true,
+      "record": {
+        "paperId": "8323c591e119eb09b28b29fd6c7bc76bd889df7a",
+        "externalIds": {
+          "MAG": "2973727699",
+          "ArXiv": "1909.08053",
+          "DBLP": "journals/corr/abs-1909-08053",
+          "CorpusId": 202660670
+        },
+        "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+        "venue": "arXiv.org",
+        "year": 2019,
+        "citationCount": 3010,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.08053, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle"
+        ],
+        "authors": [
+          {
+            "authorId": "1911755",
+            "name": "M. Shoeybi"
+          },
+          {
+            "authorId": "66870756",
+            "name": "M. Patwary"
+          },
+          {
+            "authorId": "41158993",
+            "name": "Raul Puri"
+          },
+          {
+            "authorId": "3081566",
+            "name": "P. LeGresley"
+          },
+          {
+            "authorId": "48991386",
+            "name": "J. Casper"
+          },
+          {
+            "authorId": "2301680",
+            "name": "Bryan Catanzaro"
+          }
+        ],
+        "abstract": "Recent work in language modeling demonstrates that training large transformer models advances the state of the art in Natural Language Processing applications. However, very large models can be quite difficult to train due to memory constraints. In this work, we present our techniques for training very large transformer models and implement a simple, efficient intra-layer model parallel approach that enables training transformer models with billions of parameters. Our approach does not require a new compiler or library changes, is orthogonal and complimentary to pipeline model parallelism, and can be fully implemented with the insertion of a few communication operations in native PyTorch. We illustrate this approach by converging transformer based models up to 8.3 billion parameters using 512 GPUs. We sustain 15.1 PetaFLOPs across the entire application with 76% scaling efficiency when compared to a strong single GPU baseline that sustains 39 TeraFLOPs, which is 30% of peak FLOPs. To demonstrate that large language models can further advance the state of the art (SOTA), we train an 8.3 billion parameter transformer language model similar to GPT-2 and a 3.9 billion parameter model similar to BERT. We show that careful attention to the placement of layer normalization in BERT-like models is critical to achieving increased performance as the model size grows. Using the GPT-2 model we achieve SOTA results on the WikiText103 (10.8 compared to SOTA perplexity of 15.8) and LAMBADA (66.5% compared to SOTA accuracy of 63.2%) datasets. Our BERT model achieves SOTA results on the RACE dataset (90.9% compared to SOTA accuracy of 89.4%).",
+        "_title_match_ratio": 1.0
+      }
+    }
+  ]
+}
