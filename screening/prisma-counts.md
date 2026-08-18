@@ -58,7 +58,22 @@ that period.
 
 ## Screening
 
-`screening/screening-log.csv` holds one row per unique candidate (15,518 rows).
+`screening/screening-log.csv` holds one row per unique candidate (**15,518** data rows).
+
+### CSV row count vs. physical line count
+
+Do not use `wc -l` on these files. Both pool and screening CSVs contain quoted fields with
+embedded newlines (abstracts, notes), so physical line counts exceed logical row counts:
+
+| File | Logical data rows | Physical lines (Aug 2026) | Rows with embedded newlines |
+|---|---|---|---|
+| `search/candidate-pool.csv` | **15,518** | 17,094 | 203 |
+| `screening/screening-log.csv` | **15,518** | 15,532 | 3 |
+
+Count rows with a CSV parser (`csv.DictReader`) or trust `search/dedupe-summary.json`
+(`unique_candidates`: 15,518). The canonical post-dedup total is **15,518** unique
+candidates; **15,497** are in-protocol for screening (`unique_for_screening` in
+`dedupe-summary.json`, excluding 21 out-of-protocol Google Scholar captures).
 
 | Bucket | Count |
 |---|---|

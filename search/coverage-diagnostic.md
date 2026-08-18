@@ -1,6 +1,6 @@
 # Confirmation-Pass Coverage Diagnostic
 
-**Run:** 2026-07-31, at Phase 3 entry, against `search/candidate-pool.csv` (10,333 unique candidates).
+**Run:** 2026-07-31, at Phase 3 entry, against `search/candidate-pool.csv` (**10,333** unique candidates — the pre-v1.3-backfill Phase 2 pool size; current total is **15,518**).
 **Purpose:** test whether the Phase 2 search retrieved the 42 references already cited in the
 manuscript. Per `docs`-level plan, the confirmation pass has to *verify and document* coverage of
 the existing corpus; that claim cannot be made without checking it.
@@ -107,7 +107,7 @@ the relevance-ranked sources were saturated by recent work.
 | 2021 | 105 | 230 |
 | 2024 | 2,972 | 2,602 |
 
-Pre-2022 candidates are **448 of 10,333 (4.3%)** of the pool. The field did grow sharply after 2022,
+Pre-2022 candidates are **448 of 10,333 (4.3%)** of the pre-v1.3 pool. The field did grow sharply after 2022,
 so some skew is genuine and expected. But 15 arXiv records for all of 2019 across 18 date-sliced
 queries is too thin to be explained by growth alone. The queries require vocabulary that
 stabilised later — "large language model", "LLM", "PEFT" — whereas 2019–2021 work says

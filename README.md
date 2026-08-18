@@ -43,7 +43,7 @@ PeerJ Computer Science).
 - [x] OpenAlex general + ACM-filtered: 18 queries each, 50-cap (`P4310319798`)
 - [x] DBLP completeness run adopted (18/18; several keyword queries return 0 on DBLP)
 - [x] Manual Google Scholar: 18 protocol queries as 34 runs; candidates in `search/raw/google_scholar/`
-- [x] Deduplicated candidate pool counted (`search/candidate-pool.csv`: **10,333** unique; **10,312** for screening — see the Phase 3 entry in `protocol/CHANGELOG.md` for the regeneration that changed this by one)
+- [x] Deduplicated candidate pool counted at Phase 2 close: **10,333** unique (**10,312** for screening after excluding 21 out-of-protocol Scholar captures). Protocol v1.3 confirmation-band backfill (Phase 3) grew the pool to **15,518** unique — see `screening/prisma-counts.md` § "Effect of the v1.3 backfill" and `search/dedupe-summary.json`.
 - [x] Hugging Face documentation entry resolved (reference source; not consulted in Phase 2, zero records)
 - [x] No `TBD` placeholders remaining in `search/search-log.md`
 
@@ -53,7 +53,7 @@ planning estimate; see `protocol/CHANGELOG.md` ("Execution outcome") for why.
 ### Phase 3 checklist
 
 - [x] Candidate pool regenerated to carry citation counts, language, record type, and OpenAlex abstracts (no source re-queried)
-- [x] `screening/screening-log.csv` initialised — one row per unique candidate (10,333)
+- [x] `screening/screening-log.csv` initialised — one row per unique candidate (**15,518** after v1.3 pool regeneration; was 10,333 at first init)
 - [x] Metadata-decidable exclusions applied with the numbered criterion recorded (23 rows)
 - [x] Known metadata defects documented (`screening/metadata-anomalies.md`)
 - [x] Confirmation-pass diagnostic: 24 of 29 in-window manuscript references verified in the pool (`search/coverage-diagnostic.md`)
