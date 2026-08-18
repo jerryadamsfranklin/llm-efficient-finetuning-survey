@@ -13,7 +13,7 @@ Author review recorded 2026-08-17. Do not treat the ranked 30 as the insertion s
   **13 selected** for primary-source verification before any manuscript insertion.
 - PiSSA (#15) re-sectioned to **B1 PEFT** (initialization method, not quantization).
 
-### Author selected 13 (verify before insert)
+### Author selected 13 (inserted 2026-08-17)
 
 | # | Paper | Section |
 |---|---|---|
@@ -23,17 +23,16 @@ Author review recorded 2026-08-17. Do not treat the ranked 30 as the insertion s
 | 15 | PiSSA | B1 (was mis-tagged B2) |
 | 12 | IR-QLoRA | B2 |
 | 16 | EfficientQAT | B2 |
-| 14 | SpinQuant | B2 |
+| 14 | SpinQuant | B2 (PTQ, in the PTQ-vs-QAT discussion) |
 | 19 | GaLore | B3 |
-| 20 | SLTrain | B3 |
 | 23 | AdaRankGrad | B3 |
 | 26 | OpenFedLLM | B4 |
 | 25 | Improving LoRA in Privacy-preserving FL (FFA-LoRA) | B4 |
+| 28 | Bai et al. FlexLoRA (heterogeneous ranks) | B4 |
 | 29 | A survey on LoRA of large language models | B4 / existing-surveys |
 
-Verification against primary sources: `screening/reviews/shortlist-13-verification.md`.
-Do not insert until that packet is signed off. Two scope flags in that file (SLTrain,
-SpinQuant) need an author call before they touch the manuscript.
+SLTrain (#20) was dropped (Exclusion 1). SpinQuant kept as recent PTQ. #28 added to restore 13 and reinforce federated.
+Verification: `screening/reviews/shortlist-13-verification.md`. Manuscript updated 2026-08-17.
 
 ---
 
@@ -133,7 +132,7 @@ SpinQuant) need an author call before they touch the manuscript.
 - authors: Zechun Liu; Changsheng Zhao; Igor Fedorov; Bilge Soran; Dhruv Choudhary; Raghuraman Krishnamoorthi; Vikas Chandra; Yuandong Tian; Tijmen Blankevoort
 - relevance: LLM fine-tuning-efficiency method (B2_quantization)
 - existing corpus: no — not in the 42 existing manuscript references
-- **verdict:** agree — **selected (B2)**; see verification flag (PTQ)
+- **verdict:** agree — **selected (B2)**; framed as recent PTQ in the PTQ-vs-QAT discussion
 
 ### 15. PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models
 - `C-93f716cbf0` | 2024 | arXiv (Cornell University) | citations: **316** | section: **B1 PEFT** | score: 0.728
@@ -175,7 +174,7 @@ SpinQuant) need an author call before they touch the manuscript.
 - authors: Andi Han; Jiaxiang Li; Wei Huang; Mingyi Hong; Akiko Takeda; Pratik Jawanpuria; Bamdev Mishra
 - relevance: LLM fine-tuning-efficiency method (B3_memory)
 - existing corpus: no — not in the 42 existing manuscript references
-- **verdict:** agree — **selected (B3)**; see verification flag (Exclusion 1 / pretraining-only)
+- **verdict:** agree — **dropped from insertion** (Exclusion 1: pretraining-only)
 
 ### 21. Break the Sequential Dependency of LLM Inference Using Lookahead Decoding
 - `C-80ade0780f` | 2024 | International Conference on Machine Learning | citations: **336** | section: **B3 memory** | score: 0.837
@@ -231,7 +230,7 @@ SpinQuant) need an author call before they touch the manuscript.
 - authors: Jiamu Bai; Daoyuan Chen; Bingchen Qian; Liuyi Yao; Yaliang Li
 - relevance: LLM fine-tuning-efficiency method (B4_federated)
 - existing corpus: no — not in the 42 existing manuscript references
-- **verdict:** agree — in-scope, not selected for the 13
+- **verdict:** agree — **selected (B4)**; method name FlexLoRA — distinct from Bayati et al. (2023)
 
 ### 29. A survey on LoRA of large language models
 - `C-64babd74d3` | 2024 | Frontiers of Computer Science | citations: **163** | section: **B4 federated** | score: 1.006

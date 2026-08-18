@@ -3,23 +3,29 @@
 Checked 2026-08-17 against OpenReview / NeurIPS / ICML / ICLR / ACL Anthology / ACM / Springer.
 Pool strings are what `screening/reviews/reference-shortlist.md` currently shows; **cite the verified row**, not the pool row, if they differ.
 
-Manuscript and bibliography were **not** edited in this pass.
+Manuscript and bibliography **were updated 2026-08-17** (`screening/scripts/apply_manuscript_revision.py`).
 
-## Scope flags (author call needed before insert)
+## Author calls (closed)
 
-These two are in the selected 13 and are in-scope *only if* the encoded rule is read the way the existing 42 already reads. They are not metadata typos.
+- **SLTrain (`C-1d12d2b919`):** dropped from insertion (Exclusion 1).
+- **SpinQuant (`C-15aa63fdab`):** kept, framed as recent PTQ in the PTQ-vs-QAT discussion.
+- **#28 Bai et al. (`C-a1f9ae845d`):** added to restore 13 and reinforce federated. Method name FlexLoRA; distinct from Bayati et al. (2023), which the manuscript had mis-attributed in §7.3.
 
-### SLTrain (`C-1d12d2b919`) — Exclusion 1
+## Closed scope flags
 
-NeurIPS 2024 paper, authors match. Title and abstract are **pretraining from scratch** (`W = BA + S` for LLM pretraining). The paper explicitly contrasts this with low-rank methods that work for fine-tuning but not pretraining. Strict Exclusion 1 (pre-training efficiency only) would drop it.
+These two were in-scope *only if* the encoded rule is read the way the existing 42 already reads. Author calls are above; they are not metadata typos.
 
-If dropped, B3 still has GaLore and AdaRankGrad. LISA (already selected as B1) is a memory-efficient **fine-tuning** method and can carry the third memory mention without adding a new record.
+### SLTrain (`C-1d12d2b919`) — Exclusion 1 (dropped)
 
-### SpinQuant (`C-15aa63fdab`) — Exclusion 2 vs existing B2
+NeurIPS 2024 paper, authors match. Title and abstract are **pretraining from scratch** (`W = BA + S` for LLM pretraining). The paper explicitly contrasts this with low-rank methods that work for fine-tuning but not pretraining. Strict Exclusion 1 (pre-training efficiency only) dropped it from insertion.
+
+B3 still has GaLore and AdaRankGrad. LISA (already selected as B1) is a memory-efficient **fine-tuning** method.
+
+### SpinQuant (`C-15aa63fdab`) — Exclusion 2 vs existing B2 (kept as PTQ)
 
 ICLR 2025. The paper is **post-training quantization** with learned rotations (weights, activations, KV cache). It is not QAT and not fine-tuning. The automated classifier included it because "post-training" is not in the title.
 
-The manuscript already cites GPTQ, AWQ, and SmoothQuant, so B2 already covers PTQ. SpinQuant is the same class: a strong recent PTQ method, useful next to EfficientQAT if the PTQ-vs-QAT contrast is the goal. It would fail a strict “no inference-only” reading of Exclusion 2.
+The manuscript already cites GPTQ, AWQ, and SmoothQuant, so B2 already covers PTQ. SpinQuant is kept next to EfficientQAT for the PTQ-vs-QAT contrast. It would fail a strict “no inference-only” reading of Exclusion 2.
 
 ## Metadata corrections (must use verified strings)
 
@@ -39,15 +45,13 @@ The manuscript already cites GPTQ, AWQ, and SmoothQuant, so B2 already covers PT
 | 26 | `C-bc98faf889` | venue too short | Knowledge Discovery and Data Mining | **Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining**, 2024, pp. 6137–6147. DOI **10.1145/3637528.3671582**. Authors match. arXiv:2402.06954 |
 | 29 | `C-64babd74d3` | volume year | 2024, Frontiers of Computer Science | First published **14 Dec 2024**; journal volume year **2025** (`Front. Comput. Sci. 19, 197605`). DOI **10.1007/s11704-024-40663-9**. Authors match. arXiv:2407.11046. Taxonomy includes a federated-LoRA section, so B4 placement is defensible; it also belongs on the existing-surveys table |
 
-## Clean enough to insert (after the two scope calls)
+## Inserted set (verified authors/venues)
 
-All 13 exist, are LLM-side, and are not among the 42 keys. Use verified authors/venues above.
+All 13 exist, are LLM-side, and are not among the original 42 keys. Citation years used:
 
-Recommended citation years if inserted:
-
-- 2024: HydraLoRA, LISA, LoRA-GA, PiSSA, IR-QLoRA, GaLore, SLTrain (if kept), FFA-LoRA, OpenFedLLM
+- 2024: HydraLoRA, LISA, LoRA-GA, PiSSA, IR-QLoRA, GaLore, FFA-LoRA, OpenFedLLM, Bai et al. FlexLoRA
 - 2025: EfficientQAT (ACL 2025), SpinQuant (ICLR 2025), AdaRankGrad (ICLR 2025)
-- LoRA survey: 2024 or 2025 — protocol dates peer-reviewed work by publication date (14 Dec 2024); volume is 2025. Pick one and stay consistent.
+- LoRA survey (Mao et al.): journal volume year **2025** (`Front. Comput. Sci. 19, 197605`)
 
 ## Related corpus note (not one of the 13)
 

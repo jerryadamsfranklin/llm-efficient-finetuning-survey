@@ -199,6 +199,16 @@ paper tagged `book-chapter` by OpenAlex). After those log edits the new-work ban
 primary-source verification before any manuscript insertion
 (`screening/reviews/shortlist-13-verification.md`).
 
+### Manuscript insertion of the verified 13 (2026-08-17)
+
+Author calls: SLTrain dropped (Exclusion 1); SpinQuant kept as PTQ in the PTQ-vs-QAT
+discussion; Bai et al. FlexLoRA (`C-a1f9ae845d`) added to restore 13. Venue upgrades
+applied: `dao2023` → ICLR 2024; `wang2024` → *Artificial Intelligence Review* 2025;
+`yang2025` → **IJCAI 2025** (the 2024 DOI in an earlier Crossref hit was a false match).
+FlexLoRA in §7.3 is reattributed from Bayati et al. (2023) to Bai et al. (2024).
+Cited corpus 42 → 55. Live file: `Downloads/Paper 1/Jerry_Manuscript_P1_Integrated.docx`
+(backup `.bak`). Reproducible via `screening/scripts/apply_manuscript_revision.py`.
+
 ---
 
 ## Phase 3 entry — 2026-07-31 (artifact regeneration, no protocol change)

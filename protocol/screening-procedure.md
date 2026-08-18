@@ -238,15 +238,19 @@ identification of records superseded or duplicated in coverage.
 The following is the required disclosure, to appear in the manuscript methodology and in
 Section 10.4 (limitations). It must not be softened or omitted.
 
-> Title and abstract screening was conducted with large language model assistance under author
-> supervision. Every record advanced to full-text assessment was verified by the author, and a
-> stratified random sample of at least 250 exclusions was audited, with the disagreement rate
-> reported in the companion repository. Full-text assessment, inclusion decisions, and data
-> extraction were performed by the author. Screening effort was concentrated on records published
-> from January 2024 onward; earlier records were subject to a targeted confirmation pass against
-> the existing reference corpus, high-citation work, and core-method terms rather than an
-> exhaustive screen. Records not examined under that bound are reported as a separate count and are
-> not represented as screened.
+> This survey follows a structured, protocol-driven search rather than a registered
+> systematic review. Title-and-abstract screening of records published from January 2024
+> onward used a rule-encoded classifier calibrated to an author-resolved 150-record sample;
+> human verification for that band was applied to a citation- and section-weighted shortlist
+> of includes rather than to every include. Records from 2019–2023 were subject to a targeted
+> confirmation pass against the existing reference corpus, high-citation work, and core-method
+> terms rather than an exhaustive screen. Records not examined under that bound are reported
+> as a separate count in the companion repository and are not represented as screened.
+> Full-text assessment of the inserted set, inclusion decisions, and data extraction were
+> performed by the author. This is not dual independent screening.
+
+The new-work band automated pass (2026-08-17) is the Stage 1 procedure this disclosure
+describes; see CHANGELOG.md.
 
 ### Not claimed
 

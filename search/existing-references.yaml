@@ -1,6 +1,10 @@
 source: Jerry_Manuscript_P1_Integrated.docx REFERENCES
 n_references: 42
-notes: Generated for Protocol v1.1 venue-check. priority HIGH = cited as arXiv preprint in manuscript.
+notes: >
+  Snapshot of the original 42 for Protocol v1.1 venue-check. Manuscript cited
+  corpus is 55 after the 2026-08-17 insertion. dao2023/wang2024/yang2025
+  citation_as_in_manuscript fields match the upgraded bibliography.
+  priority HIGH = originally cited as arXiv preprint.
 references:
 - key: abadi2016
   authors: Abadi, M., Chu, A., Goodfellow, I., McMahan, H. B., Mironov, I., Talwar, K., & Zhang, L.
@@ -47,17 +51,17 @@ references:
     sublinear memory cost. arXiv preprint arXiv:1604.06174.
 - key: dao2023
   authors: Dao, T.
-  year: 2023
+  year: 2024
   title: 'FlashAttention-2: Faster attention with better parallelism and work partitioning'
   arxiv_id: '2307.08691'
   doi: null
-  venue_current: arXiv preprint arXiv:2307.08691
+  venue_current: Proceedings of the International Conference on Learning Representations (ICLR)
   verified_venue: ICLR 2024 poster
   verified_doi: null
   status: UPGRADED
   priority: HIGH
-  citation_as_in_manuscript: 'Dao, T. (2023). FlashAttention-2: Faster attention with better parallelism
-    and work partitioning. arXiv preprint arXiv:2307.08691.'
+  citation_as_in_manuscript: 'Dao, T. (2024). FlashAttention-2: Faster attention with better parallelism
+    and work partitioning. Proceedings of the International Conference on Learning Representations (ICLR).'
 - key: dao2022
   authors: Dao, T., Fu, D. Y., Ermon, S., Rudra, A., & Ré, C.
   year: 2022
@@ -518,17 +522,18 @@ references:
     Processing Systems (NeurIPS), 30, 5998-6008.
 - key: wang2024
   authors: Wang, L., Chen, S., Jiang, L., Pan, S., Cai, R., Yang, S., & Yang, F.
-  year: 2024
-  title: 'Parameter-efficient fine-tuning in large models: A survey of methodologies'
+  year: 2025
+  title: 'Parameter-efficient fine-tuning in large language models: A survey of methodologies'
   arxiv_id: '2410.19878'
-  doi: null
-  venue_current: arXiv preprint arXiv:2410.19878
+  doi: 10.1007/s10462-025-11236-4
+  venue_current: Artificial Intelligence Review, 58, 227. https://doi.org/10.1007/s10462-025-11236-4
   verified_venue: Artificial Intelligence Review / 2025 / journal-article
   verified_doi: 10.1007/s10462-025-11236-4
   status: UPGRADED
   priority: HIGH
-  citation_as_in_manuscript: 'Wang, L., Chen, S., Jiang, L., Pan, S., Cai, R., Yang, S., & Yang, F. (2024).
-    Parameter-efficient fine-tuning in large models: A survey of methodologies. arXiv preprint arXiv:2410.19878.'
+  citation_as_in_manuscript: 'Wang, L., Chen, S., Jiang, L., Pan, S., Cai, R., Yang, S., & Yang, F. (2025).
+    Parameter-efficient fine-tuning in large language models: A survey of methodologies. Artificial
+    Intelligence Review, 58, 227. https://doi.org/10.1007/s10462-025-11236-4.'
 - key: xiao2023
   authors: Xiao, G., Lin, J., Seznec, M., Wu, H., Deoras, J., & Song, H.
   year: 2023
@@ -563,15 +568,17 @@ references:
   year: 2025
   title: 'Federated low-rank adaptation for foundation models: A survey'
   arxiv_id: '2505.13502'
-  doi: null
-  venue_current: arXiv preprint arXiv:2505.13502
-  verified_venue: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence
-    / 2024 / proceedings-article
-  verified_doi: 10.24963/ijcai.2024/1196
+  doi: 10.24963/ijcai.2025/1196
+  venue_current: Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence
+    (IJCAI), 10779–10787. https://doi.org/10.24963/ijcai.2025/1196
+  verified_venue: Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence
+    (IJCAI 2025)
+  verified_doi: 10.24963/ijcai.2025/1196
   status: UPGRADED
   priority: HIGH
   citation_as_in_manuscript: 'Yang, Y., Long, G., Lu, Q., Zhu, L., Jiang, J., & Zhang, C. (2025). Federated
-    low-rank adaptation for foundation models: A survey. arXiv preprint arXiv:2505.13502.'
+    low-rank adaptation for foundation models: A survey. Proceedings of the Thirty-Fourth International
+    Joint Conference on Artificial Intelligence (IJCAI), 10779–10787. https://doi.org/10.24963/ijcai.2025/1196.'
 - key: zaken2022
   authors: Zaken, E. B., Ravfogel, S., & Goldberg, Y.
   year: 2022
