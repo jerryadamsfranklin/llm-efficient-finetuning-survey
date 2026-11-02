@@ -17,3 +17,8 @@ local.env
 .env
 .env.*
 !.env.example
+
+# Validation key files — commit SHA-256 hashes before screening; commit keys
+# only after author decisions for that part are committed (docs/validation-plan.md).
+validation/part1_key.csv
+validation/part2_key.csv
