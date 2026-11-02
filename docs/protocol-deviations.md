@@ -239,3 +239,25 @@ Not run, for the same reason as entry 7. Low-confidence review was tied to the b
 **Effect on the manuscript**
 
 Revision 3 performs blind author review of all 721 low-confidence automated exclusions (required) and, as an extension, all 900 low-confidence automated inclusions, pre-registered in docs/validation-plan.md. Results are reported for each stratum, including any stratum left incomplete.
+
+---
+
+## 9. Section 6 audit stratified by query block only where the field was populated
+
+**What the protocol specified**
+
+`protocol/screening-procedure.md` section 6 table row (line 152):
+
+> **Random audit of confident exclusions** - stratified by year band, source, and query block | >= 250 records
+
+**What was done**
+
+The pre-registered plan (`docs/validation-plan.md`, commit 5439a63) took query block from `parent_query` in `search/candidate-pool.csv`. That field is populated only for Google Scholar records: 110 of the 3,996 records in population B; the remaining 3,886 were coded "missing". The 300-record sample is therefore stratified by year and canonical source for all records, and by query block only within Google Scholar (`validation/draw_output.txt`).
+
+**Reason**
+
+The field's coverage was not checked before the plan was registered.
+
+**Effect on the manuscript**
+
+The audit is reported as a stratified random sample by year and source. The draw was kept rather than repeated, because repeating a committed draw would need its own justification; it was independently reproduced with identical key hashes.
