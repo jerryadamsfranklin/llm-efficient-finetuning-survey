@@ -1,0 +1,50 @@
+3.9.6 (default, Feb  3 2024, 15:58:27) 
+[Clang 15.0.0 (clang-1500.3.9.4)]
+CPython
+=== Population B stratum allocation (n=300) ===
+stratum                                            size  alloc
+2024|arxiv|missing                                  942     71
+2024|google_scholar|B1                                1      0
+2024|google_scholar|B2                                2      0
+2024|google_scholar|B3                               12      1
+2024|google_scholar|B4                                3      0
+2024|ieee|missing                                    41      3
+2024|openalex_acm|missing                            74      6
+2024|openalex|missing                                81      6
+2024|semanticscholar|missing                        273     20
+2025|arxiv|missing                                  997     75
+2025|dblp|missing                                     4      0
+2025|google_scholar|B1                               14      1
+2025|google_scholar|B2                               11      1
+2025|google_scholar|B3                               32      2
+2025|google_scholar|B4                                7      1
+2025|ieee|missing                                    80      6
+2025|openalex_acm|missing                            49      4
+2025|openalex|missing                                16      1
+2025|semanticscholar|missing                        473     36
+2026|arxiv|missing                                  557     42
+2026|dblp|missing                                     2      0
+2026|google_scholar|B1                                2      0
+2026|google_scholar|B2                                9      1
+2026|google_scholar|B3                               15      1
+2026|ieee|missing                                    60      5
+2026|openalex_acm|missing                            32      2
+2026|openalex|missing                                 1      0
+2026|semanticscholar|missing                        204     15
+missing|google_scholar|B3                             2      0
+TOTAL                                              3996    300
+
+=== Population and part counts ===
+A (low-conf automated excludes, full): 721
+B (confident machine excludes, pool):  3996
+B sample:                              300
+C (low-conf automated includes, full): 900
+D1 blinding (from high-conf includes): 100
+D2 blinding (from B not in sample):    100
+Part 1 rows (A + B sample + D1):       1121
+Part 2 rows (C + D2):                  1000
+
+Part 1 population mix: {'A': 721, 'B': 300, 'D1': 100}
+Part 2 population mix: {'C': 900, 'D2': 100}
+part1_key.sha256: 37c34516cf37a7314154c3c1cfd6506909478addf74049d8d121cdb4aa2ed553
+part2_key.sha256: 1ef85933b634dcbd9d357730ca6da2f2656bea0055e823c8e48f7ce0c8504b07
