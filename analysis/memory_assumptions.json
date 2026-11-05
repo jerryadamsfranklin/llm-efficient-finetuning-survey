@@ -1,0 +1,65 @@
+{
+  "_note": "Every constant used by analysis/memory_model.py. 1 GB = 1e9 bytes.",
+  "model": {
+    "name": "LLaMA-2-7B",
+    "layers": 32,
+    "hidden": 4096,
+    "heads": 32,
+    "ffn": 11008,
+    "vocab": 32000,
+    "source": "Touvron et al. (2023), Llama 2; released model configuration (hidden_size 4096, intermediate_size 11008, num_hidden_layers 32, num_attention_heads 32, vocab_size 32000)"
+  },
+  "workloads": [
+    {
+      "id": "W1",
+      "batch": 4,
+      "seq": 2048,
+      "source": "Manuscript Section II (stated workload)"
+    },
+    {
+      "id": "W2",
+      "batch": 1,
+      "seq": 512,
+      "source": "Comparison workload for Dettmers et al. (2023) Figure 6, which reports batch size 1"
+    }
+  ],
+  "bytes_per_param": {
+    "full_ft_model_states": 16,
+    "full_ft_source": "Rajbhandari et al. (2020), Sec 3.1: 2 + 2 + 12 = 16 bytes per parameter (mixed-precision Adam)",
+    "frozen_16bit_weight": 2,
+    "trainable_adapter_states": 16,
+    "adapter_source": "Same accounting as full fine-tuning, applied to trainable adapter parameters only",
+    "nf4_weight": 0.5,
+    "quant_constants_with_dq": 0.015875,
+    "quant_constants_without_dq": 0.0625,
+    "nf4_source": "Dettmers et al. (2023), Sec 3: 4-bit NF4; quantization constants 0.5 bits/param, 0.127 bits/param with double quantization (divided by 8 for bytes)",
+    "nf4_scope": "Linear layers inside transformer blocks are quantized; embeddings and output head stay 16-bit (assumption, stated)"
+  },
+  "activations": {
+    "per_layer_bytes": "s*b*h*(34 + 5*a*s/h)",
+    "flash_attention_per_layer_bytes": "s*b*h*34",
+    "recompute_per_layer_bytes": "2*s*b*h, plus one layer of full activations during recomputation",
+    "source": "Korthikanti et al. (2022), Eq. 1 and Table 2; FlashAttention removes the stored attention-score term because the attention matrix is not materialized (Dao et al., 2022)",
+    "lora_note": "Applied unchanged to LoRA and QLoRA. Frozen linear layers need not store their inputs, so for LoRA and QLoRA this is an upper bound.",
+    "formula_note": "Derived for GPT-style blocks; LLaMA uses SwiGLU and RMSNorm, so the per-layer constant is approximate."
+  },
+  "logits": {
+    "bytes_per_element": 8,
+    "source": "Assumption: FP32 logits and their gradient, b*s*vocab elements each 4 bytes"
+  },
+  "not_modeled": [
+    "CUDA context",
+    "allocator fragmentation",
+    "framework buffers",
+    "paged-optimizer savings"
+  ],
+  "cross_checks": [
+    {
+      "config_id": "W2-49",
+      "reported_gb": 6.9,
+      "source": "Dettmers et al. (2023), Appendix G, Figure 6",
+      "setting": "QLoRA, LLaMA 7B, LoRA on all linear layers (App B.2), batch 1, sequence 512, gradient checkpointing",
+      "row_description": "QLoRA r64, all linear, double quantization, checkpointing"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+claim_id,source,where_in_paper,author_check
+C130,"Dettmers et al., 2023","App B.2, Table 9",agree
+C121,"Rajbhandari et al., 2020",ZeRO Sec 3.1,agree
+C032,"Lin et al., 2024 (AWQ)",Table 4; Sec 5.3 Fig 8a,agree
+C050,"Dettmers et al., 2023",Figure 6,agree
+C057,"Hu et al., 2021",Sec 4.2,agree
+C093,"Zhang et al., 2023 (AdaLoRA)",Table 1,agree
+C115,"Dettmers et al., 2023","App B.2, Table 9",agree
+C018,"Kopiczko et al., 2024 (VeRA)",Tables 2 and 4,agree
+C033,"Xiao et al., 2023 (SmoothQuant)",Abstract,agree
+C059,"Chen et al., 2016; Dao et al., 2022",,agree
