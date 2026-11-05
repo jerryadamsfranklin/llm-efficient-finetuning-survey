@@ -1,0 +1,15 @@
+workload,budget_gb,n_configs_fit,smallest_full_ft,smallest_lora,smallest_qlora,lora_without_ckpt_fits,qlora_without_ckpt_fits
+W1,8,0,none,none,none,no,no
+W1,12,7,none,none,"QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",no,no
+W1,16,13,none,none,"QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",no,no
+W1,24,24,none,"LoRA r=8 Q,V + Flash + ckpt (18.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",no,no
+W1,40,24,none,"LoRA r=8 Q,V + Flash + ckpt (18.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",no,no
+W1,48,30,none,"LoRA r=8 Q,V + Flash + ckpt (18.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",no,yes
+W1,80,35,none,"LoRA r=8 Q,V + Flash + ckpt (18.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (9.4 GB)",yes,yes
+W2,8,21,none,none,"QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",no,yes
+W2,12,25,none,none,"QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",no,yes
+W2,16,38,none,"LoRA r=8 Q,V + ckpt (13.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",yes,yes
+W2,24,46,none,"LoRA r=8 Q,V + ckpt (13.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",yes,yes
+W2,40,46,none,"LoRA r=8 Q,V + ckpt (13.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",yes,yes
+W2,48,46,none,"LoRA r=8 Q,V + ckpt (13.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",yes,yes
+W2,80,46,none,"LoRA r=8 Q,V + ckpt (13.9 GB)","QLoRA r=16 Q,V + DQ + Flash + ckpt (4.3 GB)",yes,yes

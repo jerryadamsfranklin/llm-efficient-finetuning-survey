@@ -1,0 +1,15 @@
+{
+  "_note": "Starting hyperparameters reported in primary sources, used in Figure 3 and Table 5. Each entry states its source and setting; none is an author recommendation.",
+  "entries": [
+    {"text": "QLoRA: r = 64, alpha = 16, LoRA on all linear layers; LR 2e-4 (7B, 13B) or 1e-4 (33B, 65B); dropout 0.1 (up to 13B) or 0.05; max grad norm 0.3; constant LR schedule",
+     "source": "Dettmers et al. (2023), Appendix B.2 and Table 9", "setting": "Guanaco instruction tuning, LLaMA 7B to 65B"},
+    {"text": "With LoRA on all linear layers, rank r had little effect on final performance",
+     "source": "Dettmers et al. (2023), Appendix A.1, Figure 4", "setting": "LLaMA 7B, Alpaca"},
+    {"text": "On GPT-3 175B, ranks as small as 1 sufficed when adapting both Wq and Wv; Wq alone needed a larger r",
+     "source": "Hu et al. (2021), Table 6", "setting": "WikiSQL and MultiNLI"},
+    {"text": "LoRA+: learning rate of B about 16x that of A for RoBERTa, about 2x to 4x for Llama-7B",
+     "source": "Hayou et al. (2024), Section 5.3", "setting": "RoBERTa-base, GPT-2, Llama-7B"},
+    {"text": "In code and math domains LoRA substantially underperformed full fine-tuning in standard low-rank settings",
+     "source": "Biderman et al. (2024), abstract", "setting": "Llama-2-7B, continued pre-training and instruction fine-tuning"}
+  ]
+}

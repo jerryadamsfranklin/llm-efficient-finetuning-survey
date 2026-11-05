@@ -1,0 +1,9 @@
+Method,Key mechanism,Trainable parameters vs LoRA (as reported),Accuracy vs LoRA (as reported),Model and task,Source
+Standard LoRA,Low-rank update BA added to frozen W,Reference,Reference,,Hu et al. (2021)
+AdaLoRA,Prunes singular values to reallocate rank across matrices by importance,Matched budget: 1.27M vs 1.33M (r=8),GLUE average 89.31 vs 88.34,"DeBERTaV3-base, GLUE","Zhang et al. (2023), Table 1"
+DoRA,Decomposes weight into magnitude and direction; LoRA updates the direction,0.84% vs 0.83% of model parameters,"Commonsense average +3.7 (LLaMA-7B), +1.0 (13B), +2.1 (LLaMA2-7B), +4.4 (LLaMA3-8B) points","LLaMA family, 8 commonsense reasoning tasks","Liu et al. (2024), Table 1"
+LoRA+,Larger learning rate for B than for A,Same as LoRA,1-2% better; up to about 2x faster fine-tuning,"RoBERTa-base, GPT-2, Llama-7B","Hayou et al. (2024), abstract"
+VeRA,Frozen shared random matrices; trains only scaling vectors,About 100x fewer (Llama 7B: 1.6M vs 159.9M); about 7-13x fewer on RoBERTa,MT-Bench -0.26 to +0.16; GLUE average -1.4 (base) and 0.0 (large),Llama/Llama 2 7B-13B instruction tuning; RoBERTa GLUE,"Kopiczko et al. (2024), Tables 2 and 4"
+PiSSA,Initializes A and B from principal singular vectors of W; residual frozen,Same as LoRA,GSM8K 72.86 vs 67.7,"Mistral-7B, GSM8K","Meng et al. (2024), abstract"
+LoRA-GA,Initializes adapters to align with the full-model gradient,Same as LoRA,GSM8K +11.52 points; up to 2-4x faster convergence,Llama 2-7B,"Wang et al. (2024), Section 1"
+HydraLoRA,Shared A matrix with multiple B heads and a router,0.124% vs 0.062% at r=8,MMLU 47.22 vs 43.22; GSM8K 22.27 vs 18.24,"LLaMA2-7B, single-domain benchmarks","Tian et al. (2024), Table 2"
