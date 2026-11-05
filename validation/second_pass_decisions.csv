@@ -1,0 +1,1338 @@
+pass_id,from,record_id,q1_language_model,q2_efficient_ft_method,q3_scope,decision,reason_code,status,rationale
+S-0001,rescreen:R-0005,C-006dbdc469,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0002,adjudicate:P1-0903,C-00a03f68b1,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0003,rescreen:R-0012,C-00cf8c0975,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0004,rescreen:R-0013,C-00d290525b,Y,Y,No,INCLUDE,,REVIEWED,"new DartQuant variant, LLM"
+S-0005,rescreen:R-0014,C-00d7bac68e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, OPT"
+S-0006,rescreen:R-0017,C-00fc4fe42b,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0007,adjudicate:P2-0200,C-0102aaae0d,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0008,rescreen:R-0022,C-013c2dd0dd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0009,rescreen:R-0024,C-0176f5540b,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0010,rescreen:R-0027,C-017f99adee,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0011,rescreen:R-0030,C-01b2f3b1fe,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0012,adjudicate:P1-0059,C-01de2604d6,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0013,rescreen:R-0035,C-020b61c14c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0014,rescreen:R-0038,C-025760ce70,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0015,rescreen:R-0042,C-029178a15e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0016,rescreen:R-0043,C-02a11743e1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0017,rescreen:R-0053,C-03565a1c1c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0018,rescreen:R-0057,C-03c9600b34,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0019,rescreen:R-0065,C-0434fa6da0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0020,rescreen:R-0069,C-046b28bc76,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0021,rescreen:R-0071,C-047e99ae44,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0022,rescreen:R-0072,C-04829fab5d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0023,rescreen:R-0073,C-048d2dad26,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0024,adjudicate:P1-0308,C-04e4b10c95,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0025,rescreen:R-0078,C-04f5f7bd09,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0026,rescreen:R-0080,C-0505c11102,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0027,rescreen:R-0081,C-0516e5353e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0028,rescreen:R-0085,C-0566e5c854,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0029,rescreen:R-0086,C-0585fcf32e,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0030,rescreen:R-0089,C-0597a44052,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0031,rescreen:R-0096,C-05dfe11d9d,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0032,rescreen:R-0098,C-05eab74d80,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLaMA-3"
+S-0033,rescreen:R-0100,C-062c544c2f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLaMA-3"
+S-0034,rescreen:R-0102,C-064001f82a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0035,rescreen:R-0103,C-065b327e08,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0036,rescreen:R-0105,C-0691e41823,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0037,rescreen:R-0106,C-06c218bea6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0038,rescreen:R-0108,C-06e17165d8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0039,rescreen:R-0109,C-06f43ca13d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0040,rescreen:R-0114,C-0779acb4ca,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0041,adjudicate:P1-0733,C-07904e9b72,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0042,rescreen:R-0115,C-07990d4a80,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0043,rescreen:R-0116,C-07998844fb,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0044,rescreen:R-0117,C-07a35210f7,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0045,rescreen:R-0118,C-07a7ee4a2c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0046,rescreen:R-0119,C-07aa378c8f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0047,rescreen:R-0122,C-084a74cb5f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0048,rescreen:R-0123,C-08831fbfa3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0049,rescreen:R-0126,C-0891ed78c5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0050,rescreen:R-0127,C-0894724235,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0051,rescreen:R-0130,C-08baa19b50,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0052,adjudicate:P1-0996,C-09349fa197,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0053,rescreen:R-0133,C-093dddde23,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0054,rescreen:R-0138,C-09761fa239,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0055,rescreen:R-0140,C-0995192381,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0056,rescreen:R-0143,C-09ded02d12,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-0057,rescreen:R-0146,C-0a02f9a8c5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0058,rescreen:R-0149,C-0a2bdbc5ac,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0059,rescreen:R-0150,C-0a39b3e0bd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0060,rescreen:R-0152,C-0a3f6fe4f9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0061,adjudicate:P1-0245,C-0af366d727,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0062,rescreen:R-0160,C-0afcda0ad2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0063,rescreen:R-0164,C-0b28456b5c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0064,rescreen:R-0166,C-0b33a75f31,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0065,rescreen:R-0170,C-0bb2b7efa2,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0066,adjudicate:P1-0501,C-0bcb9d5232,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0067,adjudicate:P1-0386,C-0bda659a2e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0068,rescreen:R-0174,C-0bfb321640,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLaMA-3"
+S-0069,rescreen:R-0175,C-0c0eceb551,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0070,adjudicate:P1-0458,C-0c3b214515,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0071,adjudicate:P1-0875,C-0c5a790fee,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0072,rescreen:R-0183,C-0c93ecd3ac,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0073,rescreen:R-0184,C-0cae2e7ac3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0074,rescreen:R-0187,C-0d1053336e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0075,adjudicate:P1-1116,C-0d1144b521,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0076,rescreen:R-0190,C-0d85a37e25,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0077,rescreen:R-0193,C-0db3929db3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0078,rescreen:R-0200,C-0decbfa4a4,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0079,adjudicate:P1-0489,C-0e1ffffdbb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0080,rescreen:R-0203,C-0e2d8795b5,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0081,rescreen:R-0205,C-0e72c5325e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0082,rescreen:R-0206,C-0e89cfebb8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0083,rescreen:R-0208,C-0eb23dc5b5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0084,rescreen:R-0212,C-0f23c2862e,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0085,rescreen:R-0213,C-0f286ccc67,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0086,rescreen:R-0214,C-0f2cf56744,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0087,rescreen:R-0217,C-0f47788cc2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0088,rescreen:R-0223,C-0fbc22dd63,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0089,rescreen:R-0232,C-1026e92e7a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0090,rescreen:R-0234,C-104608a840,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-0091,rescreen:R-0236,C-1057dee56c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0092,adjudicate:P1-0397,C-109faf367a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0093,rescreen:R-0240,C-10a159c600,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0094,rescreen:R-0242,C-10baa03bcc,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0095,adjudicate:P1-1030,C-10c86f06fb,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0096,adjudicate:P1-0503,C-10ca630e7e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, GPT"
+S-0097,rescreen:R-0247,C-1123c48ab6,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0098,rescreen:R-0250,C-1163734e96,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0099,rescreen:R-0254,C-11db0ecbc2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0100,rescreen:R-0263,C-12bcd0f142,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0101,rescreen:R-0264,C-12c245b137,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0102,rescreen:R-0271,C-13051c4cc1,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0103,rescreen:R-0275,C-1363952478,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0104,adjudicate:P1-0824,C-1392a84dc7,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0105,rescreen:R-0278,C-13b3898c4e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0106,adjudicate:P1-0885,C-13de67456c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0107,rescreen:R-0282,C-13e162493f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0108,rescreen:R-0289,C-144ab11853,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0109,rescreen:R-0294,C-1481fe7ada,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0110,rescreen:R-0296,C-149cd84341,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0111,rescreen:R-0297,C-14aa905b1f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0112,rescreen:R-0300,C-14d9ec5739,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0113,rescreen:R-0303,C-1518fa7832,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0114,rescreen:R-0307,C-154fe69458,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0115,rescreen:R-0308,C-1550406666,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0116,adjudicate:P1-0947,C-156732a7f9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0117,adjudicate:P1-0116,C-15b2bb0ce0,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0118,rescreen:R-0316,C-15b3d36432,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0119,rescreen:R-0321,C-163abd0635,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0120,adjudicate:P1-0314,C-165083866d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0121,rescreen:R-0332,C-16db6d00ef,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Mamba"
+S-0122,rescreen:R-0335,C-171add83e5,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0123,rescreen:R-0338,C-172f0e1f7c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0124,rescreen:R-0340,C-176f9b7324,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0125,rescreen:R-0342,C-17a3d6cb17,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0126,rescreen:R-0343,C-17cad3ab07,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0127,rescreen:R-0349,C-184c0a1a83,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0128,rescreen:R-0355,C-18a4c08f76,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0129,rescreen:R-0357,C-18b911300e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0130,adjudicate:P1-0159,C-18cb849481,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0131,adjudicate:P1-0164,C-195661d97b,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0132,rescreen:R-0364,C-195dc7c490,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0133,rescreen:R-0365,C-198c2f34d6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0134,rescreen:R-0369,C-19d2fac7d5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0135,rescreen:R-0374,C-1a7904a40f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0136,rescreen:R-0375,C-1a7d267da5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0137,adjudicate:P1-1061,C-1a809c0c2c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0138,rescreen:R-0379,C-1aad86681f,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0139,adjudicate:P1-0575,C-1afdbe9101,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0140,rescreen:R-0386,C-1b239d560b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0141,rescreen:R-0387,C-1b3119b928,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0142,rescreen:R-0390,C-1b6cc852c6,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0143,rescreen:R-0395,C-1bf31afe22,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0144,adjudicate:P1-0143,C-1c0a83903f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0145,rescreen:R-0398,C-1c5b55633d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0146,rescreen:R-0399,C-1c75ce39bd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0147,adjudicate:P1-0692,C-1cc0e89d58,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0148,rescreen:R-0405,C-1cf5aae0b7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0149,rescreen:R-0409,C-1d339d042d,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0150,adjudicate:P1-0099,C-1d63e16e68,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, Mamba"
+S-0151,rescreen:R-0417,C-1dd6a1e7bd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0152,adjudicate:P1-0166,C-1e0870974c,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0153,rescreen:R-0420,C-1e21a20d28,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0154,rescreen:R-0426,C-1e5175cc7e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0155,rescreen:R-0430,C-1e88bcbaff,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0156,adjudicate:P1-0361,C-1eb08cd2b5,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0157,rescreen:R-0434,C-1eb7dfd771,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0158,rescreen:R-0435,C-1ed252ecd5,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0159,adjudicate:P1-0700,C-1f187c3186,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0160,rescreen:R-0438,C-1f3b293239,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0161,rescreen:R-0447,C-1fb181730d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0162,rescreen:R-0449,C-1fe8fa04c6,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0163,rescreen:R-0450,C-1ff23aef4d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0164,adjudicate:P2-0809,C-2051956ef6,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0165,rescreen:R-0458,C-20b3bd6e4b,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0166,rescreen:R-0460,C-20c8a0f2c9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0167,rescreen:R-0462,C-20eac921ab,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0168,rescreen:R-0468,C-211dd53519,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0169,rescreen:R-0470,C-214130b649,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0170,rescreen:R-0473,C-215cb0e707,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0171,rescreen:R-0474,C-2166af2c3b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0172,rescreen:R-0486,C-220c861a23,Y,Y,No,INCLUDE,,REVIEWED,"new ICQuant variant, LLM"
+S-0173,rescreen:R-0487,C-22219d9c7e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0174,rescreen:R-0489,C-2243ae6b50,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0175,rescreen:R-0490,C-22581c28d9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0176,adjudicate:P1-0309,C-22673bed77,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0177,rescreen:R-0492,C-2274eee57f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0178,rescreen:R-0494,C-22898f3a82,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0179,rescreen:R-0496,C-22a4e64cec,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0180,rescreen:R-0497,C-22a95d069a,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0181,rescreen:R-0498,C-22ad203a6d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0182,rescreen:R-0499,C-22c72fd8ee,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0183,rescreen:R-0502,C-22dd38703d,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0184,rescreen:R-0508,C-237a89108b,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0185,rescreen:R-0510,C-239a75445a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0186,adjudicate:P1-0087,C-23e1e9357b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0187,rescreen:R-0515,C-242556df2b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0188,rescreen:R-0521,C-247d24eff0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0189,rescreen:R-0524,C-248b58f47d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0190,adjudicate:P1-0051,C-2494e8f635,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0191,rescreen:R-0528,C-24ca97e02f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0192,rescreen:R-0532,C-2526ebc361,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0193,rescreen:R-0537,C-255389898f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0194,rescreen:R-0538,C-25558e17cf,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0195,adjudicate:P1-0759,C-25ed694ff7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0196,adjudicate:P2-0067,C-25f4c73d81,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0197,adjudicate:P1-0034,C-25f71939bc,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0198,rescreen:R-0543,C-25f84087ee,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0199,rescreen:R-0544,C-25fdb76ef0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0200,rescreen:R-0546,C-26321be547,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0201,rescreen:R-0547,C-2635aa0855,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0202,adjudicate:P1-0254,C-266ee233bd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0203,rescreen:R-0556,C-2703ff15d7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0204,rescreen:R-0558,C-2735d499d3,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0205,rescreen:R-0559,C-273ccb91bf,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0206,rescreen:R-0560,C-2777028895,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0207,rescreen:R-0564,C-27b2b873c3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0208,adjudicate:P1-0695,C-27d1a11eaf,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0209,rescreen:R-0581,C-29330cb966,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0210,rescreen:R-0582,C-295bb0c9aa,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0211,rescreen:R-0586,C-2974fcbdaa,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0212,adjudicate:P1-0370,C-2992d9c629,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0213,rescreen:R-0590,C-29a070f2fc,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0214,rescreen:R-0592,C-29baace89e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0215,rescreen:R-0594,C-29e0f851df,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0216,rescreen:R-0595,C-29e3c1fafd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0217,rescreen:R-0596,C-29e4234722,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0218,rescreen:R-0602,C-2a66a21afd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0219,rescreen:R-0607,C-2ab5b4543b,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0220,rescreen:R-0611,C-2b12613023,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0221,adjudicate:P1-0145,C-2b26425580,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0222,adjudicate:P2-0618,C-2b64e73cf2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0223,adjudicate:P1-0404,C-2b83013c3c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0224,adjudicate:P1-0703,C-2b8a54be32,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0225,rescreen:R-0622,C-2bb07b44b4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0226,adjudicate:P2-0076,C-2be982963f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0227,adjudicate:P1-0169,C-2c1fd76608,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0228,rescreen:R-0624,C-2c26dc2710,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0229,rescreen:R-0625,C-2c37757d1b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0230,rescreen:R-0626,C-2c3801bf72,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0231,adjudicate:P1-0632,C-2c587d766f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0232,rescreen:R-0631,C-2cbe4ef155,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0233,rescreen:R-0634,C-2d0b55cfea,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0234,rescreen:R-0638,C-2d42012289,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0235,rescreen:R-0643,C-2da10166d1,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0236,adjudicate:P1-0316,C-2dd0dc17a9,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0237,rescreen:R-0653,C-2e239668e4,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0238,rescreen:R-0654,C-2e35f49a3e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0239,adjudicate:P1-0347,C-2ea01dc00a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0240,rescreen:R-0657,C-2eae48567e,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0241,rescreen:R-0664,C-2f6e633147,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0242,rescreen:R-0665,C-2f7396c846,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0243,rescreen:R-0670,C-2faf20fff3,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0244,rescreen:R-0672,C-2ff66b3f0b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0245,adjudicate:P1-0710,C-2ff7d2557e,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0246,rescreen:R-0674,C-3025e1b276,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0247,rescreen:R-0675,C-302f41ca56,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0248,rescreen:R-0678,C-305d839d4b,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0249,rescreen:R-0680,C-306b7b4f3e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0250,adjudicate:P1-0138,C-30a9c7ac5d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0251,rescreen:R-0691,C-3111aae91f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0252,rescreen:R-0694,C-314bb67129,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0253,adjudicate:P1-0329,C-3170e94b94,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0254,rescreen:R-0698,C-31e72c2538,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0255,rescreen:R-0708,C-3289fb77e6,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0256,rescreen:R-0710,C-328f636ce0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0257,rescreen:R-0714,C-32cbb79cff,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0258,adjudicate:P1-1092,C-32e2ab9ce3,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0259,rescreen:R-0717,C-3303becd3f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0260,adjudicate:P1-0290,C-33475b4803,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0261,rescreen:R-0722,C-338126164a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0262,rescreen:R-0724,C-33cc835871,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0263,adjudicate:P1-0708,C-3439aa1345,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0264,rescreen:R-0727,C-34676663a1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0265,rescreen:R-0729,C-346f90392e,Y,Y,No,INCLUDE,,REVIEWED,"new TurboQuant variant, LLM"
+S-0266,rescreen:R-0731,C-34a7875160,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0267,rescreen:R-0736,C-351068a02d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0268,rescreen:R-0737,C-3528dbb0e0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0269,rescreen:R-0739,C-3564ffea43,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0270,rescreen:R-0747,C-35a2fc4976,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0271,rescreen:R-0749,C-35a8d1af4c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0272,adjudicate:P1-0812,C-35edbcdede,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0273,rescreen:R-0756,C-3606339884,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0274,rescreen:R-0761,C-368be7b6e4,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0275,rescreen:R-0763,C-3694864705,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0276,rescreen:R-0764,C-3695dbd834,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0277,rescreen:R-0765,C-36be00e362,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0278,rescreen:R-0766,C-36d4683f24,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0279,rescreen:R-0767,C-36dbfd37e2,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0280,adjudicate:P1-0225,C-36e0023b17,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0281,rescreen:R-0770,C-36f8f6153b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0282,rescreen:R-0772,C-371c347d8b,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0283,rescreen:R-0776,C-37289d1a8f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0284,rescreen:R-0777,C-3733d0e05e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0285,rescreen:R-0779,C-374c537381,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0286,rescreen:R-0780,C-374db338f2,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0287,rescreen:R-0781,C-376f690352,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0288,adjudicate:P1-0342,C-37a1f73b38,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0289,rescreen:R-0786,C-37b47ae26c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0290,rescreen:R-0788,C-37bf30c889,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0291,rescreen:R-0791,C-382872f39f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0292,rescreen:R-0795,C-3852b18aa4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0293,rescreen:R-0798,C-388cfe63ac,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0294,adjudicate:P2-0836,C-38993cf14b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0295,adjudicate:P1-0084,C-38a6ee78fb,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0296,rescreen:R-0799,C-38b4c3965f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0297,adjudicate:P1-0459,C-38d9e8b87f,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0298,rescreen:R-0805,C-39301ef159,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0299,rescreen:R-0810,C-39a6348e03,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0300,rescreen:R-0818,C-3a5fd8f07f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0301,rescreen:R-0823,C-3acaaeead5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0302,rescreen:R-0825,C-3b004c7bd5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-0303,rescreen:R-0827,C-3b11c04b5f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0304,rescreen:R-0829,C-3b1b0a66e6,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0305,adjudicate:P1-0454,C-3bde9b4a1c,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0306,rescreen:R-0836,C-3bdf886966,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0307,rescreen:R-0837,C-3bf1bb9900,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0308,rescreen:R-0839,C-3c189cadab,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0309,rescreen:R-0842,C-3c306eb0ef,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0310,rescreen:R-0846,C-3c7c3de725,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0311,rescreen:R-0855,C-3d2a9d341d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0312,rescreen:R-0856,C-3d42c30c13,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0313,rescreen:R-0860,C-3d99908fd4,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0314,adjudicate:P1-0961,C-3da5b7146a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0315,rescreen:R-0864,C-3e2ab011ac,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0316,rescreen:R-0865,C-3e3b0c585b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0317,rescreen:R-0869,C-3e9129e131,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0318,rescreen:R-0871,C-3ec20ec397,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0319,rescreen:R-0875,C-3edcaca5df,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLaMA-2"
+S-0320,rescreen:R-0878,C-3ef2915cd6,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0321,rescreen:R-0880,C-3f08d4a992,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0322,rescreen:R-0881,C-3f0979b839,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0323,rescreen:R-0882,C-3f1424495a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0324,rescreen:R-0885,C-3f50126fa5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0325,rescreen:R-0887,C-3f60764167,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, Mamba"
+S-0326,rescreen:R-0890,C-3f77d5b91b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0327,rescreen:R-0891,C-3f8b6a9bd9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0328,rescreen:R-0892,C-3f9ea22707,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0329,rescreen:R-0894,C-3fb12505e2,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0330,rescreen:R-0896,C-3fd245aecf,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0331,rescreen:R-0897,C-3fd2e45b55,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0332,rescreen:R-0899,C-3fec758f87,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0333,rescreen:R-0901,C-3fff636ca9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0334,rescreen:R-0902,C-400a663f44,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0335,rescreen:R-0906,C-40547c2e2d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0336,rescreen:R-0910,C-40b024215e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-0337,rescreen:R-0913,C-410eeb07d7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0338,rescreen:R-0915,C-418bc39056,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0339,rescreen:R-0919,C-41be832661,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0340,rescreen:R-0921,C-41e98c7db2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0341,rescreen:R-0925,C-422999e909,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0342,rescreen:R-0926,C-4247b328b7,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLaMA-2"
+S-0343,rescreen:R-0932,C-42bde5a7b7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0344,rescreen:R-0933,C-42c8e73b14,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0345,rescreen:R-0935,C-4305e3e385,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-0346,adjudicate:P1-0134,C-436188c253,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0347,rescreen:R-0945,C-43a75511d3,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, Qwen"
+S-0348,rescreen:R-0946,C-43ad3768c3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0349,rescreen:R-0947,C-43d8dd9437,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0350,adjudicate:P1-0112,C-43e30ba4ce,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0351,rescreen:R-0948,C-43e7ff5ca1,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0352,rescreen:R-0952,C-446cc772fc,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0353,rescreen:R-0954,C-448607efa4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0354,rescreen:R-0957,C-4493f0d15e,Y,Y,No,INCLUDE,,REVIEWED,"new RUQuant variant, LLM"
+S-0355,rescreen:R-0959,C-44ab417814,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0356,rescreen:R-0960,C-44b3dc409d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0357,rescreen:R-0964,C-450f9e4f9f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0358,rescreen:R-0971,C-457940fbe8,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0359,rescreen:R-0972,C-45a5e205c7,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0360,rescreen:R-0974,C-45c4bf7a3a,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0361,rescreen:R-0975,C-45cd265721,N,N,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0362,rescreen:R-0977,C-4646b52bc1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0363,rescreen:R-0978,C-46483aaf17,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0364,rescreen:R-0979,C-464a0cba85,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0365,rescreen:R-0989,C-46d2c12b0b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0366,rescreen:R-0994,C-47041c23b8,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0367,rescreen:R-0995,C-4718387b17,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0368,rescreen:R-0997,C-475e86ea7d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0369,rescreen:R-1002,C-47d20ae621,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0370,rescreen:R-1006,C-480f178dd1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0371,rescreen:R-1007,C-481197185d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0372,rescreen:R-1015,C-48644925a0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0373,rescreen:R-1016,C-4888c9f5a2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0374,rescreen:R-1017,C-48918ba0d9,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-0375,adjudicate:P1-0981,C-48968f18eb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0376,adjudicate:P1-0502,C-493d1d3a07,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0377,rescreen:R-1031,C-49503e7c94,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0378,rescreen:R-1034,C-49850b42c8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0379,rescreen:R-1036,C-498ae2f13b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0380,rescreen:R-1040,C-49c819d318,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0381,adjudicate:P1-0936,C-49d8b670bc,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLaMA-2"
+S-0382,rescreen:R-1041,C-49f3148532,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0383,adjudicate:P1-0499,C-4a154eca7a,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0384,adjudicate:P1-0239,C-4a3c6ff21c,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0385,rescreen:R-1047,C-4a44f84b47,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0386,rescreen:R-1049,C-4a671c3465,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0387,rescreen:R-1054,C-4a8974ca24,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0388,rescreen:R-1056,C-4aa286fba4,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0389,rescreen:R-1061,C-4b047cb309,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0390,rescreen:R-1073,C-4bec9c12be,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0391,rescreen:R-1074,C-4bf3e9a716,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0392,rescreen:R-1075,C-4bfcecceaf,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0393,rescreen:R-1080,C-4c64c62416,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, Gemma"
+S-0394,rescreen:R-1081,C-4c7b449794,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0395,rescreen:R-1082,C-4c8a8e3755,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0396,adjudicate:P1-0023,C-4cacfab0e8,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0397,adjudicate:P1-0988,C-4cb413f701,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0398,rescreen:R-1087,C-4cb83dbf14,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-0399,rescreen:R-1094,C-4d19af6a36,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0400,adjudicate:P1-0257,C-4d9c7ae97c,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0401,rescreen:R-1101,C-4dbdf26c0c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0402,rescreen:R-1102,C-4dd1c71dda,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0403,adjudicate:P1-0605,C-4e111a0bbf,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0404,rescreen:R-1107,C-4e1353a188,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0405,rescreen:R-1110,C-4e34455228,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0406,adjudicate:P1-0506,C-4e3e819fde,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0407,rescreen:R-1111,C-4e62be656b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0408,rescreen:R-1113,C-4e9a07b046,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, OPT"
+S-0409,rescreen:R-1115,C-4ec5e36a8d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0410,rescreen:R-1116,C-4ecfb117a1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0411,adjudicate:P1-1021,C-4eeaf5be22,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0412,adjudicate:P2-0398,C-4f7f757b3e,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0413,rescreen:R-1122,C-4fd15ae040,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0414,rescreen:R-1125,C-4fdb58be33,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0415,rescreen:R-1131,C-501afd91cb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0416,adjudicate:P1-0156,C-50845bb49f,Y,Y,No,INCLUDE,,REVIEWED,"QLoRA variant, LLM"
+S-0417,rescreen:R-1138,C-5090573ccd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, OPT"
+S-0418,rescreen:R-1140,C-509cf1ee4e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0419,rescreen:R-1141,C-50b3ac31ba,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0420,rescreen:R-1144,C-50d5875817,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0421,adjudicate:P1-0032,C-50e49da6be,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0422,rescreen:R-1150,C-51689bcc37,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0423,rescreen:R-1151,C-51734651f4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0424,rescreen:R-1156,C-518cd13370,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0425,rescreen:R-1157,C-51a3293b25,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0426,rescreen:R-1158,C-51c2933854,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0427,rescreen:R-1159,C-51d33da70e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0428,adjudicate:P1-0464,C-51e5a7b445,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0429,rescreen:R-1161,C-51efb4c994,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0430,rescreen:R-1162,C-51f1e1e945,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0431,rescreen:R-1164,C-522994bf18,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0432,rescreen:R-1165,C-522a854ed5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0433,rescreen:R-1172,C-52640cd70d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0434,rescreen:R-1173,C-528552ebcf,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0435,adjudicate:P1-0269,C-5294a403f7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0436,rescreen:R-1178,C-5333bc69af,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0437,rescreen:R-1181,C-53764e2541,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0438,rescreen:R-1191,C-54206e8982,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0439,rescreen:R-1194,C-5448a0e06c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0440,rescreen:R-1196,C-546d51fcdc,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLaMA-3"
+S-0441,rescreen:R-1197,C-546e0f9231,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0442,rescreen:R-1198,C-547602f621,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0443,rescreen:R-1202,C-54a6b9860c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0444,rescreen:R-1208,C-5555bb3d25,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0445,rescreen:R-1209,C-5557808152,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLaMA"
+S-0446,rescreen:R-1214,C-55ba9ced9f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0447,rescreen:R-1217,C-55db06f034,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0448,rescreen:R-1221,C-55fa720f85,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0449,adjudicate:P1-0896,C-560d9b8d4c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0450,rescreen:R-1232,C-56b3c5703e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0451,rescreen:R-1233,C-56d0166192,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLaMA"
+S-0452,rescreen:R-1234,C-56d05c7e06,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0453,rescreen:R-1235,C-56e9020200,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0454,rescreen:R-1236,C-572e8e0aa3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0455,rescreen:R-1241,C-5770070af8,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0456,rescreen:R-1242,C-578cbe7fb9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0457,rescreen:R-1252,C-583371984f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0458,rescreen:R-1256,C-588204e3e5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0459,adjudicate:P1-0594,C-58851ce57a,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0460,adjudicate:P1-0935,C-5895c6173d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0461,rescreen:R-1258,C-58aaffaf32,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0462,rescreen:R-1259,C-58c5afef81,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0463,adjudicate:P1-0559,C-58cd133e0e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0464,rescreen:R-1260,C-58e2e3fa38,Y,Y,No,INCLUDE,,REVIEWED,"QLoRA variant, LLM"
+S-0465,rescreen:R-1261,C-58e67757e1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0466,rescreen:R-1262,C-58ebec8944,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0467,adjudicate:P1-0248,C-593563dbb2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0468,rescreen:R-1269,C-59515369ca,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0469,rescreen:R-1270,C-5953f2268c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0470,adjudicate:P1-0189,C-5977dffb22,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0471,rescreen:R-1276,C-59a922e125,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0472,rescreen:R-1288,C-5ab259f616,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0473,rescreen:R-1291,C-5afd6b39a9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0474,rescreen:R-1294,C-5b39a52daa,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0475,rescreen:R-1295,C-5b529f93fc,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0476,adjudicate:P1-0376,C-5bf06050ad,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0477,rescreen:R-1302,C-5bf9b9b8cb,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0478,rescreen:R-1304,C-5c2db294cb,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0479,rescreen:R-1306,C-5c426be522,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0480,rescreen:R-1308,C-5c651b164c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0481,adjudicate:P1-0917,C-5c763bfefc,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0482,rescreen:R-1311,C-5c86798f31,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0483,adjudicate:P1-0185,C-5c9db9201a,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0484,rescreen:R-1314,C-5cda390e1d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0485,adjudicate:P1-0855,C-5d113f2159,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0486,rescreen:R-1321,C-5d23417594,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0487,adjudicate:P2-0639,C-5dac9e7eee,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0488,rescreen:R-1329,C-5db83c9ae3,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0489,adjudicate:P1-0591,C-5ddae34f8b,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0490,rescreen:R-1338,C-5e723d9004,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0491,rescreen:R-1339,C-5e806f50aa,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0492,rescreen:R-1341,C-5e9488a888,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0493,adjudicate:P1-0251,C-5eb3fb82b8,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0494,rescreen:R-1349,C-5f031054e3,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0495,rescreen:R-1352,C-5f2e516d8a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0496,adjudicate:P2-0381,C-5f7aceb379,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0497,rescreen:R-1354,C-5f8ee66505,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0498,rescreen:R-1356,C-5faab18322,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0499,rescreen:R-1357,C-5fbf0eb0d0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0500,rescreen:R-1360,C-5ffb5f36c5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0501,rescreen:R-1361,C-6024ab9849,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0502,rescreen:R-1366,C-609fc7f408,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0503,rescreen:R-1368,C-60a70dd5e1,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0504,adjudicate:P1-0751,C-6107578ecc,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0505,adjudicate:P1-0840,C-613280bfdb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0506,rescreen:R-1378,C-61956a0c2f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0507,rescreen:R-1382,C-61d673d974,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0508,rescreen:R-1388,C-62a9e79302,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0509,rescreen:R-1389,C-62d3e0b14f,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0510,adjudicate:P1-0441,C-62e9e0cf57,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0511,rescreen:R-1394,C-63166b50d3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0512,rescreen:R-1395,C-6319b96f70,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0513,rescreen:R-1397,C-6372426cb0,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0514,adjudicate:P1-0566,C-637ddf0138,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0515,adjudicate:P1-0761,C-63f9466220,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0516,rescreen:R-1406,C-64136a0737,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0517,adjudicate:P1-0902,C-642d7a9a26,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0518,rescreen:R-1407,C-642f26ed85,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0519,rescreen:R-1409,C-643f57a78e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0520,rescreen:R-1423,C-650df257ee,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, GPT"
+S-0521,rescreen:R-1424,C-6531904d7d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0522,rescreen:R-1426,C-65586d6bad,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0523,rescreen:R-1427,C-6575d1084f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0524,rescreen:R-1431,C-659840514f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0525,rescreen:R-1436,C-65bb0c11db,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0526,rescreen:R-1437,C-65ddabbdc4,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0527,rescreen:R-1440,C-662eab0f70,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0528,adjudicate:P1-1108,C-6650310a9c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0529,rescreen:R-1444,C-666705cfa4,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0530,rescreen:R-1451,C-66e488a40c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0531,adjudicate:P1-0670,C-670e6cf692,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0532,rescreen:R-1453,C-6710244371,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0533,rescreen:R-1454,C-671c501faf,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0534,adjudicate:P1-0770,C-6726c15103,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0535,adjudicate:P1-0293,C-67402d65d9,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0536,rescreen:R-1462,C-68289c7e5b,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0537,rescreen:R-1463,C-686c0bbb97,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0538,adjudicate:P1-0669,C-68a63739e5,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0539,rescreen:R-1469,C-68beef6ca3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0540,rescreen:R-1473,C-693cd9c58e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0541,rescreen:R-1475,C-695eb5a422,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0542,adjudicate:P1-0734,C-696ef64faf,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0543,adjudicate:P1-0496,C-699eb9d11e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0544,rescreen:R-1481,C-69a6074c0a,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0545,rescreen:R-1489,C-6a13e79fd3,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0546,rescreen:R-1490,C-6a3c8c8d31,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0547,adjudicate:P1-0859,C-6a99ae43e9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0548,rescreen:R-1498,C-6ab9ce7bf6,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLaMA"
+S-0549,adjudicate:P1-1084,C-6aeb690dfd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0550,rescreen:R-1499,C-6af411d7cb,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0551,rescreen:R-1501,C-6afc8634d2,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0552,rescreen:R-1507,C-6b42f88204,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0553,rescreen:R-1508,C-6b448e4713,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0554,rescreen:R-1511,C-6b877fb193,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0555,rescreen:R-1516,C-6c16858072,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0556,rescreen:R-1518,C-6c55502feb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0557,rescreen:R-1521,C-6c9e063137,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0558,adjudicate:P2-0017,C-6ca02949ef,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0559,rescreen:R-1524,C-6cac140e65,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0560,adjudicate:P1-0621,C-6d0f6ec63d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0561,adjudicate:P1-0299,C-6d173ea79c,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0562,rescreen:R-1530,C-6d1e59be58,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0563,adjudicate:P1-0146,C-6d20e76a06,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0564,adjudicate:P1-0362,C-6d3ac83cce,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0565,rescreen:R-1532,C-6d44bbadad,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0566,rescreen:R-1533,C-6d47a08c0b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0567,rescreen:R-1539,C-6dc072c5fa,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0568,adjudicate:P1-0854,C-6dc6fd0625,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0569,rescreen:R-1540,C-6dcc7d50b7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0570,rescreen:R-1542,C-6dfc489486,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0571,rescreen:R-1543,C-6e10535c1b,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0572,rescreen:R-1545,C-6e600eced4,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0573,rescreen:R-1560,C-6f09075690,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0574,adjudicate:P1-0236,C-6f543569fa,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0575,rescreen:R-1564,C-6f705527a8,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0576,rescreen:R-1565,C-6fa2217aab,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0577,rescreen:R-1566,C-6fac57007f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0578,rescreen:R-1569,C-6fcc6b5fe8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0579,adjudicate:P2-0048,C-6fcdbf2e06,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-0580,rescreen:R-1582,C-717622b9aa,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0581,rescreen:R-1584,C-718ccc8f0f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0582,adjudicate:P1-0240,C-71fb6df9d4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0583,rescreen:R-1586,C-72207f63b5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, RoBERTa"
+S-0584,rescreen:R-1593,C-72e4b542dc,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-0585,rescreen:R-1595,C-72f90e1539,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0586,rescreen:R-1597,C-7332d89f4d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0587,rescreen:R-1601,C-7364afdc3c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-0588,rescreen:R-1605,C-739729ee2b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0589,rescreen:R-1609,C-73df559ec6,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0590,rescreen:R-1610,C-73e5348f92,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0591,rescreen:R-1614,C-741306d0e4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0592,rescreen:R-1619,C-7491d9d47d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0593,rescreen:R-1620,C-749d906791,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0594,rescreen:R-1621,C-74b26422a2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0595,adjudicate:P1-0908,C-74cacdb212,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0596,rescreen:R-1625,C-751a7e23e7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0597,rescreen:R-1626,C-751c602362,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0598,adjudicate:P1-1121,C-75278372e8,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0599,rescreen:R-1629,C-753b8cb329,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0600,rescreen:R-1631,C-75d680d970,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, T5"
+S-0601,rescreen:R-1633,C-75e7fd6fd8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0602,rescreen:R-1635,C-75ee7df0c8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0603,rescreen:R-1638,C-762326cfe5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0604,rescreen:R-1641,C-76819676b7,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0605,rescreen:R-1642,C-76954993ec,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0606,adjudicate:P1-0804,C-76a964db62,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0607,adjudicate:P1-0907,C-76fe5b0aa9,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0608,rescreen:R-1645,C-772e5502bf,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-0609,rescreen:R-1646,C-773b109810,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0610,rescreen:R-1652,C-776ceac352,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0611,rescreen:R-1653,C-778896d192,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0612,rescreen:R-1661,C-783dabce70,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0613,rescreen:R-1662,C-783facabd7,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0614,adjudicate:P1-0881,C-78589e6ace,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0615,adjudicate:P1-1052,C-78d6352600,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0616,rescreen:R-1670,C-78dd0e7178,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0617,rescreen:R-1671,C-78e2aaa5c2,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0618,rescreen:R-1673,C-7968a2fac3,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0619,adjudicate:P1-0107,C-796e00845a,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0620,rescreen:R-1676,C-79a46cfd12,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0621,adjudicate:P1-0978,C-79ff7fadd3,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0622,rescreen:R-1678,C-7a10b17d13,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0623,rescreen:R-1685,C-7a787e2178,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0624,rescreen:R-1686,C-7a85374d71,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0625,rescreen:R-1689,C-7a98399077,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0626,rescreen:R-1691,C-7aedc5b69d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0627,rescreen:R-1692,C-7b0186a112,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0628,rescreen:R-1695,C-7b2974786a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0629,rescreen:R-1696,C-7b5690dfaf,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0630,rescreen:R-1700,C-7b7b48d7f9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, OPT"
+S-0631,rescreen:R-1703,C-7b87e26779,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0632,rescreen:R-1706,C-7ba1f31b06,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0633,rescreen:R-1713,C-7bcac4faca,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0634,rescreen:R-1715,C-7bd75697ce,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0635,rescreen:R-1716,C-7bfe47eed6,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0636,rescreen:R-1718,C-7c0c194e17,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0637,rescreen:R-1727,C-7c8ca1dc78,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0638,rescreen:R-1728,C-7caae32803,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0639,rescreen:R-1732,C-7cd5fb2bd9,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0640,rescreen:R-1735,C-7cfde79c54,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0641,rescreen:R-1736,C-7d21608215,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0642,rescreen:R-1750,C-7e019e0487,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0643,rescreen:R-1751,C-7e2d76979c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0644,rescreen:R-1754,C-7e553ebfdb,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0645,rescreen:R-1756,C-7e720e2cf3,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0646,rescreen:R-1759,C-7e8d4ff362,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0647,rescreen:R-1760,C-7e8f47d826,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0648,rescreen:R-1763,C-7ead5fd1af,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0649,rescreen:R-1771,C-7f498a9c03,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLaMA"
+S-0650,rescreen:R-1773,C-7f5c3a03cb,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLaMA-3"
+S-0651,rescreen:R-1777,C-7fd16ffb68,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0652,rescreen:R-1779,C-7ff5e9bf5b,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0653,rescreen:R-1781,C-8021688eec,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0654,adjudicate:P1-0307,C-8083e27171,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0655,rescreen:R-1787,C-80867b1436,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, RoBERTa"
+S-0656,rescreen:R-1788,C-80a0416273,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0657,adjudicate:P1-0016,C-80dbb00c5d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0658,rescreen:R-1789,C-80e372501e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0659,rescreen:R-1793,C-810fa67df6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, OPT"
+S-0660,rescreen:R-1796,C-813fc4e7d7,Y,Y,No,INCLUDE,,REVIEWED,"new BiLoRA variant, LLaMA"
+S-0661,rescreen:R-1797,C-813fde5d59,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0662,adjudicate:P1-1040,C-8152fe7fc6,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0663,rescreen:R-1800,C-8174aba690,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0664,rescreen:R-1806,C-81ec52418d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0665,rescreen:R-1808,C-81f624c315,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0666,rescreen:R-1811,C-821c3b6319,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0667,rescreen:R-1814,C-8222eae60f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0668,rescreen:R-1819,C-827cb85a7c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0669,rescreen:R-1824,C-82d09d8b2b,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0670,rescreen:R-1825,C-82df2c09a1,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0671,rescreen:R-1829,C-8308d1b8a4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-0672,rescreen:R-1834,C-8340882f43,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0673,rescreen:R-1835,C-8342931950,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0674,rescreen:R-1836,C-8352b376b6,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0675,rescreen:R-1838,C-837dc96e6e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0676,rescreen:R-1842,C-83e1c338ca,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0677,adjudicate:P1-0368,C-8449ed3598,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0678,rescreen:R-1843,C-8472d49891,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0679,adjudicate:P1-0742,C-848d2e8fef,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0680,rescreen:R-1845,C-8498f0a438,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0681,rescreen:R-1850,C-8512aeecf7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0682,rescreen:R-1852,C-85402a7677,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0683,rescreen:R-1853,C-854644128e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0684,rescreen:R-1865,C-85a6524cfc,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0685,rescreen:R-1868,C-85bd581113,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0686,rescreen:R-1870,C-85d052fc4e,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0687,rescreen:R-1872,C-860f3796f0,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0688,rescreen:R-1877,C-86b155980b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0689,rescreen:R-1878,C-86c406e48e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0690,rescreen:R-1889,C-875aa5a0de,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0691,adjudicate:P1-0941,C-875d80d8f4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0692,rescreen:R-1892,C-8776566cec,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0693,rescreen:R-1893,C-87835db1a1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0694,rescreen:R-1895,C-87c87a7ddf,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0695,rescreen:R-1897,C-87fd13e0ec,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0696,rescreen:R-1899,C-880ed064c9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0697,rescreen:R-1900,C-881557c4e4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0698,adjudicate:P1-0183,C-8826f2d697,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0699,rescreen:R-1906,C-88736b18c8,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-0700,rescreen:R-1908,C-889ed236d8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0701,adjudicate:P1-0330,C-88c38023da,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0702,rescreen:R-1915,C-89618bdf93,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0703,rescreen:R-1917,C-8972c6eaee,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0704,rescreen:R-1919,C-8981a473eb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0705,adjudicate:P1-0534,C-89dc917179,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0706,rescreen:R-1923,C-89fcd9e007,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0707,adjudicate:P1-0056,C-8a722ab749,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0708,rescreen:R-1930,C-8a93eeae03,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-0709,rescreen:R-1933,C-8ad31a787d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0710,rescreen:R-1940,C-8bbe91cdbc,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0711,rescreen:R-1945,C-8bef8586c7,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0712,rescreen:R-1949,C-8c5766cbf8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0713,rescreen:R-1950,C-8c7a762368,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0714,rescreen:R-1952,C-8c81f3cb50,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0715,adjudicate:P1-0123,C-8c84ca9c03,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0716,adjudicate:P1-0132,C-8ca55072aa,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0717,rescreen:R-1957,C-8cc1b0989d,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0718,rescreen:R-1958,C-8cc4abd25e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0719,rescreen:R-1960,C-8cdc2e1b63,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0720,rescreen:R-1962,C-8ce013c8af,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0721,rescreen:R-1970,C-8d56f7679d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0722,rescreen:R-1976,C-8db021386d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0723,rescreen:R-1977,C-8db23f72e1,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0724,adjudicate:P1-0400,C-8dbc15119f,Y,Y,No,INCLUDE,,REVIEWED,"new FediLoRA variant, LLM"
+S-0725,rescreen:R-1979,C-8dcf556827,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0726,rescreen:R-1982,C-8dfbfe2598,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0727,rescreen:R-1983,C-8dfc16e409,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0728,rescreen:R-1984,C-8dfdfd1409,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0729,rescreen:R-1985,C-8e17140f73,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0730,rescreen:R-1991,C-8e6b168d22,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0731,rescreen:R-1992,C-8e78abc644,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0732,adjudicate:P1-0419,C-8ecc070296,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0733,rescreen:R-1995,C-8ee5ad42d7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0734,rescreen:R-1996,C-8f00e2d563,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0735,adjudicate:P1-0914,C-8f5754b5e2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0736,rescreen:R-2001,C-8f5d15d841,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0737,rescreen:R-2002,C-8f6fe07720,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0738,adjudicate:P2-0393,C-8f9833f0e8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0739,rescreen:R-2013,C-9062c18c9f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0740,adjudicate:P1-0451,C-906aa1c59e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0741,rescreen:R-2016,C-90ad284776,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-3"
+S-0742,rescreen:R-2017,C-90c3961b6a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0743,rescreen:R-2019,C-90eea24dac,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0744,rescreen:R-2025,C-914e3605cf,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0745,adjudicate:P1-0325,C-914f6cae0e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0746,rescreen:R-2026,C-915a74d455,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0747,rescreen:R-2029,C-916a3bf244,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0748,rescreen:R-2033,C-91ab684ab3,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0749,rescreen:R-2041,C-92358192ca,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0750,rescreen:R-2042,C-92387ab79b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0751,rescreen:R-2044,C-9247016470,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0752,adjudicate:P1-0850,C-927a588d06,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0753,rescreen:R-2046,C-9286776393,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0754,rescreen:R-2047,C-929337a4e2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0755,rescreen:R-2049,C-92b30fc381,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0756,rescreen:R-2051,C-92cf2bf61a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0757,rescreen:R-2052,C-92d060fb6c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0758,rescreen:R-2055,C-92e461fdc8,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0759,rescreen:R-2069,C-93f23060c0,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0760,rescreen:R-2070,C-93f5674e79,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0761,rescreen:R-2071,C-9408e674fd,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0762,rescreen:R-2073,C-942117f941,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0763,rescreen:R-2077,C-9440c7942f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0764,rescreen:R-2080,C-9487eadce9,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLaMA-2"
+S-0765,rescreen:R-2081,C-948ee87bcf,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0766,rescreen:R-2082,C-949ad82751,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0767,adjudicate:P1-0910,C-94a0ba418b,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0768,adjudicate:P1-1057,C-94be623c96,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0769,rescreen:R-2083,C-94cc6758c8,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0770,rescreen:R-2084,C-94dfc863f1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0771,rescreen:R-2086,C-94f3599170,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0772,rescreen:R-2088,C-9532c398af,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0773,rescreen:R-2091,C-954f33cf5a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0774,rescreen:R-2095,C-957565f032,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0775,rescreen:R-2098,C-9598c71630,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0776,rescreen:R-2100,C-95a9132110,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0777,rescreen:R-2102,C-95b23436e4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0778,adjudicate:P1-0292,C-95b4a86e01,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0779,adjudicate:P1-0581,C-95d661773a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0780,rescreen:R-2104,C-95df65557d,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLaMA"
+S-0781,adjudicate:P1-0497,C-95e6b5e73c,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0782,rescreen:R-2106,C-95f30356ef,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0783,rescreen:R-2111,C-9620eb2ce8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0784,adjudicate:P1-0984,C-963829c403,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0785,rescreen:R-2113,C-963832b582,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Mamba"
+S-0786,rescreen:R-2115,C-9668199811,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0787,rescreen:R-2120,C-96c6a8e527,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0788,rescreen:R-2121,C-96d06ada83,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0789,rescreen:R-2123,C-9710ee336c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0790,rescreen:R-2125,C-97410f1eed,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0791,adjudicate:P1-0354,C-9790f6e39f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-0792,rescreen:R-2130,C-97ac86c99e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0793,rescreen:R-2133,C-97cb4fa95f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0794,rescreen:R-2134,C-97d824ac9a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, T5"
+S-0795,rescreen:R-2135,C-97dae29887,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0796,rescreen:R-2136,C-97dd3d8268,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0797,rescreen:R-2141,C-981ed70e8a,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0798,rescreen:R-2143,C-982f922a02,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-0799,adjudicate:P1-1050,C-98a1b1be16,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0800,rescreen:R-2151,C-98ae2977b2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0801,rescreen:R-2152,C-98bfb1e52b,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0802,rescreen:R-2154,C-98e0b09451,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0803,rescreen:R-2159,C-991ae2183b,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0804,rescreen:R-2163,C-996cd7e0ca,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0805,rescreen:R-2165,C-998e7a3036,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0806,rescreen:R-2166,C-99945d6236,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, Mamba"
+S-0807,rescreen:R-2170,C-99c98b9285,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0808,rescreen:R-2171,C-99d63097f8,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0809,adjudicate:P1-0839,C-9a5e4e4f4e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0810,adjudicate:P1-0588,C-9a7a3072be,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0811,adjudicate:P1-0828,C-9a92c023ad,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0812,rescreen:R-2175,C-9a9b2ea49f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0813,rescreen:R-2179,C-9ae7d21f93,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0814,adjudicate:P1-0622,C-9b4f6ba80f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0815,rescreen:R-2187,C-9b5c29dacc,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0816,rescreen:R-2189,C-9b8186a873,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-0817,rescreen:R-2190,C-9b87790d07,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0818,rescreen:R-2191,C-9bae46d05b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0819,rescreen:R-2192,C-9bb7a1ab1a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0820,rescreen:R-2193,C-9bbece471c,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0821,rescreen:R-2195,C-9bca6277a6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0822,rescreen:R-2203,C-9c3e39a4d4,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0823,rescreen:R-2204,C-9c416d2ba2,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0824,adjudicate:P1-0852,C-9c4774d6da,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0825,rescreen:R-2205,C-9c5033715e,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0826,rescreen:R-2206,C-9c5f7a6bc0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0827,rescreen:R-2209,C-9c7bd2eb6a,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, Mamba"
+S-0828,rescreen:R-2212,C-9cc8975759,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0829,rescreen:R-2215,C-9cf57ec049,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Qwen"
+S-0830,rescreen:R-2219,C-9d3a1399af,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0831,rescreen:R-2220,C-9d3c8da9e1,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0832,rescreen:R-2228,C-9df080b6ed,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0833,rescreen:R-2230,C-9e2599f488,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0834,adjudicate:P1-0562,C-9e659d516b,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0835,adjudicate:P1-0893,C-9ee00ab7b0,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0836,rescreen:R-2240,C-9ef1196144,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0837,rescreen:R-2257,C-9fd5784c2d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0838,rescreen:R-2258,C-9ff9321f10,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0839,adjudicate:P1-0447,C-a05276092b,Y,Y,No,INCLUDE,,REVIEWED,"new SemiLoRA variant, LLM"
+S-0840,adjudicate:P1-0796,C-a06955d31a,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0841,rescreen:R-2265,C-a0a483fd21,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0842,rescreen:R-2266,C-a0a6a41ee0,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0843,adjudicate:P1-0772,C-a0b916e76c,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0844,adjudicate:P1-0110,C-a0f4399d5b,Y,Y,No,INCLUDE,,REVIEWED,"new MetaLoRA variant, LLM"
+S-0845,rescreen:R-2271,C-a10e0a9ed3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0846,rescreen:R-2277,C-a15ba9ef84,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0847,rescreen:R-2278,C-a15c673762,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0848,rescreen:R-2280,C-a166cdb901,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0849,rescreen:R-2282,C-a177f92931,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0850,rescreen:R-2284,C-a1904776aa,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0851,rescreen:R-2285,C-a19f61936f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0852,rescreen:R-2286,C-a1a0a94875,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0853,rescreen:R-2294,C-a224968376,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0854,adjudicate:P1-0659,C-a268201765,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0855,adjudicate:P1-0601,C-a29c4ec081,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0856,rescreen:R-2305,C-a349774f91,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0857,rescreen:R-2310,C-a3bacde14c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0858,rescreen:R-2312,C-a3dae19065,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0859,rescreen:R-2313,C-a3dc4c149c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0860,rescreen:R-2317,C-a40883a73a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0861,rescreen:R-2321,C-a43c0a7518,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0862,rescreen:R-2323,C-a4a864bedb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0863,rescreen:R-2328,C-a5069a907f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0864,rescreen:R-2329,C-a50a45e556,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0865,rescreen:R-2336,C-a58a87b782,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0866,adjudicate:P1-0753,C-a5ceb05a7c,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0867,rescreen:R-2341,C-a5f2722baa,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, OPT"
+S-0868,adjudicate:P2-0410,C-a617b11287,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0869,adjudicate:P2-0666,C-a63a184e1e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0870,rescreen:R-2344,C-a63a82c363,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0871,rescreen:R-2347,C-a6827f46d8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0872,adjudicate:P1-0359,C-a6dcfabd67,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0873,adjudicate:P1-0698,C-a6dd1fcc17,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0874,rescreen:R-2354,C-a6e825ede1,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0875,rescreen:R-2355,C-a6f2d17b2e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0876,rescreen:R-2356,C-a702be921c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0877,rescreen:R-2361,C-a74cdf3ac5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0878,rescreen:R-2362,C-a7501be1d3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0879,rescreen:R-2363,C-a76855dd24,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0880,rescreen:R-2365,C-a79a4311c1,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0881,rescreen:R-2367,C-a7b5b1d36a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0882,rescreen:R-2372,C-a8508aebb6,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0883,rescreen:R-2378,C-a8d7494412,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLaMA"
+S-0884,rescreen:R-2379,C-a8facf9232,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0885,rescreen:R-2380,C-a907a29caf,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0886,rescreen:R-2386,C-a9408bdf2f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0887,adjudicate:P1-0927,C-a945517151,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0888,adjudicate:P1-0554,C-a9aaa3ee76,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0889,rescreen:R-2392,C-a9cb4efd8f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0890,rescreen:R-2395,C-aa037b2fa3,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0891,rescreen:R-2403,C-aa984a7329,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0892,rescreen:R-2405,C-aaa5f585b6,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0893,rescreen:R-2406,C-aaa9f5c3d7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0894,rescreen:R-2407,C-aac04db8b9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0895,adjudicate:P1-0817,C-ab1765ee8e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0896,rescreen:R-2420,C-ab65ed065d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0897,rescreen:R-2421,C-ab7293a905,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, T5"
+S-0898,adjudicate:P1-1003,C-abb5ec2761,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0899,rescreen:R-2425,C-ac2c31a8cd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0900,rescreen:R-2428,C-ac7251f36c,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, Mamba"
+S-0901,rescreen:R-2430,C-ac8f6d68df,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0902,rescreen:R-2435,C-acc9b9d573,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0903,adjudicate:P1-0897,C-acf5d86428,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0904,rescreen:R-2438,C-ad116d1929,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0905,rescreen:R-2448,C-ad7ae425e4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0906,rescreen:R-2451,C-ad98c6eed4,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0907,adjudicate:P1-0634,C-adaa207c34,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0908,rescreen:R-2455,C-adb2a0b37a,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-0909,rescreen:R-2460,C-ae02e5d3b8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0910,rescreen:R-2461,C-ae3aebf84b,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0911,rescreen:R-2462,C-ae5140d7c4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0912,rescreen:R-2464,C-ae5679dde5,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0913,rescreen:R-2465,C-ae5d037312,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0914,rescreen:R-2466,C-ae5e22463d,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0915,rescreen:R-2469,C-ae8247c22b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0916,rescreen:R-2471,C-ae8e316be5,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0917,adjudicate:P1-0973,C-ae9f515f19,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0918,rescreen:R-2472,C-aecbd62f42,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0919,adjudicate:P1-0206,C-aef5c012fc,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0920,rescreen:R-2476,C-af1ecba303,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-3"
+S-0921,rescreen:R-2479,C-af48e25c7e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0922,rescreen:R-2480,C-af517a816e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0923,adjudicate:P1-0268,C-af5e354715,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0924,rescreen:R-2482,C-af71ba9e25,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0925,rescreen:R-2483,C-afc12758cd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0926,rescreen:R-2485,C-afcbf844bf,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0927,rescreen:R-2491,C-b098c6e12f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0928,rescreen:R-2492,C-b09b3160af,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0929,rescreen:R-2502,C-b0f816db24,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0930,rescreen:R-2503,C-b106671041,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0931,adjudicate:P1-0678,C-b1096f98ac,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0932,rescreen:R-2508,C-b16b557028,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0933,rescreen:R-2509,C-b16e396259,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0934,rescreen:R-2511,C-b1814df98d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0935,rescreen:R-2513,C-b1a6d154e5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0936,rescreen:R-2515,C-b1c7c40343,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0937,rescreen:R-2517,C-b1efe3513b,Y,Y,No,INCLUDE,,REVIEWED,"new DQuant variant, LLM"
+S-0938,rescreen:R-2520,C-b21623d2c9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0939,rescreen:R-2522,C-b22813b7f4,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0940,rescreen:R-2525,C-b25e406170,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0941,rescreen:R-2526,C-b2658d8eba,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0942,adjudicate:P1-0483,C-b2daedaec8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0943,rescreen:R-2535,C-b2f7fd3016,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0944,rescreen:R-2536,C-b30614c0d6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0945,rescreen:R-2538,C-b3194c3b2f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0946,rescreen:R-2539,C-b323b72408,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0947,rescreen:R-2540,C-b32aee2acd,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0948,rescreen:R-2541,C-b352bb6e6a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0949,rescreen:R-2543,C-b3599d434a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0950,adjudicate:P1-1106,C-b35a7fd3a7,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0951,rescreen:R-2545,C-b3d3ac26b1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0952,adjudicate:P1-0366,C-b410a4dfaf,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-0953,rescreen:R-2550,C-b41abbb9a5,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-0954,rescreen:R-2551,C-b41d5351b7,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0955,adjudicate:P1-1119,C-b4445d293e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0956,rescreen:R-2557,C-b46f218c48,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0957,rescreen:R-2565,C-b50d5c36f4,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0958,rescreen:R-2576,C-b60e8f7dbf,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0959,rescreen:R-2577,C-b611052bf0,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0960,rescreen:R-2582,C-b64bb87e0a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0961,rescreen:R-2590,C-b6d3d2473d,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0962,rescreen:R-2593,C-b6eb99bb5e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0963,rescreen:R-2595,C-b716ff7976,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0964,rescreen:R-2598,C-b75ac24ed7,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0965,adjudicate:P1-1032,C-b7adb836a6,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0966,rescreen:R-2600,C-b7c0e95a9f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0967,rescreen:R-2605,C-b820862173,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0968,rescreen:R-2606,C-b8239c54e9,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0969,rescreen:R-2608,C-b8409dd985,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0970,rescreen:R-2609,C-b8490a344e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-0971,rescreen:R-2614,C-b87e670f45,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0972,adjudicate:P1-1029,C-b8942d7f83,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-0973,rescreen:R-2617,C-b8a5b61502,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0974,rescreen:R-2621,C-b915590007,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0975,rescreen:R-2625,C-b9662e761c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0976,rescreen:R-2630,C-ba116ee4c0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0977,rescreen:R-2632,C-ba20620dfb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0978,rescreen:R-2634,C-ba5bbe418e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0979,rescreen:R-2636,C-ba69d965aa,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0980,rescreen:R-2640,C-baaef0a616,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0981,rescreen:R-2643,C-baf243a753,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, Mamba"
+S-0982,rescreen:R-2649,C-bb4d72918c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-0983,rescreen:R-2652,C-bb67c240a3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-0984,rescreen:R-2661,C-bc577d291c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0985,rescreen:R-2663,C-bc71683d7a,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0986,rescreen:R-2665,C-bca7af1efe,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0987,rescreen:R-2666,C-bce9bdbcc5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0988,adjudicate:P1-0157,C-bd1bf102d2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0989,rescreen:R-2668,C-bd2b5a6534,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-0990,rescreen:R-2669,C-bd30781639,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-0991,rescreen:R-2671,C-bd4e8b590e,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0992,adjudicate:P1-1077,C-bdbdc3b205,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0993,rescreen:R-2680,C-bdeab2f93a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0994,adjudicate:P1-0089,C-bdfd1c9e5c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-0995,rescreen:R-2685,C-be3d5eb849,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0996,rescreen:R-2689,C-bea3dd7a7f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-0997,rescreen:R-2692,C-bed0327a32,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-0998,adjudicate:P1-0769,C-bf49c2c989,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-0999,rescreen:R-2698,C-bf64212a78,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1000,rescreen:R-2700,C-bf68ccd574,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1001,rescreen:R-2707,C-bfc76a8a78,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1002,rescreen:R-2708,C-bfdc8a8ff1,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1003,rescreen:R-2709,C-bfdd58c374,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1004,rescreen:R-2710,C-bfddef5563,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1005,rescreen:R-2712,C-bfe71ce056,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1006,rescreen:R-2716,C-c09910bc82,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1007,rescreen:R-2721,C-c1194a06b4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1008,rescreen:R-2723,C-c139f1bc18,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1009,rescreen:R-2733,C-c1b7c5327e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1010,rescreen:R-2739,C-c1eba8ed18,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1011,adjudicate:P1-0298,C-c24e969561,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1012,rescreen:R-2753,C-c2d8006e72,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1013,rescreen:R-2755,C-c2f225538f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-1014,rescreen:R-2756,C-c2f44db5ef,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1015,rescreen:R-2758,C-c31ae8ae99,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1016,adjudicate:P1-0921,C-c34fd5ee7f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1017,rescreen:R-2768,C-c43df9004e,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1018,adjudicate:P1-0869,C-c4a9c54255,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1019,rescreen:R-2772,C-c4d2d2d510,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1020,rescreen:R-2774,C-c4ee3efc70,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-1021,rescreen:R-2777,C-c4f8af1be1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1022,rescreen:R-2780,C-c5282f6617,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-1023,rescreen:R-2783,C-c53e1e6918,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1024,rescreen:R-2784,C-c54820ff88,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1025,rescreen:R-2786,C-c5552ac015,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1026,rescreen:R-2792,C-c5a6866315,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1027,rescreen:R-2794,C-c5bdd89ca3,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1028,adjudicate:P1-0886,C-c5cbdf8d4e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1029,rescreen:R-2801,C-c682ace814,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1030,rescreen:R-2802,C-c699d12bc4,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1031,rescreen:R-2806,C-c6bb04f3ed,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-1032,rescreen:R-2814,C-c7392ddc23,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1033,rescreen:R-2815,C-c7593e3d4c,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1034,adjudicate:P1-0301,C-c75c9af2b0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1035,rescreen:R-2817,C-c76d2b7b19,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1036,rescreen:R-2818,C-c77f5f10fd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1037,rescreen:R-2819,C-c788bbe63d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1038,rescreen:R-2821,C-c7abe16a8b,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-1039,rescreen:R-2828,C-c7f6abdad0,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1040,adjudicate:P2-0489,C-c82f7cf812,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Mamba"
+S-1041,rescreen:R-2831,C-c88bf36e68,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1042,adjudicate:P1-1073,C-c89df8380f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1043,rescreen:R-2835,C-c8d0e3f59a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1044,rescreen:R-2836,C-c8d782688c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-1045,rescreen:R-2837,C-c8f96667c5,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1046,rescreen:R-2838,C-c90b615710,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1047,rescreen:R-2839,C-c93675c106,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1048,adjudicate:P1-0435,C-c94011f0d3,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1049,rescreen:R-2841,C-c9456a7852,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1050,rescreen:R-2842,C-c94f43836e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1051,rescreen:R-2844,C-c9756c1026,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1052,rescreen:R-2846,C-c9c0222e7c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1053,adjudicate:P1-0822,C-c9c467a5f7,Y,Y,No,INCLUDE,,REVIEWED,"QLoRA variant, BERT"
+S-1054,rescreen:R-2850,C-c9d20bc0f6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1055,rescreen:R-2852,C-c9dde67522,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1056,rescreen:R-2855,C-ca29f36fd0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1057,rescreen:R-2860,C-ca4c6d47c5,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1058,rescreen:R-2861,C-ca50f1ec0c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1059,rescreen:R-2863,C-ca76c66d42,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1060,adjudicate:P1-0395,C-caa5f575f2,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1061,rescreen:R-2866,C-cab47359be,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1062,rescreen:R-2871,C-cae876ddce,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1063,rescreen:R-2874,C-cb37fc10b4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1064,rescreen:R-2875,C-cb53aa914d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1065,adjudicate:P1-0042,C-cb78962dea,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1066,rescreen:R-2878,C-cb93446ab5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1067,rescreen:R-2879,C-cba8bbbb99,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1068,rescreen:R-2882,C-cbdb1fa438,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1069,rescreen:R-2885,C-cbf75ede48,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1070,rescreen:R-2888,C-cc1c164d13,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1071,rescreen:R-2893,C-cc854d9bc9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1072,rescreen:R-2895,C-cc9aa88b24,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1073,rescreen:R-2897,C-ccb964707e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1074,rescreen:R-2898,C-cccd22385e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1075,adjudicate:P1-0047,C-ccd0f6cd98,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1076,rescreen:R-2900,C-ccfdbb2597,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1077,rescreen:R-2901,C-cd199c258d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1078,rescreen:R-2903,C-cd371a44fc,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1079,rescreen:R-2904,C-cd57449998,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1080,rescreen:R-2911,C-cda9c08647,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1081,rescreen:R-2912,C-cdb4c1858f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1082,rescreen:R-2917,C-cdcb325638,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1083,rescreen:R-2918,C-cdf18af5a4,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1084,rescreen:R-2920,C-ce018216a8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1085,adjudicate:P1-1062,C-ce09051a36,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1086,rescreen:R-2921,C-ce168fb30f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1087,rescreen:R-2922,C-ce20c23924,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1088,rescreen:R-2923,C-ce24f81067,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1089,rescreen:R-2924,C-ce283f5ed2,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1090,rescreen:R-2928,C-ce4d11d5ce,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1091,rescreen:R-2932,C-ce8edd5b58,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1092,rescreen:R-2937,C-cedd38db87,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-1093,rescreen:R-2942,C-cf13a2cb2a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1094,rescreen:R-2943,C-cf1ce40fe0,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1095,rescreen:R-2948,C-cf7ff09067,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1096,rescreen:R-2949,C-cf88079a6e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1097,rescreen:R-2950,C-cfad2e1332,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1098,adjudicate:P1-1075,C-d00a13aea2,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1099,rescreen:R-2955,C-d0195f8c17,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1100,adjudicate:P1-0536,C-d01a856abf,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1101,rescreen:R-2956,C-d0209a69ea,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1102,rescreen:R-2959,C-d02fcd516b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1103,rescreen:R-2960,C-d03539b534,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Mistral"
+S-1104,rescreen:R-2966,C-d09de0b556,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1105,rescreen:R-2968,C-d0b4247340,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1106,rescreen:R-2976,C-d1393a41ab,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1107,rescreen:R-2979,C-d15253fbf1,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1108,adjudicate:P1-0522,C-d163fb95c0,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1109,rescreen:R-2980,C-d17ff4b806,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1110,rescreen:R-2981,C-d18ba78ba3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1111,rescreen:R-2982,C-d18d07f885,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1112,rescreen:R-2985,C-d1b5df17b4,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-1113,rescreen:R-2987,C-d1be4e6165,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-3"
+S-1114,rescreen:R-2990,C-d20fd17d10,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1115,rescreen:R-2991,C-d228a71b42,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1116,rescreen:R-2994,C-d243c662b1,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1117,adjudicate:P1-0861,C-d257701715,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1118,rescreen:R-2995,C-d27822e2b3,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-1119,rescreen:R-2998,C-d2a8389930,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1120,rescreen:R-2999,C-d2ad58de1f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1121,rescreen:R-3002,C-d2c9880b90,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1122,rescreen:R-3004,C-d2ceee6441,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1123,adjudicate:P1-0774,C-d354d07666,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1124,rescreen:R-3014,C-d3b765c029,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1125,adjudicate:P1-0247,C-d3c223a47c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1126,rescreen:R-3018,C-d3d354c189,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1127,rescreen:R-3024,C-d45e30b9ea,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1128,rescreen:R-3030,C-d48816a702,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1129,rescreen:R-3031,C-d4945b641b,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1130,rescreen:R-3032,C-d496e75081,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1131,rescreen:R-3034,C-d4bacc501c,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1132,rescreen:R-3036,C-d501d2b8f6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1133,rescreen:R-3039,C-d52bc2ef7d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1134,rescreen:R-3041,C-d54362b36f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1135,rescreen:R-3043,C-d57c254893,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1136,rescreen:R-3045,C-d58a9d8559,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1137,adjudicate:P1-1079,C-d5a5b48ada,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1138,rescreen:R-3047,C-d5b78aee2c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1139,rescreen:R-3048,C-d5c5510562,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1140,rescreen:R-3050,C-d5c7f9386b,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1141,adjudicate:P1-0959,C-d5cefa4534,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1142,rescreen:R-3052,C-d5f7d0a20d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1143,rescreen:R-3053,C-d60e24b8e0,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-1144,rescreen:R-3054,C-d618fa7670,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1145,rescreen:R-3056,C-d65b949151,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1146,rescreen:R-3057,C-d666dd9993,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1147,adjudicate:P1-0529,C-d66bdfe000,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1148,adjudicate:P1-0557,C-d68a7e8b0d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1149,rescreen:R-3059,C-d68b0e4d12,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1150,rescreen:R-3060,C-d68e465817,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1151,rescreen:R-3067,C-d74db4f63a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1152,rescreen:R-3068,C-d7952992ff,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1153,rescreen:R-3069,C-d7a002b0b4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1154,rescreen:R-3070,C-d7a92caea2,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1155,adjudicate:P1-0944,C-d7cbf0f30f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1156,rescreen:R-3075,C-d7cdb6b9bc,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1157,adjudicate:P1-0650,C-d7ebda0eb8,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1158,rescreen:R-3081,C-d8397c4cb0,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1159,rescreen:R-3082,C-d875e5c3d5,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1160,rescreen:R-3085,C-d894a2b791,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1161,rescreen:R-3094,C-d93a23fa4e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1162,rescreen:R-3095,C-d95ad10e19,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1163,rescreen:R-3096,C-d967679e7d,N,Y,Inference only,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1164,rescreen:R-3098,C-d971e5af33,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1165,rescreen:R-3100,C-d98386fca7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1166,adjudicate:P1-0934,C-da4d0667c2,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1167,rescreen:R-3107,C-da5d7ed3cb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1168,rescreen:R-3115,C-dae6e56e64,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1169,rescreen:R-3120,C-db3dcd9e25,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Mamba"
+S-1170,rescreen:R-3123,C-db55d6cd0d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1171,rescreen:R-3124,C-db6307e0af,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-1172,rescreen:R-3125,C-db631aaf41,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1173,rescreen:R-3126,C-db741f701e,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-1174,rescreen:R-3128,C-db7fdc7a51,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1175,rescreen:R-3129,C-db87eaec53,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1176,rescreen:R-3130,C-db9cd16cd7,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-1177,rescreen:R-3136,C-dc4d8b0ecc,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1178,rescreen:R-3142,C-dcc8e77406,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1179,rescreen:R-3145,C-dd2189b8fe,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1180,rescreen:R-3147,C-dd3620c9b4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1181,rescreen:R-3148,C-dd3a9b78e0,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1182,rescreen:R-3152,C-dd94e64c32,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1183,rescreen:R-3158,C-de0d792b2c,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLM"
+S-1184,rescreen:R-3164,C-de282adbda,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1185,rescreen:R-3169,C-de89e7d0c3,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1186,rescreen:R-3170,C-dec04ace2b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1187,rescreen:R-3171,C-decacf5f88,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1188,rescreen:R-3175,C-df10786985,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1189,rescreen:R-3177,C-df51223018,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, Gemma"
+S-1190,rescreen:R-3178,C-df581895c8,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1191,rescreen:R-3187,C-dfcd444da7,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1192,rescreen:R-3189,C-e00c2d97b7,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1193,rescreen:R-3190,C-e00e8ddda6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1194,rescreen:R-3191,C-e019d2fceb,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-1195,rescreen:R-3200,C-e070f6069f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1196,rescreen:R-3202,C-e08fa52f07,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1197,rescreen:R-3204,C-e0bc19b192,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1198,adjudicate:P1-0372,C-e0f6b25b2a,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1199,rescreen:R-3207,C-e12fedadc6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1200,rescreen:R-3213,C-e1db34ed50,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1201,rescreen:R-3215,C-e1fccf2424,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1202,rescreen:R-3221,C-e27cdcf3ec,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1203,rescreen:R-3225,C-e2c941b067,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1204,rescreen:R-3229,C-e3389916c1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1205,rescreen:R-3240,C-e43033ccd4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1206,rescreen:R-3242,C-e44c293539,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1207,adjudicate:P1-1010,C-e4cb657689,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1208,adjudicate:P1-0651,C-e4e0d3324b,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-1209,rescreen:R-3245,C-e4ef1711f5,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1210,rescreen:R-3249,C-e52783ea04,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1211,adjudicate:P1-0792,C-e5507cd4d1,Y,Y,No,INCLUDE,,REVIEWED,"new LoRA variant, LLM"
+S-1212,adjudicate:P1-0197,C-e5628decc9,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1213,rescreen:R-3255,C-e5796b5369,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1214,rescreen:R-3256,C-e57c792646,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1215,rescreen:R-3257,C-e57f562613,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1216,rescreen:R-3258,C-e58666e197,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1217,rescreen:R-3260,C-e5a908e041,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1218,rescreen:R-3261,C-e5b3c4cc69,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLaMA"
+S-1219,rescreen:R-3264,C-e5ce109996,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1220,rescreen:R-3267,C-e5f09d613b,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1221,rescreen:R-3271,C-e6409b9500,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1222,adjudicate:P1-0525,C-e68673bfa5,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1223,rescreen:R-3274,C-e6cd796078,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1224,rescreen:R-3276,C-e6e7c39296,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1225,rescreen:R-3279,C-e6f890a0e1,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1226,rescreen:R-3281,C-e74c9e4d61,N,N,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1227,rescreen:R-3282,C-e78b04ed24,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1228,adjudicate:P1-0568,C-e7a0de95bb,Y,Y,No,INCLUDE,,REVIEWED,"QLoRA variant, LLM"
+S-1229,rescreen:R-3284,C-e7e34afbd7,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1230,adjudicate:P1-0113,C-e8065e3eb1,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1231,rescreen:R-3286,C-e80cf054ee,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1232,rescreen:R-3287,C-e8118ed474,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1233,rescreen:R-3288,C-e8365212c8,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1234,adjudicate:P1-0168,C-e87791ed8f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1235,rescreen:R-3289,C-e8a98dab7c,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1236,rescreen:R-3290,C-e8c5bc090a,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-1237,adjudicate:P1-0507,C-e8cd4935b4,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1238,rescreen:R-3291,C-e8dc07f86b,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1239,rescreen:R-3292,C-e8de275710,Y,Y,Pre-training only,EXCLUDE,E1,REVIEWED,Pre-training optimization only
+S-1240,rescreen:R-3295,C-e92448b8d6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1241,rescreen:R-3297,C-e93ed06f90,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1242,rescreen:R-3298,C-e9438f1b4a,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1243,rescreen:R-3299,C-e967690706,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1244,rescreen:R-3303,C-e99184df20,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1245,rescreen:R-3308,C-e9fe3b26ca,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1246,rescreen:R-3312,C-ea1783126f,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1247,rescreen:R-3313,C-ea1c486b29,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1248,rescreen:R-3316,C-ea59cfdced,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1249,rescreen:R-3318,C-ea6d5f277d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1250,rescreen:R-3322,C-eac61c21db,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1251,rescreen:R-3323,C-eafff438e6,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1252,rescreen:R-3327,C-ebae374938,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1253,rescreen:R-3342,C-ec3dd2513b,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-3"
+S-1254,rescreen:R-3343,C-ec44cef917,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1255,rescreen:R-3353,C-ed3cbdf93d,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1256,adjudicate:P1-0990,C-ed9f27be3f,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1257,rescreen:R-3361,C-edb8546afc,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1258,adjudicate:P1-1071,C-eddabeec1e,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1259,rescreen:R-3363,C-ee03451997,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1260,rescreen:R-3381,C-ef6f95314d,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-3"
+S-1261,adjudicate:P1-0976,C-ef8552ab8f,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1262,rescreen:R-3384,C-ef8d4961ac,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1263,rescreen:R-3385,C-efcc34b0da,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1264,rescreen:R-3394,C-f06fd61e51,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1265,rescreen:R-3397,C-f0af94c3b3,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1266,rescreen:R-3398,C-f0b0770a47,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1267,rescreen:R-3400,C-f0befc502a,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1268,adjudicate:P1-0020,C-f0fa7acca2,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1269,rescreen:R-3407,C-f1774c5cc9,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1270,rescreen:R-3410,C-f1c2b19180,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1271,rescreen:R-3411,C-f1d62457d5,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1272,rescreen:R-3412,C-f1f50584c6,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1273,rescreen:R-3413,C-f254dcee65,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1274,adjudicate:P1-0389,C-f26c39b3f4,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1275,rescreen:R-3422,C-f3004aafa4,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1276,rescreen:R-3424,C-f323cdcb73,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1277,rescreen:R-3427,C-f33db21458,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1278,rescreen:R-3428,C-f34569a1a2,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1279,rescreen:R-3432,C-f36ba8b4a6,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1280,rescreen:R-3436,C-f3c4b5893f,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-1281,rescreen:R-3439,C-f40b3b9ae7,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1282,adjudicate:P1-0377,C-f44294dd61,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1283,rescreen:R-3449,C-f4d1ad4ba8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1284,rescreen:R-3450,C-f4de9ce7ce,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1285,rescreen:R-3451,C-f4fc113320,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1286,rescreen:R-3453,C-f508d7a234,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1287,rescreen:R-3455,C-f52c9660a7,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1288,rescreen:R-3456,C-f548d0dd01,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1289,rescreen:R-3464,C-f5a6ee45cb,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1290,rescreen:R-3467,C-f62ce58c04,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1291,rescreen:R-3468,C-f62e0e6354,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA-2"
+S-1292,rescreen:R-3469,C-f64479fb0a,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1293,rescreen:R-3472,C-f673ab2383,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1294,adjudicate:P1-0287,C-f683dd300d,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1295,rescreen:R-3477,C-f6d618b33e,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1296,rescreen:R-3478,C-f6de28406d,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1297,rescreen:R-3488,C-f7a2383109,Y,Y,No,INCLUDE,,REVIEWED,"quantization method, LLM"
+S-1298,rescreen:R-3491,C-f81c1a0a1a,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1299,rescreen:R-3492,C-f820cb7e22,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1300,rescreen:R-3495,C-f84dd68c89,Y,Y,No,INCLUDE,,REVIEWED,"pruning method, LLaMA"
+S-1301,rescreen:R-3503,C-f8bec6311f,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1302,rescreen:R-3504,C-f8d289a61e,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1303,rescreen:R-3505,C-f8e64eeec7,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1304,rescreen:R-3508,C-f90c8bcfde,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLaMA-2"
+S-1305,adjudicate:P1-0942,C-f963af3c33,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-1306,rescreen:R-3523,C-f9f8a6796d,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1307,rescreen:R-3528,C-fa6b6d6882,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1308,rescreen:R-3529,C-fa7300a9dd,N,Y,No,EXCLUDE,I2,REVIEWED,Applied to non-language domain
+S-1309,rescreen:R-3530,C-fa9b8e9341,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1310,adjudicate:P1-0971,C-faa0917c56,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1311,rescreen:R-3534,C-fac3c01f45,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT-4"
+S-1312,rescreen:R-3537,C-fb06a9bf79,Y,Y,No,INCLUDE,,REVIEWED,"LoRA variant, LLM"
+S-1313,rescreen:R-3548,C-fc0378253f,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1314,rescreen:R-3549,C-fc09bfc440,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLaMA"
+S-1315,adjudicate:P1-1038,C-fc1d776725,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1316,rescreen:R-3552,C-fc5cdd1260,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, BERT"
+S-1317,rescreen:R-3555,C-fcb17cde03,Y,N,Inference only,EXCLUDE,I1,REVIEWED,Inference optimization only
+S-1318,rescreen:R-3558,C-fd28356ade,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1319,rescreen:R-3563,C-fd7fd02306,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1320,rescreen:R-3566,C-fdb7e82f46,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1321,adjudicate:P1-0072,C-fdc0285163,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1322,rescreen:R-3567,C-fdc4e8fda8,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1323,rescreen:R-3571,C-fe448ec9b7,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1324,adjudicate:P1-0340,C-fe4a4d2a47,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1325,rescreen:R-3572,C-fe5e372ef2,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1326,rescreen:R-3573,C-fe640d5700,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1327,rescreen:R-3574,C-fe660d2dfd,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, GPT"
+S-1328,rescreen:R-3577,C-fe92736785,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1329,rescreen:R-3578,C-fe97cf5ad7,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1330,rescreen:R-3580,C-fec9fd6c4c,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
+S-1331,rescreen:R-3584,C-ff14891ade,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1332,rescreen:R-3585,C-ff3ed550e3,Y,Y,No,INCLUDE,,REVIEWED,"fine-tuning method, LLM"
+S-1333,adjudicate:P1-0048,C-ff4642ae23,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1334,adjudicate:P1-0918,C-ff66d85bdd,Y,Y,Inference only,EXCLUDE,E2,REVIEWED,Inference optimization only
+S-1335,adjudicate:P1-0517,C-ff839004fd,Y,Y,No,INCLUDE,,REVIEWED,"PEFT method, LLM"
+S-1336,rescreen:R-3590,C-ffa64a0137,Y,Y,No,INCLUDE,,REVIEWED,"Adapter method, LLM"
+S-1337,rescreen:R-3596,C-fff89690c8,Y,N,No,EXCLUDE,I1,REVIEWED,"Application, system, or evaluation, not a core FT efficiency method"
