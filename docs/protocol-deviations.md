@@ -261,3 +261,23 @@ The field's coverage was not checked before the plan was registered.
 **Effect on the manuscript**
 
 The audit is reported as a stratified random sample by year and source. The draw was kept rather than repeated, because repeating a committed draw would need its own justification; it was independently reproduced with identical key hashes.
+
+---
+
+## 10. Adjudication not committed before the re-screen began
+**What the plan specified:** docs/rescreen-plan.md: "Step 1 is completed and committed before Step 2 begins. Step 2 decisions are committed after each sitting."
+**What was done:** Adjudication (286 records) and re-screen (3,596 records) were completed in one working session and committed together in a single commit.
+**Reason:** The author worked through both steps continuously.
+**Effect on the manuscript:** Reported as stated. The first-pass decisions are retained unchanged.
+
+## 11. Second-pass verification of first-pass INCLUDE decisions
+**What the plan specified:** docs/rescreen-plan.md did not include a second pass.
+**What was done:** A consistency review, performed with an AI assistant (Claude, Anthropic) that changed no decision, found that many first-pass INCLUDE decisions did not meet the written Stage 1 criteria and that one identical rationale was recorded on all 244 adjudicated INCLUDE decisions. The author re-examined all 1,337 first-pass INCLUDE decisions under docs/second-pass-plan.md.
+**Reason:** To make the final Stage 1 decisions consistent with the written criteria.
+**Effect on the manuscript:** The pre-registered primary result is unchanged. First-pass and second-pass results are both reported.
+
+## 12. Re-screen and second-pass plans committed after the decisions they govern
+**What the plan specified:** docs/validation-plan.md established that procedures are committed before the decisions they govern.
+**What was done:** docs/rescreen-plan.md (written 2026-11-03) and docs/second-pass-plan.md (written 2026-11-04) were given to the author before the corresponding decisions, but both were committed on 2026-11-04 after those decisions were made.
+**Reason:** Commits were not run between steps.
+**Effect on the manuscript:** These two procedures are reported as written in advance but not verifiably pre-registered. Only docs/validation-plan.md (commit 5439a63) and the validation draw are reported as pre-registered.
