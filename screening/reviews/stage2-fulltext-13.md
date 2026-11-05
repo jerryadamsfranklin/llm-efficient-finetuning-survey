@@ -16,7 +16,7 @@ Criterion 2 values were pre-filled from the arXiv full text of each paper and co
 | C-bc98faf889 | OpenFedLLM | KDD 2024 | Llama2-7B | Sections 4.1 to 4.6 | INCLUDED |  | YES |
 | C-aaedc3bee8 | FFA-LoRA | ICLR 2024 | LLaMA-7B | Section 5.3; Appendix A.3 | INCLUDED |  | YES |
 | C-a1f9ae845d | FlexLoRA | NeurIPS 2024 | LLaMA-3 8B | Section 4.6; Appendix I Table 12 | INCLUDED | Main experiments use DataJuicer 1.3B. | YES |
-| C-64babd74d3 | LoRA survey (Mao et al.) | Front. Comput. Sci. 2025 | None (survey) | n/a | BACKGROUND | Survey with no empirical evaluation; fails criterion 2. Cited to position this survey. | YES |
+| C-64babd74d3 | LoRA survey (Mao et al.) | Front. Comput. Sci. 2025 | None (survey) | n/a | INCLUDED | Survey of LoRA methods for LLMs; meets inclusion criterion 2 (survey clause, protocol/inclusion-exclusion.md). Corrected 2026-11-05: originally misclassified as BACKGROUND. | YES |
 
 role values: INCLUDED (meets inclusion criteria on full text) or BACKGROUND (cited for context; reason stated in note).
-Counts: INCLUDED 10, BACKGROUND 3.
+Counts: INCLUDED 11, BACKGROUND 2.
