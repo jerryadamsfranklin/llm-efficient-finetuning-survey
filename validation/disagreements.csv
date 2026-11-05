@@ -1,0 +1,578 @@
+sample_id,record_id,population,title,classifier_decision,classifier_exclusion_reason,author_decision,author_reason_code
+P1-0002,C-58ad064df4,B,CLIP-DoRA: Weight-decomposed Low-rank Adaptation for Efficient Vision-Language Models,exclude,Inclusion 2,INCLUDE,
+P1-0016,C-80dbb00c5d,A,A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0019,C-fc01d36e2e,B,Mechanistic interpretability for steering vision-language-action models,exclude,Inclusion 2,INCLUDE,
+P1-0020,C-f0fa7acca2,A,Are Large Brainwave Foundation Models Capable Yet? Insights from Fine-tuning,exclude,Inclusion 2,INCLUDE,
+P1-0023,C-4cacfab0e8,A,MentalMARBERT: Domain-Adaptive Pre-training and Two-Stage Fine-Tuning for Arabic Mental Health Disorders Detection,exclude,Inclusion 2,INCLUDE,
+P1-0032,C-50e49da6be,A,LobRA: Multi-tenant Fine-tuning over Heterogeneous Data,exclude,Inclusion 2,INCLUDE,
+P1-0033,C-20443f3770,D1,FedRW: Efficient Privacy-Preserving Data Reweighting for Enhancing Federated Learning of Language Models,include,,EXCLUDE,I1
+P1-0034,C-25f71939bc,A,Efficient fine-tuning of quantized models via adaptive rank and bitwidth,exclude,Inclusion 2,INCLUDE,
+P1-0038,C-c3d935b454,B,FairLLaVA: Fairness-Aware Parameter-Efficient Fine-Tuning for Large Vision-Language Assistants,exclude,Inclusion 2,INCLUDE,
+P1-0042,C-cb78962dea,A,When Fine-Tuning Fails: Lessons from MS MARCO Passage Ranking,exclude,Inclusion 2,INCLUDE,
+P1-0045,C-d914214fa9,A,LoKO: Low-Rank Kalman Optimizer for Online Fine-Tuning of Large Models,exclude,Inclusion 2,INCLUDE,
+P1-0047,C-ccd0f6cd98,B,Surgeon: Memory-Adaptive Fully Test-Time Adaptation via Dynamic Activation Sparsity,exclude,Inclusion 1,INCLUDE,
+P1-0048,C-ff4642ae23,B,LoopQ: Quantization for Recursive Transformers,exclude,Exclusion 2,INCLUDE,
+P1-0051,C-2494e8f635,B,Energy-Efficient Edge Hybrid Transformer for TB Screening in Resource-Constrained Settings,exclude,Exclusion 3,INCLUDE,
+P1-0054,C-55ba2035b2,A,Communication-Efficient Personalized Adaptation via Federated-Local Model Merging,exclude,Inclusion 2,INCLUDE,
+P1-0056,C-8a722ab749,A,Efficient Localized Adaptation of Neural Weather Forecasting: A Case Study in the MENA Region,exclude,Inclusion 2,INCLUDE,
+P1-0059,C-01de2604d6,A,AdaQAT: Adaptive Bit-Width Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0069,C-669b80c470,A,Provable Meta-Learning with Low-Rank Adaptations,exclude,Inclusion 2,INCLUDE,
+P1-0072,C-fdc0285163,A,Lifelong Learning with Task-Specific Adaptation: Addressing the Stability-Plasticity Dilemma,exclude,Inclusion 2,INCLUDE,
+P1-0079,C-a8c81f68cb,D1,DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models,include,,EXCLUDE,I1
+P1-0084,C-38a6ee78fb,B,Quality Is Not a Safety Proxy Under Quantization,exclude,Inclusion 1,INCLUDE,
+P1-0087,C-23e1e9357b,B,Safety-Preserving PTQ via Contrastive Alignment Loss,exclude,Inclusion 1,INCLUDE,
+P1-0089,C-bdfd1c9e5c,B,SPQ: An Ensemble Technique for Large Language Model Compression,exclude,Exclusion 2,INCLUDE,
+P1-0099,C-1d63e16e68,B,S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models,exclude,Exclusion 3,INCLUDE,
+P1-0107,C-796e00845a,A,Reimagining Unit Test Generation With AI: A Journey From Evolutionary Models to Transformers,exclude,Inclusion 2,INCLUDE,
+P1-0110,C-a0f4399d5b,A,MetaLoRA: Tensor-Enhanced Adaptive Low-Rank Fine-tuning,exclude,Inclusion 2,INCLUDE,
+P1-0112,C-43e30ba4ce,A,DRAFT: Decoupling Backpropagation from Pre-trained Backbone for Efficient Transformer Fine-Tuning on Edge,exclude,Inclusion 2,INCLUDE,
+P1-0113,C-e8065e3eb1,A,ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0116,C-15b2bb0ce0,A,"6G WavesFM: A Foundation Model for Sensing, Communication, and Localization",exclude,Inclusion 2,INCLUDE,
+P1-0123,C-8c84ca9c03,A,FedDG-MoE: Test-Time Mixture-of-Experts Fusion for Federated Domain Generalization,exclude,Inclusion 2,INCLUDE,
+P1-0132,C-8ca55072aa,A,Allowing Oscillation Quantization: Overcoming Solution Space Limitation in Low Bit-Width Quantization,exclude,Inclusion 2,INCLUDE,
+P1-0134,C-436188c253,B,EdgeInfinite: A Memory-Efficient Infinite-Context Transformer for Edge Devices,exclude,Inclusion 1,INCLUDE,
+P1-0138,C-30a9c7ac5d,B,CPTQuant - A Novel Mixed Precision Post-Training Quantization Techniques for Large Language Models,exclude,Exclusion 2,INCLUDE,
+P1-0143,C-1c0a83903f,A,QS4D: Quantization‐Aware Training for Efficient Hardware Deployment of Structured State‐Space Sequential Models,exclude,Inclusion 2,INCLUDE,
+P1-0145,C-2b26425580,A,QT-DoG: Quantization-aware Training for Domain Generalization,exclude,Inclusion 2,INCLUDE,
+P1-0146,C-6d20e76a06,A,A Federated Fine-Tuning Paradigm of Foundation Models in Heterogenous Wireless Networks,exclude,Inclusion 2,INCLUDE,
+P1-0149,C-7caa899c27,A,Galvatron: Automatic Distributed Training for Large Transformer Models,exclude,Inclusion 2,INCLUDE,
+P1-0154,C-ea22c0b91d,A,BrainWavLM: Fine-tuning Speech Representations with Brain Responses to Language,exclude,Inclusion 2,INCLUDE,
+P1-0156,C-50845bb49f,A,Memory-Efficient Adaptation and Unanswerable-Aware Supervision for Reliable Private Email Question Answering,exclude,Inclusion 2,INCLUDE,
+P1-0157,C-bd1bf102d2,B,Adaptive Point Transformer,exclude,Inclusion 1,INCLUDE,
+P1-0159,C-18cb849481,A,Mixed Text Recognition with Efficient Parameter Fine-Tuning and Transformer,exclude,Inclusion 2,INCLUDE,
+P1-0164,C-195661d97b,B,Moqe: Improve quantization model performance via mixture of quantization experts,exclude,Inclusion 1,INCLUDE,
+P1-0166,C-1e0870974c,A,QGen: On the Ability to Generalize in Quantization Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0168,C-e87791ed8f,A,Bayesian Fine-tuning in Projected Subspaces,exclude,Inclusion 2,INCLUDE,
+P1-0169,C-2c1fd76608,A,Edge-EmoNet: A Low-Latency Edge-based Deep Learning Framework for Real-Time Emotion Recognition with Attention-Optimized Feature Fusion,exclude,Inclusion 2,INCLUDE,
+P1-0183,C-8826f2d697,A,EfQAT: An Efficient Framework for Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0185,C-5c9db9201a,A,MoRe Fine-Tuning with 10x Fewer Parameters,exclude,Inclusion 2,INCLUDE,
+P1-0189,C-5977dffb22,A,Integer-only Quantized Transformers for Embedded FPGA-based Time-series Forecasting in AIoT,exclude,Inclusion 2,INCLUDE,
+P1-0193,C-f9d1b20e56,D1,Persona Knowledge-Aligned Prompt Tuning Method for Online Debate,include,,EXCLUDE,I1
+P1-0197,C-e5628decc9,A,Prompting a Pretrained Transformer Can Be a Universal Approximator,exclude,Inclusion 2,INCLUDE,
+P1-0199,C-ade4244f19,D1,Generalization of Medical Large Language Models through Cross-Domain Weak Supervision,include,,EXCLUDE,I1
+P1-0206,C-aef5c012fc,A,FlashOptim: Optimizers for Memory Efficient Training,exclude,Inclusion 2,INCLUDE,
+P1-0211,C-91fb8216ab,A,UniCast: A Unified Framework for Instance-Conditioned Multimodal Time-Series Forecasting,exclude,Inclusion 2,INCLUDE,
+P1-0223,C-b34c4169da,A,Attn-QAT: 4-Bit Attention With Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0225,C-36e0023b17,A,Push Quantization-Aware Training Toward Full Precision Performances via Consistency Regularization,exclude,Inclusion 2,INCLUDE,
+P1-0227,C-7effe3adf1,B,A Hybrid Vision-Language Architecture for Automated Defect Reasoning and Report Generation in Industrial Inspection,exclude,Inclusion 2,INCLUDE,
+P1-0228,C-01090caa4e,B,Complementary Subspace Low-Rank Adaptation of Vision-Language Models for Few-Shot Classification,exclude,Inclusion 2,INCLUDE,
+P1-0236,C-6f543569fa,A,A Hybrid Architecture with Efficient Fine Tuning for Abstractive Patent Document Summarization,exclude,Inclusion 2,INCLUDE,
+P1-0239,C-4a3c6ff21c,A,FonTS: Text Rendering with Typography and Style Controls,exclude,Inclusion 2,INCLUDE,
+P1-0240,C-71fb6df9d4,B,Achieving binary weight and activation for LLMs using Post-Training Quantization,exclude,Exclusion 2,INCLUDE,
+P1-0245,C-0af366d727,A,Scalable Multi-Task Low-Rank Model Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0247,C-d3c223a47c,A,Optimization of Lightweight Transformer(TransMRSR) for Magnetic Resonance Imaging(MRI) Scans,exclude,Inclusion 2,INCLUDE,
+P1-0248,C-593563dbb2,A,SpoofBuster: Adaptive Attention Transformer for Anti-Spoofing Face Recognition,exclude,Inclusion 2,INCLUDE,
+P1-0251,C-5eb3fb82b8,A,Info Bottleneck Quantized Multilingual Embeddings for Low-Code Cross-Cultural Opinion Analysis,exclude,Inclusion 2,INCLUDE,
+P1-0254,C-266ee233bd,A,Personalized Federated Learning with Mixture of Models for Adaptive Prediction and Model Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0257,C-4d9c7ae97c,A,SPD-CFL: Stepwise Parameter Dropout for Efficient Continual Federated Learning,exclude,Inclusion 2,INCLUDE,
+P1-0264,C-304eac4dbe,D1,ZenFlow: Enabling Stall-Free Offloading Training via Asynchronous Updates,include,,EXCLUDE,I1
+P1-0268,C-af5e354715,B,An LLM-powered Natural-to-Robotic Language Translation Framework with Correctness Guarantees,exclude,Inclusion 1,INCLUDE,
+P1-0269,C-5294a403f7,B,Large Language Models As Evolution Strategies,exclude,Inclusion 1,INCLUDE,
+P1-0277,C-5f1adf641b,B,Research on Inference and Training Acceleration of Large Language Model,exclude,Exclusion 2,INCLUDE,
+P1-0287,C-f683dd300d,A,AdMiT: Adaptive Multi-Source Tuning in Dynamic Environments,exclude,Inclusion 2,INCLUDE,
+P1-0290,C-33475b4803,A,Least but not Last: Fine-tuning Intermediate Principal Components for Better Performance-Forgetting Trade-Offs,exclude,Inclusion 2,INCLUDE,
+P1-0292,C-95b4a86e01,A,DeepClair: Utilizing Market Forecasts for Effective Portfolio Selection,exclude,Inclusion 2,INCLUDE,
+P1-0293,C-67402d65d9,A,Real-Time Arrhythmia Detection on Wearables Using Quantized Transformers and Noise-Robust Training,exclude,Inclusion 2,INCLUDE,
+P1-0298,C-c24e969561,A,LOFT: Low-Rank Orthogonal Fine-Tuning via Task-Aware Support Selection,exclude,Inclusion 2,INCLUDE,
+P1-0299,C-6d173ea79c,A,RouteFinder: Towards Foundation Models for Vehicle Routing Problems,exclude,Inclusion 2,INCLUDE,
+P1-0301,C-c75c9af2b0,A,FedSelect: Personalized Federated Learning with Customized Selection of Parameters for Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0307,C-8083e27171,A,FedLoRE: Communication-Efficient and Personalized Edge Intelligence Framework via Federated Low-Rank Estimation,exclude,Inclusion 2,INCLUDE,
+P1-0308,C-04e4b10c95,A,"OpenMed NER: Open-Source, Domain-Adapted State-of-the-Art Transformers for Biomedical NER Across 12 Public Datasets",exclude,Inclusion 2,INCLUDE,
+P1-0309,C-22673bed77,A,"FLARE: FP-Less PTQ and Low-ENOB ADC Based AMS-PiM for Error-Resilient, Fast, and Efficient Transformer Acceleration",exclude,Inclusion 2,INCLUDE,
+P1-0314,C-165083866d,A,QuantKAN: A Unified Quantization Framework for Kolmogorov Arnold Networks,exclude,Inclusion 2,INCLUDE,
+P1-0316,C-2dd0dc17a9,A,Semantic-aware Token Selection and Resource Optimization for Communication-efficient Split Federated Fine-tuning in Edge Intelligence,exclude,Inclusion 2,INCLUDE,
+P1-0323,C-2994717b0d,B,Mixed-Precision Graph Neural Quantization for Low Bit Large Language Models,exclude,Exclusion 2,INCLUDE,
+P1-0325,C-914f6cae0e,B,EdgeInfinite-Instruct: Bridging SFT-Based Optimization and NPU-Level Efficiency for Edge Devices,exclude,Inclusion 1,INCLUDE,
+P1-0329,C-3170e94b94,A,LSR-Adapt: Ultra-Efficient Parameter Tuning with Matrix Low Separation Rank Kernel Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0330,C-88c38023da,B,EndPrompt: Efficient Long-Context Extension via Terminal Anchoring,exclude,Inclusion 1,INCLUDE,
+P1-0331,C-8141e788d7,A,Efficient Adaptation For Remote Sensing Visual Grounding,exclude,Inclusion 2,INCLUDE,
+P1-0332,C-7c388f55ee,B,Cross-Attention Reprogramming for ASR: Bridging Discrete Speech Units and Pretrained Language Models,exclude,Inclusion 2,INCLUDE,
+P1-0340,C-fe4a4d2a47,A,Cross-Problem Learning for Solving Vehicle Routing Problems,exclude,Inclusion 2,INCLUDE,
+P1-0342,C-37a1f73b38,A,An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning,exclude,Inclusion 2,INCLUDE,
+P1-0347,C-2ea01dc00a,B,Opt-GPTQ: An Optimized GPTQ Combining Sparse Attention and Quantization Techniques,exclude,Inclusion 1,INCLUDE,
+P1-0349,C-83bea0809a,D1,Multi-Modal One-Shot Federated Ensemble Learning for Medical Data with Vision Large Language Model,include,,EXCLUDE,I1
+P1-0354,C-9790f6e39f,B,Aligning Large Language Models for Enhancing Psychiatric Interviews Through Symptom Delineation and Summarization: Pilot Study,exclude,Inclusion 1,INCLUDE,
+P1-0359,C-a6dcfabd67,A,Tomtit: Hierarchical Federated Fine-Tuning of Giant Models based on Autonomous Synchronization,exclude,Inclusion 2,INCLUDE,
+P1-0361,C-1eb08cd2b5,A,How to Parameterize Asymmetric Quantization Ranges for Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0362,C-6d3ac83cce,A,Efficient Structured Prediction with Transformer Encoders,exclude,Inclusion 2,INCLUDE,
+P1-0366,C-b410a4dfaf,A,RingAda: Pipelining Large Model Fine-Tuning on Edge Devices with Scheduled Layer Unfreezing,exclude,Inclusion 2,INCLUDE,
+P1-0368,C-8449ed3598,A,Study of Training Dynamics for Memory-Constrained Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0370,C-2992d9c629,B,MolecularGPT: Open Large Language Model (LLM) for Few-Shot Molecular Property Prediction,exclude,Inclusion 1,INCLUDE,
+P1-0372,C-e0f6b25b2a,A,In-Distribution Consistency Regularization Improves the Generalization of Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0376,C-5bf06050ad,A,Quantum-Inspired Fine-Tuning for Few-Shot AIGC Detection via Phase-Structured Reparameterization,exclude,Inclusion 2,INCLUDE,
+P1-0377,C-f44294dd61,A,SeerAttention-R: Sparse Attention Adaptation for Long Reasoning,exclude,Inclusion 2,INCLUDE,
+P1-0381,C-a5b09783f4,A,Memory-Efficient Fine-Tuning via Low-Rank Activation Compression,exclude,Inclusion 2,INCLUDE,
+P1-0382,C-f85eeb7c6c,D1,Controllable and explainable personality sliders for LLMs at inference time,include,,EXCLUDE,E2
+P1-0386,C-0bda659a2e,A,The Risk of Federated Learning to Skew Fine-Tuning Features and Underperform Out-of-Distribution Robustness,exclude,Inclusion 2,INCLUDE,
+P1-0389,C-f26c39b3f4,A,MoORE: SVD-based Model MoE-ization for Conflict- and Oblivion-Resistant Multi-Task Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0390,C-e3450199af,B,Toward Low-Resource Languages Machine Translation: A Language-Specific Fine-Tuning With LoRA for Specialized Large Language Models,exclude,Inclusion 1,INCLUDE,
+P1-0395,C-caa5f575f2,A,Recurrent Early Exits for Federated Learning with Heterogeneous Clients,exclude,Inclusion 2,INCLUDE,
+P1-0397,C-109faf367a,A,SQFT: Low-cost Model Adaptation in Low-precision Sparse Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0400,C-8dbc15119f,A,FediLoRA: Practical Federated Fine-Tuning of Foundation Models Under Missing-Modality Constraints,exclude,Inclusion 2,INCLUDE,
+P1-0404,C-2b83013c3c,A,Imaging foundation model for universal enhancement of non-ideal measurement CT,exclude,Inclusion 2,INCLUDE,
+P1-0417,C-c3b3500ab4,D1,Privacy-Aware Detection for Large Language Models Using a Hybrid BiLSTM-HMM Approach,include,,EXCLUDE,I1
+P1-0419,C-8ecc070296,A,FINN-T: Compiling Custom Dataflow Accelerators for Quantized Transformers,exclude,Inclusion 2,INCLUDE,
+P1-0423,C-5096be6f6e,B,Low-Rank Few-Shot Adaptation of Vision-Language Models,exclude,Inclusion 2,INCLUDE,
+P1-0433,C-1c6fb5f5fe,A,ISLoRA: A Fine-Tuning Method for Forest Fire Detection by Dual-Path Information Supplement,exclude,Inclusion 2,INCLUDE,
+P1-0435,C-c94011f0d3,A,Exploring Foundation Models Fine-Tuning for Cytology Classification,exclude,Inclusion 2,INCLUDE,
+P1-0441,C-62e9e0cf57,A,"DeepForestSound: a multi-species automatic detector for passive acoustic monitoring in African tropical forests, a case study in Kibale National Park",exclude,Inclusion 2,INCLUDE,
+P1-0447,C-a05276092b,A,SemiAdapt and SemiLoRA: Efficient Domain Adaptation for Transformer-based Low-Resource Language Translation with a Case Study on Irish,exclude,Inclusion 2,INCLUDE,
+P1-0451,C-906aa1c59e,A,pMoE: Prompting Diverse Experts Together Wins More in Visual Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0454,C-3bde9b4a1c,A,AROMA: Autonomous Rank-one Matrix Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0458,C-0c3b214515,B,LLM Priors for ERM over Programs,exclude,Inclusion 1,INCLUDE,
+P1-0459,C-38d9e8b87f,A,Remembering Transformer for Continual Learning,exclude,Inclusion 2,INCLUDE,
+P1-0464,C-51e5a7b445,A,SARA: Singular-Value Based Adaptive Low-Rank Adaption,exclude,Inclusion 2,INCLUDE,
+P1-0475,C-99841ccfd9,D1,LLM is Not All You Need: A Systematic Evaluation of ML vs. Foundation Models for text and image based Medical Classification,include,,EXCLUDE,I1
+P1-0482,C-c57ace883b,B,Do We Still Need Fine Tuning? Turkish Sentiment Analysis in the Era of Large Language Model,exclude,Inclusion 1,INCLUDE,
+P1-0483,C-b2daedaec8,B,Auto-Prompting with Retrieval Guidance for Frame Detection in Logistics,exclude,Inclusion 1,INCLUDE,
+P1-0489,C-0e1ffffdbb,B,Can Large Language Models Identify Authorship?,exclude,Inclusion 1,INCLUDE,
+P1-0494,C-d1ebdc5517,A,Bridging Modalities via Progressive Re-alignment for Multimodal Test-Time Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0496,C-699eb9d11e,A,UB-SMoE: Universally Balanced Sparse Mixture-of-Experts for Resource-adaptive Federated Fine-tuning of Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0497,C-95e6b5e73c,A,An Overview of Low-Rank Structures in the Training and Adaptation of Large Models,exclude,Inclusion 2,INCLUDE,
+P1-0499,C-4a154eca7a,A,Solving Continual Offline Reinforcement Learning with Decision Transformer,exclude,Inclusion 2,INCLUDE,
+P1-0501,C-0bcb9d5232,A,Many-Task Federated Fine-Tuning via Unified Task Vectors,exclude,Inclusion 2,INCLUDE,
+P1-0502,C-493d1d3a07,A,Consistency-Preserving Concept Erasure via Unsafe-Safe Pairing and Directional Fisher-weighted Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0503,C-10ca630e7e,A,"Fine-Tuning Integrity for Modern Neural Networks: Structured Drift Proofs via Norm, Rank, and Sparsity Certificates",exclude,Inclusion 2,INCLUDE,
+P1-0506,C-4e3e819fde,A,An Integrated Sensing-Computing Processor for Spectral-Based Chinese Herbal Medicine Classification With Algorithm-FPGA Co-Design,exclude,Inclusion 2,INCLUDE,
+P1-0507,C-e8cd4935b4,A,Federated Few-Shot Learning for Epileptic Seizure Detection Under Privacy Constraints,exclude,Inclusion 2,INCLUDE,
+P1-0510,C-e9c2384737,D1,vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention,include,,EXCLUDE,E2
+P1-0517,C-ff839004fd,A,Efficient Adversarial Training via Criticality-Aware Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0522,C-d163fb95c0,A,H2Tune: Federated Foundation Model Fine-Tuning with Hybrid Heterogeneity,exclude,Inclusion 2,INCLUDE,
+P1-0523,C-48447f17a1,D1,Subspace Geometry Governs Catastrophic Forgetting in Low-Rank Adaptation,include,,EXCLUDE,I2
+P1-0525,C-e68673bfa5,A,Learning on LoRAs: GL-Equivariant Processing of Low-Rank Weight Spaces for Large Finetuned Models,exclude,Inclusion 2,INCLUDE,
+P1-0529,C-d66bdfe000,A,FLFT: A Large-Scale Pre-Training Model Distributed Fine-Tuning Method That Integrates Federated Learning Strategies,exclude,Inclusion 2,INCLUDE,
+P1-0534,C-89dc917179,A,Temperature-Controlled Quantization-Aware CSI Feedback via a Multi-Value Transformer,exclude,Inclusion 2,INCLUDE,
+P1-0536,C-d01a856abf,A,PaCA: Partial Connection Adaptation for Efficient Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0554,C-a9aaa3ee76,B,Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL,exclude,Inclusion 1,INCLUDE,
+P1-0557,C-d68a7e8b0d,A,Don't Forget the Nonlinearity: Unlocking Activation Functions in Efficient Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0559,C-58cd133e0e,A,Task-Specific Zero-Shot Quantization-Aware Training for Object Detection,exclude,Inclusion 2,INCLUDE,
+P1-0562,C-9e659d516b,A,Fast Forwarding Low-Rank Training,exclude,Inclusion 2,INCLUDE,
+P1-0566,C-637ddf0138,B,Enhancing In-network Aggregation with Adaptive Gradient Quantization for Multi-tenant Learning,exclude,Inclusion 1,INCLUDE,
+P1-0567,C-35a586e4e7,D1,Empowering Few-Shot Relation Extraction with The Integration of Traditional RE Methods and Large Language Models,include,,EXCLUDE,I1
+P1-0568,C-e7a0de95bb,A,The Impact of Quantization on Large Reasoning Model Reinforcement Learning,exclude,Inclusion 2,INCLUDE,
+P1-0572,C-6c26f63487,A,FedMLLM: Federated Fine-tuning MLLM on Multimodal Heterogeneity Data,exclude,Inclusion 2,INCLUDE,
+P1-0575,C-1afdbe9101,A,Stabilizing Quantization-Aware Training by Implicit-Regularization on Hessian Matrix,exclude,Inclusion 2,INCLUDE,
+P1-0576,C-c504009302,D1,Hierarchical Federated Unlearning for Large Language Models,include,,EXCLUDE,I1
+P1-0581,C-95d661773a,A,GOAL: A Generalist Combinatorial Optimization Agent Learner,exclude,Inclusion 2,INCLUDE,
+P1-0588,C-9a7a3072be,B,CARVQ: Corrective Adaptor with Group Residual Vector Quantization for LLM Embedding Compression,exclude,Exclusion 2,INCLUDE,
+P1-0591,C-5ddae34f8b,B,Large Language Models for EEG: A Comprehensive Survey and Taxonomy,exclude,Inclusion 1,INCLUDE,
+P1-0594,C-58851ce57a,A,Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework,exclude,Inclusion 2,INCLUDE,
+P1-0598,C-7bff33d7a7,B,An Empirical Evaluation of Low-Rank Adapted Vision–Language Models for Radiology Image Captioning,exclude,Inclusion 1,INCLUDE,
+P1-0601,C-a29c4ec081,A,DeLo: Dual Decomposed Low-Rank Experts Collaboration for Continual Missing Modality Learning,exclude,Inclusion 2,INCLUDE,
+P1-0605,C-4e111a0bbf,A,Scheduling Weight Transitions for Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0608,C-78a1c0befa,A,PGF-Net: A Progressive Gated-Fusion Framework for Efficient Multimodal Sentiment Analysis,exclude,Inclusion 2,INCLUDE,
+P1-0621,C-6d0f6ec63d,A,Plug-and-Play Transformer Modules for Test-Time Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0622,C-9b4f6ba80f,A,Compute-Optimal Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0632,C-2c587d766f,A,Oscillations Make Neural Networks Robust to Quantization,exclude,Inclusion 2,INCLUDE,
+P1-0633,C-d6628de68e,A,C-DGPA: Class-Centric Dual-Alignment Generative Prompt Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0634,C-adaa207c34,B,HoarePrompt: Structural Reasoning About Program Correctness in Natural Language,exclude,Inclusion 1,INCLUDE,
+P1-0648,C-3e018bafd1,B,Rethinking Fine-Tuning: Unlocking Hidden Capabilities in Vision-Language Models,exclude,Inclusion 2,INCLUDE,
+P1-0650,C-d7ebda0eb8,A,Reshape and Adapt for Output Quantization (RAOQ): Quantization-aware Training for In-memory Computing Systems,exclude,Inclusion 2,INCLUDE,
+P1-0651,C-e4e0d3324b,A,Efficient Orthogonal Fine-Tuning with Principal Subspace Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0655,C-fb7455b995,D1,Scaling Attention via Feature Sparsity,include,,EXCLUDE,E2
+P1-0659,C-a268201765,A,Signs Beat Floats: Low-Rank Double-Binary Adaptation for On-Device Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0669,C-68a63739e5,A,Towards Reversible Model Merging For Low-rank Weights,exclude,Inclusion 2,INCLUDE,
+P1-0670,C-670e6cf692,A,MoRE: Batch-Robust Multi-Omics Representations from Frozen Pre-trained Transformers,exclude,Inclusion 2,INCLUDE,
+P1-0678,C-b1096f98ac,A,MINOTAUR: A Posit-Based 0.42–0.50-TOPS/W Edge Transformer Inference and Training Accelerator,exclude,Inclusion 2,INCLUDE,
+P1-0692,C-1cc0e89d58,A,QFedFormer: A Privacy-Preserving Federated Transformer with Blockchain-Anchored Incentives for Dynamic EV Charging Pricing,exclude,Inclusion 2,INCLUDE,
+P1-0695,C-27d1a11eaf,A,Cross-attention for State-based model RWKV-7,exclude,Inclusion 2,INCLUDE,
+P1-0698,C-a6dd1fcc17,A,T-Mimi: A Transformer-Based Mimi Decoder for Real-Time On-Phone TTS,exclude,Inclusion 2,INCLUDE,
+P1-0700,C-1f187c3186,A,Energy-Efficient Quantization-Aware Training with Dynamic Bit-Width Optimization,exclude,Inclusion 2,INCLUDE,
+P1-0703,C-2b8a54be32,B,Learning to Diagnose Privately: DP-Powered LLMs for Radiology Report Classification,exclude,Inclusion 1,INCLUDE,
+P1-0708,C-3439aa1345,A,ECG-EmotionNet: Nested Mixture of Expert (NMoE) Adaptation of ECG-Foundation Model for Driver Emotion Recognition,exclude,Inclusion 2,INCLUDE,
+P1-0710,C-2ff7d2557e,B,Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition,exclude,Inclusion 2,INCLUDE,
+P1-0720,C-67a2107b8d,D1,Trustformer: A Trusted Federated Transformer,include,,EXCLUDE,I1
+P1-0726,C-c40c315b39,A,Accurate and Efficient Low-Rank Model Merging in Core Space,exclude,Inclusion 2,INCLUDE,
+P1-0733,C-07904e9b72,B,Fine-tuned LLM-based Code Migration Framework,exclude,Inclusion 1,INCLUDE,
+P1-0734,C-696ef64faf,A,Fantastic Features and Where to Find Them: A Probing Method to combine Features from Multiple Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0738,C-3bbebe9cf8,D1,AI-Driven Generation of Data Contracts in Modern Data Engineering Systems,include,,EXCLUDE,I1
+P1-0742,C-848d2e8fef,A,Real-Time Semantic Segmentation for Autonomous Driving Based on Swin Transformer,exclude,Inclusion 2,INCLUDE,
+P1-0744,C-6633a3f570,D1,BurstEngine: An efficient distributed framework for training transformers On extremely Long sequences of over 1M tokens,include,,EXCLUDE,I1
+P1-0748,C-3d84b8380b,D1,OptPipe: Memory- and Scheduling-Optimized Pipeline Parallelism for LLM Training,include,,EXCLUDE,I1
+P1-0751,C-6107578ecc,A,Task-agnostic Low-rank Residual Adaptation for Efficient Federated Continual Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0753,C-a5ceb05a7c,A,FRAME: Learning the Adaptation Domain with a Mixture of Fractional-Fourier Experts,exclude,Inclusion 2,INCLUDE,
+P1-0759,C-25ed694ff7,B,Penrose Tiled Low-Rank Compression and Section-Wise Q&A Fine-Tuning: A General Framework for Domain-Specific Large Language Model Adaptation,exclude,Inclusion 1,INCLUDE,
+P1-0761,C-63f9466220,A,"Trend-Aware Tinyml Co-Design on Microcontrollers: Quantization, Structured Sparsity, and On-Device Adaptation Under Tight Memory-Energy Budgets",exclude,Inclusion 2,INCLUDE,
+P1-0768,C-cc4740756d,D1,LLMsAgainstHate @ NLU of Devanagari Script Languages 2025: Hate Speech Detection and Target Identification in Devanagari Languages via Parameter Efficient Fine-Tuning of LLMs,include,,EXCLUDE,I2
+P1-0769,C-bf49c2c989,A,FedHLT: Efficient Federated Low-Rank Adaption with Hierarchical Language Tree for Multilingual Modeling,exclude,Inclusion 2,INCLUDE,
+P1-0770,C-6726c15103,A,Silent Penetrator: Breaching Cross-Domain Federated Fine-Tuning via Feature Shift-Induced Backdoor,exclude,Inclusion 2,INCLUDE,
+P1-0772,C-a0b916e76c,A,JAQ: Joint Efficient Architecture Design and Low-Bit Quantization with Hardware-Software Co-Exploration,exclude,Inclusion 2,INCLUDE,
+P1-0774,C-d354d07666,A,Toxicity Assessment in Preclinical Histopathology via Class-Aware Mahalanobis Distance for Known and Novel Anomalies,exclude,Inclusion 2,INCLUDE,
+P1-0775,C-37e54d43b1,B,Decomposing and Composing: Towards Efficient Vision-Language Continual Learning via Rank-1 Expert Pool in a Single LoRA,exclude,Inclusion 2,INCLUDE,
+P1-0776,C-bd9df6b51f,A,VectorFit : Adaptive Singular & Bias Vector Fine-Tuning of Pre-trained Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0792,C-e5507cd4d1,B,RST-LoRA: A Discourse-Aware Low-Rank Adaptation for Long Document Abstractive Summarization,exclude,Inclusion 1,INCLUDE,
+P1-0796,C-a06955d31a,A,Shapley Context Pruning: A Cooperative Game Perspective for Context Reranking and Pruning,exclude,Inclusion 2,INCLUDE,
+P1-0802,C-01c2f7d4a5,B,VLMQ: Token Saliency-Driven Post-Training Quantization for Vision-language Models,exclude,Inclusion 2,INCLUDE,
+P1-0804,C-76a964db62,B,Wireless Power Control Based on Large Language Models,exclude,Inclusion 1,INCLUDE,
+P1-0811,C-570ab8c5e4,D1,QKV Projections Require a Fraction of Their Memory,include,,EXCLUDE,I1
+P1-0812,C-35edbcdede,A,Sparsity May Be All You Need: Sparse Random Parameter Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0817,C-ab1765ee8e,A,HyperAdapt: Simple High-Rank Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0822,C-c9c467a5f7,B,Resource-efficient instruction tuning of large language models for biomedical named entity recognition,exclude,Inclusion 1,INCLUDE,
+P1-0824,C-1392a84dc7,A,MitoDetect++: A Domain-Robust Pipeline for Mitosis Detection and Atypical Subtyping,exclude,Inclusion 2,INCLUDE,
+P1-0828,C-9a92c023ad,A,FFT-MoE: Efficient Federated Fine-Tuning for Foundation Models via Large-scale Sparse MoE under Heterogeneous Edge,exclude,Inclusion 2,INCLUDE,
+P1-0839,C-9a5e4e4f4e,A,Low-rank Momentum Factorization for Memory Efficient Training,exclude,Inclusion 2,INCLUDE,
+P1-0840,C-613280bfdb,A,Prototype-based fine-tuning for mitigating data heterogeneity in federated learning,exclude,Inclusion 2,INCLUDE,
+P1-0850,C-927a588d06,A,Block Expanded DINORET: Adapting Natural Domain Foundation Models for Retinal Imaging Without Catastrophic Forgetting,exclude,Inclusion 2,INCLUDE,
+P1-0852,C-9c4774d6da,A,Chirp Localization via Fine-Tuned Transformer Model: A Proof-of-Concept Study,exclude,Inclusion 2,INCLUDE,
+P1-0854,C-6dc6fd0625,A,Scalable Cross-Facility Federated Learning for Scientific Foundation Models on Multiple Supercomputers,exclude,Inclusion 2,INCLUDE,
+P1-0855,C-5d113f2159,A,Compression Feedback Algorithm for Terahertz Channel State Information Based on Swin Transformer and Quantization-Aware Training,exclude,Inclusion 2,INCLUDE,
+P1-0859,C-6a99ae43e9,B,Can Large Language Models Play Games? A Case Study of A Self-Play Approach,exclude,Inclusion 1,INCLUDE,
+P1-0861,C-d257701715,A,Unsupervised Human Preference Learning,exclude,Inclusion 2,INCLUDE,
+P1-0869,C-c4a9c54255,A,Collaborative and Efficient Fine-tuning: Leveraging Task Similarity,exclude,Inclusion 2,INCLUDE,
+P1-0871,C-ed5086ae31,A,Fine-tuning Multimodal Transformers on Edge: A Parallel Split Learning Approach,exclude,Inclusion 2,INCLUDE,
+P1-0874,C-e2231bb152,B,PacTrain: Pruning and Adaptive Sparse Gradient Compression for Efficient Collective Communication in Distributed Deep Learning,exclude,Inclusion 1,INCLUDE,
+P1-0875,C-0c5a790fee,A,Quantization-Aware Training for Multi-Agent Reinforcement Learning,exclude,Inclusion 2,INCLUDE,
+P1-0881,C-78589e6ace,A,TOAST: Task-Oriented Adaptive Semantic Transmission over Dynamic Wireless Environments,exclude,Inclusion 2,INCLUDE,
+P1-0885,C-13de67456c,A,Not All NVFP4 QAT Recipes Are Equal: How Architecture and Scale Shape Model Quality for Anomaly Segmentation,exclude,Inclusion 2,INCLUDE,
+P1-0886,C-c5cbdf8d4e,A,A Lightweight Transformer-Based Approach for Real-Time Simulation of MOSFET Switching Transients,exclude,Inclusion 2,INCLUDE,
+P1-0893,C-9ee00ab7b0,A,Watch Out for the Lifespan: Evaluating Backdoor Attacks Against Federated Model Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-0896,C-560d9b8d4c,A,On the Robustness Tradeoff in Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0897,C-acf5d86428,A,PLAN: Proactive Low-Rank Allocation for Continual Learning,exclude,Inclusion 2,INCLUDE,
+P1-0902,C-642d7a9a26,A,Q-Trans: Quantization-Aware Fine-Tuning of Transformer Models for Energy-Efficient IoT and Edge Deployment,exclude,Inclusion 2,INCLUDE,
+P1-0903,C-00a03f68b1,A,Understanding Quantization-Aware Training: Gradients at Quantized Weights Bias to the Low-Loss Basin,exclude,Inclusion 2,INCLUDE,
+P1-0907,C-76fe5b0aa9,A,"Efficient Handwriting-Based Alzheimer,s Disease Diagnosis Using a Low-Rank Mixture of Experts Deep Learning Framework",exclude,Inclusion 2,INCLUDE,
+P1-0908,C-74cacdb212,A,UWB at WASSA-2024 Shared Task 2: Cross-lingual Emotion Detection,exclude,Inclusion 2,INCLUDE,
+P1-0910,C-94a0ba418b,A,Learning the Context of Errors: Black-Box Online Adaptation of Time Series Foundation Models,exclude,Inclusion 2,INCLUDE,
+P1-0911,C-ae257ce397,B,Applying Prompts and Parameter-Efficient Methods to Enhance Single-Stream Vision-Language Transformers,exclude,Inclusion 2,INCLUDE,
+P1-0914,C-8f5754b5e2,A,The Nature of Mathematical Modeling and Probabilistic Optimization Engineering in Generative AI,exclude,Inclusion 2,INCLUDE,
+P1-0917,C-5c763bfefc,A,Low-rank adaptive physics-informed HyperDeepONets for solving differential equations,exclude,Inclusion 2,INCLUDE,
+P1-0918,C-ff66d85bdd,B,Coverage-Based Calibration for Post-Training Quantization via Weighted Set Cover over Outlier Channels,exclude,Exclusion 2,INCLUDE,
+P1-0921,C-c34fd5ee7f,A,Cluster Based Heterogeneous Federated Foundation Model Adaptation and Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-0927,C-a945517151,A,PARQ: Piecewise-Affine Regularized Quantization,exclude,Inclusion 2,INCLUDE,
+P1-0933,C-a323af677a,D1,STABLE: Gated Continual Learning for Large Language Models,include,,EXCLUDE,I1
+P1-0934,C-da4d0667c2,A,Communication Efficient Federated Learning With Quantization-Aware Training Design,exclude,Inclusion 2,INCLUDE,
+P1-0935,C-5895c6173d,A,Selecting Fine-Tuning Examples by Quizzing VLMs,exclude,Inclusion 2,INCLUDE,
+P1-0936,C-49d8b670bc,A,Fine-tuning Quantized Neural Networks with Zeroth-order Optimization,exclude,Inclusion 2,INCLUDE,
+P1-0941,C-875d80d8f4,B,An Exploration-Analysis-Disambiguation Reasoning Framework for Word Sense Disambiguation with Low-Parameter LLMs,exclude,Inclusion 1,INCLUDE,
+P1-0942,C-f963af3c33,B,Jailbreak-Zero: A Path to Pareto Optimal Red Teaming for Large Language Models,exclude,Inclusion 1,INCLUDE,
+P1-0944,C-d7cbf0f30f,B,NestQuant: Nested Lattice Quantization for Matrix Products and LLMs,exclude,Exclusion 2,INCLUDE,
+P1-0945,C-922f357d81,B,Semantic Segmentation from 3D LiDAR Data Using Visual Large Language Model (VLLM),exclude,Inclusion 1,INCLUDE,
+P1-0947,C-156732a7f9,A,Energy-Efficient Transformer Architectures for on-device Language Understanding,exclude,Inclusion 2,INCLUDE,
+P1-0959,C-d5cefa4534,A,HeteroTune: Efficient Federated Learning for Large Heterogeneous Models,exclude,Inclusion 2,INCLUDE,
+P1-0961,C-3da5b7146a,B,SeRTS: Self-Rewarding Tree Search for Biomedical Retrieval-Augmented Generation,exclude,Inclusion 1,INCLUDE,
+P1-0962,C-d7e6cc4243,B,Fine-Tuning Vision-Language Models for Visual Navigation Assistance,exclude,Inclusion 2,INCLUDE,
+P1-0970,C-2879b8b05e,D1,Tool-Aided Evolutionary LLM for Generative Policy Toward Efficient Resource Management in Wireless Federated Learning,include,,EXCLUDE,I1
+P1-0971,C-faa0917c56,A,Adapting Automotive Aerodynamics Surrogates to New Vehicle Families via Transfer Learning,exclude,Inclusion 2,INCLUDE,
+P1-0973,C-ae9f515f19,B,FRM-PTQ: Feature relationship matching enhanced low-bit post-training quantization for large language models,exclude,Exclusion 2,INCLUDE,
+P1-0976,C-ef8552ab8f,A,Lightweight approximate model predictive control for grid-responsive building air conditioning using quantized neural networks,exclude,Inclusion 2,INCLUDE,
+P1-0978,C-79ff7fadd3,A,Physics-Consistent Self-Supervised Multi-Sensor Transformer for Edge-Intelligent Electronic Systems: Robust Fault Diagnosis under Domain Shift,exclude,Inclusion 2,INCLUDE,
+P1-0981,C-48968f18eb,A,FedPLC: Federated Learning with Dynamic Cluster Adaptation for Concept Drift on Non-IID Data,exclude,Inclusion 2,INCLUDE,
+P1-0984,C-963829c403,A,GAQAT: gradient-adaptive quantization-aware training for domain generalization,exclude,Inclusion 2,INCLUDE,
+P1-0988,C-4cb413f701,A,Towards Resource-Efficient Deepfake Detection,exclude,Inclusion 2,INCLUDE,
+P1-0990,C-ed9f27be3f,A,FedReFT: Federated Representation Fine-Tuning with All-But-Me Aggregation,exclude,Inclusion 2,INCLUDE,
+P1-0996,C-09349fa197,B,"""I've Heard of You!"": Generate Spoken Named Entity Recognition Data for Unseen Entities",exclude,Inclusion 1,INCLUDE,
+P1-1003,C-abb5ec2761,A,DINO-MX: A Modular & Flexible Framework for Self-Supervised Learning,exclude,Inclusion 2,INCLUDE,
+P1-1010,C-e4cb657689,A,Fed-PISA: Federated Voice Cloning via Personalized Identity-Style Adaptation,exclude,Inclusion 2,INCLUDE,
+P1-1017,C-6fa635044b,D1,"The Convergence of Federated Learning, Knowledge Graphs, and Large Language Models for Language Learning: A Scoping Review",include,,EXCLUDE,I1
+P1-1021,C-4eeaf5be22,A,Trustworthy Federated Fine-Tuning for Industrial Chains Demand Forecasting,exclude,Inclusion 2,INCLUDE,
+P1-1029,C-b8942d7f83,A,Improving Quantization-aware Training of Low-Precision Network via Block Replacement on Full-Precision Counterpart,exclude,Inclusion 2,INCLUDE,
+P1-1030,C-10c86f06fb,B,LPCD: Unified Framework from Layer-Wise to Submodule Quantization,exclude,Exclusion 2,INCLUDE,
+P1-1032,C-b7adb836a6,A,Lorica: A Synergistic Fine-Tuning Framework for Advancing Personalized Adversarial Robustness,exclude,Inclusion 2,INCLUDE,
+P1-1038,C-fc1d776725,A,Enhancing Federated Domain Adaptation with Multi-Domain Prototype-Based Federated Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-1040,C-8152fe7fc6,A,Is Multiple Object Tracking a Matter of Specialization?,exclude,Inclusion 2,INCLUDE,
+P1-1043,C-3e46e97b46,D1,Memory-Efficient Tensor Parallelism for Long-Sequence Transformer Training,include,,EXCLUDE,I1
+P1-1050,C-98a1b1be16,B,"SAM-PTx: Text-Guided Fine-Tuning of SAM with Parameter-Efficient, Parallel-Text Adapters",exclude,Inclusion 2,INCLUDE,
+P1-1052,C-78d6352600,B,AME-TS: Anchored Mixture-of-Experts for Time Series Forecasting,exclude,Inclusion 1,INCLUDE,
+P1-1057,C-94be623c96,A,Fine-Grained DINO Tuning with Dual Supervision for Face Forgery Detection,exclude,Inclusion 2,INCLUDE,
+P1-1061,C-1a809c0c2c,B,Learning to Aggregate Zero-Shot LLM Agents for Corporate Disclosure Classification,exclude,Inclusion 1,INCLUDE,
+P1-1062,C-ce09051a36,A,Initialization using Update Approximation is a Silver Bullet for Extremely Efficient Low-Rank Fine-Tuning,exclude,Inclusion 2,INCLUDE,
+P1-1067,C-ace068ee09,A,Differential Multimodal Transformers,exclude,Inclusion 2,INCLUDE,
+P1-1069,C-1281118f9b,D1,SampleAttention: Near-Lossless Acceleration of Long Context LLM Inference with Adaptive Structured Sparse Attention,include,,EXCLUDE,E2
+P1-1070,C-7c1044f5df,D1,Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages,include,,EXCLUDE,I1
+P1-1071,C-eddabeec1e,A,Self-Aware Quantization for Privacy-Preserving Federated Learning: Enhancing Alzheimer Diagnosis with an Adaptive Inception-Transformer Framework,exclude,Inclusion 2,INCLUDE,
+P1-1072,C-03a615993d,B,Parameter-Efficient Fine-Tuning Medical Multimodal Large Language Models for Medical Visual Grounding,exclude,Inclusion 2,INCLUDE,
+P1-1073,C-c89df8380f,A,FraQAT: Quantization Aware Training with Fractional bits,exclude,Inclusion 2,INCLUDE,
+P1-1075,C-d00a13aea2,B,Zero-Shot Cross-Domain Code Search without Fine-Tuning,exclude,Inclusion 1,INCLUDE,
+P1-1077,C-bdbdc3b205,A,COMFORT: A Continual Fine-Tuning Framework for Foundation Models Targeted at Consumer Healthcare,exclude,Inclusion 2,INCLUDE,
+P1-1079,C-d5a5b48ada,A,Gradient dynamics for low-rank fine-tuning beyond kernels,exclude,Inclusion 2,INCLUDE,
+P1-1080,C-9f8876433e,B,MARR: Module-Adaptive Residual Reconstruction for Low-Bit Post-Training Quantization,exclude,Exclusion 2,INCLUDE,
+P1-1084,C-6aeb690dfd,A,Automating Versatile Time-Series Analysis with Tiny Transformers on Embedded FPGAs,exclude,Inclusion 2,INCLUDE,
+P1-1092,C-32e2ab9ce3,A,LoRP-TTS: Low-Rank Personalized Text-To-Speech,exclude,Inclusion 2,INCLUDE,
+P1-1106,C-b35a7fd3a7,A,Revisiting Weight Regularization for Low-Rank Continual Learning,exclude,Inclusion 2,INCLUDE,
+P1-1108,C-6650310a9c,A,Lightweight Prompt-Guided CLIP Adaptation for Monocular Depth Estimation,exclude,Inclusion 2,INCLUDE,
+P1-1116,C-0d1144b521,A,Multitask-Informed Prior for In-Context Learning on Tabular Data: Application to Steel Property Prediction,exclude,Inclusion 2,INCLUDE,
+P1-1118,C-fda3f7c0e9,D1,Efficient and Privacy-Preserving Federated Knowledge Learning for Distributed LLM,include,,EXCLUDE,I1
+P1-1119,C-b4445d293e,A,FedFusion: Federated Learning with Diversity- and Cluster-Aware Encoders for Robust Adaptation under Label Scarcity,exclude,Inclusion 2,INCLUDE,
+P1-1121,C-75278372e8,A,Foundation Model Efficient Fine-Tuning in Centralized and Federated Settings,exclude,Inclusion 2,INCLUDE,
+P2-0001,C-5d54cd668d,C,Training Neural Networks from Scratch with Parallel Low-Rank Adapters,include,,EXCLUDE,I2
+P2-0009,C-10c4953630,C,Gnn-Moe: Context-Aware Patch Routing Using Gnns For Parameter-Efficient Domain Generalization,include,,EXCLUDE,I2
+P2-0017,C-6ca02949ef,D2,Gptaq: Efficient finetuning-free quantization for asymmetric calibration,exclude,Inclusion 1,INCLUDE,
+P2-0018,C-579542bdf9,C,Dynamic Task Vector Grouping for Efficient Multi-Task Prompt Tuning,include,,EXCLUDE,I1
+P2-0024,C-695f9880f1,C,Rate-My-LoRA: EFFICIENT AND ADAPTIVE FEDERATED MODEL TUNING FOR CARDIAC MRI SEGMENTATION,include,,EXCLUDE,I2
+P2-0029,C-25cc3d3ee8,C,Parameter-Efficient Multi-Task Learning via Progressive Task-Specific Adaptation,include,,EXCLUDE,I2
+P2-0031,C-f9674bde70,C,Low-Rank Adaptation of Pre-Trained Large Vision Models for Improved Lung Nodule Malignancy Classification,include,,EXCLUDE,I2
+P2-0038,C-a33fbc01b2,C,CVPT: Cross Visual Prompt Tuning,include,,EXCLUDE,I2
+P2-0040,C-413c7a2a8e,C,Energy-Structured Low-Rank Adaptation for Continual Learning,include,,EXCLUDE,I2
+P2-0041,C-9042272f83,C,TriCLIP-3D: A Unified Parameter-Efficient Framework for Tri-Modal 3D Visual Grounding based on CLIP,include,,EXCLUDE,I2
+P2-0048,C-6fcdbf2e06,D2,FlowBERT: Prompt-tuned BERT for variable flow field prediction,exclude,Inclusion 1,INCLUDE,
+P2-0050,C-f398c61505,C,Compression Strategies for Efficient Multimodal LLMs in Medical Contexts,include,,EXCLUDE,I1
+P2-0053,C-b7e558f33f,C,Exploring Fine-Grained Visual-Text Feature Alignment With Prompt Tuning for Domain-Adaptive Object Detection,include,,EXCLUDE,I1
+P2-0058,C-f3b32dbf0c,C,Prefix tuning with prompt augmentation for efficient financial news summarization,include,,EXCLUDE,I1
+P2-0059,C-275bebacf7,C,PromptDx: Differentiable Prompt Tuning for Multimodal In-Context Alzheimer's Diagnosis,include,,EXCLUDE,I2
+P2-0061,C-ec8865b6f6,C,Aggressive Post-Training Compression on Extremely Large Language Models,include,,EXCLUDE,I1
+P2-0064,C-34a86f1d09,C,Multi-Modal Style Transfer-based Prompt Tuning for Efficient Federated Domain Generalization,include,,EXCLUDE,I1
+P2-0067,C-25f4c73d81,D2,Optimal Post-Training Quantization Scales and Where to Find Them,exclude,Exclusion 2,INCLUDE,
+P2-0068,C-750f7afa43,C,PeT-KeyStAtion: Parameter-efficient Transformer with Keypoint-guided Spatial-temporal Aggregation for Video-based Person Re-identification,include,,EXCLUDE,I2
+P2-0073,C-b88b1f86ab,C,Orthogonal Subspace Projection for Continual Machine Unlearning via SVD-Based LoRA,include,,EXCLUDE,I2
+P2-0075,C-a75b96939f,C,Preserving Pre-trained Representation Space: On Effectiveness of Prefix-tuning for Large Multi-modal Models,include,,EXCLUDE,I2
+P2-0076,C-2be982963f,D2,Pushing Bit-Width Limits in LLM Quantization with Saliency-Guided Mix-Precision Allocation and Learnable Affine Transformation,exclude,Exclusion 2,INCLUDE,
+P2-0078,C-402e99d457,C,The Rise of Small Language Models in Healthcare: A Comprehensive Survey,include,,EXCLUDE,I1
+P2-0081,C-22088a8917,C,Spotlighter: Revisiting Prompt Tuning from a Representative Mining View,include,,EXCLUDE,I1
+P2-0088,C-8e86b6a298,C,MINT: Memory-Infused Prompt Tuning at Test-time for CLIP,include,,EXCLUDE,I1
+P2-0095,C-b7b60f1c86,C,Data-centric Prompt Tuning for Dynamic Graphs,include,,EXCLUDE,I2
+P2-0101,C-c5638715ff,C,Evaluating Large Language Models on the Frame and Symbol Grounding Problems: A Zero-shot Benchmark,include,,EXCLUDE,I1
+P2-0103,C-0093f37b8a,C,Parameter Efficient Fine-Tuning for Multi-modal Generative Vision Models with Möbius-Inspired Transformation,include,,EXCLUDE,I2
+P2-0105,C-3d5f9cc95b,C,Meta-Learning Hyperparameters for Parameter Efficient Fine-Tuning,include,,EXCLUDE,I2
+P2-0109,C-42a1fa7f02,C,INTELLECT-1 Technical Report,include,,EXCLUDE,I1
+P2-0111,C-958388af09,C,Memory Efficient Transformer Adapter for Dense Predictions,include,,EXCLUDE,E2
+P2-0115,C-3ab5cbdebe,C,"DecompressionLM: Deterministic, Diagnostic, and Zero-Shot Concept Graph Extraction from Language Models",include,,EXCLUDE,E2
+P2-0119,C-1e162e1b41,C,Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs,include,,EXCLUDE,I1
+P2-0121,C-72895be703,C,Data-Scarce Event Argument Extraction: A Dynamic Modular Prompt Tuning Model Based on Slot Transfer,include,,EXCLUDE,I1
+P2-0126,C-7d49e0f73d,C,NEURON-Fabric: CXL-Side Low-Bit Gradient Aggregation for Distributed Training,include,,EXCLUDE,I1
+P2-0129,C-08594f92d8,C,Swin-TUNA : A Novel PEFT Approach for Accurate Food Image Segmentation,include,,EXCLUDE,I2
+P2-0133,C-e27b68c4e2,C,FLoCoRA: Federated Learning Compression with Low-Rank Adaptation,include,,EXCLUDE,I2
+P2-0144,C-ab88172de9,C,Parameter-Efficient Domain Adaptation of Physics-Informed Self-Attention based GNNs for AC Power Flow Prediction,include,,EXCLUDE,I2
+P2-0146,C-4c136586f8,C,Lessons and Insights from a Unifying Study of Parameter-Efficient Fine-Tuning (PEFT) in Visual Recognition,include,,EXCLUDE,I2
+P2-0148,C-06878f84eb,C,Parameter efficient instruction tuning: An empirical study,include,,EXCLUDE,I1
+P2-0150,C-871bdff7b0,C,Decoupled Prompt-Adapter Tuning for Continual Activity Recognition,include,,EXCLUDE,I2
+P2-0153,C-da24dbd2ba,C,Test Time Prompt Tuning for Domain Adaptive Gaze Estimation,include,,EXCLUDE,I1
+P2-0154,C-52e5d13e35,C,Fast and Continual Knowledge Graph Embedding via Incremental LoRA,include,,EXCLUDE,I2
+P2-0160,C-4ddb9fa44e,C,Token-Efficient Leverage Learning in Large Language Models,include,,EXCLUDE,I1
+P2-0171,C-b754df5446,C,All Centers Are at most a Few Tokens Apart: Knowledge Distillation with Domain Invariant Prompt Tuning,include,,EXCLUDE,I1
+P2-0173,C-9c1fb5da85,C,PESAT: A Parameter-Efficient Spatiotemporal Adapter Tuning Framework for Satellite Video Scene Classification,include,,EXCLUDE,I2
+P2-0175,C-514d67f8d8,C,GFMate: Empowering Graph Foundation Models with Test-time Prompt Tuning,include,,EXCLUDE,I2
+P2-0177,C-dffbfccab9,C,Understanding Prompt Tuning and In-Context Learning via Meta-Learning,include,,EXCLUDE,I1
+P2-0178,C-56660b9c11,C,MIP: CLIP-based Image Reconstruction from PEFT Gradients,include,,EXCLUDE,I2
+P2-0179,C-19b7267630,C,Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts,include,,EXCLUDE,I1
+P2-0181,C-ce67e1ff48,C,Prompt Tuning In a Compact Attribute Space,include,,EXCLUDE,I1
+P2-0183,C-e677b9a09d,C,CrossPT: Exploring Cross-Task Transferability through Multi-Task Prompt Tuning,include,,EXCLUDE,I1
+P2-0185,C-0d413ef0ee,C,Short text classification with Soft Knowledgeable Prompt-tuning,include,,EXCLUDE,I1
+P2-0186,C-32c228ac10,C,Few-Shot LoRA Adaptation of a Flow-Matching Foundation Model for Cross-Spectral Object Detection,include,,EXCLUDE,I2
+P2-0187,C-7397942a67,C,The Application of Parameter-Efficient Fine-Tuning with Frequency Filter Adapter in Urban Governance,include,,EXCLUDE,I2
+P2-0189,C-a89b7191f4,C,Dual Modality-Aware Gated Prompt Tuning for Few-Shot Multimodal Sarcasm Detection,include,,EXCLUDE,I1
+P2-0193,C-164d5f994d,C,Memory Limitations of Prompt Tuning in Transformers,include,,EXCLUDE,I1
+P2-0194,C-30d0450882,C,SCHK-HTC: Sibling Contrastive Learning with Hierarchical Knowledge-Aware Prompt Tuning for Hierarchical Text Classification,include,,EXCLUDE,I1
+P2-0199,C-7cb2bdbc5d,C,CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation,include,,EXCLUDE,I2
+P2-0200,C-0102aaae0d,D2,BayesQ: Uncertainty-Guided Bayesian Quantization,exclude,Exclusion 2,INCLUDE,
+P2-0203,C-0d8e88eb32,C,Prompt Tuning for Audio Deepfake Detection: Computationally Efficient Test-time Domain Adaptation with Limited Target Dataset,include,,EXCLUDE,I2
+P2-0204,C-d32d314a69,D2,VLMQ: Efficient Post-Training Quantization for Large Vision-Language Models via Hessian Augmentation,exclude,Inclusion 2,INCLUDE,
+P2-0205,C-e1c73ef4d8,C,DiffLoRA: Generating Personalized Low-Rank Adaptation Weights with Diffusion,include,,EXCLUDE,I2
+P2-0206,C-1a292fc7e8,C,Parameter-Efficient Transfer Learning for Remote Sensing Image Captioning,include,,EXCLUDE,I2
+P2-0209,C-c9f10f1894,C,Message Tuning Outshines Graph Prompt Tuning: A Prismatic Space Perspective,include,,EXCLUDE,I2
+P2-0217,C-37b108a7c3,C,Soft Prompt Generation for Domain Generalization,include,,EXCLUDE,I1
+P2-0219,C-30a82de169,C,OpenworldAUC: Towards Unified Evaluation and Optimization for Open-world Prompt Tuning,include,,EXCLUDE,I1
+P2-0222,C-ed846ca76d,C,Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for Enhanced Auditory Perception,include,,EXCLUDE,I2
+P2-0223,C-68ce2c8da0,C,Krait: A Backdoor Attack Against Graph Prompt Tuning,include,,EXCLUDE,I2
+P2-0224,C-0252199fad,C,Exploring Embedding Priors in Prompt-Tuning for Improved Interpretability and Control,include,,EXCLUDE,I1
+P2-0228,C-b530edd718,C,Semantic Segmentation of Urban Green Space and Water Body in High-Resolution Remote Sensing Images Based on Low-Rank Adaptation,include,,EXCLUDE,I2
+P2-0231,C-fdee0cf991,C,Random Initialization of Gated Sparse Adapters,include,,EXCLUDE,I1
+P2-0239,C-3f5da8bf7a,C,Rethinking Federated Graph Foundation Models: A Graph-Language Alignment-based Approach,include,,EXCLUDE,I1
+P2-0241,C-7a3f220614,C,DB-LLM: Accurate Dual-Binarization for Efficient LLMs,include,,EXCLUDE,I1
+P2-0242,C-186e5b0377,C,FedPIA -- Permuting and Integrating Adapters leveraging Wasserstein Barycenters for Finetuning Foundation Models in Multi-Modal Federated Learning,include,,EXCLUDE,I1
+P2-0247,C-ed444a3420,C,Optimizing LLaMa2 Fine-Tuning with LoRA and Quantization for Medical Question Answering,include,,EXCLUDE,I1
+P2-0249,C-65ce5c2a3c,C,Context-aware Visual Storytelling with Visual Prefix Tuning and Contrastive Learning,include,,EXCLUDE,I1
+P2-0250,C-38b374db94,C,A Multi-Task Learning Framework Based on CLIP and Adapter Modules,include,,EXCLUDE,I1
+P2-0254,C-9cc7968d5a,C,Multi-modal soft prompt-tuning for Chinese Clickbait Detection,include,,EXCLUDE,I1
+P2-0256,C-fd6d638728,C,Stress-testing medical large language models reveals latent safety pathology beyond benchmark accuracy,include,,EXCLUDE,I1
+P2-0258,C-be9e6b40ca,C,Parameter Efficient Multi-Class Intelligent Scheduling for Multimodal Online Distributed Industrial Anomaly Detection,include,,EXCLUDE,I2
+P2-0262,C-0c7e9f4576,C,Controllable Prompt Tuning For Balancing Group Distributional Robustness,include,,EXCLUDE,I1
+P2-0266,C-8aacf36990,C,SGPT: Few-Shot Prompt Tuning for Signed Graphs,include,,EXCLUDE,I2
+P2-0272,C-54a572a32f,C,Data Augmentation by Prompt Tuning on Natural Language Understanding Tasks,include,,EXCLUDE,I1
+P2-0279,C-1b49be6db6,C,Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models,include,,EXCLUDE,I1
+P2-0281,C-76ffa89ca2,C,Enhanced Breast Cancer Detection in Ultrasound Images Using LoRA-Fine-Tuned Florence-2 Model,include,,EXCLUDE,I1
+P2-0297,C-d7bfa95a48,C,FlashCommunication V2: Bit Splitting and Spike Reserving for Any Bit Communication,include,,EXCLUDE,I1
+P2-0301,C-23ef6512ee,C,Breast Cancer Detection from Multi-View Screening Mammograms with Visual Prompt Tuning,include,,EXCLUDE,I1
+P2-0302,C-1bb5dfdeea,C,Streaming DiLoCo with overlapping communication: Towards a Distributed Free Lunch,include,,EXCLUDE,I1
+P2-0311,C-80b13b2e64,C,DAGPrompT: Pushing the Limits of Graph Prompting with a Distribution-aware Graph Prompt Tuning Approach,include,,EXCLUDE,I2
+P2-0312,C-31295ede36,C,Local Feature Alignment Prompt-Tuning for Few-shot Multimodal Aspect Sentiment Analysis,include,,EXCLUDE,I1
+P2-0315,C-8e0883e9a7,C,Prefix Tuning Using Residual Reparameterization,include,,EXCLUDE,I1
+P2-0317,C-08ba512898,C,AST-Adapter: Parameter-Efficient Video-to-Video Transfer Learning With Adaptive Spatiotemporal Information Bias,include,,EXCLUDE,I2
+P2-0318,C-d233450a09,C,PT-MoE: An Efficient Finetuning Framework for Integrating Mixture-of-Experts into Prompt Tuning,include,,EXCLUDE,I1
+P2-0320,C-199649d6f2,C,LH-Mix: Local Hierarchy Correlation Guided Mixup over Hierarchical Prompt Tuning,include,,EXCLUDE,I1
+P2-0331,C-348ceaddb1,C,Enhancing the Aesthetic Appeal of AI-Generated Physical Product Designs through LoRA Fine-Tuning with Human Feedback,include,,EXCLUDE,I2
+P2-0335,C-1050407147,C,PrivFedTalk: Privacy-Aware Federated Diffusion with Identity-Stable Adapters for Personalized Talking-Head Generation,include,,EXCLUDE,I2
+P2-0336,C-ced5403bf6,C,Contrastive Test-Time Composition of Multiple LoRA Models for Image Generation,include,,EXCLUDE,I2
+P2-0355,C-5ac5155b81,C,PTQAT: A Hybrid Parameter-Efficient Quantization Algorithm for 3D Perception Tasks,include,,EXCLUDE,I2
+P2-0358,C-0d24fb0aa0,C,Weakening Prediction Confidence Makes Backdoors Strengthened: A Strong Textual Backdoor Attack on Prefix-tuning,include,,EXCLUDE,I1
+P2-0359,C-6a015239af,C,Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI,include,,EXCLUDE,I1
+P2-0361,C-837b98ee43,C,PEFT-DML: Parameter-Efficient Fine-Tuning Deep Metric Learning for Robust Multi-Modal 3D Object Detection in Autonomous Driving,include,,EXCLUDE,I2
+P2-0364,C-908911654d,C,Cached Multi-Lora Composition for Multi-Concept Image Generation,include,,EXCLUDE,I2
+P2-0376,C-47e0709913,C,ELP-Adapters: Parameter Efficient Adapter Tuning for Various Speech Processing Tasks,include,,EXCLUDE,I2
+P2-0378,C-4efb5360f8,C,OP-LoRA: The Blessing of Dimensionality,include,,EXCLUDE,I2
+P2-0379,C-4428d640df,C,MM-Prompt: Cross-Modal Prompt Tuning for Continual Visual Question Answering,include,,EXCLUDE,I1
+P2-0381,C-5f7aceb379,D2,Can LLMs Identify Gaps and Misconceptions in Students' Code Explanations?,exclude,Inclusion 1,INCLUDE,
+P2-0384,C-ae6b5264d5,C,A Parameter-Efficient Multi-Scale Convolutional Adapter for Synthetic Speech Detection,include,,EXCLUDE,I2
+P2-0388,C-08ad7d71bf,C,Comparative Analysis of LoRA-Adapted Embedding Models for Clinical Cardiology Text Representation,include,,EXCLUDE,I1
+P2-0390,C-97a409d297,C,PeftCD: Leveraging Vision Foundation Models With Parameter-Efficient Fine-Tuning for Remote Sensing Change Detection,include,,EXCLUDE,I2
+P2-0393,C-8f9833f0e8,D2,Whisper-MLA: Reducing GPU Memory Consumption of ASR Models based on MHA2MLA Conversion,exclude,Inclusion 2,INCLUDE,
+P2-0395,C-da19aa629c,C,Be Confident in What You Know: Bayesian Parameter Efficient Fine-Tuning of Vision Foundation Models,include,,EXCLUDE,I2
+P2-0396,C-397f95fbfa,C,Replay-Free Continual Low-Rank Adaptation with Dynamic Memory,include,,EXCLUDE,I2
+P2-0398,C-4f7f757b3e,D2,QPruner: Probabilistic Decision Quantization for Structured Pruning in Large Language Models,exclude,Inclusion 1,INCLUDE,
+P2-0404,C-0ad3005213,C,Region Prompt Tuning: Fine-grained Scene Text Detection Utilizing Region Text Prompt,include,,EXCLUDE,I1
+P2-0407,C-8be9b11a2f,C,CLEP-DG: Contrastive Learning for Speech Emotion Domain Generalization via Soft Prompt Tuning,include,,EXCLUDE,E2
+P2-0409,C-7b338389b5,C,DeCoOp: Robust Prompt Tuning with Out-of-Distribution Detection,include,,EXCLUDE,I1
+P2-0410,C-a617b11287,D2,LATMiX: Learnable Affine Transformations for Microscaling Quantization of LLMs,exclude,Exclusion 2,INCLUDE,
+P2-0418,C-a95298de11,C,Hard Prompts Made Interpretable: Sparse Entropy Regularization for Prompt Tuning with RL,include,,EXCLUDE,I1
+P2-0421,C-5cbc2d89e2,C,Not All Layers Are Created Equal: Adaptive LoRA Ranks for Personalized Image Generation,include,,EXCLUDE,I2
+P2-0425,C-00a4fce073,C,M$^2$PT: Multimodal Prompt Tuning for Zero-shot Instruction Learning,include,,EXCLUDE,I1
+P2-0427,C-5ab8e9af89,C,OTARo: Once Tuning for All Precisions toward Robust On-Device LLMs,include,,EXCLUDE,I1
+P2-0429,C-78a8a82eec,C,Beyond Human-prompting: Adaptive Prompt Tuning with Semantic Alignment for Anomaly Detection,include,,EXCLUDE,I1
+P2-0433,C-fba6dff8df,C,Visual Instance-aware Prompt Tuning,include,,EXCLUDE,I2
+P2-0447,C-8f679086ef,C,ConsNoTrainLoRA: Data-driven Weight Initialization of Low-rank Adapters using Constraints,include,,EXCLUDE,I2
+P2-0448,C-df169a83b0,C,GDPA: A Parameter-Efficient Gated Dual-Path Spatiotemporal Adapter for Surgical Workflow Recognition,include,,EXCLUDE,I2
+P2-0450,C-1d480b2319,C,ADALORA-QAT: Adaptive Low Rank and Quantization Aware Segmentation,include,,EXCLUDE,I2
+P2-0451,C-3635a4cc60,C,Trajectory Forecasting through Low-Rank Adaptation of Discrete Latent Codes,include,,EXCLUDE,I2
+P2-0453,C-e89e79bb4e,C,Parameter-Efficient Federal-Tuning Enhances Privacy Preserving for Speech Emotion Recognition,include,,EXCLUDE,I2
+P2-0458,C-01220cccdb,C,MAGPrompt: Message-Adaptive Graph Prompt Tuning for Graph Neural Networks,include,,EXCLUDE,I2
+P2-0461,C-03202bfd94,C,Edge Prompt Tuning for Graph Neural Networks,include,,EXCLUDE,I2
+P2-0464,C-6cb2f5ef36,C,HCPT: Hierarchical Cross-Modal Prompt Tuning,include,,EXCLUDE,I1
+P2-0465,C-50b7c86790,C,Graph Adapter of EEG Foundation Models for Parameter Efficient Fine Tuning,include,,EXCLUDE,I2
+P2-0467,C-9ca83ccdf1,C,Prompt-Adapter Context Routing for Parameter-Efficient Multi-Shot Long Video Extrapolation,include,,EXCLUDE,I2
+P2-0468,C-3556ad3cd4,C,Understanding the Learning Dynamics of LoRA: A Gradient Flow Perspective on Low-Rank Adaptation in Matrix Factorization,include,,EXCLUDE,I2
+P2-0469,C-e97f0f4068,C,Learning Semantic Proxies from Visual Prompts for Parameter-Efficient Fine-Tuning in Deep Metric Learning,include,,EXCLUDE,I2
+P2-0470,C-0672ef0300,C,SDXL Finetuned with LoRA for Coloring Therapy: Generating Graphic Templates Inspired by United Arab Emirates Culture,include,,EXCLUDE,I2
+P2-0475,C-aec6607cc4,C,Q-adam-mini: Memory-efficient 8-bit quantized optimizer for large language model training,include,,EXCLUDE,I1
+P2-0479,C-dcd7f724ed,C,Stealthy Dual-Trigger Backdoors: Attacking Prompt Tuning in LM-Empowered Graph Foundation Models,include,,EXCLUDE,I2
+P2-0483,C-faa8261a9e,C,Towards Efficient Post-Training via Fourier-Driven Adapter Architectures,include,,EXCLUDE,I1
+P2-0484,C-ab025609aa,C,MUXQ: Mixed-to-Uniform Precision MatriX Quantization via Low-Rank Outlier Decomposition,include,,EXCLUDE,E2
+P2-0489,C-c82f7cf812,D2,Damba-ST: Domain-Adaptive Mamba for Efficient Urban Spatio-Temporal Prediction,exclude,Exclusion 3,INCLUDE,
+P2-0491,C-819bb03916,C,FATE: A Prompt-Tuning-Based Semi-Supervised Learning Framework for Extremely Limited Labeled Data,include,,EXCLUDE,I1
+P2-0497,C-8fd71291b3,C,Federated Adapter on Foundation Models: An Out-Of-Distribution Approach,include,,EXCLUDE,I1
+P2-0499,C-6a973aec13,C,Parameter-Free Mixture of Experts for Black-Box Prompt Tuning,include,,EXCLUDE,I2
+P2-0504,C-0cb80625f8,C,Adapter-Enhanced Semantic Prompting for Continual Learning,include,,EXCLUDE,I1
+P2-0512,C-1cc7e75e7a,C,External Spatial Adapter Tuning: Memory-Efficient Adaptation of Foundation Model for Sddh Diagnosis with Ultrasound Images,include,,EXCLUDE,I2
+P2-0513,C-ef00a13ec0,C,Generalizable speech deepfake detection via meta-learned LoRA,include,,EXCLUDE,I2
+P2-0515,C-70a634cfba,C,DGL: Dynamic Global-Local Prompt Tuning for Text-Video Retrieval,include,,EXCLUDE,I1
+P2-0517,C-4d63e9f9bf,C,M-ANT: Efficient Low-bit Group Quantization for LLMs via Mathematically Adaptive Numerical Type,include,,EXCLUDE,E2
+P2-0523,C-ff1b13be16,C,LoRA.rar: Learning to Merge LoRAs via Hypernetworks for Subject-Style Conditioned Image Generation,include,,EXCLUDE,I2
+P2-0540,C-65bb620150,C,InfiR2: A Comprehensive FP8 Training Recipe for Reasoning-Enhanced Language Models,include,,EXCLUDE,I1
+P2-0544,C-23c1694c86,C,Gradient Projection For Continual Parameter-Efficient Tuning,include,,EXCLUDE,I2
+P2-0545,C-026c33f2a5,C,WTConv-Adapter: wavelet transform convolution adapter for parameter efficient transfer learning of object detection ConvNets,include,,EXCLUDE,I1
+P2-0547,C-6a9e9cf8bc,C,Less Could Be Better: Parameter-efficient Fine-tuning Advances Medical Vision Foundation Models,include,,EXCLUDE,I2
+P2-0553,C-489386c4f1,C,"Fine-tune Smarter, Not Harder: Parameter-Efficient Fine-Tuning for Geospatial Foundation Models",include,,EXCLUDE,I2
+P2-0556,C-38dac9aa72,C,HAM: Hierarchical Adapter Merging for Scalable Continual Learning,include,,EXCLUDE,I2
+P2-0557,C-ef926a8977,C,Prompt-tuning for Clickbait Detection via Text Summarization,include,,EXCLUDE,I1
+P2-0570,C-bcbd8b8054,C,Efficient Adapter Tuning of Pre-Trained Speech Models for Automatic Speaker Verification,include,,EXCLUDE,I2
+P2-0571,C-5e6b669d55,C,Learning and Editing Universal Graph Prompt Tuning via Reinforcement Learning,include,,EXCLUDE,I2
+P2-0574,C-05a0831dd8,C,Generalized Prompt Tuning: Adapting Frozen Univariate Time Series Foundation Models for Multivariate Healthcare Time Series,include,,EXCLUDE,I1
+P2-0575,C-267eb2c547,C,Adapter-X: A Novel General Parameter-Efficient Fine-Tuning Framework for Vision,include,,EXCLUDE,I2
+P2-0580,C-73314ea833,C,Fed-RSAdapter: Federated Fine-Tuning of Remote Sensing Images via Multi-Scale Adapter Modules,include,,EXCLUDE,I2
+P2-0581,C-1d9c8e1ad4,C,Parameter-Efficient Adaptation of Pre-Trained Vision Foundation Models for Active and Passive Seismic Data Denoising,include,,EXCLUDE,I2
+P2-0582,C-11d51c9673,C,Adaptive Heterogeneous Model Scheduling for Federated LoRA Fine-Tuning,include,,EXCLUDE,I2
+P2-0586,C-25cb49f49a,C,RELIEF: Reinforcement Learning Empowered Graph Feature Prompt Tuning,include,,EXCLUDE,I2
+P2-0588,C-da63fbb045,C,Addition is almost all you need: Compressing large language models with double binary factorization,include,,EXCLUDE,I1
+P2-0589,C-7d6f7d160b,C,Combining datasets with different ground truths using Low-Rank Adaptation to generalize image-based CNN models for photometric redshift prediction,include,,EXCLUDE,I2
+P2-0593,C-0a98a3435f,C,Mix-Initiative Response Generation with Dynamic Prefix Tuning,include,,EXCLUDE,I1
+P2-0598,C-38a67ac874,C,Rethinking Low-Rank Adaptation in Vision: Exploring Head-Level Responsiveness across Diverse Tasks,include,,EXCLUDE,I2
+P2-0601,C-00fe5dbb6f,C,Memory-Efficient Prompt Tuning for Incremental Histopathology Classification,include,,EXCLUDE,I2
+P2-0607,C-0532c0a0c3,C,Visual Variational Autoencoder Prompt Tuning,include,,EXCLUDE,I2
+P2-0610,C-59d827f5b9,C,Modality-Consistent Prompt Tuning With Optimal Transport,include,,EXCLUDE,I1
+P2-0617,C-90fe4aa8fc,C,Mixture of Low-Rank Adapter Experts in Generalizable Audio Deepfake Detection,include,,EXCLUDE,I2
+P2-0618,C-2b64e73cf2,D2,MoBiQuant: Mixture-of-Bits Quantization for Token-Adaptive Any-Precision LLM,exclude,Exclusion 2,INCLUDE,
+P2-0619,C-db4b4573e2,C,GraphLoRA: Structure-Aware Contrastive Low-Rank Adaptation for Cross-Graph Transfer Learning,include,,EXCLUDE,I2
+P2-0620,C-59bf7bd2cb,C,Bayesian Multi-Task Transfer Learning for Soft Prompt Tuning,include,,EXCLUDE,I1
+P2-0625,C-23f87925d8,C,Federated Prompt-Tuning with Heterogeneous and Incomplete Multimodal Client Data,include,,EXCLUDE,I1
+P2-0626,C-a5d17552e5,C,Fairness-aware Prompt Tuning for Graph Neural Networks,include,,EXCLUDE,I2
+P2-0632,C-8a2f590258,C,MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper,include,,EXCLUDE,I1
+P2-0636,C-d4ca35e63a,C,Data-Efficient Industrial Defect Segmentation with Multiscale Bidirectional Interaction Adapter,include,,EXCLUDE,I2
+P2-0638,C-2387903e2c,C,Fine-Tuning Open Video Generators for Cinematic Scene Synthesis: A Small-Data Pipeline with LoRA and Wan2.1 I2V,include,,EXCLUDE,I2
+P2-0639,C-5dac9e7eee,D2,Spatiotemporal Decision Transformer for Traffic Coordination,exclude,Inclusion 1,INCLUDE,
+P2-0640,C-21544e707e,C,Dual-Path Stable Soft Prompt Generation for Domain Generalization,include,,EXCLUDE,I1
+P2-0641,C-2489219b7e,C,A Study on LAPE-Based AWQ for Improving Korean Performance of Quantized Multilingual LLM,include,,EXCLUDE,I1
+P2-0645,C-5eb96b3386,C,FedHPL: Efficient Heterogeneous Federated Learning with Prompt Tuning and Logit Distillation,include,,EXCLUDE,I1
+P2-0646,C-c268cac3f7,C,SCAPE: Accurate and Efficient LLM Training with Extreme Sparse Communication,include,,EXCLUDE,I1
+P2-0648,C-f03595b886,C,Divergence-enhanced Knowledge-guided Context Optimization for Visual-Language Prompt Tuning,include,,EXCLUDE,I1
+P2-0649,C-9cd542c82a,C,RESOURCE-EFFICIENT ADAPTATION OF LLAVA-NEXT-VIDEO FOR CCTV VIDEO CAPTIONING ON UCF-CRIME ANNOTATION USING QLORA,include,,EXCLUDE,I2
+P2-0650,C-31442154e4,C,An Investigation of Parameter Efficient Federated Learning with Foundation Model,include,,EXCLUDE,I1
+P2-0653,C-f62fa6afcb,C,Contribution-based Low-Rank Adaptation with Pre-training Model for Real Image Restoration,include,,EXCLUDE,I2
+P2-0659,C-8b987e003f,C,Learning Adapter Rank via Symmetry Breaking,include,,EXCLUDE,I1
+P2-0663,C-38881c1bfd,C,Revisit Visual Prompt Tuning: The Expressiveness of Prompt Experts,include,,EXCLUDE,I2
+P2-0666,C-a63a184e1e,D2,FrameQuant: Flexible Low-Bit Quantization for Transformers,exclude,Inclusion 1,INCLUDE,
+P2-0668,C-4b2b516dc3,C,CAT: Contrastive Adapter Training for Personalized Image Generation,include,,EXCLUDE,I2
+P2-0674,C-1578b9e1d8,C,LSPT: Long-term Spatial Prompt Tuning for Visual Representation Learning,include,,EXCLUDE,E2
+P2-0675,C-20063e971a,C,Linguistic properties and model scale in brain encoding: from small to compressed language models,include,,EXCLUDE,I1
+P2-0676,C-6c0baa27d8,C,Empower Vision Applications with LoRA LMM,include,,EXCLUDE,I2
+P2-0677,C-776ebf744f,C,Signed Symmetric Quantization for Few-Bit Integers,include,,EXCLUDE,E2
+P2-0680,C-2b7d414474,C,Enhancing Foundation Models for Time Series Forecasting via Wavelet-based Tokenization,include,,EXCLUDE,I1
+P2-0687,C-4b38c162ef,C,From 2:4 to 8:16 sparsity patterns in LLMs for Outliers and Weights with Variance Correction,include,,EXCLUDE,I1
+P2-0690,C-8006b67ef7,C,Visual Prompt Tuning for Weakly Supervised Phrase Grounding,include,,EXCLUDE,I1
+P2-0691,C-770aab88f7,C,PanoLora: Bridging Perspective and Panoramic Video Generation with LoRA Adaptation,include,,EXCLUDE,I2
+P2-0695,C-bcd4411837,C,RFX: High-Performance Random Forests with GPU Acceleration and QLORA Compression,include,,EXCLUDE,I2
+P2-0700,C-d8deb88192,C,Improving Anomalous Sound Detection Via Low-Rank Adaptation Fine-Tuning of Pre-Trained Audio Models,include,,EXCLUDE,I2
+P2-0702,C-39a59e6528,C,Decouple before Align: Visual Disentanglement Enhances Prompt Tuning,include,,EXCLUDE,I1
+P2-0705,C-a3ed885667,D2,GWT: Scalable Optimizer State Compression for Large Language Model Training,exclude,Inclusion 1,INCLUDE,
+P2-0707,C-fe4330d981,C,LiteVAR: Compressing Visual Autoregressive Modelling with Efficient Attention and Quantization,include,,EXCLUDE,I2
+P2-0708,C-8bb6520576,C,Mitigate Negative Transfer with Similarity Heuristic Lifelong Prompt Tuning,include,,EXCLUDE,I1
+P2-0709,C-d42276be38,C,"Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction",include,,EXCLUDE,I1
+P2-0711,C-99db927a82,C,QU-NLP at ArchEHR-QA 2026: Two-Stage QLoRA Fine-Tuning of Qwen3-4B for Patient-Oriented Clinical Question Answering and Evidence Sentence Alignment,include,,EXCLUDE,I1
+P2-0712,C-e86d2da588,C,Hierarchical Prompt Tuning for System-Incremental Log Analysis,include,,EXCLUDE,I1
+P2-0713,C-08503f1469,C,Re3adapter:Efficient Parameter Fing-Tuning with Triple Reparameterization for Adapter without Inference Latency,include,,EXCLUDE,E2
+P2-0716,C-6def156be2,C,FairTriplet: Balancing Fairness and Accuracy in Contextual Pre-Trained Models Through Prefix Tuning,include,,EXCLUDE,I1
+P2-0717,C-644380645e,C,Fighting AI with AI: AI-Agent Augmented DNS Blocking of LLM Services during Student Evaluations,include,,EXCLUDE,I1
+P2-0721,C-b5f3b07c33,C,Adapter-Enhanced ViTPose for Occlusion-Robust Multi-Mouse Pose Estimation,include,,EXCLUDE,I1
+P2-0722,C-4197c67add,C,Low-Rank Adaptation of Pre-Trained Vision Backbones for Energy-Efficient Image Coding For Machines,include,,EXCLUDE,I2
+P2-0723,C-bcca815b6c,C,Prompt Tuning in Biomedical Relation Extraction,include,,EXCLUDE,I1
+P2-0734,C-47e047ec36,C,CoAPT: Context Attribute words for Prompt Tuning,include,,EXCLUDE,I1
+P2-0740,C-347cdf104c,C,TryOn-Adapter: Efficient Fine-Grained Clothing Identity Adaptation for High-Fidelity Virtual Try-On,include,,EXCLUDE,I2
+P2-0742,C-a739f49378,C,Revisiting the Robust Generalization of Adversarial Prompt Tuning,include,,EXCLUDE,I1
+P2-0748,C-2770692073,C,Small Language Models: opportunities and obstacles,include,,EXCLUDE,I1
+P2-0749,C-14f1b03eec,C,SOLIDO: A Robust Watermarking Method for Speech Synthesis via Low-Rank Adaptation,include,,EXCLUDE,I2
+P2-0756,C-e338a7132a,C,LoRA-FAIR: Federated LoRA Fine-Tuning with Aggregation and Initialization Refinement,include,,EXCLUDE,I2
+P2-0761,C-46d45137c5,C,Demo: Edge Federated Learning over a LoRa Mesh Network,include,,EXCLUDE,I2
+P2-0767,C-9b850ae285,C,Fingerprinting LLMs via Prompt Injection,include,,EXCLUDE,I1
+P2-0770,C-5d96e666ca,C,COPHTC: Contrastive Learning with Prompt Tuning for Hierarchical Text Classification,include,,EXCLUDE,I1
+P2-0777,C-21ebcb399f,C,Laplacian-LoRA: Delaying Oversmoothing in Deep GCNs via Spectral Low-Rank Adaptation,include,,EXCLUDE,I2
+P2-0780,C-780f9ef6a4,C,MoRA: LoRA Guided Multi-Modal Disease Diagnosis with Missing Modality,include,,EXCLUDE,I1
+P2-0781,C-4abb67bc59,D2,"A Unified Study of LoRA Variants: Taxonomy, Review, Codebase, and Empirical Evaluation",exclude,Inclusion 2,INCLUDE,
+P2-0785,C-f17b9d4ea8,C,Multi-mask Prefix Tuning: Applying Multiple Adaptive Masks on Deep Prompt Tuning,include,,EXCLUDE,I1
+P2-0786,C-ac2eea01f6,C,Open-Set Deepfake Detection: A Parameter-Efficient Adaptation Method With Forgery Style Mixture,include,,EXCLUDE,I2
+P2-0794,C-2735c9ba08,C,Adaptive Prompt Tuning: Vision Guided Prompt Tuning with Cross-Attention for Fine-Grained Few-Shot Learning,include,,EXCLUDE,I2
+P2-0795,C-4816861af9,C,Global Enhanced Frame Prompt Tuning for Sound Event Detection,include,,EXCLUDE,I2
+P2-0806,C-30e30637ab,C,"A Comparative Study of Student Perspectives on Technical Writing Feedback Quality: Evaluating LLMs, SLMs, and Humans in Computer Science Topics",include,,EXCLUDE,I1
+P2-0809,C-2051956ef6,D2,Machine Unlearning in Large Language Models,exclude,Inclusion 1,INCLUDE,
+P2-0810,C-d02cad4079,C,Preference-Aligned LoRA Merging: Preserving Subspace Coverage and Addressing Directional Anisotropy,include,,EXCLUDE,I2
+P2-0816,C-97c90ffefe,C,Machine Unlearning on Pre-trained Models by Residual Feature Alignment Using LoRA,include,,EXCLUDE,I1
+P2-0820,C-9b16848f4d,C,Efficient Fine-tuning of Audio Spectrogram Transformers via Soft Mixture of Adapters,include,,EXCLUDE,I2
+P2-0824,C-640dc642d4,C,HG-Adapter: Improving Pre-Trained Heterogeneous Graph Neural Networks with Dual Adapters,include,,EXCLUDE,I2
+P2-0832,C-de17c73b3f,C,Proximal guided hybrid federated learning approach with parameter efficient adaptive intelligence for pneumonia diagnosis,include,,EXCLUDE,I2
+P2-0836,C-38993cf14b,D2,Explainability for Large Language Models: A Survey,exclude,Inclusion 1,INCLUDE,
+P2-0837,C-25f7e2f3d6,C,Behind the Scenes: Mechanistic Interpretability of LoRA-adapted Whisper for Speech Emotion Recognition,include,,EXCLUDE,I2
+P2-0841,C-7b715f9161,C,A Simple yet Efficient Multimodal Feature Modulation Adapter for Visual Grounding,include,,EXCLUDE,I1
+P2-0843,C-885253c9f0,C,Visual Prompt Tuning in Null Space for Continual Learning,include,,EXCLUDE,I1
+P2-0846,C-1d6f7bf091,C,PTC: Prefix Tuning CodeT5 for High-Quality Secure Network Measurement Script Generation,include,,EXCLUDE,I1
+P2-0847,C-44cec3c456,C,Down-Sampling Inter-Layer Adapter for Parameter and Computation Efficient Ultra-Fine-Grained Image Recognition,include,,EXCLUDE,I2
+P2-0849,C-9a11562f25,C,Cross-Modal Fine-Tuning of 3D Convolutional Foundation Models for ADHD Classification with Low-Rank Adaptation,include,,EXCLUDE,I2
+P2-0854,C-5da763afc7,C,Low-rank Adaptation Method for Respiratory Sound Classification: A necessary road towards Large Models,include,,EXCLUDE,I2
+P2-0855,C-8514c40b72,C,Enhancing Few-Shot Transfer Learning with Optimized Multi-Task Prompt Tuning through Modular Prompt Composition,include,,EXCLUDE,I1
+P2-0859,C-f66aa6d3a0,C,RSQ: Learning from Important Tokens Leads to Better Quantized LLMs,include,,EXCLUDE,I1
+P2-0861,C-08926699a8,C,Subgraph-level Universal Prompt Tuning,include,,EXCLUDE,I2
+P2-0862,C-d175164246,C,Stella: Subspace learning in low-rank adaptation using stiefel manifold,include,,EXCLUDE,I2
+P2-0872,C-550e940337,C,Rethinking LoRA for Data Heterogeneous Federated Learning: Subspace and State Alignment,include,,EXCLUDE,I2
+P2-0877,C-2068126896,C,Surgical-DINO: Adapter Learning of Foundation Models for Depth Estimation in Endoscopic Surgery,include,,EXCLUDE,I2
+P2-0885,C-86280c1772,C,From Transthoracic to Transesophageal: Cross-Modality Generation using LoRA Diffusion,include,,EXCLUDE,I2
+P2-0892,C-2a6a054cdc,C,The Joint Effect of Quantization and Sampling Temperature on LLM Safety Alignment: A Factorial Analysis,include,,EXCLUDE,E2
+P2-0893,C-9d96b9be9d,C,FlashST: A Simple and Universal Prompt-Tuning Framework for Traffic Prediction,include,,EXCLUDE,I1
+P2-0894,C-fccba7f940,C,LLM-based Models for Detecting Emerging Topics in Service Feedback,include,,EXCLUDE,I1
+P2-0897,C-9e3119e312,C,DiPrompT: Disentangled Prompt Tuning for Multiple Latent Domain Generalization in Federated Learning,include,,EXCLUDE,I1
+P2-0900,C-161f58745c,C,GASA: Rank-Sliced GAther-Scatter Activations and Application to Sparsity-Preserving Parameter-Efficient Fine-Tuning,include,,EXCLUDE,I2
+P2-0906,C-1c8cd1adb8,C,Quantization with Unified Adaptive Distillation to enable multi-LoRA based one-for-all Generative Vision Models on edge,include,,EXCLUDE,I2
+P2-0910,C-b6d5f3987e,C,Leveraging Soft Prompts for Privacy Attacks in Federated Prompt Tuning,include,,EXCLUDE,I1
+P2-0913,C-27a8c73f22,C,A Survey on Collaborative Mechanisms Between Large and Small Language Models,include,,EXCLUDE,I1
+P2-0919,C-6338357039,C,BitsMoE: Efficient Spectral Energy-Guided Bit Allocation for MoE LLM Quantization,include,,EXCLUDE,E2
+P2-0920,C-b72ac6a56d,C,Adversarial Domain Prompt Tuning and Generation for Single Domain Generalization,include,,EXCLUDE,I1
+P2-0924,C-b636948d79,C,Efficient Whisper Fine-Tuning with Low-Rank Adaptation (Lora) for Evaluating Al-Fatihah Recitation Accuracy,include,,EXCLUDE,I2
+P2-0926,C-737a35bb84,C,PRO-VPT: Distribution-Adaptive Visual Prompt Tuning via Prompt Relocation,include,,EXCLUDE,I1
+P2-0933,C-e542d8ae7d,C,Parameter-Efficient Instance-Adaptive Neural Video Compression,include,,EXCLUDE,I2
+P2-0936,C-3031c41daa,C,Probabilistic Federated Prompt-Tuning with Non-IID and Imbalanced Data,include,,EXCLUDE,I2
+P2-0943,C-42f9bc51b9,C,Batched low-rank adaptation of foundation models,include,,EXCLUDE,I2
+P2-0946,C-7741f3aa36,C,"AQUA-LLM: Evaluating Accuracy, Quantization, and Adversarial Robustness Trade-offs in LLMs for Cybersecurity Question Answering",include,,EXCLUDE,I1
+P2-0954,C-0e3dc7669a,C,LMEraser: Large Model Unlearning through Adaptive Prompt Tuning,include,,EXCLUDE,I1
+P2-0967,C-984beba9b8,C,UniPET-SPK: A Unified Framework for Parameter-Efficient Tuning of Pre-Trained Speech Models for Robust Speaker Verification,include,,EXCLUDE,I2
+P2-0971,C-f75a17761f,C,Multi-Bit Distortion-Free Watermarking for Large Language Models,include,,EXCLUDE,I1
+P2-0972,C-08204bb9b2,C,Flexi-LoRA with Input-Adaptive Ranks: Efficient Finetuning for Speech and Reasoning Tasks,include,,EXCLUDE,I2
+P2-0974,C-4331ea7777,C,Enhancing Aviation Communication Transcription: Fine-Tuning Distil-Whisper with LoRA,include,,EXCLUDE,I2
+P2-0976,C-1d6ba5c5f8,C,Parameter-Efficient Domain Adaption for CSI Crowd-Counting via Self-Supervised Learning with Adapter Modules,include,,EXCLUDE,I2
+P2-0985,C-3a2f9685cb,C,DeepFake-Adapter: Dual-Level Adapter for DeepFake Detection,include,,EXCLUDE,I1
+P2-0988,C-82095f1ce6,C,AC-LoRA: Auto Component LoRA for Personalized Artistic Style Image Generation,include,,EXCLUDE,I2
+P2-0990,C-280a50e9e7,C,Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints,include,,EXCLUDE,I2
+P2-0995,C-b9f35b656d,C,TCFF-Adapter: Text-Driven Adaption of CLIP for Few-Shot Image Classification,include,,EXCLUDE,I1

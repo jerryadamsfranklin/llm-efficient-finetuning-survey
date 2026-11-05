@@ -22,3 +22,10 @@ local.env
 # only after author decisions for that part are committed (docs/validation-plan.md).
 validation/part1_key.csv
 validation/part2_key.csv
+
+# Author screening workbook (local); decisions land in blind CSVs
+validation/screening_validation.xlsx
+validation/rescreen_workbook.xlsx
+validation/rescreen_workbook_completed.xlsx
+validation/second_pass_workbook.xlsx
+validation/second_pass_workbook_completed.xlsx
